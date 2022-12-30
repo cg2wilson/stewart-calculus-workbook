@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Calculus Workbook The Limit of a Function</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Workbook for Stewart's &quot;Calculus&quot;">
+<meta property="book:author" content="Cory Wilson">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.98,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js"></script><script src="https://pretextbook.org/js/0.2/pretext_search.js"></script><link href="https://pretextbook.org/css/0.6/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.2</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.2/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.2/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.2/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="http://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link href="https://pretextbook.org/css/0.6/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="stewart-calculus-workbook.html"><span class="title">Workbook for Stewart's "Calculus"</span></a></h1>
+<p class="byline">Cory Wilson</p>
+</div>
+<div id="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
+</h2>
+<div id="searchempty"><span>No results.</span></div>
+<ol id="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden avatar">
+<li data-val="You!" tabindex="-1">
+<span id="theYou!" class="avatarcheck">✔️</span>You!</li>
+<li data-val="😺" tabindex="-1">
+<span id="the😺" class="avatarcheck"></span>😺</li>
+<li data-val="👤" tabindex="-1">
+<span id="the👤" class="avatarcheck"></span>👤</li>
+<li data-val="👽" tabindex="-1">
+<span id="the👽" class="avatarcheck"></span>👽</li>
+<li data-val="🐶" tabindex="-1">
+<span id="the🐶" class="avatarcheck"></span>🐶</li>
+<li data-val="🐼" tabindex="-1">
+<span id="the🐼" class="avatarcheck"></span>🐼</li>
+<li data-val="🌈" tabindex="-1">
+<span id="the🌈" class="avatarcheck"></span>🌈</li>
+</ol>
+</li>
+<li data-env="fontfamily" tabindex="-1">Font family<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fontfamily">
+<li data-val="face" data-change="OS" tabindex="-1" style="font-family: 'Open Sans'">
+<span id="theOS" class="ffcheck">✔️</span><span class="name">Open Sans</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+<li data-val="face" data-change="RS" tabindex="-1" style="font-family: 'Roboto Serif'">
+<span id="theRS" class="ffcheck"></span><span class="name">Roboto Serif</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+</ol>
+</li>
+<li data-env="font" tabindex="-1">Adjust font<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fonts">
+<li>Size</li>
+<li><span id="thesize">12</span></li>
+<li data-val="size" data-change="-1" tabindex="-1" style="font-size: 80%">Smaller</li>
+<li data-val="size" data-change="1" tabindex="-1" style="font-size: 110%">Larger</li>
+<li>Width</li>
+<li><span id="thewdth">100</span></li>
+<li data-val="wdth" data-change="-5" tabindex="-1" style="font-variation-settings: 'wdth' 60">narrower</li>
+<li data-val="wdth" data-change="5" tabindex="-1" style="font-variation-settings: 'wdth' 150">wider</li>
+<li>Weight</li>
+<li><span id="thewght">400</span></li>
+<li data-val="wght" data-change="-50" tabindex="-1" style="font-weight: 200">thinner</li>
+<li data-val="wght" data-change="50" tabindex="-1" style="font-weight: 700">heavier</li>
+<li>Letter spacing</li>
+<li>
+<span id="thelspace">0</span><span class="byunits">/200</span>
+</li>
+<li data-val="lspace" data-change="-1" tabindex="-1">closer</li>
+<li data-val="lspace" data-change="1" tabindex="-1">f a r t h e r</li>
+<li>Word spacing</li>
+<li>
+<span id="thewspace">0</span><span class="byunits">/50</span>
+</li>
+<li data-val="wspace" data-change="-1" tabindex="-1">smaller gap </li>
+<li data-val="wspace" data-change="1" tabindex="-1">larger gap</li>
+<li>Line Spacing</li>
+<li>
+<span id="theheight">135</span><span class="byunits">/100</span>
+</li>
+<li data-val="height" data-change="-5" tabindex="-1" style="line-height: 1">closer<br>together</li>
+<li data-val="height" data-change="5" tabindex="-1" style="line-height: 1.75">further<br>apart</li>
+</ol>
+</li>
+<li data-env="atmosphere" tabindex="-1">Light/dark mode<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden atmosphere">
+<li data-val="default" tabindex="-1">
+<span id="thedefault" class="atmospherecheck">✔️</span>default</li>
+<li data-val="pastel" tabindex="-1">
+<span id="thepastel" class="atmospherecheck"></span>pastel</li>
+<li data-val="darktwilight" tabindex="-1">
+<span id="thedarktwilight" class="atmospherecheck"></span>twilight</li>
+<li data-val="dark" tabindex="-1">
+<span id="thedark" class="atmospherecheck"></span>dark</li>
+<li data-val="darkmidnight" tabindex="-1">
+<span id="thedarkmidnight" class="atmospherecheck"></span>midnight</li>
+</ol>
+</li>
+<li data-env="ruler" tabindex="-1">Reading ruler<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden ruler">
+<li data-val="none" tabindex="-1">
+<span id="thenone" class="rulercheck">✔️</span>none</li>
+<li data-val="underline" tabindex="-1">
+<span id="theunderline" class="rulercheck"></span>underline</li>
+<li data-val="lunderline" tabindex="-1">
+<span id="thelunderline" class="rulercheck"></span>L-underline</li>
+<li data-val="greybar" tabindex="-1">
+<span id="thegreybar" class="rulercheck"></span>grey bar</li>
+<li data-val="lightbox" tabindex="-1">
+<span id="thelightbox" class="rulercheck"></span>light box</li>
+<li data-val="sunrise" tabindex="-1">
+<span id="thesunrise" class="rulercheck"></span>sunrise</li>
+<li data-val="sunriseunderline" tabindex="-1">
+<span id="thesunriseunderline" class="rulercheck"></span>sunrise underline</li>
+<li class="moveQ">Motion by:</li>
+<li data-val="mouse" tabindex="-1">
+<span id="themouse" class="motioncheck">✔️</span>follow the mouse</li>
+<li data-val="arrow" tabindex="-1">
+<span id="thearrow" class="motioncheck"></span>up/down arrows - not yet</li>
+<li data-val="eye" tabindex="-1">
+<span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
+</ol>
+</li>
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="section-14.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="ch1.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="section-16.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(      \newcommand{\ds}{\displaystyle}
+\newcommand{\lrpar}[1]{\left(#1\right)}
+\newcommand{\lrbrace}[1]{\left\lbrace #1 \right\rbrace}
+\newcommand{\inv}[1]{#1^{-1}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\dc}{^\circ}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar"><nav id="ptx-toc" class="depth2"><ul class="structural">
+<li><div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li>
+<div class="toc-item"><a href="ch1.html" class="internal"><span class="codenumber">1</span> <span class="title">Functions and Limits</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-11.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Four Ways to Represent a Function</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-11.html#section-11-beforeclass" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Before Class</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-11.html#section-11-functions" class="internal"><span class="codenumber">1.1.1.1</span> <span class="title">Functions</span></a></div></li>
+<li><div class="toc-item"><a href="section-11.html#section-11-representations" class="internal"><span class="codenumber">1.1.1.2</span> <span class="title">Representations of Functions</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-11.html#section-11-preclass" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Pre-Class Activities</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-11.html#section-11-inclass" class="internal"><span class="codenumber">1.1.3</span> <span class="title">In Class</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-11.html#section-11-piecewise" class="internal"><span class="codenumber">1.1.3.1</span> <span class="title">Piecewise Defined Functions</span></a></div></li>
+<li><div class="toc-item"><a href="section-11.html#section-11-symmetry" class="internal"><span class="codenumber">1.1.3.2</span> <span class="title">Symmetry</span></a></div></li>
+<li><div class="toc-item"><a href="section-11.html#section-11-increasing-decreasing" class="internal"><span class="codenumber">1.1.3.3</span> <span class="title">Increasing and Decreasing Functions</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-11.html#section-11-afterclass" class="internal"><span class="codenumber">1.1.4</span> <span class="title">After Class Activities</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-11.html#section-11-resources" class="internal"><span class="codenumber">1.1.5</span> <span class="title">Section 1.1 Additional Resources</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-11.html#subsubsection-6" class="internal"><span class="codenumber">1.1.5.1</span> <span class="title">Functions</span></a></div></li>
+<li><div class="toc-item"><a href="section-11.html#subsubsection-7" class="internal"><span class="codenumber">1.1.5.2</span> <span class="title">Piecewise Functions</span></a></div></li>
+<li><div class="toc-item"><a href="section-11.html#subsubsection-8" class="internal"><span class="codenumber">1.1.5.3</span> <span class="title">Symmetry</span></a></div></li>
+<li><div class="toc-item"><a href="section-11.html#subsubsection-9" class="internal"><span class="codenumber">1.1.5.4</span> <span class="title">Difference Quotients</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-12.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Mathematical Models: A Catalog of Essential Functions</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-12.html#section-12-beforeclass" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Before Class</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-12.html#section-12-linear" class="internal"><span class="codenumber">1.2.1.1</span> <span class="title">Linear Functions</span></a></div></li>
+<li><div class="toc-item"><a href="section-12.html#section-12-polynomial" class="internal"><span class="codenumber">1.2.1.2</span> <span class="title">Polynomials</span></a></div></li>
+<li><div class="toc-item"><a href="section-12.html#section-12-other" class="internal"><span class="codenumber">1.2.1.3</span> <span class="title">Other Functions</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-12.html#section-12-preclass" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Pre-Class Activities</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-12.html#section-12-inclass" class="internal"><span class="codenumber">1.2.3</span> <span class="title">In Class</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-12.html#section-12-power" class="internal"><span class="codenumber">1.2.3.1</span> <span class="title">Power Functions</span></a></div></li>
+<li><div class="toc-item"><a href="section-12.html#section-12-rational" class="internal"><span class="codenumber">1.2.3.2</span> <span class="title">Rational Functions</span></a></div></li>
+<li><div class="toc-item"><a href="section-12.html#section-12-algebraic" class="internal"><span class="codenumber">1.2.3.3</span> <span class="title">Algebraic Functions</span></a></div></li>
+<li><div class="toc-item"><a href="section-12.html#section-12-trig" class="internal"><span class="codenumber">1.2.3.4</span> <span class="title">Trigonometric Functions</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-12.html#section-12-afterclass" class="internal"><span class="codenumber">1.2.4</span> <span class="title">After Class Activities</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-12.html#section-12-resources" class="internal"><span class="codenumber">1.2.5</span> <span class="title">Section 1.2 Resources</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-12.html#subsubsection-17" class="internal"><span class="codenumber">1.2.5.1</span> <span class="title">Essential Functions</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-13.html" class="internal"><span class="codenumber">1.3</span> <span class="title">New Functions from Old Functions</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-13.html#section-13-beforeclass" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Before Class</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-13.html#section-13-combinations" class="internal"><span class="codenumber">1.3.1.1</span> <span class="title">Combinations of Functions</span></a></div></li>
+<li><div class="toc-item"><a href="section-13.html#section-13-transformations" class="internal"><span class="codenumber">1.3.1.2</span> <span class="title">Transformations of Functions</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-13.html#section-13-preclass" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Pre-Class Activities</span></a></div></li>
+<li><div class="toc-item"><a href="section-13.html#section-13-inclass" class="internal"><span class="codenumber">1.3.3</span> <span class="title">In Class</span></a></div></li>
+<li><div class="toc-item"><a href="section-13.html#section-13-afterclass" class="internal"><span class="codenumber">1.3.4</span> <span class="title">After Class Activities</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-13.html#section-13-resources" class="internal"><span class="codenumber">1.3.5</span> <span class="title">Section 1.3 Resources</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-13.html#subsubsection-20" class="internal"><span class="codenumber">1.3.5.1</span> <span class="title">Function Operations</span></a></div></li>
+<li><div class="toc-item"><a href="section-13.html#subsubsection-21" class="internal"><span class="codenumber">1.3.5.2</span> <span class="title">Graph Transformations</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-14.html" class="internal"><span class="codenumber">1.4</span> <span class="title">The Tangent and Velocity Problems</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-14.html#section-14-beforeclass" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Before Class</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-14.html#section-14-tangent-secant" class="internal"><span class="codenumber">1.4.1.1</span> <span class="title">Tangent Lines &amp; Secant Lines</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="section-14.html#section-14-preclass" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Pre-Class Activities</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-14.html#section-14-inclass" class="internal"><span class="codenumber">1.4.3</span> <span class="title">In Class</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-14.html#section-14-velocity" class="internal"><span class="codenumber">1.4.3.1</span> <span class="title">Velocity</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="section-14.html#section-14-afterclass" class="internal"><span class="codenumber">1.4.4</span> <span class="title">After Class Activities</span></a></div></li>
+</ul>
+</li>
+<li class="active">
+<div class="toc-item"><a href="section-15.html" class="internal"><span class="codenumber">1.5</span> <span class="title">The Limit of a Function</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-15.html#section-15-beforeclass" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Before Class</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-15.html#section-15-motivation" class="internal"><span class="codenumber">1.5.1.1</span> <span class="title">Motivating Example</span></a></div></li>
+<li><div class="toc-item"><a href="section-15.html#section-15-limit" class="internal"><span class="codenumber">1.5.1.2</span> <span class="title">The Limit</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-15.html#section-15-preclass" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Pre-Class Activities</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-15.html#section-15-inclass" class="internal"><span class="codenumber">1.5.3</span> <span class="title">In Class</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-15.html#section-15-onesided" class="internal"><span class="codenumber">1.5.3.1</span> <span class="title">One-Sided Limits</span></a></div></li>
+<li><div class="toc-item"><a href="section-15.html#section-15-infinite" class="internal"><span class="codenumber">1.5.3.2</span> <span class="title">Infinite Limits</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-15.html#section-15-afterclass" class="internal"><span class="codenumber">1.5.4</span> <span class="title">After Class Activities</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-16.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Calculating Limits Using Limit Laws</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-16.html#section-16-beforeclass" class="internal"><span class="codenumber">1.6.1</span> <span class="title">Before Class</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-16.html#section-16-laws" class="internal"><span class="codenumber">1.6.1.1</span> <span class="title">Limit Laws</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="section-16.html#section-16-preclass" class="internal"><span class="codenumber">1.6.2</span> <span class="title">Pre-Class Activities</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-16.html#section-16-inclass" class="internal"><span class="codenumber">1.6.3</span> <span class="title">In Class</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-16.html#section-16-theorems" class="internal"><span class="codenumber">1.6.3.1</span> <span class="title">Two Theorems</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="section-16.html#section-16-afterclass" class="internal"><span class="codenumber">1.6.4</span> <span class="title">After Class Activities</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-17.html" class="internal"><span class="codenumber">1.7</span> <span class="title">(X) The Precise Definition of a Limit</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-18.html" class="internal"><span class="codenumber">1.8</span> <span class="title">Continuity</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-18.html#section-18-beforeclass" class="internal"><span class="codenumber">1.8.1</span> <span class="title">Before Class</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-18.html#section-18-definition" class="internal"><span class="codenumber">1.8.1.1</span> <span class="title">The Definition</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="section-18.html#section-18-preclass" class="internal"><span class="codenumber">1.8.2</span> <span class="title">Pre-Class Activities</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-18.html#section-18-inclass" class="internal"><span class="codenumber">1.8.3</span> <span class="title">In Class</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-18.html#section-18-useful" class="internal"><span class="codenumber">1.8.3.1</span> <span class="title">Useful Results</span></a></div></li>
+<li><div class="toc-item"><a href="section-18.html#section-18-ivt" class="internal"><span class="codenumber">1.8.3.2</span> <span class="title">The Intermediate Value Theorem</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-18.html#section-18-afterclass" class="internal"><span class="codenumber">1.8.4</span> <span class="title">After Class Activities</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch2.html" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-21.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Derivatives and Rates of Change</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-21.html#section-21-beforeclass" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Before Class</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-21.html#section-21-tangents" class="internal"><span class="codenumber">2.1.1.1</span> <span class="title"></span></a></div></li>
+<li><div class="toc-item"><a href="section-21.html#section-21-tangents-velocities" class="internal"><span class="codenumber">2.1.1.2</span> <span class="title">Tangents &amp; Velocities</span></a></div></li>
+<li><div class="toc-item"><a href="section-21.html#section-21-derivatives" class="internal"><span class="codenumber">2.1.1.3</span> <span class="title">Derivatives</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-21.html#section-21-preclass" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Pre-Class Activities</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-21.html#section-21-inclass" class="internal"><span class="codenumber">2.1.3</span> <span class="title">In Class</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-21.html#section-21-rates" class="internal"><span class="codenumber">2.1.3.1</span> <span class="title">Rates of Change</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="section-21.html#section-21-afterclass" class="internal"><span class="codenumber">2.1.4</span> <span class="title">After Class Activities</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-22.html" class="internal"><span class="codenumber">2.2</span> <span class="title">The Derivative as a Function</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-22.html#section-22-beforeclass" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Before Class</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-22.html#section-22-function" class="internal"><span class="codenumber">2.2.1.1</span> <span class="title">The Derivative as a Function</span></a></div></li>
+<li><div class="toc-item"><a href="section-22.html#section-22-differentiability" class="internal"><span class="codenumber">2.2.1.2</span> <span class="title">Differentiability &amp; Non-Differentiability</span></a></div></li>
+<li><div class="toc-item"><a href="section-22.html#section-22-notation" class="internal"><span class="codenumber">2.2.1.3</span> <span class="title">Other Notations</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-22.html#section-22-preclass" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Pre-Class Activities</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-22.html#section-22-inclass" class="internal"><span class="codenumber">2.2.3</span> <span class="title">In Class</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-22.html#section-22-derivatives" class="internal"><span class="codenumber">2.2.3.1</span> <span class="title">Derivatives</span></a></div></li>
+<li><div class="toc-item"><a href="section-22.html#section-22-slopegraphs" class="internal"><span class="codenumber">2.2.3.2</span> <span class="title">Slope Graphs</span></a></div></li>
+<li><div class="toc-item"><a href="section-22.html#section-22-higher" class="internal"><span class="codenumber">2.2.3.3</span> <span class="title">Higher Derivatives</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-22.html#section-22-afterclass" class="internal"><span class="codenumber">2.2.4</span> <span class="title">After Class Activities</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-23.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Differentiation Formulas</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-23.html#section-23-beforeclass" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Before Class</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-23.html#section-23-constant" class="internal"><span class="codenumber">2.3.1.1</span> <span class="title">Constant Functions</span></a></div></li>
+<li><div class="toc-item"><a href="section-23.html#section-23-power" class="internal"><span class="codenumber">2.3.1.2</span> <span class="title">Power Functions</span></a></div></li>
+<li><div class="toc-item"><a href="section-23.html#section-23-new" class="internal"><span class="codenumber">2.3.1.3</span> <span class="title">New Derivatives from Old</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-23.html#section-23-preclass" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Pre-Class Activities</span></a></div></li>
+<li><div class="toc-item"><a href="section-23.html#section-23-inclass" class="internal"><span class="codenumber">2.3.3</span> <span class="title">In Class</span></a></div></li>
+<li><div class="toc-item"><a href="section-23.html#section-23-afterclass" class="internal"><span class="codenumber">2.3.4</span> <span class="title">After Class Activities</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-24.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Derivatives of Trigonometric Functions</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-24.html#section-24-beforeclass" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Before Class</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-24.html#section-24-limits" class="internal"><span class="codenumber">2.4.1.1</span> <span class="title">Special Trig Limits</span></a></div></li>
+<li><div class="toc-item"><a href="section-24.html#section-24-sine" class="internal"><span class="codenumber">2.4.1.2</span> <span class="title">Derivative of Sine</span></a></div></li>
+<li><div class="toc-item"><a href="section-24.html#section-24-others" class="internal"><span class="codenumber">2.4.1.3</span> <span class="title">Other Trig Derivatives</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-24.html#section-24-preclass" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Pre-Class Activities</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-24.html#section-24-inclass" class="internal"><span class="codenumber">2.4.3</span> <span class="title">In Class</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-24.html#section-24-derivatives" class="internal"><span class="codenumber">2.4.3.1</span> <span class="title">Trig Derivatives</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="section-24.html#section-24-afterclass" class="internal"><span class="codenumber">2.4.4</span> <span class="title">After Class Activities</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-25.html" class="internal"><span class="codenumber">2.5</span> <span class="title">The Chain Rule</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-25.html#section-25-beforeclass" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Before Class</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-25.html#section-25-composition" class="internal"><span class="codenumber">2.5.1.1</span> <span class="title">Review: Composition of Functions</span></a></div></li>
+<li><div class="toc-item"><a href="section-25.html#section-25-chain" class="internal"><span class="codenumber">2.5.1.2</span> <span class="title">The Chain Rule</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-25.html#section-25-preclass" class="internal"><span class="codenumber">2.5.2</span> <span class="title">Pre-Class Activities</span></a></div></li>
+<li><div class="toc-item"><a href="section-25.html#section-25-inclass" class="internal"><span class="codenumber">2.5.3</span> <span class="title">In Class</span></a></div></li>
+<li><div class="toc-item"><a href="section-25.html#section-25-afterclass" class="internal"><span class="codenumber">2.5.4</span> <span class="title">After Class Activities</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-26.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Implicit Differentiation</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-26.html#section-26-beforeclass" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Before Class</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-26.html#section-26-idea" class="internal"><span class="codenumber">2.6.1.1</span> <span class="title">The Idea</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="section-26.html#section-26-preclass" class="internal"><span class="codenumber">2.6.2</span> <span class="title">Pre-Class Activities</span></a></div></li>
+<li><div class="toc-item"><a href="section-26.html#section-26-inclass" class="internal"><span class="codenumber">2.6.3</span> <span class="title">In Class</span></a></div></li>
+<li><div class="toc-item"><a href="section-26.html#section-26-afterclass" class="internal"><span class="codenumber">2.6.4</span> <span class="title">After Class Activities</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-27.html" class="internal"><span class="codenumber">2.7</span> <span class="title">(X) Rates of Changes in the Natural and Social Sciences</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-28.html" class="internal"><span class="codenumber">2.8</span> <span class="title">Related Rates</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-28.html#section-28-beforeclass" class="internal"><span class="codenumber">2.8.1</span> <span class="title">Before Class</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-28.html#section-28-time" class="internal"><span class="codenumber">2.8.1.1</span> <span class="title">Functions of Time</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="section-28.html#section-28-preclass" class="internal"><span class="codenumber">2.8.2</span> <span class="title">Pre-Class Activities</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-28.html#section-28-inclass" class="internal"><span class="codenumber">2.8.3</span> <span class="title">In Class</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-28.html#section-28-rates" class="internal"><span class="codenumber">2.8.3.1</span> <span class="title">Related Rates</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="section-28.html#section-28-afterclass" class="internal"><span class="codenumber">2.8.4</span> <span class="title">After Class Activities</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch3.html" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Differentiation</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-31.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Maximum &amp; Minimum Values</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-31.html#section-31-beforeclass" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Before Class</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-31.html#section-31-definitions" class="internal"><span class="codenumber">3.1.1.1</span> <span class="title">Definitions</span></a></div></li>
+<li><div class="toc-item"><a href="section-31.html#section-31-results" class="internal"><span class="codenumber">3.1.1.2</span> <span class="title">Important Results</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-31.html#section-31-preclass" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Pre-Class Activities</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-31.html#section-31-inclass" class="internal"><span class="codenumber">3.1.3</span> <span class="title">In Class</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-31.html#section-31-critical" class="internal"><span class="codenumber">3.1.3.1</span> <span class="title">Critical Numbers</span></a></div></li>
+<li><div class="toc-item"><a href="section-31.html#section-31-finding-absolute" class="internal"><span class="codenumber">3.1.3.2</span> <span class="title">Finding Absolute Maxima &amp; Minima</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-31.html#section-31-afterclass" class="internal"><span class="codenumber">3.1.4</span> <span class="title">After Class Activities</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-32.html" class="internal"><span class="codenumber">3.2</span> <span class="title">(X) The Mean Value Theorem</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-32.html#section-32-beforeclass" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Before Class</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-32.html#section-32-rolles" class="internal"><span class="codenumber">3.2.1.1</span> <span class="title">Rolle's Theorem</span></a></div></li>
+<li><div class="toc-item"><a href="section-32.html#section-32-mvt" class="internal"><span class="codenumber">3.2.1.2</span> <span class="title">Mean Value Theorem</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-32.html#section-32-preclass" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Pre-Class Activities</span></a></div></li>
+<li><div class="toc-item"><a href="section-32.html#section-32-inclass" class="internal"><span class="codenumber">3.2.3</span> <span class="title">In Class</span></a></div></li>
+<li><div class="toc-item"><a href="section-32.html#section-32-afterclass" class="internal"><span class="codenumber">3.2.4</span> <span class="title">After Class Activities</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-33.html" class="internal"><span class="codenumber">3.3</span> <span class="title">How Derivatives Affect the Shape of a Graph</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-33.html#section-33-beforeclass" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Before Class</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-33.html#section-33-id-test" class="internal"><span class="codenumber">3.3.1.1</span> <span class="title">Increasing/Decereasing Test</span></a></div></li>
+<li><div class="toc-item"><a href="section-33.html#section-33-local-extrema" class="internal"><span class="codenumber">3.3.1.2</span> <span class="title">Local Extrema</span></a></div></li>
+<li><div class="toc-item"><a href="section-33.html#section-33-concavity" class="internal"><span class="codenumber">3.3.1.3</span> <span class="title">Concavity</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-33.html#section-33-preclass" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Pre-Class Activities</span></a></div></li>
+<li><div class="toc-item"><a href="section-33.html#section-33-inclass" class="internal"><span class="codenumber">3.3.3</span> <span class="title">In Class</span></a></div></li>
+<li><div class="toc-item"><a href="section-33.html#section-33-afterclass" class="internal"><span class="codenumber">3.3.4</span> <span class="title">After Class Activities</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-34.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Limits at Infinity &amp; Horizontal Asymptotes</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-34.html#section-34-beforeclass" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Before Class</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-34.html#section-34-ideas" class="internal"><span class="codenumber">3.4.1.1</span> <span class="title">The Ideas</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="section-34.html#section-34-preclass" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Pre-Class Activities</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-34.html#section-34-inclass" class="internal"><span class="codenumber">3.4.3</span> <span class="title">In Class</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-34.html#section-34-computing" class="internal"><span class="codenumber">3.4.3.1</span> <span class="title">Computing Limits at Infinity</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="section-34.html#section-34-afterclass" class="internal"><span class="codenumber">3.4.4</span> <span class="title">After Class Activities</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-35.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Summary of Curve Sketching</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-35.html#section-35-beforeclass" class="internal"><span class="codenumber">3.5.1</span> <span class="title">Before Class</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-35.html#section-35-summary" class="internal"><span class="codenumber">3.5.1.1</span> <span class="title">Summary of Graphing</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="section-35.html#section-35-preclass" class="internal"><span class="codenumber">3.5.2</span> <span class="title">Pre-Class Activities</span></a></div></li>
+<li><div class="toc-item"><a href="section-35.html#section-35-inclass" class="internal"><span class="codenumber">3.5.3</span> <span class="title">In Class</span></a></div></li>
+<li><div class="toc-item"><a href="section-35.html#section-35-afterclass" class="internal"><span class="codenumber">3.5.4</span> <span class="title">After Class Activities</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-36.html" class="internal"><span class="codenumber">3.6</span> <span class="title">(X) Graphing with Calculus and Calculators</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-37.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Optimization</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-37.html#section-37-beforeclass" class="internal"><span class="codenumber">3.7.1</span> <span class="title">Before Class</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-37.html#section-37-optimization" class="internal"><span class="codenumber">3.7.1.1</span> <span class="title">Optimization</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="section-37.html#section-37-preclass" class="internal"><span class="codenumber">3.7.2</span> <span class="title">Pre-Class Activities</span></a></div></li>
+<li><div class="toc-item"><a href="section-37.html#section-37-inclass" class="internal"><span class="codenumber">3.7.3</span> <span class="title">In Class</span></a></div></li>
+<li><div class="toc-item"><a href="section-37.html#section-37-afterclass" class="internal"><span class="codenumber">3.7.4</span> <span class="title">After Class Activities</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-38.html" class="internal"><span class="codenumber">3.8</span> <span class="title">(X) Newton's Method</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-39.html" class="internal"><span class="codenumber">3.9</span> <span class="title">Antiderivatives</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-39.html#section-39-beforeclass" class="internal"><span class="codenumber">3.9.1</span> <span class="title">Before Class</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-39.html#section-39-derivatives" class="internal"><span class="codenumber">3.9.1.1</span> <span class="title">Derivatives</span></a></div></li>
+<li><div class="toc-item"><a href="section-39.html#section-39-antiderivative" class="internal"><span class="codenumber">3.9.1.2</span> <span class="title">The Antiderivative</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-39.html#section-39-preclass" class="internal"><span class="codenumber">3.9.2</span> <span class="title">Pre-Class Activities</span></a></div></li>
+<li><div class="toc-item"><a href="section-39.html#section-39-inclass" class="internal"><span class="codenumber">3.9.3</span> <span class="title">In Class</span></a></div></li>
+<li><div class="toc-item"><a href="section-39.html#section-39-afterclass" class="internal"><span class="codenumber">3.9.4</span> <span class="title">After Class Activities</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch4.html" class="internal"><span class="codenumber">4</span> <span class="title">Integrals</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-41.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Areas &amp; Distance</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-41.html#section-41-beforeclass" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Before Class</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-41.html#section-41-area-problem" class="internal"><span class="codenumber">4.1.1.1</span> <span class="title">The Area Problem</span></a></div></li>
+<li><div class="toc-item"><a href="section-41.html#section-41-sigma-notation" class="internal"><span class="codenumber">4.1.1.2</span> <span class="title">Sigma Notation</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-41.html#section-41-preclass" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Pre-Class Activities</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-41.html#section-41-inclass" class="internal"><span class="codenumber">4.1.3</span> <span class="title">In Class</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-41.html#section-41-distance-problem" class="internal"><span class="codenumber">4.1.3.1</span> <span class="title">The Distance Problem</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="section-41.html#section-41-afterclass" class="internal"><span class="codenumber">4.1.4</span> <span class="title">After Class Activities</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-42.html" class="internal"><span class="codenumber">4.2</span> <span class="title">The Definite Integral</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-42.html#section-42-beforeclass" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Before Class</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-42.html#section-42-definition" class="internal"><span class="codenumber">4.2.1.1</span> <span class="title">Definition of the Definite Integral</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="section-42.html#section-42-preclass" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Pre-Class Activities</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-42.html#section-42-inclass" class="internal"><span class="codenumber">4.2.3</span> <span class="title">In Class</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-42.html#section-42-evaluating-integrals" class="internal"><span class="codenumber">4.2.3.1</span> <span class="title">Evaluating Integrals</span></a></div></li>
+<li><div class="toc-item"><a href="section-42.html#section-42-midpoint-rule" class="internal"><span class="codenumber">4.2.3.2</span> <span class="title">The Midpoint Rule</span></a></div></li>
+<li><div class="toc-item"><a href="section-42.html#section-42-properties" class="internal"><span class="codenumber">4.2.3.3</span> <span class="title">Properties of the Definite Integral</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-42.html#section-42-afterclass" class="internal"><span class="codenumber">4.2.4</span> <span class="title">After Class Activities</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-43.html" class="internal"><span class="codenumber">4.3</span> <span class="title">The Fundamental Theorem of Calculus</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-43.html#section-43-beforeclass" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Before Class</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-43.html#section-43-ftc1" class="internal"><span class="codenumber">4.3.1.1</span> <span class="title">The First Fundamental Theorem</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="section-43.html#section-43-preclass" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Pre-Class Activities</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-43.html#section-43-inclass" class="internal"><span class="codenumber">4.3.3</span> <span class="title">In Class</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-43.html#section-43-ftc2" class="internal"><span class="codenumber">4.3.3.1</span> <span class="title">The Second Fundamental Theorem</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="section-43.html#section-43-afterclass" class="internal"><span class="codenumber">4.3.4</span> <span class="title">After Class Activities</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-44.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Indefinite Integrals &amp; the Net Change Theorem</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-44.html#section-44-beforeclass" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Before Class</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-44.html#section-44-indefinite-integrals" class="internal"><span class="codenumber">4.4.1.1</span> <span class="title">Indefinite Integrals</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="section-44.html#section-44-preclass" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Pre-Class Activities</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-44.html#section-44-inclass" class="internal"><span class="codenumber">4.4.3</span> <span class="title">In Class</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-44.html#section-44-net-change" class="internal"><span class="codenumber">4.4.3.1</span> <span class="title">The Net Change Theorem</span></a></div></li>
+<li><div class="toc-item"><a href="section-44.html#section-44-practice" class="internal"><span class="codenumber">4.4.3.2</span> <span class="title">Practice</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-44.html#section-44-afterclass" class="internal"><span class="codenumber">4.4.4</span> <span class="title">After Class Activities</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-45.html" class="internal"><span class="codenumber">4.5</span> <span class="title">The Substitution Rule</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-45.html#section-45-beforeclass" class="internal"><span class="codenumber">4.5.1</span> <span class="title">Before Class</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-45.html#section-45-rule" class="internal"><span class="codenumber">4.5.1.1</span> <span class="title">The Rule for Indefinite &amp; Definite Integrals</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="section-45.html#section-45-preclass" class="internal"><span class="codenumber">4.5.2</span> <span class="title">Pre-Class Activities</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-45.html#section-45-inclass" class="internal"><span class="codenumber">4.5.3</span> <span class="title">In Class</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-45.html#section-45-examples" class="internal"><span class="codenumber">4.5.3.1</span> <span class="title">Examples</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="section-45.html#section-45-afterclass" class="internal"><span class="codenumber">4.5.4</span> <span class="title">After Class Activities</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch5.html" class="internal"><span class="codenumber">5</span> <span class="title">Applications of Integration</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-51.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Areas Between Curves</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-51.html#section-51-beforeclass" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Before Class</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-51.html#section-51-area" class="internal"><span class="codenumber">5.1.1.1</span> <span class="title">Area</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="section-51.html#section-51-preclass" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Pre-Class Activities</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-51.html#section-51-inclass" class="internal"><span class="codenumber">5.1.3</span> <span class="title">In Class</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-51.html#section-51-examples" class="internal"><span class="codenumber">5.1.3.1</span> <span class="title">Examples</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="section-51.html#section-51-afterclass" class="internal"><span class="codenumber">5.1.4</span> <span class="title">After Class Activities</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-52.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Volumes</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-52.html#section-52-beforeclass" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Before Class</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-52.html#section-52-volumes-crosssections" class="internal"><span class="codenumber">5.2.1.1</span> <span class="title">Volumes by Cross-Sections</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="section-52.html#section-52-preclass" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Pre-Class Activities</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-52.html#section-52-inclass" class="internal"><span class="codenumber">5.2.3</span> <span class="title">In Class</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-52.html#section-52-disk-method" class="internal"><span class="codenumber">5.2.3.1</span> <span class="title">Disk Method</span></a></div></li>
+<li><div class="toc-item"><a href="section-52.html#section-52-washer-method" class="internal"><span class="codenumber">5.2.3.2</span> <span class="title">Washer Method</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-52.html#section-52-afterclass" class="internal"><span class="codenumber">5.2.4</span> <span class="title">After Class Activities</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-53.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Volumes by Cylindrical Shells</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-53.html#section-53-beforeclass" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Before Class</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-53.html#section-53-slicing-cylinders" class="internal"><span class="codenumber">5.3.1.1</span> <span class="title">Slicing with Cylinders</span></a></div></li>
+<li><div class="toc-item"><a href="section-53.html#section-53-shell-method" class="internal"><span class="codenumber">5.3.1.2</span> <span class="title">The Shell Method</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-53.html#section-53-preclass" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Pre-Class Activities</span></a></div></li>
+<li><div class="toc-item"><a href="section-53.html#section-53-inclass" class="internal"><span class="codenumber">5.3.3</span> <span class="title">In Class</span></a></div></li>
+<li><div class="toc-item"><a href="section-53.html#section-53-afterclass" class="internal"><span class="codenumber">5.3.4</span> <span class="title">After Class Activities</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch6.html" class="internal"><span class="codenumber">6</span> <span class="title">Inverse Functions</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-61.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Inverse Functions</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-61.html#section-61-beforeclass" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Before Class</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-61.html#section-61-inverses-properties" class="internal"><span class="codenumber">6.1.1.1</span> <span class="title">Inverse Functions &amp; Properties</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="section-61.html#section-61-preclass" class="internal"><span class="codenumber">6.1.2</span> <span class="title">Pre-Class Activities</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-61.html#section-61-inclass" class="internal"><span class="codenumber">6.1.3</span> <span class="title">In Class</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-61.html#section-61-inverses-calculus" class="internal"><span class="codenumber">6.1.3.1</span> <span class="title">Calculus of Inverse Functions</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="section-61.html#section-61-afterclass" class="internal"><span class="codenumber">6.1.4</span> <span class="title">After Class Activities</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="section-62.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Exponential Functions &amp; Derivatives</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="section-62.html#section-62-beforeclass" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Before Class</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="section-62.html#section-62-exponential-functions" class="internal"><span class="codenumber">6.2.1.1</span> <span class="title">Exponential Functions</span></a></div></li>
+<li><div class="toc-item"><a href="section-62.html#section-62-exponentials-calculus" class="internal"><span class="codenumber">6.2.1.2</span> <span class="title">Calculus of Exponentials</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="section-62.html#section-62-preclass" class="internal"><span class="codenumber">6.2.2</span> <span class="title">Pre-Class Activities</span></a></div></li>
+<li>
+<div class="toc-item"><a href="section-62.html#section-62-inclass" class="internal"><span class="codenumber">6.2.3</span> <span class="title">In Class</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="section-62.html#section-62-examples" class="internal"><span class="codenumber">6.2.3.1</span> <span class="title">Examples</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="section-62.html#section-62-afterclass" class="internal"><span class="codenumber">6.2.4</span> <span class="title">After Class Activities</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="section-15"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.5</span> <span class="title">The Limit of a Function</span>
+</h2>
+<article class="objectives goal-like" id="objectives-5"><h3 class="heading"><span class="type">Objectives</span></h3>
+<ul class="disc">
+<li id="li-289"><div class="para" id="p-derived-li-289">Describe what it means for a function to have a finite or infinite limit and what it means for a limit to not exist</div></li>
+<li id="li-290"><div class="para" id="p-derived-li-290">Use and interpret limit notation</div></li>
+<li id="li-291"><div class="para" id="p-derived-li-291">Compute limits graphically and numerically</div></li>
+<li id="li-292"><div class="para" id="p-derived-li-292">Define one-sided limits and approximate them graphically and numerically</div></li>
+<li id="li-293"><div class="para" id="p-derived-li-293">Define and identify vertical asymptotes of a function</div></li>
+</ul></article><section class="subsection" id="section-15-beforeclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.5.1</span> <span class="title">Before Class</span>
+</h3>
+<figure class="figure figure-like" id="figure-7"><a class="external" href="https://mymedia.ou.edu/media/1.5-1/1_42ce57lj" target="_blank"><code class="code-inline tex2jax_ignore">https://mymedia.ou.edu/media/1.5-1/1_42ce57lj</code></a><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7<span class="period">.</span></span><span class="space"> </span>Pre-Class Video 1</figcaption></figure><section class="subsubsection" id="section-15-motivation"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">1.5.1.1</span> <span class="title">Motivating Example</span>
+</h4>
+<article class="example example-like" id="example-62"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.1</span><span class="period">.</span>
+</h5>Consider the function <span class="process-math">\(f(x) = x^3 -2x+1\text{.}\)</span>  A table of its values (to 6 decimal places) are given below: <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b2 r2 l2 t2 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(f(x)\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(f(x)\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(1.0\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(0.000000\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(3.0\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(22.000000\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(1.5\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(1.375000\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(2.5\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(11.625000\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(1.8\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(3.232000\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(2.2\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(7.248000\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(1.9\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(4.059000\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(2.1\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(6.061000\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(1.95\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(4.514875\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(2.05\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(5.515125\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(1.99\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(4.900599\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(2.01\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(5.100601\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(1.999\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(4.990006\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(2.001\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(5.010006\)</span></td>
+</tr>
+</table></div> <div class="para" id="p-62">Describe what is happening to the output values as <span class="process-math">\(x\)</span> approaches 2.</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-64" id="solution-64"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-64"><div class="solution solution-like">As <span class="process-math">\(x\to 2\text{,}\)</span> <span class="process-math">\(f(x)\to 5\)</span>
+</div></div>
+</div></article></section><section class="subsubsection" id="section-15-limit"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">1.5.1.2</span> <span class="title">The Limit</span>
+</h4>
+<article class="definition definition-like" id="definition-12"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.5.2</span><span class="period">.</span><span class="space"> </span><span class="title">Intuitive Definition of a Limit.</span>
+</h5>  Suppose <span class="process-math">\(f(x)\)</span> is defined when <span class="process-math">\(x\)</span> is near the input <span class="process-math">\(a\text{.}\)</span>  We write<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to a} f(x) = L \qquad f(x)\to L\text{ as }x\to a
+\end{equation*}
+</div>and say <div class="para" id="p-63">“the limit of <span class="process-math">\(f(x)\text{,}\)</span> as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(a\text{,}\)</span> equals <span class="process-math">\(L\)</span>” or “<span class="process-math">\(f(x)\)</span> approaches <span class="process-math">\(L\)</span> as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(a\)</span>”</div> <div class="para" id="p-64">if we can make the values of <span class="process-math">\(f(x)\)</span> arbitrarily close to <span class="process-math">\(L\)</span> by restricting <span class="process-math">\(x\)</span> to be sufficiently close to <span class="process-math">\(a\)</span> (on either side of <span class="process-math">\(a\)</span>) but not equal to <span class="process-math">\(a\)</span> itself.</div></article><div class="para" id="p-65">There is a more rigorous definition given in Section 1.7.  One important aspect of the definition of a limit is that we do not require the function to <em class="emphasis">exist</em> at the input <span class="process-math">\(a\text{.}\)</span>
+</div>
+<article class="assemblage assemblage-like" id="assemblage-7"><h5 class="heading"><span class="title">A Word About Notation.</span></h5>
+<div class="para" id="p-66">In mathematics, notation is the way you succinctly communicate your ideas.  Notation is part of the  “language” of math; proper notation ensures proper communication.  Please pay very careful attention to how I am writing the notation in class.</div>
+<div class="para" id="p-67">Notation can be a confusing aspect of mathematics; that's ok.  It happens for Calculus I students and even for tenured professors.  If you have any questions, please refer to your notes and/or ask me!  I am happy to help you navigate things that are confusing or don't make sense to you.</div></article><article class="example example-like" id="example-63"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.3</span><span class="period">.</span>
+</h5>Draw three graphs so that the limit <span class="process-math">\(L\)</span> is defined at the input <span class="process-math">\(a\text{,}\)</span> but <span class="process-math">\(f(a)\)</span> is distinct at all three points.  This illustrates three possibilities when dealing with limits.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-65" id="solution-65"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-65"><div class="solution solution-like"><div class="sidebyside"><div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;">
+<div class="sbspanel top" style="width:31.0344827586207%;"><img src="generated/latex-image/image-59.svg" role="img" class="contained" alt="The graph of \(y=x\) with a point located at \((a,f(a))\)"></div>
+<div class="sbspanel top" style="width:31.0344827586207%;"><img src="generated/latex-image/image-60.svg" role="img" class="contained" alt="The graph of \(y=x\) with the point located at \((a,f(a))\) removed"></div>
+<div class="sbspanel top" style="width:31.0344827586207%;"><img src="generated/latex-image/image-61.svg" role="img" class="contained" alt="The graph of \(y=x\) with a point located at \((a,f(a))\) removed and moved above"></div>
+</div></div></div></div>
+</div></article><article class="example example-like" id="example-64"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.4</span><span class="period">.</span>
+</h5>Consider <span class="process-math">\(f(x) = \dfrac{x-1}{x^2-1}\text{.}\)</span>  What is <span class="process-math">\(\ds \lim_{x\to 1} f(x)\text{?}\)</span> <ol class="lower-alpha">
+<li id="li-294">Fill out the table below (using a calculator) to six decimal places.  What do you think the limit will be?  Why? <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b2 r2 l2 t2 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(f(x)\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(f(x)\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines">0</td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines">2</td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines">0.5</td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines">1.5</td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines">0.75</td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines">1.25</td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines">0.99</td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+<td class="c m b2 r2 l0 t0 lines">1.01</td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+</tr>
+</table></div>
+</li>
+<li id="li-295"><div class="para" id="p-derived-li-295">Simplify the function.  Can you determine the limit from your simplified version?</div></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-tabular" data-refid="hk-solution-66" id="solution-66"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-66"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-296"><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b2 r2 l2 t2 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(f(x)\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(f(x)\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines">0</td>
+<td class="c m b2 r2 l0 t0 lines">1</td>
+<td class="c m b2 r2 l0 t0 lines">2</td>
+<td class="c m b2 r2 l0 t0 lines">0.333333</td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines">0.5</td>
+<td class="c m b2 r2 l0 t0 lines">0.666667</td>
+<td class="c m b2 r2 l0 t0 lines">1.5</td>
+<td class="c m b2 r2 l0 t0 lines">.4</td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines">0.75</td>
+<td class="c m b2 r2 l0 t0 lines">0.571429</td>
+<td class="c m b2 r2 l0 t0 lines">1.25</td>
+<td class="c m b2 r2 l0 t0 lines">0.444444</td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines">0.99</td>
+<td class="c m b2 r2 l0 t0 lines">0.502513</td>
+<td class="c m b2 r2 l0 t0 lines">1.01</td>
+<td class="c m b2 r2 l0 t0 lines">0.497512</td>
+</tr>
+</table></div></li>
+<li id="li-297"><div class="para" id="p-derived-li-297">The function simplifies to <span class="process-math">\(\dfrac{1}{x+1}\text{,}\)</span> so at <span class="process-math">\(x=1\)</span> we would expect an answer of <span class="process-math">\(\dfrac{1}{2}\)</span>
+</div></li>
+</ol></div></div>
+</div></article></section></section><section class="subsection" id="section-15-preclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.5.2</span> <span class="title">Pre-Class Activities</span>
+</h3>
+<article class="example example-like" id="example-65"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.5</span><span class="period">.</span>
+</h4>What if instead we tweaked the function in the previous example to be<div class="displaymath process-math">
+\begin{equation*}
+g(x) = \begin{cases}\dfrac{x-1}{x^2-1} \amp x\neq 1 \\ 2 \amp x = 1 \end{cases}
+\end{equation*}
+</div>What will happen to the limit?  Explain your answer.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-67" id="solution-67"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-67"><div class="solution solution-like">Nothing changes; the limit cares about "expected" output, not actual output.</div></div>
+</div></article><article class="example example-like" id="example-66"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.6</span><span class="period">.</span>
+</h4>
+<ol class="lower-alpha">
+<li id="li-298"><div class="para" id="p-derived-li-298">Translate the expression <span class="process-math">\(\ds \lim_{x\to 3} f(x) = 7\)</span> from math into English.  Explain the sentence you wrote.</div></li>
+<li id="li-299"><div class="para" id="p-derived-li-299">Is it possible for <span class="process-math">\(f(3)\)</span> to be <span class="process-math">\(-10\)</span> instead of 7?  Why or why not?</div></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-68" id="solution-68"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-68"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-300"><div class="para" id="p-derived-li-300">As <span class="process-math">\(x\)</span> approaches 3, the output approaches 7.  This means that when the inputs get close to 3, the outputs get closer to 7</div></li>
+<li id="li-301"><div class="para" id="p-derived-li-301">Yes.  Limits are concerned with expected output, not actual output; a function can have a different output than its limit at the same point.</div></li>
+</ol></div></div>
+</div></article></section><section class="subsection" id="section-15-inclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.5.3</span> <span class="title">In Class</span>
+</h3>
+<section class="subsubsection" id="section-15-onesided"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">1.5.3.1</span> <span class="title">One-Sided Limits</span>
+</h4>
+<div class="para" id="p-68">When we developed the intuition of a limit, we looked at input values which were smaller and larger than our desired input.  These values are to the <em class="emphasis">left</em> and <em class="emphasis">right</em> of our input; secretly, we were taking <em class="emphasis">one-sided limits</em>.</div>
+<article class="definition definition-like" id="definition-13"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.5.7</span><span class="period">.</span><span class="space"> </span><span class="title">One-Sided Limits.</span>
+</h5> Suppose <span class="process-math">\(f(x)\)</span> is defined when <span class="process-math">\(x\)</span> is near the input <span class="process-math">\(a\text{.}\)</span>  We write<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to a^+} f(x) = L
+\end{equation*}
+</div>and say <div class="para" id="p-69">“the limit of <span class="process-math">\(f(x)\text{,}\)</span> as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(a\)</span> from the right, equals <span class="process-math">\(L\)</span>” or “<span class="process-math">\(f(x)\)</span> approaches <span class="process-math">\(L\)</span> as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(a\)</span> from the right”</div> <div class="para logical" id="p-70">
+<div class="para">if we can make the values of <span class="process-math">\(f(x)\)</span> arbitrarily close to <span class="process-math">\(L\)</span> by restricting <span class="process-math">\(x\)</span> to be sufficiently close to <span class="process-math">\(a\)</span> (using <span class="process-math">\(x \lt a\)</span>).  We write</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to a^-} f(x) = L
+\end{equation*}
+</div>
+</div> and say <div class="para" id="p-71">“the limit of <span class="process-math">\(f(x)\text{,}\)</span> as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(a\)</span> from the left, equals <span class="process-math">\(L\)</span>” or “<span class="process-math">\(f(x)\)</span> approaches <span class="process-math">\(L\)</span> as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(a\)</span> from the left”</div> <div class="para" id="p-72">if we can make the values of <span class="process-math">\(f(x)\)</span> arbitrarily close to <span class="process-math">\(L\)</span> by restricting <span class="process-math">\(x\)</span> to be sufficiently close to <span class="process-math">\(a\)</span> (using <span class="process-math">\(x \gt a\)</span>)</div></article><article class="assemblage assemblage-like" id="assemblage-8"><h5 class="heading"><span class="title">Existence of a Limit.</span></h5>
+<div class="para" id="p-73">A function <span class="process-math">\(f(x)\)</span> has a limit at <span class="process-math">\(x = c\)</span> if and only if its one-sided limits exist and agree.</div></article><article class="example example-like" id="example-67"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.8</span><span class="period">.</span>
+</h5>Use the graph of <span class="process-math">\(g\)</span> to answer the following: <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-62.svg" role="img" class="contained" alt="This graph is not filled in at \((3,7)\text{,}\) is filled in at \((3,5)\text{,}\) and continues."></div> <ol class="lower-alpha">
+<li id="li-302"><div class="para" id="p-derived-li-302"><span class="process-math">\(\displaystyle \ds \lim_{x\to 4^-} g(x)=\)</span></div></li>
+<li id="li-303"><div class="para" id="p-derived-li-303"><span class="process-math">\(\displaystyle \ds \lim_{x\to 4^+} g(x)=\)</span></div></li>
+<li id="li-304"><div class="para" id="p-derived-li-304"><span class="process-math">\(\displaystyle \ds \lim_{x\to 4} g(x)=\)</span></div></li>
+<li id="li-305"><div class="para" id="p-derived-li-305"><span class="process-math">\(\displaystyle \ds \lim_{x\to 3^-} g(x)=\)</span></div></li>
+<li id="li-306"><div class="para" id="p-derived-li-306"><span class="process-math">\(\displaystyle \ds \lim_{x\to 3^+} g(x)=\)</span></div></li>
+<li id="li-307"><div class="para" id="p-derived-li-307"><span class="process-math">\(\displaystyle \ds \lim_{x\to 3} g(x)=\)</span></div></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-69" id="solution-69"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-69"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-308"><div class="para" id="p-derived-li-308"><span class="process-math">\(\displaystyle \ds \lim_{x\to 4^-} g(x)=2\)</span></div></li>
+<li id="li-309"><div class="para" id="p-derived-li-309"><span class="process-math">\(\displaystyle \ds \lim_{x\to 4^+} g(x)=2\)</span></div></li>
+<li id="li-310"><div class="para" id="p-derived-li-310"><span class="process-math">\(\displaystyle \ds \lim_{x\to 4} g(x)=2\)</span></div></li>
+<li id="li-311"><div class="para" id="p-derived-li-311"><span class="process-math">\(\displaystyle \ds \lim_{x\to 3^-} g(x)=6\)</span></div></li>
+<li id="li-312"><div class="para" id="p-derived-li-312"><span class="process-math">\(\displaystyle \ds \lim_{x\to 3^+} g(x)=5\)</span></div></li>
+<li id="li-313"><div class="para" id="p-derived-li-313"><span class="process-math">\(\displaystyle \ds \lim_{x\to 3} g(x) \text{ does not exist}\)</span></div></li>
+</ol></div></div>
+</div></article><article class="example example-like" id="example-68"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.9</span><span class="period">.</span>
+</h5>Use a calculator to examine the limit behavior of the function <span class="process-math">\(r(p) = \dfrac{p^2-64}{p+8}\)</span> at <span class="process-math">\(p = -8\text{.}\)</span>  Record your answers will full decimal accuracy, and round your final answer to the thousandths place, if necessary. <div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel fixed-width top" style="width:44.4444444444444%;"><table class="tabular">
+<tr>
+<td class="c m b2 r2 l2 t2 lines"><span class="process-math">\(p\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(r(p)\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-8.1\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-8.01\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-8.001\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-8.0001\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-8.00001\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(\ds \lim_{p\to -8^-}r(p)  =\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+</table></div>
+<div class="sbspanel fixed-width top" style="width:44.4444444444444%;"><table class="tabular">
+<tr>
+<td class="c m b2 r2 l2 t2 lines"><span class="process-math">\(p\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(r(p)\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-7.9\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-7.99\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-7.999\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-7.9999\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-7.99999\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(\ds \lim_{p\to -8^+}r(p)  =\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+</table></div>
+</div></div> <div class="para logical" id="p-74"><div class="displaymath process-math">
+\begin{equation*}
+\ds \lim_{p\to -8}r(p)=
+\end{equation*}
+</div></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-tabular" data-refid="hk-solution-70" id="solution-70"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-70"><div class="solution solution-like">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel fixed-width top" style="width:44.4444444444444%;"><table class="tabular">
+<tr>
+<td class="c m b2 r2 l2 t2 lines"><span class="process-math">\(p\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(r(p)\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-8.1\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(-16.1\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-8.01\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(-16.01\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-8.001\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(-16.001\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-8.0001\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(-16.0001\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-8.00001\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(-16.00001\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(\ds \lim_{p\to -8^-}r(p)  = \)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(-16 \)</span></td>
+</tr>
+</table></div>
+<div class="sbspanel fixed-width top" style="width:44.4444444444444%;"><table class="tabular">
+<tr>
+<td class="c m b2 r2 l2 t2 lines"><span class="process-math">\(p\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(r(p)\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-7.9\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(-15.9\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-7.99\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(-15.99\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-7.999\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(-15.999\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-7.9999\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(-15.9999\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-7.99999\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(-15.99999\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(\ds \lim_{p\to -8^+}r(p)  = \)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(-16\)</span></td>
+</tr>
+</table></div>
+</div></div> <div class="para logical" id="p-75"><div class="displaymath process-math">
+\begin{equation*}
+\ds \lim_{p\to -8}r(p)= -16
+\end{equation*}
+</div></div>
+</div></div>
+</div></article></section><section class="subsubsection" id="section-15-infinite"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">1.5.3.2</span> <span class="title">Infinite Limits</span>
+</h4>
+<article class="example example-like" id="example-69"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.10</span><span class="period">.</span>
+</h5>Estimate <span class="process-math">\(\ds \lim_{x\to 0} -\dfrac{1}{x^2}\text{.}\)</span> <div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel fixed-width top" style="width:44.4444444444444%;"><table class="tabular">
+<tr>
+<td class="c m b2 r2 l2 t2 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(-\dfrac{1}{x^2}\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-0.1\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-0.01\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-0.001\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-0.0001\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-0.00001\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(\ds \lim_{x\to 0^-}\lrpar{-\dfrac{1}{x^2}} =\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+</table></div>
+<div class="sbspanel fixed-width top" style="width:44.4444444444444%;"><table class="tabular">
+<tr>
+<td class="c m b2 r2 l2 t2 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(-\dfrac{1}{x^2}\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(0.1\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(0.01\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(0.001\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(0.0001\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(0.00001\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(\ds \lim_{x\to 0^+}\lrpar{-\dfrac{1}{x^2}} =\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\)</span></td>
+</tr>
+</table></div>
+</div></div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to 0}\lrpar{-\dfrac{1}{x^2}}=
+\end{equation*}
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-tabular" data-refid="hk-solution-71" id="solution-71"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-71"><div class="solution solution-like">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel fixed-width top" style="width:44.4444444444444%;"><table class="tabular">
+<tr>
+<td class="c m b2 r2 l2 t2 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(-\dfrac{1}{x^2}\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-0.1\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(-100\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-0.01\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(-10000\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-0.001\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(-1000000\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-0.0001\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(-100000000\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(-0.00001\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(-10000000000\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(\ds \lim_{x\to 0^-}\lrpar{-\dfrac{1}{x^2}} =\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(-\infty\)</span></td>
+</tr>
+</table></div>
+<div class="sbspanel fixed-width top" style="width:44.4444444444444%;"><table class="tabular">
+<tr>
+<td class="c m b2 r2 l2 t2 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(-\dfrac{1}{x^2}\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(0.1\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(-100\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(0.01\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(-10000\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(0.001\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(-1000000\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(0.0001\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(-100000000\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(0.00001\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(-10000000000\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(\ds \lim_{x\to 0^+}\lrpar{-\dfrac{1}{x^2}} =\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(-\infty\)</span></td>
+</tr>
+</table></div>
+</div></div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to 0}\lrpar{-\dfrac{1}{x^2}}= -\infty
+\end{equation*}
+</div>
+</div></div>
+</div></article><article class="question example-like" id="question-4"><h5 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.5.11</span><span class="period">.</span>
+</h5>What is different about these outputs than in our previous examples?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-72" id="solution-72"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-72"><div class="solution solution-like">Answers vary</div></div>
+</div></article><article class="assemblage assemblage-like" id="assemblage-9"><h5 class="heading"><span class="title">Notation.</span></h5>
+<div class="para" id="p-76">We use the notation <span class="process-math">\(\infty\)</span> or <span class="process-math">\(-\infty\)</span> to indicate a value which gets arbitrarily large.  IT IS NOT A NUMBER!</div></article><article class="definition definition-like" id="definition-14"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.5.12</span><span class="period">.</span><span class="space"> </span><span class="title">Intuitive Definition of an Infinite Limit.</span>
+</h5>  <div class="para logical" id="p-77">
+<div class="para">Let <span class="process-math">\(f\)</span> be a function defined on both sides of <span class="process-math">\(a\text{,}\)</span> except possibly at <span class="process-math">\(a\)</span> itself.  If the values of <span class="process-math">\(f(x)\)</span> can be made arbitrarily large, by taking <span class="process-math">\(x\)</span> sufficiently close to <span class="process-math">\(a\)</span> (but not equal to <span class="process-math">\(a\)</span>).  We denote this as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to a} f(x) = \infty
+\end{equation*}
+</div>
+</div> <div class="para logical" id="p-78">
+<div class="para">If the values can be made arbitrarily negative, we denote this as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to a} f(x) = -\infty
+\end{equation*}
+</div>
+</div> <div class="para" id="p-79">One-sided limits are defined similarly.</div></article><article class="example example-like" id="example-70"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.13</span><span class="period">.</span>
+</h5>Sketch an example of each of the following: <ol class="lower-alpha">
+<li id="li-314"><div class="para" id="p-derived-li-314"><span class="process-math">\(\displaystyle \displaystyle \lim_{x\to a^-} f(x) = \infty\)</span></div></li>
+<li id="li-315"><div class="para" id="p-derived-li-315"><span class="process-math">\(\displaystyle \displaystyle \lim_{x\to a^+} f(x) = \infty\)</span></div></li>
+<li id="li-316"><div class="para" id="p-derived-li-316"><span class="process-math">\(\displaystyle \displaystyle \lim_{x\to a} f(x) = \infty\)</span></div></li>
+<li id="li-317"><div class="para" id="p-derived-li-317"><span class="process-math">\(\displaystyle \displaystyle \lim_{x\to a^-} f(x) = -\infty\)</span></div></li>
+<li id="li-318"><div class="para" id="p-derived-li-318"><span class="process-math">\(\displaystyle \displaystyle \lim_{x\to a^+} f(x) = -\infty\)</span></div></li>
+<li id="li-319"><div class="para" id="p-derived-li-319"><span class="process-math">\(\displaystyle \displaystyle \lim_{x\to a} f(x) = -\infty\)</span></div></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-73" id="solution-73"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-73"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-320"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-63.svg" role="img" class="contained" alt="A graph with vertical asymptote at \(x=a\text{,}\) increasing as \(x\to a^-\)"></div></li>
+<li id="li-321"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-64.svg" role="img" class="contained" alt="A graph with vertical asymptote at \(x=a\text{,}\) increasing as \(x\to a^+\)"></div></li>
+<li id="li-322"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-65.svg" role="img" class="contained" alt="A graph with vertical asymptote at \(x=a\text{,}\) increasing as \(x\to a^-\) and as \(x\to a^+\)"></div></li>
+<li id="li-323"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-66.svg" role="img" class="contained" alt="A graph with vertical asymptote at \(x=a\text{,}\) decreasing as \(x\to a^-\)"></div></li>
+<li id="li-324"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-67.svg" role="img" class="contained" alt="A graph with vertical asymptote at \(x=a\text{,}\) decreasing as \(x\to a^+\)"></div></li>
+<li id="li-325"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-68.svg" role="img" class="contained" alt="A graph with vertical asymptote at \(x=a\text{,}\) decreasing as \(x\to a^-\) and \(x\to a^+\)"></div></li>
+</ol></div></div>
+</div></article><article class="definition definition-like" id="definition-15"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.5.14</span><span class="period">.</span><span class="space"> </span><span class="title">Vertical Asymptote.</span>
+</h5>  The vertical line <span class="process-math">\(x = a\)</span> is called a <dfn class="terminology">vertical asymptote</dfn> of the curve <span class="process-math">\(y = f(x)\)</span> if at least one of the following statements is true:<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to a} f(x) = \infty \qquad \lim_{x\to a^-} f(x) = \infty \qquad \lim_{x\to a^+}f(x) = \infty
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to a} f(x) = -\infty \qquad \lim_{x\to a^-} f(x) = -\infty \qquad \lim_{x\to a^+} f(x) = -\infty
+\end{equation*}
+</div></article><article class="example example-like" id="example-71"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.15</span><span class="period">.</span>
+</h5>Find the left- and right-hand limits for the function <span class="process-math">\(f(x) = \dfrac{4x}{x-6}\)</span> at <span class="process-math">\(x = 6\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-74" id="solution-74"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-74"><div class="solution solution-like">
+<span class="process-math">\(\ds \lim_{x\to 6^-} \dfrac{4x}{x-6} = -\infty\)</span> and <span class="process-math">\(\ds \lim_{x\to 6^+} \dfrac{4x}{x-6} = \infty\)</span>
+</div></div>
+</div></article><article class="example example-like" id="example-72"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.16</span><span class="period">.</span>
+</h5>In the theory of relativity, the mass of a particle with velocity <span class="process-math">\(v\)</span> is given by <span class="process-math">\(m = \dfrac{m_0}{\sqrt{1-v^2/c^2}}\text{,}\)</span> where <span class="process-math">\(m_0\)</span> is the mass of the particle at rest and <span class="process-math">\(c\)</span> is the speed of light.  What happens as <span class="process-math">\(v\to c^-\text{?}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-75" id="solution-75"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-75"><div class="solution solution-like">As <span class="process-math">\(v\to c^-\text{,}\)</span> <span class="process-math">\(m\to \infty\text{,}\)</span> since we create a vertical asymptote in the function.</div></div>
+</div></article></section></section><section class="subsection" id="section-15-afterclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.5.4</span> <span class="title">After Class Activities</span>
+</h3>
+<article class="example example-like" id="example-73"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.17</span><span class="period">.</span>
+</h4>For the function <span class="process-math">\(g\)</span> whose graph is given below, state the value of each quantity (if it exist).  If it does not exist, explain why. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/15fig1.svg" class="contained"></div> <ol class="lower-alpha">
+<li id="li-326"><div class="para" id="p-derived-li-326"><span class="process-math">\(\displaystyle \ds \lim_{t\to 0^-} g(t)\)</span></div></li>
+<li id="li-327"><div class="para" id="p-derived-li-327"><span class="process-math">\(\displaystyle \ds \lim_{t\to 0^+} g(t)\)</span></div></li>
+<li id="li-328"><div class="para" id="p-derived-li-328"><span class="process-math">\(\displaystyle \ds \lim_{t\to 0} g(t)\)</span></div></li>
+<li id="li-329"><div class="para" id="p-derived-li-329"><span class="process-math">\(\displaystyle \ds \lim_{t\to 2^-} g(t)\)</span></div></li>
+<li id="li-330"><div class="para" id="p-derived-li-330"><span class="process-math">\(\displaystyle \ds \lim_{t\to 2^+} g(t)\)</span></div></li>
+<li id="li-331"><div class="para" id="p-derived-li-331"><span class="process-math">\(\displaystyle \ds \lim_{t\to 2} g(t)\)</span></div></li>
+<li id="li-332"><div class="para" id="p-derived-li-332"><span class="process-math">\(\displaystyle g(2)\)</span></div></li>
+<li id="li-333"><div class="para" id="p-derived-li-333"><span class="process-math">\(\displaystyle \ds \lim_{t\to 4} g(t)\)</span></div></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-76" id="solution-76"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-76"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-334"><div class="para" id="p-derived-li-334"><span class="process-math">\(\displaystyle -1\)</span></div></li>
+<li id="li-335"><div class="para" id="p-derived-li-335"><span class="process-math">\(\displaystyle -2\)</span></div></li>
+<li id="li-336"><div class="para" id="p-derived-li-336"><span class="process-math">\(\displaystyle DNE\)</span></div></li>
+<li id="li-337"><div class="para" id="p-derived-li-337"><span class="process-math">\(\displaystyle 2\)</span></div></li>
+<li id="li-338"><div class="para" id="p-derived-li-338"><span class="process-math">\(\displaystyle 0\)</span></div></li>
+<li id="li-339"><div class="para" id="p-derived-li-339"><span class="process-math">\(\displaystyle DNE\)</span></div></li>
+<li id="li-340"><div class="para" id="p-derived-li-340"><span class="process-math">\(\displaystyle 1\)</span></div></li>
+<li id="li-341"><div class="para" id="p-derived-li-341"><span class="process-math">\(\displaystyle 3\)</span></div></li>
+</ol></div></div>
+</div></article><article class="example example-like" id="example-74"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.18</span><span class="period">.</span>
+</h4>Sketch a graph of an example of a function <span class="process-math">\(f\)</span> that satisfies the given conditions: <span class="process-math">\(\ds \lim_{x\to 0} f(x) = 1\text{,}\)</span> <span class="process-math">\(\ds \lim_{x\to 3^-} f(x) = -2\text{,}\)</span> <span class="process-math">\(\ds \lim_{x\to 3^+} f(x) = 2\text{,}\)</span> <span class="process-math">\(f(0) = -1\text{,}\)</span> <span class="process-math">\(f(3) = 1\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-77" id="solution-77"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-77"><div class="solution solution-like">Answers vary</div></div>
+</div></article><article class="example example-like" id="example-75"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.19</span><span class="period">.</span>
+</h4>Determine the limits for the following functions: <ol class="lower-alpha">
+<li id="li-342"><div class="para" id="p-derived-li-342"><span class="process-math">\(\displaystyle \ds \lim_{x\to 5^+} \dfrac{x+1}{x-5}\)</span></div></li>
+<li id="li-343"><div class="para" id="p-derived-li-343"><span class="process-math">\(\displaystyle \ds \lim_{x\to 5^-} \dfrac{x+1}{x-5}\)</span></div></li>
+<li id="li-344"><div class="para" id="p-derived-li-344"><span class="process-math">\(\displaystyle \ds \lim_{x\to 2\pi^+} x\csc x\)</span></div></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-78" id="solution-78"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-78"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-345"><div class="para" id="p-derived-li-345"><span class="process-math">\(\displaystyle \infty\)</span></div></li>
+<li id="li-346"><div class="para" id="p-derived-li-346"><span class="process-math">\(\displaystyle -\infty\)</span></div></li>
+<li id="li-347"><div class="para" id="p-derived-li-347"><span class="process-math">\(\displaystyle \infty\)</span></div></li>
+</ol></div></div>
+</div></article></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="section-14.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="section-16.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
+</div></main>
+</div>
+<div class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org"><div class="name">Authored in PreTeXt</div>
+<div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259 "></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0  472  9732 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496 A 4241 4241  0  0  1  4724  3590 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259 A 4507 4507  0  0  1  4724  9448 "></path><polyline points="5385,4299 4062,8125 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8598,3496 8598,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="850,3496 850,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="4960,9685 4488,9685 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="3070,4582 1889,6141 3070,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="6418,4582 7600,6141 6418,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8976,3590 8976,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732 "></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy"><div class="name">Powered by Runestone</div>
+<img class="logo" title="Powered by Runestone" src="https://runestone.academy/runestone/static/rectangle_badge.png" alt="Powered by Runestone"></a><a class="mathjax-logo" href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a>
+</div>
+</body>
+</html>
