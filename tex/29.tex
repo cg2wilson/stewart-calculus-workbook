@@ -1,0 +1,229 @@
+\documentclass[notes]{subfiles}
+
+\begin{document}
+	\addcontentsline{toc}{section}{2.9 - Linear Approximations \& Differentials}
+	\refstepcounter{section}
+	\fancyhead[RO,LE]{\bfseries \large\nameref{cs29}} 
+	\fancyhead[LO,RE]{\bfseries \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Chapter 2.9}
+	
+\section*{Linear Approximations \& Differentials}\label{cs29}
+	\subsection*{Before Class}
+	\addcontentsline{toc}{subsection}{Before Class}
+	\subsection*{Linear Approximation}
+	\addcontentsline{toc}{subsubsection}{Linear Approximation}
+		\begin{ex}
+			A linear function takes the form $f(x) = mx + b$, where $m$ is the slope and $b$ is the $y$-intercept.  Describe what the slope and $y$-intercept \emph{mean}.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Any line can also be described in terms of graphical transformations to the base graph of $y = x$.
+			\begin{enumerate}[(a)]
+				\item Write the transformation necessary to shift the graph $a$ units horizontally.
+					\vs{1}
+					
+				\item Write the transformation necessary to shift the function from (a) $b$ units vertically.
+					\vs{1}
+					
+				\item Write the transformation necessary to make the slope of the function from (b) $m$.
+					\vs{1}
+					
+				\item Combine parts (a) - (c) to write the transformed function; call the new line $L$.
+					\vs{1}
+					\newpage
+					
+				\item Assume that the slope of $L$ is the slope of the tangent line to some function $f(x)$ at the input $a$; rewrite $L$ with this new slope.
+					\vs{1}
+					
+				\item Now, assume that the vertical shift will move $L$ up to the function $f(x)$ at the input $a$; rewrite $L$ with this vertical shift.
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+		Here is a picture of what the previous exercise did for us:
+			\vs{2}
+
+		\begin{defn}[Linearization]
+			Let the function $f$ be differentiable at input $x = a$.  The \textbf{linearization} of $f$ at $a$ is given by the equation
+				\showto{ins}{
+					\[L(x) = f(a) + f'(a)(x-a)\]
+				}
+				\showto{st}{
+					\vspace{.5in}
+				}
+		\end{defn}
+			
+		\begin{question}
+			What is the point of finding the linearization of a function?
+		\end{question}
+			\vs{1}
+			\newpage
+		
+		\begin{ex}
+			Find the linearization of the function $f(x) = \sqrt{x}$ at the input $x = 4$.
+		\end{ex}	
+			\vs{1}\\
+			\newsec $ $
+	\subsubsection*{Pre-Class Activities}
+	\addcontentsline{toc}{subsubsection}{Pre-Class Activities}
+			
+		\begin{ex}
+			Find the linearization of the function $\sqrt{x}$ at the inputs $x = 16$ and at $x = 36$.  
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			You've now found three linearizations for the same function.  Why do you think we need three different ones?  Would one suffice?
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+	\subsection*{In-Class}
+	\addcontentsline{toc}{subsection}{In-Class}
+		\begin{ex}
+			\begin{enumerate}[(a)]
+				\item Find the linearization of $\sqrt{x}$ at the input $x = 100$
+					\vs{1}
+					
+				\item Use your linearization in (a) to estimate the value of $\sqrt{99}$.
+					\vs{1}
+					
+				\item Use the linearization to estimate the value of $\sqrt{110}$.
+					\vs{1}
+					
+				\item Use the linearization to estimate the value of $\sqrt{121}$.  Is this an appropriate estimation?
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+			\newpage
+		
+		\begin{ex}
+			Find the linearization for $f(x) = \sin x$ at $x = 0$.  How is this related to the limit $\ds \lim_{x\to 0} \dfrac{\sin x}{x} = 1$?
+		\end{ex}
+			\vs{1}
+			
+			
+		\begin{ex}
+			\begin{enumerate}[(a)]
+				\item Find the linearization of the function $f(x) = \sqrt[3]{2 + x}$ at $a = 6$.
+					\vs{1}
+					
+				\item Estimate the value of $\sqrt[3]{8.1}$
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+			\newpage
+			
+	\subsubsection*{Differentials}
+	\addcontentsline{toc}{subsubsection}{Differentials}
+		Linearization allows us to estimate \emph{function values} using derivatives.  We can also investigate how a function responds to a small change in input$-$this leads to the idea of a differential.
+		
+		\begin{defn}[Differential]
+			If $y = f(x)$, where $f$ is a differentiable function, then the \textbf{differentials} $dy$ and $dx$ are related by the equation
+			\showto{ins}{
+			 $dy = f'(x)\, dx$
+			}
+			\showto{st}{
+				\\ \\ \\ \\
+			}
+			\showto{ins}{
+				where $dx$ is considered an \emph{independent variable} and $dy$ is considered a \emph{dependent variable}.
+			}
+			\showto{st}{
+				where $dx$ is considered \blank{3} and $dy$ is considered\\[15pt] \blank{3}.
+			}
+		\end{defn}
+		Here is a geometric interpretation of differentials:
+		\begin{flushleft}
+			\begin{tikzpicture}
+				\begin{axis}[
+					%grid style = {line width = .1pt, draw = gray!60},
+					%grid = both,
+					every tick label/.append style={font=\small},
+					ticks  = none,
+					axis x line = middle,
+					axis y line = middle,
+		    			every axis y label/.style={at={(ticklabel cs:1.15)}, yshift = -3pt},
+						y label style={at={(axis description cs: 0.06, 1)},above},
+					yticklabels = {, ,},
+		    			ylabel = {$y$},
+		    			%ymin = -4.5, ymax = 4.5,
+	    				every axis x label/.style= {at ={(ticklabel cs:1)}},
+	    				xticklabels = {, ,},
+		    				x label style={at={(axis description cs: 1, 0.33)},right},
+	    				xlabel = {$x$},
+	    				xmin = -.5, xmax = 10			
+				]
+					\addplot[thick, samples = 100, domain = .3:10] {.5*ln(x)};
+					\addplot[domain = 0:6.5] {(1/5.43656)*x};
+				\end{axis}
+			\end{tikzpicture}
+		\end{flushleft}	
+		\begin{ex}
+			Compare the values of $\Delta y$ and $dy$ if $y = f(x) = x^3 + x^2 -2x + 1$, and $x$ changes from 
+			\begin{enumerate}[(a)]
+				\item 2 to 2.05
+					\vs{1}
+					\newpage
+				\item 2 to 2.01
+					\vs{.5}
+			\end{enumerate}
+		\end{ex}
+		
+		\begin{ex}
+			The radius of a sphere was measured and found to be 20 cm with a possible error in measurement of at most 0.03 cm.  What is the maximum error in using this value of the radius to compute the volume of the sphere?  What is the relative error?
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find the differential $dy$ of each function, and evaluate it for the given values of $x$ and $dx$.
+			\begin{enumerate}[(a)]
+				\item $y = \tan x$, $x = \pi/4$, $dx = -0.1$
+					\vs{1}
+					
+				\item $y = \sqrt{3 + x^2}$, $x = 1$, $dx = -0.2$
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+			\newpage
+			
+		\begin{ex}
+			Use differentials to estimate the amount of paint needed to apply a coat of pain 0.05 cm thick to a hemispherical dome with diameter 50 m.
+		\end{ex}
+			\vs{1} $ $ \\
+			\newsec $ $
+
+	\subsection*{After Class}
+	\addcontentsline{toc}{subsection}{After Class}
+		\begin{ex}
+			Estimate the value of $\tan 2^{\circ}$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Estimate the value of $(1.999)^4$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			The circumference of a sphere is measured to be 84 cm with a possible error of 0.5 cm.
+			\begin{enumerate}[(a)]
+				\item Use differentials to estimate the maximum error in the calculated surface area.  What is the relative error?
+					\vs{1}
+					
+				\item Use differentials to estimate the maximum error in the calculated volume.  What is the relative error?
+					\vs{1}
+					
+			\end{enumerate}
+		\end{ex}
+					
+		\begin{ex}
+			If a current $I$ passes through a resistor with resistance $R$, Ohm's Law states that the voltage drop is $V = IR$.  If $V$ is constant and $R$ is measured with a certain error, use differentials to show tht the relative error in calculating $I$ is approximately the same (in magnitude) as the relative error in $R$.
+		\end{ex}
+			\vs{1}
+		
+\clearpage	
+\end{document}

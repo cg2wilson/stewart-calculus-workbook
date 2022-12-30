@@ -1,0 +1,575 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-35">
+			<title>Summary of Curve Sketching</title>
+				
+				<objectives>
+					<ul>
+						<li>
+							Sketch curves using calculus and other qualitative characteristics of a function (domain, intercepts, asymptotes, symmetry)
+						</li>
+						
+						
+					</ul>
+				</objectives>
+			<subsection xml:id="section-35-beforeclass">
+				<title>Before Class</title>
+				
+				<figure>
+					<caption>Pre-Class Video 1</caption>
+					<url href = "https://mymedia.ou.edu/media/3.5-1/1_lwewtbkr"/>
+				</figure>
+
+				
+				<subsubsection xml:id="section-35-summary">
+					<title>Summary of Graphing</title>
+					We now have a guide for how to sketch the graph of most functions.
+					<assemblage>
+						<title>Guidelines for Curve Sketching</title>
+						<p>
+							<ol>
+								<li>
+									Find the domain of the function.
+								</li>
+								<li>
+									Identify <m>x-</m> and <m>y-</m>intercepts.
+								</li>
+								<li>
+									Locate symmetry in the graph, i.e. determine if the function is even, odd, periodic, etc.
+								</li>
+								<li>
+									Locate any asymptotes: vertical or horizontal.
+								</li>
+								<li>
+									Determine the intervals where the function is increasing or decreasing.
+								</li>
+								<li>
+									Find local maxima/minima.
+								</li>
+								<li>
+									Determine the intervals where the function is concave up/concave down.
+								</li>
+							</ol>
+							With this information, you can confidently sketch the graph.
+						</p>
+					</assemblage>
+					
+					<example><statement>
+						Sketch the graph of <m>f(x) = x^3 + 3x^2</m>
+					</statement>
+					<solution>
+						<image>
+							<description>
+								The graph of <m>f(x) = x^3 + 3x^2</m> on the interval <m>[-4,2]</m>.  
+							</description>
+							<latex-image>
+								<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+											every tick label/.append style={font=\small},
+											axis x line = middle,
+											axis y line = middle,
+												every axis y label/.style={at={(ticklabel cs:1.15)}},
+												%ytick = {-4, -2, -3, -1, 1, 2, 3, 4},
+											y label style={at={(axis description cs:.66,1.15)},anchor=north},
+												ylabel = {$f(x)$},
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												%xtick = {-4,-3,-2,-1,1,2,3,4},
+												x label style={at={(axis description cs:1.1,.45)},anchor=east},
+												xlabel = {$x$},
+												xmin = -4, xmax = 2
+										]
+											\addplot[thick, samples = 100, smooth, domain = -4:2] {x^3 + 3*x^2};
+										\end{axis}
+									\end{tikzpicture}
+								]]>
+							</latex-image>
+						</image>
+					</solution>
+					</example>
+
+					<example><statement>
+						Sketch the graph of <m>g(x) = \dfrac{x^2}{\sqrt{x+1}}</m>
+					</statement>
+					<solution>
+						<image>
+							<description>
+								The graph of <m>g(x) = \dfrac{x^2}{\sqrt{x+1}}</m> on the interval <m>[-1,2]</m>.  
+							</description>
+							<latex-image>
+								<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+											every tick label/.append style={font=\small},
+											axis x line = middle,
+											axis y line = middle,
+												every axis y label/.style={at={(ticklabel cs:1.15)}},
+												%ytick = {-4, -2, -3, -1, 1, 2, 3, 4},
+											y label style={at={(axis description cs:.33,1.15)},anchor=north},
+												ylabel = {$g(x)$},
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												%xtick = {-4,-3,-2,-1,1,2,3,4},
+												x label style={at={(axis description cs:1.1,0)},anchor=east},
+												xlabel = {$x$},
+												xmin = -1, xmax = 2
+										]
+											\addplot[thick, samples = 100, smooth, domain = -.9:2] {x^2/(sqrt(x+1))};
+											\coordinate (a) at (-1,2.5);
+											\coordinate (b) at (-1,0);
+										\end{axis}
+										\draw[dashed] (a)--(b);
+									\end{tikzpicture}
+								]]>
+							</latex-image>
+						</image>
+					</solution>
+					</example>
+				</subsubsection>
+				
+			</subsection>
+			<subsection xml:id="section-35-preclass">
+				<title>Pre-Class Activities</title>
+				
+				<example><statement>
+					Sketch the graph of <m>y=2+3x^2-x^3</m>
+				</statement>
+				<solution>
+					<image>
+						<description>
+							The graph of <m>y=2+3x^2-x^3</m> on the interval <m>[-2,4]</m>.  
+						</description>
+						<latex-image>
+							<![CDATA[
+								\begin{tikzpicture}
+									\begin{axis}[
+										every tick label/.append style={font=\small},
+										axis x line = middle,
+										axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.15)}},
+											%ytick = {-4, -2, -3, -1, 1, 2, 3, 4},
+										y label style={at={(axis description cs:.33,1.15)},anchor=north},
+											ylabel = {$y$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											%xtick = {-4,-3,-2,-1,1,2,3,4},
+											x label style={at={(axis description cs:1.1,.385)},anchor=east},
+											xlabel = {$x$},
+											xmin = -2, xmax = 4
+									]
+										\addplot[thick, samples = 100, smooth, domain = -2:4] {2+3*x^2-x^3};
+									\end{axis}
+								\end{tikzpicture}
+							]]>
+						</latex-image>
+					</image>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Sketch the graph of the function <m>y = \dfrac{x^2 + 5x}{25-x^2}</m>
+				</statement>
+				<solution>
+					<image>
+						<description>
+							The graph of <m>y = \dfrac{x^2 + 5x}{25-x^2}</m> on the interval <m>[-8,10]</m>.  
+						</description>
+						<latex-image>
+							<![CDATA[
+								\begin{tikzpicture}
+									\begin{axis}[
+										every tick label/.append style={font=\small},
+										axis x line = middle,
+										axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.15)}},
+											%ytick = {-4, -2, -3, -1, 1, 2, 3, 4},
+										y label style={at={(axis description cs:.45,1.15)},anchor=north},
+											ylabel = {$y$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											%xtick = {-4,-3,-2,-1,1,2,3,4},
+											x label style={at={(axis description cs:1.1,.56)},anchor=east},
+											xlabel = {$x$},
+											xmin = -8, xmax = 10
+									]
+										\addplot[thick, samples = 100, smooth, domain = -8:-5.2] {(x^2+5*x)/(25-x^2)};
+										\addplot[thick, samples = 100, smooth, domain = -4.8:4.4] {(x^2+5*x)/(25-x^2)};
+										\addplot[thick, samples = 100, smooth, domain = 5.6:10] {(x^2+5*x)/(25-x^2)};
+										\coordinate (a) at (5,7.5);
+										\coordinate (b) at (5,-9);
+										\coordinate (c) at (-8,-1);
+										\coordinate (d) at (10,-1);
+										\coordinate (pt) at (-5,-0.5);
+									\end{axis}
+										\draw[dashed] (a)--(b);
+										\draw[dashed] (c)--(d);
+										\fill[white] (pt) circle (0.1);
+										\draw (pt) circle (0.1);
+								\end{tikzpicture}
+							]]>
+						</latex-image>
+					</image>
+				</solution>
+				</example>
+			</subsection>
+			<subsection xml:id="section-35-inclass">
+				<title>In Class</title>
+				
+				<example><statement>
+					Sketch the graph of <m>y = \dfrac{x}{x-1}</m>
+				</statement>
+				<solution>
+					<image>
+						<description>
+							The graph of <m>y = \dfrac{x}{x-1}</m> on the interval <m>[-4,4]</m>.  
+						</description>
+						<latex-image>
+							<![CDATA[
+								\begin{tikzpicture}
+									\begin{axis}[
+										every tick label/.append style={font=\small},
+										axis x line = middle,
+										axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.15)}},
+											%ytick = {-4, -2, -3, -1, 1, 2, 3, 4},
+										y label style={at={(axis description cs:.5,1.15)},anchor=north},
+											ylabel = {$y$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											%xtick = {-4,-3,-2,-1,1,2,3,4},
+											x label style={at={(axis description cs:1.1,.4)},anchor=east},
+											xlabel = {$x$},
+											xmin = -4, xmax = 4
+									]
+										\addplot[thick, samples = 100, smooth, domain = -4:.8] {x/(x-1)};
+										\addplot[thick, samples = 100, smooth, domain = 1.2:4] {x/(x-1)};
+										\coordinate (a) at (1,6);
+										\coordinate (b) at (1,-4);
+										\coordinate (c) at (-4,1);
+										\coordinate (d) at (4,1);
+									\end{axis}
+									\draw[dashed] (a)--(b);
+									\draw[dashed] (c)--(d);
+								\end{tikzpicture}
+							]]>
+						</latex-image>
+					</image>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Sketch the graph of <m>f(x) = \dfrac{x^2}{x^2-4}</m>
+				</statement>
+				<solution>
+					<image>
+						<description>
+							The graph of <m>y = \dfrac{x^2}{x^2-4}</m> on the interval <m>[-4,4]</m>.  
+						</description>
+						<latex-image>
+							<![CDATA[
+								\begin{tikzpicture}
+									\begin{axis}[
+										every tick label/.append style={font=\small},
+										axis x line = middle,
+										axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.15)}},
+											%ytick = {-4, -2, -3, -1, 1, 2, 3, 4},
+										y label style={at={(axis description cs:.5,1.15)},anchor=north},
+											ylabel = {$f(x)$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											%xtick = {-4,-3,-2,-1,1,2,3,4},
+											x label style={at={(axis description cs:1.1,.4)},anchor=east},
+											xlabel = {$x$},
+											xmin = -4, xmax = 4
+									]
+										\addplot[thick, samples = 100, smooth, domain = -4:.-2.3] {x^2/(x^2-4)};
+										\addplot[thick, samples = 100, smooth, domain = -1.7:1.7] {x^2/(x^2-4)};
+										\addplot[thick, samples = 100, smooth, domain = 2.3:4] {x^2/(x^2-4)};
+										\coordinate (a) at (-2,4);
+										\coordinate (b) at (-2,-2.3);
+										\coordinate (c) at (2,4);
+										\coordinate (d) at (2,-2.3);
+									\end{axis}
+									\draw[dashed] (a)--(b);
+									\draw[dashed] (c)--(d);
+								\end{tikzpicture}
+							]]>
+						</latex-image>
+					</image>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Sketch the graph of <m>y = \dfrac{x^3}{x^3+1}</m>
+				</statement>
+				<solution>
+					<image>
+						<description>
+							The graph of <m>y = \dfrac{x^3}{x^3+1}</m> on the interval <m>[-3,3]</m>.  
+						</description>
+						<latex-image>
+							<![CDATA[
+								\begin{tikzpicture}
+									\begin{axis}[
+										every tick label/.append style={font=\small},
+										axis x line = middle,
+										axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.15)}},
+											%ytick = {-4, -2, -3, -1, 1, 2, 3, 4},
+										y label style={at={(axis description cs:.5,1.15)},anchor=north},
+											ylabel = {$y$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											%xtick = {-4,-3,-2,-1,1,2,3,4},
+											x label style={at={(axis description cs:1.1,.3)},anchor=east},
+											xlabel = {$x$},
+											xmin = -3, xmax = 3
+									]
+										\addplot[thick, samples = 100, smooth, domain = -3:.-1.2] {x^3/(x^3+1)};
+										\addplot[thick, samples = 100, smooth, domain = -0.8:3] {x^3/(x^3+1)};
+										\coordinate (a) at (-1,2.4);
+										\coordinate (b) at (-1,-1);
+										\coordinate (c) at (-3,1);
+										\coordinate (d) at (3,1);
+									\end{axis}
+									\draw[dashed] (a)--(b);
+									\draw[dashed] (c)--(d);
+								\end{tikzpicture}
+							]]>
+						</latex-image>
+					</image>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Sketch the graph of <m>g(x) = \dfrac{x}{\sqrt{x^2-1}}</m>
+				</statement>
+				<solution>
+					<image>
+						<description>
+							The graph of <m>g(x) = \dfrac{x}{\sqrt{x^2-1}}</m> on the interval <m>[-4,4]</m>.  
+						</description>
+						<latex-image>
+							<![CDATA[
+								\begin{tikzpicture}
+									\begin{axis}[
+										every tick label/.append style={font=\small},
+										axis x line = middle,
+										axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.15)}},
+											%ytick = {-4, -2, -3, -1, 1, 2, 3, 4},
+										y label style={at={(axis description cs:.5,1.15)},anchor=north},
+											ylabel = {$g(x)$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											%xtick = {-4,-3,-2,-1,1,2,3,4},
+											x label style={at={(axis description cs:1.1,.5)},anchor=east},
+											xlabel = {$x$},
+											xmin = -4, xmax = 4
+									]
+										\addplot[thick, samples = 100, smooth, domain = -4:-1.2] {x/sqrt(x^2-1)};
+										\addplot[thick, samples = 100, smooth, domain = 1.2:4] {x/sqrt(x^2-1)};
+										\coordinate (a) at (-1,1.5);
+										\coordinate (b) at (-1,-1.5);
+										\coordinate (c) at (-4,1);
+										\coordinate (d) at (4,1);
+										\coordinate (a1) at (1,1.5);
+										\coordinate (b1) at (1,-1.5);
+										\coordinate (c1) at (-4,-1);
+										\coordinate (d1) at (4,-1);
+									\end{axis}
+									\draw[dashed] (a)--(b);
+									\draw[dashed] (c)--(d);
+									\draw[dashed] (a1)--(b1);
+									\draw[dashed] (c1)--(d1);
+								\end{tikzpicture}
+							]]>
+						</latex-image>
+					</image>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Sketch the graph of <m>y=\dfrac{x}{x^2-4}</m>
+				</statement>
+				<solution>
+					<image>
+						<description>
+							The graph of <m>y=\dfrac{x}{x^2-4}</m> on the interval <m>[-5,5]</m>.  
+						</description>
+						<latex-image>
+							<![CDATA[
+								\begin{tikzpicture}
+									\begin{axis}[
+										every tick label/.append style={font=\small},
+										axis x line = middle,
+										axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.15)}},
+											%ytick = {-4, -2, -3, -1, 1, 2, 3, 4},
+										y label style={at={(axis description cs:.5,1.15)},anchor=north},
+											ylabel = {$y$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											%xtick = {-4,-3,-2,-1,1,2,3,4},
+											x label style={at={(axis description cs:1.1,.5)},anchor=east},
+											xlabel = {$x$},
+											xmin = -5, xmax = 5
+									]
+										\addplot[thick, samples = 100, smooth, domain = -5:-2.2] {x/(x^2-4)};
+										\addplot[thick, samples = 100, smooth, domain = -1.8:1.8] {x/(x^2-4)};
+										\addplot[thick, samples = 100, smooth, domain = 2.2:5] {x/(x^2-4)};
+										\coordinate (a) at (-2,2.5);
+										\coordinate (b) at (-2,-2.5);
+										\coordinate (c) at (2,2.5);
+										\coordinate (d) at (2,-2.5);
+										\coordinate (a1) at (5,0);
+										\coordinate (b1) at (-5,0);
+
+									\end{axis}
+									\draw[dashed] (a)--(b);
+									\draw[dashed] (c)--(d);
+									\draw[thick, dashed] (a1)--(b1);
+
+								\end{tikzpicture}
+							]]>
+						</latex-image>
+					</image>
+				</solution>
+				</example>
+						
+				<example><statement>
+					Sketch the graph of <m>y=\dfrac{x^3}{x-2}</m>
+				</statement>
+				<solution>
+					<image>
+						<description>
+							The graph of <m>y=\dfrac{x^3}{x-2}</m> on the interval <m>[-4,4]</m>.  
+						</description>
+						<latex-image>
+							<![CDATA[
+								\begin{tikzpicture}
+									\begin{axis}[
+										every tick label/.append style={font=\small},
+										axis x line = middle,
+										axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.15)}},
+											%ytick = {-4, -2, -3, -1, 1, 2, 3, 4},
+										y label style={at={(axis description cs:.5,1.15)},anchor=north},
+											ylabel = {$y$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											%xtick = {-4,-3,-2,-1,1,2,3,4},
+											x label style={at={(axis description cs:1.1,.37)},anchor=east},
+											xlabel = {$x$},
+											xmin = -4, xmax =4
+									]
+										\addplot[thick, samples = 100, smooth, domain = -4:1.8] {x^3/(x-2)};
+										\addplot[thick, samples = 100, smooth, domain = 2.2:4] {x^3/(x-2)};
+										\coordinate (a) at (2,55);
+										\coordinate (b) at (2,-30);
+
+									\end{axis}
+									\draw[dashed] (a)--(b);
+								\end{tikzpicture}
+							]]>
+						</latex-image>
+					</image>
+				</solution>
+				</example>
+						
+				<example><statement>
+					Sketch the graph of <m>y = \dfrac{\sin x}{1+\cos x}</m>
+				</statement>
+				<solution>
+					<image>
+						<description>
+							The graph of <m>y = \dfrac{\sin x}{1+\cos x}</m> on the interval <m>[-3\pi,3\pi]</m>.  
+						</description>
+						<latex-image>
+							<![CDATA[
+								\begin{tikzpicture}
+									\begin{axis}[
+										every tick label/.append style={font=\small},
+										axis x line = middle,
+										axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.15)}},
+											%ytick = {-4, -2, -3, -1, 1, 2, 3, 4},
+										y label style={at={(axis description cs:.5,1.15)},anchor=north},
+											ylabel = {$y$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											%xtick = {-4,-3,-2,-1,1,2,3,4},
+											x label style={at={(axis description cs:1.1,.5)},anchor=east},
+											xlabel = {$x$},
+											xmin = -10, xmax =10,
+											ymin = -10, ymax = 10,
+											trig format plots = rad
+									]
+										\addplot[thick, samples = 100, smooth, domain = -9.3:-3.2] {sin(x)/(1+cos(x))};
+										\addplot[thick, samples = 100, smooth, domain = -3:3] {sin(x)/(1+cos(x))};
+										\addplot[thick, samples = 100, smooth, domain = 3.2:9.3] {sin(x)/(1+cos(x))};
+										\coordinate (a) at (-9.42,10);
+										\coordinate (b) at (-9.42,-10);
+										\coordinate (c) at (-3.14,10);
+										\coordinate (d) at (-3.14,-10);
+										\coordinate (e) at (3.14, 10);
+										\coordinate (f) at (3.14, -10);
+										\coordinate (g) at (9.42, 10);
+										\coordinate (h) at (9.42, -10);
+									\end{axis}
+									\draw[dashed] (a)--(b);
+									\draw[dashed] (c)--(d);
+									\draw[dashed] (e)--(f);
+									\draw[dashed] (g)--(h);
+								\end{tikzpicture}
+							]]>
+						</latex-image>
+					</image>
+				</solution>
+				</example>
+
+			</subsection>
+			<subsection xml:id="section-35-afterclass">
+				<title>After Class Activities</title>
+				
+				<example><statement>
+					Sketch the graph of <m>y = \dfrac{1+5x-2x^2}{x^2-1}</m>
+				</statement>
+				<solution>
+					<image>
+						<description>
+							The graph of <m>y = \dfrac{1+5x-2x^2}{x^2-1}</m> on the interval <m>[-3,3]</m>.  
+						</description>
+						<latex-image>
+							<![CDATA[
+								\begin{tikzpicture}
+									\begin{axis}[
+										every tick label/.append style={font=\small},
+										axis x line = middle,
+										axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.15)}},
+											%ytick = {-4, -2, -3, -1, 1, 2, 3, 4},
+										y label style={at={(axis description cs:.5,1.15)},anchor=north},
+											ylabel = {$y$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											%xtick = {-4,-3,-2,-1,1,2,3,4},
+											x label style={at={(axis description cs:1.1,.37)},anchor=east},
+											xlabel = {$x$},
+											xmin = -3, xmax = 3,
+											ymin = -20, ymax = 20
+									]
+										\addplot[thick, samples = 100, smooth, domain =-3:-1.2] {(1+5*x-2*x^2)/(x^2-1)};
+										\addplot[thick, samples = 100, smooth, domain = -0.9:0.9] {(1+5*x-2*x^2)/(x^2-1)};
+										\addplot[thick, samples = 100, smooth, domain = 1.1:3] {(1+5*x-2*x^2)/(x^2-1)};
+										\coordinate (a) at (-1,20);
+										\coordinate (b) at (-1,-20);
+										\coordinate (c) at (1,20);
+										\coordinate (d) at (1,-20);
+										\coordinate (e) at (-3,-2);
+										\coordinate (f) at (3,-2);
+									\end{axis}
+									\draw[dashed] (a)--(b);
+									\draw[dashed] (c)--(d);
+									\draw[dashed] (e)--(f);
+								\end{tikzpicture}
+							]]>
+						</latex-image>
+					</image>
+				</solution>
+				</example>
+
+					
+			</subsection>
+		</section>
+		

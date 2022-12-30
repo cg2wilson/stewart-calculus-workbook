@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<subsection xml:id="section-11-resources">
+	<title>Section 1.1 Additional Resources</title>
+	<subsubsection>
+		<title>Functions</title>
+			<ul>
+				<li>
+					What is a Function? <url href="https://www.mathsisfun.com/sets/function.html"/>
+				</li>
+				<li>
+					Functions by Khan Academy <url href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions"/>
+				</li>
+			</ul>
+	</subsubsection>
+	<subsubsection>
+		<title>Piecewise Functions</title>
+			<ul>
+				<li>
+					Quick Introduction to Piecewise Functions <url href="https://www.mathsisfun.com/sets/functions-piecewise.html"/>
+				</li>
+				<li>
+					Piecewise Functions by Khan Academy <url href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:absolute-value-piecewise-functions/x2f8bb11595b61c86:piecewise-functions/v/piecewise-function-example"/>
+				</li>
+			</ul>
+	</subsubsection>
+	<subsubsection>
+		<title>Symmetry</title>
+			<ul>
+				<li>
+					Symmetry of Functions by Khan Academy <url href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:transformations#x2ec2f6f830c9fb89:symmetry"/>
+				</li>
+			</ul>
+	</subsubsection>
+	<subsubsection>
+		<title>Difference Quotients</title>
+			<ul>
+				<li>
+					How to Solve Difference Quotients <url href="https://study.com/academy/lesson/how-to-solve-the-difference-quotient.html"/>
+				</li>
+			</ul>
+	</subsubsection>
+</subsection>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-07-17T17:31:46-05:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Math 1914 - Differential &amp; Integral Calculus I Limits at Infinity &amp; Horizontal Asymptotes</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Math 1914 - Differential &amp; Integral Calculus">
+<meta property="book:author" content="Cory Wilson">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(      \newcommand{\ds}{\displaystyle}
+\newcommand{\lrpar}[1]{\left(#1\right)}
+\newcommand{\lrbrace}[1]{\left\lbrace #1 \right\rbrace}
+\newcommand{\inv}[1]{#1^{-1}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\dc}{^\circ}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="math1914.html"><span class="title">Math 1914 - Differential &amp; Integral Calculus</span></a></h1>
+<p class="byline">Cory Wilson</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-33.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch3.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-35.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-33.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch3.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section-35.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul><li><a href="colophon.html" data-scroll="colophon" class="internal">Colophon</a></li></ul>
+</li>
+<li class="link">
+<a href="ch1.html" data-scroll="ch1" class="internal"><span class="codenumber">1</span> <span class="title">Functions and Limits</span></a><ul>
+<li><a href="section-11.html" data-scroll="section-11" class="internal">Four Ways to Represent a Function</a></li>
+<li><a href="section-12.html" data-scroll="section-12" class="internal">Mathematical Models: A Catalog of Essential Functions</a></li>
+<li><a href="section-13.html" data-scroll="section-13" class="internal">New Functions from Old Functions</a></li>
+<li><a href="section-14.html" data-scroll="section-14" class="internal">The Tangent and Velocity Problems</a></li>
+<li><a href="section-15.html" data-scroll="section-15" class="internal">The Limit of a Function</a></li>
+<li><a href="section-16.html" data-scroll="section-16" class="internal">Calculating Limits Using Limit Laws</a></li>
+<li><a href="section-17.html" data-scroll="section-17" class="internal">(X) The Precise Definition of a Limit</a></li>
+<li><a href="section-18.html" data-scroll="section-18" class="internal">Continuity</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch2.html" data-scroll="ch2" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives</span></a><ul>
+<li><a href="section-21.html" data-scroll="section-21" class="internal">Derivatives and Rates of Change</a></li>
+<li><a href="section-22.html" data-scroll="section-22" class="internal">The Derivative as a Function</a></li>
+<li><a href="section-23.html" data-scroll="section-23" class="internal">Differentiation Formulas</a></li>
+<li><a href="section-24.html" data-scroll="section-24" class="internal">Derivatives of Trigonometric Functions</a></li>
+<li><a href="section-25.html" data-scroll="section-25" class="internal">The Chain Rule</a></li>
+<li><a href="section-26.html" data-scroll="section-26" class="internal">Implicit Differentiation</a></li>
+<li><a href="section-27.html" data-scroll="section-27" class="internal">(X) Rates of Changes in the Natural and Social Sciences</a></li>
+<li><a href="section-28.html" data-scroll="section-28" class="internal">Related Rates</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch3.html" data-scroll="ch3" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Differentiation</span></a><ul>
+<li><a href="section-31.html" data-scroll="section-31" class="internal">Maximum &amp; Minimum Values</a></li>
+<li><a href="section-32.html" data-scroll="section-32" class="internal">(X) The Mean Value Theorem</a></li>
+<li><a href="section-33.html" data-scroll="section-33" class="internal">How Derivatives Affect the Shape of a Graph</a></li>
+<li><a href="section-34.html" data-scroll="section-34" class="active">Limits at Infinity &amp; Horizontal Asymptotes</a></li>
+<li><a href="section-35.html" data-scroll="section-35" class="internal">Summary of Curve Sketching</a></li>
+<li><a href="section-36.html" data-scroll="section-36" class="internal">(X) Graphing with Calculus and Calculators</a></li>
+<li><a href="section-37.html" data-scroll="section-37" class="internal">Optimization</a></li>
+<li><a href="section-38.html" data-scroll="section-38" class="internal">(X) Newton's Method</a></li>
+<li><a href="section-39.html" data-scroll="section-39" class="internal">Antiderivatives</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch4.html" data-scroll="ch4" class="internal"><span class="codenumber">4</span> <span class="title">Integrals</span></a><ul>
+<li><a href="section-41.html" data-scroll="section-41" class="internal">Areas &amp; Distance</a></li>
+<li><a href="section-42.html" data-scroll="section-42" class="internal">The Definite Integral</a></li>
+<li><a href="section-43.html" data-scroll="section-43" class="internal">The Fundamental Theorem of Calculus</a></li>
+<li><a href="section-44.html" data-scroll="section-44" class="internal">Indefinite Integrals &amp; the Net Change Theorem</a></li>
+<li><a href="section-45.html" data-scroll="section-45" class="internal">The Substitution Rule</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch5.html" data-scroll="ch5" class="internal"><span class="codenumber">5</span> <span class="title">Applications of Integration</span></a><ul>
+<li><a href="section-51.html" data-scroll="section-51" class="internal">Areas Between Curves</a></li>
+<li><a href="section-52.html" data-scroll="section-52" class="internal">Volumes</a></li>
+<li><a href="section-53.html" data-scroll="section-53" class="internal">Volumes by Cylindrical Shells</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-34"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.4</span> <span class="title">Limits at Infinity &amp; Horizontal Asymptotes</span>
+</h2>
+<article class="objectives goal-like" id="objectives-17"><h3 class="heading"><span class="type">Objectives</span></h3>
+<ul class="disc">
+<li id="li-760"><p id="p-derived-li-760">Explain what is meant by the notation <span class="process-math">\(\ds \lim_{x\to\infty} f(x) = L\)</span> and <span class="process-math">\(\ds \lim_{x\to -\infty} f(x) = L\)</span></p></li>
+<li id="li-761"><p id="p-derived-li-761">Evaluate limits at infinity using numerical, algebraic, or graphical means</p></li>
+<li id="li-762"><p id="p-derived-li-762">Define horizontal asymptotes and determine if a function has them graphically or algebraically</p></li>
+</ul></article><section class="subsection" id="section-34-beforeclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.4.1</span> <span class="title">Before Class</span>
+</h3>
+<figure class="figure figure-like" id="figure-25"><a class="external" href="https://mymedia.ou.edu/media/3.4-1/1_ptc8pjgb" target="_blank"><code class="code-inline tex2jax_ignore">https://mymedia.ou.edu/media/3.4-1/1_ptc8pjgb</code></a><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">25<span class="period">.</span></span><span class="space"> </span>Pre-Class Video 1</figcaption></figure><section class="subsubsection" id="section-34-ideas"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">3.4.1.1</span> <span class="title">The Ideas</span>
+</h4>
+<article class="example example-like" id="example-318"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.1</span><span class="period">.</span>
+</h5>Sketch the graph of <span class="process-math">\(f(x) = \dfrac{x^2-1}{x^2+1}\)</span> using the techniques of Section 3.3.</article><p id="p-165">The graph should look like this:</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-114.svg" role="img" class="contained" alt="This is the graph of \(f(x) = \dfrac{x^2-1}{x^2+1}\)"></div>
+<article class="definition definition-like" id="definition-29"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.4.2</span><span class="period">.</span><span class="space"> </span><span class="title">Limits at Infinity.</span>
+</h5>
+<p id="p-166">Let <span class="process-math">\(f\)</span> be a function defined on some interval <span class="process-math">\((a,\infty)\text{.}\)</span>  Then <span class="process-math">\(\lim_{x\to\infty} f(x) = L\)</span> means that the values of <span class="process-math">\(f(x)\)</span> can be made arbitrarily close to <span class="process-math">\(L\)</span> by requiring <span class="process-math">\(x\)</span> to be sufficiently large.</p>
+<p id="p-167">If <span class="process-math">\(g\)</span> is defined on some interval <span class="process-math">\((-\infty,a)\text{,}\)</span> then <span class="process-math">\(\lim_{x\to-\infty} g(x) = L\)</span> means that the values of <span class="process-math">\(g(x)\)</span> can be made arbitrarily close to <span class="process-math">\(L\)</span> by requiring <span class="process-math">\(x\)</span> to be sufficiently large negative.</p></article><p id="p-168">We read the limits above (for <span class="process-math">\(f\)</span>) as</p>
+<ul class="disc">
+<li id="li-763"><p id="p-derived-li-763">the limit of <span class="process-math">\(f(x)\text{,}\)</span> as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(\infty\text{,}\)</span> is <span class="process-math">\(L\)</span></p></li>
+<li id="li-764"><p id="p-derived-li-764">the limit of <span class="process-math">\(f(x)\)</span> as <span class="process-math">\(x\)</span> increases without bound, is <span class="process-math">\(L\)</span></p></li>
+</ul>
+<p class="continuation">with the obvious changes for <span class="process-math">\(g\)</span></p>
+<article class="definition definition-like" id="definition-30"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.4.3</span><span class="period">.</span><span class="space"> </span><span class="title">Horizontal Asymptote.</span>
+</h5>The line <span class="process-math">\(y=L\)</span> is called a <dfn class="terminology">horizontal asymptote</dfn> of the curve <span class="process-math">\(y=f(x)\)</span> if either<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\lim_{x\to\infty} f(x) = L\qquad \text{or}\qquad \lim_{x\to -\infty} f(x) = L
+\end{equation*}
+</div></article><article class="example example-like" id="example-319"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.4</span><span class="period">.</span>
+</h5>Write the horizontal asymptotes of the function <span class="process-math">\(f(x) = \dfrac{x^2-1}{x^2 + 1}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-319" id="solution-319"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-319"><div class="solution solution-like"><span class="process-math">\(y=1\)</span></div></div>
+</div></article></section></section><section class="subsection" id="section-34-preclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.4.2</span> <span class="title">Pre-Class Activities</span>
+</h3>
+<article class="example example-like" id="example-320"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.5</span><span class="period">.</span>
+</h4>Write the horizontal asymptotes of the function  <span class="process-math">\(f(x) = \dfrac{3x-2}{2x+1}\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-320" id="solution-320"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-320"><div class="solution solution-like"><span class="process-math">\(y = \dfrac{3}{2}\)</span></div></div>
+</div></article><article class="example example-like" id="example-321"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.6</span><span class="period">.</span>
+</h4>Does the function <span class="process-math">\(f(x) = \dfrac{1-x^2}{x^3-x+1}\)</span> have any horizontal asymptotes?  If it does, give their equation.  If it doesn't, explain why.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-321" id="solution-321"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-321"><div class="solution solution-like">Yes, <span class="process-math">\(y=0\)</span>
+</div></div>
+</div></article><article class="example example-like" id="example-322"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.7</span><span class="period">.</span>
+</h4>The function <span class="process-math">\(f(x) = \dfrac{x-9}{\sqrt{4x^2 + 3}}\)</span> has two horizontal asymptotes: <span class="process-math">\(L = \dfrac{1}{2}\)</span> and <span class="process-math">\(L = - \dfrac{1}{2}\text{.}\)</span>  Use limit notation to describe the horizontal asymptotes.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-322" id="solution-322"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-322"><div class="solution solution-like"><div class="displaymath process-math" data-contains-math-knowls="" id="md-11">
+\begin{align*}
+\ds \lim_{x\to\infty} f(x) &amp;= \dfrac{1}{2}\\
+\ds \lim_{x\to -\infty} f(x) &amp;= -\dfrac{1}{2}
+\end{align*}
+</div></div></div>
+</div></article></section><section class="subsection" id="section-34-inclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.4.3</span> <span class="title">In Class</span>
+</h3>
+<section class="subsubsection" id="section-34-computing"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">3.4.3.1</span> <span class="title">Computing Limits at Infinity</span>
+</h4>
+<article class="question example-like" id="question-23"><h5 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">3.4.8</span><span class="period">.</span>
+</h5>Think about <span class="process-math">\(\ds \lim_{x\to\infty} \dfrac{1}{x}\)</span> and <span class="process-math">\(\ds \lim_{x\to -\infty} \dfrac{1}{x}\text{.}\)</span>  What do you expect these limits to be?  Why?  What about <span class="process-math">\(\ds \lim_{x\to \pm \infty} x^r\text{,}\)</span> for some <span class="process-math">\(r \gt 0\text{?}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-323" id="solution-323"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-323"><div class="solution solution-like">Answers vary</div></div>
+</div></article><article class="assemblage assemblage-like" id="assemblage-21"><h5 class="heading"><span class="title">Theorem.</span></h5>
+<p id="p-169">If <span class="process-math">\(r\gt 0\)</span> is a rational number, then <span class="process-math">\(\ds \lim_{x\to \infty} \dfrac{1}{x^r} = 0\text{.}\)</span>  If <span class="process-math">\(r \gt 0\)</span> is a rational number such that <span class="process-math">\(x^r\)</span> is defined for all <span class="process-math">\(x\text{,}\)</span> then <span class="process-math">\(\ds \lim_{x\to -\infty} \dfrac{1}{x^r} = 0\)</span></p></article><article class="example example-like" id="example-323"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.9</span><span class="period">.</span>
+</h5>Evaluate <span class="process-math">\(\ds \lim_{x\to \infty} \dfrac{3x^2-x-2}{5x^2+4x+1}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-324" id="solution-324"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-324"><div class="solution solution-like"><span class="process-math">\(\ds \lim_{x\to \infty} \dfrac{3x^2-x-2}{5x^2+4x+1} = \dfrac{3}{5}\)</span></div></div>
+</div></article><article class="example example-like" id="example-324"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.10</span><span class="period">.</span>
+</h5>Find the asymptotes of <span class="process-math">\(f(x) = \dfrac{\sqrt{2x^2+1}}{3x-5}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-325" id="solution-325"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-325"><div class="solution solution-like"><span class="process-math">\(y = \pm \dfrac{\sqrt{2}}{3}\)</span></div></div>
+</div></article><article class="example example-like" id="example-325"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.11</span><span class="period">.</span>
+</h5>Compute <span class="process-math">\(\ds \lim_{x\to \infty} (\sqrt{x^2+2}-x)\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-326" id="solution-326"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-326"><div class="solution solution-like"><span class="process-math">\(\ds \lim_{x\to \infty} (\sqrt{x^2+2}-x)=0\)</span></div></div>
+</div></article><article class="example example-like" id="example-326"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.12</span><span class="period">.</span>
+</h5>Find the following limits, or argue why it doesn't exist: <ol class="lower-alpha">
+<li id="li-765"><p id="p-derived-li-765"><span class="process-math">\(\displaystyle \ds \lim_{x\to -\infty} \dfrac{4x^3 + 6x^2 - 2}{2x^3 - 4x + 5}\)</span></p></li>
+<li id="li-766"><p id="p-derived-li-766"><span class="process-math">\(\displaystyle \ds \lim_{x\to -\infty} \dfrac{\sqrt{1+4x^6}}{2-x^3}\)</span></p></li>
+<li id="li-767"><p id="p-derived-li-767"><span class="process-math">\(\displaystyle \ds \lim_{x\to \infty} \cos x\)</span></p></li>
+<li id="li-768"><p id="p-derived-li-768"><span class="process-math">\(\displaystyle \ds \lim_{x\to \infty} \lrpar{\sqrt{9x^2 + x} - 3x}\)</span></p></li>
+<li id="li-769"><p id="p-derived-li-769"><span class="process-math">\(\displaystyle \ds \lim_{x\to \infty} \sqrt{x^2 + 2}\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-327" id="solution-327"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-327"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-770"><p id="p-derived-li-770"><span class="process-math">\(\displaystyle \ds \lim_{x\to -\infty} \dfrac{4x^3 + 6x^2 - 2}{2x^3 - 4x + 5} = 2\)</span></p></li>
+<li id="li-771"><p id="p-derived-li-771"><span class="process-math">\(\displaystyle \ds \lim_{x\to -\infty} \dfrac{\sqrt{1+4x^6}}{2-x^3}=2\)</span></p></li>
+<li id="li-772"><p id="p-derived-li-772"><span class="process-math">\(\ds \lim_{x\to \infty} \cos x\)</span> does not exist, since <span class="process-math">\(\cos x\)</span> oscillates between <span class="process-math">\(-1\)</span> and <span class="process-math">\(1\)</span> on its entire domain.</p></li>
+<li id="li-773"><p id="p-derived-li-773"><span class="process-math">\(\displaystyle \ds \lim_{x\to \infty} \lrpar{\sqrt{9x^2 + x} - 3x}=\dfrac{1}{6}\)</span></p></li>
+<li id="li-774"><p id="p-derived-li-774"><span class="process-math">\(\displaystyle \ds \lim_{x\to \infty} \sqrt{x^2 + 2} = \infty\)</span></p></li>
+</ol></div></div>
+</div></article><article class="example example-like" id="example-327"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.13</span><span class="period">.</span>
+</h5>A function <span class="process-math">\(f\)</span> is a ratio of quadratic functions and has a vertical asymptote <span class="process-math">\(x=4\)</span> and just one <span class="process-math">\(x-\)</span>intercept, <span class="process-math">\(x=1\text{.}\)</span>  We know that <span class="process-math">\(f\)</span> has a removable discontinuity at <span class="process-math">\(x=-1\text{,}\)</span> and that <span class="process-math">\(\ds \lim_{x\to -1} f(x) = 2\text{.}\)</span>  Evaluate <span class="process-math">\(f(0)\)</span> and find any horizontal asymptotes of <span class="process-math">\(f\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-328" id="solution-328"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-328"><div class="solution solution-like">
+<span class="process-math">\(f(0) = \dfrac{1}{2}\)</span> and <span class="process-math">\(y=2\)</span>
+</div></div>
+</div></article><article class="example example-like" id="example-328"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.14</span><span class="period">.</span>
+</h5>Sketch the function <span class="process-math">\(y = \dfrac{1 + 2x^2}{1+x^2}\)</span> using the methods of Section 3.3 and this section.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-329" id="solution-329"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-329"><div class="solution solution-like"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-115.svg" role="img" class="contained" alt="The graph of \(y = \dfrac{1 + 2x^2}{1+x^2}\) on the interval \([-2,2]\text{.}\)"></div></div></div>
+</div></article></section></section><section class="subsection" id="section-34-afterclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.4.4</span> <span class="title">After Class Activities</span>
+</h3>
+<article class="example example-like" id="example-329"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.15</span><span class="period">.</span>
+</h4>Sketch the graph of a function that satisfies the conditions: <span class="process-math">\(f(1) = f'(1) = 0\text{,}\)</span> <span class="process-math">\(\ds \lim_{x\to 2^+} f(x) = \infty\text{,}\)</span> <span class="process-math">\(\ds \lim_{x\to 2^-} f(x) = -\infty\text{,}\)</span> <span class="process-math">\(\ds \lim_{x\to 0} f(x) = -\infty\text{,}\)</span> <span class="process-math">\(\ds \lim_{x\to -\infty} = \infty\text{,}\)</span> <span class="process-math">\(\ds \lim_{x\to \infty} f(x) = 0\text{,}\)</span> <span class="process-math">\(f''(x) \gt 0\)</span> for <span class="process-math">\(x \gt 2\text{,}\)</span> <span class="process-math">\(f''(x) \lt 0\)</span> for <span class="process-math">\(x \lt 0\)</span> and for <span class="process-math">\(0 \lt x \lt 2\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-330" id="solution-330"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-330"><div class="solution solution-like">Answers vary</div></div>
+</div></article><article class="example example-like" id="example-330"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.16</span><span class="period">.</span>
+</h4>Find <span class="process-math">\(\ds \lim_{x\to \infty} f(x)\text{,}\)</span> if <span class="process-math">\(\dfrac{3x - 1}{x} \lt f(x) \lt \dfrac{3x^2 + 6}{x^2}\)</span> for all <span class="process-math">\(x \gt 6\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-331" id="solution-331"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-331"><div class="solution solution-like">3</div></div>
+</div></article><article class="example example-like" id="example-331"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.17</span><span class="period">.</span>
+</h4>A tank contains 5000 L of pure water.  Brine containing 30 g of salt per liter of water is pumped into the tank at a rate of 25 L/min.  Write an expression for the concentration of salt after <span class="process-math">\(t\)</span> minutes (in grams per liter).  What happens to the concentration as <span class="process-math">\(t\to\infty\text{?}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-332" id="solution-332"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-332"><div class="solution solution-like">
+<span class="process-math">\(C(t) = \dfrac{30t}{200+t}\text{.}\)</span>  As <span class="process-math">\(t\to\infty\text{,}\)</span> <span class="process-math">\(C(t)\to 30\)</span> g/L</div></div>
+</div></article></section></section></div></main>
+</div>
+</body>
+</html>

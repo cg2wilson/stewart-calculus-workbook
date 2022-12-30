@@ -1,0 +1,909 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-11" xmlns:xi="http://www.w3.org/2001/XInclude">
+			<title>Four Ways to Represent a Function</title>
+				<objectives>
+					<ul>
+						<li>
+							Represent relations verbally, numerically, graphically or algebraically and translate between representations.
+						</li>
+						<li>
+							Determine if a relation is a function, and represent functions using appropriate notation.
+						</li>
+						<li>
+							Evaluate and graph piecewise functions (including absolute value and step functions).
+						</li>
+						<li>
+							Determine if a function is even, odd, or neither using multiple representations.
+						</li>
+						<li>
+							Graphically determine the intervals over which a function is increasing, decreasing, or constant.
+						</li>
+						<li>
+							Evaluate functions using numerical or algebraic input, particularly difference quotients.
+						</li>
+						
+					</ul>
+				</objectives>
+			<subsection xml:id="section-11-beforeclass">
+				<title>Before Class</title>
+				<figure>
+					<caption>Pre-Class Video 1</caption>
+					<url href = "https://mymedia.ou.edu/media/1.1-1/1_hbkr83p7"/>
+				</figure>
+				<figure>
+					<caption>Pre-Class Video 2</caption>
+					<url href = "https://mymedia.ou.edu/media/1.1-2/1_88q73nod"/>
+				</figure>
+
+				<subsubsection xml:id="section-11-functions">
+					<title>Functions</title>
+					<p>
+						A <term>relation</term> is a rule which links an <em>input</em> variable to an <em>output</em>; given one piece of information, we can determine the corresponding piece.  A special type of relation is one called a function.
+					</p>
+					<definition>
+						<title>Function/Domain/Range</title>
+						<idx>Function</idx>
+						<idx>Domain</idx>
+						<idx>Range</idx>
+						A <term>function</term> <m>f</m> is a rule that assigns to each element <m>x</m> in a set <m>D</m> <em>one</em> element, called <m>f(x)</m>, in a set <m>E</m>.  The set <m>D</m> is called the <term>domain</term> of the function.  The <term>range</term> of <m>f</m> is the set of all possible values of <m>f(x)</m> as <m>x</m> varies throughout the domain.
+					</definition>
+					
+					<definition>
+						<title>Independent Variable/Dependent Variable</title>
+						<idx>Independent Variable</idx>
+						<idx>Dependent Variable</idx>
+						A symbol that represents an arbitrary element in the domain is called an <term>independent variable</term>.  A symbol representing an arbitarary element in the range of a function is called a <term>dependent variable</term>.
+					</definition>
+					
+					<example><statement>
+						Let <m>C(t)</m> represent the number of courses offered campus-wide during the week at time <m>t</m>, and <m>O(t)</m> represent the number of students walking on the South Oval at time <m>t</m> last Monday.   Is <m>C</m> a function?  What about <m>O</m>?
+					</statement>
+					<solution>
+						<m>C</m> is not a function because at least one input has multiple outputs (for example, Monday at 12:00pm has multiple classes).  <m>O</m> is a function because at time <m>t</m> last Monday specifically, there is a only one number of students on the South Oval.
+					</solution>
+					</example>	
+					
+					<example><statement>
+						Fill out the table with the domain and range of the given function.  Write your answer in interval notation.
+						<tabular top="medium" left="medium">
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+							 Function
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 Domain
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 Range
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+							 <m>\sqrt{2+x}</m>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+							 <m>\dfrac{x^2-1}{x-1}</m>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+							 <m>x^3-6.2x^2+x-1</m>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 
+							</cell>
+						</row>
+						</tabular>
+					</statement>
+					<solution>
+						<tabular top="medium" left="medium">
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+							 Function
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 Domain
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 Range
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+							 <m>\sqrt{2+x}</m>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 <m>[-2,\infty)</m>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 <m>[0,\infty]</m>
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+							 <m>\dfrac{x^2-1}{x-1}</m>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 <m>(-\infty,1)\cup (1,\infty)</m>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 <m>(-\infty,2)\cup (2,\infty)</m>
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+							 <m>x^3-6.2x^2+x-1</m>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 <m>(-\infty,\infty)</m>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 <m>(-\infty,\infty)</m>
+							</cell>
+						</row>
+						</tabular>
+					</solution>
+					</example>
+					<example><statement>
+						Assuming <m>h\neq 0</m>, simplify the <em>difference quotient</em> <m>\dfrac{f(1+h)-f(1)}{h}</m> where <m>f(x) = 3x^2 -2x + 1</m>			
+					</statement>
+					<solution>
+						The difference quotient simplifies to <m>6+3h-2</m>
+					</solution>
+					</example>
+				</subsubsection>
+				
+				<subsubsection xml:id="section-11-representations">
+					<title>Representations of Functions</title>
+					<introduction>
+						In mathematics, particularly applied mathematics, we need to be able to interpret real-world phenomena in four ways: numerically, algebraically, verbally, and graphically.  
+					</introduction>
+					
+					<example><statement>
+						The price of gas at a certain 7-11 in Norman was $4.37 per gallon on June 26th.  
+						<ol label="a">
+							<li>
+								Is this information presented numerically, algebraically, verbally, or graphically?
+							</li>
+								
+							<li>
+								Represent this situation in the other three ways.
+							</li>
+						</ol>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li>		
+								Verbally
+							</li>
+							<li>
+								<p>
+								Numerically: 
+								<tabular top="medium" left="medium">
+									<row bottom="medium">
+										<cell halign="center" left="medium" right="medium">
+										Gallons
+										</cell>
+										<cell halign="center" left="medium" right="medium">
+										1
+										</cell>
+										<cell halign="center" left="medium" right="medium">
+										2
+										</cell>
+										<cell halign="center" left="medium" right="medium">
+										3
+										</cell>
+										<cell halign="center" left="medium" right="medium">
+										4
+										</cell>
+										<cell halign="center" left="medium" right="medium">
+										5
+										</cell>
+									</row>
+									<row bottom="medium">
+										<cell halign="center" left="medium" right="medium">
+										Price
+										</cell>
+										<cell halign="center" left="medium" right="medium">
+										4.37
+										</cell>
+										<cell halign="center" left="medium" right="medium">
+										8.74
+										</cell>
+										<cell halign="center" left="medium" right="medium">
+										13.11
+										</cell>
+										<cell halign="center" left="medium" right="medium">
+										17.48
+										</cell>
+										<cell halign="center" left="medium" right="medium">
+										21.85
+										</cell>
+									</row>
+								</tabular>
+								</p>
+								<p>
+								Algebraically: <m>p(g) = 4.37g</m>
+								</p>
+								<p>
+								Graphically:
+								<image>
+								<description>
+									This is the graph of <m>p(g) = 4.37g</m> on the interval <m>[0,1]</m>
+								</description>
+								<latex-image>
+								<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+											axis x line = bottom,
+											axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.1)}},
+											y label style={at={(axis description cs:0,1.15)},anchor=north},
+											ylabel = {$p(g)$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											x label style={at={(axis description cs:1.1,0)},anchor=east},
+											xlabel = {$g$},
+											xmin = 0, xmax = 1,
+											ymin = 0, ymax = 3,
+										]
+										\addplot[thick, smooth, domain = 0:3] {4.37*x};
+										\end{axis}
+									\end{tikzpicture}
+								]]>
+								</latex-image>
+								</image>
+								</p>
+							</li>
+						</ol>
+					</solution>
+					</example>
+					
+					<example><statement>
+						A rectangular storage container has an open top, and a volume of 20 m<m>^3</m>.  The length of its base is twice its width.  Material for the base costs $5 per square meter; material for the sides costs $3 per square meter.  Express the cost of materials as a function of the width of the base.
+					</statement>
+					<solution>
+						<m>C(w) = \dfrac{180}{w}+10w^2</m> dollars
+					</solution>
+					</example>
+					
+					<assemblage>
+						<title>Vertical Line Test</title>
+						<p>
+							A curve in the <m>xy-</m>plane is the graph of a function of <m>x</m> if and only if no vertical line intersects the curve more than once.							
+						</p>
+					</assemblage>
+					
+					<example><statement>
+						Are both of these graphs functions?  Why or why not?
+						<sidebyside widths="40% 40%">
+							<image>
+								<description>
+									The image on the left is the graph of the curve <m>\cos x</m> on the interval <m>[0,2\pi]</m>.  
+								</description>
+								<latex-image>
+								<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+											axis x line = middle,
+											axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.1)}},
+											y label style={at={(axis description cs:0,1.1)},anchor=north},
+											ylabel = {$y$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											x label style={at={(axis description cs:1.1,.48)},anchor=east},
+											xlabel = {$x$},
+											trig format plots = rad,
+											xmin = 0, xmax = 6.5,
+											ymin = -1.5, ymax = 1.5,
+										]
+										\addplot[thick, smooth, domain = 0:2*pi] {cos(x)};
+										\end{axis}
+									\end{tikzpicture}]]>
+								</latex-image>
+							</image>
+							<image>
+								<description>
+									The image on the right is the graph of the curve whose <m>x-</m>coordinate is given by the rule <m>x^3-3x</m>, and whose <m>y-</m>coordinate is given by the rule <m>3x^2-9</m>.
+								</description>
+								<latex-image>
+								<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+											axis x line = middle,
+											axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.1)}},
+											y label style={at={(axis description cs:.5,1.1)},anchor=north},
+											ylabel = {$y$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											x label style={at={(axis description cs:1.1,.65)},anchor=east},
+											xlabel = {$x$},
+											xmin=-4.5,xmax=4.5,
+											ymin=-9.5,ymax=4.5,
+											xtick = {-4,-2,2,4},
+											ytick = {-8,-6,-4,-2,2,4},
+										]
+										\addplot[domain=-3:3,samples=50]({x^3-3*x},{3*x^2-9}); 
+										\end{axis}
+									\end{tikzpicture}
+								]]>
+								</latex-image>
+							</image>
+						</sidebyside>
+					</statement>
+					<solution>
+						The first graph is a function because it passes the vertical line test, but the second is not a function because it fails the vertical line test between <m>[-2,2]</m>.
+					</solution>
+					</example>
+					
+					<example><statement>
+						Below are numerical expressions for the relations <m>h</m> and <m>k</m>.  Is <m>h</m> a function?  What about <m>k</m>?
+						
+						<tabular top="medium" left="medium">
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+							 <m>x</m>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 0
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 1
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 1
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 2
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 5
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 6
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+							 <m>h(x)</m>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 0
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 1
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 2
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 3
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 4
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 5
+							</cell>
+						</row>
+						</tabular>
+						
+						<tabular top="medium" left="medium">
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+							 <m>t</m>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 0
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 1
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 1
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 2
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 5
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 6
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+							 <m>k(t)</m>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 0
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 1
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 1
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 3
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 4
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 5
+							</cell>
+						</row>
+						</tabular>
+					</statement>
+					<solution>
+						<m>k(t)</m> is a function, but <m>h</m> is not.
+					</solution>
+					</example>
+				</subsubsection>
+			</subsection>
+			<subsection xml:id="section-11-preclass">
+				<title>Pre-Class Activities</title>
+					<example><statement>
+						If <m>f(x) = 6x^2 -3x + 1</m>, find the following: <m>f(1)</m>, <m>f(-2)</m>, <m>f(a)</m>, <m>f(-a)</m>, <m>f(a+1)</m>, <m>2f(a)</m>, <m>f(2a)</m>, <m>f(a^2)</m>, <m>[f(a)]^2</m>, and <m>f(a+h)</m>.
+					</statement>
+					<solution>
+						<p>
+							<m>f(1) = 4, f(-2) = 31, f(a) = 6a^2-3a+1, f(-a) = 6a^2+3a+1, f(a+1) = 6a^2+9a+4, 2f(a) = 12a^2-6a+2</m>
+						</p>
+						<p>
+							<m>f(2a) = 24a^2-6a+1, f(a^2)=6a^4-3a^2+1, [f(a)]^2 = 36a^4-36a^3+21a^2-6a+1, f(a+h) = 6a^2+12ah+6h^2-3a-3h+1</m>
+						</p>
+					</solution>
+					</example>
+					
+					<example><statement>
+						Evaluate the difference quotient <m>\dfrac{f(x) - f(3)}{x-3}</m> for <m>f(x) = x^3</m>.
+					</statement>
+					<solution>
+						<m>x^2+3x+9</m>
+					</solution>
+					</example>
+					
+					<example><statement>
+						Find the domain of the functions below:
+						<ol label="a">
+							<li>
+								<m>f(x) = \dfrac{3x^4 - 5}{x^2 +2x - 8}</m>
+							</li>
+								
+							<li>
+								<m>g(k) = \sqrt[3]{1-7k}</m>
+							</li>
+							
+							<li>
+								<m>h(t) = \sqrt{2-t} - \sqrt{3+t}</m>	
+							</li>
+						</ol>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li>
+								<m>(-\infty,-4)\cup (-4,2)\cup (2,\infty)</m>
+							</li>
+							<li>
+								<m>(-\infty,\infty)</m>
+							</li>
+							<li>
+								<m>[-3,2]</m>
+							</li>
+						</ol>
+					</solution>
+					</example>
+					
+					<example><statement>
+						Without referring to the vertical line test, explain why the graph below is <em>not</em> a function.
+						<image>
+							<description>
+								The image on the right is the graph of the curve whose <m>x-</m>coordinate is given by the rule <m>x^2-3</m>, and whose <m>y-</m>coordinate is given by the rule <m>x^3-3x</m>.
+							</description>
+							<latex-image>
+								<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+												axis x line = middle,
+												axis y line = middle,
+												every axis y label/.style={at={(ticklabel cs:1.1)}},
+												y label style={at={(axis description cs:.5,1.1)},anchor=north},
+												ylabel = {$y$},
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												x label style={at={(axis description cs:1.1,0)},anchor=east},
+												xlabel = {$x$},
+												xmin=-5, xmax = 5,
+												ytick = {-8,-6,-4,-2,2,4},
+											]
+											\addplot[domain=-5:0,samples=50] {-1*x};
+											\addplot[domain=0:5,samples=50] {x}; 
+										 \end{axis}
+									\end{tikzpicture}
+								]]>
+							</latex-image>
+						</image>
+					</statement>
+					<solution>
+						Each input (except <m>x=0</m>) has multiple outputs
+					</solution>
+					</example>
+					
+					
+			</subsection>
+			<subsection xml:id="section-11-inclass">
+				<title>In Class</title>
+				<subsubsection xml:id="section-11-piecewise">
+					<title>Piecewise Defined Functions</title>
+					
+					<definition>
+						A <term>piecewise function</term> is a function defined by different formulas in different parts of their domains.
+					</definition>
+					
+					<example><statement>
+						A quick example of a piecewise function is the <em>absolute value function</em>: 
+							<me>
+								f(x) = |x| = \begin{cases}-x \amp x \lt 0 \\x \amp x \geq 0  \end{cases}
+							</me>
+							
+						<ol label="a">
+							<li>
+								What is <m>f(-5)?</m>  What about <m>f(1)</m>?
+							</li>
+								
+							<li>
+								What is <m>f(0)</m>?  Why?
+							</li>
+								
+							<li>
+								Sketch <m>|x|</m> on the interval <m>-5\leq x \leq 5</m>.
+							</li>
+						</ol>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li>
+								<m>f(-5) = 5, f(1) = 1</m>
+							</li>
+							<li>
+								<m>f(0) = 0</m>
+							</li>
+							<li>
+								<p>
+									<image>
+										<description>
+											Graph of <m>f(x) = |x|</m> on the interval <m>[-5,5]</m>
+										</description>
+										<latex-image>
+											<![CDATA[
+											\begin{tikzpicture}
+												\begin{axis}[
+														axis x line = middle,
+														axis y line = middle,
+														every axis y label/.style={at={(ticklabel cs:1.1)}},
+														y label style={at={(axis description cs:.5,1.1)},anchor=north},
+														ylabel = {$y$},
+														every axis x label/.style= {at ={(ticklabel cs:1)}},
+														x label style={at={(axis description cs:1.1,.65)},anchor=east},
+														xlabel = {$x$},
+														xmin=-4.5,xmax=4.5,
+														ymin=-9.5,ymax=4.5,
+														xtick = {-4,-2,2,4},
+														ytick = {-8,-6,-4,-2,2,4},
+													]
+													\addplot [domain=-3:3,samples=50]({x^2-3},{x^3-3*x}); 
+												\end{axis}
+											\end{tikzpicture}]]>
+										</latex-image>
+									</image>
+								</p>
+							</li>
+						</ol>
+					</solution>
+					</example>
+					
+					<example><statement>
+						A function <m>h</m> is defined by <m>h(x) = \begin{cases}3-x \amp x \lt 2\\ x^2+x \amp x \geq 2 \end{cases}</m>
+						<ol label="a">
+							<li>
+								Evaluate <m>h(-2)</m>, <m>h(3)</m>, and <m>h(2)</m>.
+							</li>	
+							<li>
+								Sketch the graph of <m>h</m>
+							</li>
+								
+						</ol>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li>
+								<m>h(-2) = 5, h(3) = 12, h(2) = 6</m>
+							</li>	
+							<li>
+								<p>
+								<image>
+									<description>
+										The graph of the piecewise function <m>h(x)</m> on the interval <m>[-2,4]</m>
+									</description>
+									<latex-image>
+									<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+											axis x line = middle,
+											axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.1)}},
+											y label style={at={(axis description cs:.5,1.1)},anchor=north},
+											ylabel = {$y$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											x label style={at={(axis description cs:1.1,.65)},anchor=east},
+											xlabel = {$x$},
+											xmin=-2,xmax=4,
+											ymin=0,ymax=12
+										]
+											\addplot [domain=-2:2,samples=50] {3-x}; 
+											\addplot [domain=2:3, samples=50] {x^2+x};
+											\coordinate (circle1) at (2,1);
+											\coordinate (circle2) at (2,6);
+										\end{axis}
+										\fill[white] (circle1) circle (.1);
+										\draw (circle1) circle (.1);
+										\fill (circle2) circle (.1);
+									\end{tikzpicture}]]>
+									</latex-image>
+								</image>
+								</p>
+							</li>
+						</ol>
+					</solution>
+					</example>
+					
+					<example><statement>
+						Write the absolute value function <m>f(x) = |2x-3|</m> as a piecewise function
+					</statement>
+					<solution>
+						<m>|2x-3| = \begin{cases} 3-2x \amp x \lt \dfrac{3}{2}\\ 2x-3 \amp x \geq \dfrac{3}{2} \end{cases}</m>
+					</solution>
+					</example>
+				</subsubsection>	
+				<subsubsection xml:id="section-11-symmetry">
+					<title>Symmetry</title>
+					
+					<definition>
+						<title>Even/Odd Function</title>
+						<idx>Even Function</idx>
+						<idx>Odd Function</idx>
+						
+						A function <m>f</m> is said to be <term>even</term> if it has the property that <m>f(-x) = f(x)</m>.  A function <m>g</m> is said to be <term>odd</term> if it has the property that <m>g(-x)=-g(x)</m>
+					</definition>
+					
+					<example><statement>
+						Determine if the following functions are even, odd, or neither.
+						<ol label="a">
+							<li>
+								<m>f(x) = x^7 + x^5 - x</m>
+							</li>
+								
+							<li>
+								<m>g(x) = 3-x^2</m>
+							</li>
+								
+							<li>
+								<m>h(x) = x^2 - x^3</m>
+							</li>								
+						</ol>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li>
+								Odd
+							</li>
+							<li>
+								Even
+							</li>
+							<li>
+								Neither
+							</li>
+						</ol>
+					</solution>
+					</example>
+				</subsubsection>
+				<subsubsection xml:id="section-11-increasing-decreasing">
+					<title>Increasing and Decreasing Functions</title>
+					
+					<definition>
+						<title>Increasing/Decreasing</title>
+						<idx>Increasing</idx>
+						<idx>Decreasing</idx>
+						
+						Let <m>f</m> be a function defined on some input interval.  <m>f</m> is said to be 
+						<ul>
+							<li>
+								<term>increasing</term> if the output values increase on the interval
+							</li>
+							<li>
+								<term>decreasing</term> if the output values decrease on the interval
+							</li>
+						</ul>
+					</definition>
+					
+					<example><statement>
+						Identify the intervals for which the function is increasing and decreasing.
+						<image>
+							<description>
+								This is the graph of the function <m>\dfrac{1}{3}x^3 - \dfrac{1}{2}x^2 - 2x</m> on the interval <m>[-3,4]</m>.
+							</description>
+							<latex-image>
+								<![CDATA[
+								\begin{tikzpicture}
+									\begin{axis}[
+									axis x line = middle,
+										axis y line = middle,
+										every axis y label/.style={at={(ticklabel cs:1.1)}},
+									y label style={at={(axis description cs:.4,1.1)},anchor=north},
+										ylabel = {$y$},
+										every axis x label/.style= {at ={(ticklabel cs:1)}},
+										x label style={at={(axis description cs:1.1,.6)},anchor=east},
+										xlabel = {$x$},
+									xmin=-3.5,xmax=5,
+									xtick = {-3,-2,-1,1,2,3,4},
+									]
+									\addplot[thick,smooth,domain = -3:4] {(1/3)*x^3 -(1/2)*x^2 -2*x};
+									\end{axis}
+								\end{tikzpicture}]]>
+							</latex-image>
+						</image>
+					</statement>
+					<solution>
+						The function is increasing on <m>(-\infty,-1)\cup (2,\infty)</m> and decreasing on <m>(-1,2)</m>
+					</solution>
+					</example>
+				</subsubsection>
+			</subsection>
+			<subsection xml:id="section-11-afterclass">
+				<title>After Class Activities</title>
+					<example><statement>
+						Evaluate <m>h(3), h(0),</m> and <m>h(2)</m> for the function <m>h(x) = \begin{cases}3 - \dfrac{1}{2}x \amp x \lt 2\\ 2x - 5 \amp x\geq 2 \end{cases}</m>.  Then, sketch the graph of <m>h(x)</m>.
+					</statement>
+					<solution>
+						<p>
+							<m>h(3) = 1, h(0) = 3, h(2) = -1</m>
+						</p>
+						<p>
+							<image>
+								<description>
+									The graph of <m>h(x)</m> as described above
+								</description>
+								<latex-image>
+									<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+										axis x line = middle,
+											axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.1)}},
+										y label style={at={(axis description cs:.35,1.1)},anchor=north},
+											ylabel = {$y$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											x label style={at={(axis description cs:1.1,.2)},anchor=east},
+											xlabel = {$x$},
+										xmin=-2,xmax=4,
+										]
+											\coordinate (circle1) at (2,2);
+											\coordinate (circle2) at (2,-1);
+											\addplot[thick,smooth,domain = -2:2] {3-0.5*x};
+											\addplot[thick,smooth,domain = 2:4] {2*x-5};
+										\end{axis}
+										\fill[white] (circle1) circle (.1);
+										\draw (circle1) circle (.1);
+										\fill (circle2) circle (.1);
+									\end{tikzpicture}]]>
+								</latex-image>
+							</image>
+						</p>
+					</solution>
+					</example>
+						
+					<example><statement>
+						Sketch the graph of <m>f(x) = x + |x|</m> and <m>g(x) = \begin{cases} |x| \amp |x| \leq 1\\ 1 \amp x \gt 1\end{cases}</m>.
+					</statement>
+					<solution>
+						<p>
+							<image>
+								<description>
+									The graph of <m>f(x)</m> as given above
+								</description>
+								<latex-image>
+									<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+										axis x line = middle,
+											axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.1)}},
+										y label style={at={(axis description cs:.5,1.1)},anchor=north},
+											ylabel = {$f(x)$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											x label style={at={(axis description cs:1.1,0)},anchor=east},
+											xlabel = {$x$},
+										xmin=-1.5,xmax=1.5,
+										]
+											\coordinate (circle1) at (0,0);
+											\coordinate (a) at (-1.5,0);
+											\coordinate (b) at (0,0);
+											\addplot[thick,smooth,domain = 0:1] {x};
+										\end{axis}
+										\draw[ultra thick] (a)--(b);
+										\fill (circle1) circle (.1);
+									\end{tikzpicture}]]>
+								</latex-image>
+							</image>
+						</p>
+
+						<p>
+							<image>
+								<description>
+									The graph of <m>g(x)</m> as given above
+								</description>
+								<latex-image>
+									<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+										axis x line = middle,
+											axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.1)}},
+										y label style={at={(axis description cs:.5,1.1)},anchor=north},
+											ylabel = {$g(x)$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											x label style={at={(axis description cs:1.1,0)},anchor=east},
+											xlabel = {$x$},
+										xmin=-2,xmax=2,
+										]
+											\coordinate (circle1) at (-1,1);
+											\addplot[thick,smooth,domain = 0:1] {x};
+											\addplot[thick,smooth,domain = -1:0] {-1*x};
+											\addplot[thick,smooth,domain = 1:2] {1};
+										\end{axis}
+										\fill (circle1) circle (.1);
+									\end{tikzpicture}]]>
+								</latex-image>
+							</image>
+						</p>
+					</solution>
+					</example>
+						
+					<example><statement>
+						If the point <m>(3,5)</m> is on the graph of an even function, what other point must also be on the graph?  What about if the function is odd?  Justify your answers.
+					</statement>
+					<solution>
+						The point <m>(-3,5)</m> is on the even function, and the point <m>(-3,-5)</m> is on the odd function.
+					</solution>
+					</example>
+						
+					<example><statement>
+						Is the function <m>f(t) = t|t|</m> even, odd, or neither?  Explain.
+					</statement>
+					<solution>
+						The function is odd.
+					</solution>
+					</example>
+			</subsection>
+			
+			<xi:include href="./resources/11.xml"/>
+		</section>

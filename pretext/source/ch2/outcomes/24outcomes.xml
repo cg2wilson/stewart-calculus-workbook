@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<p>
+	<ul>
+		<li>
+			Use the limits <m>\ds \lim_{\theta\to 0} \dfrac{\sin \theta}{\theta} = 1</m> and <m>\ds \lim_{\theta\to 0} \dfrac{\cos\theta -1}{\theta} = 0</m> to aid the computation of the derivative of sine and cosine
+		</li>
+		<li>
+			Apply the derivative rules of Section 2.3 to all six trigonometric functions
+		</li>
+		
+		
+	</ul>
+</p>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-07-17T17:31:48-05:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Math 1914 - Differential &amp; Integral Calculus I Indefinite Integrals &amp; the Net Change Theorem</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Math 1914 - Differential &amp; Integral Calculus">
+<meta property="book:author" content="Cory Wilson">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(      \newcommand{\ds}{\displaystyle}
+\newcommand{\lrpar}[1]{\left(#1\right)}
+\newcommand{\lrbrace}[1]{\left\lbrace #1 \right\rbrace}
+\newcommand{\inv}[1]{#1^{-1}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\dc}{^\circ}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="math1914.html"><span class="title">Math 1914 - Differential &amp; Integral Calculus</span></a></h1>
+<p class="byline">Cory Wilson</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-43.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch4.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-45.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-43.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch4.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section-45.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul><li><a href="colophon.html" data-scroll="colophon" class="internal">Colophon</a></li></ul>
+</li>
+<li class="link">
+<a href="ch1.html" data-scroll="ch1" class="internal"><span class="codenumber">1</span> <span class="title">Functions and Limits</span></a><ul>
+<li><a href="section-11.html" data-scroll="section-11" class="internal">Four Ways to Represent a Function</a></li>
+<li><a href="section-12.html" data-scroll="section-12" class="internal">Mathematical Models: A Catalog of Essential Functions</a></li>
+<li><a href="section-13.html" data-scroll="section-13" class="internal">New Functions from Old Functions</a></li>
+<li><a href="section-14.html" data-scroll="section-14" class="internal">The Tangent and Velocity Problems</a></li>
+<li><a href="section-15.html" data-scroll="section-15" class="internal">The Limit of a Function</a></li>
+<li><a href="section-16.html" data-scroll="section-16" class="internal">Calculating Limits Using Limit Laws</a></li>
+<li><a href="section-17.html" data-scroll="section-17" class="internal">(X) The Precise Definition of a Limit</a></li>
+<li><a href="section-18.html" data-scroll="section-18" class="internal">Continuity</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch2.html" data-scroll="ch2" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives</span></a><ul>
+<li><a href="section-21.html" data-scroll="section-21" class="internal">Derivatives and Rates of Change</a></li>
+<li><a href="section-22.html" data-scroll="section-22" class="internal">The Derivative as a Function</a></li>
+<li><a href="section-23.html" data-scroll="section-23" class="internal">Differentiation Formulas</a></li>
+<li><a href="section-24.html" data-scroll="section-24" class="internal">Derivatives of Trigonometric Functions</a></li>
+<li><a href="section-25.html" data-scroll="section-25" class="internal">The Chain Rule</a></li>
+<li><a href="section-26.html" data-scroll="section-26" class="internal">Implicit Differentiation</a></li>
+<li><a href="section-27.html" data-scroll="section-27" class="internal">(X) Rates of Changes in the Natural and Social Sciences</a></li>
+<li><a href="section-28.html" data-scroll="section-28" class="internal">Related Rates</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch3.html" data-scroll="ch3" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Differentiation</span></a><ul>
+<li><a href="section-31.html" data-scroll="section-31" class="internal">Maximum &amp; Minimum Values</a></li>
+<li><a href="section-32.html" data-scroll="section-32" class="internal">(X) The Mean Value Theorem</a></li>
+<li><a href="section-33.html" data-scroll="section-33" class="internal">How Derivatives Affect the Shape of a Graph</a></li>
+<li><a href="section-34.html" data-scroll="section-34" class="internal">Limits at Infinity &amp; Horizontal Asymptotes</a></li>
+<li><a href="section-35.html" data-scroll="section-35" class="internal">Summary of Curve Sketching</a></li>
+<li><a href="section-36.html" data-scroll="section-36" class="internal">(X) Graphing with Calculus and Calculators</a></li>
+<li><a href="section-37.html" data-scroll="section-37" class="internal">Optimization</a></li>
+<li><a href="section-38.html" data-scroll="section-38" class="internal">(X) Newton's Method</a></li>
+<li><a href="section-39.html" data-scroll="section-39" class="internal">Antiderivatives</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch4.html" data-scroll="ch4" class="internal"><span class="codenumber">4</span> <span class="title">Integrals</span></a><ul>
+<li><a href="section-41.html" data-scroll="section-41" class="internal">Areas &amp; Distance</a></li>
+<li><a href="section-42.html" data-scroll="section-42" class="internal">The Definite Integral</a></li>
+<li><a href="section-43.html" data-scroll="section-43" class="internal">The Fundamental Theorem of Calculus</a></li>
+<li><a href="section-44.html" data-scroll="section-44" class="active">Indefinite Integrals &amp; the Net Change Theorem</a></li>
+<li><a href="section-45.html" data-scroll="section-45" class="internal">The Substitution Rule</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch5.html" data-scroll="ch5" class="internal"><span class="codenumber">5</span> <span class="title">Applications of Integration</span></a><ul>
+<li><a href="section-51.html" data-scroll="section-51" class="internal">Areas Between Curves</a></li>
+<li><a href="section-52.html" data-scroll="section-52" class="internal">Volumes</a></li>
+<li><a href="section-53.html" data-scroll="section-53" class="internal">Volumes by Cylindrical Shells</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-44"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">4.4</span> <span class="title">Indefinite Integrals &amp; the Net Change Theorem</span>
+</h2>
+<article class="objectives goal-like" id="objectives-24"><h3 class="heading"><span class="type">Objectives</span></h3>
+<ul class="disc">
+<li id="li-916"><p id="p-derived-li-916">Explain what is meant by an indefinite integral and use proper notation for definite/indefinite integrals</p></li>
+<li id="li-917"><p id="p-derived-li-917">Use the Net Change Theorem to interpret definite integrals arising from real-world contexts, including finding distance traveled or displacement</p></li>
+</ul></article><section class="subsection" id="section-44-beforeclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.4.1</span> <span class="title">Before Class</span>
+</h3>
+<figure class="figure figure-like" id="figure-42"><a class="external" href="https://mymedia.ou.edu/media/4.4-1/1_zny56xxk" target="_blank"><code class="code-inline tex2jax_ignore">https://mymedia.ou.edu/media/4.4-1/1_zny56xxk</code></a><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">42<span class="period">.</span></span><span class="space"> </span>Pre-Class Video 1</figcaption></figure><section class="subsubsection" id="section-44-indefinite-integrals"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">4.4.1.1</span> <span class="title">Indefinite Integrals</span>
+</h4>
+<article class="definition definition-like" id="definition-35"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">Indefinite Integral.</span>
+</h5>
+<p id="p-222">The <dfn class="terminology">indefinite integral</dfn> is a family of functions <span class="process-math">\(F(x)\)</span> such that <span class="process-math">\(F'(x) = f(x)\)</span> or <span class="process-math">\(\ds \int f(x)\, dx = F(x)\)</span></p></article><article class="example example-like" id="example-439"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.4.2</span><span class="period">.</span>
+</h5>Write the indefinite integral for <span class="process-math">\(\ds \int x^2\, dx\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-443" id="solution-443"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-443"><div class="solution solution-like"><p id="p-223"><span class="process-math">\(\ds \int x^2\, dx = \dfrac{1}{3}x^3 + C\)</span></p></div></div>
+</div></article><article class="question example-like" id="question-27"><h5 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">4.4.3</span><span class="period">.</span>
+</h5>Give an explicit distinction between the definite integral and the indefinite integral.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-444" id="solution-444"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-444"><div class="solution solution-like"><p id="p-224">The definite integral always returns a number while the indefinite integral always returns a function.</p></div></div>
+</div></article><article class="assemblage assemblage-like" id="assemblage-31"><h5 class="heading"><span class="title">Useful Indefinite Integrals.</span></h5>
+<p id="p-225"><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b2 r2 l2 t2 lines">Function</td>
+<td class="c m b2 r2 l0 t2 lines">Indefinite Integral</td>
+<td class="c m b2 r2 l0 t2 lines">Function</td>
+<td class="c m b2 r2 l0 t2 lines">Indefinite Integral</td>
+</tr>
+<tr>
+<td class="l m b0 r2 l2 t0 lines"><span class="process-math">\(\ds \int c\cdot f(x)\, dx\)</span></td>
+<td class="l m b0 r2 l0 t0 lines"><span class="process-math">\(c\cdot F(x) +C\)</span></td>
+<td class="l m b0 r2 l0 t0 lines"><span class="process-math">\(\ds \int [f(x)\pm g(x)]\, dx\)</span></td>
+<td class="l m b0 r2 l0 t0 lines"><span class="process-math">\(F(x) + G(x) + C\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r2 l2 t0 lines"><span class="process-math">\(\ds \int k\, dx\)</span></td>
+<td class="l m b0 r2 l0 t0 lines"><span class="process-math">\(kx + C\)</span></td>
+<td class="l m b0 r2 l0 t0 lines"><span class="process-math">\(\ds \int x^n\, dx\)</span></td>
+<td class="l m b0 r2 l0 t0 lines"><span class="process-math">\(\dfrac{x^{n+1}}{n+1} + C\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r2 l2 t0 lines"><span class="process-math">\(\ds \sin x\, dx\)</span></td>
+<td class="l m b0 r2 l0 t0 lines"><span class="process-math">\(-\cos x + C\)</span></td>
+<td class="l m b0 r2 l0 t0 lines"><span class="process-math">\(\ds \int \cos x\, dx\)</span></td>
+<td class="l m b0 r2 l0 t0 lines"><span class="process-math">\(\sin x + C\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r2 l2 t0 lines"><span class="process-math">\(\ds \int \sec^2 x\, dx\)</span></td>
+<td class="l m b0 r2 l0 t0 lines"><span class="process-math">\(\tan x + C\)</span></td>
+<td class="l m b0 r2 l0 t0 lines"><span class="process-math">\(\ds \int \csc^2 x\, dx\)</span></td>
+<td class="l m b0 r2 l0 t0 lines"><span class="process-math">\(-\cot x + C\)</span></td>
+</tr>
+<tr>
+<td class="l m b2 r2 l2 t0 lines"><span class="process-math">\(\ds \int \sec x \tan x\, dx\)</span></td>
+<td class="l m b2 r2 l0 t0 lines"><span class="process-math">\(\sec x + C\)</span></td>
+<td class="l m b2 r2 l0 t0 lines"><span class="process-math">\(\ds \int \csc x\cot x\, dx\)</span></td>
+<td class="l m b2 r2 l0 t0 lines"><span class="process-math">\(-\csc x + C\)</span></td>
+</tr>
+</table></div></p></article><article class="example example-like" id="example-440"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.4.4</span><span class="period">.</span>
+</h5>Find the general indefinite integral for <span class="process-math">\(f(x) = 3x^5-2\csc^2 x\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-445" id="solution-445"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-445"><div class="solution solution-like"><p id="p-226"><span class="process-math">\(\ds \int f(x)\, dx = \dfrac{1}{2}x^6 + 2\cot x + C\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-441"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.4.5</span><span class="period">.</span>
+</h5>Evaluate <span class="process-math">\(\ds \int \dfrac{\sin\theta}{\cos^2\theta}\,d\theta\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-446" id="solution-446"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-446"><div class="solution solution-like"><p id="p-227"><span class="process-math">\(\ds \int \dfrac{\sin\theta}{\cos^2\theta}\,d\theta = \sec\theta + C\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-442"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.4.6</span><span class="period">.</span>
+</h5>Evaluate <span class="process-math">\(\ds \int (6-2\cos x)\, dx\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-447" id="solution-447"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-447"><div class="solution solution-like"><p id="p-228"><span class="process-math">\(\ds \int (6-2\cos x)\, dx = 6x-2\sin x + C\)</span></p></div></div>
+</div></article></section></section><section class="subsection" id="section-44-preclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.4.2</span> <span class="title">Pre-Class Activities</span>
+</h3>
+<article class="example example-like" id="example-443"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.4.7</span><span class="period">.</span>
+</h4>Imagine that you are able to give your future self some advice, while you're studying.  Looking back over the notes, how would you describe the difference between a <em class="emphasis">definite</em> integral and an <em class="emphasis">indefinite</em> integral to your future self?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-448" id="solution-448"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-448"><div class="solution solution-like"><p id="p-229">Answers vary</p></div></div>
+</div></article><article class="example example-like" id="example-444"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.4.8</span><span class="period">.</span>
+</h4>Compute the following: <ol class="lower-alpha">
+<li id="li-918"><p id="p-derived-li-918"><span class="process-math">\(\displaystyle \ds \int \lrpar{\cos x + \dfrac{1}{3}x}\, dx\)</span></p></li>
+<li id="li-919"><p id="p-derived-li-919"><span class="process-math">\(\displaystyle \ds \int \lrpar{1-x^2}^2\, dx\)</span></p></li>
+<li id="li-920"><p id="p-derived-li-920"><span class="process-math">\(\displaystyle \ds \int_1^2 \lrpar{4x^3 - 3x^2 + 2x}\, dx\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-449" id="solution-449"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-449"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-921"><p id="p-derived-li-921"><span class="process-math">\(\displaystyle \sin x + \dfrac{1}{6}x^2 + C\)</span></p></li>
+<li id="li-922"><p id="p-derived-li-922"><span class="process-math">\(\displaystyle x-\dfrac{2}{3}x^3 +\dfrac{1}{5}x^5 + C\)</span></p></li>
+<li id="li-923"><p id="p-derived-li-923"><span class="process-math">\(\displaystyle 11\)</span></p></li>
+</ol></div></div>
+</div></article></section><section class="subsection" id="section-44-inclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.4.3</span> <span class="title">In Class</span>
+</h3>
+<section class="subsubsection" id="section-44-net-change"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">4.4.3.1</span> <span class="title">The Net Change Theorem</span>
+</h4>
+<article class="question example-like" id="question-28"><h5 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">4.4.9</span><span class="period">.</span>
+</h5>
+<ol class="lower-alpha">
+<li id="li-924"><p id="p-derived-li-924">In Section 4.1, how did we find the accumulated change of a function?  Give an real-world example of how those techniques would be used.</p></li>
+<li id="li-925"><p id="p-derived-li-925">In Section 4.3, we learned the Fundamental Theorem of Calculus.  Rewrite FTC 2 here.</p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-450" id="solution-450"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-450"><div class="solution solution-like"><ol id="p-230" class="lower-alpha">
+<li id="li-926"><p id="p-derived-li-926">Answers vary</p></li>
+<li id="li-927"><p id="p-derived-li-927">If <span class="process-math">\(f(x)\)</span> is continuous on <span class="process-math">\([a,b]\)</span> and <span class="process-math">\(F(x)\)</span> is an antiderivative of <span class="process-math">\(f(x)\)</span> on that interval, then <span class="process-math">\(\ds \int_a^b f(x)\, dx = F(b) - F(a)\)</span></p></li>
+</ol></div></div>
+</div></article><article class="theorem theorem-like" id="theorem-27"><h5 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">4.4.10</span><span class="period">.</span><span class="space"> </span><span class="title">Net Change.</span>
+</h5>
+<p id="p-231">The integral of a rate of change is the net change, i.e.: <span class="process-math">\(\ds \int_a^b F'(x)\, dx = F(b) - F(a)\)</span></p></article><article class="question example-like" id="question-29"><h5 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">4.4.11</span><span class="period">.</span>
+</h5>What relationship(s) do you see between the Net Change Theorem and FTC 2?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-451" id="solution-451"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-451"><div class="solution solution-like"><p id="p-232">We get the same result, but we are using different functions.</p></div></div>
+</div></article><article class="assemblage assemblage-like" id="assemblage-32"><h5 class="heading"><span class="title">Displacement/Distance.</span></h5>
+<p id="p-233">When talking about physical situations, the <dfn class="terminology">displacement</dfn> of a particle is the net change of the particle's position, and the <dfn class="terminology">distance</dfn> is the total change of the particle's position.</p></article><article class="example example-like" id="example-445"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.4.12</span><span class="period">.</span>
+</h5>A particle moves along a line so that its velocity at time <span class="process-math">\(t\)</span> is <span class="process-math">\(v(t) = t^2-t-6\)</span> m/s. <ol class="lower-alpha">
+<li id="li-928"><p id="p-derived-li-928">Find the displacement of the particle during the time period <span class="process-math">\(1\leq t\leq 4\)</span></p></li>
+<li id="li-929"><p id="p-derived-li-929">Find the distance traveled during this time period.</p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-452" id="solution-452"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-452"><div class="solution solution-like"><ol id="p-234" class="lower-alpha">
+<li id="li-930"><p id="p-derived-li-930"><span class="process-math">\(-\dfrac{9}{2}\)</span> m</p></li>
+<li id="li-931"><p id="p-derived-li-931"><span class="process-math">\(\dfrac{61}{6}\)</span> m</p></li>
+</ol></div></div>
+</div></article><article class="example example-like" id="example-446"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.4.13</span><span class="period">.</span>
+</h5>A particle moving along a line has velocity <span class="process-math">\(v(t) = t^2 -2t-3\)</span> m/s.  Find the displacement and the total distance traveled by the particle between 1 and 4 seconds.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-453" id="solution-453"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-453"><div class="solution solution-like"><p id="p-235">The displacement is <span class="process-math">\(-3\)</span> m and the distance traveled is <span class="process-math">\(\dfrac{23}{3}\)</span> m</p></div></div>
+</div></article></section><section class="subsubsection" id="section-44-practice"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">4.4.3.2</span> <span class="title">Practice</span>
+</h4>
+<article class="example example-like" id="example-447"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.4.14</span><span class="period">.</span>
+</h5>Find the general indefinite integral of <span class="process-math">\(f(x) = x^{1.3}-7x^{2.5}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-454" id="solution-454"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-454"><div class="solution solution-like"><p id="p-236"><span class="process-math">\(\ds \int f(x)\, dx = \dfrac{x^{2.3}}{2.3} - 2x^{3.5} + C\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-448"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.4.15</span><span class="period">.</span>
+</h5>Find the general indefinite integral of <span class="process-math">\(f(x) = \sqrt[5]{x^4}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-455" id="solution-455"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-455"><div class="solution solution-like"><p id="p-237"><span class="process-math">\(\ds \int f(x)\, dx = \dfrac{5}{9} x^{9/5} + C\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-449"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.4.16</span><span class="period">.</span>
+</h5>Find the general indefinite integral of <span class="process-math">\(f(x) = \dfrac{1-\sqrt{x}+x}{\sqrt{x}}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-456" id="solution-456"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-456"><div class="solution solution-like"><p id="p-238"><span class="process-math">\(\ds \int f(x)\, dx = 2x^{1/2} + \dfrac{2}{3}x^{3/2} + C\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-450"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.4.17</span><span class="period">.</span>
+</h5>Find the general indefinite integral of <span class="process-math">\(f(x) = 2+\tan^2x\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-457" id="solution-457"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-457"><div class="solution solution-like"><p id="p-239"><span class="process-math">\(\ds \int f(x)\, dx = x + \tan x + C\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-451"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.4.18</span><span class="period">.</span>
+</h5>Find the general indefinite integral of <span class="process-math">\(f(t) = \dfrac{1-\sin^3t}{\sin^2t}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-458" id="solution-458"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-458"><div class="solution solution-like"><p id="p-240"><span class="process-math">\(\ds \int f(t)\, dt = -\cot t + \cos t + C\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-452"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.4.19</span><span class="period">.</span>
+</h5>Evaluate the integral <span class="process-math">\(\ds \int_{-2}^3 (x^2-3)\, dx\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-459" id="solution-459"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-459"><div class="solution solution-like"><p id="p-241"><span class="process-math">\(\ds \int_{-2}^3 (x^2-3)\, dx = -\dfrac{10}{3}\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-453"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.4.20</span><span class="period">.</span>
+</h5>Evaluate the integral <span class="process-math">\(\ds \int_0^3 (1 + 6w^2-10w^4)\,dw\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-460" id="solution-460"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-460"><div class="solution solution-like"><p id="p-242"><span class="process-math">\(\ds \int_0^3 (1 + 6w^2-10w^4)\,dw = -429\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-454"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.4.21</span><span class="period">.</span>
+</h5>Evaluate the integral <span class="process-math">\(\ds \int_0^\pi (4\sin \theta -3\cos\theta)\, d\theta\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-461" id="solution-461"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-461"><div class="solution solution-like"><p id="p-243"><span class="process-math">\(\ds \int_0^\pi (4\sin \theta -3\cos\theta)\, d\theta =8\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-455"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.4.22</span><span class="period">.</span>
+</h5>Evaluate the integral <span class="process-math">\(\ds \int_0^{\pi/3} \dfrac{\sin\theta + \sin\theta\tan^2\theta}{\sec^2\theta}\,d\theta\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-462" id="solution-462"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-462"><div class="solution solution-like"><p id="p-244"><span class="process-math">\(\ds \int_0^{\pi/3} \dfrac{\sin\theta + \sin\theta\tan^2\theta}{\sec^2\theta}\,d\theta = \dfrac{1}{2}\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-456"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.4.23</span><span class="period">.</span>
+</h5>Evaluate the integral <span class="process-math">\(\ds \int_1^8 \dfrac{2+t}{\sqrt[3]{t^2}}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-463" id="solution-463"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-463"><div class="solution solution-like"><p id="p-245"><span class="process-math">\(\ds \int_1^8 \dfrac{2+t}{\sqrt[3]{t^2}} = \dfrac{69}{4}\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-457"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.4.24</span><span class="period">.</span>
+</h5>A honeybee population starts with 100 bees and increases at a rate of <span class="process-math">\(n'(t)\)</span> bees per week.  What does 100 + <span class="process-math">\(\ds \int_0^{15}n'(t)\,dt/\)</span> represent?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-464" id="solution-464"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-464"><div class="solution solution-like"><p id="p-246">It gives the total number of bees after 15 weeks.</p></div></div>
+</div></article><article class="example example-like" id="example-458"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.4.25</span><span class="period">.</span>
+</h5>If <span class="process-math">\(x\)</span> is measured in meters and <span class="process-math">\(f(x)\)</span> is measured in newtons, what are the units of <span class="process-math">\(\ds \int_0^{100}f(x)\,dx\text{?}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-465" id="solution-465"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-465"><div class="solution solution-like"><p id="p-247">Newton<span class="process-math">\(\cdot\)</span>meters</p></div></div>
+</div></article><article class="example example-like" id="example-459"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.4.26</span><span class="period">.</span>
+</h5>The acceleration function of a particle is <span class="process-math">\(a(t) = t+4\)</span> m/s<span class="process-math">\(^2\text{,}\)</span> and its the initial velocity is 5 m/s.  Find the velocity at time <span class="process-math">\(t\text{,}\)</span> and the distance traveled between time <span class="process-math">\(t = 0\)</span> and <span class="process-math">\(t = 5\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-466" id="solution-466"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-466"><div class="solution solution-like"><p id="p-248">The velocity is <span class="process-math">\(v(t) = \dfrac{1}{2}t^2 + 4t + 8\)</span> and the particle travels <span class="process-math">\(\dfrac{665}{6}\)</span> m.</p></div></div>
+</div></article></section></section><section class="subsection" id="section-44-afterclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.4.4</span> <span class="title">After Class Activities</span>
+</h3>
+<article class="example example-like" id="example-460"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.4.27</span><span class="period">.</span>
+</h4>Let <span class="process-math">\(r(\theta) = \dfrac{1+\cos^2\theta}{\cos^2\theta}\text{.}\)</span>  Find the indefinite integral <span class="process-math">\(\ds \int r(\theta)\, d\theta\)</span> and the definite integral on the interval <span class="process-math">\([0,\pi/4]\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-467" id="solution-467"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-467"><div class="solution solution-like"><p id="p-249"><span class="process-math">\(\ds \int r(\theta)\, d\theta = \tan \theta + \theta + C\)</span> and <span class="process-math">\(\ds \int_0^{\pi/4} r(\theta)\, d\theta = 1 + \dfrac{\pi}{4}\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-461"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.4.28</span><span class="period">.</span>
+</h4>If <span class="process-math">\(f(x)\)</span> is the slope of a trail at a distance of <span class="process-math">\(x\)</span> miles from the start of the trail, what does <span class="process-math">\(\ds \int_3^5 f(x)\, dx\)</span> represent?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-468" id="solution-468"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-468"><div class="solution solution-like"><p id="p-250">The net change in height between 3 and 5 miles from the start of the trail.</p></div></div>
+</div></article><article class="example example-like" id="example-462"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.4.29</span><span class="period">.</span>
+</h4>The current in a wire is defined to be the derivative of charge, i.e. <span class="process-math">\(I(t) = Q'(t)\text{.}\)</span>  What does <span class="process-math">\(\ds \int_a^b I(t)\, dt\)</span> represent?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-469" id="solution-469"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-469"><div class="solution solution-like"><p id="p-251">The net change in charge between <span class="process-math">\(t=a\)</span> and <span class="process-math">\(t=b\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-463"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.4.30</span><span class="period">.</span>
+</h4>A particle moving along a line has acceleration given by <span class="process-math">\(a(t) = 2t+3\text{.}\)</span>  If <span class="process-math">\(v(0) = -4\text{,}\)</span> find the particle's velocity and distance traveled in the first three seconds of motion.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-470" id="solution-470"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-470"><div class="solution solution-like"><p id="p-252"><span class="process-math">\(v(t) = t^2 + 3t-4\)</span> and the distance traveled is <span class="process-math">\(\dfrac{89}{6}\text{.}\)</span></p></div></div>
+</div></article></section></section></div></main>
+</div>
+</body>
+</html>

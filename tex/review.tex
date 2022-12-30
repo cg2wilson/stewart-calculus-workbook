@@ -1,0 +1,170 @@
+\documentclass[notes]{subfiles}
+\begin{document}
+	\chapter{Review}
+	\addcontentsline{toc}{section}{Calc 1 Review}
+	\setcounter{section}{0}
+	\setcounter{page}{1}
+	\fancyhead[RO,LE]{\bfseries \nameref{csr}} 
+	\fancyhead[LO,RE]{\bfseries \small \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Calc 1 Review}
+	
+\section*{Calc 1 Review}\label{csr}
+	\subsection*{Differentiation}
+	\subsubsection*{Formal Definition}
+		\begin{defn}[Continuity]
+			A function $f$ is continuous at the input $x =a$ if \blank{3}.  $f$ is continuous on an interval $I$ if it is continuous at all points in $I$.
+		\end{defn}
+		\begin{ex}
+			Find values of $a$ and $b$ that make $f$ continuous everywhere.
+				\[f(x) = \begin{cases}\dfrac{x^2-4}{x-2} & x < 2 \\ ax^2 - bx +  3& 2\leq x < 3 \\ 2x - a + b & x \geq 3 \end{cases}\]
+		\end{ex}
+			\vs{1}
+			
+		\begin{defn}[Derivative of $f$ at $x =a$]
+			The derivative of the function $f(x)$ at $x =a$ is given by these two formulas (if the limit exists):\\[15pt]
+			\begin{itemize}
+				\setlength \itemsep{25pt}
+				
+				\item $f'(a) = \ds \lim_{x\to a}$
+				\item $f'(a) = \ds \lim_{h\to 0}$
+			\end{itemize}
+		\end{defn}
+			\newpage
+			
+		\begin{defn}[Derivative of $f$ as a Function]
+			The derivative of the function $f(x)$ is given by the limit\\[15pt]
+				\[f'(x) = \ds \lim_{h\to 0} \hspace{2in}\]
+				\\
+			if the limit exists.
+		\end{defn}
+		
+		\begin{rmk}[Interpretation of the Derivative]
+			The derivative $f'(a)$ can be interpreted in two ways:\\[10pt]
+			\begin{itemize}
+			\setlength\itemsep{15pt}
+			
+			\item $f'(a)$ represents the \blank{4.5} at the input $x = a$.
+			\item $f'(a)$ represents the \blank{4.5} at the input $x = a$.
+			\end{itemize}
+		\end{rmk}
+		\begin{ex}
+			The function $C$ gives the number of bushels of corn produced on a tract of farmland that is treated with $f$ pounds of nitrogen per acre.
+			\begin{enumerate}[(a)]
+				\item Is it possible for $C(90)$ to be negative?  Why or why not?
+					\vs{1}
+					
+				\item What are the units on $C'(90)$?
+					\vs{1}
+
+				\item Is it possible for $C'(90)$ to be negative?  Why or why not?
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+		
+		\begin{ex}
+			The tangent line to $y = f(x)$ at $(3,4)$ passes through the point $(0,2)$.  Find $f(3)$ and $f'(3)$.
+		\end{ex}
+			\vs{2}
+			\newpage
+			
+	\subsubsection*{Derivative Rules}
+		\showto{ins}{
+				\begin{center}
+				\tabulinesep = 4mm
+				\begin{tabu} {| X[.75,c] | X[c] || X[.75,c] | X[c] |}\hline
+					\textbf{Function}	& \textbf{Derivative}	& \textbf{Function}	& \textbf{Derivative} \\ \hline
+					$c$				& $0$					& $x^n$				& $nx^{n-1}$ \\ \hline
+					$\sin x$			& $\cos x$				& $\cos x$			& $-\sin x$ \\ \hline
+					$\tan x$			& $\sec^2x$				& $\cot x$			& $-\csc^2x$ \\ \hline
+					$\sec x$			& $\sec x\tan x$			& $\csc x$			& $-\csc x\cot x$\\ \hline
+					$c\cdot f(x)$		& $c\cdot f'(x)$			& $f(x)\pm g(x)$		& $f'(x)\pm g'(x)$\\ \hline
+					$f(x)\cdot g(x)$	& $f'(x)g(x) + f(x)g'(x)$	& $\dfrac{f(x)}{g(x)}$& $\dfrac{f'(x)g(x)-f(x)g'(x)}{[g(x)]^2}$\\ \hline
+					$f(g(x))$		& $f'(g(x))\cdot g'(x)$		& 					& \\ \hline
+				\end{tabu}
+			\end{center}
+			}
+			
+			\showto{st}{
+				\begin{center}
+					\tabulinesep = 2mm
+					\begin{tabu}to .8\textwidth {| X[c] | X[c] || X[c] | X[c] |}\hline
+						\textbf{Function}	& \textbf{Derivative}	& \textbf{Function}	& \textbf{Derivative} \\ \hline
+										&					&					& \\
+						$c$				&					& $x^n$				& \\
+										&					&					& \\ \hline
+										&					&					& \\
+						$\sin x$			&					& $\cos x$			& \\
+										&					&					& \\ \hline
+										&					&					& \\
+						$\tan x$			&					& $\cot x$			& \\
+										&					&					& \\ \hline
+										&					&					& \\
+						$\sec x$			&					& $\csc x$			& \\
+										&					&					& \\ \hline
+										&					&					& \\
+						$c\cdot f(x)$	&					& $f(x)\pm g(x)$		& \\
+										&					&					& \\ \hline
+										&					&					& \\
+						$f(x)\cdot g(x)$	&					& $\dfrac{f(x)}{g(x)}$& \\
+										&					&					& \\ \hline
+										&					&					& \\
+						$f(g(x))$		&					& 					& \\ 
+										&					&					& \\ \hline
+					\end{tabu}
+				\end{center}
+			}
+			
+			\begin{ex}
+				Compute the derivative:
+				\begin{enumerate}[(a)]
+					\item $f(\theta) = \cos(\theta^2)$
+						\vs{1}
+						
+					\item $f(t) = t\sin (\pi t)$
+						\vs{1}
+						\newpage
+						
+					\item $g(u) = \lrpar{\dfrac{u^3-1}{u^3+1}}^8$
+						\vs{1}
+						
+					\item $h(x) = \tan(x^2\csc x)$
+						\vs{1}
+						
+					\item $y = \cot^2(\sec\theta)$
+						\vs{1}
+						
+					\item $f(x) = \dfrac{4x}{\sqrt{x+2}}$
+						\vs{1}
+						\newpage
+					
+					\item $f(x) = x^2\sin (\pi x)$
+						\vs{1}
+						
+					\item $g(t) =\dfrac{t^4-1}{t^4+1}$
+						\vs{1}
+						
+					\item $y = \sin(\cos x)$
+						\vs{1}
+						
+					\item $y =\dfrac{1}{\sqrt[3]{x + \sqrt{x}}}$
+						\vs{1}
+						\newpage
+						
+					\item $f(y) = \cot (3y^2 + 5)$
+						\vs{1}
+						
+					\item $f(x) = \tan^2(\sin x)$
+						\vs{1}
+						
+					\item $f(\theta) = \dfrac{\sin (m\theta)}{\theta}$
+						\vs{1}
+						
+					\item $y =\sin^2(\cos\sqrt{\sin \pi x})$
+						\vs{1}	
+				\end{enumerate}
+			\end{ex}
+	
+\clearpage
+\end{document}

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-07-17T17:31:46-05:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Math 1914 - Differential &amp; Integral Calculus I How Derivatives Affect the Shape of a Graph</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Math 1914 - Differential &amp; Integral Calculus">
+<meta property="book:author" content="Cory Wilson">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(      \newcommand{\ds}{\displaystyle}
+\newcommand{\lrpar}[1]{\left(#1\right)}
+\newcommand{\lrbrace}[1]{\left\lbrace #1 \right\rbrace}
+\newcommand{\inv}[1]{#1^{-1}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\dc}{^\circ}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="math1914.html"><span class="title">Math 1914 - Differential &amp; Integral Calculus</span></a></h1>
+<p class="byline">Cory Wilson</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-32.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch3.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-34.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-32.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch3.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section-34.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul><li><a href="colophon.html" data-scroll="colophon" class="internal">Colophon</a></li></ul>
+</li>
+<li class="link">
+<a href="ch1.html" data-scroll="ch1" class="internal"><span class="codenumber">1</span> <span class="title">Functions and Limits</span></a><ul>
+<li><a href="section-11.html" data-scroll="section-11" class="internal">Four Ways to Represent a Function</a></li>
+<li><a href="section-12.html" data-scroll="section-12" class="internal">Mathematical Models: A Catalog of Essential Functions</a></li>
+<li><a href="section-13.html" data-scroll="section-13" class="internal">New Functions from Old Functions</a></li>
+<li><a href="section-14.html" data-scroll="section-14" class="internal">The Tangent and Velocity Problems</a></li>
+<li><a href="section-15.html" data-scroll="section-15" class="internal">The Limit of a Function</a></li>
+<li><a href="section-16.html" data-scroll="section-16" class="internal">Calculating Limits Using Limit Laws</a></li>
+<li><a href="section-17.html" data-scroll="section-17" class="internal">(X) The Precise Definition of a Limit</a></li>
+<li><a href="section-18.html" data-scroll="section-18" class="internal">Continuity</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch2.html" data-scroll="ch2" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives</span></a><ul>
+<li><a href="section-21.html" data-scroll="section-21" class="internal">Derivatives and Rates of Change</a></li>
+<li><a href="section-22.html" data-scroll="section-22" class="internal">The Derivative as a Function</a></li>
+<li><a href="section-23.html" data-scroll="section-23" class="internal">Differentiation Formulas</a></li>
+<li><a href="section-24.html" data-scroll="section-24" class="internal">Derivatives of Trigonometric Functions</a></li>
+<li><a href="section-25.html" data-scroll="section-25" class="internal">The Chain Rule</a></li>
+<li><a href="section-26.html" data-scroll="section-26" class="internal">Implicit Differentiation</a></li>
+<li><a href="section-27.html" data-scroll="section-27" class="internal">(X) Rates of Changes in the Natural and Social Sciences</a></li>
+<li><a href="section-28.html" data-scroll="section-28" class="internal">Related Rates</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch3.html" data-scroll="ch3" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Differentiation</span></a><ul>
+<li><a href="section-31.html" data-scroll="section-31" class="internal">Maximum &amp; Minimum Values</a></li>
+<li><a href="section-32.html" data-scroll="section-32" class="internal">(X) The Mean Value Theorem</a></li>
+<li><a href="section-33.html" data-scroll="section-33" class="active">How Derivatives Affect the Shape of a Graph</a></li>
+<li><a href="section-34.html" data-scroll="section-34" class="internal">Limits at Infinity &amp; Horizontal Asymptotes</a></li>
+<li><a href="section-35.html" data-scroll="section-35" class="internal">Summary of Curve Sketching</a></li>
+<li><a href="section-36.html" data-scroll="section-36" class="internal">(X) Graphing with Calculus and Calculators</a></li>
+<li><a href="section-37.html" data-scroll="section-37" class="internal">Optimization</a></li>
+<li><a href="section-38.html" data-scroll="section-38" class="internal">(X) Newton's Method</a></li>
+<li><a href="section-39.html" data-scroll="section-39" class="internal">Antiderivatives</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch4.html" data-scroll="ch4" class="internal"><span class="codenumber">4</span> <span class="title">Integrals</span></a><ul>
+<li><a href="section-41.html" data-scroll="section-41" class="internal">Areas &amp; Distance</a></li>
+<li><a href="section-42.html" data-scroll="section-42" class="internal">The Definite Integral</a></li>
+<li><a href="section-43.html" data-scroll="section-43" class="internal">The Fundamental Theorem of Calculus</a></li>
+<li><a href="section-44.html" data-scroll="section-44" class="internal">Indefinite Integrals &amp; the Net Change Theorem</a></li>
+<li><a href="section-45.html" data-scroll="section-45" class="internal">The Substitution Rule</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch5.html" data-scroll="ch5" class="internal"><span class="codenumber">5</span> <span class="title">Applications of Integration</span></a><ul>
+<li><a href="section-51.html" data-scroll="section-51" class="internal">Areas Between Curves</a></li>
+<li><a href="section-52.html" data-scroll="section-52" class="internal">Volumes</a></li>
+<li><a href="section-53.html" data-scroll="section-53" class="internal">Volumes by Cylindrical Shells</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-33"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.3</span> <span class="title">How Derivatives Affect the Shape of a Graph</span>
+</h2>
+<article class="objectives goal-like" id="objectives-16"><h3 class="heading"><span class="type">Objectives</span></h3>
+<ul class="disc">
+<li id="li-729"><p id="p-derived-li-729">Use the Increasing/Decreasing Test to determine the intervals over which a function is increasing or decreasing</p></li>
+<li id="li-730"><p id="p-derived-li-730">Use the First Derivative Test and the Second Derivative Test to identify local extrema</p></li>
+<li id="li-731"><p id="p-derived-li-731">Describe concavity of a function, estimate the intervals of concavity and location of inflection points</p></li>
+<li id="li-732"><p id="p-derived-li-732">Use the Concavity Test to determine intervals over which a function is concave up or concave down and locate inflection points</p></li>
+<li id="li-733"><p id="p-derived-li-733">Use derivatives to identify qualitative information about a function and use the information along with other given properties to sketch the graph of the function</p></li>
+</ul></article><section class="subsection" id="section-33-beforeclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.3.1</span> <span class="title">Before Class</span>
+</h3>
+<figure class="figure figure-like" id="figure-23"><a class="external" href="https://mymedia.ou.edu/media/3.3-1.mp4/1_6ntbtqd6" target="_blank"><code class="code-inline tex2jax_ignore">https://mymedia.ou.edu/media/3.3-1.mp4/1_6ntbtqd6</code></a><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">23<span class="period">.</span></span><span class="space"> </span>Pre-Class Video 1</figcaption></figure><figure class="figure figure-like" id="figure-24"><a class="external" href="https://mymedia.ou.edu/media/3.3-2/1_q3uahwvk" target="_blank"><code class="code-inline tex2jax_ignore">https://mymedia.ou.edu/media/3.3-2/1_q3uahwvk</code></a><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">24<span class="period">.</span></span><span class="space"> </span>Pre-Class Video 2</figcaption></figure><section class="subsubsection" id="section-33-id-test"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">3.3.1.1</span> <span class="title">Increasing/Decereasing Test</span>
+</h4>
+<article class="theorem theorem-like" id="theorem-18"><h5 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">Increasing/Decreasing.</span>
+</h5>Let <span class="process-math">\(f\)</span> be a differentiable function on the interval <span class="process-math">\((a,b)\text{.}\)</span>  If <span class="process-math">\(f'(x) \gt 0\)</span> on <span class="process-math">\((a,b)\text{,}\)</span> then <span class="process-math">\(f\)</span> is <dfn class="terminology">increasing</dfn> on <span class="process-math">\((a,b)\text{.}\)</span>  If <span class="process-math">\(f'(x) \lt 0\)</span> on <span class="process-math">\((a,b)\text{,}\)</span> then <span class="process-math">\(f\)</span> is <dfn class="terminology">decreasing</dfn> on <span class="process-math">\((a,b)\text{.}\)</span></article><article class="example example-like" id="example-298"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3.2</span><span class="period">.</span>
+</h5>Let <span class="process-math">\(f(x) = (x-5)^2 + 1\text{.}\)</span> <ol class="lower-alpha">
+<li id="li-734"><p id="p-derived-li-734">Sketch the graph of <span class="process-math">\(f\text{,}\)</span> and visually determine where the function is increasing and decreasing.</p></li>
+<li id="li-735"><p id="p-derived-li-735">Now, use the Increasing/Decreasing Test to determine the intervals where <span class="process-math">\(f\)</span> is increasing and decreasing.</p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-299" id="solution-299"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-299"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-736">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-105.svg" role="img" class="contained" alt="The graph of \(f(x)=(x-5)^2+1\) on the interval \([3,7]\text{.}\)"></div>
+<p id="p-159">The function is increasing on <span class="process-math">\((5,\infty)\)</span> and decreasing on <span class="process-math">\((-\infty,5)\text{.}\)</span></p>
+</li>
+<li id="li-737"><p id="p-derived-li-737">Using the Increasing/Decreasing Test, we again find that the function is increasing on <span class="process-math">\((5,\infty)\)</span> and decreasing on <span class="process-math">\((-\infty,5)\text{.}\)</span></p></li>
+</ol></div></div>
+</div></article><article class="example example-like" id="example-299"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3.3</span><span class="period">.</span>
+</h5>Let <span class="process-math">\(f(x) = 3x^4-4x^3-12x^2+5\text{.}\)</span>  Find the intervals where <span class="process-math">\(f\)</span> is increasing and decreasing.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-300" id="solution-300"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-300"><div class="solution solution-like">
+<span class="process-math">\(f(x)\)</span> is increasing on <span class="process-math">\((-1,0)\cup (2,\infty)\)</span> and decreasing on <span class="process-math">\((-\infty,-1)\cup (0,2)\)</span>
+</div></div>
+</div></article></section><section class="subsubsection" id="section-33-local-extrema"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">3.3.1.2</span> <span class="title">Local Extrema</span>
+</h4>
+<p id="p-160">Fermat's Theorem tells us that if we have a local max or min at input <span class="process-math">\(x = c\text{,}\)</span> then <span class="process-math">\(c\)</span> is a critical number of <span class="process-math">\(f\text{.}\)</span>  We need some more machinery in order to classify extrema.</p>
+<article class="theorem theorem-like" id="theorem-19"><h5 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.3.4</span><span class="period">.</span><span class="space"> </span><span class="title">First Derivative Test.</span>
+</h5>Suppose that <span class="process-math">\(c\)</span> is a critical number of a continuous function <span class="process-math">\(f\text{.}\)</span>  If <span class="process-math">\(f'\)</span> changes from positive to negative at <span class="process-math">\(c\text{,}\)</span> then <span class="process-math">\(f\)</span> has a local maximum at <span class="process-math">\(c\text{.}\)</span>  If <span class="process-math">\(f'\)</span> changes from negative to positive at <span class="process-math">\(c\text{,}\)</span> then <span class="process-math">\(f\)</span> has a local minimum at <span class="process-math">\(c\text{.}\)</span>  If <span class="process-math">\(f'\)</span> does not change sign around <span class="process-math">\(c\text{,}\)</span> then <span class="process-math">\(f\)</span> has no local maximum or minimum at <span class="process-math">\(c\text{.}\)</span></article><article class="example example-like" id="example-300"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3.5</span><span class="period">.</span>
+</h5>Find the local maximum and minimum values of the function <span class="process-math">\(g(x) = x + 2\sin x\)</span> on <span class="process-math">\(0\leq x\leq 2\pi\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-301" id="solution-301"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-301"><div class="solution solution-like">The local max occurs at <span class="process-math">\(x=\dfrac{2\pi}{3}\)</span> and the local min occurs at <span class="process-math">\(x=\dfrac{4\pi}{3}\)</span>
+</div></div>
+</div></article><article class="example example-like" id="example-301"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3.6</span><span class="period">.</span>
+</h5>Let <span class="process-math">\(f(x) = 200 + 8x^3 + x^4\text{.}\)</span>  Find the intervals where <span class="process-math">\(f\)</span> is increasing, decreasing, and identify local extrema of <span class="process-math">\(f\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-302" id="solution-302"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-302"><div class="solution solution-like">The function is increasing on <span class="process-math">\((-6,0)\cup (0,\infty)\)</span> and decreasing on <span class="process-math">\((-\infty,-6)\text{.}\)</span>  There is a local minmum at <span class="process-math">\((-6,-232)\text{.}\)</span>
+</div></div>
+</div></article></section><section class="subsubsection" id="section-33-concavity"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">3.3.1.3</span> <span class="title">Concavity</span>
+</h4>
+<p id="p-161">The first derivative tells us information about where a function is increasing or decreasing, and where it has horizontal tangent lines.  The second derivative tells us information about how a function <em class="emphasis">bends</em>.</p>
+<article class="definition definition-like" id="definition-27"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.3.7</span><span class="period">.</span><span class="space"> </span><span class="title">Concave Up/Concave Down.</span>
+</h5>
+<p id="p-162">If the graph of <span class="process-math">\(f\)</span> lies above all of its tangents on an interval <span class="process-math">\(I\text{,}\)</span> then it is said to be <dfn class="terminology">concave up</dfn> on <span class="process-math">\(I\text{;}\)</span> if <span class="process-math">\(f\)</span> lies below all of its tangents on <span class="process-math">\(I\text{,}\)</span> then it is said to be <dfn class="terminology">concave down</dfn> on <span class="process-math">\(I\text{.}\)</span></p></article><article class="definition definition-like" id="definition-28"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.3.8</span><span class="period">.</span><span class="space"> </span><span class="title">Inflection Point.</span>
+</h5>
+<p id="p-163">A point <span class="process-math">\((c,f(c))\)</span> on a curve <span class="process-math">\(y = f(x)\)</span> is called an <dfn class="terminology">inflection point</dfn> if <span class="process-math">\(f\)</span> is continuous there and the curve changes concavity.</p></article><article class="example example-like" id="example-302"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3.9</span><span class="period">.</span>
+</h5>Determine the sign of the second derivative for the function graphed below, and note any inflection points. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-106.svg" role="img" class="contained" alt="The graph of \(f(x)=x^3\) on the interval \([-2,2]\text{.}\)"></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-303" id="solution-303"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-303"><div class="solution solution-like">
+<span class="process-math">\(f''(x) \lt 0 \)</span> on <span class="process-math">\((-\infty,0)\)</span> and <span class="process-math">\(f''(x) \gt 0\)</span> on <span class="process-math">\((0,\infty)\text{.}\)</span>  There is an inflection point at <span class="process-math">\(x=0\text{.}\)</span>
+</div></div>
+</div></article></section></section><section class="subsection" id="section-33-preclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.3.2</span> <span class="title">Pre-Class Activities</span>
+</h3>
+<article class="example example-like" id="example-303"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3.10</span><span class="period">.</span>
+</h4>Let <span class="process-math">\(f(x) = x^3-3x^2-9x+4\text{.}\)</span>  Find the intervals where <span class="process-math">\(f\)</span> is increasing and decreasing.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-304" id="solution-304"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-304"><div class="solution solution-like">
+<span class="process-math">\(f(x)\)</span> is increasing on <span class="process-math">\((-\infty,-1)\cup (3,\infty)\)</span> and decreasing on <span class="process-math">\((-1,3)\text{.}\)</span>
+</div></div>
+</div></article><article class="example example-like" id="example-304"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3.11</span><span class="period">.</span>
+</h4>Given the picture below, find the open intervals where <span class="process-math">\(f\)</span> is increasing, decreasing, concave up, concave down.  Identify the coordinates of any inflection points. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/33fig1.svg" class="contained"></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-305" id="solution-305"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-305"><div class="solution solution-like">The function is increasing on <span class="process-math">\((1,3)\cup (4,6)\text{,}\)</span> decreasing on <span class="process-math">\((0,1)\cup (3,4)\text{,}\)</span> concave up on <span class="process-math">\((0,2)\text{,}\)</span> and concave down on <span class="process-math">\((2,4)\cup (4,6)\text{.}\)</span>  There is an inflection point at <span class="process-math">\((2,3)\text{.}\)</span>
+</div></div>
+</div></article><article class="example example-like" id="example-305"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3.12</span><span class="period">.</span>
+</h4>The graph of the <em class="emphasis">derivative</em>, <span class="process-math">\(f'\text{,}\)</span> is given below.  On what interval(s) is <span class="process-math">\(f\)</span> increasing or decreasing? At what inputs does <span class="process-math">\(f\)</span> have a local maximum or minimum? <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/33fig2.svg" class="contained"></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-306" id="solution-306"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-306"><div class="solution solution-like">
+<span class="process-math">\(f(x)\)</span> is increasing on <span class="process-math">\((1,5)\)</span> and decreasing on <span class="process-math">\((0,1)\cup (5,6)\text{.}\)</span>  There is a local max at <span class="process-math">\(x=5\)</span> and a local min at <span class="process-math">\(x=1\text{.}\)</span>
+</div></div>
+</div></article></section><section class="subsection" id="section-33-inclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.3.3</span> <span class="title">In Class</span>
+</h3>
+<article class="theorem theorem-like" id="theorem-20"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.3.13</span><span class="period">.</span><span class="space"> </span><span class="title">Concavity Test.</span>
+</h4>If <span class="process-math">\(f''(x) \gt 0\)</span> for all <span class="process-math">\(x\)</span> in <span class="process-math">\(I\text{,}\)</span> then the graph of <span class="process-math">\(f\)</span> is concave up on <span class="process-math">\(I\text{.}\)</span>  If <span class="process-math">\(f''(x) \lt 0\)</span> for all <span class="process-math">\(x\)</span> in <span class="process-math">\(I\text{,}\)</span> then the graph of <span class="process-math">\(f\)</span> is concave down on <span class="process-math">\(I\)</span></article><article class="example example-like" id="example-306"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3.14</span><span class="period">.</span>
+</h4>Let <span class="process-math">\(f(x) = x^3 - 3x\text{.}\)</span> <ol class="lower-alpha">
+<li id="li-738"><p id="p-derived-li-738">Find the intervals where <span class="process-math">\(f(x)\)</span> is increasing and decreasing.</p></li>
+<li id="li-739"><p id="p-derived-li-739">Identify the local maxima and minima of <span class="process-math">\(f(x)\text{.}\)</span></p></li>
+<li id="li-740"><p id="p-derived-li-740">Where is <span class="process-math">\(f\)</span> concave up?  Where is it concave down?</p></li>
+<li id="li-741"><p id="p-derived-li-741">Identify any inflection points of <span class="process-math">\(f\text{.}\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-307" id="solution-307"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-307"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-742"><p id="p-derived-li-742"><span class="process-math">\(f(x)\)</span> is increasing on <span class="process-math">\((-\infty,-1)\cup (1,\infty)\)</span> and decreasing on <span class="process-math">\((-1,1)\)</span></p></li>
+<li id="li-743"><p id="p-derived-li-743">The max occurs at <span class="process-math">\((-1,2)\)</span> and the min occurs at <span class="process-math">\((1,-2)\)</span></p></li>
+<li id="li-744"><p id="p-derived-li-744"><span class="process-math">\(f(x)\)</span> is concave up on <span class="process-math">\((0,\infty)\)</span> and concave down on <span class="process-math">\((-\infty,0)\)</span></p></li>
+<li id="li-745"><p id="p-derived-li-745">The inflection point is at <span class="process-math">\((0,0)\)</span></p></li>
+</ol></div></div>
+</div></article><article class="example example-like" id="example-307"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3.15</span><span class="period">.</span>
+</h4>Sketch a possible graph for a function <span class="process-math">\(f\)</span> that satisfies the conditions: <ol class="lower-roman">
+<li id="li-746"><p id="p-derived-li-746"><span class="process-math">\(f(0) = 0\text{,}\)</span> <span class="process-math">\(f(2) = 3\text{,}\)</span> <span class="process-math">\(f(4) = 6\text{,}\)</span> <span class="process-math">\(f'(0) = f'(4) = 0\)</span></p></li>
+<li id="li-747"><p id="p-derived-li-747"><span class="process-math">\(f'(x) \gt 0\)</span> for <span class="process-math">\(0 \lt x \lt 4\text{,}\)</span> <span class="process-math">\(f'(x) \lt 0\)</span> for <span class="process-math">\(x \lt 0\)</span> and for <span class="process-math">\(x \gt 4\)</span></p></li>
+<li id="li-748"><p id="p-derived-li-748"><span class="process-math">\(f''(x) \gt 0\)</span> for <span class="process-math">\(x \lt 2\text{,}\)</span> <span class="process-math">\(f''(x) \lt 0\)</span> for <span class="process-math">\(x \gt 2\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-308" id="solution-308"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-308"><div class="solution solution-like">Answers vary</div></div>
+</div></article><article class="theorem theorem-like" id="theorem-21"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.3.16</span><span class="period">.</span><span class="space"> </span><span class="title">Second Derivative Test.</span>
+</h4>
+<p id="p-164">Suppose <span class="process-math">\(f''\)</span> is continuous near <span class="process-math">\(c\text{,}\)</span> and <span class="process-math">\(f'(c) = 0\text{.}\)</span>  If <span class="process-math">\(f''(c) \gt 0\text{,}\)</span> then <span class="process-math">\(f\)</span> has a local minimum at <span class="process-math">\(c\text{.}\)</span>  If <span class="process-math">\(f''(c) \lt 0\text{,}\)</span> then <span class="process-math">\(f\)</span> has a local maximum at <span class="process-math">\(c\text{.}\)</span></p></article><article class="example example-like" id="example-308"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3.17</span><span class="period">.</span>
+</h4>Sketch the curve <span class="process-math">\(y = x^4-4x^3\)</span> by finding the intervals of increasing/decreasing, local maxima/minima, intervals of concavity, and inflection point(s).<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-309" id="solution-309"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-309"><div class="solution solution-like"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-109.svg" role="img" class="contained" alt="The graph of \(y = x^4-4x^3\) on the interval \([-2.5,5]\text{.}\)"></div></div></div>
+</div></article><article class="example example-like" id="example-309"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3.18</span><span class="period">.</span>
+</h4>Sketch the curve <span class="process-math">\(y=\dfrac{1}{2}x^4 -4x^2 + 3\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-310" id="solution-310"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-310"><div class="solution solution-like"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-110.svg" role="img" class="contained" alt="The graph of \(y=\dfrac{1}{2}x^4 -4x^2 + 3\) on the interval \([-3,3]\text{.}\)"></div></div></div>
+</div></article><article class="example example-like" id="example-310"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3.19</span><span class="period">.</span>
+</h4>Sketch the curve <span class="process-math">\(f(x)=x^3 - 12x + 2\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-311" id="solution-311"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-311"><div class="solution solution-like"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-111.svg" role="img" class="contained" alt="The graph of \(f(x)=x^3 - 12x + 2\) on the interval \([-4,4]\text{.}\)"></div></div></div>
+</div></article><article class="example example-like" id="example-311"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3.20</span><span class="period">.</span>
+</h4>Sketch the curve <span class="process-math">\(h(x) = 5x^3-3x^5\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-312" id="solution-312"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-312"><div class="solution solution-like"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-112.svg" role="img" class="contained" alt="The graph of \(h(x) = 5x^3-3x^5\) on the interval \([-1.5,1.5]\text{.}\)"></div></div></div>
+</div></article><article class="example example-like" id="example-312"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3.21</span><span class="period">.</span>
+</h4>Sketch the graph of a function that satisfies the criteria outlined below: <ol class="lower-roman">
+<li id="li-749"><p id="p-derived-li-749">Vertical asymptote at <span class="process-math">\(x = 0\text{.}\)</span></p></li>
+<li id="li-750"><p id="p-derived-li-750"><span class="process-math">\(f'(x) \gt 0\)</span> if <span class="process-math">\(x \lt -2\text{,}\)</span> <span class="process-math">\(f'(x) \lt 0\)</span> if <span class="process-math">\(x \gt -2\)</span> (for <span class="process-math">\(x\neq 0\)</span>).</p></li>
+<li id="li-751"><p id="p-derived-li-751"><span class="process-math">\(f''(x) \lt 0\)</span> if <span class="process-math">\(x \lt 0\text{,}\)</span> <span class="process-math">\(f''(x) \gt 0\)</span> if <span class="process-math">\(x \gt 0\text{.}\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-313" id="solution-313"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-313"><div class="solution solution-like">Answers vary</div></div>
+</div></article><article class="example example-like" id="example-313"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3.22</span><span class="period">.</span>
+</h4>Sketch the graph of a function that satisfies the criteria outlined below: <ol class="lower-roman">
+<li id="li-752"><p id="p-derived-li-752"><span class="process-math">\(f'(5) = 0\text{,}\)</span> <span class="process-math">\(f'(x) \lt 0\)</span> when <span class="process-math">\(x \lt 5\text{,}\)</span> <span class="process-math">\(f'(x) \gt 0\)</span> when <span class="process-math">\(x \gt 5\)</span></p></li>
+<li id="li-753"><p id="p-derived-li-753"><span class="process-math">\(f''(2) = 0\text{,}\)</span> <span class="process-math">\(f''(8) = 0\text{,}\)</span> <span class="process-math">\(f''(x) \lt 0 \)</span> when <span class="process-math">\(x \lt 2\)</span> or <span class="process-math">\(x \gt 8\text{,}\)</span> <span class="process-math">\(f''(x) \gt 0\)</span> for <span class="process-math">\(2\lt x\lt 8\text{.}\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-314" id="solution-314"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-314"><div class="solution solution-like">Answers vary</div></div>
+</div></article></section><section class="subsection" id="section-33-afterclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.3.4</span> <span class="title">After Class Activities</span>
+</h3>
+<article class="example example-like" id="example-314"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3.23</span><span class="period">.</span>
+</h4>Find the intervals on which <span class="process-math">\(\sin x + \cos x\)</span> is increasing/decreasing on <span class="process-math">\([0,2\pi]\text{,}\)</span> the local maximum and minimum values of the function on the interval, and the intervals of concavity/inflection points.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-315" id="solution-315"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-315"><div class="solution solution-like">The function is increasing on <span class="process-math">\(\lrpar{0,\dfrac{\pi}{4}}\cup \lrpar{\dfrac{5\pi}{4},2\pi}\text{,}\)</span> decreasing on <span class="process-math">\(\lrpar{\dfrac{\pi}{4},\dfrac{5\pi}{4}}\text{,}\)</span> concave up on <span class="process-math">\(\lrpar{\dfrac{3\pi}{4},\dfrac{7\pi}{4}}\text{,}\)</span> and concave down on <span class="process-math">\(\lrpar{0,\dfrac{3\pi}{4}}\cup \lrpar{\dfrac{7\pi}{4},2\pi}\text{.}\)</span>  The local max occurs at <span class="process-math">\(\lrpar{\dfrac{\pi}{4},\sqrt{2}}\)</span> and the local min occurs at <span class="process-math">\(\lrpar{\dfrac{5\pi}{4},-\sqrt{2}}\text{.}\)</span>
+</div></div>
+</div></article><article class="example example-like" id="example-315"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3.24</span><span class="period">.</span>
+</h4>Find the local maximum and minimum values of <span class="process-math">\(f(x) = \dfrac{x^2}{x-1}\)</span> using the First and Second Derivative Tests.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-316" id="solution-316"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-316"><div class="solution solution-like">The local max is at <span class="process-math">\(x=0\)</span> and the local min is at <span class="process-math">\(x=2\)</span>
+</div></div>
+</div></article><article class="example example-like" id="example-316"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3.25</span><span class="period">.</span>
+</h4>A graph is given below. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/33fig3.svg" class="contained"></div> State and justify the <span class="process-math">\(x-\)</span>coordinates of the inflection points of <span class="process-math">\(f\text{,}\)</span> if <ol class="lower-alpha">
+<li id="li-754"><p id="p-derived-li-754">The curve is the graph of <span class="process-math">\(f\)</span></p></li>
+<li id="li-755"><p id="p-derived-li-755">The curve is the graph of <span class="process-math">\(f'\text{.}\)</span></p></li>
+<li id="li-756"><p id="p-derived-li-756">The curve is the graph of <span class="process-math">\(f''\text{.}\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-317" id="solution-317"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-317"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-757"><p id="p-derived-li-757"><span class="process-math">\(\displaystyle x=3,5\)</span></p></li>
+<li id="li-758"><p id="p-derived-li-758"><span class="process-math">\(\displaystyle x=2,4,6\)</span></p></li>
+<li id="li-759"><p id="p-derived-li-759"><span class="process-math">\(\displaystyle x=1,7\)</span></p></li>
+</ol></div></div>
+</div></article><article class="example example-like" id="example-317"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3.26</span><span class="period">.</span>
+</h4>Consider the phrase “SAT scores are declining at a slower rate”  Interpret this statement in terms of a function and its first and second derivatives.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-318" id="solution-318"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-318"><div class="solution solution-like"><span class="process-math">\(f'(x) \gt 0, f''(x)\lt 0\)</span></div></div>
+</div></article></section></section></div></main>
+</div>
+</body>
+</html>

@@ -1,0 +1,1483 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-12" xmlns:xi="http://www.w3.org/2001/XInclude">
+			<title>Mathematical Models: A Catalog of Essential Functions</title>
+				<objectives>
+					<ul>
+						<li>
+							<p>Recognize and graph essential functions:</p>
+							<ul>
+								<li>
+									Constant functions
+								</li>
+								<li>
+									Linear functions
+								</li>
+								<li>
+									Power functions
+								</li>
+								<li>
+									Reciprocal functions
+								</li>
+								<li>
+									Root functions
+								</li>
+								<li>
+									Polynomial functions
+								</li>
+								<li>
+									Rational functions
+								</li>
+								<li>
+									Trigonometric functions
+								</li>	
+								<li>
+									Exponential functions
+								</li>
+								<li>
+									Logarithmic functions
+								</li>
+								
+							</ul>
+						</li>
+						<li>
+							Identify the basic characteristics of essential functions, including: domain, range, end behavior, roots, asymptotes, <m>x-</m> and <m>y-</m>intercepts, slope, symmetry.
+						</li>
+						
+					</ul>
+				</objectives>
+			<subsection xml:id="section-12-beforeclass">
+				<title>Before Class</title>
+				
+				<figure>
+					<caption>Pre-Class Video 1</caption>
+					<url href = "https://mymedia.ou.edu/media/1.2-1/1_s05beatp"/>
+				</figure>
+
+				
+				<subsubsection xml:id="section-12-linear">
+					<title>Linear Functions</title>
+						<p>
+							Remember that a linear function requires two pieces of information- a starting value (<m>b</m>, the <m>y</m>-intercept), and an amount of incremental change in the independent variable (<m>m</m>, the slope of the function).  This gives us three ways to describe a linear function:
+							<ul>
+								<li>
+									Verbally: A function with a constant rate of change 
+								</li>
+								<li>
+									<p>
+										Graphically: Lines can look like one of four cases:
+									</p>
+									<p>
+										<sidebyside widths = "40% 40%">
+											<image>
+												<description>
+													A line with positive slope, passing through the origin
+												</description>
+												<latex-image>
+													<![CDATA[
+													\begin{tikzpicture}
+														\begin{axis}[
+														axis x line = middle,
+															axis y line = middle,
+															every axis y label/.style={at={(ticklabel cs:1.1)}},
+														y label style={at={(axis description cs:.5,1.1)},anchor=north},
+															ylabel = {$y$},
+															every axis x label/.style={at ={(ticklabel cs:1)}},
+															x label style={at={(axis description cs:1.1,.5)},anchor=east},
+															xlabel = {$x$},
+														xmin=-1,xmax=1,
+														xtick = \empty,
+														ytick = \empty
+														]
+															\addplot[thick,smooth,domain = -1:1] {x};
+														\end{axis}
+													\end{tikzpicture}]]>
+												</latex-image>
+											</image>
+											<image>
+												<description>
+													A line with negative slope, passing through the origin
+												</description>
+												<latex-image>
+													<![CDATA[
+													\begin{tikzpicture}
+														\begin{axis}[
+														axis x line = middle,
+															axis y line = middle,
+															every axis y label/.style={at={(ticklabel cs:1.1)}},
+														y label style={at={(axis description cs:.5,1.1)},anchor=north},
+															ylabel = {$y$},
+															every axis x label/.style={at ={(ticklabel cs:1)}},
+															x label style={at={(axis description cs:1.1,.5)},anchor=east},
+															xlabel = {$x$},
+														xmin=-1,xmax=1,
+														xtick = \empty,
+														ytick = \empty
+														]
+															\addplot[thick,smooth,domain = -1:1] {-1*x};
+														\end{axis}
+													\end{tikzpicture}]]>
+												</latex-image>
+											</image>
+										</sidebyside>
+									</p>
+									<p>
+										<sidebyside widths = "40% 40%">
+											<image>
+												<description>
+													A line with slope 0 (horizontal line)
+												</description>
+												<latex-image>
+													<![CDATA[
+													\begin{tikzpicture}
+														\begin{axis}[
+														axis x line = middle,
+															axis y line = middle,
+															every axis y label/.style={at={(ticklabel cs:1.1)}},
+														y label style={at={(axis description cs:.5,1.1)},anchor=north},
+															ylabel = {$y$},
+															every axis x label/.style={at ={(ticklabel cs:1)}},
+															x label style={at={(axis description cs:1.1,0)},anchor=east},
+															xlabel = {$x$},
+														xmin=-1,xmax=1,
+														xtick = \empty,
+														ytick = \empty
+														]
+															\addplot[thick,smooth,domain = -1:1] {.5};
+														\end{axis}
+													\end{tikzpicture}]]>
+												</latex-image>
+											</image>
+											<image>
+												<description>
+													A line with undefined slope (vertical line)
+												</description>
+												<latex-image>
+													<![CDATA[
+													\begin{tikzpicture}
+														\begin{axis}[
+														axis x line = middle,
+															axis y line = middle,
+															every axis y label/.style={at={(ticklabel cs:1.1)}},
+														y label style={at={(axis description cs:.5,1.1)},anchor=north},
+															ylabel = {$y$},
+															every axis x label/.style={at ={(ticklabel cs:1)}},
+															x label style={at={(axis description cs:1.1,.5)},anchor=east},
+															xlabel = {$x$},
+														xmin=-1,xmax=1,
+														xtick = \empty,
+														ytick = \empty
+														]
+															\coordinate (a) at (.5,-1);
+															\coordinate (b) at (.5,1);
+															\addplot[domain = -1:1] {0};
+														\end{axis}
+														\draw[thick] (a)--(b);
+													\end{tikzpicture}]]>
+												</latex-image>
+											</image>
+										</sidebyside>
+									</p>
+								</li>
+								<li>
+									Algebraically: <m>f(x) = mx+b</m>
+								</li>
+							</ul>
+						</p>
+						
+						<question>
+							<statement>
+								Given two points <m>(x_1,y_1)</m> and <m>(x_2,y_2)</m>, how can we find the slope of the line between them?
+							</statement>
+							<solution>
+								<p>
+									<m> m =\dfrac{y_2-y_1}{x_2-x_1}</m>
+								</p>
+							</solution>
+						</question>
+						
+						<example><statement>
+							The following table gives the percentage of new companies which remained open <m>t</m> years after beginning business.
+							
+							<tabular top="medium" left="medium">
+								<row bottom="medium">
+									<cell halign="center" left="medium" right="medium">
+									 Years After Opening
+									</cell>
+									<cell halign="center" left="medium" right="medium">
+									 5
+									</cell>
+									<cell halign="center" left="medium" right="medium">
+									 6
+									</cell>
+									<cell halign="center" left="medium" right="medium">
+									 7
+									</cell>
+									<cell halign="center" left="medium" right="medium">
+									 8
+									</cell>
+									<cell halign="center" left="medium" right="medium">
+									 9
+									</cell>
+									<cell halign="center" left="medium" right="medium">
+									 10
+									</cell>
+								</row>
+								<row bottom="medium">
+									<cell halign="center" left="medium" right="medium">
+									 Companies Still Open (in %)
+									</cell>
+									<cell halign="center" left="medium" right="medium">
+									 50
+									</cell>
+									<cell halign="center" left="medium" right="medium">
+									 47
+									</cell>
+									<cell halign="center" left="medium" right="medium">
+									 44
+									</cell>
+									<cell halign="center" left="medium" right="medium">
+									 41
+									</cell>
+									<cell halign="center" left="medium" right="medium">
+									 38
+									</cell>
+									<cell halign="center" left="medium" right="medium">
+									 35
+									</cell>
+								</row>
+							</tabular>
+							
+							<ol label="a">
+								<li>
+									Plot the points on the graph below
+									<image>
+										<description>
+											A blank graph to plot the points
+										</description>
+										<latex-image>
+										<![CDATA[
+										\begin{tikzpicture}
+											\begin{axis}[
+												width = .8\textwidth,
+												height = 4in,
+												grid = both,
+												axis x line = bottom,
+													axis y line = left,
+													every axis y label/.style={at={(ticklabel cs:1.1)}},
+													y label style={at={(axis description cs:.0,1.1)},anchor=north},
+													ylabel = {$C(t)$},
+													every axis x label/.style= {at ={(ticklabel cs:1)}},
+														x label style={at={(axis description cs:1.1,0)},anchor=east},
+													xlabel = {$t$},
+												xmin=3, xmax = 13,
+													xtick = {3,4,...,12},
+													ymin=30, ymax = 55,
+														minor y tick num = 4,
+											]
+												
+											\end{axis}
+										\end{tikzpicture}]]>
+										</latex-image>
+									</image>
+								</li>
+									
+								<li>	
+									Use the data to find an equation for the line between these points.
+								</li>
+									
+								<li>
+									Give an interpretation for the slope of <m>C(t)</m>
+								</li>
+									
+							</ol>
+						</statement>
+						<solution>
+							<ol label = "a">
+								<li>
+									<image>
+										<description>
+											The graph from part (a) with the points plotted
+										</description>
+										<latex-image>
+										<![CDATA[
+										\begin{tikzpicture}
+											\begin{axis}[
+												width = .8\textwidth,
+												height = 4in,
+												grid = both,
+												axis x line = bottom,
+													axis y line = left,
+													every axis y label/.style={at={(ticklabel cs:1.1)}},
+													y label style={at={(axis description cs:.0,1.1)},anchor=north},
+													ylabel = {$C(t)$},
+													every axis x label/.style= {at ={(ticklabel cs:1)}},
+														x label style={at={(axis description cs:1.1,0)},anchor=east},
+													xlabel = {$t$},
+												xmin=3, xmax = 13,
+													xtick = {3,4,...,12},
+													ymin=30, ymax = 55,
+														minor y tick num = 4,
+											]
+												\coordinate (a) at (5,50);
+												\coordinate (b) at (6,47);
+												\coordinate (c) at (7,44);
+												\coordinate (d) at (8,41);
+												\coordinate (e) at (9,38);
+												\coordinate (f) at (10,35);
+												\addplot[domain=3:4] {0};
+											\end{axis}
+											\fill (a) circle (0.1);
+											\fill (b) circle (0.1);
+											\fill (c) circle (0.1);
+											\fill (d) circle (0.1);
+											\fill (e) circle (0.1);
+											\fill (f) circle (0.1);
+										\end{tikzpicture}]]>
+										</latex-image>
+									</image>
+								</li>
+								<li>
+									<m>C(t) = -3t + 65</m>
+								</li>
+								<li>
+									Each year, the percentage of companies still open decreases by 3 percent per year.
+								</li>
+							</ol>
+						</solution>
+						</example>
+				</subsubsection>
+				<subsubsection xml:id="section-12-polynomial">
+					<title>Polynomials</title>
+					
+					<definition>
+						<title>Polynomial</title>
+						<idx>Polynomial</idx>
+						
+						A function <m>P</m> is called a <term>polynomial</term> if 
+							<me>
+								P(x) = a_nx^n + a_{n-1}x^{n-1}+\cdots + a_2x^2 + a_1x + a_0
+							</me>
+					</definition>
+					
+					<tabular top="medium" left="medium" right="medium">
+						<row bottom="medium">
+							<cell colspan="4" halign="center" left="medium" right="medium">
+							 Common Polynomials
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+							 Polynomial
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 Equation
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 Graph (<m>a_n \gt 0</m>)
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+							 Graph (<m>a_n \lt 0</m>)
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+							 Linear
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<m>a_1x + a_0</m>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<image>
+									<description>
+										The graph of a linear function with positive leading coefficient.  The line goes up left to right.
+									</description>
+									<latex-image>
+										<![CDATA[
+											\begin{tikzpicture}\begin{axis}[scale = .25, axis x line = middle, axis y line = middle, ticks = none] \addplot[domain = -1:1] {x}; \end{axis} \end{tikzpicture}
+										]]>
+									</latex-image>
+								</image>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<image>
+									<description>
+										The graph of a linear function with negative leading coefficient.  The line goes down left to right.
+									</description>
+									<latex-image>
+										<![CDATA[
+											\begin{tikzpicture}\begin{axis}[scale = .25, axis x line = middle, axis y line = middle, ticks = none] \addplot[domain = -1:1] {-1*x}; \end{axis} \end{tikzpicture} 
+										]]>
+									</latex-image>
+								</image>
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+							 Quadratic
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<m>a_2x^2+a_1x + a_0</m>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<image>
+									<description>
+										The graph of a quadratic function with positive leading coefficient.  The curve goes down until it reaches a vertex, then turns back upward.
+									</description>
+									<latex-image>
+										<![CDATA[
+											\begin{tikzpicture}\begin{axis}[scale = .25, axis x line = middle, axis y line = middle, ticks = none] \addplot[domain = -1:1] {x^2}; \end{axis} \end{tikzpicture}
+										]]>
+									</latex-image>
+								</image>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<image>
+									<description>
+										The graph of a quadratic function with negative leading coefficient.  The curve goes up until it reaches a vertex, then turns back downward.
+									</description>
+									<latex-image>
+										<![CDATA[
+											\begin{tikzpicture}\begin{axis}[scale = .25, axis x line = center, axis y line = middle, ticks = none] \addplot[domain = -1:1] {-1*x^2}; \end{axis} \end{tikzpicture}
+										]]>
+									</latex-image>
+								</image>
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+							 Cubic
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<m>a_3x^3+a_2x^2+a_1x +a_0</m>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<image>
+									<description>
+										The graph of a cubic function with positive leading coefficient.  The curve begins going upward, slows down to be flat for a moment, then turns back upward.
+									</description>
+									<latex-image>
+										<![CDATA[
+											\begin{tikzpicture}\begin{axis}[scale = .25, axis x line = middle, axis y line = middle, ticks = none] \addplot[domain = -1:1] {x^3}; \end{axis} \end{tikzpicture}
+										]]>
+									</latex-image>
+								</image>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<image>
+									<description>
+										The graph of a cubic function with negative leading coefficient.  The curve begins going downward, slows down to be flat for a moment, then turns back downward.
+									</description>
+									<latex-image>
+										<![CDATA[
+											\begin{tikzpicture}\begin{axis}[scale = .25, axis x line = middle, axis y line = middle, ticks = none] \addplot[domain = -1:1] {-1*x^3}; \end{axis} \end{tikzpicture}
+										]]>
+									</latex-image>
+								</image>
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+							 Even Degree
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<m>a_nx^n +\cdots a_1x+a_0 </m>  (<m>n</m> even)
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<image>
+									<description>
+										The graph of an even function with positive leading coefficient.  The curve goes begins moving upward and ends moving downward; the behavior in the middle depends on the function.
+									</description>
+									<latex-image>
+										<![CDATA[
+											\begin{tikzpicture}\begin{axis}[scale = .25, axis x line = middle, axis y line = middle, ticks = none] \addplot[<-,domain = -1:-.75] {x^2}; \addplot[domain = -.75:.75, dotted] {x^2}; \addplot[domain = .75:1,->] {x^2}; \end{axis} \end{tikzpicture}
+										]]>
+									</latex-image>
+								</image>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<image>
+									<description>
+										The graph of an even function with negative leading coefficient.  The curve goes begins moving downward and ends moving upward; the behavior in the middle depends on the function.
+									</description>
+									<latex-image>
+										<![CDATA[
+											\begin{tikzpicture}\begin{axis}[scale = .25, axis x line = middle, axis y line = middle, ticks = none] \addplot[<-,domain = -1:-.75] {-1*x^2}; \addplot[domain = -.75:.75, dotted] {-1*x^2}; \addplot[domain = .75:1,->] {-1*x^2}; \end{axis} \end{tikzpicture}
+										]]>
+									</latex-image>
+								</image>
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+							 Odd Degree
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<m>a_nx^n +\cdots a_1x+a_0 </m>  (<m>n</m> odd)
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<image>
+									<description>
+										The graph of an odd function with positive leading coefficient.  The curve goes begins moving upward and ends moving upward; the behavior in the middle depends on the function.
+									</description>
+									<latex-image>
+										<![CDATA[
+											 \begin{tikzpicture}\begin{axis}[scale = .25, axis x line = middle, axis y line = middle, ticks = none] \addplot[<-,domain = -1:-.75] {x^3}; \addplot[domain = -.75:.75, dotted] {x^3}; \addplot[domain = .75:1,->] {x^3}; \end{axis} \end{tikzpicture}
+										]]>
+									</latex-image>
+								</image>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<image>
+									<description>
+										The graph of an odd function with negative leading coefficient.  The curve goes begins moving downward and ends moving downward; the behavior in the middle depends on the function.
+									</description>
+									<latex-image>
+										<![CDATA[
+											\begin{tikzpicture}\begin{axis}[scale = .25, axis x line = middle, axis y line = middle, ticks = none] \addplot[<-,domain = -1:-.75] {-1*x^3}; \addplot[domain = -.75:.75, dotted] {-1*x^3}; \addplot[domain = .75:1,->] {-1*x^3}; \end{axis} \end{tikzpicture}
+										]]>
+									</latex-image>
+								</image>
+							</cell>
+						</row>
+					</tabular>
+				</subsubsection>
+				<subsubsection xml:id="section-12-other">
+					<title>Other Functions</title>
+					
+					<definition>
+						<title>Exponential/Logarithmic Function</title>
+						<idx>Exponential Function</idx>
+						<idx>Logarithmic Function</idx>
+						
+						<p>
+							An <term>exponential function</term> is a function of the form <m>f(x)=b^x</m>, where the base <m>b</m> is a positive constant.
+						</p>
+						<p>
+							A <term>logarithmic function</term> is a function of the form <m>f(x)=\log_b x</m>, where the base <m>b</m> is a positive constant.
+						</p>	
+					</definition>
+					
+					<p>
+						Exponential and logarithmic functions have these properties:
+					</p>
+					
+					<tabular top="medium" left="medium" right="medium">
+						<row bottom="medium">
+							<cell>
+							
+							</cell>
+							<cell halign="center" top="medium" left="medium" right="medium">
+								Domain
+							</cell>
+							<cell halign="center"  top="medium" left="medium" right="medium">
+								Range
+							</cell>
+							<cell halign="center" top="medium" left="medium" right="medium">
+								Asymptotes?
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+								<m>f(x)=b^x</m>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<m>(-\infty,\infty)</m>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<m>(0,\infty)</m>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<m>y = 0</m>
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+								<m>f(x)=\log_b (x)</m>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<m>(0,\infty)</m>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<m>(-\infty,\infty)</m>
+							</cell>
+							<cell halign="center" left="medium" right="medium">
+								<m>x = 0</m>
+							</cell>
+						</row>
+					</tabular>
+				</subsubsection>
+			</subsection>
+			<subsection xml:id="section-12-preclass">
+				<title>Pre-Class Activities</title>
+				
+				<example><statement>
+					<ol label="a">
+						<li>
+							Find an equation for the family of linear functions with slope <m>-1</m>, and sketch a few members of the family.
+						</li>
+							
+						<li>
+							Find an equation for the family of linear functions such that <m>f(2) = 1</m>, and sketch a few members of the family.
+						</li>
+							
+						<li>
+							Which function belongs to both families?
+						</li>
+					</ol>
+				</statement>
+				<solution>
+					<ol label="a">
+						<li>
+							The family is given by <m>y = -x+b</m>.  Answers will vary on the sketch.
+						</li>
+							
+						<li>
+							The family is given by <m>1=2m + b</m>.  Answers will vary on the sketch.
+						</li>
+							
+						<li>
+							<m>y = -x+3</m>
+						</li>
+					</ol>
+				</solution>
+				</example>
+				
+				<example><statement>
+					Find an expression for a quadratic function <m>f</m> if <m>f(-2) = 2</m>, <m>f(0) = 1</m>, and <m>f(1) = -2.5</m>
+				</statement>
+				<solution>
+					<m>f(x) = -x^2 -2.5x + 1</m>
+				</solution>
+				</example>
+			
+				<example><statement>
+					The monthly cost of driving a car depends on the number of miles driven.  Casey found that in April, it cost her $350 to drive 450 miles, and in June, it cost her $460 to drive 800 miles. Express your answer exactly (no decimals).
+					<ol label="a">
+						<li>
+							Express the monthly cost <m>C</m> as a function of the distance driven (<m>d</m>), assuming that a linear relationship gives a suitable model.
+						</li>
+						<li>
+							Use (a) to predict the cost of driving 1500 miles per month.
+						</li>
+						<li>
+							Sketch the graph of the linear function.  What does the slope represent?  Include units.
+						</li>
+						<li>
+							What does the <m>C-</m>intercept represent?
+						</li>
+						<li>
+							Why does a linear function give a suitable model in this situation?
+						</li>
+					</ol>
+				</statement>
+				<solution>
+					<ol label="a">
+						<li>
+							<m>C(d) = \dfrac{11}{35}x + \dfrac{1460}{7}</m>
+						</li>
+						<li>
+							680 dollars
+						</li>
+						<li>
+							<p>
+								<image>
+									<description>
+										The graph of <m>C(d) = \dfrac{11}{35}x + \dfrac{1460}{7}</m>
+									</description>
+									<latex-image>
+										<![CDATA[
+											\begin{tikzpicture}
+												\begin{axis}[
+												axis x line = middle,
+													axis y line = middle,
+													every axis y label/.style={at={(ticklabel cs:1.1)}},
+												y label style={at={(axis description cs:.5,1.1)},anchor=north},
+													ylabel = {$C(d)$},
+													every axis x label/.style= {at ={(ticklabel cs:1)}},
+													x label style={at={(axis description cs:1.1,0)},anchor=east},
+													xlabel = {$d$},
+												]
+													\addplot[smooth, domain=-10:10] {0.314*x+208.57};
+												\end{axis}
+												
+											\end{tikzpicture}]]>
+									</latex-image>
+								</image>
+							</p>
+
+							<p>
+								The slope represents the rate of change of cost (dollars per month)
+							</p>
+						</li>
+						<li>
+							The base cost of owning/maintaining the car without driving it.
+						</li>
+						<li>
+							Answers vary.
+						</li>
+					</ol>
+				</solution>
+				</example>
+			</subsection>
+			<subsection xml:id="section-12-inclass">
+				<title>In Class</title>
+				<subsubsection xml:id="section-12-power">
+					<title>Power Functions</title>
+					
+					<definition>
+						<title>Power Function</title>
+						<idx>Power Function</idx>
+						
+						A <term>power function</term> is any function of the form <m>x^a</m>, where <m>a</m> is a constant.
+					</definition>
+					
+					<example><statement>
+						Describe the difference between a <em>power function</em> and a <em>polynomial</em>.
+					</statement></example>
+					
+					<example><statement>
+						We will look at three special power functions.
+						<ol label="a">
+							<li>
+								If <m>a</m> is a positive integer, what kind of functions do we see? Sketch a few examples.
+							</li>
+							<li>
+								If <m>a=\dfrac{1}{n}</m> (where <m>n</m> is a positive integer), rewrite the power function using rules of exponents.
+							</li>
+							<li>
+								The functions in part (b) are called <term>root functions</term><idx>root function</idx>.  Sketch the graph of the power function if <m>a=\dfrac{1}{2}</m> and <m> = \dfrac{1}{3}</m>.
+							</li>
+							<li>
+								When <m>a=-1</m>, we call the power function the <term>reciprocal function</term><idx>reciprocal function</idx>. Sketch the graph.
+							</li>
+						</ol>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li>
+								We see the standard polynomial functions.  Graphs will vary.
+							</li>
+							<li>
+								<m>x^{a} = x^{1/n} = \sqrt[n]{x}</m>
+							</li>
+							<li>
+								<sidebyside widths="40% 40%">
+									<image>
+										<description>
+											The graph of <m>\sqrt{x}</m> on the interval <m>[-1,1]</m>
+										</description>
+										<latex-image>
+											<![CDATA[
+											\begin{tikzpicture}
+												\begin{axis}[
+												axis x line = middle,
+													axis y line = middle,
+													every axis y label/.style={at={(ticklabel cs:1.1)}},
+												y label style={at={(axis description cs:.5,1.1)},anchor=north},
+													ylabel = {$y$},
+													every axis x label/.style= {at ={(ticklabel cs:1)}},
+													x label style={at={(axis description cs:1.1,.5)},anchor=east},
+													xlabel = {$x$},
+												xmin=-2,xmax=2,
+												]
+													\addplot[smooth,samples=50,domain=0:2] {sqrt(x)};
+												\end{axis}
+											\end{tikzpicture}]]>
+										</latex-image>
+									</image>
+									<image>
+										<description>
+											The graph of <m>\sqrt[3]{x}</m> on the interval <m>[-1,1]</m>
+										</description>
+										<latex-image>
+											<![CDATA[
+											\begin{tikzpicture}
+												\begin{axis}[
+												axis x line = middle,
+													axis y line = middle,
+													every axis y label/.style={at={(ticklabel cs:1.1)}},
+												y label style={at={(axis description cs:.5,1.1)},anchor=north},
+													ylabel = {$y$},
+													every axis x label/.style= {at ={(ticklabel cs:1)}},
+													x label style={at={(axis description cs:1.1,.5)},anchor=east},
+													xlabel = {$x$},
+												xmin=-2,xmax=2,
+												]
+													\addplot[smooth,samples=50,domain=-2:2] {x/abs(x)*abs(x)^(1/3)};
+												\end{axis}
+											\end{tikzpicture}]]>
+										</latex-image>
+									</image>
+								</sidebyside>
+							</li>
+							<li>
+								<image>
+									<description>
+										The graph of <m>1/x</m> on the interval <m>[-2,2]</m>
+									</description>
+									<latex-image>
+										<![CDATA[
+										\begin{tikzpicture}
+											\begin{axis}[
+											axis x line = middle,
+												axis y line = middle,
+												every axis y label/.style={at={(ticklabel cs:1.1)}},
+											y label style={at={(axis description cs:.5,1.1)},anchor=north},
+												ylabel = {$g(x)$},
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												x label style={at={(axis description cs:1.1,.5)},anchor=east},
+												xlabel = {$x$},
+											xmin=-2,xmax=2,
+											]
+												\addplot[thick,smooth,samples=50,domain=.4:2] {1/x};
+												\addplot[thick,smooth,samples=50,domain=-2:-0.4] {1/x};
+											\end{axis}
+										\end{tikzpicture}]]>
+									</latex-image>
+								</image>
+							</li>
+						</ol>
+					</solution>
+					</example>
+				</subsubsection>
+				<subsubsection xml:id="section-12-rational">
+					<title>Rational Functions</title>
+					
+					<definition>
+						<title>Rational Function</title>
+						<idx>Rational Function</idx>
+						
+						<p>
+							A <term>rational function</term> is a ratio of two polynomials, written as <m>f(x) = \dfrac{P(x)}{Q(x)}</m>, where <m>P(x)</m> and <m>Q(x)</m> are polynomials.
+						</p>
+						<p>
+							The domain of a rational function consists of all values <m>x</m> such that <m>Q(x)\neq 0</m>.
+						</p>
+					</definition>
+					
+					<example><statement>
+						Write the domain of the following functions, in interval notation.
+						<ol label="a">
+							<li>
+								<m>f(x) = \dfrac{1}{x}</m>
+							</li>
+							
+							<li>
+								<m>g(x) = \dfrac{2x^3 - 1}{x^5 + 1}</m>
+							</li>
+								
+							<li>
+								<m>h(x) = \dfrac{6x^4 + x^3 - 7x^2 + 6.5029}{x^2 - 9}</m>
+							</li>
+						</ol>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li>
+								<m>(-\infty,0)\cup (0,\infty)</m>
+							</li>
+							
+							<li>
+								<m>(-\infty,-1)\cup (-1,\infty)</m>
+							</li>
+								
+							<li>
+								<m>(-\infty,-3)\cup (-3,3)\cup (3,\infty)</m>
+							</li>
+						</ol>
+					</solution></example>
+				</subsubsection>
+				<subsubsection xml:id="section-12-algebraic">
+					<title>Algebraic Functions</title>
+					
+					<definition>
+						<title>Algebraic Function</title>
+						<idx>Algebraic Function</idx>
+						
+						A function <m>f</m> is called an <term>algebraic function</term> if it can be constructed using algebraic operations, such as addition, subtraction, multiplication, division, and taking roots.
+					</definition>
+					
+					<example><statement>
+						Write an example of an algebraic function using at least one of each type of function we have covered so far.
+					</statement>
+					<solution>
+						Answers vary
+					</solution>
+					</example>
+				</subsubsection>
+				<subsubsection xml:id="section-12-trig">
+					<title>Trigonometric Functions</title>
+					
+					<sidebyside widths="40% 40%">
+					<tabular top="medium" left="medium" right="medium">
+						<row bottom="medium">
+						  <cell halign="center" colspan="3" left="medium" right="medium">
+							Basic Trigonometric Functions
+						  </cell>
+						</row>
+						<row>
+						  <cell left="medium">
+							<m>\sin x = \dfrac{opp}{hyp}</m>
+						  </cell>
+						  <cell>
+							<m>\cos x = \dfrac{adj}{hyp}</m>
+						  </cell>
+						  <cell right="medium">
+							<m>\tan x = \dfrac{opp}{adj}</m>
+						  </cell>
+						  
+						</row>
+						<row bottom="medium">
+						  <cell left="medium">
+							<m>\csc x = \dfrac{hyp}{opp}</m>
+						  </cell>
+						  <cell>
+							<m>\sec x = \dfrac{hyp}{adj}</m>
+						  </cell>
+						  <cell right="medium">
+							<m>\cot x = \dfrac{adj}{opp}</m>
+						  </cell>
+						  
+						</row>
+					 </tabular>
+					 
+					 <image>
+						<description>
+							A right triangle with angle <m>x</m>, with hypotenuse labeled <q>hyp</q>, opposite side labeled <q>opp</q>, and adjacent labeled <q>adj</q>.
+						</description>
+						<latex-image>
+							<![CDATA[
+								\begin{tikzpicture}[scale = .8]
+									\coordinate (one) at (0,0);
+									\coordinate (two) at (4,3); 
+									\coordinate (three) at (4,0);
+									\draw (one)--(two) node[midway, yshift = 9pt, sloped] {hyp};
+									\draw (two)--(three) node[midway, xshift = 14pt, yshift = -6pt] {opp};
+									\draw (three)--(one) node[midway, yshift = -9pt] {adj};
+									\draw (.75,0) node[yshift = 5pt] {$x$};
+								\end{tikzpicture}
+							]]>
+						</latex-image>
+					 </image>
+					 </sidebyside>
+					 
+					 <p>
+						Here are some useful properties of trigonometric functions
+					 </p>
+					 <tabular top="medium" left="medium" right="medium">
+						<row bottom="medium">
+							<cell halign="center">
+								
+							</cell>
+							<cell halign="center">
+								<m>\sin x</m>
+							</cell>
+							<cell halign="center">
+								<m>\cos x</m>
+							</cell>
+							<cell halign="center">
+								<m>\tan x</m>
+							</cell>
+							<cell halign="center">
+								<m>\cot x</m>
+							</cell>
+							<cell halign="center">
+								<m>\sec x</m>
+							</cell>
+							<cell halign="center">
+								<m>\csc x</m>
+							</cell>
+							
+						</row>
+						<row bottom="medium">
+							<cell halign="center">
+								Domain
+							</cell>
+							<cell halign="center">
+								<m>(-\infty,\infty)</m>
+							</cell>
+							<cell halign="center">
+								<m>(-\infty,\infty)</m>
+							</cell>
+							<cell halign="center">
+								<m>x \neq \dfrac{\pi}{2} + \pi k</m>, <m>k\in \Z</m>
+							</cell>
+							<cell halign="center">
+								<m>x\neq \pi k</m>, <m>k\in \Z</m>
+							</cell>
+							<cell halign="center">
+								<m>x \neq \dfrac{\pi}{2} + \pi k</m>, <m>k\in \Z</m>
+							</cell>
+							<cell halign="center">
+								<m>x\neq \pi k</m>, <m>k\in \Z</m>
+							</cell>
+							
+						</row>
+						<row bottom="medium">
+							<cell halign="center">
+								Range
+							</cell>
+							<cell halign="center">
+								<m>[-1,1]</m>
+							</cell>
+							<cell halign="center">
+								<m>[-1,1]</m>
+							</cell>
+							<cell halign="center">
+								<m>(-\infty,\infty)</m>
+							</cell>
+							<cell halign="center">
+								<m>(-\infty,\infty)</m>
+							</cell>
+							<cell halign="center">
+								<m>(-\infty,1]\cup [1,\infty)</m>
+							</cell>
+							<cell halign="center">
+								<m>(-\infty,1]\cup [1,\infty)</m>
+							</cell>
+							
+						</row>
+						<row bottom="medium">
+							<cell halign="center">
+								Period
+							</cell>
+							<cell halign="center">
+								<m>2\pi</m>
+							</cell>
+							<cell halign="center">
+								<m>2\pi</m>
+							</cell>
+							<cell halign="center">
+								<m>\pi</m>
+							</cell>
+							<cell halign="center">
+								<m>\pi</m>
+							</cell>
+							<cell halign="center">
+								<m>2\pi</m>
+							</cell>
+							<cell halign="center">
+								<m>2\pi</m>
+							</cell>
+							
+						</row>
+					 </tabular>
+					 
+					 <p>
+						Knowing the values of the unit circle will make your life much easier; fill it out below.
+					 </p>
+
+					 <image>
+						<description>
+							The unit circle with special angles marked, as well as trig values for the angles
+						</description>
+						<latex-image>
+							<![CDATA[
+								\begin{tikzpicture}[scale=5.3,cap=round,>=latex]
+									% draw the coordinates
+									\draw[->] (-1.5cm,0cm) -- (1.5cm,0cm) node[right,fill=white] {$x$};
+									\draw[->] (0cm,-1.5cm) -- (0cm,1.5cm) node[above,fill=white] {$y$};
+
+									% draw the unit circle
+									\draw[thick] (0cm,0cm) circle(1cm);
+
+									\foreach \x in {0,30,...,360} {
+											% lines from center to point
+											\draw[gray] (0cm,0cm) -- (\x:1cm);
+											% dots at each point
+											\filldraw[black] (\x:1cm) circle(0.4pt);
+											% draw each angle in degrees
+											\draw (\x:0.6cm) node[fill=white] {$\x^\circ$};
+									}
+
+									% draw each angle in radians
+									\foreach \x/\xtext in {
+										30/\frac{\pi}{6},
+										45/\frac{\pi}{4},
+										60/\frac{\pi}{3},
+										90/\frac{\pi}{2},
+										120/\frac{2\pi}{3},
+										135/\frac{3\pi}{4},
+										150/\frac{5\pi}{6},
+										180/\pi,
+										210/\frac{7\pi}{6},
+										225/\frac{5\pi}{4},
+										240/\frac{4\pi}{3},
+										270/\frac{3\pi}{2},
+										300/\frac{5\pi}{3},
+										315/\frac{7\pi}{4},
+										330/\frac{11\pi}{6},
+										360/2\pi}
+											\draw (\x:0.85cm) node[fill=white] {$\xtext$};
+
+									\foreach \x/\xtext/\y in {
+										% the coordinates for the first quadrant
+										30/\frac{\sqrt{3}}{2}/\frac{1}{2},
+										45/\frac{\sqrt{2}}{2}/\frac{\sqrt{2}}{2},
+										60/\frac{1}{2}/\frac{\sqrt{3}}{2},
+										% the coordinates for the second quadrant
+										150/-\frac{\sqrt{3}}{2}/\frac{1}{2},
+										135/-\frac{\sqrt{2}}{2}/\frac{\sqrt{2}}{2},
+										120/-\frac{1}{2}/\frac{\sqrt{3}}{2},
+										% the coordinates for the third quadrant
+										210/-\frac{\sqrt{3}}{2}/-\frac{1}{2},
+										225/-\frac{\sqrt{2}}{2}/-\frac{\sqrt{2}}{2},
+										240/-\frac{1}{2}/-\frac{\sqrt{3}}{2},
+										% the coordinates for the fourth quadrant
+										330/\frac{\sqrt{3}}{2}/-\frac{1}{2},
+										315/\frac{\sqrt{2}}{2}/-\frac{\sqrt{2}}{2},
+										300/\frac{1}{2}/-\frac{\sqrt{3}}{2}}
+											\draw (\x:1.25cm) node[fill=white] {$\left(\xtext,\y\right)$};
+
+									% draw the horizontal and vertical coordinates
+									% the placement is better this way
+									\draw (-1.25cm,0cm) node[above=1pt] {$(-1,0)$}
+										(1.25cm,0cm)  node[above=1pt] {$(1,0)$}
+										(0cm,-1.25cm) node[fill=white] {$(0,-1)$}
+										(0cm,1.25cm)  node[fill=white] {$(0,1)$};
+								\end{tikzpicture}
+							]]>
+						</latex-image>
+					 </image>
+					
+					<assemblage>
+						<title>Common Trig Identities</title>
+
+						<tabular>
+							<row>
+								<cell>
+									<m>\sin^2\theta +\cos^2\theta=1</m>
+								</cell>
+								<cell>
+									<m>\sin(2\theta) = 2\sin\theta\cos\theta</m>
+								</cell>
+							</row>
+							<row>
+								<cell>
+									<m>\cos(2\theta) = \cos^2\theta - \sin^2\theta</m>
+								</cell>
+								<cell>
+									<m>\cos(2\theta) = 2\cos^2\theta - 1</m>
+								</cell>
+							</row>
+							<row>
+								<cell>
+									<m>\cos(2\theta) = 1-2\sin^2\theta</m>
+								</cell>
+							</row>
+						</tabular>
+					</assemblage>
+					<example><statement>
+						Sketch the graph of each trig function over one period.  If necessary, sketch any asymptotes the graph has.
+					</statement>
+					<solution>
+						<sidebyside widths= "30% 30% 30%">
+							<image>
+								<description>
+									The graph of <m>\sin x</m> over one period
+								</description>
+								<latex-image>
+								<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+											axis x line = middle,
+											axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.1)}},
+											y label style={at={(axis description cs:0,1.1)},anchor=north},
+											ylabel = {$y$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											x label style={at={(axis description cs:1.1,.48)},anchor=east},
+											xlabel = {$x$},
+											trig format plots = rad,
+											xmin = 0, xmax = 6.5,
+											ymin = -1.5, ymax = 1.5,
+										]
+										\addplot[thick, smooth, domain = 0:2*pi] {sin(x)};
+										\end{axis}
+									\end{tikzpicture}]]>
+								</latex-image>
+							</image>
+							<image>
+								<description>
+									The graph of <m>\cos x</m> over one period
+								</description>
+								<latex-image>
+								<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+											axis x line = middle,
+											axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.1)}},
+											y label style={at={(axis description cs:0,1.1)},anchor=north},
+											ylabel = {$y$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											x label style={at={(axis description cs:1.1,.48)},anchor=east},
+											xlabel = {$x$},
+											trig format plots = rad,
+											xmin = 0, xmax = 6.5,
+											ymin = -1.5, ymax = 1.5,
+										]
+										\addplot[thick, smooth, domain = 0:2*pi] {cos(x)};
+										\end{axis}
+									\end{tikzpicture}]]>
+								</latex-image>
+							</image>
+							<image>
+								<description>
+									The graph of <m>\tan x</m> over one period
+								</description>
+								<latex-image>
+								<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+											axis x line = middle,
+											axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.1)}},
+											y label style={at={(axis description cs:0,1.1)},anchor=north},
+											ylabel = {$y$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											x label style={at={(axis description cs:1.1,.48)},anchor=east},
+											xlabel = {$x$},
+											trig format plots = rad,
+											xmin = -2, xmax = 2,
+											ymin = -5, ymax = 5,
+										]
+										\addplot[thick, smooth, samples=100,domain = -1.5:1.5] {tan(x)};
+										\coordinate (a) at (-1.57,5);
+										\coordinate (b) at (-1.57,-5);
+										\coordinate (c) at (1.57,5);
+										\coordinate (d) at (1.57,-5);
+										\end{axis}
+										\draw[dashed] (a)--(b);
+										\draw[dashed] (c)--(d);
+									\end{tikzpicture}]]>
+								</latex-image>
+							</image>
+						</sidebyside>
+						<sidebyside widths= "30% 30% 30%">
+							<image>
+								<description>
+									The graph of <m>\csc x</m> over one period
+								</description>
+								<latex-image>
+								<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+											axis x line = middle,
+											axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.1)}},
+											y label style={at={(axis description cs:.5,1.1)},anchor=north},
+											ylabel = {$y$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											x label style={at={(axis description cs:1.1,.48)},anchor=east},
+											xlabel = {$x$},
+											trig format plots = rad,
+											xmin = -4, xmax = 4,
+											ymin = -5, ymax = 5,
+										]
+										\addplot[thick, smooth, samples=100,domain = -3:-.1] {1/sin(x)};
+										\addplot[thick, smooth, samples=100,domain = .1:3] {1/sin(x)};
+										\coordinate (a) at (-3,5);
+										\coordinate (b) at (-3,-5);
+										\coordinate (c) at (0,5);
+										\coordinate (d) at (0,-5);
+										\coordinate (e) at (3.14,5);
+										\coordinate (f) at (3.14,-5);
+										\end{axis}
+										\draw[dashed] (a)--(b);
+										\draw[dashed] (c)--(d);
+										\draw[dashed] (e)--(f);
+									\end{tikzpicture}]]>
+								</latex-image>
+							</image>
+							<image>
+								<description>
+									The graph of <m>\sec x</m> over one period
+								</description>
+								<latex-image>
+								<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+											axis x line = middle,
+											axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.1)}},
+											y label style={at={(axis description cs:.3,1.1)},anchor=north},
+											ylabel = {$y$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											x label style={at={(axis description cs:1.1,.48)},anchor=east},
+											xlabel = {$x$},
+											trig format plots = rad,
+											xmin = -2, xmax = 5,
+											ymin = -5, ymax = 5,
+										]
+										\addplot[thick, smooth, samples=100,domain = -1.5:1.5] {sec(x)};
+										\addplot[thick, smooth, samples=100,domain = 1.6:4.6] {sec(x)};
+										\coordinate (a) at (-1.57,5);
+										\coordinate (b) at (-1.57,-5);
+										\coordinate (c) at (1.57,5);
+										\coordinate (d) at (1.57,-5);
+										\coordinate (e) at (4.71,5);
+										\coordinate (f) at (4.71,-5);
+										\end{axis}
+										\draw[dashed] (a)--(b);
+										\draw[dashed] (c)--(d);
+										\draw[dashed] (e)--(f);
+									\end{tikzpicture}]]>
+								</latex-image>
+							</image>
+							<image>
+								<description>
+									The graph of <m>\cot x</m> over one period
+								</description>
+								<latex-image>
+								<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+											axis x line = middle,
+											axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.1)}},
+											y label style={at={(axis description cs:.8,1.1)},anchor=north},
+											ylabel = {$y$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											x label style={at={(axis description cs:1.1,.48)},anchor=east},
+											xlabel = {$x$},
+											trig format plots = rad,
+											xmin = -4, xmax = 1,
+											ymin = -5, ymax = 5,
+										]
+										\addplot[thick, smooth, samples=100,domain = -3:-.1] {cot(x)};
+										\coordinate (a) at (-3,5);
+										\coordinate (b) at (-3,-5);
+										\coordinate (c) at (0,5);
+										\coordinate (d) at (0,-5);
+										\end{axis}
+										\draw[dashed] (a)--(b);
+										\draw[dashed] (c)--(d);
+									\end{tikzpicture}]]>
+								</latex-image>
+							</image>
+						</sidebyside>
+					</solution></example>
+					
+					<example><statement>
+						Find the domain of the function <m>f(x) = \dfrac{3}{2\sin x + 1}</m>, first on the interval <m>[0,2\pi)</m>, then in general.
+					</statement>
+					<solution>
+						On <m>[0,2pi)</m>, the domain is <m>\left[0,\dfrac{7\pi}{6}\right)\cup \left(\dfrac{7\pi}{6},\dfrac{11\pi}{6}\right)</m>.  The general domain is <m>x\neq \dfrac{7\pi}{6} + 2\pi k</m> and <m>x\neq \dfrac{11\pi}{6}+2\pi k</m>, where <m>k</m> is an integer.
+					</solution></example>
+				</subsubsection>
+			</subsection>
+			<subsection xml:id="section-12-afterclass">
+				<title>After Class Activities</title>
+					<example><statement>
+						Classify each function as one of the types of functions discussed in this section.
+						<ol label="a">
+							<li>
+								<m>k(t) = t-5+t^2</m>
+							</li>
+								
+							<li>
+								<m>\ell(x) = (0.25)^x</m>
+							</li>
+								
+							<li>
+								<m>m(y) = \dfrac{1-x}{\sqrt{1-x^2}}</m>
+							</li>
+								
+							<li>
+								<m>n(\theta) = \theta^{0.25}</m>
+							</li>
+								
+							<li>
+								<m>o(r) = \dfrac{r^3-5r^2 + r^4-1}{r^2 + r+10}</m>
+							</li>
+								
+						</ol>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li>
+								Polynomial, algebraic
+							</li>
+								
+							<li>
+								Exponential
+							</li>
+								
+							<li>
+								Algebraic
+							</li>
+								
+							<li>
+								Power, algebraic
+							</li>
+								
+							<li>
+								Rational, algebraic
+							</li>
+								
+						</ol>
+					</solution></example>
+					
+					<example><statement>
+						Ecologists have modeled the relationship between the area of a region and the number of species inhabiting the region.  In particular, the number of species <m>S</m> of bats living in and around Austin has been related to the surface area <m>A</m> of the structure by the equation <m>S = 0.3A^{0.5}</m>.
+						<ol label="a">
+							<li>
+								A structure near I-35 has a surface area <m>A = 10000</m> m<m>^2</m>; how many species of bat do you expect to find on the structure?
+							</li>
+								
+							<li>
+								If an overpass has nine species of bats, estimate the area of overpass.
+							</li>
+						</ol>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li>
+								30 species
+							</li>
+								
+							<li>
+								900m<m>^2</m>
+							</li>
+						</ol>
+					</solution>
+					</example>
+					
+					<example><statement>
+						Find the domain of the following functions.
+						<ol label="a">
+							<li>
+								<m>t(k) = \sqrt{k^2-6}</m>
+							</li>
+								
+							<li>
+								<m>y(b) = \sec\lrpar{\dfrac{\pi}{2}b}</m>
+							</li>
+								
+							<li>
+								<m>h(x) = \dfrac{x+3}{2\sqrt{5-x}}</m>
+							</li>
+						</ol>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li>
+								<m>(-\infty,-\sqrt{6}]\cup [\sqrt{6},\infty)</m>
+							</li>
+								
+							<li>
+								<m>b\neq 2k+1</m> for <m>k\in \Z</m>
+							</li>
+								
+							<li>
+								<m>(-\infty,5)</m>
+							</li>
+						</ol>
+					</solution></example>
+			</subsection>
+			
+			<xi:include href="./resources/12.xml"/>
+		</section>
+		

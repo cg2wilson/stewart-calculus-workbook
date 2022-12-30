@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-07-17T17:31:47-05:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Math 1914 - Differential &amp; Integral Calculus I Areas &amp; Distance</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Math 1914 - Differential &amp; Integral Calculus">
+<meta property="book:author" content="Cory Wilson">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(      \newcommand{\ds}{\displaystyle}
+\newcommand{\lrpar}[1]{\left(#1\right)}
+\newcommand{\lrbrace}[1]{\left\lbrace #1 \right\rbrace}
+\newcommand{\inv}[1]{#1^{-1}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\dc}{^\circ}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="math1914.html"><span class="title">Math 1914 - Differential &amp; Integral Calculus</span></a></h1>
+<p class="byline">Cory Wilson</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="ch4.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch4.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-42.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="ch4.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch4.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section-42.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul><li><a href="colophon.html" data-scroll="colophon" class="internal">Colophon</a></li></ul>
+</li>
+<li class="link">
+<a href="ch1.html" data-scroll="ch1" class="internal"><span class="codenumber">1</span> <span class="title">Functions and Limits</span></a><ul>
+<li><a href="section-11.html" data-scroll="section-11" class="internal">Four Ways to Represent a Function</a></li>
+<li><a href="section-12.html" data-scroll="section-12" class="internal">Mathematical Models: A Catalog of Essential Functions</a></li>
+<li><a href="section-13.html" data-scroll="section-13" class="internal">New Functions from Old Functions</a></li>
+<li><a href="section-14.html" data-scroll="section-14" class="internal">The Tangent and Velocity Problems</a></li>
+<li><a href="section-15.html" data-scroll="section-15" class="internal">The Limit of a Function</a></li>
+<li><a href="section-16.html" data-scroll="section-16" class="internal">Calculating Limits Using Limit Laws</a></li>
+<li><a href="section-17.html" data-scroll="section-17" class="internal">(X) The Precise Definition of a Limit</a></li>
+<li><a href="section-18.html" data-scroll="section-18" class="internal">Continuity</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch2.html" data-scroll="ch2" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives</span></a><ul>
+<li><a href="section-21.html" data-scroll="section-21" class="internal">Derivatives and Rates of Change</a></li>
+<li><a href="section-22.html" data-scroll="section-22" class="internal">The Derivative as a Function</a></li>
+<li><a href="section-23.html" data-scroll="section-23" class="internal">Differentiation Formulas</a></li>
+<li><a href="section-24.html" data-scroll="section-24" class="internal">Derivatives of Trigonometric Functions</a></li>
+<li><a href="section-25.html" data-scroll="section-25" class="internal">The Chain Rule</a></li>
+<li><a href="section-26.html" data-scroll="section-26" class="internal">Implicit Differentiation</a></li>
+<li><a href="section-27.html" data-scroll="section-27" class="internal">(X) Rates of Changes in the Natural and Social Sciences</a></li>
+<li><a href="section-28.html" data-scroll="section-28" class="internal">Related Rates</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch3.html" data-scroll="ch3" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Differentiation</span></a><ul>
+<li><a href="section-31.html" data-scroll="section-31" class="internal">Maximum &amp; Minimum Values</a></li>
+<li><a href="section-32.html" data-scroll="section-32" class="internal">(X) The Mean Value Theorem</a></li>
+<li><a href="section-33.html" data-scroll="section-33" class="internal">How Derivatives Affect the Shape of a Graph</a></li>
+<li><a href="section-34.html" data-scroll="section-34" class="internal">Limits at Infinity &amp; Horizontal Asymptotes</a></li>
+<li><a href="section-35.html" data-scroll="section-35" class="internal">Summary of Curve Sketching</a></li>
+<li><a href="section-36.html" data-scroll="section-36" class="internal">(X) Graphing with Calculus and Calculators</a></li>
+<li><a href="section-37.html" data-scroll="section-37" class="internal">Optimization</a></li>
+<li><a href="section-38.html" data-scroll="section-38" class="internal">(X) Newton's Method</a></li>
+<li><a href="section-39.html" data-scroll="section-39" class="internal">Antiderivatives</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch4.html" data-scroll="ch4" class="internal"><span class="codenumber">4</span> <span class="title">Integrals</span></a><ul>
+<li><a href="section-41.html" data-scroll="section-41" class="active">Areas &amp; Distance</a></li>
+<li><a href="section-42.html" data-scroll="section-42" class="internal">The Definite Integral</a></li>
+<li><a href="section-43.html" data-scroll="section-43" class="internal">The Fundamental Theorem of Calculus</a></li>
+<li><a href="section-44.html" data-scroll="section-44" class="internal">Indefinite Integrals &amp; the Net Change Theorem</a></li>
+<li><a href="section-45.html" data-scroll="section-45" class="internal">The Substitution Rule</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch5.html" data-scroll="ch5" class="internal"><span class="codenumber">5</span> <span class="title">Applications of Integration</span></a><ul>
+<li><a href="section-51.html" data-scroll="section-51" class="internal">Areas Between Curves</a></li>
+<li><a href="section-52.html" data-scroll="section-52" class="internal">Volumes</a></li>
+<li><a href="section-53.html" data-scroll="section-53" class="internal">Volumes by Cylindrical Shells</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-41"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">4.1</span> <span class="title">Areas &amp; Distance</span>
+</h2>
+<article class="objectives goal-like" id="objectives-21"><h3 class="heading"><span class="type">Objectives</span></h3>
+<ul class="disc">
+<li id="li-809"><p id="p-derived-li-809">Compute Riemann sums to estimate area under a curve algebraically, graphically, or numerically; specifically, compute left and right rectangle approximations</p></li>
+<li id="li-810"><p id="p-derived-li-810">Use summation/sigma notation to write sums in a condensed way</p></li>
+<li id="li-811"><p id="p-derived-li-811">Estimate distance traveled with a velocity function and connect the distance problem to the area problem</p></li>
+</ul></article><section class="subsection" id="section-41-beforeclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.1.1</span> <span class="title">Before Class</span>
+</h3>
+<figure class="figure figure-like" id="figure-30"><a class="external" href="https://mymedia.ou.edu/media/4.1-1/1_3gm43l27" target="_blank"><code class="code-inline tex2jax_ignore">https://mymedia.ou.edu/media/4.1-1/1_3gm43l27</code></a><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">30<span class="period">.</span></span><span class="space"> </span>Pre-Class Video 1</figcaption></figure><figure class="figure figure-like" id="figure-31"><a class="external" href="https://mymedia.ou.edu/media/4.1-2/1_2sv8x0jk" target="_blank"><code class="code-inline tex2jax_ignore">https://mymedia.ou.edu/media/4.1-2/1_2sv8x0jk</code></a><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">31<span class="period">.</span></span><span class="space"> </span>Pre-Class Video 2</figcaption></figure><section class="subsubsection" id="section-41-area-problem"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">4.1.1.1</span> <span class="title">The Area Problem</span>
+</h4>
+<article class="example example-like" id="example-382"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.1</span><span class="period">.</span>
+</h5>Consider the function <span class="process-math">\(y=x^2\)</span> on the interval <span class="process-math">\([0,1]\text{.}\)</span> <ol class="lower-alpha">
+<li id="li-812">Use four rectangles to approximate the area under the parabola <span class="process-math">\(y=x^2\)</span> from <span class="process-math">\(x=0\)</span> to <span class="process-math">\(x=1\text{;}\)</span> start from the left endpoint, <span class="process-math">\(x=0\text{.}\)</span> <figure class="figure figure-like" id="figure-32"><iframe src="https://www.desmos.com/calculator/u7vjucfa1d" id="desmos-left-riemann-sum" width="480" height="240"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">32<span class="period">.</span></span><span class="space"> </span>Left-rectangle approximiation for <span class="process-math">\(y=x^2\text{.}\)</span>  Slide <span class="process-math">\(n\)</span> to see different approximations (hide the menu by pressing the arrows).</figcaption></figure>
+</li>
+<li id="li-813">Now start from the right endpoint, <span class="process-math">\(x=1\text{,}\)</span> and use four rectangles to approximate the area under the parabola. <figure class="figure figure-like" id="figure-33"><iframe src="https://www.desmos.com/calculator/we7wpsmk4c" id="desmos-right-riemann-sum" width="480" height="240"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">33<span class="period">.</span></span><span class="space"> </span>Right-rectangle approximiation for <span class="process-math">\(y=x^2\text{.}\)</span>  Slide <span class="process-math">\(n\)</span> to see different approximations (hide the menu by pressing the arrows).</figcaption></figure>
+</li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-384" id="solution-384"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-384"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-814"><p id="p-derived-li-814"><span class="process-math">\(\displaystyle A\approx 0.21875\)</span></p></li>
+<li id="li-815"><p id="p-derived-li-815"><span class="process-math">\(\displaystyle A\approx 0.46875\)</span></p></li>
+</ol></div></div>
+</div></article><article class="example example-like" id="example-383"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.2</span><span class="period">.</span>
+</h5>Now use eight rectangles to approximate the area under <span class="process-math">\(y=x^2\)</span> from <span class="process-math">\(x=0\)</span> to <span class="process-math">\(x=1\text{,}\)</span> using both left and right endpoints.  Compare your estimates to the previous two calculations.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-385" id="solution-385"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-385"><div class="solution solution-like">
+<span class="process-math">\(L_8 = 0.2734375\)</span> and <span class="process-math">\(R_8 = 0.3984375\)</span>
+</div></div>
+</div></article><article class="question example-like" id="question-25"><h5 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">4.1.3</span><span class="period">.</span>
+</h5>What do you think would happen to our approximation of area if we used more rectangles?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-386" id="solution-386"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-386"><div class="solution solution-like">We would get a better approximation.</div></div>
+</div></article><p id="p-177">Generically, the process we used above has the following steps:</p>
+<article class="assemblage assemblage-like" id="section-41-area-under-curve"><h5 class="heading"><span class="title">Approximating Area Under a Curve.</span></h5>
+<ol id="p-178" class="decimal">
+<li id="li-816"><p id="p-derived-li-816">Determine the length of the interval</p></li>
+<li id="li-817"><p id="p-derived-li-817">Divide the interval into <span class="process-math">\(n\)</span> equal subintervals</p></li>
+<li id="li-818"><p id="p-derived-li-818">Find the area of each subinterval's rectangle</p></li>
+<li id="li-819"><p id="p-derived-li-819">Sum the areas of the rectangles</p></li>
+</ol></article><article class="question example-like" id="question-26"><h5 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">4.1.4</span><span class="period">.</span>
+</h5>
+<ol class="lower-alpha">
+<li id="li-820"><p id="p-derived-li-820">If the interval we are concerned about is <span class="process-math">\([a,b]\text{,}\)</span> and we are using <span class="process-math">\(n\)</span> rectangles to approximate the area, how could we write the base length of each individual rectangle?  Denote the length by <span class="process-math">\(\Delta x\)</span></p></li>
+<li id="li-821"><p id="p-derived-li-821">Let <span class="process-math">\(a=x_0\text{.}\)</span>  How could we express <span class="process-math">\(x_1\text{?}\)</span>  How about <span class="process-math">\(x_2\text{?}\)</span>  What about a generic <span class="process-math">\(x_i\text{,}\)</span> where <span class="process-math">\(1\leq i\leq n\text{?}\)</span></p></li>
+<li id="li-822"><p id="p-derived-li-822">Let <span class="process-math">\(f(x_i)\)</span> be the function value at <span class="process-math">\(x_i\text{.}\)</span>  Using the previous two exercises, write an expression for <span class="process-math">\(S_n\text{,}\)</span> the sum of areas of our approximating rectangles.</p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-387" id="solution-387"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-387"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-823"><p id="p-derived-li-823"><span class="process-math">\(\displaystyle \Delta x = \dfrac{b-a}{n}\)</span></p></li>
+<li id="li-824"><p id="p-derived-li-824"><div class="displaymath process-math" data-contains-math-knowls="" id="md-12">
+\begin{align*}
+x_1 &amp;= a+\Delta x\\
+x_2 &amp;= a+2\Delta x\\
+x_i &amp;= a+i\Delta x
+\end{align*}
+</div></p></li>
+<li id="li-825"><p id="p-derived-li-825"><span class="process-math">\(\displaystyle S_n\approx f(a+i\Delta x)\cdot \Delta x\)</span></p></li>
+</ol></div></div>
+</div></article><p id="p-179">From this, we can generalize to two special situations.</p>
+<article class="assemblage assemblage-like" id="section-41-left-rectangles"><h5 class="heading"><span class="title">Left Rectangle Approximation.</span></h5>
+<p id="p-180">The left rectangle approximation for the area under the curve <span class="process-math">\(f(x)\)</span> on the interval <span class="process-math">\([a,b]\)</span> (using <span class="process-math">\(n\)</span> rectangles) is given by</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f(x_0)\Delta x + f(x_1)\Delta x + \cdots + f(x_{n-2})\Delta x + f(x_{n-1})\Delta x
+\end{equation*}
+</div>
+<p class="continuation">or, in sigma notation,</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\ds \sum_{n=0}^{n-1} f(x_i)\Delta x 
+\end{equation*}
+</div>
+<p class="continuation">The <span class="process-math">\(n\)</span>th left rectangle approximation is denoted <span class="process-math">\(L_n\text{.}\)</span></p></article><article class="assemblage assemblage-like" id="section-41-right-rectangles"><h5 class="heading"><span class="title">Right Rectangle Approximation.</span></h5>
+<p id="p-181">The right rectangle approximation for the area under the curve <span class="process-math">\(f(x)\)</span> on the interval <span class="process-math">\([a,b]\)</span> (using <span class="process-math">\(n\)</span> rectangles) is given by</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f(x_1)\Delta x + f(x_2)\Delta x + \cdots + f(x_{n-1})\Delta x + f(x_n)\Delta x
+\end{equation*}
+</div>
+<p class="continuation">or, in sigma notation,</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\ds \sum_{n=1}^{n} f(x_i)\Delta x 
+\end{equation*}
+</div>
+<p class="continuation">The <span class="process-math">\(n\)</span>th right rectangle approximation is denoted <span class="process-math">\(R_n\text{.}\)</span></p></article></section><section class="subsubsection" id="section-41-sigma-notation"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">4.1.1.2</span> <span class="title">Sigma Notation</span>
+</h4>
+<p id="p-182"><dfn class="terminology">Sigma notation</dfn> is a shorthand way to write sums.  For example, for the left-rectangle approximation <span class="process-math">\(L_4\text{,}\)</span> instead of writing</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+L_4 = f(x_0)\Delta x + f(x_1)\Delta x + f(x_2)\Delta x + f(x_3)\Delta x
+\end{equation*}
+</div>
+<p class="continuation">we would write</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\ds L_4 = \sum_{n=0}^3 f(x_i)\Delta x
+\end{equation*}
+</div>
+<p class="continuation">Here, <span class="process-math">\(i=0\)</span> refers to the <dfn class="terminology">starting index</dfn>, and <span class="process-math">\(n=3\)</span> is called the <dfn class="terminology">ending index</dfn>.</p></section></section><section class="subsection" id="section-41-preclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.1.2</span> <span class="title">Pre-Class Activities</span>
+</h3>
+<article class="example example-like" id="example-384"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.5</span><span class="period">.</span>
+</h4>Consider <span class="process-math">\(f(x) = \dfrac{1}{x}\text{.}\)</span> <ol class="lower-alpha">
+<li id="li-826"><p id="p-derived-li-826">Carefully sketch the graph of <span class="process-math">\(f(x)\)</span> on the interval <span class="process-math">\([1,4]\text{.}\)</span></p></li>
+<li id="li-827"><p id="p-derived-li-827">Find <span class="process-math">\(R_3\text{,}\)</span> and draw the rectangles on your sketch.</p></li>
+<li id="li-828"><p id="p-derived-li-828">Express the sum from (b) in sigma notation.</p></li>
+<li id="li-829"><p id="p-derived-li-829">Find <span class="process-math">\(L_3\text{,}\)</span> and draw the rectangles on your sketch.</p></li>
+<li id="li-830"><p id="p-derived-li-830">Express the sum from (d) in sigma notation.</p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image has-interactive" data-refid="hk-solution-388" id="solution-388"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-388"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-831"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-130.svg" role="img" class="contained" alt="The graph of \(f(x) = \dfrac{1}{x}\) on the interval \([1,4]\)"></div></li>
+<li id="li-832">
+<figure class="figure figure-like" id="figure-34"><iframe src="https://www.desmos.com/calculator/6dkgz4p4pp" id="desmos-right-riemann-sum-preclass" width="480" height="240"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">34<span class="period">.</span></span><span class="space"> </span>Right-rectangle approximiation for <span class="process-math">\(y=\dfrac{1}{x}\text{.}\)</span>  Slide <span class="process-math">\(n\)</span> to see different approximations (hide the menu by pressing the arrows).</figcaption></figure> <span class="process-math">\(R_3 = 1.083\)</span>
+</li>
+<li id="li-833"><p id="p-derived-li-833"><span class="process-math">\(\displaystyle R_3=\ds \sum_{i=1}^3 f(x_i)\Delta x\)</span></p></li>
+<li id="li-834">
+<figure class="figure figure-like" id="figure-35"><iframe src="https://www.desmos.com/calculator/l9vi13wdjc" id="desmos-left-riemann-sum-preclass" width="480" height="240"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">35<span class="period">.</span></span><span class="space"> </span>Left-rectangle approximiation for <span class="process-math">\(y=\dfrac{1}{x}\text{.}\)</span>  Slide <span class="process-math">\(n\)</span> to see different approximations (hide the menu by pressing the arrows).</figcaption></figure> <span class="process-math">\(L_3 = 1.833\)</span>
+</li>
+<li id="li-835"><p id="p-derived-li-835"><span class="process-math">\(\displaystyle L_3=\ds \sum_{i=0}^2 f(x_i)\Delta x\)</span></p></li>
+</ol></div></div>
+</div></article><article class="example example-like" id="example-385"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.6</span><span class="period">.</span>
+</h4>Again, consider <span class="process-math">\(f(x) = \dfrac{1}{x}\)</span> on <span class="process-math">\([1,4]\)</span><ol class="lower-alpha">
+<li id="li-836"><p id="p-derived-li-836">Resketch the graph of <span class="process-math">\(f(x)\text{.}\)</span></p></li>
+<li id="li-837"><p id="p-derived-li-837">Find <span class="process-math">\(R_6\)</span> and include the rectangles on your sketch from (a).  How do these rectangles compare to the <span class="process-math">\(R_3\)</span> rectangles?</p></li>
+<li id="li-838"><p id="p-derived-li-838">Find <span class="process-math">\(L_6\)</span> and include the rectangles on your sketch from (a).  How do these rectangles compare to the <span class="process-math">\(L_3\)</span> rectangles?</p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image has-interactive" data-refid="hk-solution-389" id="solution-389"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-389"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-839"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-131.svg" role="img" class="contained" alt="The graph of \(f(x) = \dfrac{1}{x}\) on the interval \([1,4]\)"></div></li>
+<li id="li-840">
+<figure class="figure figure-like" id="figure-36"><iframe src="https://www.desmos.com/calculator/6dkgz4p4pp" id="desmos-right-riemann-sum-inclass" width="480" height="240"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">36<span class="period">.</span></span><span class="space"> </span>Right-rectangle approximiation for <span class="process-math">\(y=\dfrac{1}{x}\text{.}\)</span>  Slide <span class="process-math">\(n\)</span> to see different approximations (hide the menu by pressing the arrows).</figcaption></figure> <span class="process-math">\(R_6 = 1.218\)</span>
+</li>
+<li id="li-841">
+<figure class="figure figure-like" id="figure-37"><iframe src="https://www.desmos.com/calculator/l9vi13wdjc" id="desmos-left-riemann-sum-inclass" width="480" height="240"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">37<span class="period">.</span></span><span class="space"> </span>Left-rectangle approximiation for <span class="process-math">\(y=\dfrac{1}{x}\text{.}\)</span>  Slide <span class="process-math">\(n\)</span> to see different approximations (hide the menu by pressing the arrows).</figcaption></figure> <span class="process-math">\(L_6 = 1.593\)</span>
+</li>
+</ol></div></div>
+</div></article></section><section class="subsection" id="section-41-inclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.1.3</span> <span class="title">In Class</span>
+</h3>
+<article class="example example-like" id="example-386"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.7</span><span class="period">.</span>
+</h4>For <span class="process-math">\(f(x) = x^2\)</span> on <span class="process-math">\([0,1]\text{,}\)</span> show that the sum of the areas of the upper approximating rectangles approaches <span class="process-math">\(\dfrac{1}{3}\text{,}\)</span> i.e. <span class="process-math">\(\ds \lim_{n\to\infty} R_n = \dfrac{1}{3}\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-390" id="solution-390"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-390"><div class="solution solution-like">First,<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\Delta x = \dfrac{b-a}{n}\dfrac{1}{n}
+\end{equation*}
+</div>Now, to find <span class="process-math">\(f(x_i)\text{,}\)</span> write <span class="process-math">\(x_i\)</span> as<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+x_i= i\Delta x = \dfrac{i}{n}
+\end{equation*}
+</div>This means that<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f(x_i) = \lrpar{\dfrac{i}{n}}^2 = \dfrac{i^2}{n^2}
+\end{equation*}
+</div>So, the area of a single rectangle can be expressed as<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f(x_i)\Delta x = \lrpar{\dfrac{i}{n}}^2\cdot \dfrac{i}{n} = \dfrac{i^2}{n^3}
+\end{equation*}
+</div>To find the area of a finite number of rectangles, we add these single rectangles:<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+R_n = \ds \sum_{i=1}^n f(x_i)\Delta x = \sum_{i=1}^n \dfrac{i^2}{n^3}
+\end{equation*}
+</div>Since the summation is over the variable <span class="process-math">\(i\text{,}\)</span> we can use the formula <span class="process-math">\(\ds \sum_{i=1}^n i^2 = \dfrac{n(n+1)(2n+1)}{6}\)</span> to get<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+R_n = \ds \sum_{i=1}^n \dfrac{i^2}{n^3} = \dfrac{1}{n^3}\cdot \dfrac{n(n+1)(2n+1)}{6}
+\end{equation*}
+</div>Now, the area under the curve is found by taking infinitely many rectangles in the approximation.  The way we can do that is by taking a limit:<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+A = \ds \lim_{n\to \infty} R_n = \lim_{n\to\infty} \sum_{i=1}^n f(x_i)\Delta x = \lim_{n\to\infty} \dfrac{1}{n^3}\cdot \dfrac{n(n+1)(2n+1)}{6} = \dfrac{1}{3}
+\end{equation*}
+</div>So we conclude the area is precisely <span class="process-math">\(\dfrac{1}{3}\)</span>
+</div></div>
+</div></article><article class="definition definition-like" id="definition-32"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.1.8</span><span class="period">.</span><span class="space"> </span><span class="title">Area Under a Curve.</span>
+</h4> The <dfn class="terminology">area</dfn> of the region <span class="process-math">\(S\)</span> that lies under the graph of the continuous function <span class="process-math">\(f\)</span> is the limit of the sum of the areas of approximating rectangles:<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+A = \lim_{n\to\infty} L_n = \lim_{n\to\infty} \sum_{i=0}^{n-1} f(x_i)\Delta x
+\end{equation*}
+</div>or<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+A = \lim_{n\to\infty} R_n = \lim_{n\to\infty} \sum_{i=1}^{n} f(x_i)\Delta x
+\end{equation*}
+</div></article><article class="example example-like" id="example-387"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.9</span><span class="period">.</span>
+</h4>Let <span class="process-math">\(A\)</span> be the area of the region that lies under the graph of <span class="process-math">\(f(x) = x^3\)</span> between <span class="process-math">\(x = 1\)</span> and <span class="process-math">\(x=b\text{,}\)</span> where <span class="process-math">\(1\leq b\leq 3\)</span><ol class="lower-alpha">
+<li id="li-842"><p id="p-derived-li-842">Using left endpoints, find an expression for <span class="process-math">\(A\)</span> as a limit; do not evaluate the limit.</p></li>
+<li id="li-843"><p id="p-derived-li-843">Estimate the area when <span class="process-math">\(b=3\)</span> by taking sample points to be midpoints and using four subintervals.</p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-391" id="solution-391"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-391"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-844"><p id="p-derived-li-844"><span class="process-math">\(\displaystyle A = \ds \lim_{n\to \infty} L_n = \lim_{n\to\infty} \sum_{i=0}^{n-1} \lrpar{1 + \dfrac{(b-1)i}{n}}^3\cdot \dfrac{b-1}{n}\)</span></p></li>
+<li id="li-845"><p id="p-derived-li-845"><span class="process-math">\(\displaystyle L_4 = 14\)</span></p></li>
+</ol></div></div>
+</div></article><article class="example example-like" id="example-388"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.10</span><span class="period">.</span>
+</h4>The expression <span class="process-math">\(\ds \lim_{n\to \infty} \sum_{i=1}^n \dfrac{3}{n} \sqrt{1+\dfrac{3i}{n}}\)</span> gives the area of a region; describe such a region.  <em class="alert">Do not try to evaluate the limit</em>.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-392" id="solution-392"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-392"><div class="solution solution-like">One possible description is the function <span class="process-math">\(f(x) = \sqrt{1+x}\)</span> on the interval <span class="process-math">\([0,3]\)</span>
+</div></div>
+</div></article><section class="subsubsection" id="section-41-distance-problem"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">4.1.3.1</span> <span class="title">The Distance Problem</span>
+</h4>
+<section class="introduction" id="introduction-7">Given constant velocity, we can use the formula distance<span class="process-math">\(=\)</span>velocity<span class="process-math">\(\times\)</span> time to calculate the distance an object travels over a certain period of time.</section><article class="example example-like" id="example-389"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.11</span><span class="period">.</span>
+</h5>Consider a moving car, with increasing velocity.  The velocity was measured every two seconds, and the results collected in the table below. <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b2 r2 l2 t2 lines">Time (sec)</td>
+<td class="c m b2 r2 l0 t2 lines">0</td>
+<td class="c m b2 r2 l0 t2 lines">2</td>
+<td class="c m b2 r2 l0 t2 lines">4</td>
+<td class="c m b2 r2 l0 t2 lines">6</td>
+<td class="c m b2 r2 l0 t2 lines">8</td>
+<td class="c m b2 r2 l0 t2 lines">10</td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines">Velocity (ft/s)</td>
+<td class="c m b2 r2 l0 t0 lines">20</td>
+<td class="c m b2 r2 l0 t0 lines">30</td>
+<td class="c m b2 r2 l0 t0 lines">38</td>
+<td class="c m b2 r2 l0 t0 lines">44</td>
+<td class="c m b2 r2 l0 t0 lines">48</td>
+<td class="c m b2 r2 l0 t0 lines">50</td>
+</tr>
+</table></div>
+<ol class="lower-alpha">
+<li id="li-846"><p id="p-derived-li-846">Find an upper estimate for the distance the car traveled in 10 seconds.</p></li>
+<li id="li-847"><p id="p-derived-li-847">Find a lower estimate for the distance the car traveled in 10 seconds.</p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-393" id="solution-393"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-393"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-848"><p id="p-derived-li-848">420 feet</p></li>
+<li id="li-849"><p id="p-derived-li-849">360 feet</p></li>
+</ol></div></div>
+</div></article><article class="example example-like" id="example-390"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.12</span><span class="period">.</span>
+</h5>Roger is training for a marathon.  His friend Jeff rides behind him on a bicycle and clocks his speed every 15 minutes.  Roger starts out strong, but stops after an hour and a half. <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b2 r2 l2 t2 lines">Time elapsed(min)</td>
+<td class="c m b2 r2 l0 t2 lines">0</td>
+<td class="c m b2 r2 l0 t2 lines">15</td>
+<td class="c m b2 r2 l0 t2 lines">30</td>
+<td class="c m b2 r2 l0 t2 lines">45</td>
+<td class="c m b2 r2 l0 t2 lines">60</td>
+<td class="c m b2 r2 l0 t2 lines">75</td>
+<td class="c m b2 r2 l0 t2 lines">90</td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines">Speed (mph)</td>
+<td class="c m b2 r2 l0 t0 lines">12</td>
+<td class="c m b2 r2 l0 t0 lines">11</td>
+<td class="c m b2 r2 l0 t0 lines">10</td>
+<td class="c m b2 r2 l0 t0 lines">10</td>
+<td class="c m b2 r2 l0 t0 lines">8</td>
+<td class="c m b2 r2 l0 t0 lines">7</td>
+<td class="c m b2 r2 l0 t0 lines">0</td>
+</tr>
+</table></div> Give upper and lower rectangle estimates for the distance Roger ran.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-394" id="solution-394"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-394"><div class="solution solution-like">The upper distance is 14.5 miles and the lower distance is 11.5 miles.</div></div>
+</div></article></section></section><section class="subsection" id="section-41-afterclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.1.4</span> <span class="title">After Class Activities</span>
+</h3>
+<article class="example example-like" id="example-391"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.13</span><span class="period">.</span>
+</h4>We showed that, for <span class="process-math">\(f(x) =x^2\)</span> on <span class="process-math">\([0,1]\text{,}\)</span> <span class="process-math">\(\ds \lim_{n\to\infty} R_n = \dfrac{1}{3}\)</span> was the area under the curve.  Show that <span class="process-math">\(\ds \lim_{n\to\infty} L_n = \dfrac{1}{3}\)</span> as well.  Use the fact that <span class="process-math">\(\ds \sum_{i=0}^{n-1} f(x_i)\Delta x = \sum_{i=1}^{n} f(x_{i-1})\Delta x\)</span> and that <span class="process-math">\(\ds \sum_{i=1}^n i =\dfrac{n(n+1)}{2}\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-395" id="solution-395"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-395"><div class="solution solution-like">First,<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\Delta x = \dfrac{b-a}{n}\dfrac{1}{n}
+\end{equation*}
+</div>Now, to find <span class="process-math">\(f(x_i)\text{,}\)</span> write <span class="process-math">\(x_i\)</span> as<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+x_i= i\Delta x = \dfrac{i}{n}
+\end{equation*}
+</div>This means that<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f(x_i) = \lrpar{\dfrac{i}{n}}^2 = \dfrac{i^2}{n^2}
+\end{equation*}
+</div>So, the area of a single rectangle can be expressed as<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f(x_i)\Delta x = \lrpar{\dfrac{i}{n}}^2\cdot \dfrac{i}{n} = \dfrac{i^2}{n^3}
+\end{equation*}
+</div>To find the area of a finite number of rectangles, we add these single rectangles:<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+L_n = \ds \sum_{i=0}^{n-1} f(x_i)\Delta x = \sum_{i=1}^n \dfrac{(i-1)^2}{n^3}
+\end{equation*}
+</div>Since the summation is over the variable <span class="process-math">\(i\text{,}\)</span> we can use the formula <span class="process-math">\(\ds \sum_{i=1}^n i^2 = \dfrac{n(n+1)(2n+1)}{6}\)</span> to get<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+L_n = \ds \sum_{i=1}^n \dfrac{(i-1)^2}{n^3} = \dfrac{1}{n^3}\sum_{i=1}^n i^2-2i+1 = \dfrac{1}{n^3}\cdot \lrpar{\dfrac{n(n+1)(2n+1)}{6}- n(n+1) + 1}
+\end{equation*}
+</div>Now, the area under the curve is found by taking infinitely many rectangles in the approximation.  The way we can do that is by taking a limit:<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+A = \ds \lim_{n\to \infty} L_n = \lim_{n\to\infty} \sum_{i=1}^n f(x_i)\Delta x = \lim_{n\to\infty} \dfrac{1}{n^3}\cdot \lrpar{\dfrac{n(n+1)(2n+1)}{6}- n(n+1) + 1} = \dfrac{1}{3}
+\end{equation*}
+</div>So we conclude the area is precisely <span class="process-math">\(\dfrac{1}{3}\)</span>
+</div></div>
+</div></article><article class="example example-like" id="example-392"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.14</span><span class="period">.</span>
+</h4>A stock car prototype is being tested.  Over the course of one minute, its speed was recorded in ten-second intervals. <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b2 r2 l2 t2 lines">Time (sec)</td>
+<td class="c m b2 r2 l0 t2 lines">0</td>
+<td class="c m b2 r2 l0 t2 lines">10</td>
+<td class="c m b2 r2 l0 t2 lines">20</td>
+<td class="c m b2 r2 l0 t2 lines">30</td>
+<td class="c m b2 r2 l0 t2 lines">40</td>
+<td class="c m b2 r2 l0 t2 lines">50</td>
+<td class="c m b2 r2 l0 t2 lines">60</td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines">Velocity (mi/h)</td>
+<td class="c m b2 r2 l0 t0 lines">182.9</td>
+<td class="c m b2 r2 l0 t0 lines">168</td>
+<td class="c m b2 r2 l0 t0 lines">106.6</td>
+<td class="c m b2 r2 l0 t0 lines">99.8</td>
+<td class="c m b2 r2 l0 t0 lines">124.5</td>
+<td class="c m b2 r2 l0 t0 lines">176.1</td>
+<td class="c m b2 r2 l0 t0 lines">175.6</td>
+</tr>
+</table></div> Find upper and lower estimates for the distance traveled by the car in one minute.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-396" id="solution-396"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-396"><div class="solution solution-like">The upper estimate is 2.59 miles and the lower estimate is 2.15 miles</div></div>
+</div></article><article class="example example-like" id="example-393"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.15</span><span class="period">.</span>
+</h4>If a curve measures the rate of change of some function, what is the <em class="emphasis">explicit connection</em> between the area under the curve on a given interval and the total change of the function on that interval?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-397" id="solution-397"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-397"><div class="solution solution-like">The net area between the rate of change curve and the axis gives the total change of the function on the interval.</div></div>
+</div></article></section></section></div></main>
+</div>
+</body>
+</html>

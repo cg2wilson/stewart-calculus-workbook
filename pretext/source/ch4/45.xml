@@ -1,0 +1,481 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-45">
+			<title>The Substitution Rule</title>
+			
+				<objectives>
+					<ul>
+						<li>
+							Evaluate definite and indefinite integrals using the substitution rule
+						</li>
+						
+						<li>
+							Use even/odd properties of a function on a symmetric interval to simplify integral computations
+						</li>
+						
+					</ul>
+				</objectives>
+			<subsection xml:id="section-45-beforeclass">
+				<title>Before Class</title>
+				
+				<figure>
+					<caption>Pre-Class Video 1</caption>
+					<url href = "https://mymedia.ou.edu/media/4.5-1/1_jdr29nl3"/>
+				</figure>
+				<figure>
+					<caption>Pre-Class Video 2</caption>
+					<url href = "https://mymedia.ou.edu/media/4.5-2/1_4vf7mn28"/>
+				</figure>
+				
+				<subsubsection xml:id="section-45-rule">
+					<title>The Rule for Indefinite &amp; Definite Integrals</title>
+					<introduction>
+						The <em>substitution</em> rule for integrals allows us to take antiderivatives of composite functions.
+					</introduction>
+					
+					<theorem>
+						<title>Substitution Rule</title>
+						<p>
+							If <m>u=g(x)</m> is a differentiable function whose range is an interval <m>I</m> and <m>f</m> is continuous on <m>I</m>, then <m>\ds \int f(g(x))\cdot g'(x)\, dx = \int f(u)\, du</m>
+						</p>
+					</theorem>
+				
+				
+					<example>
+						<statement>
+							Let <m>f(x) = \sin (x^3+1)</m>
+							<ol label="a">
+								<li>
+									Let <m>u=x^3+1</m>.  Find <m>\dfrac{du}{dx}</m>.
+								</li>
+								<li>
+									Find <m>\dfrac{df}{dx}</m>.
+								</li>
+							</ol>
+						</statement>
+						<solution>
+							<ol label="a">
+								<li>
+									<m>\dfrac{du}{dx} = 3x^2</m>
+								</li>
+								<li>
+									<m>\dfrac{df}{dx} = \dfrac{df}{du}\cdot \dfrac{du}{dx} = \sin u\cdot \dfrac{3x^2} = \sin (x^3 + 1)\cdot 3x^2</m>
+								</li>
+							</ol>
+						</solution>
+					</example>
+					
+					<example><statement>
+						Using the previous example, compute <m>\ds \int 3x^2\cos(x^3+1)\, dx</m>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int 3x^2\cos(x^3+1)\, dx = \sin (x^3 + 1) + C</m>
+						</p>
+					</solution>
+					</example>
+						 
+						 
+						
+					<example><statement>
+						Find the general antiderivative of <m>\sin (2x)</m>.
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int \sin (2x)\, dx = -\dfrac{1}{2}\cos (2x) + C</m>
+						</p>
+					</solution>
+					</example>
+						 
+
+					<example><statement>
+						Find <m>\ds \int 54x\sqrt{9x^2 + 5}\, dx</m>.
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int 54x\sqrt{9x^2 + 5}\, dx = 2(9x^2+5)^{3/2} + C</m>
+						</p>
+					</solution>
+					</example>
+						 
+					
+					<example><statement>
+						Evaluate <m>\ds \int_0^4 \sqrt{2x+1}\,dx</m>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int_0^4 \sqrt{2x+1}\,dx = \dfrac{26}{3}</m>
+						</p>
+					</solution>
+					</example>
+					
+					<assemblage>
+						<title>Steps for <m>u-</m>substitution</title>
+						<p>
+							<ol label="(1)">
+								<li>
+									Identify the <q>chain rule</q> term; call it <m>u=f(x)</m>
+								</li>
+								<li>
+									Differentiate <m>u</m> so that you end up with something that looks like <m>du = f'(x)\, dx</m>
+								</li>
+								<li>
+									Solve for <m>dx</m>, and substitute into the integral.
+								</li>
+							</ol>
+							If we have a definite integral rather than an indefinite integral, we add a fourth step prior to integrating:
+							<ul>
+								<li>
+									Change the bounds of integration by setting <m>u = f(a)</m> and <m>u = f(b)</m> and solving.  These are your new bounds of integration.
+								</li>
+							</ul>
+						</p>
+					</assemblage>
+					
+					<assemblage>
+						<title>Integrals of Symmetric Functions</title>
+						<p>
+							For symmetric functions, we have the following properties:
+							<ol>
+								<li>
+									If <m>f</m> is continuous on <m>[-a,a]</m> and <m>f</m> is even, then <m>\ds \int_{-a}^a f(x)\, dx = 2\int_0^a f(x)\, dx</m>
+								</li>
+								<li>
+									If <m>f</m> is continuous on <m>[-a,a]</m> and <m>f</m> is odd, then <m>\ds \int_{-a}^a f(x)\, dx = 0</m>
+								</li>
+							</ol>
+						</p>
+					</assemblage>
+				</subsubsection>
+			</subsection>
+			<subsection xml:id="section-45-preclass">
+				<title>Pre-Class Activities</title>
+				<example>
+					<statement>
+						Since the chain rule is something that gives many students trouble, using the substitution rule sometimes also gives people trouble.  What, if any, part of the process would you like to see more examples of in class?
+					</statement>
+					<solution>
+						<p>
+							Answers vary
+						</p>
+					</solution>
+				</example>
+				<example>
+					<statement>
+						Compute <m>\ds \int \cos(3x)\, dx</m>
+					</statement>
+					<solution>
+						<m>\dfrac{1}{3}\sin (3x) + C</m>
+					</solution>
+				</example>
+				<example>
+					<statement>
+						Let <m>f(x) = (x-3)^3</m>
+						<ol label="a">
+							<li>
+								Compute <m>\ds \int f(x)\, dx</m> <em>without</em> using <m>u-</m>substitution.
+							</li>
+							<li>
+								Now compute <m>\ds \int f(x)\, dx</m> with <m>u-</m>substitution.
+							</li>
+							<li>
+								Which method do you prefer?
+							</li>
+						</ol>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li>
+								<m> \dfrac{1}{4}x^4-3x^3+\dfrac{27}{2}x^2 -27x + C </m>
+							</li>
+							<li>
+								<m>\dfrac{1}{4}(x-3)^4 + C</m>
+							</li>
+							<li>
+								Answers vary
+							</li>
+						</ol>
+					</solution>
+				</example>
+				<example>
+					<statement>
+						Compute <m>\ds \int_1^2 (x-1)^{2021}\, dx</m>.  Why is <m>u-</m>substitution the only viable way of approaching this problem>?
+					</statement>
+					<solution>
+						<m>\dfrac{1}{2022}</m>.  It's unreasonable to expand <m>(x-1)^{2021}</m> and then integrate.
+					</solution>
+				</example>
+			</subsection>
+			<subsection xml:id="section-45-inclass">
+				<title>In Class</title>
+				<subsubsection xml:id="section-45-examples">
+					<title>Examples</title>
+					<example><statement>
+						Find <m>\ds \int_0^1 \dfrac{x}{\sqrt{6-4x^2}}\,dx</m>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int_0^1 \dfrac{x}{\sqrt{6-4x^2}}\,dx = \dfrac{\sqrt{6} - \sqrt{2}}{4}</m>
+						</p>
+					</solution>
+					</example>
+	
+					<example><statement>
+						Evaluate <m>\ds \int_1^2 \dfrac{dx}{(3-5x)^2}</m>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int_1^2 \dfrac{dx}{(3-5x)^2} = \dfrac{1}{14}</m>
+						</p>
+					</solution>
+					</example>
+
+					<example><statement>
+						Find the indefinite integral of <m>f(x) = x^5\sqrt{1+x^2}</m>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int f(x)\, dx = \dfrac{1}{7} (1+x^2)^{7/2} - \dfrac{2}{5}(1+x^2)^{5/2} + \dfrac{1}{3}(1+x^2)^{3/2} + C</m>
+						</p>
+					</solution>
+					</example>
+						 
+						
+					<example><statement>
+						Evaluate <m>\ds \int_{\pi/2}^\pi \sin\lrpar{\dfrac{2\theta}{3}}\,d\theta</m>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int_{\pi/2}^\pi \sin\lrpar{\dfrac{2\theta}{3}}\,d\theta = \dfrac{3}{2}</m>
+						</p>
+					</solution>
+					</example>
+						 	
+					<example><statement>
+						Evaluate <m>\ds \int (x^2+1)(x^3+3x)^4\,dx</m>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int (x^2+1)(x^3+3x)^4\,dx = \dfrac{1}{15}(x^3+3x)^5 + C</m>
+						</p>
+					</solution>
+					</example>
+						 
+						
+					<example><statement>
+						Evaluate <m>\ds \int \dfrac{dt}{\cos^2t\sqrt{1+\tan t}}</m>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int \dfrac{dt}{\cos^2t\sqrt{1+\tan t}} = 2\sqrt{1+\tan t} + C</m>
+						</p>
+					</solution>
+					</example>
+						 
+						
+					<example><statement>
+						Evaluate <m>\ds \int_0^1\cos\lrpar{\dfrac{\pi t}{2}}\, dt</m>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int_0^1\cos\lrpar{\dfrac{\pi t}{2}}\, dt =\dfrac{2}{\pi}</m>
+						</p>
+					</solution>
+					</example>
+						 
+						 
+						
+					<example><statement>
+						Evaluate <m>\ds \int_0^a x\sqrt{a^2-x^2}\,dx</m>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int_0^a x\sqrt{a^2-x^2}\,dx =\dfrac{1}{3}a^3</m>
+						</p>
+					</solution>
+					</example>
+						 
+						
+					<example><statement>
+						Evaluate <m>\ds \int x(2x+5)^8\,dx</m>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int x(2x+5)^8\,dx = \dfrac{1}{40} (2x+5)^{10} - \dfrac{5}{36}(2x+5)^9 + C</m>
+						</p>
+					</solution>
+					</example>	
+						 
+						
+					<example><statement>
+						Evaluate <m>\ds \int \sin x\sin (\cos x)\,dx</m>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int \sin x\sin (\cos x)\,dx = \cos (\cos x) + C</m>
+						</p>
+					</solution>
+					</example>
+						 
+						 
+						
+					<example><statement>
+						Evaluate <m>\ds \int y^2(4-y^3)^{2/3}\,dy</m>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int y^2(4-y^3)^{2/3}\,dy = -\dfrac{1}{5}(4-y^3)^{5/3} + C</m>
+						</p>
+					</solution>
+					</example>
+						 
+						
+					<example><statement>
+						Evaluate <m>\ds \int_{-\pi/3}^{\pi/3} x^4\sin x\,dx</m>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int_{-\pi/3}^{\pi/3} x^4\sin x\,dx = 0</m>
+						</p>
+					</solution>
+					</example>
+						 
+						
+					<example><statement>
+						Evaluate <m>\ds \int_0^{\sqrt{\pi}} x\cos (x^2)\, dx</m>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int_0^{\sqrt{\pi}} x\cos (x^2)\, dx = 0</m>
+						</p>
+					</solution>
+					</example>
+						 
+						 
+						
+					<example><statement>
+						Evaluate <m>\ds \int_0^{\pi/2}\cos x \sin (\sin x)\, dx</m>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int_0^{\pi/2}\cos x \sin (\sin x)\, dx = 1-\cos 1</m>
+						</p>
+					</solution>
+					</example>
+						 
+						
+					<example><statement>
+						Evaluate <m>\ds \int_0^1 \dfrac{dx}{(1+\sqrt{x})^4}</m>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int_0^1 \dfrac{dx}{(1+\sqrt{x})^4} = \dfrac{1}{6}</m>
+						</p>
+					</solution>
+					</example>
+						 
+						
+					<example><statement>
+						Evaluate <m>\ds \int_0^{13} \dfrac{dx}{\sqrt[3]{(1+2x)^2}}</m>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int_0^{13} \dfrac{dx}{\sqrt[3]{(1+2x)^2}} = 6</m>
+						</p>
+					</solution>
+					</example>
+						 
+						 
+						
+					<example><statement>
+						Evaluate <m>\ds \int \dfrac{\cos (\pi/x)}{x^2}\,dx</m>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int \dfrac{\cos (\pi/x)}{x^2}\,dx = -\dfrac{1}{\pi} \sin \lrpar{\dfrac{\pi}{x}} + C</m>
+						</p>
+					</solution>
+					</example>
+						 
+						
+					<example><statement>
+						Evaluate <m>\ds \int_0^1 \sqrt[3]{1+7x}\, dx</m>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int_0^1 \sqrt[3]{1+7x}\, dx = \dfrac{45}{28}</m>
+						</p>
+					</solution>
+					</example>
+						 
+					
+					<example><statement>
+						If <m>f</m> is continuous at <m>\ds \int_0^4 f(x)\, dx = 10</m>, find <m>\ds \int_0^2 f(2x)\, dx</m>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int_0^2 f(2x)\, dx = 5</m>
+						</p>
+					</solution>
+					</example>
+				</subsubsection>
+			</subsection>
+			<subsection xml:id="section-45-afterclass">
+				<title>After Class Activities</title>
+				<example><statement>
+					Find <m>\ds \int \dfrac{\cos \sqrt{x}}{\sqrt{x}}\, dx</m>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int \dfrac{\cos \sqrt{x}}{\sqrt{x}}\, dx = 2\sin\sqrt{x} + C</m>
+					</p>
+				</solution>
+				</example>
+					 
+					
+				<example><statement>
+					Find <m>\ds \int \sin x \cos^4 x\, dx</m>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int \sin x \cos^4 x\, dx = -\dfrac{1}{5}\cos^5x + C</m>
+					</p>
+				</solution>
+				</example>
+					 
+					
+				<example><statement>
+					Compute <m>\ds \int_{-\pi/4}^{\pi/4} \lrpar{x^3 + x^4 \tan x}\, dx</m>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int_{-\pi/4}^{\pi/4} \lrpar{x^3 + x^4 \tan x}\, dx = 0</m>
+					</p>
+				</solution>
+				</example>
+					 
+					 
+					
+				<example><statement>
+					Evaluate <m>\ds \int_{1/2}^1 \dfrac{\sin (x^{-2})}{x^3}\, dx</m>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int_{1/2}^1 \dfrac{\sin (x^{-2})}{x^3}\, dx = \dfrac{1}{2}\cos \lrpar{\dfrac{1}{4}} - \dfrac{1}{2}\cos 1</m>
+					</p>
+				</solution>
+				</example>
+					 
+				
+				<example><statement>
+					Evaluate <m>\ds \int_{\pi/3}^{2\pi/3} \csc^2\lrpar{\dfrac{t}{2}}\,dt</m>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int_{\pi/3}^{2\pi/3} \csc^2\lrpar{\dfrac{t}{2}}\,dt = \dfrac{4\sqrt{3}}{3}</m>
+					</p>
+				</solution>
+				</example>
+			</subsection>
+		</section>
+		

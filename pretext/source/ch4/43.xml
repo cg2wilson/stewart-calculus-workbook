@@ -1,0 +1,476 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-43">
+			<title>The Fundamental Theorem of Calculus</title>
+			
+				<objectives>
+					<ul>
+						<li>
+							Evaluate and determine basic characteristics of accumulation functions
+						</li>
+						
+						<li>
+							State the Fundamental Theorem of Calculus (Part 1) and use it to compute derivatives of accumulation functions
+						</li>
+						
+						<li>
+							State the Fundamental Theorem of Calculus (Part 2) and use it to compute definite integrals of functions with known antiderivatives (possibly with algebraic/trigonometric manipulation)
+						</li>
+						
+						<li>
+							Explain the relationship between integration and differentiation as processes
+						</li>
+						
+					</ul>
+				</objectives>
+			<subsection xml:id="section-43-beforeclass">
+				<title>Before Class</title>
+				
+				<figure>
+					<caption>Pre-Class Video 1</caption>
+					<url href = "https://mymedia.ou.edu/media/4.3-1/1_9m7tun82"/>
+				</figure>
+
+				
+				<subsubsection xml:id="section-43-ftc1">
+					<title>The First Fundamental Theorem</title>
+					
+					<example>
+						<statement>
+							The function <m>f</m> is given in the graph below.  Define the function <m>g(x) = \ds \int_0^x f(t)\, dt</m>.  Find <m>g(0),g(1),g(2)</m>, and <m>g(3)</m>.  Then, sketch a rough graph of <m>g</m> on the interval <m>[0,3]</m>.
+							<image>
+							<description>
+								The graph of an accumulation function, a line going from <m>(0,0)</m> to <m>(1,2)</m>, a horizontal line from <m>(1,2)</m> to <m>(2,2)</m>, and <m>2\cos\lrpar{\dfrac{\pi}{2}(x-2)}</m> from <m>(2,2)</m> to <m>(5,-2)</m>.
+							</description>
+							<latex-image>
+							<![CDATA[
+								\begin{tikzpicture}
+									\begin{axis}[
+										grid=both,
+										grid style={line width=.1pt, draw=gray!30},
+										major grid style={line width=.2pt,draw=gray!50},
+										every tick label/.append style={font=\small},
+										axis x line = middle,
+										axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.15)}},
+											%ytick = {-4, -2, -3, -1, 1, 2, 3, 4},
+										y label style={at={(axis description cs:0,1.15)},anchor=north},
+											ylabel = {$f(x)$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											%xtick = {-4,-3,-2,-1,1,2,3,4},
+											x label style={at={(axis description cs:1.1,.5)},anchor=east},
+											xlabel = {$x$},
+											xmax = 5.5, ymin = -2.5, ymax = 2.5,
+											minor tick num = 3
+									]
+									
+										\addplot[thick,domain = 0:1] {2*x};
+										\addplot[thick,domain = 1:2] {2};
+										\addplot[thick,smooth,samples=100,domain = 2:5] {2*cos((180)*(x-2))};
+									\end{axis}
+								\end{tikzpicture}]]>
+							</latex-image>
+							</image>
+						</statement>
+						<solution>
+							<p>
+								<md>
+									<mrow>g(0) \amp = 0 </mrow>
+									<mrow>g(1) \amp = 1 </mrow>
+									<mrow>g(2) \amp = 3</mrow>
+									<mrow>g(3) \amp = 3</mrow>
+								</md>
+							</p>
+							<p>
+								Answers for the sketch will vary
+							</p>
+						</solution>
+					</example>
+					
+					<theorem>
+						<title>The Fundamental Theorem of Calculus, Part 1 (FTC1)</title>
+						<idx>Fundamental Theorem of Calculus (Part 1)</idx>
+						
+						<p>
+							If <m>f</m> is continuous on <m>[a,b]</m>, then the function <m>g</m> defined by <m>g(x) = \ds \int_a^x f(t)\, dt</m>, for <m>a\leq x\leq b</m> is continuous on <m>[a,b]</m>, differentiable on <m>(a,b)</m>, and <m>g'(x) = f(x)</m>.  Using Leibniz notation, we have <m>\ds \dfrac{d}{dx}\left[\int_a^x f(t)\, dt\right] = f(x)</m>
+						</p>
+					</theorem>
+					
+					<example>
+						<statement>
+							Find the derivative of the function <m>g(x) = \ds \int_0^x \sqrt{1-t^2}\, dt</m>
+						</statement>	
+						<solution>
+							<p>
+								<m>g'(x) = \sqrt{1-x^2}</m>
+							</p>
+						</solution>
+					</example>
+					
+					<example>
+						<statement>
+							Find <m>\ds \dfrac{d}{dx} \int_1^{x^2} \csc t\, dt</m>
+						</statement>
+						<solution>
+							<p>
+								<m>\csc (x^2)\cdot 2x</m>
+							</p>
+						</solution>
+					</example>
+					
+					<example>
+						<statement>
+							Find <m>F'(x)</m>, if <m>F(x) = \ds \int_x^0 \sqrt{1+\sec y}\, dy</m>
+						</statement>
+						<solution>
+							<p>
+								<m>F'(x) = -\sqrt{1+\sec x}</m>
+							</p>
+						</solution>
+					</example>
+				</subsubsection>
+			</subsection>
+			<subsection xml:id="section-43-preclass">
+				<title>Pre-Class Activities</title>
+				
+				<example>
+					<statement>
+						Let <m>g(x) = \ds \int_0^x f(t)\, dt</m>, where <m>f</m> is the function in the graph below.
+						<image source="43fig1.png"/>
+						
+						<ol label="a">
+							<li>
+								Evaluate <m>g(0),g(1),g(2),g(3)</m>, and <m>g(6)</m>
+							</li>
+							<li>
+								Where is <m>g</m> increasing?
+							</li>
+							<li>
+								Where does <m>g</m> have a local max?
+							</li>
+							<li>
+								Sketch a rough graph of <m>g</m>?
+							</li>
+						</ol>
+					</statement>
+					<solution>
+						<p>
+						<ol label="a">
+							<li>
+								<m>g(0) = 0</m>, <m>g(1) = 2</m>, <m>g(2) = 3</m>, <m>g(3) = 5</m>, <m>g(6) = 1</m>
+							</li>
+							<li>
+								<m>(0,3)</m>
+							</li>
+							<li>
+								<m>t=3</m>
+							</li>
+							<li>
+								Answers vary.
+							</li>
+						</ol>
+						</p>
+					</solution>
+				</example>
+					
+				<example>
+					<statement>
+						Find the derivative of the following functions:
+						<ol label="a">
+							<li>
+								<m>g(x) = \ds \int_2^x \sqrt{k+k^3}\, dk</m>
+							</li>
+							<li>
+								<m>r(y) = \ds \int_y^2 t^3\cos t\, dt</m>
+							</li>
+							<li>
+								<m>f(x) = \ds \int_0^{x^4} \tan^2t\, dt</m>
+							</li>
+						</ol>
+					</statement>
+					<solution>
+						<p>
+						<ol label="a">
+							<li>
+								<m>g'(x) = \sqrt{x+x^3}</m>
+							</li>
+							<li>
+								<m>r'(y) = -y^3\cos y</m>
+							</li>
+							<li>
+								<m>f'(x) = 4x^3\tan^2(x^4)</m>
+							</li>
+						</ol>
+						</p>
+					</solution>
+				</example>
+					
+				
+				<example>
+					<statement>
+						If <m>f(x) = \ds \int_0^x (1-t^2)\cos^2t\, dt</m>, on what interval is <m>f</m> increasing?
+					</statement>
+					<solution>
+						<p>
+						<m>0\lt x \lt 1</m>
+						</p>
+					</solution>
+				</example>
+					
+			</subsection>
+			
+			<subsection xml:id="section-43-inclass">
+				<title>In Class</title>
+				<subsubsection xml:id="section-43-ftc2">
+					<title>The Second Fundamental Theorem</title>
+					
+					<theorem>
+						<title>The Fundamental Theorem of Calculus, Part 2 (FTC2)</title>
+						<idx>Fundamental Theorem of Calculus (Part 2)</idx>
+						
+						<p>
+							If <m>f</m> is continuous on <m>[a,b]</m>, then <m>\ds \int_a^b f(x)\, dx = F(b)-F(a)</m>, where <m>F</m> is any antiderivative of <m>f</m>.
+						</p>
+					</theorem>
+					
+					<example><statement>
+						Evaluate <m>\ds \int_{-2}^1 x^3\,dx</m>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int_{-2}^1 x^3\,dx = -\dfrac{15}{4}</m>
+						</p>
+					</solution></example>
+						 
+						 
+						
+					<example><statement>
+						Find the area under the curve <m>y = x^2</m> from 0 to 1.
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int_0^1 x^2\, dx = \dfrac{1}{3}</m>
+						</p>
+					</solution></example>
+						 
+						
+					<example><statement>
+						Find the area under the curve <m>y = \sin x</m>, from <m>0</m> to <m>\dfrac{3\pi}{2}</m>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int_0^{3\pi/2} \sin x\, dx = 1</m>
+						</p>
+					</solution></example>
+						 
+						
+					<example><statement>
+						Is the statement <m>\ds \int_{-1}^1 \dfrac{1}{x^3}\, dx = 0</m> correct?  Why or why not?
+					</statement>
+					<solution>
+						<p>
+							No- <m>\dfrac{1}{x^3}</m> is not continuous at <m>x=0</m>, so we can't use FTC 2.
+						</p>
+					</solution></example>
+						 
+						 
+				
+					<example><statement>
+						Find the derivative of <m>g(r) = \ds \int_5^r (t-t^2)^8\,dt</m>
+					</statement>
+					<solution>
+						<p>
+							<m>g'(r) = (r-r^2)^8</m>
+						</p>
+					</solution></example>
+						 
+						
+					<example><statement>
+						Find the derivative of <m>R(y) = \ds \int_{y}^4 t^5\sec t\, dt</m>
+					</statement>
+					<solution>
+						<p>
+							<m>R'(y) = -y^5\sec y</m>
+						</p>
+					</solution></example>
+						 
+						
+					<example><statement>
+						Find the derivative of <m>y = \ds\int_0^{4x^3} \tan^2\theta\, d\theta</m>
+					</statement>
+					<solution>
+						<p>
+							<m>\dfrac{dy}{dx} = 12x^2\tan^2(4x^3)</m>
+						</p>
+					</solution></example>
+						 
+						 
+						
+					<example><statement>
+						Calculate the integral <m>\ds \int_1^3 (x^2+2x-4)\, dx</m>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int_1^3 (x^2+2x-4)\, dx= \dfrac{74}{3}</m>
+						</p>
+					</solution></example>
+						 
+						
+					<example><statement>
+						Calculate the integral <m>\ds \int_0^2 \lrpar{\dfrac{4}{5}t^3-\dfrac{3}{4}t^2+\dfrac{2}{5}t}\,dt</m>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int_0^2 \lrpar{\dfrac{4}{5}t^3-\dfrac{3}{4}t^2+\dfrac{2}{5}t}\,dt= 2</m>
+						</p>
+					</solution></example>
+						 
+						
+					<example><statement>
+						Calculate the integral <m>\ds \int_1^9 \sqrt{x}\,dx</m>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int_1^9 \sqrt{x}\,dx = \dfrac{52}{3}</m>
+						</p>
+					</solution></example>
+						 
+						 
+						
+					<example><statement>
+						Calculate the integral <m>\ds \int_1^4 \dfrac{2+x^2}{\sqrt{x}}\,dx</m>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int_1^4 \dfrac{2+x^2}{\sqrt{x}}\,dx = \dfrac{82}{5}</m>
+						</p>
+					</solution></example>
+						 
+						
+					<example><statement>
+						Calculate the integral <m>\ds \int_{\pi/6}^{\pi/2}\csc t\cot t\, dt</m>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int_{\pi/6}^{\pi/2}\csc t\cot t\, dt = 1</m>
+						</p>
+					</solution></example>
+						 
+						
+					<example><statement>
+						Calculate the integral <m>\ds \int_{-1}^2 (3u-2)(u+1)\, du</m>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int_{-1}^2 (3u-2)(u+1)\, du = \dfrac{9}{2}</m>
+						</p>
+					</solution></example>
+						 
+						 
+						
+					<example><statement>
+						Calculate the integral <m>\ds \int_{\pi/4}^{\pi/3} \csc^2\theta\, d\theta</m>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int_{\pi/4}^{\pi/3} \csc^2\theta\, d\theta =  1-\dfrac{1}{\sqrt{3}}</m>
+						</p>
+					</solution></example>
+						 
+						
+					<example><statement>
+						Calculate the integral <m>\ds \int_1^{18} \sqrt{\dfrac{2}{z}}\, dz</m>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int_1^{18} \sqrt{\dfrac{2}{z}}\, dz = 12-2\sqrt{2}</m>
+						</p>
+					</solution>
+					</example>
+						 
+						
+					<example><statement>	
+						Evaluate the integral <m>\ds \int_1^2 \dfrac{v^5+3v^6}{v^4}\, dv</m>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int_1^2 \dfrac{v^5+3v^6}{v^4}\, dv = \dfrac{17}{2}</m>
+						</p>
+					</solution>
+					</example>				 
+						 
+						
+					<example><statement>
+						Evaluate the integral <m>\ds\int_0^\pi f(x)\, dx</m>, where 
+						<me>f(x) = \begin{cases}\sin x \amp \text{if }0\leq x \lt \pi/2 \\ \cos x \amp \text{if }\pi/2\leq x\leq \pi \end{cases}</me>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int_0^\pi f(x)\, dx = 0</m>
+						</p>
+					</solution></example>
+						 
+						
+					<example><statement>
+						Evaluate the limit <m>\ds \lim_{n\to \infty} \sum_{i=1}^n \lrpar{\dfrac{i^4}{n^5} + \dfrac{i}{n^2}}</m>.  <em>Hint</em>: Consider it as a Riemann sum on <m>[0,1]</m>.
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \lim_{n\to \infty} \sum_{i=1}^n \lrpar{\dfrac{i^4}{n^5} + \dfrac{i}{n^2}} = \int_0^1 x^3 + x\, dx = \dfrac{7}{10}</m>
+						</p>
+					</solution></example>
+						 
+					
+					<example><statement>
+						If <m>f(1) = 12</m>, <m>f'</m> is continuous, and <m>\ds \int_1^4 f'(x)\, dx = 17</m>, what is the value of <m>f(4)</m>?
+					</statement>
+					<solution>
+						<p>
+							<m>f(4) = 29</m>
+						</p>
+					</solution></example>
+				</subsubsection>
+			</subsection>
+			<subsection xml:id="section-43-afterclass">
+				<title>After Class Activities</title>
+					<example><statement>
+						Compute <m>\ds \int_0^1 (1+r)^3\, dr</m>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int_0^1 (1+r)^3\, dr = \dfrac{7}{4}</m>
+						</p>
+					</solution></example>
+						 
+						
+					<example><statement>
+						Find the area under the curve <m>f(x) = \dfrac{x^4 + 1}{x^2}</m> between 1 and 2.
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int_1^2 f(x)\, dx = \dfrac{17}{6}</m>
+						</p>
+					</solution></example>
+						 
+
+					<example><statement>
+						Evaluate <m>\ds \int_{-1}^1 x^{2022}\, dx</m>
+					</statement>
+					<solution>
+						<p>
+							<m>\ds \int_{-1}^1 x^{2022}\, dx = \dfrac{2}{2023}</m>
+						</p>
+					</solution></example>
+						 
+						
+					<example><statement>
+						What does it mean for differentiation and integration to be inverse processes?
+					</statement>
+					<solution>
+						<p>
+							Differentiation and integration undo each other; you take a deriative to undo an integral, and you take an integral to undo a derivative.
+						</p>
+					</solution></example>
+			</subsection>
+		</section>
+		

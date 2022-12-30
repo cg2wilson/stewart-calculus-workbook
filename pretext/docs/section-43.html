@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-07-17T17:31:48-05:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Math 1914 - Differential &amp; Integral Calculus I The Fundamental Theorem of Calculus</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Math 1914 - Differential &amp; Integral Calculus">
+<meta property="book:author" content="Cory Wilson">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(      \newcommand{\ds}{\displaystyle}
+\newcommand{\lrpar}[1]{\left(#1\right)}
+\newcommand{\lrbrace}[1]{\left\lbrace #1 \right\rbrace}
+\newcommand{\inv}[1]{#1^{-1}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\dc}{^\circ}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="math1914.html"><span class="title">Math 1914 - Differential &amp; Integral Calculus</span></a></h1>
+<p class="byline">Cory Wilson</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-42.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch4.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-44.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-42.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch4.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section-44.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul><li><a href="colophon.html" data-scroll="colophon" class="internal">Colophon</a></li></ul>
+</li>
+<li class="link">
+<a href="ch1.html" data-scroll="ch1" class="internal"><span class="codenumber">1</span> <span class="title">Functions and Limits</span></a><ul>
+<li><a href="section-11.html" data-scroll="section-11" class="internal">Four Ways to Represent a Function</a></li>
+<li><a href="section-12.html" data-scroll="section-12" class="internal">Mathematical Models: A Catalog of Essential Functions</a></li>
+<li><a href="section-13.html" data-scroll="section-13" class="internal">New Functions from Old Functions</a></li>
+<li><a href="section-14.html" data-scroll="section-14" class="internal">The Tangent and Velocity Problems</a></li>
+<li><a href="section-15.html" data-scroll="section-15" class="internal">The Limit of a Function</a></li>
+<li><a href="section-16.html" data-scroll="section-16" class="internal">Calculating Limits Using Limit Laws</a></li>
+<li><a href="section-17.html" data-scroll="section-17" class="internal">(X) The Precise Definition of a Limit</a></li>
+<li><a href="section-18.html" data-scroll="section-18" class="internal">Continuity</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch2.html" data-scroll="ch2" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives</span></a><ul>
+<li><a href="section-21.html" data-scroll="section-21" class="internal">Derivatives and Rates of Change</a></li>
+<li><a href="section-22.html" data-scroll="section-22" class="internal">The Derivative as a Function</a></li>
+<li><a href="section-23.html" data-scroll="section-23" class="internal">Differentiation Formulas</a></li>
+<li><a href="section-24.html" data-scroll="section-24" class="internal">Derivatives of Trigonometric Functions</a></li>
+<li><a href="section-25.html" data-scroll="section-25" class="internal">The Chain Rule</a></li>
+<li><a href="section-26.html" data-scroll="section-26" class="internal">Implicit Differentiation</a></li>
+<li><a href="section-27.html" data-scroll="section-27" class="internal">(X) Rates of Changes in the Natural and Social Sciences</a></li>
+<li><a href="section-28.html" data-scroll="section-28" class="internal">Related Rates</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch3.html" data-scroll="ch3" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Differentiation</span></a><ul>
+<li><a href="section-31.html" data-scroll="section-31" class="internal">Maximum &amp; Minimum Values</a></li>
+<li><a href="section-32.html" data-scroll="section-32" class="internal">(X) The Mean Value Theorem</a></li>
+<li><a href="section-33.html" data-scroll="section-33" class="internal">How Derivatives Affect the Shape of a Graph</a></li>
+<li><a href="section-34.html" data-scroll="section-34" class="internal">Limits at Infinity &amp; Horizontal Asymptotes</a></li>
+<li><a href="section-35.html" data-scroll="section-35" class="internal">Summary of Curve Sketching</a></li>
+<li><a href="section-36.html" data-scroll="section-36" class="internal">(X) Graphing with Calculus and Calculators</a></li>
+<li><a href="section-37.html" data-scroll="section-37" class="internal">Optimization</a></li>
+<li><a href="section-38.html" data-scroll="section-38" class="internal">(X) Newton's Method</a></li>
+<li><a href="section-39.html" data-scroll="section-39" class="internal">Antiderivatives</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch4.html" data-scroll="ch4" class="internal"><span class="codenumber">4</span> <span class="title">Integrals</span></a><ul>
+<li><a href="section-41.html" data-scroll="section-41" class="internal">Areas &amp; Distance</a></li>
+<li><a href="section-42.html" data-scroll="section-42" class="internal">The Definite Integral</a></li>
+<li><a href="section-43.html" data-scroll="section-43" class="active">The Fundamental Theorem of Calculus</a></li>
+<li><a href="section-44.html" data-scroll="section-44" class="internal">Indefinite Integrals &amp; the Net Change Theorem</a></li>
+<li><a href="section-45.html" data-scroll="section-45" class="internal">The Substitution Rule</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch5.html" data-scroll="ch5" class="internal"><span class="codenumber">5</span> <span class="title">Applications of Integration</span></a><ul>
+<li><a href="section-51.html" data-scroll="section-51" class="internal">Areas Between Curves</a></li>
+<li><a href="section-52.html" data-scroll="section-52" class="internal">Volumes</a></li>
+<li><a href="section-53.html" data-scroll="section-53" class="internal">Volumes by Cylindrical Shells</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-43"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">4.3</span> <span class="title">The Fundamental Theorem of Calculus</span>
+</h2>
+<article class="objectives goal-like" id="objectives-23"><h3 class="heading"><span class="type">Objectives</span></h3>
+<ul class="disc">
+<li id="li-898"><p id="p-derived-li-898">Evaluate and determine basic characteristics of accumulation functions</p></li>
+<li id="li-899"><p id="p-derived-li-899">State the Fundamental Theorem of Calculus (Part 1) and use it to compute derivatives of accumulation functions</p></li>
+<li id="li-900"><p id="p-derived-li-900">State the Fundamental Theorem of Calculus (Part 2) and use it to compute definite integrals of functions with known antiderivatives (possibly with algebraic/trigonometric manipulation)</p></li>
+<li id="li-901"><p id="p-derived-li-901">Explain the relationship between integration and differentiation as processes</p></li>
+</ul></article><section class="subsection" id="section-43-beforeclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.3.1</span> <span class="title">Before Class</span>
+</h3>
+<figure class="figure figure-like" id="figure-41"><a class="external" href="https://mymedia.ou.edu/media/4.3-1/1_9m7tun82" target="_blank"><code class="code-inline tex2jax_ignore">https://mymedia.ou.edu/media/4.3-1/1_9m7tun82</code></a><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">41<span class="period">.</span></span><span class="space"> </span>Pre-Class Video 1</figcaption></figure><section class="subsubsection" id="section-43-ftc1"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">4.3.1.1</span> <span class="title">The First Fundamental Theorem</span>
+</h4>
+<article class="example example-like" id="example-409"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.1</span><span class="period">.</span>
+</h5>The function <span class="process-math">\(f\)</span> is given in the graph below.  Define the function <span class="process-math">\(g(x) = \ds \int_0^x f(t)\, dt\text{.}\)</span>  Find <span class="process-math">\(g(0),g(1),g(2)\text{,}\)</span> and <span class="process-math">\(g(3)\text{.}\)</span>  Then, sketch a rough graph of <span class="process-math">\(g\)</span> on the interval <span class="process-math">\([0,3]\text{.}\)</span> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-137.svg" role="img" class="contained" alt="The graph of an accumulation function, a line going from \((0,0)\) to \((1,2)\text{,}\) a horizontal line from \((1,2)\) to \((2,2)\text{,}\) and \(2\cos\lrpar{\dfrac{\pi}{2}(x-2)}\) from \((2,2)\) to \((5,-2)\text{.}\)"></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-413" id="solution-413"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-413"><div class="solution solution-like">
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-13">
+\begin{align*}
+g(0) \amp = 0 \\
+g(1) \amp = 1 \\
+g(2) \amp = 3\\
+g(3) \amp = 3
+\end{align*}
+</div>
+<p id="p-190">Answers for the sketch will vary</p>
+</div></div>
+</div></article><article class="theorem theorem-like" id="theorem-25"><h5 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">4.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">The Fundamental Theorem of Calculus, Part 1 (FTC1).</span>
+</h5>
+<p id="p-191">If <span class="process-math">\(f\)</span> is continuous on <span class="process-math">\([a,b]\text{,}\)</span> then the function <span class="process-math">\(g\)</span> defined by <span class="process-math">\(g(x) = \ds \int_a^x f(t)\, dt\text{,}\)</span> for <span class="process-math">\(a\leq x\leq b\)</span> is continuous on <span class="process-math">\([a,b]\text{,}\)</span> differentiable on <span class="process-math">\((a,b)\text{,}\)</span> and <span class="process-math">\(g'(x) = f(x)\text{.}\)</span>  Using Leibniz notation, we have <span class="process-math">\(\ds \dfrac{d}{dx}\left[\int_a^x f(t)\, dt\right] = f(x)\)</span></p></article><article class="example example-like" id="example-410"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.3</span><span class="period">.</span>
+</h5>Find the derivative of the function <span class="process-math">\(g(x) = \ds \int_0^x \sqrt{1-t^2}\, dt\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-414" id="solution-414"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-414"><div class="solution solution-like"><p id="p-192"><span class="process-math">\(g'(x) = \sqrt{1-x^2}\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-411"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.4</span><span class="period">.</span>
+</h5>Find <span class="process-math">\(\ds \dfrac{d}{dx} \int_1^{x^2} \csc t\, dt\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-415" id="solution-415"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-415"><div class="solution solution-like"><p id="p-193"><span class="process-math">\(\csc (x^2)\cdot 2x\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-412"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.5</span><span class="period">.</span>
+</h5>Find <span class="process-math">\(F'(x)\text{,}\)</span> if <span class="process-math">\(F(x) = \ds \int_x^0 \sqrt{1+\sec y}\, dy\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-416" id="solution-416"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-416"><div class="solution solution-like"><p id="p-194"><span class="process-math">\(F'(x) = -\sqrt{1+\sec x}\)</span></p></div></div>
+</div></article></section></section><section class="subsection" id="section-43-preclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.3.2</span> <span class="title">Pre-Class Activities</span>
+</h3>
+<article class="example example-like" id="example-413"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.6</span><span class="period">.</span>
+</h4>Let <span class="process-math">\(g(x) = \ds \int_0^x f(t)\, dt\text{,}\)</span> where <span class="process-math">\(f\)</span> is the function in the graph below. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/43fig1.png" class="contained"></div>
+<ol class="lower-alpha">
+<li id="li-902"><p id="p-derived-li-902">Evaluate <span class="process-math">\(g(0),g(1),g(2),g(3)\text{,}\)</span> and <span class="process-math">\(g(6)\)</span></p></li>
+<li id="li-903"><p id="p-derived-li-903">Where is <span class="process-math">\(g\)</span> increasing?</p></li>
+<li id="li-904"><p id="p-derived-li-904">Where does <span class="process-math">\(g\)</span> have a local max?</p></li>
+<li id="li-905"><p id="p-derived-li-905">Sketch a rough graph of <span class="process-math">\(g\text{?}\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-417" id="solution-417"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-417"><div class="solution solution-like"><ol id="p-195" class="lower-alpha">
+<li id="li-906"><p id="p-derived-li-906"><span class="process-math">\(g(0) = 0\text{,}\)</span> <span class="process-math">\(g(1) = 2\text{,}\)</span> <span class="process-math">\(g(2) = 3\text{,}\)</span> <span class="process-math">\(g(3) = 5\text{,}\)</span> <span class="process-math">\(g(6) = 1\)</span></p></li>
+<li id="li-907"><p id="p-derived-li-907"><span class="process-math">\(\displaystyle (0,3)\)</span></p></li>
+<li id="li-908"><p id="p-derived-li-908"><span class="process-math">\(\displaystyle t=3\)</span></p></li>
+<li id="li-909"><p id="p-derived-li-909">Answers vary.</p></li>
+</ol></div></div>
+</div></article><article class="example example-like" id="example-414"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.7</span><span class="period">.</span>
+</h4>Find the derivative of the following functions: <ol class="lower-alpha">
+<li id="li-910"><p id="p-derived-li-910"><span class="process-math">\(\displaystyle g(x) = \ds \int_2^x \sqrt{k+k^3}\, dk\)</span></p></li>
+<li id="li-911"><p id="p-derived-li-911"><span class="process-math">\(\displaystyle r(y) = \ds \int_y^2 t^3\cos t\, dt\)</span></p></li>
+<li id="li-912"><p id="p-derived-li-912"><span class="process-math">\(\displaystyle f(x) = \ds \int_0^{x^4} \tan^2t\, dt\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-418" id="solution-418"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-418"><div class="solution solution-like"><ol id="p-196" class="lower-alpha">
+<li id="li-913"><p id="p-derived-li-913"><span class="process-math">\(\displaystyle g'(x) = \sqrt{x+x^3}\)</span></p></li>
+<li id="li-914"><p id="p-derived-li-914"><span class="process-math">\(\displaystyle r'(y) = -y^3\cos y\)</span></p></li>
+<li id="li-915"><p id="p-derived-li-915"><span class="process-math">\(\displaystyle f'(x) = 4x^3\tan^2(x^4)\)</span></p></li>
+</ol></div></div>
+</div></article><article class="example example-like" id="example-415"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.8</span><span class="period">.</span>
+</h4>If <span class="process-math">\(f(x) = \ds \int_0^x (1-t^2)\cos^2t\, dt\text{,}\)</span> on what interval is <span class="process-math">\(f\)</span> increasing?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-419" id="solution-419"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-419"><div class="solution solution-like"><p id="p-197"><span class="process-math">\(0\lt x \lt 1\)</span></p></div></div>
+</div></article></section><section class="subsection" id="section-43-inclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.3.3</span> <span class="title">In Class</span>
+</h3>
+<section class="subsubsection" id="section-43-ftc2"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">4.3.3.1</span> <span class="title">The Second Fundamental Theorem</span>
+</h4>
+<article class="theorem theorem-like" id="theorem-26"><h5 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">4.3.9</span><span class="period">.</span><span class="space"> </span><span class="title">The Fundamental Theorem of Calculus, Part 2 (FTC2).</span>
+</h5>
+<p id="p-198">If <span class="process-math">\(f\)</span> is continuous on <span class="process-math">\([a,b]\text{,}\)</span> then <span class="process-math">\(\ds \int_a^b f(x)\, dx = F(b)-F(a)\text{,}\)</span> where <span class="process-math">\(F\)</span> is any antiderivative of <span class="process-math">\(f\text{.}\)</span></p></article><article class="example example-like" id="example-416"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.10</span><span class="period">.</span>
+</h5>Evaluate <span class="process-math">\(\ds \int_{-2}^1 x^3\,dx\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-420" id="solution-420"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-420"><div class="solution solution-like"><p id="p-199"><span class="process-math">\(\ds \int_{-2}^1 x^3\,dx = -\dfrac{15}{4}\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-417"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.11</span><span class="period">.</span>
+</h5>Find the area under the curve <span class="process-math">\(y = x^2\)</span> from 0 to 1.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-421" id="solution-421"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-421"><div class="solution solution-like"><p id="p-200"><span class="process-math">\(\ds \int_0^1 x^2\, dx = \dfrac{1}{3}\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-418"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.12</span><span class="period">.</span>
+</h5>Find the area under the curve <span class="process-math">\(y = \sin x\text{,}\)</span> from <span class="process-math">\(0\)</span> to <span class="process-math">\(\dfrac{3\pi}{2}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-422" id="solution-422"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-422"><div class="solution solution-like"><p id="p-201"><span class="process-math">\(\ds \int_0^{3\pi/2} \sin x\, dx = 1\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-419"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.13</span><span class="period">.</span>
+</h5>Is the statement <span class="process-math">\(\ds \int_{-1}^1 \dfrac{1}{x^3}\, dx = 0\)</span> correct?  Why or why not?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-423" id="solution-423"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-423"><div class="solution solution-like"><p id="p-202">No- <span class="process-math">\(\dfrac{1}{x^3}\)</span> is not continuous at <span class="process-math">\(x=0\text{,}\)</span> so we can't use FTC 2.</p></div></div>
+</div></article><article class="example example-like" id="example-420"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.14</span><span class="period">.</span>
+</h5>Find the derivative of <span class="process-math">\(g(r) = \ds \int_5^r (t-t^2)^8\,dt\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-424" id="solution-424"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-424"><div class="solution solution-like"><p id="p-203"><span class="process-math">\(g'(r) = (r-r^2)^8\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-421"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.15</span><span class="period">.</span>
+</h5>Find the derivative of <span class="process-math">\(R(y) = \ds \int_{y}^4 t^5\sec t\, dt\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-425" id="solution-425"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-425"><div class="solution solution-like"><p id="p-204"><span class="process-math">\(R'(y) = -y^5\sec y\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-422"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.16</span><span class="period">.</span>
+</h5>Find the derivative of <span class="process-math">\(y = \ds\int_0^{4x^3} \tan^2\theta\, d\theta\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-426" id="solution-426"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-426"><div class="solution solution-like"><p id="p-205"><span class="process-math">\(\dfrac{dy}{dx} = 12x^2\tan^2(4x^3)\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-423"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.17</span><span class="period">.</span>
+</h5>Calculate the integral <span class="process-math">\(\ds \int_1^3 (x^2+2x-4)\, dx\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-427" id="solution-427"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-427"><div class="solution solution-like"><p id="p-206"><span class="process-math">\(\ds \int_1^3 (x^2+2x-4)\, dx= \dfrac{74}{3}\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-424"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.18</span><span class="period">.</span>
+</h5>Calculate the integral <span class="process-math">\(\ds \int_0^2 \lrpar{\dfrac{4}{5}t^3-\dfrac{3}{4}t^2+\dfrac{2}{5}t}\,dt\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-428" id="solution-428"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-428"><div class="solution solution-like"><p id="p-207"><span class="process-math">\(\ds \int_0^2 \lrpar{\dfrac{4}{5}t^3-\dfrac{3}{4}t^2+\dfrac{2}{5}t}\,dt= 2\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-425"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.19</span><span class="period">.</span>
+</h5>Calculate the integral <span class="process-math">\(\ds \int_1^9 \sqrt{x}\,dx\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-429" id="solution-429"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-429"><div class="solution solution-like"><p id="p-208"><span class="process-math">\(\ds \int_1^9 \sqrt{x}\,dx = \dfrac{52}{3}\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-426"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.20</span><span class="period">.</span>
+</h5>Calculate the integral <span class="process-math">\(\ds \int_1^4 \dfrac{2+x^2}{\sqrt{x}}\,dx\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-430" id="solution-430"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-430"><div class="solution solution-like"><p id="p-209"><span class="process-math">\(\ds \int_1^4 \dfrac{2+x^2}{\sqrt{x}}\,dx = \dfrac{82}{5}\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-427"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.21</span><span class="period">.</span>
+</h5>Calculate the integral <span class="process-math">\(\ds \int_{\pi/6}^{\pi/2}\csc t\cot t\, dt\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-431" id="solution-431"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-431"><div class="solution solution-like"><p id="p-210"><span class="process-math">\(\ds \int_{\pi/6}^{\pi/2}\csc t\cot t\, dt = 1\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-428"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.22</span><span class="period">.</span>
+</h5>Calculate the integral <span class="process-math">\(\ds \int_{-1}^2 (3u-2)(u+1)\, du\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-432" id="solution-432"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-432"><div class="solution solution-like"><p id="p-211"><span class="process-math">\(\ds \int_{-1}^2 (3u-2)(u+1)\, du = \dfrac{9}{2}\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-429"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.23</span><span class="period">.</span>
+</h5>Calculate the integral <span class="process-math">\(\ds \int_{\pi/4}^{\pi/3} \csc^2\theta\, d\theta\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-433" id="solution-433"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-433"><div class="solution solution-like"><p id="p-212"><span class="process-math">\(\ds \int_{\pi/4}^{\pi/3} \csc^2\theta\, d\theta =  1-\dfrac{1}{\sqrt{3}}\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-430"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.24</span><span class="period">.</span>
+</h5>Calculate the integral <span class="process-math">\(\ds \int_1^{18} \sqrt{\dfrac{2}{z}}\, dz\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-434" id="solution-434"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-434"><div class="solution solution-like"><p id="p-213"><span class="process-math">\(\ds \int_1^{18} \sqrt{\dfrac{2}{z}}\, dz = 12-2\sqrt{2}\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-431"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.25</span><span class="period">.</span>
+</h5>Evaluate the integral <span class="process-math">\(\ds \int_1^2 \dfrac{v^5+3v^6}{v^4}\, dv\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-435" id="solution-435"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-435"><div class="solution solution-like"><p id="p-214"><span class="process-math">\(\ds \int_1^2 \dfrac{v^5+3v^6}{v^4}\, dv = \dfrac{17}{2}\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-432"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.26</span><span class="period">.</span>
+</h5>Evaluate the integral <span class="process-math">\(\ds\int_0^\pi f(x)\, dx\text{,}\)</span> where<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f(x) = \begin{cases}\sin x \amp \text{if }0\leq x \lt \pi/2 \\ \cos x \amp \text{if }\pi/2\leq x\leq \pi \end{cases}
+\end{equation*}
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-436" id="solution-436"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-436"><div class="solution solution-like"><p id="p-215"><span class="process-math">\(\ds \int_0^\pi f(x)\, dx = 0\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-433"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.27</span><span class="period">.</span>
+</h5>Evaluate the limit <span class="process-math">\(\ds \lim_{n\to \infty} \sum_{i=1}^n \lrpar{\dfrac{i^4}{n^5} + \dfrac{i}{n^2}}\text{.}\)</span>  <em class="emphasis">Hint</em>: Consider it as a Riemann sum on <span class="process-math">\([0,1]\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-437" id="solution-437"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-437"><div class="solution solution-like"><p id="p-216"><span class="process-math">\(\ds \lim_{n\to \infty} \sum_{i=1}^n \lrpar{\dfrac{i^4}{n^5} + \dfrac{i}{n^2}} = \int_0^1 x^3 + x\, dx = \dfrac{7}{10}\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-434"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.28</span><span class="period">.</span>
+</h5>If <span class="process-math">\(f(1) = 12\text{,}\)</span> <span class="process-math">\(f'\)</span> is continuous, and <span class="process-math">\(\ds \int_1^4 f'(x)\, dx = 17\text{,}\)</span> what is the value of <span class="process-math">\(f(4)\text{?}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-438" id="solution-438"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-438"><div class="solution solution-like"><p id="p-217"><span class="process-math">\(f(4) = 29\)</span></p></div></div>
+</div></article></section></section><section class="subsection" id="section-43-afterclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.3.4</span> <span class="title">After Class Activities</span>
+</h3>
+<article class="example example-like" id="example-435"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.29</span><span class="period">.</span>
+</h4>Compute <span class="process-math">\(\ds \int_0^1 (1+r)^3\, dr\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-439" id="solution-439"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-439"><div class="solution solution-like"><p id="p-218"><span class="process-math">\(\ds \int_0^1 (1+r)^3\, dr = \dfrac{7}{4}\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-436"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.30</span><span class="period">.</span>
+</h4>Find the area under the curve <span class="process-math">\(f(x) = \dfrac{x^4 + 1}{x^2}\)</span> between 1 and 2.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-440" id="solution-440"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-440"><div class="solution solution-like"><p id="p-219"><span class="process-math">\(\ds \int_1^2 f(x)\, dx = \dfrac{17}{6}\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-437"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.31</span><span class="period">.</span>
+</h4>Evaluate <span class="process-math">\(\ds \int_{-1}^1 x^{2022}\, dx\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-441" id="solution-441"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-441"><div class="solution solution-like"><p id="p-220"><span class="process-math">\(\ds \int_{-1}^1 x^{2022}\, dx = \dfrac{2}{2023}\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-438"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.32</span><span class="period">.</span>
+</h4>What does it mean for differentiation and integration to be inverse processes?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-442" id="solution-442"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-442"><div class="solution solution-like"><p id="p-221">Differentiation and integration undo each other; you take a deriative to undo an integral, and you take an integral to undo a derivative.</p></div></div>
+</div></article></section></section></div></main>
+</div>
+</body>
+</html>

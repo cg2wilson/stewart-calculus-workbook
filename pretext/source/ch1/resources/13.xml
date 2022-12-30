@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<subsection xml:id="section-13-resources">
+	<title>Section 1.3 Resources</title>
+		<subsubsection>
+			<title>Function Operations</title>
+			<ul>
+				<li>
+					Function Composition <url href="https://www.mathsisfun.com/sets/functions-composition.html"/>
+				</li>
+				<li>
+					Combining Functions <url href="https://www.khanacademy.org/math/algebra-home/alg-functions/alg-combining-functions/a/introduction-to-combining-functions"/>
+				</li>
+				<li>
+					More Composition <url href="https://www.khanacademy.org/math/algebra-home/alg-functions/alg-funciton-composition/a/introduction-to-function-composition"/>
+				</li>
+				<li>
+					Domain of a Composition <url href="https://courses.lumenlearning.com/ivytech-collegealgebra/chapter/find-the-domain-of-a-composite-function/"/>
+				</li>
+			</ul>
+		</subsubsection>
+		<subsubsection>
+			<title>Graph Transformations</title>
+			<ul>
+				<li>
+					Shifting Functions <url href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:transformations/x2ec2f6f830c9fb89:shift/e/shift-functions"/>
+				</li>
+				<li>
+					Reflecting Functions <url href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:transformations/x2ec2f6f830c9fb89:reflect/e/reflect-functions"/>
+				</li>
+				<li>
+					Scaling Functions Vertically <url href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:transformations/x2ec2f6f830c9fb89:scale/e/scale-functions-vertically"/>
+				</li>
+				<li>
+					Scaling Functions Horizontally <url href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:transformations/x2ec2f6f830c9fb89:scale/e/scale-functions-horizontally"/>
+				</li>
+				<li>
+					Visualization Applet (works only for a handful of functions) <url href="https://www.integral-domain.org/lwilliams/Applets/FunctionTransformation.html"/>
+				</li>
+				<li>
+					Another Visualization Applet <url href="http://www.sfu.ca/~jtmulhol/calculus-applets/GeoGebra-Worksheets/graphing-transformations.html"/>
+				</li>
+			</ul>
+		</subsubsection>
+</subsection>

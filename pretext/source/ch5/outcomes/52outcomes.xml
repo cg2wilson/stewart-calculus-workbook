@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<p>
+	<ul>
+		<li>
+			Compute volume of a three-dimensional solid as an integral of cross-sectional area of specified shapes
+		</li>
+		
+		<li>
+			Determine if the Disk Method or Washer Method is most appropriate to find the volume of a solid of revolution, and compute the volume of the solid by integrating with respect to <m>x</m> or <m>y</m>
+		</li>
+		
+		
+	</ul>
+</p>

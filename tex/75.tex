@@ -1,0 +1,221 @@
+\documentclass[notes]{subfiles}
+\begin{document}
+	\addcontentsline{toc}{section}{7.5 - Strategy for Integration}
+	\refstepcounter{section}
+	\fancyhead[RO,LE]{\bfseries \nameref{cs75}} 
+	\fancyhead[LO,RE]{\bfseries \small \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Chapter 7.5}
+	
+\section*{Strategy for Integration}\label{cs75}
+	\subsection*{Before Class}
+	\addcontentsline{toc}{subsection}{Before Class}
+	\subsubsection*{The Integrals We Know}
+	\addcontentsline{toc}{subsubsection}{The Integrals We Know}
+		Collected below are all of the integrals that we have learned:
+		\begin{center}
+			\tabulinesep = 2mm
+			\begin{tabu}to .95\textwidth {|X[.75,c] | X[c] || X[.75,c] | X[c]|} \hline
+				\textbf{Function}	& \textbf{Antiderivative} & \textbf{Function} & \textbf{Antiderivative}\\ \hline	
+						& & & \\
+				$x^n$	& & $ \dfrac{1}{x}$& \\ 
+						& & & \\ \hline
+						& & & \\
+				$e^x$	& & $b^x$&\\ 
+						& & & \\ \hline
+						& & & \\
+				$\sin x$	& & $\cos x$ &\\ 
+						& & & \\ \hline
+						& & & \\
+				$\sec^2x$	& & $\csc^2x$ &\\ 
+						& & & \\ \hline
+						& & & \\
+				$\sec x\tan x$	& & $\csc x\cot x$ &\\ 
+						& & & \\ \hline
+						& & & \\
+				$\sec x$	& & $\csc x$ & \\ 
+						& & & \\ \hline
+						& & & \\
+				$\tan x$	& & $\cot x$ & \\ 
+						& & & \\ \hline
+						& & & \\
+				$\dfrac{1}{x^2 + a^2}$	& & $\dfrac{1}{\sqrt{a^2-x^2}}$ & \\ 
+						& & & \\ \hline
+				
+			\end{tabu}
+		\end{center}
+			\newpage
+			
+	\subsubsection*{Strategies}
+	\addcontentsline{toc}{subsubsection}{Strategies}
+		When faced with an integral, it can be difficult to determine which method is the best to use.  This flowchart may provide some help:
+		\begin{rmk}[Strategies for Integration]
+			\begin{enumerate}
+				\setlength \itemsep{40pt}
+				\item \textbf{Simplify the Integrand}:\[\]
+				\item \textbf{Try u-substitution}: \[\]
+				\item \textbf{Classify the Integral}: \[\]
+
+				\item \textbf{Try Again}:\[\]
+					\begin{itemize}
+						\setlength \itemsep{40pt}
+						\item 
+						\item 
+						\item 
+						\item 
+						\item 
+					\end{itemize}
+			\end{enumerate}
+		\end{rmk}
+		\newpage
+		
+		\begin{ex}
+			Find $\ds \int \dfrac{1}{1+\cos x}\, dx $
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Compute $\ds \int e^{\sqrt{x}}\, dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Compute $\ds \int \sqrt{\dfrac{1+x}{1-x}}\, dx$
+		\end{ex}
+			\vs{1}
+			\newpage
+	
+	\subsection*{Pre-Class Activities}
+	\addcontentsline{toc}{subsection}{Pre-Class Activities}
+		\begin{ex}
+			Write any questions you have from the videos in this space.
+		\end{ex}
+			\vs{2}
+		
+		\begin{ex}
+			Analyze the following integrals using the flow chart from above, determine what you think the best approach is, and briefly write why.  \emph{Do not compute these integrals!}  This exercise is here to help you practice analyzing situations.  We'll do these problems in class.
+			\begin{enumerate}[(a)]				
+				\item $\ds \int \dfrac{\cos x}{1-\sin x}\, dx$
+					\vs{.5}
+					
+				\item $\ds \int \dfrac{\sin^3 x}{\cos x}\, dx$
+					\vs{.5}
+					
+				\item $\ds \int \dfrac{t}{t^4 + 2}\, dt$
+					\vs{.5}
+					
+				\item $\ds \int_2^4 \dfrac{x+2}{x^2 + 3x - 4}\, dx$
+					\vs{.5}
+					
+				\item $\ds \int x\sec x\tan x\, dx$
+					\vs{.5}
+			\end{enumerate}
+		\end{ex}
+		
+		\newpage
+	\subsection*{In Class}
+	\addcontentsline{toc}{subsection}{In Class}
+	\subsubsection*{Examples}
+	\addcontentsline{toc}{subsubsection}{Examples}
+		\begin{ex}
+			$\ds \int \dfrac{\cos x}{1-\sin x}\, dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			$\ds \int \dfrac{\sin^3 x}{\cos x}\, dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			$\ds \int \dfrac{t}{t^4 + 2}\, dt$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			$\ds \int_2^4 \dfrac{x+2}{x^2 + 3x - 4}\, dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			$\ds \int x\sec x\tan x\, dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			$\ds \int_0^1 \dfrac{x}{(2x+1)^3}\, dx$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			$\ds \int \ln(1+x^2)\, dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			$\ds \int \dfrac{\ln x}{x\sqrt{1+(\ln x)^2}}\, dx$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			$\ds \int (1+\tan x)^2\sec x\, dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			$\ds \int \sqrt{3-2x-x^2}\, dx$
+		\end{ex}	
+			\vs{1}
+			\newpage
+		
+		\begin{ex}
+			$\ds \int \dfrac{\inv{\tan}(x)}{x^2}\, dx$
+		\end{ex}	
+			\vs{1}
+			
+		\begin{ex}
+			$\ds \int_0^{\pi/4} \tan^3\theta\sec^2\theta\, d\theta$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			$\ds \int \dfrac{x + \arcsin x}{\sqrt{1-x^2}}\, dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			$\ds \int \dfrac{4^x + 10^x}{2^x}\, dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			$\ds \int e^2\, dx$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+	\subsection*{After Class Activities}
+	\addcontentsline{toc}{subsection}{After Class Activities}
+		\begin{ex}
+			Look back at the examples we did in class.  Make sure that you can follow the thought process that led us to use that particular integration technique.
+		\end{ex}
+		\begin{ex}
+			Refer back to the strategy list.  Try to give an example of an integral which fits with each step.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Which technique do you feel like you need the most practice with?  Why?
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			There are many practice problems available in the book, on page 548.  Work through as many as you can; the more practice you get, the more confident and capable you'll be!
+		\end{ex}
+\clearpage
+\end{document}

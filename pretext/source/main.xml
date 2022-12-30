@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <xi:include href="meta/docinfo.xml" />
+
+  <book xml:id="stewart-calculus-workbook">
+    <title>Workbook for Stewart's "Calculus"</title>
+
+    <xi:include href="meta/frontmatter.xml" />
+
+    <xi:include href="ch1/main.xml" />
+
+    <xi:include href="ch2/main.xml" />
+
+    <xi:include href="ch3/main.xml" />
+
+    <xi:include href="ch4/main.xml" />
+	
+	  <xi:include href="ch5/main.xml" />
+
+    <xi:include href="ch6/main.xml" />
+
+    <!--
+    <xi:include href="ch7/main.xml" />
+    
+    <xi:include href="ch8/main.xml" />
+    -->
+
+<!--
+    <xi:include href="meta/backmatter.ptx" />
+-->
+
+  </book>
+</pretext>

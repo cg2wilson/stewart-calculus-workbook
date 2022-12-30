@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-07-17T17:31:45-05:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Math 1914 - Differential &amp; Integral Calculus I Maximum &amp; Minimum Values</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Math 1914 - Differential &amp; Integral Calculus">
+<meta property="book:author" content="Cory Wilson">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(      \newcommand{\ds}{\displaystyle}
+\newcommand{\lrpar}[1]{\left(#1\right)}
+\newcommand{\lrbrace}[1]{\left\lbrace #1 \right\rbrace}
+\newcommand{\inv}[1]{#1^{-1}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\dc}{^\circ}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="math1914.html"><span class="title">Math 1914 - Differential &amp; Integral Calculus</span></a></h1>
+<p class="byline">Cory Wilson</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="ch3.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch3.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-32.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="ch3.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch3.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section-32.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul><li><a href="colophon.html" data-scroll="colophon" class="internal">Colophon</a></li></ul>
+</li>
+<li class="link">
+<a href="ch1.html" data-scroll="ch1" class="internal"><span class="codenumber">1</span> <span class="title">Functions and Limits</span></a><ul>
+<li><a href="section-11.html" data-scroll="section-11" class="internal">Four Ways to Represent a Function</a></li>
+<li><a href="section-12.html" data-scroll="section-12" class="internal">Mathematical Models: A Catalog of Essential Functions</a></li>
+<li><a href="section-13.html" data-scroll="section-13" class="internal">New Functions from Old Functions</a></li>
+<li><a href="section-14.html" data-scroll="section-14" class="internal">The Tangent and Velocity Problems</a></li>
+<li><a href="section-15.html" data-scroll="section-15" class="internal">The Limit of a Function</a></li>
+<li><a href="section-16.html" data-scroll="section-16" class="internal">Calculating Limits Using Limit Laws</a></li>
+<li><a href="section-17.html" data-scroll="section-17" class="internal">(X) The Precise Definition of a Limit</a></li>
+<li><a href="section-18.html" data-scroll="section-18" class="internal">Continuity</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch2.html" data-scroll="ch2" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives</span></a><ul>
+<li><a href="section-21.html" data-scroll="section-21" class="internal">Derivatives and Rates of Change</a></li>
+<li><a href="section-22.html" data-scroll="section-22" class="internal">The Derivative as a Function</a></li>
+<li><a href="section-23.html" data-scroll="section-23" class="internal">Differentiation Formulas</a></li>
+<li><a href="section-24.html" data-scroll="section-24" class="internal">Derivatives of Trigonometric Functions</a></li>
+<li><a href="section-25.html" data-scroll="section-25" class="internal">The Chain Rule</a></li>
+<li><a href="section-26.html" data-scroll="section-26" class="internal">Implicit Differentiation</a></li>
+<li><a href="section-27.html" data-scroll="section-27" class="internal">(X) Rates of Changes in the Natural and Social Sciences</a></li>
+<li><a href="section-28.html" data-scroll="section-28" class="internal">Related Rates</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch3.html" data-scroll="ch3" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Differentiation</span></a><ul>
+<li><a href="section-31.html" data-scroll="section-31" class="active">Maximum &amp; Minimum Values</a></li>
+<li><a href="section-32.html" data-scroll="section-32" class="internal">(X) The Mean Value Theorem</a></li>
+<li><a href="section-33.html" data-scroll="section-33" class="internal">How Derivatives Affect the Shape of a Graph</a></li>
+<li><a href="section-34.html" data-scroll="section-34" class="internal">Limits at Infinity &amp; Horizontal Asymptotes</a></li>
+<li><a href="section-35.html" data-scroll="section-35" class="internal">Summary of Curve Sketching</a></li>
+<li><a href="section-36.html" data-scroll="section-36" class="internal">(X) Graphing with Calculus and Calculators</a></li>
+<li><a href="section-37.html" data-scroll="section-37" class="internal">Optimization</a></li>
+<li><a href="section-38.html" data-scroll="section-38" class="internal">(X) Newton's Method</a></li>
+<li><a href="section-39.html" data-scroll="section-39" class="internal">Antiderivatives</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch4.html" data-scroll="ch4" class="internal"><span class="codenumber">4</span> <span class="title">Integrals</span></a><ul>
+<li><a href="section-41.html" data-scroll="section-41" class="internal">Areas &amp; Distance</a></li>
+<li><a href="section-42.html" data-scroll="section-42" class="internal">The Definite Integral</a></li>
+<li><a href="section-43.html" data-scroll="section-43" class="internal">The Fundamental Theorem of Calculus</a></li>
+<li><a href="section-44.html" data-scroll="section-44" class="internal">Indefinite Integrals &amp; the Net Change Theorem</a></li>
+<li><a href="section-45.html" data-scroll="section-45" class="internal">The Substitution Rule</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch5.html" data-scroll="ch5" class="internal"><span class="codenumber">5</span> <span class="title">Applications of Integration</span></a><ul>
+<li><a href="section-51.html" data-scroll="section-51" class="internal">Areas Between Curves</a></li>
+<li><a href="section-52.html" data-scroll="section-52" class="internal">Volumes</a></li>
+<li><a href="section-53.html" data-scroll="section-53" class="internal">Volumes by Cylindrical Shells</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-31"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.1</span> <span class="title">Maximum &amp; Minimum Values</span>
+</h2>
+<article class="objectives goal-like" id="objectives-15"><h3 class="heading"><span class="type">Objectives</span></h3>
+<ul class="disc">
+<li id="li-713"><p id="p-derived-li-713">Define and identify absolute and local extrema graphically</p></li>
+<li id="li-714"><p id="p-derived-li-714">State and describe the use of the Extreme Value Theorem and Fermat's Theorem; give examples of when these theorems fail and explain why they fail</p></li>
+<li id="li-715"><p id="p-derived-li-715">Identify critical numbers of a function algebraically and graphically</p></li>
+<li id="li-716"><p id="p-derived-li-716">Use the Closed Interval Method to identify absolute extrema on a closed, bounded interval</p></li>
+</ul></article><section class="subsection" id="section-31-beforeclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.1.1</span> <span class="title">Before Class</span>
+</h3>
+<figure class="figure figure-like" id="figure-21"><a class="external" href="https://mymedia.ou.edu/media/3.1-1.mp4/1_ww51e1ib" target="_blank"><code class="code-inline tex2jax_ignore">https://mymedia.ou.edu/media/3.1-1.mp4/1_ww51e1ib</code></a><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">21<span class="period">.</span></span><span class="space"> </span>Pre-Class Video 1</figcaption></figure><figure class="figure figure-like" id="figure-22"><a class="external" href="https://mymedia.ou.edu/media/3.1-2/1_43uuyr3l" target="_blank"><code class="code-inline tex2jax_ignore">https://mymedia.ou.edu/media/3.1-2/1_43uuyr3l</code></a><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">22<span class="period">.</span></span><span class="space"> </span>Pre-Class Video 2</figcaption></figure><section class="subsubsection" id="section-31-definitions"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">3.1.1.1</span> <span class="title">Definitions</span>
+</h4>
+<article class="definition definition-like" id="definition-24"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">Absolute (Global) Extrema.</span>
+</h5>
+<p id="p-153">Let <span class="process-math">\(c\)</span> be a number in the domain <span class="process-math">\(D\)</span> of a function <span class="process-math">\(f\text{.}\)</span>  Then, <span class="process-math">\(f(c)\)</span> is the <dfn class="terminology">absolute maximum</dfn> value of <span class="process-math">\(f\)</span> on <span class="process-math">\(D\)</span> if <span class="process-math">\(f(c)\geq f(x)\)</span> for all <span class="process-math">\(x\in D\text{;}\)</span> <span class="process-math">\(f(c)\)</span> is the <dfn class="terminology">absolute minimum</dfn> value of <span class="process-math">\(f\)</span> on <span class="process-math">\(D\)</span> if <span class="process-math">\(f(c)\leq f(x)\)</span> for all <span class="process-math">\(x\in D\text{.}\)</span></p>
+<p id="p-154">Absolute maxima and minima are also called <em class="emphasis">global</em> maxima/minima (or extrema).</p></article><article class="example example-like" id="example-259"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.2</span><span class="period">.</span>
+</h5>Below are two graphs.  Identify their absolute maxima/minima, if any exist.  Justify your responses. <div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel top" style="width:44.4444444444444%;"><img src="generated/latex-image/image-99.svg" role="img" class="contained" alt="The graph of \(f(x) = x^2-2\) on the interval \([-2,2]\)"></div>
+<div class="sbspanel top" style="width:44.4444444444444%;"><img src="generated/latex-image/image-100.svg" role="img" class="contained" alt="The graph of \(f(x) =\cos x\) on the interval \([-7.5,7.5]\)"></div>
+</div></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-276" id="solution-276"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-276"><div class="solution solution-like">In the first picture, the vertex is an absolute minimum.  In the second, each peak (<span class="process-math">\(-2\pi, 0, 2\pi\)</span>) is an absolute maximum, and each valley (<span class="process-math">\(-\pi, \pi\)</span>) is an absolute minimum.</div></div>
+</div></article><article class="definition definition-like" id="definition-25"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.1.3</span><span class="period">.</span><span class="space"> </span><span class="title">Local Max/Min.</span>
+</h5>
+<p id="p-155">The number <span class="process-math">\(f(c)\)</span> is a <dfn class="terminology">local maximum</dfn> value of <span class="process-math">\(f\)</span> if <span class="process-math">\(f(c)\geq f(x)\)</span> when <span class="process-math">\(x\)</span> is near <span class="process-math">\(c\text{.}\)</span>  <span class="process-math">\(f(c)\)</span> is a <dfn class="terminology">local minimum</dfn> value of <span class="process-math">\(f\)</span> if <span class="process-math">\(f(c)\leq f(x)\)</span> when <span class="process-math">\(x\)</span> is near <span class="process-math">\(c\text{.}\)</span></p></article><article class="example example-like" id="example-260"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.4</span><span class="period">.</span>
+</h5>Estimate the inputs of any local or absolute extrema. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-101.svg" role="img" class="contained" alt="The graph of \(f(x)=6x^4-6x^3-5x^2+5x-1\) on the interval \([-1.4,1.9]\text{.}\)"></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-277" id="solution-277"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-277"><div class="solution solution-like"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-102.svg" role="img" class="contained" alt="The graph of \(f(x)=6x^4-6x^3-5x^2+5x-1\) on the interval \([-1.4,1.9]\text{.}\)  Absolute and local extrema are marked and labeled on the graph."></div></div></div>
+</div></article><article class="question example-like" id="question-20"><h5 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">3.1.5</span><span class="period">.</span>
+</h5>Are local extrema automatically absolute extrema?  Are absolute extrema automatically local extrema?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-278" id="solution-278"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-278"><div class="solution solution-like">No, local extrema are not automatically absolute extrema.  However, an absolute extremum can be a local extremum (as long as it doesn't occur at the endpoints)</div></div>
+</div></article><article class="example example-like" id="example-261"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.6</span><span class="period">.</span>
+</h5>Identify any local maxes, local mins, absolute maxes, or absolute mins on the graph below. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/31fig1.svg" class="contained"></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-279" id="solution-279"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-279"><div class="solution solution-like">There are local maxima at <span class="process-math">\(b,r\text{,}\)</span> a local min at <span class="process-math">\(d\text{,}\)</span> an absolute max at <span class="process-math">\(r\text{,}\)</span> and an absolute min at <span class="process-math">\(a\)</span>
+</div></div>
+</div></article></section><section class="subsubsection" id="section-31-results"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">3.1.1.2</span> <span class="title">Important Results</span>
+</h4>
+<p id="p-156">In order to use maxima/minima, some results will be helpful.</p>
+<article class="theorem theorem-like" id="theorem-14"><h5 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.1.7</span><span class="period">.</span><span class="space"> </span><span class="title">Extreme Value Theorem.</span>
+</h5>If <span class="process-math">\(f\)</span> is continuous on a closed interval <span class="process-math">\([a,b]\text{,}\)</span> then <span class="process-math">\(f\)</span> attains an absolute maximum value <span class="process-math">\(f(c)\)</span> and an absolute minimum value <span class="process-math">\(f(d)\)</span> at some numbers <span class="process-math">\(c,d\)</span> in <span class="process-math">\([a,b]\text{.}\)</span></article><article class="question example-like" id="question-21"><h5 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">3.1.8</span><span class="period">.</span>
+</h5>Why does the extreme value theorem fail on an open interval?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-280" id="solution-280"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-280"><div class="solution solution-like">Take the function <span class="process-math">\(y=x\)</span> on the interval <span class="process-math">\((0,1)\text{.}\)</span>  There is neither an absolute max nor an absolute min, since the function does not achieve the output at the expected max/min.</div></div>
+</div></article><article class="theorem theorem-like" id="theorem-15"><h5 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.1.9</span><span class="period">.</span><span class="space"> </span><span class="title">Fermat's Theorem.</span>
+</h5>If <span class="process-math">\(f\)</span> has a local maximum or minimum at <span class="process-math">\(c\text{,}\)</span> and if <span class="process-math">\(f'(c)\)</span> exists, then <span class="process-math">\(f'(c) = 0\text{.}\)</span></article><article class="question example-like" id="question-22"><h5 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">3.1.10</span><span class="period">.</span>
+</h5>Is it true that if <span class="process-math">\(f'(c) = 0\text{,}\)</span> then <span class="process-math">\(f\)</span> has a local max or min at <span class="process-math">\(c\text{?}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-281" id="solution-281"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-281"><div class="solution solution-like">No.  If <span class="process-math">\(f(x) = x^3\text{,}\)</span> then <span class="process-math">\(f'(0) = 0\)</span> but the function does not have a local extremum at 0.</div></div>
+</div></article></section></section><section class="subsection" id="section-31-preclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.1.2</span> <span class="title">Pre-Class Activities</span>
+</h3>
+<article class="example example-like" id="example-262"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.11</span><span class="period">.</span>
+</h4>Give the coordinates for the absolute and local extrema for the function given below. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/31fig2.svg" class="contained"></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-282" id="solution-282"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-282"><div class="solution solution-like">The absolute max is at <span class="process-math">\((4,5)\text{.}\)</span>  There is no absolute min.  There are local maxes at <span class="process-math">\((4,5)\)</span> and <span class="process-math">\((6,4)\text{,}\)</span> and local minima at <span class="process-math">\((2,2)\)</span> and <span class="process-math">\((5,3)\)</span>
+</div></div>
+</div></article><article class="example example-like" id="example-263"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.12</span><span class="period">.</span>
+</h4>Sketch the graph of a function that has two local maxima, one local minimum, and no absolute minimum.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-283" id="solution-283"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-283"><div class="solution solution-like">Answers vary</div></div>
+</div></article><article class="example example-like" id="example-264"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.13</span><span class="period">.</span>
+</h4>Can we apply Fermat's Theorem to the function <span class="process-math">\(f(x) = |x|\)</span> on the interval <span class="process-math">\([-5,5]\text{?}\)</span>  Why or why not?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-284" id="solution-284"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-284"><div class="solution solution-like">No.  <span class="process-math">\(|x|\)</span> is not differentiable at <span class="process-math">\(x=0\text{.}\)</span>
+</div></div>
+</div></article><article class="example example-like" id="example-265"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.14</span><span class="period">.</span>
+</h4>Can we apply the Extreme Value Theorem to the function <span class="process-math">\(f(x) = |x|\)</span> on the interval <span class="process-math">\([-5,5]\text{?}\)</span>  Why or why not?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-285" id="solution-285"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-285"><div class="solution solution-like">Yes.  <span class="process-math">\(f(x)\)</span> is continuous, so we may use the Theorem.</div></div>
+</div></article></section><section class="subsection" id="section-31-inclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.1.3</span> <span class="title">In Class</span>
+</h3>
+<section class="subsubsection" id="section-31-critical"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">3.1.3.1</span> <span class="title">Critical Numbers</span>
+</h4>
+<article class="definition definition-like" id="definition-26"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.1.15</span><span class="period">.</span><span class="space"> </span><span class="title">Critical Number/Value/Point.</span>
+</h5>
+<p id="p-157">A <dfn class="terminology">critical number</dfn> of a function <span class="process-math">\(f\)</span> is a number <span class="process-math">\(c\)</span> in the domain of <span class="process-math">\(f\)</span> such that either <span class="process-math">\(f'(c) = 0\)</span> or <span class="process-math">\(f'(c)\)</span> does not exist.  A <dfn class="terminology">critical value</dfn> is the output at a critical input, namely <span class="process-math">\(f(c)\text{.}\)</span>  A <dfn class="terminology">critical point</dfn> is the coordinate pair <span class="process-math">\((c, f(c))\text{.}\)</span></p></article><article class="example example-like" id="example-266"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.16</span><span class="period">.</span>
+</h5>Find the critical number(s) of <span class="process-math">\(f(x) = x^3 -3x^2 + 1\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-286" id="solution-286"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-286"><div class="solution solution-like">The critical numbers are <span class="process-math">\(x=0,x=2\text{.}\)</span>
+</div></div>
+</div></article><article class="example example-like" id="example-267"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.17</span><span class="period">.</span>
+</h5>Find the critical numbers of <span class="process-math">\(f(t) = t^4 + t^3+t^2 + 1\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-287" id="solution-287"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-287"><div class="solution solution-like">The critical number is <span class="process-math">\(t=0\text{.}\)</span>
+</div></div>
+</div></article><article class="example example-like" id="example-268"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.18</span><span class="period">.</span>
+</h5>For some function <span class="process-math">\(f(x)\text{,}\)</span> its derivative is given by <span class="process-math">\(f'(x) = \dfrac{100(x-2)^2}{5-x^2}\text{.}\)</span>  How many critical numbers does <span class="process-math">\(f\)</span> have?  What are they?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-288" id="solution-288"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-288"><div class="solution solution-like">
+<span class="process-math">\(x=2\)</span> is certainly a critical number.  If <span class="process-math">\(x=\sqrt{5}\)</span> or <span class="process-math">\(x=-\sqrt{5}\)</span> are in the domain of <span class="process-math">\(f(x)\text{,}\)</span> then they are critical numbers as well.</div></div>
+</div></article><article class="example example-like" id="example-269"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.19</span><span class="period">.</span>
+</h5>Find the critical numbers of <span class="process-math">\(f(x) = \cos x\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-289" id="solution-289"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-289"><div class="solution solution-like">
+<span class="process-math">\(x=\pi k\)</span> for <span class="process-math">\(k\in \Z\)</span>
+</div></div>
+</div></article></section><section class="subsubsection" id="section-31-finding-absolute"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">3.1.3.2</span> <span class="title">Finding Absolute Maxima &amp; Minima</span>
+</h4>
+<p id="p-158">In order to find <em class="emphasis">absolute</em> extrema on closed intervals, we need to find local extrema and compare the values against the endpoints.  So, finding absolute maxima and minima comes down to the following process:</p>
+<ol class="decimal">
+<li id="li-717"><p id="p-derived-li-717">Find the critical numbers of <span class="process-math">\(f\)</span> on a closed interval <span class="process-math">\([a,b]\text{.}\)</span></p></li>
+<li id="li-718"><p id="p-derived-li-718">Compute the output values at each critical number.</p></li>
+<li id="li-719"><p id="p-derived-li-719">Compute the output values at the two endpoints.</p></li>
+<li id="li-720"><p id="p-derived-li-720">Compare the results from #2 and #3.  The biggest output is the absolute maximum, and the smallest output is the absolute minimum.</p></li>
+</ol>
+<article class="example example-like" id="example-270"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.20</span><span class="period">.</span>
+</h5>Locate the absolute extrema for <span class="process-math">\(f(x) = x^3 -3x^2+1\)</span> on the interval <span class="process-math">\(\left[\dfrac{1}{2},4\right]\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-290" id="solution-290"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-290"><div class="solution solution-like">The absolute max is <span class="process-math">\((4,17)\)</span> and the absolute min is <span class="process-math">\((2,-3)\text{.}\)</span>
+</div></div>
+</div></article><article class="example example-like" id="example-271"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.21</span><span class="period">.</span>
+</h5>Locate the absolute extrema for <span class="process-math">\(f(x) = \sin x\)</span> on the interval <span class="process-math">\([-2\pi,2\pi]\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-291" id="solution-291"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-291"><div class="solution solution-like">The absolute maxes are at <span class="process-math">\(\lrpar{\dfrac{\pi}{2},1}\)</span> and <span class="process-math">\(\lrpar{-\dfrac{3\pi}{2},1}\text{,}\)</span> while the absolute minima are at <span class="process-math">\(\lrpar{-\dfrac{\pi}{2},-1}\)</span> and <span class="process-math">\(\lrpar{\dfrac{3\pi}{2},-1}\)</span>
+</div></div>
+</div></article><article class="example example-like" id="example-272"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.22</span><span class="period">.</span>
+</h5>Locate the absolute extrema for the function <span class="process-math">\(f(t) = (t^2-4)^3\)</span> on <span class="process-math">\([-3,3]\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-292" id="solution-292"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-292"><div class="solution solution-like">The absolute maxes are at <span class="process-math">\((3,125)\)</span> and <span class="process-math">\((-3,125)\text{,}\)</span> and the absolute min is at <span class="process-math">\((0,-64)\text{.}\)</span>
+</div></div>
+</div></article><article class="example example-like" id="example-273"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.23</span><span class="period">.</span>
+</h5>Find and classify the extrema of the function <span class="process-math">\(f(x) = x + \dfrac{1}{x}\)</span> on <span class="process-math">\([0.2,4]\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-293" id="solution-293"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-293"><div class="solution solution-like">The absolute max is at <span class="process-math">\((0,2,5.2)\)</span> and the absolute min is at <span class="process-math">\((1,2)\text{.}\)</span>
+</div></div>
+</div></article></section></section><section class="subsection" id="section-31-afterclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.1.4</span> <span class="title">After Class Activities</span>
+</h3>
+<article class="example example-like" id="example-274"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.24</span><span class="period">.</span>
+</h4>If <span class="process-math">\(f(x) = 3x^4 - 4x^3 - 12x^2 + 1\text{,}\)</span> find the absolute maximum and absolute minimium on the interval <span class="process-math">\([-2,3]\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-294" id="solution-294"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-294"><div class="solution solution-like">The absolute max is at <span class="process-math">\((-2,33)\)</span> and the absolute min is at <span class="process-math">\((2,-31)\)</span>
+</div></div>
+</div></article><article class="example example-like" id="example-275"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.25</span><span class="period">.</span>
+</h4>Find the critical numbers of the function <span class="process-math">\(h(p) =\dfrac{p-1}{p^2+4}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-295" id="solution-295"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-295"><div class="solution solution-like"><span class="process-math">\(p = 1\pm \sqrt{5}\)</span></div></div>
+</div></article><article class="example example-like" id="example-276"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.26</span><span class="period">.</span>
+</h4>If <span class="process-math">\(a,b\)</span> are positive integers, find the maximum value of <span class="process-math">\(f(x) = x^a(1-x)^b\text{,}\)</span> for <span class="process-math">\(0\leq x\leq 1\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-296" id="solution-296"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-296"><div class="solution solution-like">The max value is <span class="process-math">\(f\lrpar{\dfrac{a}{a+b}} = \lrpar{\dfrac{a}{a+b}}^a\lrpar{1-\dfrac{a}{a+b}}^b\)</span>
+</div></div>
+</div></article><article class="example example-like" id="example-277"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.27</span><span class="period">.</span>
+</h4>Find the absolute maximum and absolute minimum of the function <span class="process-math">\(f(x) = x\sqrt{3-x}\)</span> on <span class="process-math">\([-6,3]\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-297" id="solution-297"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-297"><div class="solution solution-like">The absolute max is at <span class="process-math">\(\lrpar{\dfrac{3}{2},\dfrac{3}{2}\sqrt{\dfrac{3}{2}}}\)</span>
+</div></div>
+</div></article><article class="example example-like" id="example-278"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.28</span><span class="period">.</span>
+</h4>Sketch the graph of a function with two local maxima, one local minimum, and no absolute minimum.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-298" id="solution-298"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-298"><div class="solution solution-like">Answers vary</div></div>
+</div></article></section></section></div></main>
+</div>
+</body>
+</html>

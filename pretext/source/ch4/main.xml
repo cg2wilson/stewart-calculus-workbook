@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<chapter xml:id="ch4" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Integrals</title>
+<!--    <xi:include href="outcomes/main.xml"/>
+    <xi:include href="./readiness.xml"/>
+	-->
+	
+	<introduction>
+		Here you should put prerequisite material or things students needs to be confident with.
+	</introduction>
+    <xi:include href="./41.xml"/>   
+	<xi:include href="./42.xml"/>
+    <xi:include href="./43.xml"/>
+    <xi:include href="./44.xml"/>
+    <xi:include href="./45.xml"/>
+
+</chapter>

@@ -1,0 +1,460 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-39">
+			<title>Antiderivatives</title>
+			
+				<objectives>
+					<ul>
+						<li>
+							Explain the definition of an antiderivative and distinguish between particular and general antiderivatives
+						</li>
+						
+						<li>
+							Apply antiderivatives formulas to find antiderivatives and recover position functions, possibly by using algebraic/trigonometric manipulation
+						</li>
+						
+					</ul>
+				</objectives>
+			<subsection xml:id="section-39-beforeclass">
+				<title>Before Class</title>
+				
+				<figure>
+					<caption>Pre-Class Video 1</caption>
+					<url href = "https://mymedia.ou.edu/media/3.9-1/1_47ve5csu"/>
+				</figure>
+
+				<subsubsection xml:id="section-39-derivatives">
+					<title>Derivatives</title>
+					
+					Before we begin with antiderivatives, let's collect a table of derivatives that we know.
+					<tabular top="medium" right="medium" left="medium">
+						<row bottom="medium">
+							<cell halign="center">
+								Function
+							</cell>
+							<cell halign="center">
+								Derivative
+							</cell>
+							<cell halign="center">
+								Function
+							</cell>
+							<cell halign="center">
+								Derivative
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center">
+								<m>c</m>
+							</cell>
+							<cell halign="center">
+								<m>0</m>
+							</cell>
+							<cell halign="center">
+								<m>x^n</m>
+							</cell>
+							<cell halign="center">
+								<m>nx^{n-1}</m>
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center">
+								<m>\sin x</m>
+							</cell>
+							<cell halign="center">
+								<m>\cos x</m>
+							</cell>
+							<cell halign="center">
+								<m>\cos x</m>
+							</cell>
+							<cell halign="center">
+								<m>-\sin x</m>
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center">
+								<m>\tan x</m>
+							</cell>
+							<cell halign="center">
+								<m>\sec^2 x</m>
+							</cell>
+							<cell halign="center">
+								<m>\cot x</m>
+							</cell>
+							<cell halign="center">
+								<m>-\csc^2 x</m>
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center">
+								<m>\sec x</m>
+							</cell>
+							<cell halign="center">
+								<m>\sec x\tan x</m>
+							</cell>
+							<cell halign="center">
+								<m>\csc x</m>
+							</cell>
+							<cell halign="center">
+								<m>-\csc x\cot x</m>
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center">
+								<m>c\cdot f(x)</m>
+							</cell>
+							<cell halign="center">
+								<m>c\cdot f'(x)</m>
+							</cell>
+							<cell halign="center">
+								<m>f(x)\pm g(x)</m>
+							</cell>
+							<cell halign="center">
+								<m>f'(x)\pm g'(x)</m>
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center">
+								<m>f(x)\cdot g(x)</m>
+							</cell>
+							<cell halign="center">
+								<m>f'(x)g(x) + f(x)g'(x)</m>
+							</cell>
+							<cell halign="center">
+								<m>\dfrac{f(x)}{g(x)}</m>
+							</cell>
+							<cell halign="center">
+								<m>\dfrac{f'(x)g(x)-f(x)g'(x)}{[g(x)]^2}</m>
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center">
+								<m>f(g(x))</m>
+							</cell>
+							<cell halign="center">
+								<m>f'(g(x))\cdot g'(x)</m>
+							</cell>
+						</row>
+					</tabular>
+				</subsubsection>	
+				<subsubsection xml:id="section-39-antiderivative">
+					<title>The Antiderivative</title>
+					
+					<definition>
+						<title>Antiderivative</title>
+						<idx>Antiderivative</idx>
+						
+						A function <m>F</m> is called an <term>antiderivative</term> of <m>f</m> on an interval <m>I</m> if <m>F'(x) = f(x)</m> for all <m>x\in I</m>.
+					</definition>
+					
+					<example><statement>
+						Find five antiderivatives for the function <m>f(x) = 2x</m>.
+					</statement>
+					<solution>
+						Answers vary
+					</solution>
+					</example>
+					
+					<question><statement>
+						How might we write the general antiderivative <m>F(x)</m> for <m>f(x) = 2x</m>? 
+					</statement>
+					<solution>
+						<m>F(x) = x^2 + C</m>
+					</solution>
+					</question>
+					
+					<example><statement>
+						Find the most general antiderivative for the functions <m>f(x) = \cos x</m>, <m>g(x) = x^n</m> (<m>n\geq 0</m>), and <m>h(x) = x^{-2}</m>.
+					</statement>
+					<solution>
+						<m>F(x) = \sin x + C, G(x) = \dfrac{x^{n+1}}{n+1}+C, H(x) = -x^{-1} + C</m>
+					</solution>	
+					</example>
+					
+					<p>
+						A table of useful antiderivatives is given below:
+						
+						<tabular top="medium" right="medium" left="medium">
+							<row bottom="medium">
+								<cell halign="center">
+									Function
+								</cell>
+								<cell halign="center">
+									Antiderivative
+								</cell>
+								<cell halign="center">
+									Function
+								</cell>
+								<cell halign="center">
+									Antiderivative
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>0</m>
+								</cell>
+								<cell halign="center">
+									<m>C</m>
+								</cell>
+								<cell halign="center">
+									<m>k</m>
+								</cell>
+								<cell halign="center">
+									<m>kx + C</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>x^n</m>
+								</cell>
+								<cell halign="center">
+									<m>\dfrac{x^{n+1}}{n+1} + C</m>
+								</cell>
+								<cell halign="center">
+									<m>\sin x</m>
+								</cell>
+								<cell halign="center">
+									<m>-\cos x + C</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>\cos x</m>
+								</cell>
+								<cell halign="center">
+									<m>\sin x + C</m>
+								</cell>
+								<cell halign="center">
+									<m>\sec^2 x</m>
+								</cell>
+								<cell halign="center">
+									<m>\tan x + C</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>\csc^2 x</m>
+								</cell>
+								<cell halign="center">
+									<m>-\cot x + C</m>
+								</cell>
+								<cell halign="center">
+									<m>\sec x\tan x</m>
+								</cell>
+								<cell halign="center">
+									<m>\sec x + C</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>\cot x \csc x</m>
+								</cell>
+								<cell halign="center">
+									<m>-\csc x</m>
+								</cell>
+								<cell halign="center">
+									<m>c\cdot f(x)</m>
+								</cell>
+								<cell halign="center">
+									<m>c\cdot F(x)</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>f(x)\pm g(x)</m>
+								</cell>
+								<cell halign="center">
+									<m>F(x) \pm G(x)</m>
+								</cell>
+							</row>
+						</tabular>
+					</p>
+					
+					<example><statement>
+						<m>g'(x) = 3\sin x - \dfrac{9x^4-\sqrt[3]{x}}{x^2}</m>.  Find <m>g(x)</m>, the most general antiderivative of <m>g</m>.
+					</statement>
+					<solution>
+						<m>g(x) = -3\cos x - 3x^3 - \dfrac{3}{2}x^{-2/3} + C</m>
+					</solution>
+					</example>
+						
+					<example><statement>
+						Find <m>f</m> if <m>f'(x) = x\sqrt{x}</m> and <m>f(1) = 5</m>.
+					</statement>
+					<solution>
+						<m>f(x) = \dfrac{2}{5}x^{5/2} + \dfrac{23}{5}</m>
+					</solution>
+					</example>
+				</subsubsection>
+			</subsection>
+			<subsection xml:id="section-39-preclass">
+				<title>Pre-Class Activities</title>
+				
+				<example><statement>
+					Find the most general antiderivative of the following functions; check your answer by differentiation.
+					<ol label="a">
+						<li> 
+							<m>f(x) = 5x + 3</m>
+						</li>
+							
+						<li> 
+							<m>f(x) = x(12x + 8)</m>
+						</li>
+							
+						<li> 
+							<m>g(x) = \sqrt{5}</m>
+						</li>
+							
+						<li>
+							<m>h(x) = -3\sqrt{x} - 8\sqrt[3]{x}</m>
+						</li>
+							
+						<li> 
+							<m>k(x) = \dfrac{6}{x^7}</m>
+						</li>
+							
+						<li> 
+							<m>f(t) = \dfrac{5-4t^3 + 2t^6}{t^6}</m>
+						</li>
+					</ol>
+				</statement>
+				<solution>
+					<ol label="a">
+						<li> 
+							<m>F(x) = \dfrac{5}{2}x^2 + 3x + C</m>
+						</li>
+							
+						<li> 
+							<m>F(x) = 4x^3 + 4x^2 + C</m>
+						</li>
+							
+						<li> 
+							<m>G(x) = x\sqrt{5}+ C</m>
+						</li>
+							
+						<li>
+							<m>H(x) = -2x^{3/2} - 6x^{4/3} + C</m>
+						</li>
+							
+						<li> 
+							<m>k(x) = -x^{-6} + C</m>
+						</li>
+							
+						<li> 
+							<m>F(t) = -t^{-5} + 2t^{-2} + 2t + C</m>
+						</li>
+					</ol>
+				</solution>
+				</example>
+			</subsection>
+			<subsection xml:id="section-39-inclass">
+				<title>In Class</title>
+				
+				<assemblage>
+					<title>General Antiderivative vs. Specific Antiderivative</title>
+					<p>
+						A <term>general antiderivative</term> takes the form <m>F(x) + C</m>, while a <term>specific antiderivative</term> takes the form <m>F(x)</m>.  For a specific antiderivative, we must have information about the value(s) of the original function.
+					</p>
+				</assemblage>
+				
+				<example><statement>
+					Find <m>f</m> if <m>f''(x) = 12x^2+6x-4</m>, <m>f(0) = 4</m>, and <m>f(1) = 2</m>.
+				</statement>
+				<solution>
+					<m>f(x) = x^4 + x^3-2x^2-2x+4</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					A particle moves in a straight line, and its acceleration is given by <m>a(t) = 3t+2</m>.  Its initial velocity is <m>v(0) = -3</m> cm/s, and its initial displacement is <m>s(0) = 5</m> cm.  Find the position function <m>s(t)</m>.
+				</statement>
+				<solution>
+					<m>s(t) = \dfrac{1}{2}t^3 + t^2-3t+5</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					A ball is thrown upward with speed 24 ft/s from the edge of a cliff which is 432 ft above the ground.  Find its height above the ground <m>t</m> seconds later.  When does it reach its maximum height?  When does it hit the ground?
+				</statement>
+				<solution>
+					The position function is <m>s(t) = -16t^2 + 24t + 432</m>.  The ball reaches maximum height <m>\dfrac{3}{4}</m> seconds after being thrown, and hits the ground 6 seconds after being thrown.
+				</solution>
+				</example>
+					
+				<example><statement>
+					Find the most general antiderivative of <m>f(x) = (x-5)^2</m>.
+				</statement>
+				<solution>
+					<m>F(x) = \dfrac{1}{3}x^3-5x^2+25x+C</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Find the most general antiderivative of <m>f(x) = \pi^2</m>.
+				</statement>
+				<solution>
+					<m>F(x) = \pi^2x + C</m>
+				</solution>
+				</example>
+			
+				<example><statement>
+					Find the most general antiderivative of <m>f(t) = 3\cos t - 4\sin t</m>.
+				</statement>
+				<solution>
+					<m>F(t) = 3\sin t + 4\cos t + C</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Find the most general antiderivative of <m>f(x) = 8\sqrt{x}-\sec x\tan x</m>.
+				</statement>
+				<solution>
+					<m>F(x) = \dfrac{16}{3}x^{3/2} - \sec x + C</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Find <m>f</m>, if <m>f''(x) = \sin x + \cos x</m>, <m>f(0) = 3</m>, and <m>f'(0)= 4</m>.
+				</statement>
+				<solution>
+					<m>f(x) = -\sin x - \cos x + 5x + 4</m>
+				</solution>
+				</example>
+				
+				<example><statement>
+					The graph of <m>f</m> passes through the point <m>(2,5)</m>, and the slope of its tangent line at <m>(x,f(x))</m> is <m>3-4x</m>.  Find <m>f(1)</m>.
+				</statement>
+				<solution>
+					<m>f(1) = 8</m>
+				</solution>
+				</example>
+			</subsection>
+			<subsection xml:id="section-39-afterclass">
+				<title>After Class Activities</title>
+				
+				<example><statement>
+					Find <m>g</m>, if <m>g'''(t) = 12+\cos t</m>.
+				</statement>
+				<solution>
+					<m>g(t) = 2t^3-\sin t + Ct^2 + Dt + E</m>
+				</solution>
+				</example>
+				
+				<example><statement>
+					A car is traveling at 60 mi/h when the brakes are fully applied, producing a constant deceleration of 20 ft/s<m>^2</m>.  What is the distance traveled before the car comes to a stop?
+				</statement>
+				<solution>
+					90 feet
+				</solution>
+				</example>	
+					
+				<example><statement>
+					The graph of a function is show below.  Make a rough sketch of an antiderivative <m>F</m>, if <m>F(0) = 1</m>.
+					<image source="39fig1.svg"/>
+				</statement>
+				<solution>
+					Answers vary
+				</solution>
+				</example>
+			</subsection>
+		</section>
+		

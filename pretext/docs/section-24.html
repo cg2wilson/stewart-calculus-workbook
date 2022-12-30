@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-07-17T17:31:45-05:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Math 1914 - Differential &amp; Integral Calculus I Derivatives of Trigonometric Functions</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Math 1914 - Differential &amp; Integral Calculus">
+<meta property="book:author" content="Cory Wilson">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(      \newcommand{\ds}{\displaystyle}
+\newcommand{\lrpar}[1]{\left(#1\right)}
+\newcommand{\lrbrace}[1]{\left\lbrace #1 \right\rbrace}
+\newcommand{\inv}[1]{#1^{-1}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\dc}{^\circ}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="math1914.html"><span class="title">Math 1914 - Differential &amp; Integral Calculus</span></a></h1>
+<p class="byline">Cory Wilson</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-23.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch2.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-25.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-23.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch2.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section-25.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul><li><a href="colophon.html" data-scroll="colophon" class="internal">Colophon</a></li></ul>
+</li>
+<li class="link">
+<a href="ch1.html" data-scroll="ch1" class="internal"><span class="codenumber">1</span> <span class="title">Functions and Limits</span></a><ul>
+<li><a href="section-11.html" data-scroll="section-11" class="internal">Four Ways to Represent a Function</a></li>
+<li><a href="section-12.html" data-scroll="section-12" class="internal">Mathematical Models: A Catalog of Essential Functions</a></li>
+<li><a href="section-13.html" data-scroll="section-13" class="internal">New Functions from Old Functions</a></li>
+<li><a href="section-14.html" data-scroll="section-14" class="internal">The Tangent and Velocity Problems</a></li>
+<li><a href="section-15.html" data-scroll="section-15" class="internal">The Limit of a Function</a></li>
+<li><a href="section-16.html" data-scroll="section-16" class="internal">Calculating Limits Using Limit Laws</a></li>
+<li><a href="section-17.html" data-scroll="section-17" class="internal">(X) The Precise Definition of a Limit</a></li>
+<li><a href="section-18.html" data-scroll="section-18" class="internal">Continuity</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch2.html" data-scroll="ch2" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives</span></a><ul>
+<li><a href="section-21.html" data-scroll="section-21" class="internal">Derivatives and Rates of Change</a></li>
+<li><a href="section-22.html" data-scroll="section-22" class="internal">The Derivative as a Function</a></li>
+<li><a href="section-23.html" data-scroll="section-23" class="internal">Differentiation Formulas</a></li>
+<li><a href="section-24.html" data-scroll="section-24" class="active">Derivatives of Trigonometric Functions</a></li>
+<li><a href="section-25.html" data-scroll="section-25" class="internal">The Chain Rule</a></li>
+<li><a href="section-26.html" data-scroll="section-26" class="internal">Implicit Differentiation</a></li>
+<li><a href="section-27.html" data-scroll="section-27" class="internal">(X) Rates of Changes in the Natural and Social Sciences</a></li>
+<li><a href="section-28.html" data-scroll="section-28" class="internal">Related Rates</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch3.html" data-scroll="ch3" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Differentiation</span></a><ul>
+<li><a href="section-31.html" data-scroll="section-31" class="internal">Maximum &amp; Minimum Values</a></li>
+<li><a href="section-32.html" data-scroll="section-32" class="internal">(X) The Mean Value Theorem</a></li>
+<li><a href="section-33.html" data-scroll="section-33" class="internal">How Derivatives Affect the Shape of a Graph</a></li>
+<li><a href="section-34.html" data-scroll="section-34" class="internal">Limits at Infinity &amp; Horizontal Asymptotes</a></li>
+<li><a href="section-35.html" data-scroll="section-35" class="internal">Summary of Curve Sketching</a></li>
+<li><a href="section-36.html" data-scroll="section-36" class="internal">(X) Graphing with Calculus and Calculators</a></li>
+<li><a href="section-37.html" data-scroll="section-37" class="internal">Optimization</a></li>
+<li><a href="section-38.html" data-scroll="section-38" class="internal">(X) Newton's Method</a></li>
+<li><a href="section-39.html" data-scroll="section-39" class="internal">Antiderivatives</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch4.html" data-scroll="ch4" class="internal"><span class="codenumber">4</span> <span class="title">Integrals</span></a><ul>
+<li><a href="section-41.html" data-scroll="section-41" class="internal">Areas &amp; Distance</a></li>
+<li><a href="section-42.html" data-scroll="section-42" class="internal">The Definite Integral</a></li>
+<li><a href="section-43.html" data-scroll="section-43" class="internal">The Fundamental Theorem of Calculus</a></li>
+<li><a href="section-44.html" data-scroll="section-44" class="internal">Indefinite Integrals &amp; the Net Change Theorem</a></li>
+<li><a href="section-45.html" data-scroll="section-45" class="internal">The Substitution Rule</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch5.html" data-scroll="ch5" class="internal"><span class="codenumber">5</span> <span class="title">Applications of Integration</span></a><ul>
+<li><a href="section-51.html" data-scroll="section-51" class="internal">Areas Between Curves</a></li>
+<li><a href="section-52.html" data-scroll="section-52" class="internal">Volumes</a></li>
+<li><a href="section-53.html" data-scroll="section-53" class="internal">Volumes by Cylindrical Shells</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-24"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2.4</span> <span class="title">Derivatives of Trigonometric Functions</span>
+</h2>
+<article class="objectives goal-like" id="objectives-11"><h3 class="heading"><span class="type">Objectives</span></h3>
+<ul class="disc">
+<li id="li-633"><p id="p-derived-li-633">Use the limits <span class="process-math">\(\ds \lim_{\theta\to 0} \dfrac{\sin \theta}{\theta} = 1\)</span> and <span class="process-math">\(\ds \lim_{\theta\to 0} \dfrac{\cos\theta -1}{\theta} = 0\)</span> to aid the computation of the derivative of sine and cosine</p></li>
+<li id="li-634"><p id="p-derived-li-634">Apply the derivative rules of Section 2.3 to all six trigonometric functions</p></li>
+</ul></article><section class="subsection" id="section-24-beforeclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.4.1</span> <span class="title">Before Class</span>
+</h3>
+<figure class="figure figure-like" id="figure-16"><a class="external" href="https://mymedia.ou.edu/media/2.4-1/1_rapvl442" target="_blank"><code class="code-inline tex2jax_ignore">https://mymedia.ou.edu/media/2.4-1/1_rapvl442</code></a><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">16<span class="period">.</span></span><span class="space"> </span>Pre-Class Video 1</figcaption></figure><figure class="figure figure-like" id="figure-17"><a class="external" href="https://mymedia.ou.edu/media/2.4-2/1_xt9ykj40" target="_blank"><code class="code-inline tex2jax_ignore">https://mymedia.ou.edu/media/2.4-2/1_xt9ykj40</code></a><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">17<span class="period">.</span></span><span class="space"> </span>Pre-Class Video 2</figcaption></figure><section class="subsubsection" id="section-24-limits"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">2.4.1.1</span> <span class="title">Special Trig Limits</span>
+</h4>
+<p id="p-133">There are two limits of trigonometric functions that we will take advantage of in Section 2.4.</p>
+<article class="assemblage assemblage-like" id="assemblage-19"><h5 class="heading"><span class="title">Two Important Limits.</span></h5>
+<div class="displaymath process-math" data-contains-math-knowls="" id="p-134">
+\begin{equation*}
+\ds \lim_{\theta\to 0} \dfrac{\sin \theta}{\theta} = 1\qquad\text{ and }\qquad \ds \lim_{\theta\to 0} \dfrac{\cos \theta - 1}{\theta} = 0
+\end{equation*}
+</div></article><article class="hiddenproof" id="proof-1"><a href="" data-knowl="" class="id-ref proof-knowl original has-image" data-refid="hk-proof-1"><h5 class="heading"><span class="type">Proof<span class="period">.</span></span></h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-1"><article class="hiddenproof"><p id="p-135">The proof refers to the following picture:</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-97.svg" role="img" class="contained" alt="This is a circle of radius 1 with a line drawn from the origin to the point \(A = (1,0)\text{,}\) another drawn from the origin to \(D=(1,1)\) passing through the point on the circle \(B\text{.}\)  A line segment is drawn from \(D\) to \(A\text{,}\) and another is drawn from \(B\) to some point \(E\) on the line segment \(AD\text{.}\)  A final line segment is drawn from \(B\) to the line \(OA\text{,}\) whose intersection is point \(C\text{.}\)"></div>
+<p id="p-136">First note that since we are on a unit circle, <span class="process-math">\(\sin\theta = |BC|\)</span> which must be smaller than <span class="process-math">\(|AB|\text{.}\)</span>  In turn, <span class="process-math">\(|AB| \lt \text{Arc } AB = \theta\text{.}\)</span>  Rearranging, we see that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\sin\theta \lt \theta \iff \dfrac{\sin\theta}{\theta} \lt 1
+\end{equation*}
+</div>
+<p id="p-137">Now, we know that</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-7">
+\begin{align*}
+\theta = \text{Arc }AB &amp;\lt |AE| + |EB|\\
+&amp;\lt |AE| + |ED|\\
+&amp;= |AD|\\
+&amp;= \tan\theta 
+\end{align*}
+</div>
+<p class="continuation">Thus, <span class="process-math">\(\theta \lt \tan \theta\)</span></p>
+<p id="p-138">If <span class="process-math">\(\theta \lt \tan \theta\text{,}\)</span> then <span class="process-math">\(\theta \lt \dfrac{\sin\theta}{\cos\theta}\iff \cos\theta \lt \dfrac{\sin\theta}{\theta}\text{.}\)</span>  Combining with our first result, we have that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\cos\theta \lt \dfrac{\sin\theta}{\theta} \lt 1
+\end{equation*}
+</div>
+<p id="p-139">Now apply the Squeeze Theorem.  <span class="process-math">\(\ds \lim_{\theta\to 0} \cos\theta = \lim_{\theta\to 0} 1 = 1\text{,}\)</span> so the Squeeze Theorem gives that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\ds \lim_{\theta\to 0} \dfrac{\sin\theta}{\theta} = 1
+\end{equation*}
+</div>
+<p id="p-140">The second limit is a matter of computation:</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-8">
+\begin{align*}
+\ds lim_{\theta\to 0} \dfrac{\cos\theta -1}{\theta} &amp;=  lim_{\theta\to 0} \dfrac{\cos\theta -1}{\theta} \cdot \dfrac{\cos\theta + 1}{\cos\theta + 1}\\
+&amp;= \ds \lim_{\theta\to 0} \dfrac{\cos^2\theta -1}{\theta (\cos\theta + 1)}\\
+&amp;= \ds \lim_{\theta \to 0} \dfrac{\sin^2\theta}{\theta(\cos\theta +1)}\\
+&amp;= \ds \lim_{\theta \to 0} \sin\theta \cdot \dfrac{\sin\theta}{\theta} \cdot \dfrac{1}{\cos\theta + 1}\\
+&amp; = 0\cdot 1\cdot \dfrac{1}{2}\\
+&amp; = 0
+\end{align*}
+</div></article></div></section><section class="subsubsection" id="section-24-sine"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">2.4.1.2</span> <span class="title">Derivative of Sine</span>
+</h4>
+<article class="example example-like" id="example-168"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.1</span><span class="period">.</span>
+</h5>Use the limits above to show that <span class="process-math">\(\dfrac{d}{dx}\left[\sin x\right] = \cos x\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-184" id="solution-184"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-184"><div class="solution solution-like">
+<p id="p-141">We'll use the definition of the derivative and the sum identity for sine: <span class="process-math">\(\sin(\alpha + \beta) = \sin\alpha\cos\beta + \sin\beta\cos\alpha\text{.}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-9">
+\begin{align*}
+\ds \lim_{h\to 0} \dfrac{\sin(\theta + h) - \sin\theta}{h} &amp; = \lim_{h\to 0} \dfrac{\sin\theta \cos h + \sin h \cos\theta - \sin\theta}{h}\\
+&amp;= \ds \dfrac{\sin\theta (\cos h -1) + \sin h \cos\theta}{h} \\
+&amp;= \ds \sin\theta\cdot \lim_{h\to 0} \dfrac{\cos h -1}{h} + \cos\theta \cdot \lim_{h \to 0} \dfrac{\sin h}{h}\\
+&amp;= \cos\theta
+\end{align*}
+</div>
+</div></div>
+</div></article><article class="example example-like" id="example-169"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.2</span><span class="period">.</span>
+</h5>Find the derivative of <span class="process-math">\(f(x) = \cos x\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-185" id="solution-185"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-185"><div class="solution solution-like">
+<p id="p-143">We'll use the same approach as we did for sine, but will use the sum identity for cosine: <span class="process-math">\(\cos (\alpha + \beta) = \cos\alpha\cos\beta - \sin\alpha\sin\beta\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-10">
+\begin{align*}
+\ds \lim_{h\to 0} \dfrac{\cos(\theta + h) - \cos\theta}{h} &amp; = \lim_{h\to 0} \dfrac{\cos\theta \cos h - \sin h \sin\theta - \cos\theta}{h}\\
+&amp;= \ds \dfrac{\cos\theta (\cos h -1) - \sin h \sin\theta}{h} \\
+&amp;= \ds \cos\theta\cdot \lim_{h\to 0} \dfrac{\cos h -1}{h} - \sin\theta \cdot \lim_{h \to 0} \dfrac{\sin h}{h}\\
+&amp;=-\sin\theta
+\end{align*}
+</div>
+</div></div>
+</div></article></section><section class="subsubsection" id="section-24-others"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">2.4.1.3</span> <span class="title">Other Trig Derivatives</span>
+</h4>
+<article class="example example-like" id="example-170"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.3</span><span class="period">.</span>
+</h5>Find the derivatives of the following functions using the rules from Section 2.3 and the definition of the remaining four functions: <ol class="lower-alpha">
+<li id="li-635"><p id="p-derived-li-635"><span class="process-math">\(\displaystyle \tan x\)</span></p></li>
+<li id="li-636"><p id="p-derived-li-636"><span class="process-math">\(\displaystyle \cot x\)</span></p></li>
+<li id="li-637"><p id="p-derived-li-637"><span class="process-math">\(\displaystyle \sec x\)</span></p></li>
+<li id="li-638"><p id="p-derived-li-638"><span class="process-math">\(\displaystyle \csc x\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-186" id="solution-186"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-186"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-639"><p id="p-derived-li-639"><span class="process-math">\(\displaystyle \sec^2x\)</span></p></li>
+<li id="li-640"><p id="p-derived-li-640"><span class="process-math">\(\displaystyle -\csc^2x\)</span></p></li>
+<li id="li-641"><p id="p-derived-li-641"><span class="process-math">\(\displaystyle \sec x\tan x\)</span></p></li>
+<li id="li-642"><p id="p-derived-li-642"><span class="process-math">\(\displaystyle -\csc x\cot x\)</span></p></li>
+</ol></div></div>
+</div></article></section></section><section class="subsection" id="section-24-preclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.4.2</span> <span class="title">Pre-Class Activities</span>
+</h3>
+<article class="example example-like" id="example-171"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.4</span><span class="period">.</span>
+</h4>Find <span class="process-math">\(f'(x)\text{,}\)</span> if <span class="process-math">\(f(x) = x^3\cos x\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-187" id="solution-187"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-187"><div class="solution solution-like"><span class="process-math">\(f'(x) = 3x^2\cos x - x^3\sin x\)</span></div></div>
+</div></article><article class="example example-like" id="example-172"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.5</span><span class="period">.</span>
+</h4>Find the equation of the tangent line to the curve <span class="process-math">\(y = 2\sin x - \cos x\)</span> at the point <span class="process-math">\((0,-1)\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-188" id="solution-188"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-188"><div class="solution solution-like"><span class="process-math">\(y=2x-1\)</span></div></div>
+</div></article><article class="example example-like" id="example-173"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.6</span><span class="period">.</span>
+</h4>Find the equation of the tangent line and normal line to the curve <span class="process-math">\(y=(1+x)\sin x\)</span> at the point <span class="process-math">\((0,0)\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-189" id="solution-189"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-189"><div class="solution solution-like">The tangent line is <span class="process-math">\(y= x\)</span> and the normal line is <span class="process-math">\(y=-x\)</span>
+</div></div>
+</div></article><article class="example example-like" id="example-174"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.7</span><span class="period">.</span>
+</h4>Find the derivative of the funciton <span class="process-math">\(k(x) = \dfrac{1+\tan x}{\sin x}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-190" id="solution-190"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-190"><div class="solution solution-like"><span class="process-math">\(k'(x) = \dfrac{\sin x\sec^2x - \cos x(1+\tan x)}{\sin^2x}\)</span></div></div>
+</div></article></section><section class="subsection" id="section-24-inclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.4.3</span> <span class="title">In Class</span>
+</h3>
+<section class="subsubsection" id="section-24-derivatives"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">2.4.3.1</span> <span class="title">Trig Derivatives</span>
+</h4>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr><td class="c m b2 r2 l2 t2 lines" colspan="4">Derivatives of Trigonometric Functions</td></tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(\dfrac{d}{dx}[\sin x]\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\cos x\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\dfrac{d}{dx}[\csc x]\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(-\csc x\cot x\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(\dfrac{d}{dx}[\cos x]\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(-\sin x\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\dfrac{d}{dx}[\sec x]\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\sec x \tan x\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(\dfrac{d}{dx}[\tan x]\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\sec^2x\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\dfrac{d}{dx}[\cot x]\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(-\csc^2x\)</span></td>
+</tr>
+</table></div>
+<article class="example example-like" id="example-175"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.8</span><span class="period">.</span>
+</h5>For what values of <span class="process-math">\(x\)</span> does <span class="process-math">\(f(x) = \dfrac{\cos x}{1-\sin x}\)</span> have a horizontal tangent?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-191" id="solution-191"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-191"><div class="solution solution-like">There are no horizontal tangents</div></div>
+</div></article><article class="example example-like" id="example-176"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.9</span><span class="period">.</span>
+</h5>An object at the end of a vertical spring is stretched 5 cm beyond its resting position, and released at time <span class="process-math">\(t = 0\text{.}\)</span>  Its position at time <span class="process-math">\(t\)</span> is given by <span class="process-math">\(s(t) = 5\sin t\text{.}\)</span> <ol class="lower-alpha">
+<li id="li-643"><p id="p-derived-li-643">Find the velocity and acceleration at time <span class="process-math">\(t\)</span></p></li>
+<li id="li-644"><p id="p-derived-li-644">At what time(s) is the velocity of the object 0?  What about the acceleration?</p></li>
+</ol></article><article class="example example-like" id="example-177"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.10</span><span class="period">.</span>
+</h5>Differentiate <span class="process-math">\(y = u(a\cos u + b\cot u)\text{,}\)</span> where <span class="process-math">\(a,b\)</span> are constants.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-192" id="solution-192"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-192"><div class="solution solution-like"><span class="process-math">\(y' = a\cos u + b\cot u + u(-a\sin u - b\csc^2u)\)</span></div></div>
+</div></article><article class="example example-like" id="example-178"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.11</span><span class="period">.</span>
+</h5>Differentiate <span class="process-math">\(y = x^2\sin x\tan x\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-193" id="solution-193"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-193"><div class="solution solution-like"><span class="process-math">\(y' = 2x\sin x\tan x + x^2\cos x\tan x + x^2\sin x\sec^2x\)</span></div></div>
+</div></article><article class="example example-like" id="example-179"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.12</span><span class="period">.</span>
+</h5>Find the derivative of <span class="process-math">\(y = \dfrac{t\sin t}{1+t}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-194" id="solution-194"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-194"><div class="solution solution-like"><span class="process-math">\(y' = \dfrac{(\sin t + t\cos t)(1+t) - t\sin t}{(1+t)^2}\)</span></div></div>
+</div></article><article class="example example-like" id="example-180"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.13</span><span class="period">.</span>
+</h5>Find the 101st derivative of <span class="process-math">\(f(x) = 2\cos x\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-195" id="solution-195"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-195"><div class="solution solution-like"><span class="process-math">\(\dfrac{d^{101}f}{dx^{101}} = -2\sin x\)</span></div></div>
+</div></article><article class="example example-like" id="example-181"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.14</span><span class="period">.</span>
+</h5>Find the 99th derivative of <span class="process-math">\(f(x) = \sin x\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-196" id="solution-196"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-196"><div class="solution solution-like"><span class="process-math">\(f^{99}(x) = -\cos x\)</span></div></div>
+</div></article><article class="example example-like" id="example-182"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.15</span><span class="period">.</span>
+</h5>Find the equation of the tangent line to the curve <span class="process-math">\(y = x+\tan x\)</span> at the point <span class="process-math">\((\pi,\pi)\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-197" id="solution-197"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-197"><div class="solution solution-like"><span class="process-math">\(y=\pi\)</span></div></div>
+</div></article></section></section><section class="subsection" id="section-24-afterclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.4.4</span> <span class="title">After Class Activities</span>
+</h3>
+<article class="example example-like" id="example-183"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.16</span><span class="period">.</span>
+</h4>Suppose <span class="process-math">\(f(\pi/3) = 4\text{,}\)</span> and <span class="process-math">\(f'(\pi/3) = -2\text{.}\)</span>  Let <span class="process-math">\(g(x) = f(x)\sin x\)</span> and <span class="process-math">\(h(x) = \dfrac{\cos x}{f(x)}\text{.}\)</span>  Find <span class="process-math">\(g'(\pi/3)\)</span> and <span class="process-math">\(h'(\pi/3)\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-198" id="solution-198"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-198"><div class="solution solution-like">
+<span class="process-math">\(g'\lrpar{{\pi}{3}} = 2-\sqrt{3}\)</span> and <span class="process-math">\(h'\lrpar{\dfrac{\pi}{3}} = \dfrac{1-2\sqrt{3}}{16}\)</span>
+</div></div>
+</div></article><article class="example example-like" id="example-184"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.17</span><span class="period">.</span>
+</h4>Find <span class="process-math">\(\dfrac{d^{35}}{dx^{35}} (x\sin x)\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-199" id="solution-199"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-199"><div class="solution solution-like"><span class="process-math">\(\sin x - x\cos x\)</span></div></div>
+</div></article><article class="example example-like" id="example-185"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.18</span><span class="period">.</span>
+</h4>Find constants <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> so that, for <span class="process-math">\(y = A\sin x + B\cos x\text{,}\)</span> the following holds:<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y'' + y' - 2y = \sin x
+\end{equation*}
+</div>
+<em class="emphasis">Hint</em>: If <span class="process-math">\(y = A\sin x + B\cos x\text{,}\)</span> then <span class="process-math">\(y' = A\cos x - B\sin x\text{,}\)</span> and <span class="process-math">\(y'' = -A\sin x - B\cos x\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-200" id="solution-200"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-200"><div class="solution solution-like"><span class="process-math">\(A = -\dfrac{3}{10},B = -\dfrac{1}{10}\)</span></div></div>
+</div></article><article class="example example-like" id="example-186"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.19</span><span class="period">.</span>
+</h4>Find the points on the curve <span class="process-math">\(y = \dfrac{\cos x}{2 + \sin x}\)</span> where the graph has a horizontal tangent.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-201" id="solution-201"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-201"><div class="solution solution-like">
+<span class="process-math">\(x = \dfrac{\pi}{6} + 2\pi k,\dfrac{5\pi}{6} + 2\pi k\text{,}\)</span> for <span class="process-math">\(k\in \Z\)</span>
+</div></div>
+</div></article></section></section></div></main>
+</div>
+</body>
+</html>

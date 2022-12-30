@@ -1,0 +1,255 @@
+\documentclass[notes]{subfiles}
+
+\begin{document}
+	\addcontentsline{toc}{section}{4.4 - Indefinite Integrals \& the Net Change Theorem}
+	\refstepcounter{section}
+	\fancyhead[RO,LE]{\bfseries \large\nameref{cs44}} 
+	\fancyhead[LO,RE]{\bfseries \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Chapter 4.4}
+	
+\section*{Indefinite Integrals \& the Net Change Theorem}\label{cs44}
+	\subsection*{Before Class}
+	\subsubsection*{Indefinite Integrals}
+		\begin{defn}[Indefinite Integral]
+			The \textbf{indefinite integral} of $f$ is a family of functions $F(x)$ such that
+			\showto{ins}{
+				\fbox{$F'(x) = f(x)$ or }\\ \fbox{$\ds \int f(x)\,dx = F(x)$.}
+			}
+			\showto{st}{
+			\blank{1.4}$ $\\[25pt] or \blank{3}
+			}
+		\end{defn}
+
+		\begin{ex}
+			Write the indefinite integral for $\ds \int x^2\,dx$.  
+		\end{ex}
+			\vs{1}
+			
+		\begin{question}
+			Give an explicit distinction between the definite integral and the indefinite integral.
+		\end{question}	
+			\vs{1}
+		
+		\showto{ins}{	
+			\tabulinesep = 3mm
+			{\setlength{\arrayrulewidth}{1.5pt}
+			\begin{tabu}{| X[l] X[l] | X[l] X[l] | }\hline
+				\multicolumn{4}{|c|}{\large{\textbf{Useful Indefinite Integrals}}} \\ \hline
+				$\ds \int c\cdot f(x)\, dx$ 		& $c\ds \int f(x)\, dx$			& $\ds \int [f(x)\pm g(x)]\, dx$ 		& $\ds \int f(x)\, dx \pm \int g(x)\, dx$ \\
+				$\ds \int k\, dx$				& $kx + C$					& $\ds \int x^n\, dx$					& $\dfrac{x^{n+1}}{n+1} + C$, $n\neq 1$\\
+				$\ds \int \sin x\, dx$			& $-\cos x + C$				& $\ds \int \cos x\, dx$				& $\sin x + C$\\
+				$\ds \int \sec^2x\, dx$		& $\tan x + C$				& $\ds \int \csc^2x\, dx$				& $-\cot x + C$\\
+				$\ds \int \sec x\tan x\, dx$		& $\sec x + C$				& $\ds \int \csc x\cot x\, dx$			& $-\csc x + C$\\ \hline
+			\end{tabu}
+			}
+		}
+		\showto{st}{
+			\tabulinesep = 3mm
+			{\setlength{\arrayrulewidth}{1.5pt}
+			\begin{tabu}{| X[l] X[l] | X[l] X[l] | }\hline
+				\multicolumn{4}{|c|}{\large{\textbf{Useful Antiderivatives}}} \\ \hline
+				$\ds \int c\cdot f(x)\, dx$ 		& 			& $\ds \int [f(x)\pm g(x)]\, dx$ 		& \\
+				$\ds \int k\, dx$				& 					& $\ds \int x^n\, dx$					& \\
+				$\ds \int \sin x\, dx$			& 				& $\ds \int \cos x\, dx$				& \\
+				$\ds \int \sec^2x\, dx$		& 				& $\ds \int \csc^2x\, dx$				& \\
+				$\ds \int \sec x\tan x\, dx$		& 				& $\ds \int \csc x\cot x\, dx$			& \\ \hline
+			\end{tabu}
+		}
+		}
+			\newpage
+			
+		\begin{ex}
+			Find the general indefinite integral for $f(x) = 3x^5-2\csc^2 x$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate $\ds \int \dfrac{\sin\theta}{\cos^2\theta}\,d\theta$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate $\ds \int (6-2\cos x)\, dx$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+	\subsubsection*{Pre-Class Activities}
+	\addcontentsline{toc}{subsubsection}{Pre-Class Activities}
+		\begin{ex}
+			Imagine that you are able to give your future self some advice, while you're studying.  Looking back over the notes, how would you describe the difference between a \emph{definite} integral and an \emph{indefinite} integral to your future self?
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Compute the following:
+			\begin{enumerate}[(a)]
+				\item  $\ds \int \lrpar{\cos x + \dfrac{1}{3}x}\, dx$
+					\vs{1}
+				\item $\ds \int \lrpar{1-x^2}^2\, dx$
+					\vs{1} 
+				\item $\ds \int_1^2 \lrpar{4x^3 - 3x^2 + 2x}\, dx$
+					\vs{1} 
+			\end{enumerate}
+		\end{ex}
+			\newpage
+	
+	\subsection*{In-Class}
+	\addcontentsline{toc}{subsection}{In-Class}
+	\subsubsection*{The Net Change Theorem}
+	\addcontentsline{toc}{subsubsection}{The Net Change Theorem}
+		\begin{question}
+			\begin{enumerate}[(a)]
+				\item In \S4.1, how did we find the accumulated change of a function?  Give an real-world example of how those techniques would be used.
+					\vs{1}
+					
+				\item In \S4.3, we learned the Fundamental Theorem of Calculus.  Rewrite FTC 2 here.
+					\vs{1}
+			\end{enumerate}
+		\end{question}
+		
+		\begin{thm}[Net Change]
+			The integral of a rate of change is the net change, i.e.:
+			\showto{ins}{
+				\[\int_a^b F'(x)\, dx = F(b) - F(a)\]
+			}
+			\showto{st}{
+				\\ \\ \\ 
+			}
+		\end{thm}
+		\begin{question}
+			What relationship(s) do you see between the Net Change Theorem and FTC 2?
+		\end{question}
+			\vs{1}
+			
+		\begin{rmk}[Displacement/Distance]
+			When talking about physical situations, the \emph{displacement} of a particle is the
+			\showto{ins}{
+				net change of the particle's position
+			}
+			\showto{st}{
+				\blank{1} \\ \\ \blank{3}
+			}
+			, while the \emph{distance} is the 
+			\showto{ins}{
+				total change of the particle's position.
+			}
+			\showto{st}{
+				\blank{1.5} \\ \\ \blank{3.5}.
+			}
+		\end{rmk}
+			\newpage
+		\begin{ex}
+			A particle moves along a line so that its velocity at time $t$ is $v(t) = t^2-t-6$ m/s. 
+			\begin{enumerate}[(a)]
+				\item Find the displacement of the particle during the time period $1\leq t\leq 4$.
+					\vs{1}
+					
+				\item Find the distance traveled during this time period.
+					\vs{1}
+					
+			\end{enumerate}
+		\end{ex}
+		
+		\begin{ex}
+			A particle moving along a line has velocity $v(t) = t^2 -2t-3$ m/s.  Find the displacement and the total distance traveled by the particle between 1 and 4 secondsz.
+		\end{ex}
+			\vs{1.5}
+			\newpage
+			
+	\subsubsection*{Practice}
+	\addcontentsline{toc}{subsubsection}{Practice}
+		\begin{ex}
+			Find the general indefinite integral of $f(x) = x^{1.3}-7x^{2.5}$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find the general indefinite integral of $f(x) = \sqrt[5]{x^4}$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find the general indefinite integral of $f(x) = \dfrac{1-\sqrt{x}+x}{\sqrt{x}}$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find the general indefinite integral of $f(x) = 2+\tan^2x$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Find the general indefinite integral of $f(t) = \dfrac{1-\sin^3t}{\sin^2t}$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate the integral $\ds \int_{-2}^3 (x^2-3)\, dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate the integral $\ds \int_0^3 (1 + 6w^2-10w^4)\,dw$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate the integral $\ds \int_0^\pi (4\sin \theta -3\cos\theta)\, d\theta$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate the integral $\ds \int_0^{\pi/3} \dfrac{\sin\theta + \sin\theta\tan^2\theta}{\sec^2\theta}\,d\theta$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Evaluate the integral $\ds \int_1^8 \dfrac{2+t}{\sqrt[3]{t^2}}$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			A honeybee population starts with 100 bees and increases at a rate of $n'(t)$ bees per week.  What does 100 + $\ds \int_0^{15}n'(t)\,dt$ represent?
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			If $x$ is measured in meters and $f(x)$ is measured in newtons, what are the units of $\ds \int_0^{100}f(x)\,dx$?
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			The acceleration function of a particle is $a(t) = t+4$ m/s$^2$, and its the initial velocity is 5 m/s.  Find the velocity at time $t$, and the distance traveled between time $t = 0$ and $t = 5$.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+	\subsection*{After Class}
+	\addcontentsline{toc}{subsection}{After Class}
+		\begin{ex}
+			Let $r(\theta) = \dfrac{1+\cos^2\theta}{\cos^2\theta}$.  Find the indefinite integral $\ds \int r(\theta)\, d\theta$ and the definite integral on the interval $[0,\pi/4]$.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			If $f(x)$ is the slope of a trail at a distance of $x$ miles from the start of the trail, what does $\ds \int_3^5 f(x)\, dx$ represent?
+		\end{ex}
+			\vs{.5}
+			
+		\begin{ex}
+			The current in a wire is defined to be the derivative of charge, i.e. $I(t) = Q'(t)$.  What does $\ds \int_a^b I(t)\, dt$ represent?
+		\end{ex}
+			\vs{.5}
+			
+		\begin{ex}
+			A particle moving along a line has acceleration given by $a(t) = 2t+3$.  If $v(0) = -4$, find the particle's velocity and distance traveled in the first three seconds of motion.
+		\end{ex}
+			\vs{1.5}
+			
+	\clearpage			
+\end{document}

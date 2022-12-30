@@ -1,0 +1,416 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-24">
+			<title>Derivatives of Trigonometric Functions</title>
+			
+			<objectives>
+				<ul>
+					<li>
+						Use the limits <m>\ds \lim_{\theta\to 0} \dfrac{\sin \theta}{\theta} = 1</m> and <m>\ds \lim_{\theta\to 0} \dfrac{\cos\theta -1}{\theta} = 0</m> to aid the computation of the derivative of sine and cosine
+					</li>
+					<li>
+						Apply the derivative rules of Section 2.3 to all six trigonometric functions
+					</li>
+					
+					
+				</ul>
+			</objectives>
+			<subsection xml:id="section-24-beforeclass">
+				<title>Before Class</title>
+				
+				<figure>
+					<caption>Pre-Class Video 1</caption>
+					<url href = "https://mymedia.ou.edu/media/2.4-1/1_rapvl442"/>
+				</figure>
+				<figure>
+					<caption>Pre-Class Video 2</caption>
+					<url href = "https://mymedia.ou.edu/media/2.4-2/1_xt9ykj40"/>
+				</figure>
+				
+				<subsubsection xml:id="section-24-limits">
+					<title>Special Trig Limits</title>
+					<p>
+						There are two limits of trigonometric functions that we will take advantage of in Section 2.4.
+					</p>
+					<assemblage>
+						<title>Two Important Limits</title>
+						<p>
+							<me>
+								\ds \lim_{\theta\to 0} \dfrac{\sin \theta}{\theta} = 1\qquad\text{ and }\qquad \ds \lim_{\theta\to 0} \dfrac{\cos \theta - 1}{\theta} = 0
+							</me>
+						</p>
+					</assemblage>
+					<proof>
+						<statement>
+							<p>
+								The proof refers to the following picture:
+							</p>
+							<image>
+								<description>
+									This is a circle of radius 1 with a line drawn from the origin to the point <m>A = (1,0)</m>, another drawn from the origin to <m>D=(1,1)</m> passing through the point on the circle <m>B</m>.  A line segment is drawn from <m>D</m> to <m>A</m>, and another is drawn from <m>B</m> to some point <m>E</m> on the line segment <m>AD</m>.  A final line segment is drawn from <m>B</m> to the line <m>OA</m>, whose intersection is point <m>C</m>.
+								</description>
+								<latex-image>
+									<![CDATA[
+										\begin{tikzpicture}
+											\coordinate (origin) at (0in,0in);
+											\coordinate (a) at (1in,0in);
+											\coordinate (b) at (0.707in,0.707in);
+											\coordinate (c) at (0.707in,0in);
+											\coordinate (d) at (1in,1in);
+											\coordinate (e) at (1in,.5in);
+											\draw (origin) circle (1in);
+											\fill (origin) circle (2pt);
+											\draw[thick] (origin)--(a);
+											\draw[thick] (origin)--(d) node[midway, above] {1};
+											\draw[thick] (b)--(c);
+											\draw[thick] (b)--(e);
+											\draw[thick] (a)--(d);
+											\fill (a) circle (2pt);
+											\fill (b) circle (2pt);
+											\fill (c) circle (2pt);	
+											\fill (d) circle (2pt);
+											\fill (e) circle (2pt);
+											\node at (1.1in,-3pt) {$A$};
+											\node at (0.707in, 0.82in) {$B$};
+											\node at (0.701in, -8pt) {$C$};
+											\node at (1.1in, 1.1in) {$D$};
+											\node at (1.1in, .5in) {$E$};
+										\end{tikzpicture}
+									]]>
+								</latex-image>
+							</image>
+							<p>
+								First note that since we are on a unit circle, <m>\sin\theta = |BC|</m> which must be smaller than <m>|AB|</m>.  In turn, <m>|AB| \lt \text{Arc } AB = \theta</m>.  Rearranging, we see that
+								<me>
+									\sin\theta \lt \theta \iff \dfrac{\sin\theta}{\theta} \lt 1
+								</me>
+							</p>
+							<p>
+								Now, we know that 
+								<md>
+									<mrow>\theta = \text{Arc }AB &amp;\lt |AE| + |EB|</mrow>
+									<mrow> &amp;\lt |AE| + |ED|</mrow>
+									<mrow> &amp;= |AD|</mrow>
+									<mrow> &amp;= \tan\theta </mrow>
+								</md>
+								Thus, <m>\theta \lt \tan \theta</m>
+							</p>
+							<p>
+								If <m>\theta \lt \tan \theta</m>, then <m>\theta \lt \dfrac{\sin\theta}{\cos\theta}\iff \cos\theta \lt \dfrac{\sin\theta}{\theta}</m>.  Combining with our first result, we have that 
+								<me>
+									\cos\theta \lt \dfrac{\sin\theta}{\theta} \lt 1
+								</me>
+							</p>
+							<p>
+								Now apply the Squeeze Theorem.  <m>\ds \lim_{\theta\to 0} \cos\theta = \lim_{\theta\to 0} 1 = 1</m>, so the Squeeze Theorem gives that 
+								<me>
+									\ds \lim_{\theta\to 0} \dfrac{\sin\theta}{\theta} = 1
+								</me>
+							</p>
+							<p>
+								The second limit is a matter of computation:
+								<md>
+									<mrow> \ds lim_{\theta\to 0} \dfrac{\cos\theta -1}{\theta} &amp;=  lim_{\theta\to 0} \dfrac{\cos\theta -1}{\theta} \cdot \dfrac{\cos\theta + 1}{\cos\theta + 1}</mrow>
+									<mrow> &amp;= \ds \lim_{\theta\to 0} \dfrac{\cos^2\theta -1}{\theta (\cos\theta + 1)}</mrow>
+									<mrow> &amp;= \ds \lim_{\theta \to 0} \dfrac{\sin^2\theta}{\theta(\cos\theta +1)}</mrow>
+									<mrow> &amp;= \ds \lim_{\theta \to 0} \sin\theta \cdot \dfrac{\sin\theta}{\theta} \cdot \dfrac{1}{\cos\theta + 1}</mrow>
+									<mrow> &amp; = 0\cdot 1\cdot \dfrac{1}{2}</mrow>
+									<mrow> &amp; = 0</mrow>
+								</md>
+							</p>
+						</statement>
+					</proof>
+				</subsubsection>
+				<subsubsection xml:id="section-24-sine">
+					<title>Derivative of Sine</title>
+					
+					<example><statement>
+						Use the limits above to show that <m>\dfrac{d}{dx}\left[\sin x\right] = \cos x</m>.
+					</statement>
+					<solution>
+						<p>
+							We'll use the definition of the derivative and the sum identity for sine: <m>\sin(\alpha + \beta) = \sin\alpha\cos\beta + \sin\beta\cos\alpha</m>.
+						</p>
+						<p>
+							<md>
+								<mrow> \ds \lim_{h\to 0} \dfrac{\sin(\theta + h) - \sin\theta}{h} &amp; = \lim_{h\to 0} \dfrac{\sin\theta \cos h + \sin h \cos\theta - \sin\theta}{h}</mrow>
+								<mrow>&amp;= \ds \dfrac{\sin\theta (\cos h -1) + \sin h \cos\theta}{h} </mrow>
+								<mrow>&amp;= \ds \sin\theta\cdot \lim_{h\to 0} \dfrac{\cos h -1}{h} + \cos\theta \cdot \lim_{h \to 0} \dfrac{\sin h}{h}</mrow>
+								<mrow>&amp;= \cos\theta</mrow>
+							</md>
+						</p>
+					</solution>
+					</example>	
+					
+					<example><statement>
+						Find the derivative of <m>f(x) = \cos x</m>.
+					</statement>
+					<solution>
+						<p>
+							We'll use the same approach as we did for sine, but will use the sum identity for cosine: <m>\cos (\alpha + \beta) = \cos\alpha\cos\beta - \sin\alpha\sin\beta</m>
+						</p>
+						<p>
+							<md>
+								<mrow> \ds \lim_{h\to 0} \dfrac{\cos(\theta + h) - \cos\theta}{h} &amp; = \lim_{h\to 0} \dfrac{\cos\theta \cos h - \sin h \sin\theta - \cos\theta}{h}</mrow>
+								<mrow>&amp;= \ds \dfrac{\cos\theta (\cos h -1) - \sin h \sin\theta}{h} </mrow>
+								<mrow>&amp;= \ds \cos\theta\cdot \lim_{h\to 0} \dfrac{\cos h -1}{h} - \sin\theta \cdot \lim_{h \to 0} \dfrac{\sin h}{h}</mrow>
+								<mrow>&amp;=-\sin\theta</mrow>
+							</md>
+						</p>
+					</solution>
+					</example>
+				</subsubsection>
+				<subsubsection xml:id="section-24-others">
+					<title>Other Trig Derivatives</title>
+					
+					<example><statement>
+						Find the derivatives of the following functions using the rules from Section 2.3 and the definition of the remaining four functions:
+						<ol label="a">
+							<li>
+								<m>\tan x</m>
+							</li>
+								
+							<li>
+								<m>\cot x</m>
+							</li>
+								
+							<li>
+								<m>\sec x</m>
+							</li>
+								
+							<li>
+								<m>\csc x</m>
+							</li>
+						</ol>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li>
+								<m>\sec^2x</m>
+							</li>
+								
+							<li>
+								<m>-\csc^2x</m>
+							</li>
+								
+							<li>
+								<m>\sec x\tan x</m>
+							</li>
+								
+							<li>
+								<m>-\csc x\cot x</m>
+							</li>
+						</ol>
+					</solution>
+					</example>
+				</subsubsection>
+			</subsection>
+			<subsection xml:id="section-24-preclass">
+				<title>Pre-Class Activities</title>
+				
+				<example><statement>
+					Find <m>f'(x)</m>, if <m>f(x) = x^3\cos x</m>.
+				</statement>
+				<solution>
+					<m>f'(x) = 3x^2\cos x - x^3\sin x</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Find the equation of the tangent line to the curve <m>y = 2\sin x - \cos x</m> at the point <m>(0,-1)</m>.
+				</statement>
+				<solution>
+					<m>y=2x-1</m>
+				</solution></example>
+
+				<example><statement>
+					Find the equation of the tangent line and normal line to the curve <m>y=(1+x)\sin x</m> at the point <m>(0,0)</m>.
+				</statement>
+				<solution>
+					The tangent line is <m>y= x</m> and the normal line is <m>y=-x</m>
+				</solution></example>
+
+				<example><statement>
+					Find the derivative of the funciton <m>k(x) = \dfrac{1+\tan x}{\sin x}</m>
+				</statement>
+				<solution>
+					<m>k'(x) = \dfrac{\sin x\sec^2x - \cos x(1+\tan x)}{\sin^2x}</m>
+				</solution></example>
+
+			</subsection>
+			<subsection xml:id="section-24-inclass">
+				<title>In Class</title>
+				<subsubsection xml:id="section-24-derivatives">
+					<title>Trig Derivatives</title>
+					
+					<tabular top="medium" left="medium" right="medium">
+						<row bottom="medium">
+							<cell halign="center" colspan="4">
+								Derivatives of Trigonometric Functions
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center">
+								<m>\dfrac{d}{dx}[\sin x]</m>
+							</cell>
+							<cell halign="center">
+								<m>\cos x</m>
+							</cell>
+							<cell halign="center">
+								<m>\dfrac{d}{dx}[\csc x]</m>
+							</cell>
+							<cell halign="center">
+								<m>-\csc x\cot x</m>
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center">
+								<m>\dfrac{d}{dx}[\cos x]</m>
+							</cell>
+							<cell halign="center">
+								<m>-\sin x</m>
+							</cell>
+							<cell halign="center">
+								<m>\dfrac{d}{dx}[\sec x]</m>
+							</cell>
+							<cell halign="center">
+								<m>\sec x \tan x</m>
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center">
+								<m>\dfrac{d}{dx}[\tan x]</m>
+							</cell>
+							<cell halign="center">
+								<m>\sec^2x</m>
+							</cell>
+							<cell halign="center">
+								<m>\dfrac{d}{dx}[\cot x]</m>
+							</cell>
+							<cell halign="center">
+								<m>-\csc^2x</m>
+							</cell>
+						</row>
+					</tabular>
+					
+					<example><statement>
+						For what values of <m>x</m> does <m>f(x) = \dfrac{\cos x}{1-\sin x}</m> have a horizontal tangent?
+					</statement>
+					<solution>
+						There are no horizontal tangents
+					</solution>
+					</example>
+						
+					<example><statement>
+						An object at the end of a vertical spring is stretched 5 cm beyond its resting position, and released at time <m>t = 0</m>.  Its position at time <m>t</m> is given by <m>s(t) = 5\sin t</m>.
+						<ol label="a">
+							<li>
+								Find the velocity and acceleration at time <m>t</m>
+							</li>
+								
+							<li>
+								At what time(s) is the velocity of the object 0?  What about the acceleration?
+							</li>
+						</ol>
+					</statement>
+					<ol label="a">
+							<li>
+								The velocity is <m>v(t) = 5\cos t</m> and the acceleration is <m>a(t) = -5\sin t</m>
+							</li>
+								
+							<li>
+								The velocity is zero at <m>t = \dfrac{\pi}{2} + \pi k</m> for some integer <m>k</m>, and the acceleration is zero at <m>t = \pi k</m> for <m>k\in \Z</m>
+							</li>
+						</ol>
+					</example>
+
+					<example><statement>
+						Differentiate <m>y = u(a\cos u + b\cot u)</m>, where <m>a,b</m> are constants.
+					</statement>
+					<solution>
+						<m>y' = a\cos u + b\cot u + u(-a\sin u - b\csc^2u)</m>
+					</solution>
+					</example>
+						
+					<example><statement>
+						Differentiate <m>y = x^2\sin x\tan x</m>
+					</statement>
+					<solution>
+						<m>y' = 2x\sin x\tan x + x^2\cos x\tan x + x^2\sin x\sec^2x</m>
+					</solution>
+					</example>	
+					
+					<example><statement>
+						Find the derivative of <m>y = \dfrac{t\sin t}{1+t}</m>
+					</statement>
+					<solution>
+						<m>y' = \dfrac{(\sin t + t\cos t)(1+t) - t\sin t}{(1+t)^2}</m>
+					</solution>
+					</example>	
+						
+					<example><statement>
+						Find the 101st derivative of <m>f(x) = 2\cos x</m>.
+					</statement>
+					<solution>
+						<m>\dfrac{d^{101}f}{dx^{101}} = -2\sin x</m>
+					</solution>
+					</example>
+					
+					<example><statement>
+						Find the 99th derivative of <m>f(x) = \sin x</m>
+					</statement>
+					<solution>
+						<m>f^{99}(x) = -\cos x</m>
+					</solution>
+					</example>	
+						
+					<example><statement>
+						Find the equation of the tangent line to the curve <m>y = x+\tan x</m> at the point <m>(\pi,\pi)</m>.
+					</statement>
+					<solution>
+						<m>y=\pi</m>
+					</solution>
+					</example>	
+				</subsubsection>
+			</subsection>
+			<subsection xml:id="section-24-afterclass">
+				<title>After Class Activities</title>
+				
+				<example><statement>
+					Suppose <m>f(\pi/3) = 4</m>, and <m>f'(\pi/3) = -2</m>.  Let <m>g(x) = f(x)\sin x</m> and <m>h(x) = \dfrac{\cos x}{f(x)}</m>.  Find <m>g'(\pi/3)</m> and <m>h'(\pi/3)</m>.
+				</statement>
+				<solution>
+					<m>g'\lrpar{{\pi}{3}} = 2-\sqrt{3}</m> and <m>h'\lrpar{\dfrac{\pi}{3}} = \dfrac{1-2\sqrt{3}}{16}</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Find <m>\dfrac{d^{35}}{dx^{35}} (x\sin x)</m>
+				</statement>
+				<solution>
+					<m>\sin x - x\cos x</m>
+				</solution>
+				</example>
+						
+				<example><statement>
+					Find constants <m>A</m> and <m>B</m> so that, for <m>y = A\sin x + B\cos x</m>, the following holds:
+						<me>
+							y'' + y' - 2y = \sin x
+						</me>
+					<em>Hint</em>: If <m>y = A\sin x + B\cos x</m>, then <m>y' = A\cos x - B\sin x</m>, and <m>y'' = -A\sin x - B\cos x</m>.  
+				</statement>
+				<solution>
+					<m>A = -\dfrac{3}{10},B = -\dfrac{1}{10}</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Find the points on the curve <m>y = \dfrac{\cos x}{2 + \sin x}</m> where the graph has a horizontal tangent.
+				</statement>
+				<solution>
+					<m>x = \dfrac{\pi}{6} + 2\pi k,\dfrac{5\pi}{6} + 2\pi k</m>, for <m>k\in \Z</m>
+				</solution>
+				</example>
+			</subsection>
+		</section>
+		

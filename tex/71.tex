@@ -1,0 +1,167 @@
+\documentclass[notes]{subfiles}
+\begin{document}
+	\chapter{Techniques of Integration}
+	\addcontentsline{toc}{section}{7.1 - Integration by Parts}
+	\refstepcounter{section}
+	\fancyhead[RO,LE]{\bfseries \nameref{cs71}} 
+	\fancyhead[LO,RE]{\bfseries \small \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Chapter 7.1}
+	
+\section*{Integration by Parts}\label{cs71}
+	\subsection*{Before Class}
+	\addcontentsline{toc}{subsection}{Before Class}
+	\subsubsection*{The Formula}
+	\addcontentsline{toc}{subsubsection}{The Formula}
+		\begin{ex}
+			$ $
+			\begin{enumerate}[(a)]
+				\item Let $f(x)$ and $g(x)$ be differentiable functions.  Use the product rule to find $\dfrac{d}{dx}\left[f(x)g(x)\right]$
+					\vs{1}
+					
+				\item Integrate both sides of the equation, and rewrite to get the formula for integration by parts.
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+		
+		\begin{rmk}[Integration by Parts Formula]
+			\\[40pt]
+		\end{rmk}
+		\newpage
+		
+		\begin{ex}
+			Evaluate $\ds \int xe^x\, dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{question}
+			What would happen if we switched our choices of $u$ and $dv$ in the previous example?
+		\end{question}
+			\vs{.5}
+			
+		\begin{ex}
+			Compute $\ds \int x\cos x\, dx$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Find the most general antiderivative of $\ln x$.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate $\ds \int x^2\cos 2x\, dx$
+		\end{ex}
+			\vs{1}
+		
+		\begin{ex}
+			Evaluate $\ds \int e^x\sin x\, dx$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+	\subsection*{Pre-Class Activities}
+	\addcontentsline{toc}{subsection}{Pre-Class Activities}
+		\begin{ex}
+			What questions/concerns do you have from the videos?
+		\end{ex}
+			\vs{.5}
+			
+		\begin{ex}
+			The following problems require integration by parts to solve.  For each, answer why integration by parts is necessary, and then compute the integral.
+			\begin{enumerate}[(a)]
+				\item $\ds \int x\sin 3x\, dx$
+					\vs{1}
+					
+				\item $\ds \int (x-1)\sin (\pi x)\, dx$
+					\vs{1}
+					
+				\item $\ds \int xe^{2x}\, dx$
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+		\newpage
+		
+	\subsection*{In Class}
+	\addcontentsline{toc}{subsection}{In Class}
+	\subsubsection*{Examples}
+	\addcontentsline{toc}{subsubsection}{Examples}
+		\begin{ex}
+			Show that $\ds \int_0^1 \inv{\tan}(x)\, dx = \dfrac{\pi}{4} - \dfrac{\ln 2}{2}$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Prove that $\ds \int \sin^n x\, dx = -\dfrac{1}{n}\cos x \sin^{n-1}x + \dfrac{n-1}{n}\int \sin^{n-2}x\, dx$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Compute the integrals:
+			\begin{enumerate}[(a)]
+				\item $\ds \int \dfrac{z}{10^z}\, dz$
+					\vs{1}
+					
+				\item $\ds \int e^{-\theta}\cos 2\theta\, d\theta$
+					\vs{1}
+					\newpage
+					
+				\item $\ds \int_0^{1/2} w\cos \pi w \, dw$
+					\vs{1}
+					
+				\item $\ds \int_1^{\sqrt{3}} \arctan\lrpar{\dfrac{1}{y}}\, dy$
+					\vs{1}
+					\newpage
+					
+				\item $\ds \int_1^2 \dfrac{(\ln x)^2}{x^3}\, dx$
+					\vs{1}
+					
+				\item $\ds \int_0^{\pi/3} \sin x\ln (\cos x)\, dx$
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+			\newpage
+			
+		\begin{ex}
+			Evaluate $\ds \int \cos (\ln x)\, dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find $\ds \int_0^\pi e^{\cos t}\sin 2t\, dt$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+	\subsection*{After Class Activities}
+	\addcontentsline{toc}{subsection}{After Class Activities}
+		\begin{ex}
+			Evaluate $\ds \int e^{\sqrt{x}}\, dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate $\ds \int_1^2 x^4 (\ln x)^2\, dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find $\ds \int (\arcsin x)^2\, dx$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Evaluate $\ds \int \ln (\sqrt{x})\, dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Prove the reduction formula: $\ds \int (\ln x)^n\, dx = x(\ln x)^n - n\int (\ln x)^{n-1}\, dx$
+		\end{ex}
+			\vs{1}
+\clearpage
+\end{document}

@@ -1,0 +1,294 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-26">
+			<title>Implicit Differentiation</title>
+			
+			<objectives>
+				<ul>
+					<li>
+						Identify situations for which implicit differentiation is preferable to explicit differentiation
+					</li>
+					<li>
+						Use implicit differentiation to compute and use first and second derivatives
+					</li>
+					
+					
+				</ul>
+			</objectives>
+			<subsection xml:id="section-26-beforeclass">
+				<title>Before Class</title>
+				
+				<figure>
+					<caption>Pre-Class Video 1</caption>
+					<url href = "https://mymedia.ou.edu/media/2.6-1/1_iw3gx2a8"/>
+				</figure>
+				
+				<subsubsection xml:id="section-26-idea">
+					<title>The Idea</title>
+					
+					<example><statement>
+						Consider the equation <m>x^2 + y^2 = 1</m>.
+						<ol label="a">
+							<li> 
+								<m>x^2 + y^2 = 1</m> is called an <em>implicit equation</em>.  Why is this considered implicit and not <em>explicit</em>?
+							</li>
+								
+							<li> 
+								Write <m>x^2 + y^2 = 1</m> in an explicit form.
+							</li>								
+						</ol>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li> 
+								<m>y</m> can't be written in terms of a single equation, i.e. it's not a function of <m>x</m>
+							</li>
+								
+							<li> 
+								<m>y = \pm \sqrt{1-x^2}</m>
+							</li>								
+						</ol>
+					</solution>
+					</example>
+					<example><statement>
+						Consider the circle of radius 4, centered at the origin, given by the implicit equation <m>x^2 + y^2 = 16</m>.
+						<ol label="a">
+							<li> 
+								Rewrite the equation using that <m>y = y(x)</m> (that is, <m>y</m> is a function of <m>x</m>)
+							</li>
+								
+							<li> 
+								Why would we need to use the chain rule in order to take this derivative?  
+							</li>
+								
+							<li> 
+								Take the derivative of both sides, using <m>\dfrac{dy}{dx}</m> for the derivative of <m>y(x)</m>
+							</li>
+								
+							<li> 
+								Find <m>\dfrac{dy}{dx}</m>.
+							</li>
+						</ol>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li> 
+								<m>x^2 + (y(x))^2 = 4</m>
+							</li>
+								
+							<li> 
+								There's function composition  
+							</li>
+								
+							<li> 
+								<m>2x+2(y(x))\cdot \dfrac{dy}{dx} = 0</m>
+							</li>
+								
+							<li> 
+								<m>\dfrac{dy}{dx} = -\dfrac{x}{y(x)} = - \dfrac{x}{y}</m>
+							</li>
+						</ol>
+					</solution>
+					</example>
+					
+					<example><statement>
+						Use implicit differentiation to find <m>\dfrac{dy}{dx}</m> for the implicit equation <m>x^3 + y^3 = x</m>
+					</statement>
+					<solution>
+						<m>\dfrac{dy}{dx} = \dfrac{1-3x^2}{3(y(x))^2} = \dfrac{1-3x^2}{3y^2}</m>
+					</solution>
+					</example>	
+				</subsubsection>
+				
+			</subsection>
+			<subsection xml:id="section-26-preclass">
+				<title>Pre-Class Activities</title>
+				
+				<example><statement>
+					How can you tell if you are looking at an <em>implicit</em> equation or an <em>explicit</em> equation?
+				</statement>
+				<solution>
+					Answers vary
+				</solution>
+				</example>
+					
+				<example><statement>
+					<ol label="a">
+						<li>
+							Find <m>\dfrac{dy}{dx}</m> for the expression <m>\sqrt{x} + \sqrt{y} = 1</m>, and find the slope of the tangent line at the point <m>(0,1)</m>
+						</li>
+							
+						<li>
+							Use your answer in (a) to write an equation for the tangent line to the curve at the point <m>(0,1)</m>.
+						</li>
+					</ol>
+				</statement>
+				<solution>
+					<ol label="a">
+						<li>
+							<m>\dfrac{dy}{dx} = -\dfrac{\sqrt{y}}{\sqrt{x}}</m>, so <m>\dfrac{dy}{dx}\bigg\rvert_{x=2,y=2} = -1</m>
+						</li>
+							
+						<li>
+							<m>y = -x+4</m>
+						</li>
+					</ol>
+				</solution>
+				</example>
+				
+			</subsection>
+			<subsection xml:id="section-26-inclass">
+				<title>In Class</title>
+				
+				<example><statement>
+					<ol label="a">
+						<li>
+							Find the derivative of <m>x^2+2y^2=9</m> at the point <m>(1,2)</m>
+						</li>
+						<li>
+							Find the equation of the tangent line to the curve at this point.
+						</li>
+					</ol>
+				</statement>
+				<solution>
+					<ol label="a">
+						<li>
+							<m>\dfrac{dy}{dx} = -\dfrac{x}{2y}</m>, so <m>\dfrac{dy}{dx}\bigg\rvert_{x=1,y=2} = -\dfrac{1}{4}</m>
+						</li>
+						<li>
+							<m>y =-\dfrac{1}{4}x + \dfrac{9}{4}</m>
+						</li>
+					</ol>
+				</solution>
+				</example>
+				
+				<example><statement>
+					Find all points where the tangent line to the curve <m>x^4 + y^4 = 16</m> is horizontal.
+				</statement>
+				<solution>
+					<m>(0,\pm 2)</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Find <m>y'</m>, if <m>\sin (x-y) = y^2\cos x</m>
+				</statement>
+				<solution>
+					<m>y' = \dfrac{\cos(x-y)+y^2\sin x}{2y\cos x-\cos(x-y)}</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Find <m>y'</m>, if <m>\dfrac{x^2}{x+y} = y^2 + 1</m>
+				</statement>
+				<solution>
+					<m>y' = \dfrac{2x^2+2xy-x^2}{2y(x+y)^2+x^2}</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Find <m>\dfrac{dy}{dx}</m> if <m>\sqrt{xy} = 1 + x^2y</m>
+				</statement>
+				<solution>
+					<m>y' = \dfrac{\dfrac{1}{2}(xy)y^{-1/2}-2xy}{x^2-\dfrac{1}{2}(xy)^{-1/2}}</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Find the equation of the tangent line to the curve <m>y\sin 2x = x\cos 2y</m> at the point <m>\lrpar{\dfrac{\pi}{2},\dfrac{\pi}{4}}</m>.
+				</statement>
+				<solution>
+					<m>y = \dfrac{1}{2}x</m>
+				</solution>
+				</example>
+					
+
+				<example><statement>
+					Find <m>\dfrac{dy}{dx}</m> for the equation <m>xy = \sqrt{x^2+y^2}</m>
+				</statement>
+				<solution>
+					<m>\dfrac{dy}{dx} = \dfrac{x(x^2+y^2)^{-1/2}-y}{x-y(x^2+y^2)^{-1/2}}</m>
+				</solution></example>
+
+
+				<example><statement>
+					Find <m>y''</m>, if <m>x^2 + 4y^2 = 4</m>
+				</statement>
+				<solution>
+					<m>y'' = \dfrac{-4y-\dfrac{x^2}{y}}{16y^2}</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Find <m>y''</m> if <m>\sin y + \cos x = 1</m>
+				</statement>
+				<solution>
+					<m>y''= \dfrac{\cos x\cos y + \sin^2 x\tan y}{\cos^2y}</m>
+				</solution>
+				</example>
+				
+			</subsection>
+			<subsection xml:id="section-26-afterclass">
+				<title>After Class Activities</title>
+				
+				
+				<example><statement>
+					Find <m>\dfrac{dy}{dx}</m> for the equation <m>x^4 + x^2y^2 + y^3 = 5</m>
+				</statement>
+				<solution>
+					<m>\dfrac{dy}{dx} = \dfrac{-4x-2xy^2}{2x^2y+3y^2}</m>
+				</solution>
+				</example>	
+					
+				<example><statement>
+					Find <m>\dfrac{dy}{dx}</m> for the equation <m>\sqrt{x+y} = x^3 + y^3</m>
+				</statement>
+				<solution>
+					<m>\dfrac{dy}{dx} = \dfrac{\dfrac{1}{2}(x+y)^{-1/2}-3x^2}{3y^2-\dfrac{1}{2}(x+y)^{-1/2}}</m>
+				</solution>
+				</example>	
+					
+				<example><statement>
+					If <m>f(x) + x^2[f(x)]^3 = 10</m> and <m>f(1) = 2</m>, find <m>f'(1)</m>.
+				</statement>
+				<solution>
+					<m>f'(1) = -\dfrac{16}{13}</m>
+				</solution>
+				</example>
+				
+				<example><statement>
+					If <m>x^2 + xy + y^3 = 1</m>, find the value of <m>y''</m> at input <m>x = 1</m>.
+				</statement>
+				<solution>
+					<m>y''\rvert_{x=1,y=0} = -2</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Show that the tangent line to the ellipse 
+						<me>
+							\dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} = 1
+						</me>
+					at the point <m>(x_0,y_0)</m> can be written as
+						<me>
+							\dfrac{xx_0}{a^2} + \dfrac{yy_0}{b^2} = 1
+						</me>
+				</statement>
+				<solution>
+					<p>
+						First note that by clearing fractions we get <m>b^2x^2+a^2y^2 = a^2b^2</m>.  Taking the implicit derivative, we see that <m>2b^2x+2a^2yy' = 0</m> so that <m>y' = -\dfrac{b^2x}{a^2y}</m>
+					</p>
+					<p>
+						Now, the equation of the tangent line can be written as <m>y-y_0 = -\dfrac{b^2}{a^2}\lrpar{\dfrac{x_0}{y_0}}(x-x_0)</m>.  Simplifying by clearing fractions gives <m>a^2yy_0-a^2y_0^2=-b^2xx_0 + b^2x_0^2</m>.  Rewriting as <m>a^2yy_0 + b^2xx_0 = b^2x_0^2+a^2y_0^2</m> and dividing by <m>a^2b^2</m> gives 
+							<me>
+								\dfrac{xx_0}{a^2} + \dfrac{yy_0}{b^2} = \dfrac{x_0^2}{a_0^2} + \dfrac{y_0^2}{b_0^2}
+							</me>
+					</p>
+					<p>
+						Using the relationship <m>\dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} = 1</m>, we conclude that <m>\dfrac{xx_0}{a^2} + \dfrac{yy_0}{b^2} = 1</m>
+					</p>
+				</solution>
+				</example>
+			</subsection>
+		</section>
+		

@@ -1,0 +1,668 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-62">
+	<title>Exponential Functions &amp; Derivatives</title>
+	<objectives>
+		<ul>
+			<li>
+				Identify the general exponential function <m>y=b^x</m> for any base <m>b >0,b\neq 1</m> and its basic properties (domain, range, graphical behavior depending on value of <m>b</m>), and apply rules of exponents to exponential functions
+			</li>
+			<li>
+				Evaluate limits of functions involving exponential expressions and analyze the end behavior of those functions
+			</li>
+			<li>
+				Sketch and identify transformations of exponential functions, especially as examples of exponential growth/decay in real-world contexts
+			</li>
+			<li>
+				Recognize and interpret the number <m>e</m> in terms of limits, derivatives, and geometry
+			</li>
+			<li>
+				Compute derivatives and antiderivatives of functions involving natural exponential expressions and use qualitative techniques to analyze key behavior of those functions (extrema, concavity, etc.)
+			</li>
+			
+		</ul>
+	</objectives>
+
+	<subsection xml:id="section-62-beforeclass">
+		<title>Before Class</title>
+		<figure>
+			<caption>Pre-Class Video 1</caption>
+			<!--
+			<url href = ""/>
+			-->
+		</figure>
+
+		<subsubsection xml:id="section-62-exponential-functions">
+			<title>Exponential Functions</title>
+			
+			<definition>
+				<title>Exponential Function</title>
+				<idx>Exponential Function</idx>
+				<statement>
+					<p>
+						An <term>exponential function</term> is a function of the form <m>f(x) = b^x</m>, where <m>b</m> is a positive constant.
+					</p>
+				</statement>
+			</definition>
+
+			<assemblage>
+				<title>Properties of Exponential Functions</title>
+				<p>
+					Let <m>f(x) = b^x</m>
+				</p>
+				<p>
+					<ul>
+						<li>
+							Domain: <m>(-\infty,\infty)</m>
+						</li>
+						<li>
+							Range: <m>[0,\infty)</m>
+						</li>
+						<li>
+							If <m>b\gt 1</m>, then <m>f(x)</m> is increasing
+						</li>
+						<li>
+							If <m>0\lt b \lt 1</m>, then <m>f(x)</m> is decreasing
+						</li>
+						<li>
+							<m>\ds \lim_{x\to \infty} f(x) = 
+								\begin{cases} 
+									\infty &amp; \text{if } b\gt 1 \\ 
+									0 &amp; \text{if } 0\lt b\lt 1
+								\end{cases}
+							</m>
+						</li>
+						<li>
+							<m>\ds \lim_{x\to -\infty} f(x) = 
+								\begin{cases} 
+									0 &amp; \text{if } b\gt 1 \\ 
+									\infty &amp; \text{if } 0\lt b\lt 1				
+								\end{cases}
+							</m>
+						</li>
+					</ul>
+				</p>
+			</assemblage>
+
+			<example>
+				<statement>
+					<p>
+						For the following functions, find the limits and sketch the graph.
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								<m>f(x) = 2(1.2^x)+3</m>
+							</li>
+							<li>
+								<m>g(x) = 3^{-x} -1</m>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									<m>\ds \lim_{x\to -\infty} f(x) = 3</m> and <m>\ds \lim_{x\to\infty} f(x) = \infty</m>
+								</p>
+								<p>
+									<image>
+										<description>
+											A graph of the function <m>f(x) = 2(1.2^x) + 3</m>
+										</description>
+										<latex-image>
+											<![CDATA[ 
+											\begin{tikzpicture}
+												\begin{axis}[
+												axis x line = middle,
+													axis y line = middle,
+													every axis y label/.style={at={(ticklabel cs:1.1)}},
+												y label style={at={(axis description cs:0,1.1)},anchor=north},
+													ylabel = {$y$},
+													every axis x label/.style= {at ={(ticklabel cs:1)}},
+												x label style={at={(axis description cs:1.1,0)},anchor=east},
+													xlabel = {$x$},
+												xmin=0,xmax=10,
+												ymin=0,
+												xtick = {0,...,10},
+												]
+												\addplot[thick,smooth,domain = 0:10] {2*1.2^x + 3};
+												\end{axis}
+											\end{tikzpicture}
+											]]>
+										</latex-image>
+									</image>
+								</p>
+							</li>
+							<li>
+								<p>
+									<m>\ds \lim_{x\to -\infty} g(x) = \infty</m> and <m>\ds \lim_{x\to\infty} g(x) = -1</m>
+								</p>
+								<p>
+									<image>
+										<description>
+											A graph of the function <m>f(x) = 3^{-x}-1</m>
+										</description>
+										<latex-image>
+											<![CDATA[ 
+											\begin{tikzpicture}
+												\begin{axis}[
+												axis x line = middle,
+													axis y line = middle,
+													every axis y label/.style={at={(ticklabel cs:1.1)}},
+												y label style={at={(axis description cs:.5,1.1)},anchor=north},
+													ylabel = {$y$},
+													every axis x label/.style= {at ={(ticklabel cs:1)}},
+												x label style={at={(axis description cs:1.1,.165)},anchor=east},
+													xlabel = {$x$},
+												xmin=-3,xmax=3,
+												ymin = -5,
+												ytick ={-5,5,10,15,20,25},
+												xtick = {-3,-2,-1,1,2,3},
+												]
+												\addplot[thick,smooth,domain = -3:3] {3^(-x) -1};
+												\end{axis}
+											\end{tikzpicture}
+											]]>
+										</latex-image>
+									</image>
+								</p>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
+
+			<definition>
+				<title>Euler's Constant (<m>e</m>)</title>
+				<idx><m>e</m></idx>
+				<idx>Euler's constant</idx>
+				<statement>
+					<p>
+						<m>e</m> is defined to the number for which <m>\ds \lim_{h\to 0} \dfrac{e^h-1}{h}=1</m>
+					</p>
+				</statement>
+			</definition>
+		</subsubsection>
+
+		<subsubsection xml:id="section-62-exponentials-calculus">
+			<title>Calculus of Exponentials</title>
+			
+			<assemblage>
+				<title>Derivative of an Exponential (First Attempt)</title>
+				<p>
+					If <m>f(x) = b^x</m>, then <m>f'(x) = f'(0)b^x</m>
+				</p>
+			</assemblage>
+			<proof>
+				<p>
+					Using the definition of the derivative, we have 
+					<me>
+						\ds f'(x) = \lim_{h\to 0} \dfrac{b^{x+h}-b^x}{h} = \lim_{h\to 0} \dfrac{b^x(b^h-1)}{h} = b^x\cdot \lim_{h\to 0} \dfrac{b^h-1}{h}
+					</me>
+					Now, 
+					<me>
+						\ds f'(0) = \lim_{h\to 0} \dfrac{f(0+h)-f(0)}{h} = \lim_{h\to 0} \dfrac{b^{0+h}-b^0}{h} = \lim_{h\to 0} \dfrac{b^h-1}{h}
+					</me>
+					So we conclude that <m>f'(x) = f'(0)b^x</m>
+					
+				</p>
+			</proof>
+
+			<p>
+				This means we have the following interpretation of <m>f(x) = e^x</m>:
+			</p>
+			<assemblage>
+				<title>Special Meaning of <m>e</m></title>
+				<p>
+					<m>f(x) = e^x</m> is the unique exponential function whose tangent line at the point <m>(0,1)</m> is exactly 1, i.e. <m>f'(0) = 1</m>
+				</p>
+			</assemblage>
+
+			<assemblage>
+				<title>Derivative of <m>e^x</m></title>
+				<p>
+					<m>\dfrac{d}{dx}\left[e^x\right] = e^x</m>
+				</p>
+			</assemblage>
+
+			<assemblage>
+				<title>Antiderivative of <m>e^x</m></title>
+				<p>
+					<m>\ds \int e^x\, dx = e^x + C</m>
+				</p>
+			</assemblage>
+		</subsubsection>
+	</subsection>
+
+	<subsection xml:id="section-62-preclass">
+		<title>Pre-Class Activities</title>
+
+		<example>
+			<statement>
+				<p>
+					Write the domain of the function:
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<m>f(x) = \dfrac{1-e^{x^2}}{1-e^{4-x^2}}</m>
+						</li>
+						<li>
+							<m>g(x) = \dfrac{1+x}{3^{\sin x}}</m>
+						</li>
+						<li>
+							<m>h(t) = \sqrt{4^t - 16}</m>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a">
+						<li>
+							<m>(-\infty,-2)\cup (-2,2)\cup (2,\infty)</m>
+						</li>
+						<li>
+							<m>(-\infty,\infty)</m>
+						</li>
+						<li>
+							<m>[2,\infty)</m>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</example>
+		
+		<example>
+			<statement>
+				<p>
+					Find the indicated limit:
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<m>\ds \lim_{x\to \infty} (1.0001)^x</m>
+						</li>
+						<li>
+							<m>\ds \lim_{x\to \infty} \dfrac{e^{3x}-e^{-3x}}{e^{3x} + e^{-3x}}</m>
+						</li>
+						<li>
+							<m>\ds \lim_{x\to \infty} (e^{-2x}\sin x)</m>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a">
+						<li>
+							<m>\ds \lim_{x\to \infty} (1.0001)^x = \infty</m>
+						</li>
+						<li>
+							<m>\ds \lim_{x\to \infty} \dfrac{e^{3x}-e^{-3x}}{e^{3x} + e^{-3x}} = 1</m>
+						</li>
+						<li>
+							<m>\ds \lim_{x\to \infty} (e^{-2x}\sin x) = 0</m>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</example>
+		
+		<example>
+			<statement>
+				<p>
+					Find the derivative of the function:
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<m>f(x) = e^4</m>
+						</li>
+						<li>
+							<m>g(r) = e^r + r^e</m>
+						</li>
+						<li>
+							<m>f(x) = \dfrac{e^x}{1+e^x}</m>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a">
+						<li>
+							<m>f'(x) = 0</m>
+						</li>
+						<li>
+							<m>g'(r) = e^r + er^{e-1}</m>
+						</li>
+						<li>
+							<m>f'(x) = \dfrac{(1+e^x)(e^x)-(e^x)(e^x)}{(1+e^x)^2}</m>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</example>
+		
+		<example>
+			<statement>
+				<p>
+					Find the equation of the tangent line to the curve <m>y = xe^x</m> at the point <m>(1,e)</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>y =2ex-e</m>
+				</p>
+			</solution>
+		</example>
+			
+		<question>
+			<statement>
+				<p>
+					Use this space to write any questions or concerns you have from the pre-class portion of this section.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Answers vary
+				</p>
+			</solution>
+		</question>
+	</subsection>
+
+	<subsection xml:id="section-62-inclass">
+		<title>In Class</title>
+		<subsubsection xml:id="section-62-examples">
+            <title>Examples</title>
+
+			<example>
+				<statement>
+					<p>
+						Compute <m>f'(x)</m>, if <m>f(x) = e^{\tan x}</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>f'(x) = e^{\tan x}\cdot \sec^2 x</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Compute <m>f'(x)</m>, if <m>f(x) = \tan(e^x)</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>f'(x) = \sec^2(e^x)\cdot e^x</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find <m>y'</m> if <m>y=e^{-6x}\cos(2x)</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>y'=(-6e^{-6x})(\cos 2x) +(e^{-6x})(-2\sin 2x)</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find the absolute maximum and absolute minimum of <m>y=xe^{-x}</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						Absolute max is at <m>x=1</m> and there is no absolute min
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find <m>\dfrac{dy}{dx}</m>, if <m>e^{x/y} = y-x</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\dfrac{dy}{dx} = \dfrac{ye^{x/y}+y^2}{y^2+xe^{x/y}}</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Compute the derivatives:
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								<m>y = x^2e^{-1/x}</m>
+							</li>
+							<li>
+								<m>g(x) = e^{x^2-x}</m>
+							</li>
+							<li>
+								<m>f(t) = \sqrt{1+te^{-2t}}</m>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								<m>y'= 2xe^{-1/x} + (x^2)\lrpar{\dfrac{1}{x^2}e^{-1/x}}</m>
+							</li>
+							<li>
+								<m>g'(x) = (2x-1)e^{x^2-x}</m>
+							</li>
+							<li>
+								<m>f'(t) = \dfrac{1}{2}(1+te^{-2t})^{-1/2}(e^{-2t}-2te^{-2t})</m>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find the absolute maximum and absolute minimum of <m>f(x) = xe^{-x^2/8}</m> on <m>[-1,4]</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						Absolute max occurs at <m>\lrpar{2,2e^{-1/2}}</m> and aboslute min occurs at <m>\lrpar{-1,-e^{-1/8}}</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Evaluate the integral:
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								<m>\ds \int_0^1 (x^e + e^x)\, dx</m>
+							</li>
+							<li>
+								<m>\ds\int x^3e^{x^4}\, dx</m>
+							</li>
+							<li>
+								<m>\ds\int e^x\sqrt{1+e^x}\, dx</m>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								<m>\ds \int_0^1 (x^e + e^x)\, dx = \dfrac{1}{e+1}+e-1</m>
+							</li>
+							<li>
+								<m>\ds\int x^3e^{x^4}\, dx = \dfrac{1}{4}e^{4x}+C</m>
+							</li>
+							<li>
+								<m>\ds\int e^x\sqrt{1+e^x}\, dx = \dfrac{2}{3}(1+e^x)^{3/2} + C</m>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Compute <m>\ds \int_1^2 \dfrac{e^{1/x}}{x^2}\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int_1^2 \dfrac{e^{1/x}}{x^2}\, dx = e-e^{1/2}</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find <m>f(x)</m> if <m>f''(x) = 3e^x+5\sin x</m>, <m>f(0)=1</m>, and <m>f'(0)=2</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>f(x)= 3e^x-5\sin x + 4x-2</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						The <term>error function</term>, <m>\ds \text{erf}(x) = \dfrac{2}{\sqrt{\pi}}\int_0^x e^{-t^2}\,dt</m> is a useful function in probability, statistics, and engineering.  Show that 
+						<me>\ds \int_a^b e^{-t^2}\, dt = \dfrac{1}{2}\sqrt{\pi}\left[\text{erf}(b) - \text{erf}(a)\right]</me>.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						Rearranging, we have
+							<me>
+								\dfrac{\sqrt{\pi}}{2}\text{erf}(x) = \ds \int_0^x e^{-t^2}\, dt
+							</me>
+						So, <m>\ds \int_0^a e^{-t^2}\, dt = \dfrac{\sqrt{\pi}}{2}\text{erf}(a)</m> and <m>\ds \int_0^b e^{-t^2}\, dt = \dfrac{\sqrt{\pi}}{2}\text{erf}(b)</m>. Now, using properties of integrals, we have 
+							<me>
+								\ds \int_a^b e^{-t^2}\, dt = -\int_0^a e^{-t^2}\, dt + \int_0^b e^{-t^2}\,dt = \dfrac{1}{2}\sqrt{\pi}\left[\text{erf}(b) - \text{erf}(a)\right]
+							</me>
+					</p>
+				</solution>
+			</example>
+        </subsubsection>
+	</subsection>
+
+	<subsection xml:id="section-62-afterclass">
+		<title>After Class Activities</title>
+
+		<example>
+			<statement>
+				<p>
+					Show that the function <m>y = e^x + e^{-x/2}</m> satisfies the differential equation <m>2y'' - y' - y = 0</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Compute <m>y'</m> and <m>y''</m>:
+						<me>y' = e^x -\dfrac{1}{2}e^{-x/2}</me>
+						<me>y'' = e^x + \dfrac{1}{4}e^{-x/2}</me>
+					Now, plugging in for <m>y''</m> and <m>y'</m>, we have 
+						<me>2(e^x + \dfrac{1}{4}e^{-x/2}) - (e^x -\dfrac{1}{2}e^{-x/2}) - (e^x + e^{-x/2})</me>
+					which does equal 0.
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Find an equation of the tangent line to the curve <m>xe^y + ye^x = 1</m> at the point <m>(0,1)</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>y=-(e+1)x + 1</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Compute <m>\dfrac{d^{1000}}{dx^{1000}}\left[xe^{-x}\right]</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>\dfrac{d^{1000}}{dx^{1000}}\left[xe^{-x}\right] = -1000e^{-x} +xe^{-x}</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					If <m>f(x) = 3 + x + e^x</m>, find <m>(\inv{f})'(4)</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>(\inv{f})'(4) = \dfrac{1}{2}</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Evaluate <m>\ds \lim_{x\to \pi} \dfrac{e^{\sin x} - 1}{x-\pi}</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>\ds \lim_{x\to \pi} \dfrac{e^{\sin x} - 1}{x-\pi} = -1</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Find the volume of the solid obtained by rotating the region bounded by the curves <m>y = e^x</m>, <m>y = 0</m>, <m>x = 0</m>, and <m>x = 1</m> about the <m>x-</m>axis.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					The volume is <m>\dfrac{\pi}{2}[e^2-1]</m>
+				</p>
+			</solution>
+		</example>
+	</subsection>
+</section>

@@ -1,0 +1,510 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-23">
+			<title>Differentiation Formulas</title>
+			
+				<objectives>
+					<ul>
+						<li>
+							Compute derivatives using the following differentiation formulas: constant rule, power rule, constant multiple rule, sum/difference rule, product rule, quotient rule
+						</li>
+						<li>
+							Compute derivatives using multiple algebraic, graphical, or numerical representations
+						</li>
+						
+						
+					</ul>
+				</objectives>
+			<subsection xml:id="section-23-beforeclass">
+				<title>Before Class</title>
+				
+				<figure>
+					<caption>Pre-Class Video 1</caption>
+					<url href = "https://mymedia.ou.edu/media/2.3-1/1_ra9y8bup"/>
+				</figure>
+				<figure>
+					<caption>Pre-Class Video 2</caption>
+					<url href = "https://mymedia.ou.edu/media/2.3-2/1_w84odhyp"/>
+				</figure>
+
+				
+				<subsubsection xml:id="section-23-constant">
+					<title>Constant Functions</title>
+					
+					<example><statement>
+						Use the definition of the derivative to find <m>f'(x)</m>, where <m>f(x) = 2</m>.
+					</statement>
+					<solution>
+						0
+					</solution>
+					</example>
+					
+					<example><statement>
+						Find the derivative of an arbitrary constant <m>c</m>.
+					</statement>
+					<solution>
+						0
+					</solution>
+					</example>
+					
+					<theorem>
+						<title>Constant Rule</title>
+						<statement>
+							If <m>f(x) = c</m>, <m>c</m> a constant, then <m>\dfrac{d}{dx}\left[f(x)\right] = 0</m>
+						</statement>
+					</theorem>
+				</subsubsection>
+
+				<subsubsection xml:id="section-23-power">
+					<title>Power Functions</title>
+					
+					<example><statement>
+						Find the derivative of <m>f(x) = x</m>
+					</statement>
+					<solution>
+						1
+					</solution>
+					</example>
+					
+					<example><statement>
+						Find the derivative of <m>f(x) = x^2</m>
+					</statement>
+					<solution>
+						<m>2x</m>
+					</solution>
+					</example>
+						
+					<example><statement>
+						Find the derivative of <m>f(x) = x^3</m>
+					</statement>
+					<solution>
+						<m>3x^2</m>
+					</solution>
+					</example>
+					
+					<example><statement>
+						Find the derivative of <m>f(x) = x^4</m>
+					</statement>
+					<solution>
+						<m>4x^3</m>
+					</solution>
+					</example>	
+					
+					<question><statement>
+						What is the pattern in these derivatives? Look at the powers...
+					</statement>
+					<solution>
+						The powers drop to become constant multiples, and then the power gets reduced by one.
+					</solution>
+					</question>
+					
+					<theorem>
+						<title>Power Rule</title>
+						<statement>
+							If <m>f(x) = x^n</m>, then <m>\dfrac{d}{dx}\left[f(x)\right] = nx^{n-1}</m>
+						</statement>
+					</theorem>
+					
+					<example><statement>
+						Find <m>\dfrac{d}{dx}[x^{99}]</m>
+					</statement>
+					<solution>
+						<m>99x^{98}</m>
+					</solution>
+					</example>
+				</subsubsection>
+				<subsubsection xml:id="section-23-new">
+					<title>New Derivatives from Old</title>
+					
+					<example><statement>
+						Using definition of the derivative, find the derivative of <m>f(x) = 3x^2</m>
+					</statement>
+					<solution>
+						<m>6x</m>
+					</solution>
+					</example>
+						
+					<example><statement>
+						Using definition of the derivative, find the derivative of <m>f(x) = -2x^3</m>
+					</statement>
+					<solution>
+						<m>-6x^2</m>
+					</solution>
+					</example>
+					
+					<question><statement>
+						What relationship do you notice between these derivatives and the coefficients?
+					</statement>
+					<solution>
+						When there's a coefficient on a function, the derivative incorporates the coefficient
+					</solution>
+					</question>
+					
+					<theorem>
+						<title>Constant Multiple Rule</title>
+						<statement>
+							If <m>c</m> is a constant and <m>f</m> is a differentiable function, then <m>\dfrac{d}{dx}[c\cdot f(x)] = c\cdot\dfrac{d}{dx}[f(x)]</m>
+						</statement>
+					</theorem>
+					
+					<p>
+						There are three more important rules:
+					</p>
+					
+					<theorem>
+						<title>Sum/Difference Rule</title>
+						<statement>
+							If <m>f</m> and <m>g</m> are differentiable functions, then <m>\dfrac{d}{dx}[f(x)\pm g(x)] = \dfrac{d}{dx}[f(x)]\pm \dfrac{d}{dx}[g(x)]</m>
+						</statement>
+					</theorem>
+					
+					<question><statement>
+						Restate the sum/difference rule in words.
+					</statement>
+					<solution>
+						The derivative of a sum/difference is the sum/difference of derivatives
+					</solution>
+					</question>
+					
+					<theorem>
+						<title>Product Rule</title>
+						<statement>
+							If <m>f</m> and <m>g</m> are both differentiable, then
+							<me>
+								\dfrac{d}{dx}[f(x)\cdot g(x)] = \dfrac{d}{dx}[f(x)]\cdot g(x) + f(x)\cdot \dfrac{d}{dx}[g(x)]
+							</me>
+						</statement>
+					</theorem>
+					
+					<example><statement>
+						Compute the derivative of <m>f(x) = x^3\cdot x^5</m>
+					</statement>
+					<solution>
+						<m>f'(x) = 3x^2\cdot x^5 + 5x^4\cdot x^3 = 8x^7</m>
+					</solution>
+					</example>
+					
+					<theorem>
+						<title>Quotient Rule</title>
+						<statement>
+							If <m>f</m> and <m>g</m> are both differentiable (with <m>g\neq 0</m>), then
+							<me>
+								\dfrac{d}{dx}\left[\dfrac{f(x)}{g(x)}\right] = \dfrac{\dfrac{d}{dx}[f(x)]\cdot g(x) - f(x)\cdot \dfrac{d}{dx}[g(x)]}{(g(x))^2}
+							</me>
+						</statement>
+					</theorem>
+					
+					<example><statement>
+						Compute the derivative of <m>g(x) = \dfrac{x}{x+1}</m>
+					</statement>
+					<solution>
+						<m>g'(x) = \dfrac{1}{(x+1)^2}</m>
+					</solution>
+					</example>
+				</subsubsection>
+			</subsection>
+			<subsection xml:id="section-23-preclass">
+				<title>Pre-Class Activities</title>
+				
+				<example><statement>
+					Find the derivative of the function <m>f(x) = 2^{40}</m>
+				</statement>
+				<solution>
+						<m>f'(x) = 0</m>
+					</solution>
+				</example>
+					
+				<example><statement>
+					Find the derivative of the function <m>f(t) = 1.4t^5-2.5t^2+6.7</m>
+				</statement>
+				<solution>
+						<m>f'(t) = 7t^4-5t</m>
+					</solution>
+				</example>
+					
+				<example><statement>
+					Find the derivative of the function <m>B(y) = cy^{-6}</m>, where <m>c</m> is an arbitrary constant
+				</statement>
+				<solution>
+						<m>B'(y) = -6cy^{-5}</m>
+					</solution>
+				</example>
+
+				<example><statement>
+					Find the derivative of the function <m>y = \dfrac{x^2 + 4x+3}{\sqrt{x}}</m>
+				</statement>
+				<solution>
+						<m>\dfrac{dy}{dx} = \dfrac{3}{2}x^{1/2} + 2x^{-1/2} - \dfrac{3}{2}x^{-3/2}</m>
+					</solution>
+				</example>
+			</subsection>
+			<subsection xml:id="section-23-inclass">
+				<title>In Class</title>
+				
+				
+				<example><statement>
+					For the following functions, find the derivatives.  Then, find an equation for the tangent line to the function at the given point.
+					<ol label="a">
+						<li> <m>S(p) = \sqrt{p}-p</m> at <m>(9,-6)</m>
+							</li>
+							
+						<li> <m>F(r) = \dfrac{5}{r^3}</m> at <m>(-2,-5/8)</m>
+							</li>
+							
+						<li> <m>A(r) = \pi r^2</m> at <m>(1,\pi)</m>
+							</li>
+					</ol>
+				</statement>
+				<solution>
+					<ol label="a">
+						<li> <m>S'(p) = \dfrac{1}{2}p^{-1/2} - 1</m> and the tangent line <m>y=-\dfrac{5}{6}x + \dfrac{3}{2}</m>
+							</li>
+							
+						<li> <m>F'(r) = -15r^{-4}</m> and the tangent line is <m>y=-\dfrac{15}{16}x -\dfrac{5}{2}</m>
+							</li>
+							
+						<li> <m>A'(r) = 2\pi r</m> and the tangent line is <m>y=2\pi x -\pi</m>
+							</li>
+					</ol>
+				</solution></example>
+
+				<example><statement>
+					Find the derivative of the following functions.
+					<ol label="a">
+						<li> <m>F(y) = \lrpar{\dfrac{1}{y^2}-\dfrac{3}{y^4}}(y+5y^3)</m>
+							</li>
+							
+						<li> <m>J(v) = (v^3-2v)(v^{-4}+v^{-2})</m>
+							</li>
+							
+						<li> <m>f(x) = \dfrac{1+2x}{3-4x}</m>
+							</li>
+							
+						<li> <m>Y(t)=\dfrac{1}{t^3+2t^2-1}</m>
+							</li>
+							
+						<li> <m>h(u) = \dfrac{(u+2)^2}{1-u}</m>
+							</li>
+							
+						<li> <m>f(t) = \dfrac{\sqrt[3]{t}}{t-3}</m>
+							</li>
+					</ol>
+				</statement>
+				<solution>
+					<ol label="a">
+						<li> <m>F'(y) = (-2y^{-3}+12y^{-5})(y+5y^3) + (y^{-2}-3y^{-4})(1+15y^2)</m>
+							</li>
+							
+						<li> <m>J'(v) = (3v^2-2)(v^{-4}+v^{-2})+(v^3-2v)(-4v^{-5}-2v^{-3})</m>
+							</li>
+							
+						<li> <m>f'(x) = \dfrac{(3-4x)(2)-(1+2x)(-4)}{3-4x}</m>
+							</li>
+							
+						<li> <m>Y'(t)=-\dfrac{-3t^2-4t}{(t^3+2t^2-1)^2}</m>
+							</li>
+							
+						<li> <m>h'(u) = \dfrac{(2u+4)(1-4u)-(-1)(u^2+4u+4)}{(1-u)^2}</m>
+							</li>
+							
+						<li> <m>f'(t) = \dfrac{\lrpar{\dfrac{1}{3}t^{-2/3}}(t-3)-(\sqrt[3]{t})(1)}{(t-3)^2}</m>
+							</li>
+					</ol>
+				</solution>
+				</example>
+				
+				<example><statement>
+					Let <m>f(x) = 2x^3-x^2+1</m>.  The <em>normal line</em> through a point is the line which is perpendicular to the tangent line.
+					<ol label="a">
+						<li>
+							Find the equation of the tangent line to <m>f(x)</m> at <m>(1,3)</m>.
+						</li>
+							
+						<li>
+							Find the equation of the normal line to <m>f(x)</m> at <m>(1,3)</m>.
+						</li>
+					</ol>
+				</statement>
+				<solution>
+					<ol label="a">
+						<li>
+							<m>y=4x-1</m>
+						</li>
+							
+						<li>
+							<m>y=-\dfrac{1}{4}x+\dfrac{13}{4}</m>
+						</li>
+					</ol>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Let <m>f(x) = \dfrac{2x}{x+1}</m>. Find the equation of the tangent line to <m>f(x)</m> at <m>(1,1)</m>.
+				</statement>
+				<solution>
+					<m>y=x</m>
+				</solution>
+				</example>
+
+				<example><statement>
+					If <m>H(x) = xf(x)</m>, find an expression for <m>H'(x)</m>
+				</statement>
+				<solution>
+					<m>H'(x) = f(x) + xf'(x)</m>
+				</solution>
+				</example>
+
+				<example><statement>
+					Suppose that <m>f(5) = 1</m>, <m>f'(5) = 6</m>, <m>g(5) = -3</m>, and <m>g'(5) = 2</m>.  Find
+					<ol label="a">
+						<li>
+							<m>(fg)'(5)</m>
+						</li>
+							
+						<li>
+							<m>(f/g)'(5)</m>
+						</li>
+							
+						<li>
+							<m>(g/f)'(5)</m>
+						</li>
+							
+					</ol>
+				</statement>
+				<solution>
+					<ol label="a">
+							<li>
+								<m>-16</m>
+							</li>
+								
+							<li>
+								<m>-\dfrac{20}{9}</m>
+							</li>
+								
+							<li>
+								20
+							</li>	
+						</ol>
+					</solution>
+				</example>
+				
+				<example><statement>
+					If <m>h(2) = 4</m> and <m>h'(2) = -3</m>, find <m>\dfrac{d}{dx} \lrpar{\dfrac{h(x)}{x^2}}\bigg\rvert_{x = 2}</m>
+				</statement>
+				<solution>
+					<m>\dfrac{d}{dx} \lrpar{\dfrac{h(x)}{x^2}}\bigg\rvert_{x = 2}=-\dfrac{7}{4}</m>
+				</solution>
+				</example>
+				
+				<example><statement>
+					If <m>f</m> and <m>g</m> are the functions on the graph shown, let <m>u(x) = f(x)g(x)</m> and <m>v(x) = f(x)/g(x)</m>.  Find <m>u'(1)</m> and <m>v'(5)</m>.
+					<image source="23fig1.svg"/>
+				</statement>
+				<solution>
+					<m>u'(1) = 0</m> and <m>v'(5) = -\dfrac{2}{3}</m>
+				</solution>
+				</example>
+			</subsection>
+			<subsection xml:id="section-23-afterclass">
+				<title>After Class Activities</title>
+				
+				<example><statement>
+					Suppose that <m>f(4) = 2</m>, <m>g(4) = 5</m>, <m>f'(4) = 6</m>, and <m>g'(4) = -3</m>.  Find <m>h'(4)</m> if:
+					<ol label="a">
+						<li>
+							<m>h(x) = 3f(x) + 8g(x)</m>
+						</li>
+						
+						<li>
+							<m>h(x) = f(x)g(x)</m>
+						</li>
+							
+						<li>
+							<m>h(x) = \dfrac{f(x)}{g(x)}</m>
+						</li>
+							
+						<li>
+							<m>h(x) = \dfrac{g(x)}{f(x) + g(x)}</m>
+						</li>
+					</ol>
+				</statement>
+				<solution>
+					<ol label="a">
+						<li>
+							<m>-6</m>
+						</li>
+						
+						<li>
+							<m>24</m>
+						</li>
+							
+						<li>
+							<m>\dfrac{36}{25}</m>
+						</li>
+							
+						<li>
+							<m>-\dfrac{36}{49}</m>
+						</li>
+					</ol>
+				</solution>
+				</example>
+				
+				<example><statement>
+					If <m>f</m> is a differentiable function, find an expression for the derivative of each of the following:
+					<ol label="a">
+						<li>
+							<m>y = x^3f(x)</m>
+						</li>
+							
+						<li>
+							<m>y = \dfrac{f(x)}{x}</m>
+						</li>
+							
+						<li>
+							<m>y = \dfrac{x^2}{f(x)}</m>
+						</li>
+							
+						<li>
+							<m>y = \dfrac{1 + xf(x)}{\sqrt{x}}</m>
+						</li>
+					</ol>
+				</statement>
+				<solution>
+					<ol label="a">
+						<li>
+							<m>\dfrac{dy}{dx} = 3x^2f(x) + x^3f'(x)</m>
+						</li>
+							
+						<li>
+							<m>\dfrac{dy}{dx} = \dfrac{xf'(x)-f(x)}{x^2}</m>
+						</li>
+							
+						<li>
+							<m>\dfrac{dy}{dx} = \dfrac{2xf(x)-x^2f'(x)}{[f(x)]^2}</m>
+						</li>
+							
+						<li>
+							<m>\dfrac{dy}{dx} = -\dfrac{1}{2}x^{-3/2} + \dfrac{1}{2}x^{-1/2}f(x) + x^{1/2}f'(x)</m>
+						</li>
+					</ol>
+				</solution>
+				</example>
+				
+				<example><statement>
+					For what values of <m>x</m> does the graph of <m>f(x) = x^3 + 3x^2 + x + 3</m> have a horizontal tangent?
+				</statement>
+				<solution>
+					<m>x = \dfrac{-6\pm \sqrt{24}}{6}</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Show that the vertex of any quadratic function occurs at <m>x=-\dfrac{b}{2a}</m>
+				</statement>
+				<solution>
+					A general quadratic is given by <m>f(x) = ax^2+bx+c</m>; the vertex has a horizontal tangent line, so its derivative must be zero.  Then, <m>f'(x) = 2ax + b</m> so that if <m>f'(x) = 0</m> then we have <m>2ax+b = 0\iff x = -\dfrac{b}{2a}</m>.
+				</solution>
+				</example>
+			</subsection>
+		</section>
+	

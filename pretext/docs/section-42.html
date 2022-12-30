@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-07-17T17:31:47-05:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Math 1914 - Differential &amp; Integral Calculus I The Definite Integral</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Math 1914 - Differential &amp; Integral Calculus">
+<meta property="book:author" content="Cory Wilson">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(      \newcommand{\ds}{\displaystyle}
+\newcommand{\lrpar}[1]{\left(#1\right)}
+\newcommand{\lrbrace}[1]{\left\lbrace #1 \right\rbrace}
+\newcommand{\inv}[1]{#1^{-1}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\dc}{^\circ}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="math1914.html"><span class="title">Math 1914 - Differential &amp; Integral Calculus</span></a></h1>
+<p class="byline">Cory Wilson</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-41.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch4.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-43.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-41.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch4.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section-43.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul><li><a href="colophon.html" data-scroll="colophon" class="internal">Colophon</a></li></ul>
+</li>
+<li class="link">
+<a href="ch1.html" data-scroll="ch1" class="internal"><span class="codenumber">1</span> <span class="title">Functions and Limits</span></a><ul>
+<li><a href="section-11.html" data-scroll="section-11" class="internal">Four Ways to Represent a Function</a></li>
+<li><a href="section-12.html" data-scroll="section-12" class="internal">Mathematical Models: A Catalog of Essential Functions</a></li>
+<li><a href="section-13.html" data-scroll="section-13" class="internal">New Functions from Old Functions</a></li>
+<li><a href="section-14.html" data-scroll="section-14" class="internal">The Tangent and Velocity Problems</a></li>
+<li><a href="section-15.html" data-scroll="section-15" class="internal">The Limit of a Function</a></li>
+<li><a href="section-16.html" data-scroll="section-16" class="internal">Calculating Limits Using Limit Laws</a></li>
+<li><a href="section-17.html" data-scroll="section-17" class="internal">(X) The Precise Definition of a Limit</a></li>
+<li><a href="section-18.html" data-scroll="section-18" class="internal">Continuity</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch2.html" data-scroll="ch2" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives</span></a><ul>
+<li><a href="section-21.html" data-scroll="section-21" class="internal">Derivatives and Rates of Change</a></li>
+<li><a href="section-22.html" data-scroll="section-22" class="internal">The Derivative as a Function</a></li>
+<li><a href="section-23.html" data-scroll="section-23" class="internal">Differentiation Formulas</a></li>
+<li><a href="section-24.html" data-scroll="section-24" class="internal">Derivatives of Trigonometric Functions</a></li>
+<li><a href="section-25.html" data-scroll="section-25" class="internal">The Chain Rule</a></li>
+<li><a href="section-26.html" data-scroll="section-26" class="internal">Implicit Differentiation</a></li>
+<li><a href="section-27.html" data-scroll="section-27" class="internal">(X) Rates of Changes in the Natural and Social Sciences</a></li>
+<li><a href="section-28.html" data-scroll="section-28" class="internal">Related Rates</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch3.html" data-scroll="ch3" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Differentiation</span></a><ul>
+<li><a href="section-31.html" data-scroll="section-31" class="internal">Maximum &amp; Minimum Values</a></li>
+<li><a href="section-32.html" data-scroll="section-32" class="internal">(X) The Mean Value Theorem</a></li>
+<li><a href="section-33.html" data-scroll="section-33" class="internal">How Derivatives Affect the Shape of a Graph</a></li>
+<li><a href="section-34.html" data-scroll="section-34" class="internal">Limits at Infinity &amp; Horizontal Asymptotes</a></li>
+<li><a href="section-35.html" data-scroll="section-35" class="internal">Summary of Curve Sketching</a></li>
+<li><a href="section-36.html" data-scroll="section-36" class="internal">(X) Graphing with Calculus and Calculators</a></li>
+<li><a href="section-37.html" data-scroll="section-37" class="internal">Optimization</a></li>
+<li><a href="section-38.html" data-scroll="section-38" class="internal">(X) Newton's Method</a></li>
+<li><a href="section-39.html" data-scroll="section-39" class="internal">Antiderivatives</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch4.html" data-scroll="ch4" class="internal"><span class="codenumber">4</span> <span class="title">Integrals</span></a><ul>
+<li><a href="section-41.html" data-scroll="section-41" class="internal">Areas &amp; Distance</a></li>
+<li><a href="section-42.html" data-scroll="section-42" class="active">The Definite Integral</a></li>
+<li><a href="section-43.html" data-scroll="section-43" class="internal">The Fundamental Theorem of Calculus</a></li>
+<li><a href="section-44.html" data-scroll="section-44" class="internal">Indefinite Integrals &amp; the Net Change Theorem</a></li>
+<li><a href="section-45.html" data-scroll="section-45" class="internal">The Substitution Rule</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch5.html" data-scroll="ch5" class="internal"><span class="codenumber">5</span> <span class="title">Applications of Integration</span></a><ul>
+<li><a href="section-51.html" data-scroll="section-51" class="internal">Areas Between Curves</a></li>
+<li><a href="section-52.html" data-scroll="section-52" class="internal">Volumes</a></li>
+<li><a href="section-53.html" data-scroll="section-53" class="internal">Volumes by Cylindrical Shells</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-42"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">4.2</span> <span class="title">The Definite Integral</span>
+</h2>
+<article class="objectives goal-like" id="objectives-22"><h3 class="heading"><span class="type">Objectives</span></h3>
+<ul class="disc">
+<li id="li-850"><p id="p-derived-li-850">State and use the limit definition of the definite integral to compute definite integrals of simple polynomial functions or set up integrals of more complicated functions</p></li>
+<li id="li-851"><p id="p-derived-li-851">Interpret definite integrals in terms of net signed area,and distinguish between total area and net area</p></li>
+<li id="li-852"><p id="p-derived-li-852">Identify conditions that guarantee integrability of a function on an interval</p></li>
+<li id="li-853"><p id="p-derived-li-853">Evaluate integrals by interpreting them in terms of area</p></li>
+<li id="li-854"><p id="p-derived-li-854">Use the Midpoint Rule to approximate definite integrals</p></li>
+<li id="li-855"><p id="p-derived-li-855">State, apply, and give examples to illustrate the properties of definite integrals</p></li>
+</ul></article><section class="subsection" id="section-42-beforeclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.2.1</span> <span class="title">Before Class</span>
+</h3>
+<figure class="figure figure-like" id="figure-38"><a class="external" href="https://mymedia.ou.edu/media/4.2-1/1_t1bcahd5" target="_blank"><code class="code-inline tex2jax_ignore">https://mymedia.ou.edu/media/4.2-1/1_t1bcahd5</code></a><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">38<span class="period">.</span></span><span class="space"> </span>Pre-Class Video 1</figcaption></figure><section class="subsubsection" id="section-42-definition"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">4.2.1.1</span> <span class="title">Definition of the Definite Integral</span>
+</h4>
+<article class="definition definition-like" id="definition-33"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.2.1</span><span class="period">.</span>
+</h5>Let <span class="process-math">\(f\)</span> be a function defined for <span class="process-math">\(a\leq x\leq b\text{,}\)</span> and divide <span class="process-math">\([a,b]\)</span> into <span class="process-math">\(n\)</span> subintervals of width <span class="process-math">\(\Delta x = \dfrac{b-a}{n}\text{.}\)</span>  Let<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+a=x_0,x_1,x_2,\cdots,x_{n-1},x_n=b
+\end{equation*}
+</div>be the endpoints of these subintervals, and let <span class="process-math">\(x_i^*\)</span> be any sample points in these subintervals, so that <span class="process-math">\(x_i^*\)</span> lies in the <span class="process-math">\(i\)</span>th subinterval <span class="process-math">\([x_{i-1},x_i]\text{.}\)</span>  Then, the <dfn class="terminology">definite integral</dfn> of <span class="process-math">\(f\)</span> from <span class="process-math">\(a\)</span> to <span class="process-math">\(b\)</span> is given by<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\ds \int_a^b f(x)\, dx = \sum_{n=1}^\infty f(x_i^*)\Delta x  
+\end{equation*}
+</div>provided that this limit exists and gives the same value for all possible choices of sample points.  If it does exist, we say that <span class="process-math">\(f\)</span> is <dfn class="terminology">integrable</dfn> on <span class="process-math">\([a,b]\text{.}\)</span> The sum <span class="process-math">\(\ds \sum_{n=1}^\infty f(x_i^*)\Delta x\)</span> is called a <dfn class="terminology">Riemann sum</dfn>.</article><article class="assemblage assemblage-like" id="section-42-terminology"><h5 class="heading"><span class="title">Terminology.</span></h5>
+<p id="p-183">Given the definite integral <span class="process-math">\(\ds \int_a^b f(x)\, dx\text{,}\)</span> we have some terminology:</p>
+<ul class="disc">
+<li id="li-856"><p id="p-derived-li-856"><span class="process-math">\(a\)</span> is called the <em class="emphasis">lower bound/lower limit of integration</em></p></li>
+<li id="li-857"><p id="p-derived-li-857"><span class="process-math">\(b\)</span> is called the <em class="emphasis">upper bound/upper limit of integration</em></p></li>
+<li id="li-858"><p id="p-derived-li-858"><span class="process-math">\(\ds \int\)</span> is called an <em class="emphasis">integral sign</em></p></li>
+<li id="li-859"><p id="p-derived-li-859">We use <span class="process-math">\(dx\)</span> to denote an <em class="emphasis">infinitesimal change in x</em></p></li>
+</ul></article><article class="theorem theorem-like" id="theorem-22"><h5 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">4.2.2</span><span class="period">.</span>
+</h5>If <span class="process-math">\(f\)</span> is continuous on <span class="process-math">\([a,b]\text{,}\)</span> or if <span class="process-math">\(f\)</span> has a finite number of discontinuities, then <span class="process-math">\(f\)</span> is integrable on <span class="process-math">\([a,b]\text{.}\)</span></article><article class="theorem theorem-like" id="theorem-23"><h5 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">4.2.3</span><span class="period">.</span>
+</h5>If <span class="process-math">\(f\)</span> is integrable on <span class="process-math">\([a,b]\text{,}\)</span> then <span class="process-math">\(\ds \int_a^b f(x)\, dx = \lim_{n\to\infty} \sum_{i=1}^n f(x_i)\Delta x\)</span> where <span class="process-math">\(\Delta x = \dfrac{b-a}{n}\)</span> and <span class="process-math">\(x_i = a + i\Delta x\)</span></article><article class="assemblage assemblage-like" id="section-42-interpretation"><h5 class="heading"><span class="title">Interpretation of the Integral.</span></h5>
+<p id="p-184">The definite integral <span class="process-math">\(\ds \int_a^b f(x)\, dx\)</span> can be interpreted as</p>
+<ul class="disc">
+<li id="li-860"><p id="p-derived-li-860">The total area between <span class="process-math">\(f(x)\)</span> and the <span class="process-math">\(x-\)</span>axis if <span class="process-math">\(f(x)\geq 0\)</span> on <span class="process-math">\([a,b]\)</span></p></li>
+<li id="li-861"><p id="p-derived-li-861">The net area between <span class="process-math">\(f(x)\)</span> and the <span class="process-math">\(x-\)</span>axis if <span class="process-math">\(f(x)\geq 0\)</span> and <span class="process-math">\(f(x) &lt; 0\)</span> on <span class="process-math">\([a,b]\)</span></p></li>
+</ul></article><p id="p-185">Here are some pictures to help with the interpretations:</p>
+<figure class="figure figure-like" id="figure-39"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-132.svg" role="img" class="contained" alt="This is the graph of \(f(x) = 1\) on the interval \([0,1]\)"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">39<span class="period">.</span></span><span class="space"> </span>Here, the net area and total area are both 1, because the function is strictly positive on the interval.</figcaption></figure><figure class="figure figure-like" id="figure-40"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-133.svg" role="img" class="contained" alt="This is the graph of \(f(x) = 1\) on the interval \([0,1]\)"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">40<span class="period">.</span></span><span class="space"> </span>Here, the net area is 0 but the total area is 2 because the function takes on positive and negative values in the interval.</figcaption></figure><article class="example example-like" id="example-394"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.4</span><span class="period">.</span>
+</h5>Express <span class="process-math">\(\ds \lim_{n\to\infty} \sum_{i=1}^\infty (x_i^3-2x_i^2+1-x_i\cos(x_i))\Delta x\)</span> as an integral.  Use proper notation.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-398" id="solution-398"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-398"><div class="solution solution-like"><span class="process-math">\(\ds \int_a^b x^3-2x^2 + 1 - x\cos x\, dx\)</span></div></div>
+</div></article><article class="example example-like" id="example-395"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.5</span><span class="period">.</span>
+</h5>
+<ol class="lower-alpha">
+<li id="li-862"><p id="p-derived-li-862">The greatest integer function is integrable on any finite-length interval, but not necessarily differentiable on the same interval.  Why is this consistent with the above information?</p></li>
+<li id="li-863"><p id="p-derived-li-863">Compute <span class="process-math">\(\ds \int_0^5 f(x)\, dx\text{,}\)</span> where <span class="process-math">\(f(x)\)</span> is the greatest integer function, <em class="emphasis">using geometry</em>.</p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-399" id="solution-399"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-399"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-864"><p id="p-derived-li-864">This is because the number of discontinuities on a finite-length interval is finite, so from the above theorem, the function is integrable.</p></li>
+<li id="li-865"><p id="p-derived-li-865"><span class="process-math">\(\displaystyle \ds \int_0^5 f(x)\, dx = 10\)</span></p></li>
+</ol></div></div>
+</div></article></section></section><section class="subsection" id="section-42-preclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.2.2</span> <span class="title">Pre-Class Activities</span>
+</h3>
+<article class="example example-like" id="example-396"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.6</span><span class="period">.</span>
+</h4>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel top" style="width:44.4444444444444%;"><img src="generated/latex-image/image-134.svg" role="img" class="contained" alt="The graph of \(\sin x\) on \([-3\pi,3\pi]\text{,}\) with shading from \(x=0\) to \(x=\pi/2\)"></div>
+<div class="sbspanel top" style="width:44.4444444444444%;"><img src="generated/latex-image/image-135.svg" role="img" class="contained" alt="The graph of \(\sin x\) on \([-3\pi,3\pi]\text{,}\) with shading from \(x=0\) to \(x=\pi/2\)"></div>
+</div></div> The shaded area on the graphs of <span class="process-math">\(\sin x\)</span> and <span class="process-math">\(\cos x\)</span> are both exactly 1. <ol class="lower-alpha">
+<li id="li-866"><p id="p-derived-li-866">Compute the net area of <span class="process-math">\(\sin x\)</span> on the interval <span class="process-math">\([0,2\pi]\)</span></p></li>
+<li id="li-867"><p id="p-derived-li-867">Compute the total area of <span class="process-math">\(\sin x\)</span> on the interval <span class="process-math">\([0,2\pi]\)</span></p></li>
+<li id="li-868"><p id="p-derived-li-868">Compute the net area of <span class="process-math">\(\cos x\)</span> on the interval <span class="process-math">\(\left[-\dfrac{3\pi}{2},\pi\right]\)</span></p></li>
+<li id="li-869"><p id="p-derived-li-869">Compute the total area of <span class="process-math">\(\cos x\)</span> on the interval <span class="process-math">\(\left[-\dfrac{3\pi}{2},\pi\right]\)</span></p></li>
+<li id="li-870"><p id="p-derived-li-870">Compute the net area of <span class="process-math">\(\sin x\)</span> on the intervals <span class="process-math">\(\left[-\dfrac{\pi}{2},\dfrac{\pi}{2}\right]\)</span> and <span class="process-math">\([-\pi,\pi]\text{.}\)</span>  What conjecture can you make about the net area of odd functions over symmetric intervals?</p></li>
+<li id="li-871"><p id="p-derived-li-871">Compute the net area of <span class="process-math">\(\cos x\)</span> on the intervals <span class="process-math">\(\left[-\dfrac{\pi}{2},\dfrac{\pi}{2}\right]\)</span> and <span class="process-math">\([-\pi,\pi]\text{.}\)</span>  What conjecture can you make about the net area of odd functions over symmetric intervals?</p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-400" id="solution-400"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-400"><div class="solution solution-like"><ol id="p-186" class="lower-alpha">
+<li id="li-872"><p id="p-derived-li-872">0</p></li>
+<li id="li-873"><p id="p-derived-li-873">2</p></li>
+<li id="li-874"><p id="p-derived-li-874"><span class="process-math">\(\displaystyle -1\)</span></p></li>
+<li id="li-875"><p id="p-derived-li-875">5</p></li>
+<li id="li-876"><p id="p-derived-li-876">Both are 0.  Conjecture is left to student.</p></li>
+<li id="li-877"><p id="p-derived-li-877">First interval is 2, second interval is 0.  Conjecture left to student.</p></li>
+</ol></div></div>
+</div></article></section><section class="subsection" id="section-42-inclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.2.3</span> <span class="title">In Class</span>
+</h3>
+<section class="subsubsection" id="section-42-evaluating-integrals"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">4.2.3.1</span> <span class="title">Evaluating Integrals</span>
+</h4>
+<article class="example example-like" id="example-397"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.7</span><span class="period">.</span>
+</h5>Use the definition of the definite integral to show that <span class="process-math">\(\ds \int_2^4 x\, dx = 6\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-401" id="solution-401"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-401"><div class="solution solution-like">First note that<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\Delta x = \dfrac{b-a}{n} = \dfrac{2}{n}
+\end{equation*}
+</div>For <span class="process-math">\(x_i\text{,}\)</span> we have<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+x_i = a + i\Delta x = 2 + \dfrac{2i}{n}
+\end{equation*}
+</div>This means that<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f(x_i) = 2 + \dfrac{2i}{n} 
+\end{equation*}
+</div>So that the area of a single rectangle is given by<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f(x_i)\Delta x = \lrpar{2+\dfrac{2i}{n}}\cdot \dfrac{2}{n} = \dfrac{4}{n} + \dfrac{4i}{n^2}
+\end{equation*}
+</div>And the sum of a finite number of rectangles is<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\ds \sum_{i=1}^n f(x_i)\Delta x = \sum_{i=1}^n \dfrac{4}{n} + \dfrac{4i}{n^2} = 4 + \dfrac{2n(n+1)}{n^2}
+\end{equation*}
+</div>after using the helpful formulas given below.  Now, the integral can be computed by taking the limit:<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\ds \int_2^4 x\, dx = \lim_{n\to\infty} \sum_{i=1}^n f(x_i)\Delta x = 4 + 2 = 6
+\end{equation*}
+</div>So the definite integral is 6.</div></div>
+</div></article><article class="assemblage assemblage-like" id="assemblage-30"><p id="p-187"><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b2 r2 l2 t2 lines" colspan="2">Helpful Formulas</td>
+<td class="c m b2 r2 l0 t2 lines" colspan="2">Rules for Sigma Notation</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l2 t0 lines"><span class="process-math">\(\ds \sum_{i=1}^n i\)</span></td>
+<td class="l m b0 r2 l0 t0 lines"><span class="process-math">\(\dfrac{n(n+1)}{2}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\ds \sum_{i=1}^n c\)</span></td>
+<td class="l m b0 r2 l0 t0 lines"><span class="process-math">\(cn\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l2 t0 lines"><span class="process-math">\(\ds \sum_{i=1}^n i^2\)</span></td>
+<td class="l m b0 r2 l0 t0 lines"><span class="process-math">\(\dfrac{n(n+1)(2n+1)}{6}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\ds \sum_{i=1}^n ca_i\)</span></td>
+<td class="l m b0 r2 l0 t0 lines"><span class="process-math">\(\ds c\sum_{i=1}^n a_i\)</span></td>
+</tr>
+<tr>
+<td class="l m b2 r0 l2 t0 lines"><span class="process-math">\(\ds \sum_{i=1}^n i^3\)</span></td>
+<td class="l m b2 r2 l0 t0 lines"><span class="process-math">\(\lrpar{\dfrac{n(n+1)}{2}}^2\)</span></td>
+<td class="l m b2 r0 l0 t0 lines"><span class="process-math">\(\ds \sum_{i=1}^n (a_i\pm b_i)\)</span></td>
+<td class="l m b2 r2 l0 t0 lines"><span class="process-math">\(\ds \sum_{i=1}^n a_i \pm \sum_{i=1}^n b_i\)</span></td>
+</tr>
+</table></div></p></article><article class="example example-like" id="example-398"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.8</span><span class="period">.</span>
+</h5>Evaluate <span class="process-math">\(\ds \int_0^3 (x^3-2x)\, dx\)</span> using the definition of the definite integral.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-402" id="solution-402"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-402"><div class="solution solution-like"><span class="process-math">\(\dfrac{45}{4}\)</span></div></div>
+</div></article><article class="example example-like" id="example-399"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.9</span><span class="period">.</span>
+</h5>Set up an expression for <span class="process-math">\(\ds \int_2^5 x^4\, dx\)</span> as a limit of sums.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-403" id="solution-403"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-403"><div class="solution solution-like"><span class="process-math">\(\ds \lim_{n\to\infty} \sum_{i=1}^n \lrpar{2 + \dfrac{3i}{n}}^4\cdot \dfrac{3}{n}\)</span></div></div>
+</div></article><article class="example example-like" id="example-400"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.10</span><span class="period">.</span>
+</h5>The graph of <span class="process-math">\(f\)</span> is given below. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/42fig1.png" class="contained"></div> Evaluate each integral by interpreting it in terms of areas. <ol class="lower-alpha">
+<li id="li-878"><p id="p-derived-li-878"><span class="process-math">\(\displaystyle \ds \int_0^2 f(x)\, dx\)</span></p></li>
+<li id="li-879"><p id="p-derived-li-879"><span class="process-math">\(\displaystyle \ds \int_0^5 f(x)\, dx\)</span></p></li>
+<li id="li-880"><p id="p-derived-li-880"><span class="process-math">\(\displaystyle \ds \int_5^7 f(x)\, dx\)</span></p></li>
+<li id="li-881"><p id="p-derived-li-881"><span class="process-math">\(\displaystyle \ds \int_0^9 f(x)\, dx\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-404" id="solution-404"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-404"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-882"><p id="p-derived-li-882">4</p></li>
+<li id="li-883"><p id="p-derived-li-883">10</p></li>
+<li id="li-884"><p id="p-derived-li-884"><span class="process-math">\(\displaystyle -3\)</span></p></li>
+<li id="li-885"><p id="p-derived-li-885">2</p></li>
+</ol></div></div>
+</div></article></section><section class="subsubsection" id="section-42-midpoint-rule"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">4.2.3.2</span> <span class="title">The Midpoint Rule</span>
+</h4>
+<section class="introduction" id="introduction-8">Instead of choosing our sample points to be left or right endpoints, we can choose any point inside the subinterval; a standout is the midpoint of the interval.</section><article class="definition definition-like" id="definition-34"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.2.11</span><span class="period">.</span><span class="space"> </span><span class="title">Midpoint Rule.</span>
+</h5>
+<div class="displaymath process-math" data-contains-math-knowls="" id="p-188">
+\begin{equation*}
+\ds \int_a^b f(x)\, dx \approx \sum_{i=1}^n f(\overline{x_i})\Delta x
+\end{equation*}
+</div>
+<p class="continuation">where <span class="process-math">\(\Delta x = \dfrac{b-a}{n}\)</span> and <span class="process-math">\(\overline{x_i} = \dfrac{x_{i-1}+x_i}{2}\)</span> is the midpoint of the interval <span class="process-math">\([x_{i-1},x_i]\text{.}\)</span></p></article><article class="example example-like" id="example-401"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.12</span><span class="period">.</span>
+</h5>Use the Midpoint Rule with <span class="process-math">\(n=5\)</span> to approximate <span class="process-math">\(\ds \int_1^2 \dfrac{1}{x}\, dx\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-405" id="solution-405"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-405"><div class="solution solution-like"><span class="process-math">\(M_5 = 0.69191\)</span></div></div>
+</div></article></section><section class="subsubsection" id="section-42-properties"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">4.2.3.3</span> <span class="title">Properties of the Definite Integral</span>
+</h4>
+<section class="introduction" id="introduction-9">The following are useful properties when working with the definite integral:</section><article class="theorem theorem-like" id="theorem-24"><h5 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">4.2.13</span><span class="period">.</span><span class="space"> </span><span class="title">Properties of the Definite Integral.</span>
+</h5>Let <span class="process-math">\(f,g\)</span> be continuous functions on <span class="process-math">\([a,b]\text{.}\)</span>  Let <span class="process-math">\(c\)</span> be a constant.  Then, <ol class="decimal">
+<li id="li-886"><p id="p-derived-li-886"><span class="process-math">\(\displaystyle \ds \int_a^b f(x)\,dx = -\int_b^a f(x)\, dx\)</span></p></li>
+<li id="li-887"><p id="p-derived-li-887"><span class="process-math">\(\displaystyle \ds \int_a^a f(x)\,dx = 0\)</span></p></li>
+<li id="li-888"><p id="p-derived-li-888"><span class="process-math">\(\displaystyle \ds \int_a^b c\, dx = c(b-a)\)</span></p></li>
+<li id="li-889"><p id="p-derived-li-889"><span class="process-math">\(\displaystyle \ds \int_a^b [f(x)\pm g(x)]\,dx = \int_a^b f(x)\,dx\pm \int_a^b g(x)\,dx\)</span></p></li>
+<li id="li-890"><p id="p-derived-li-890"><span class="process-math">\(\displaystyle \int_a^b cf(x)\,dx = c\int_a^b f(x)\,dx\)</span></p></li>
+<li id="li-891"><p id="p-derived-li-891"><span class="process-math">\(\ds \int_a^b f(x)\, dx = \int_a^d f(x)\, dx + \int_d^b f(x)\, dx\text{,}\)</span> for some <span class="process-math">\(a \lt d \lt b\)</span></p></li>
+</ol></article><article class="example example-like" id="example-402"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.14</span><span class="period">.</span>
+</h5>If <span class="process-math">\(\ds \int_0^6 f(x)\, dx = 10\)</span> and <span class="process-math">\(\ds \int_0^8 f(x)\, dx = 4\text{,}\)</span> what is <span class="process-math">\(\ds \int_6^8 f(x)\, dx\text{?}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-406" id="solution-406"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-406"><div class="solution solution-like"><span class="process-math">\(\ds \int_6^8 f(x)\, dx = -6\)</span></div></div>
+</div></article><article class="example example-like" id="example-403"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.15</span><span class="period">.</span>
+</h5>Compute <span class="process-math">\(\ds \int_1^2 (4+2x^2)\, dx\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-407" id="solution-407"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-407"><div class="solution solution-like"><span class="process-math">\(\dfrac{26}{3}\)</span></div></div>
+</div></article><article class="example example-like" id="example-404"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.16</span><span class="period">.</span>
+</h5>For any <span class="process-math">\(a,b\text{,}\)</span> find the value of <span class="process-math">\(\ds \int_a^b x\, dx\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-408" id="solution-408"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-408"><div class="solution solution-like"><span class="process-math">\(\ds \int_a^b x\, dx = \dfrac{b^2-a^2}{2}\)</span></div></div>
+</div></article><article class="example example-like" id="example-405"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.17</span><span class="period">.</span>
+</h5>Evaluate the integrals by interpreting them in terms of area: <ol class="lower-alpha">
+<li id="li-892"><p id="p-derived-li-892"><span class="process-math">\(\displaystyle \ds \int_0^9 \lrpar{\dfrac{2}{3}x-2}\, dx\)</span></p></li>
+<li id="li-893"><p id="p-derived-li-893"><span class="process-math">\(\displaystyle \ds \int_{-6}^6 (x-\sqrt{36-x^2})\, dx\)</span></p></li>
+<li id="li-894"><p id="p-derived-li-894"><span class="process-math">\(\displaystyle \ds \int_0^1 |2x-1|\, dx\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-409" id="solution-409"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-409"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-895"><p id="p-derived-li-895"><span class="process-math">\(\displaystyle \ds \int_0^9 \lrpar{\dfrac{2}{3}x-2}\, dx = 9\)</span></p></li>
+<li id="li-896"><p id="p-derived-li-896"><span class="process-math">\(\displaystyle \ds \int_{-6}^6 (x-\sqrt{36-x^2})\, dx = -18\pi\)</span></p></li>
+<li id="li-897"><p id="p-derived-li-897"><span class="process-math">\(\displaystyle \ds \int_0^1 |2x-1|\, dx = \dfrac{1}{2}\)</span></p></li>
+</ol></div></div>
+</div></article></section></section><section class="subsection" id="section-42-afterclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.2.4</span> <span class="title">After Class Activities</span>
+</h3>
+<article class="example example-like" id="example-406"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.18</span><span class="period">.</span>
+</h4>Use the definition of the integral to find <span class="process-math">\(\ds \int_1^4 (x^2-4x+2)\, dx\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-410" id="solution-410"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-410"><div class="solution solution-like"><span class="process-math">\(\ds \int_1^4 (x^2-4x+2)\, dx = -3\)</span></div></div>
+</div></article><article class="example example-like" id="example-407"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.19</span><span class="period">.</span>
+</h4>Use the Midpoint Rule to estimate <span class="process-math">\(\ds \int_0^1 \sqrt{x^3+1}\, dx\)</span> to four decimal places, using <span class="process-math">\(n=5\)</span> rectangles.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-411" id="solution-411"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-411"><div class="solution solution-like"><span class="process-math">\(M_5 = 1.1097\)</span></div></div>
+</div></article><article class="example example-like" id="example-408"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.20</span><span class="period">.</span>
+</h4>If <span class="process-math">\(\ds \int_0^\pi \sin^4x\, dx = \dfrac{3\pi}{8}\text{,}\)</span> what is <span class="process-math">\(\ds \int_\pi^0 \sin^4\, dx\text{?}\)</span>  Why?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-412" id="solution-412"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-412"><div class="solution solution-like">
+<span class="process-math">\(\ds \int_\pi^0 \sin^4\, dx = -\dfrac{3\pi}{8}\)</span> from the properties of integrals.</div></div>
+</div></article></section></section></div></main>
+</div>
+</body>
+</html>

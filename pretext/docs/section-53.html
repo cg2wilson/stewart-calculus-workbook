@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-07-17T17:31:50-05:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Math 1914 - Differential &amp; Integral Calculus I Volumes by Cylindrical Shells</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Math 1914 - Differential &amp; Integral Calculus">
+<meta property="book:author" content="Cory Wilson">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(      \newcommand{\ds}{\displaystyle}
+\newcommand{\lrpar}[1]{\left(#1\right)}
+\newcommand{\lrbrace}[1]{\left\lbrace #1 \right\rbrace}
+\newcommand{\inv}[1]{#1^{-1}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\dc}{^\circ}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="math1914.html"><span class="title">Math 1914 - Differential &amp; Integral Calculus</span></a></h1>
+<p class="byline">Cory Wilson</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-52.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch5.html" title="Up">Up</a><span id="nextbutton" class="next-button button toolbar-item disabled">Next</span></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-52.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch5.html" title="Up">Up</a><span class="next-button button toolbar-item disabled">Next</span>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul><li><a href="colophon.html" data-scroll="colophon" class="internal">Colophon</a></li></ul>
+</li>
+<li class="link">
+<a href="ch1.html" data-scroll="ch1" class="internal"><span class="codenumber">1</span> <span class="title">Functions and Limits</span></a><ul>
+<li><a href="section-11.html" data-scroll="section-11" class="internal">Four Ways to Represent a Function</a></li>
+<li><a href="section-12.html" data-scroll="section-12" class="internal">Mathematical Models: A Catalog of Essential Functions</a></li>
+<li><a href="section-13.html" data-scroll="section-13" class="internal">New Functions from Old Functions</a></li>
+<li><a href="section-14.html" data-scroll="section-14" class="internal">The Tangent and Velocity Problems</a></li>
+<li><a href="section-15.html" data-scroll="section-15" class="internal">The Limit of a Function</a></li>
+<li><a href="section-16.html" data-scroll="section-16" class="internal">Calculating Limits Using Limit Laws</a></li>
+<li><a href="section-17.html" data-scroll="section-17" class="internal">(X) The Precise Definition of a Limit</a></li>
+<li><a href="section-18.html" data-scroll="section-18" class="internal">Continuity</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch2.html" data-scroll="ch2" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives</span></a><ul>
+<li><a href="section-21.html" data-scroll="section-21" class="internal">Derivatives and Rates of Change</a></li>
+<li><a href="section-22.html" data-scroll="section-22" class="internal">The Derivative as a Function</a></li>
+<li><a href="section-23.html" data-scroll="section-23" class="internal">Differentiation Formulas</a></li>
+<li><a href="section-24.html" data-scroll="section-24" class="internal">Derivatives of Trigonometric Functions</a></li>
+<li><a href="section-25.html" data-scroll="section-25" class="internal">The Chain Rule</a></li>
+<li><a href="section-26.html" data-scroll="section-26" class="internal">Implicit Differentiation</a></li>
+<li><a href="section-27.html" data-scroll="section-27" class="internal">(X) Rates of Changes in the Natural and Social Sciences</a></li>
+<li><a href="section-28.html" data-scroll="section-28" class="internal">Related Rates</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch3.html" data-scroll="ch3" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Differentiation</span></a><ul>
+<li><a href="section-31.html" data-scroll="section-31" class="internal">Maximum &amp; Minimum Values</a></li>
+<li><a href="section-32.html" data-scroll="section-32" class="internal">(X) The Mean Value Theorem</a></li>
+<li><a href="section-33.html" data-scroll="section-33" class="internal">How Derivatives Affect the Shape of a Graph</a></li>
+<li><a href="section-34.html" data-scroll="section-34" class="internal">Limits at Infinity &amp; Horizontal Asymptotes</a></li>
+<li><a href="section-35.html" data-scroll="section-35" class="internal">Summary of Curve Sketching</a></li>
+<li><a href="section-36.html" data-scroll="section-36" class="internal">(X) Graphing with Calculus and Calculators</a></li>
+<li><a href="section-37.html" data-scroll="section-37" class="internal">Optimization</a></li>
+<li><a href="section-38.html" data-scroll="section-38" class="internal">(X) Newton's Method</a></li>
+<li><a href="section-39.html" data-scroll="section-39" class="internal">Antiderivatives</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch4.html" data-scroll="ch4" class="internal"><span class="codenumber">4</span> <span class="title">Integrals</span></a><ul>
+<li><a href="section-41.html" data-scroll="section-41" class="internal">Areas &amp; Distance</a></li>
+<li><a href="section-42.html" data-scroll="section-42" class="internal">The Definite Integral</a></li>
+<li><a href="section-43.html" data-scroll="section-43" class="internal">The Fundamental Theorem of Calculus</a></li>
+<li><a href="section-44.html" data-scroll="section-44" class="internal">Indefinite Integrals &amp; the Net Change Theorem</a></li>
+<li><a href="section-45.html" data-scroll="section-45" class="internal">The Substitution Rule</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch5.html" data-scroll="ch5" class="internal"><span class="codenumber">5</span> <span class="title">Applications of Integration</span></a><ul>
+<li><a href="section-51.html" data-scroll="section-51" class="internal">Areas Between Curves</a></li>
+<li><a href="section-52.html" data-scroll="section-52" class="internal">Volumes</a></li>
+<li><a href="section-53.html" data-scroll="section-53" class="active">Volumes by Cylindrical Shells</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-53"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">5.3</span> <span class="title">Volumes by Cylindrical Shells</span>
+</h2>
+<article class="objectives goal-like" id="objectives-28"><h3 class="heading"><span class="type">Objectives</span></h3>
+<ul class="disc"><li id="li-982"><p id="p-derived-li-982">Determine whether the Shell Method, Disk Method, or Washer Method is most appropriate to compute the volume of a solid of revolution, and compute the volume by integrating with respect to <span class="process-math">\(x\)</span> or <span class="process-math">\(y\)</span></p></li></ul></article><section class="subsection" id="section-53-beforeclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">5.3.1</span> <span class="title">Before Class</span>
+</h3>
+<figure class="figure figure-like" id="figure-48"><a class="external" href="https://mymedia.ou.edu/media/5.3-1/1_fyryg6z8" target="_blank"><code class="code-inline tex2jax_ignore">https://mymedia.ou.edu/media/5.3-1/1_fyryg6z8</code></a><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">48<span class="period">.</span></span><span class="space"> </span>Pre-Class Video 1</figcaption></figure><section class="subsubsection" id="section-53-slicing-cylinders"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">5.3.1.1</span> <span class="title">Slicing with Cylinders</span>
+</h4>
+<article class="example example-like" id="example-535"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.1</span><span class="period">.</span>
+</h5>Let <span class="process-math">\(f(x) = x-x^2\text{.}\)</span> <ol class="lower-alpha">
+<li id="li-983"><p id="p-derived-li-983">Sketch the region bounded by <span class="process-math">\(f(x)\)</span> and the <span class="process-math">\(x-\)</span>axis.</p></li>
+<li id="li-984"><p id="p-derived-li-984">Set up (but do not solve) an integral to find the volume of the solid created by rotating the region about the line <span class="process-math">\(y = 0\text{.}\)</span>  Why can we use the disk method?</p></li>
+<li id="li-985"><p id="p-derived-li-985">Are there problems if we instead rotate about the line <span class="process-math">\(x = 0\text{?}\)</span>  Explain with pictures, words, etc.</p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-542" id="solution-542"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-542"><div class="solution solution-like"><ol id="p-348" class="lower-alpha">
+<li id="li-986"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-160.svg" role="img" class="contained" alt="This is the sketch of the region bounded the curve \(f(x) = x-x^2\) and the \(x-\) axis."></div></li>
+<li id="li-987"><p id="p-derived-li-987">The disk method integral is given by <span class="process-math">\(\ds \int_0^1 \pi (x-x^2)^2\, dx\text{.}\)</span>  We may use the disk method because there is no gap between the axis of rotation and the region.</p></li>
+<li id="li-988"><p id="p-derived-li-988">Yes- in an approximating washer, there is no function to create the radius; each input has multiple outputs.</p></li>
+</ol></div></div>
+</div></article><article class="example example-like" id="example-536"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.2</span><span class="period">.</span>
+</h5>Again consider <span class="process-math">\(f(x) = x-x^2\text{.}\)</span> <ol class="lower-alpha">
+<li id="li-989"><p id="p-derived-li-989">Draw four midpoint rectangles for the area of the region bounded by <span class="process-math">\(f(x)\)</span> and the <span class="process-math">\(x-\)</span>axis.  Be sure to label things appropriately!</p></li>
+<li id="li-990"><p id="p-derived-li-990">Sketch what happens to the rectangles when rotated about the line <span class="process-math">\(x = 0\text{.}\)</span></p></li>
+<li id="li-991"><p id="p-derived-li-991">How can we find the surface area of the shape from part (b)?</p></li>
+<li id="li-992"><p id="p-derived-li-992">Use your answers from parts (b) and (c) to approximate the volume of the solid.</p></li>
+<li id="li-993"><p id="p-derived-li-993">Write an expression that uses “infinitely many” rectangles to approximate the the volume of the solid.</p></li>
+<li id="li-994"><p id="p-derived-li-994">Convert your answer from part (d) into an integral expression, and evaluate it.</p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-543" id="solution-543"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-543"><div class="solution solution-like"><ol id="p-349" class="lower-alpha">
+<li id="li-995"><p id="p-derived-li-995">The sketch is tough to digitally reproduce, so it is left to the reader.</p></li>
+<li id="li-996"><p id="p-derived-li-996">The sketch is tough to digitally reproduce, so it is left to the reader.</p></li>
+<li id="li-997"><p id="p-derived-li-997">Since the surface area of a cylinder is <span class="process-math">\(SA = 2\pi rh\text{,}\)</span> we can use the information from any singular cylinder to develop the expression <span class="process-math">\(SA = 2\pi x_i f(x_i)\text{.}\)</span></p></li>
+<li id="li-998"><p id="p-derived-li-998">We'll use the width of the approximating rectangle as the thickness of the shell, so that our cylindrical shell's volume is given by <span class="process-math">\(V = 2\pi x_i f(x_i)\Delta x\text{.}\)</span>  So, the volume of the solid is approximated by<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\ds V\approx \sum_{i=1}^n 2\pi x_i(x_i-x_i^2)\Delta x
+\end{equation*}
+</div></p></li>
+<li id="li-999"><p id="p-derived-li-999"><div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\ds V = \lim_{n\to \infty}\sum_{i=1}^n 2\pi x_i(x_i-x_i^2)\Delta x
+\end{equation*}
+</div></p></li>
+<li id="li-1000"><p id="p-derived-li-1000"><div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\ds V = \int_0^1 2\pi x(x-x^2)\, dx = \dfrac{\pi}{6}
+\end{equation*}
+</div></p></li>
+</ol></div></div>
+</div></article></section><section class="subsubsection" id="section-53-shell-method"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">5.3.1.2</span> <span class="title">The Shell Method</span>
+</h4>
+<article class="assemblage assemblage-like" id="assemblage-37"><h5 class="heading"><span class="title">Method of Cylindrical Shells.</span></h5>
+<p id="p-350">Let <span class="process-math">\(f(x)\)</span> be a continuous function on the interval <span class="process-math">\([a,b]\text{.}\)</span>  Then, the volume of the solid created by rotating the region bounded by <span class="process-math">\(f(x)\)</span> and the <span class="process-math">\(x-\)</span>axis about the line <span class="process-math">\(x = 0\)</span> is given by</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\int_a^b 2\pi r(x)f(x)\, dx
+\end{equation*}
+</div>
+<p class="continuation">where <span class="process-math">\(r(x)\)</span> is the radius function.</p></article><article class="example example-like" id="example-537"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.3</span><span class="period">.</span>
+</h5>Consider the region bounded by the curve <span class="process-math">\(y = 2\sqrt{x}\text{,}\)</span> the <span class="process-math">\(x-\)</span>axis, and the line <span class="process-math">\(x = 4\text{.}\)</span> <ol class="lower-alpha">
+<li id="li-1001"><p id="p-derived-li-1001">Sketch and label the region.</p></li>
+<li id="li-1002"><p id="p-derived-li-1002">Sketch and label a typical approximating cylinder, when rotated about <span class="process-math">\(x = 0\text{.}\)</span></p></li>
+<li id="li-1003"><p id="p-derived-li-1003">Use the formula for the cylinder to set up an integral for the volume of the resulting solid, then evaluate it.</p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-544" id="solution-544"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-544"><div class="solution solution-like"><ol id="p-351" class="lower-alpha">
+<li id="li-1004"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-161.svg" role="img" class="contained" alt="This is the sketch of the region bounded by the curve \(y = 2\sqrt{x}\) and the \(x-\)axis between \(x=0\) and \(x=4\text{.}\)"></div></li>
+<li id="li-1005"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-162.svg" role="img" class="contained" alt="This is the sketch of the typical approximating cylindrical shell when rotating the region contained between \(y = 2\sqrt{x}\) and \(x=4\) about \(x=0\)"></div></li>
+<li id="li-1006"><p id="p-derived-li-1006"><span class="process-math">\(\displaystyle V = \ds \int_0^4 2\pi x(2\sqrt{x})\, dx = \dfrac{256\pi}{5}\)</span></p></li>
+</ol></div></div>
+</div></article></section></section><section class="subsection" id="section-53-preclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">5.3.2</span> <span class="title">Pre-Class Activities</span>
+</h3>
+<article class="example example-like" id="example-538"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.4</span><span class="period">.</span>
+</h4>If you were presented with a problem, how would you know whether to use the disk method, washer method, or shell method?  Examples 1 and 2 might be good places to get ideas.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-545" id="solution-545"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-545"><div class="solution solution-like"><p id="p-352">Answers vary</p></div></div>
+</div></article><article class="example example-like" id="example-539"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.5</span><span class="period">.</span>
+</h4>Find the volume of the solid obtained by rotating the region bouded by <span class="process-math">\(y = 2x^2 - x^3\)</span> and <span class="process-math">\(y = 0\)</span> about the <span class="process-math">\(y-\)</span>axis.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-546" id="solution-546"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-546"><div class="solution solution-like"><p id="p-353"><span class="process-math">\(V =\dfrac{16\pi}{5}\)</span></p></div></div>
+</div></article></section><section class="subsection" id="section-53-inclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">5.3.3</span> <span class="title">In Class</span>
+</h3>
+<article class="example example-like" id="example-540"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.6</span><span class="period">.</span>
+</h4>Use the shell method to find the volume of the solid generated by revolving the region bounded by the curves <span class="process-math">\(xy = 1\text{,}\)</span> <span class="process-math">\(x = 0\text{,}\)</span> <span class="process-math">\(y = 1\text{,}\)</span> and <span class="process-math">\(y = 3\)</span> about the <span class="process-math">\(x-\)</span>axis.  Hint: Sketch the solid and its approximating cylinders.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-547" id="solution-547"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-547"><div class="solution solution-like"><p id="p-354"><span class="process-math">\(4\pi\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-541"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.7</span><span class="period">.</span>
+</h4>Find the volume of the solid created by rotating the region bounded by the curves <span class="process-math">\(y = x^3\text{,}\)</span> <span class="process-math">\(y = 0\text{,}\)</span> <span class="process-math">\(x = 1\text{,}\)</span> and <span class="process-math">\(x = 2\)</span> about the <span class="process-math">\(y-\)</span>axis.  Be sure to label your diagram, if you choose to draw one.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-548" id="solution-548"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-548"><div class="solution solution-like"><p id="p-355"><span class="process-math">\(\dfrac{62\pi}{5}\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-542"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.8</span><span class="period">.</span>
+</h4>Find the volume of the solid created by rotating the first-quadrant region bounded by the curves <span class="process-math">\(y = 4x-x^2\text{,}\)</span> and <span class="process-math">\(y = x\)</span> about the <span class="process-math">\(y-\)</span>axis.  Be sure to label your diagram, if you choose to draw one.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-549" id="solution-549"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-549"><div class="solution solution-like"><p id="p-356"><span class="process-math">\(\dfrac{27\pi}{2}\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-543"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.9</span><span class="period">.</span>
+</h4>Find the volume of the solid created by rotating the region bounded by the curves <span class="process-math">\(x = 2y^2\text{,}\)</span> <span class="process-math">\(y\geq 0\text{,}\)</span> and <span class="process-math">\(x=8\)</span> about <span class="process-math">\(y = 2\text{.}\)</span>  Hint: Draw and label a diagram.  Remember that this is a function of <span class="process-math">\(y\text{,}\)</span> not a function of <span class="process-math">\(x\text{!}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-550" id="solution-550"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-550"><div class="solution solution-like"><p id="p-357"><span class="process-math">\(\dfrac{80\pi}{3}\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-544"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.10</span><span class="period">.</span>
+</h4>Find the volume of the solid created by rotating the region bounded by the curves <span class="process-math">\(y = x^3\text{,}\)</span> <span class="process-math">\(y = 8\text{,}\)</span> <span class="process-math">\(x = 0\)</span> about <span class="process-math">\(x = 2\text{.}\)</span>  Be sure to label your diagram, if you choose to draw one.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-551" id="solution-551"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-551"><div class="solution solution-like"><p id="p-358"><span class="process-math">\(\dfrac{144\pi}{5}\)</span></p></div></div>
+</div></article></section><section class="subsection" id="section-53-afterclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">5.3.4</span> <span class="title">After Class Activities</span>
+</h3>
+<article class="example example-like" id="example-545"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.11</span><span class="period">.</span>
+</h4>Find the volume of the solid created by rotating the region bounded by the curves <span class="process-math">\(x = 2y^2\text{,}\)</span> <span class="process-math">\(x = y^2 + 1\)</span> about <span class="process-math">\(y = -2\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-552" id="solution-552"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-552"><div class="solution solution-like"><p id="p-359"><span class="process-math">\(\dfrac{16\pi}{3}\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-546"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.12</span><span class="period">.</span>
+</h4>Sketch the region described in the volume integral below:<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+V = \int_1^4 \dfrac{2\pi (y+2)}{y^2}\, dy
+\end{equation*}
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-553" id="solution-553"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-553"><div class="solution solution-like"><p id="p-360"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-163.svg" role="img" class="contained" alt="This is the sketch of the region bounded by the curve \(y = \dfrac{1}{x^2}\) on the interval \(x=0\) to \(x=4\text{,}\) rotated about the line \(y=-2\text{.}\)"></div></p></div></div>
+</div></article><article class="example example-like" id="example-547"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.13</span><span class="period">.</span>
+</h4>The region bounded by the curves <span class="process-math">\(y = -x^2 + 6x-8\)</span> and <span class="process-math">\(y = 0\)</span> is rotated about the <span class="process-math">\(y-\)</span>axis. <ol class="lower-alpha">
+<li id="li-1007"><p id="p-derived-li-1007">Sketch the region described above.</p></li>
+<li id="li-1008"><p id="p-derived-li-1008">Of our three methods, which one do you want to use?  Give a quick explanation why you chose that particular method.</p></li>
+<li id="li-1009"><p id="p-derived-li-1009">Compute the volume of the solid.</p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-554" id="solution-554"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-554"><div class="solution solution-like"><ol id="p-361" class="lower-alpha">
+<li id="li-1010"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-164.svg" role="img" class="contained" alt="This is the sketch of the region bounded by the curve \(y = \dfrac{1}{x^2}\) on the interval \(x=0\) to \(x=4\text{,}\) rotated about the line \(y=-2\text{.}\)"></div></li>
+<li id="li-1011"><p id="p-derived-li-1011">Answers vary</p></li>
+<li id="li-1012"><p id="p-derived-li-1012"><span class="process-math">\(\displaystyle 8\pi\)</span></p></li>
+</ol></div></div>
+</div></article><article class="example example-like" id="example-548"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.14</span><span class="period">.</span>
+</h4>Consider the region bounded by the curves <span class="process-math">\(y = 4x\text{,}\)</span> <span class="process-math">\(y = 0\text{,}\)</span> and <span class="process-math">\(x = 2\text{.}\)</span>  Find the volume of the solid formed when the region is rotated about the given lines: <ol class="lower-alpha">
+<li id="li-1013"><p id="p-derived-li-1013">The <span class="process-math">\(y-\)</span>axis</p></li>
+<li id="li-1014"><p id="p-derived-li-1014"><span class="process-math">\(\displaystyle x = 4\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-555" id="solution-555"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-555"><div class="solution solution-like"><ol id="p-362" class="lower-alpha">
+<li id="li-1015"><p id="p-derived-li-1015"><span class="process-math">\(\displaystyle \dfrac{64\pi}{3}\)</span></p></li>
+<li id="li-1016"><p id="p-derived-li-1016"><span class="process-math">\(\displaystyle \dfrac{128\pi}{3}\)</span></p></li>
+</ol></div></div>
+</div></article></section></section></div></main>
+</div>
+</body>
+</html>

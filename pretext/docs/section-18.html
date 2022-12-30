@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-07-17T17:31:44-05:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Math 1914 - Differential &amp; Integral Calculus I Continuity</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Math 1914 - Differential &amp; Integral Calculus">
+<meta property="book:author" content="Cory Wilson">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(      \newcommand{\ds}{\displaystyle}
+\newcommand{\lrpar}[1]{\left(#1\right)}
+\newcommand{\lrbrace}[1]{\left\lbrace #1 \right\rbrace}
+\newcommand{\inv}[1]{#1^{-1}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\dc}{^\circ}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="math1914.html"><span class="title">Math 1914 - Differential &amp; Integral Calculus</span></a></h1>
+<p class="byline">Cory Wilson</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-17.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch1.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="ch2.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-17.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch1.html" title="Up">Up</a><a class="next-button button toolbar-item" href="ch2.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul><li><a href="colophon.html" data-scroll="colophon" class="internal">Colophon</a></li></ul>
+</li>
+<li class="link">
+<a href="ch1.html" data-scroll="ch1" class="internal"><span class="codenumber">1</span> <span class="title">Functions and Limits</span></a><ul>
+<li><a href="section-11.html" data-scroll="section-11" class="internal">Four Ways to Represent a Function</a></li>
+<li><a href="section-12.html" data-scroll="section-12" class="internal">Mathematical Models: A Catalog of Essential Functions</a></li>
+<li><a href="section-13.html" data-scroll="section-13" class="internal">New Functions from Old Functions</a></li>
+<li><a href="section-14.html" data-scroll="section-14" class="internal">The Tangent and Velocity Problems</a></li>
+<li><a href="section-15.html" data-scroll="section-15" class="internal">The Limit of a Function</a></li>
+<li><a href="section-16.html" data-scroll="section-16" class="internal">Calculating Limits Using Limit Laws</a></li>
+<li><a href="section-17.html" data-scroll="section-17" class="internal">(X) The Precise Definition of a Limit</a></li>
+<li><a href="section-18.html" data-scroll="section-18" class="active">Continuity</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch2.html" data-scroll="ch2" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives</span></a><ul>
+<li><a href="section-21.html" data-scroll="section-21" class="internal">Derivatives and Rates of Change</a></li>
+<li><a href="section-22.html" data-scroll="section-22" class="internal">The Derivative as a Function</a></li>
+<li><a href="section-23.html" data-scroll="section-23" class="internal">Differentiation Formulas</a></li>
+<li><a href="section-24.html" data-scroll="section-24" class="internal">Derivatives of Trigonometric Functions</a></li>
+<li><a href="section-25.html" data-scroll="section-25" class="internal">The Chain Rule</a></li>
+<li><a href="section-26.html" data-scroll="section-26" class="internal">Implicit Differentiation</a></li>
+<li><a href="section-27.html" data-scroll="section-27" class="internal">(X) Rates of Changes in the Natural and Social Sciences</a></li>
+<li><a href="section-28.html" data-scroll="section-28" class="internal">Related Rates</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch3.html" data-scroll="ch3" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Differentiation</span></a><ul>
+<li><a href="section-31.html" data-scroll="section-31" class="internal">Maximum &amp; Minimum Values</a></li>
+<li><a href="section-32.html" data-scroll="section-32" class="internal">(X) The Mean Value Theorem</a></li>
+<li><a href="section-33.html" data-scroll="section-33" class="internal">How Derivatives Affect the Shape of a Graph</a></li>
+<li><a href="section-34.html" data-scroll="section-34" class="internal">Limits at Infinity &amp; Horizontal Asymptotes</a></li>
+<li><a href="section-35.html" data-scroll="section-35" class="internal">Summary of Curve Sketching</a></li>
+<li><a href="section-36.html" data-scroll="section-36" class="internal">(X) Graphing with Calculus and Calculators</a></li>
+<li><a href="section-37.html" data-scroll="section-37" class="internal">Optimization</a></li>
+<li><a href="section-38.html" data-scroll="section-38" class="internal">(X) Newton's Method</a></li>
+<li><a href="section-39.html" data-scroll="section-39" class="internal">Antiderivatives</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch4.html" data-scroll="ch4" class="internal"><span class="codenumber">4</span> <span class="title">Integrals</span></a><ul>
+<li><a href="section-41.html" data-scroll="section-41" class="internal">Areas &amp; Distance</a></li>
+<li><a href="section-42.html" data-scroll="section-42" class="internal">The Definite Integral</a></li>
+<li><a href="section-43.html" data-scroll="section-43" class="internal">The Fundamental Theorem of Calculus</a></li>
+<li><a href="section-44.html" data-scroll="section-44" class="internal">Indefinite Integrals &amp; the Net Change Theorem</a></li>
+<li><a href="section-45.html" data-scroll="section-45" class="internal">The Substitution Rule</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch5.html" data-scroll="ch5" class="internal"><span class="codenumber">5</span> <span class="title">Applications of Integration</span></a><ul>
+<li><a href="section-51.html" data-scroll="section-51" class="internal">Areas Between Curves</a></li>
+<li><a href="section-52.html" data-scroll="section-52" class="internal">Volumes</a></li>
+<li><a href="section-53.html" data-scroll="section-53" class="internal">Volumes by Cylindrical Shells</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-18"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.8</span> <span class="title">Continuity</span>
+</h2>
+<article class="objectives goal-like" id="objectives-7"><h3 class="heading"><span class="type">Objectives</span></h3>
+<ul class="disc">
+<li id="li-440"><p id="p-derived-li-440">State the definition of continuity at a point and use the definition to determine if a function is continuous at a point</p></li>
+<li id="li-441"><p id="p-derived-li-441">Identify removable, jump, and infinite discontinuities and give examples of functions that include at least one of these types of discontinuities</p></li>
+<li id="li-442"><p id="p-derived-li-442">Define one-sided continuity and connect one-sided continuity to overall continuity at a point.</p></li>
+<li id="li-443"><p id="p-derived-li-443">Justify when a function is continuous on an interval by using theorems, limit laws, and the definition of continuity</p></li>
+<li id="li-444"><p id="p-derived-li-444">State and use the Intermediate Value Theorem</p></li>
+</ul></article><section class="subsection" id="section-18-beforeclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.8.1</span> <span class="title">Before Class</span>
+</h3>
+<figure class="figure figure-like" id="figure-9"><a class="external" href="https://mymedia.ou.edu/media/1.8-1/1_tbdlbou8" target="_blank"><code class="code-inline tex2jax_ignore">https://mymedia.ou.edu/media/1.8-1/1_tbdlbou8</code></a><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">9<span class="period">.</span></span><span class="space"> </span>Pre-Class Video 1</figcaption></figure><section class="subsubsection" id="section-18-definition"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">1.8.1.1</span> <span class="title">The Definition</span>
+</h4>
+<article class="definition definition-like" id="definition-17"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.8.1</span><span class="period">.</span><span class="space"> </span><span class="title">Continuity.</span>
+</h5>
+<p id="p-85">A function is <dfn class="terminology">continuous at input <span class="process-math">\(a\)</span></dfn> if <span class="process-math">\(\ds \lim_{x\to a} f(x) = f(a)\)</span></p>
+<p id="p-86">If this condition fails, then <span class="process-math">\(f\)</span> is said to be <dfn class="terminology">discontinuous at input <span class="process-math">\(a\)</span></dfn>.</p>
+<p id="p-87"><span class="process-math">\(f\)</span> is <dfn class="terminology">continuous on an interval</dfn> if it is continuous at every number in the interval.</p></article><article class="assemblage assemblage-like" id="assemblage-11"><h5 class="heading"><span class="title">Conditions for Continuity.</span></h5>
+<p id="p-88">Continuity of a function requires three things:</p>
+<ol class="decimal">
+<li id="li-445"><p id="p-derived-li-445"><span class="process-math">\(a\)</span> is in the domain of <span class="process-math">\(f\)</span></p></li>
+<li id="li-446"><p id="p-derived-li-446"><span class="process-math">\(\ds \lim_{x\to a} f(x)\)</span> exists</p></li>
+<li id="li-447"><p id="p-derived-li-447"><span class="process-math">\(\displaystyle \ds \lim_{x\to a} f(x) = f(a)\)</span></p></li>
+</ol></article><article class="question example-like" id="question-6"><h5 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.8.2</span><span class="period">.</span>
+</h5>Look back at Section 1.5 and the conditions for the existence of a limit.  What connections can you draw between the existence of a limit and the conditions for continuity?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-91" id="solution-91"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-91"><div class="solution solution-like">In order for a function to be continuous, the limit must exist.</div></div>
+</div></article><article class="example example-like" id="example-87"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.8.3</span><span class="period">.</span>
+</h5>Use the graph to find the following: <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-72.svg" role="img" class="contained" alt="The graph has some discontinuities; I'm not sure how to describe the graph without giving away the question."></div>
+<ol class="lower-alpha cols4">
+<li id="li-448"><p id="p-derived-li-448"><span class="process-math">\(\displaystyle \ds \lim_{x\to 1^+} f(x)\)</span></p></li>
+<li id="li-449"><p id="p-derived-li-449"><span class="process-math">\(\displaystyle \ds \lim_{x\to 1^-} f(x)\)</span></p></li>
+<li id="li-450"><p id="p-derived-li-450"><span class="process-math">\(\displaystyle \ds \lim_{x\to 1} f(x)\)</span></p></li>
+<li id="li-451"><p id="p-derived-li-451">Is <span class="process-math">\(f\)</span> continuous at <span class="process-math">\(x =1 \text{?}\)</span></p></li>
+<li id="li-452"><p id="p-derived-li-452"><span class="process-math">\(\displaystyle \ds \lim_{x\to 3^+} f(x)\)</span></p></li>
+<li id="li-453"><p id="p-derived-li-453"><span class="process-math">\(\displaystyle \ds \lim_{x\to 3^-} f(x)\)</span></p></li>
+<li id="li-454"><p id="p-derived-li-454"><span class="process-math">\(\displaystyle \ds \lim_{x\to 3} f(x)\)</span></p></li>
+<li id="li-455"><p id="p-derived-li-455">Is <span class="process-math">\(f\)</span> continuous at <span class="process-math">\(x =3 \text{?}\)</span></p></li>
+<li id="li-456"><p id="p-derived-li-456"><span class="process-math">\(\displaystyle \ds \lim_{x\to 0^+} f(x)\)</span></p></li>
+<li id="li-457"><p id="p-derived-li-457"><span class="process-math">\(\displaystyle \ds \lim_{x\to 0^-} f(x)\)</span></p></li>
+<li id="li-458"><p id="p-derived-li-458"><span class="process-math">\(\displaystyle \ds \lim_{x\to 0} f(x)\)</span></p></li>
+<li id="li-459"><p id="p-derived-li-459">Is <span class="process-math">\(f\)</span> continuous at <span class="process-math">\(x =0 \text{?}\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-92" id="solution-92"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-92"><div class="solution solution-like"><ol class="lower-alpha cols4">
+<li id="li-460"><p id="p-derived-li-460"><span class="process-math">\(\displaystyle \infty\)</span></p></li>
+<li id="li-461"><p id="p-derived-li-461"><span class="process-math">\(\displaystyle -2\)</span></p></li>
+<li id="li-462"><p id="p-derived-li-462"><span class="process-math">\(\displaystyle DNE\)</span></p></li>
+<li id="li-463"><p id="p-derived-li-463">No</p></li>
+<li id="li-464"><p id="p-derived-li-464"><span class="process-math">\(\displaystyle -3\)</span></p></li>
+<li id="li-465"><p id="p-derived-li-465"><span class="process-math">\(\displaystyle -3\)</span></p></li>
+<li id="li-466"><p id="p-derived-li-466"><span class="process-math">\(\displaystyle -3\)</span></p></li>
+<li id="li-467"><p id="p-derived-li-467">No</p></li>
+<li id="li-468"><p id="p-derived-li-468"><span class="process-math">\(\displaystyle -3\)</span></p></li>
+<li id="li-469"><p id="p-derived-li-469"><span class="process-math">\(\displaystyle -3\)</span></p></li>
+<li id="li-470"><p id="p-derived-li-470"><span class="process-math">\(\displaystyle -3\)</span></p></li>
+<li id="li-471"><p id="p-derived-li-471">Yes</p></li>
+</ol></div></div>
+</div></article><article class="assemblage assemblage-like" id="assemblage-12"><h5 class="heading"><span class="title">Types of Discontinuities.</span></h5>
+<p id="p-89">There are three kinds of discontinuities which we will encounter:</p>
+<ul class="disc">
+<li id="li-472"><p id="p-derived-li-472">Vertical Asymptote</p></li>
+<li id="li-473"><p id="p-derived-li-473">Jump Discontinuity</p></li>
+<li id="li-474"><p id="p-derived-li-474">Removable Discontinuity</p></li>
+</ul></article><article class="example example-like" id="example-88"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.8.4</span><span class="period">.</span>
+</h5>Sketch an example of each of the three kinds of discontinuities.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-93" id="solution-93"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-93"><div class="solution solution-like"><div class="sidebyside"><div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;">
+<div class="sbspanel top" style="width:31.0344827586207%;"><img src="generated/latex-image/image-73.svg" role="img" class="contained" alt="The graph of a function with a vertical asymptote-type discontinuity.  As \(x\) approaches the asymptote, the output on the right approaches \(\infty\) and the output on the left approaches \(-\infty\text{.}\)"></div>
+<div class="sbspanel top" style="width:31.0344827586207%;"><img src="generated/latex-image/image-74.svg" role="img" class="contained" alt="The graph shows jump discontinuities; the graph jumps from one output value to another."></div>
+<div class="sbspanel top" style="width:31.0344827586207%;"><img src="generated/latex-image/image-75.svg" role="img" class="contained" alt='Here a parabola has a removable discontinuity at its vertex; the output at the vertex has been "moved" to above the vertex rather than on it.'></div>
+</div></div></div></div>
+</div></article><article class="definition definition-like" id="definition-18"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.8.5</span><span class="period">.</span><span class="space"> </span><span class="title">Continuity from the Right and Left.</span>
+</h5> A function <span class="process-math">\(f\)</span> is said to be <dfn class="terminology">continuous from the right</dfn> at input <span class="process-math">\(a\)</span> if <span class="process-math">\(\ds \lim_{x\to a^+} f(x) = f(a)\text{,}\)</span> and <span class="process-math">\(f\)</span> is <dfn class="terminology">continuous from the left</dfn> at input <span class="process-math">\(a\)</span> if <span class="process-math">\(\ds \lim_{x\to a^-} f(x) = f(a)\text{.}\)</span></article></section></section><section class="subsection" id="section-18-preclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.8.2</span> <span class="title">Pre-Class Activities</span>
+</h3>
+<article class="example example-like" id="example-89"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.8.6</span><span class="period">.</span>
+</h4>Use the graph below to answer the following questions: <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/18fig1.svg" class="contained"></div>
+<ol class="lower-alpha">
+<li id="li-475"><p id="p-derived-li-475">State the numbers at which <span class="process-math">\(f\)</span> is discontinuous, and classify each as a <em class="emphasis">vertical asymptote</em>, <em class="emphasis">jump discontinuity</em>, or <em class="emphasis">removable discontinuity</em>.</p></li>
+<li id="li-476"><p id="p-derived-li-476">For each of the numbers in (a), determine whether <span class="process-math">\(f\)</span> is right-continuous, left-continuous, or neither.</p></li>
+<li id="li-477"><p id="p-derived-li-477">Use interval notation to write where <span class="process-math">\(f\)</span> is continuous.</p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-94" id="solution-94"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-94"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-478"><p id="p-derived-li-478">At <span class="process-math">\(x=-4\)</span> we have a removable discontinuity; at <span class="process-math">\(x=-2\)</span> and <span class="process-math">\(x=2\text{,}\)</span> there are jump discontinuities; at <span class="process-math">\(x=4\)</span> there is a vertical asymptote.</p></li>
+<li id="li-479"><p id="p-derived-li-479">At <span class="process-math">\(x=-4\)</span> the function is left and right continuous; at <span class="process-math">\(x=-2\text{,}\)</span> the function is left continuous; and <span class="process-math">\(x=2\text{,}\)</span> the function is right continuous; at <span class="process-math">\(x=4\)</span> the function is right continuous.</p></li>
+<li id="li-480"><p id="p-derived-li-480"><span class="process-math">\(\displaystyle (-\infty,-4)\cup(-4,-2)\cup(-2,2)\cup(2,4)\cup(4,\infty)\)</span></p></li>
+</ol></div></div>
+</div></article><article class="example example-like" id="example-90"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.8.7</span><span class="period">.</span>
+</h4>Sketch the graph of a function <span class="process-math">\(f\)</span> that is continuous everywhere, but is: <ul class="disc">
+<li id="li-481"><p id="p-derived-li-481">Discontinuous at <span class="process-math">\(x = 5\)</span></p></li>
+<li id="li-482"><p id="p-derived-li-482">Left-continuous at <span class="process-math">\(x = -1\)</span></p></li>
+<li id="li-483"><p id="p-derived-li-483">Has a removable discontinuity at <span class="process-math">\(x = 3\)</span></p></li>
+</ul>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-95" id="solution-95"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-95"><div class="solution solution-like">Answers vary</div></div>
+</div></article></section><section class="subsection" id="section-18-inclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.8.3</span> <span class="title">In Class</span>
+</h3>
+<article class="example example-like" id="example-91"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.8.8</span><span class="period">.</span>
+</h4>Show that <span class="process-math">\([\![x]\!]\)</span> is right-continuous, but not left-continuous at integer values.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-96" id="solution-96"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-96"><div class="solution solution-like">Let <span class="process-math">\(x=a\)</span> be any integer.  For right continuity, we need to show that <span class="process-math">\(\ds \lim_{x\to a^+} = f(a)\text{.}\)</span>  Note that <span class="process-math">\(\ds \lim_{x\to a^+} f(x) = a\text{,}\)</span> and that <span class="process-math">\(f(a) = a\text{.}\)</span>  Thus, the function is right continuous.  Similarly, for left continuity, we require <span class="process-math">\(\ds \lim_{x\to a^-} = f(a)\text{.}\)</span>  However, <span class="process-math">\(\ds \lim_{x\to a^-} = a-1\)</span> and <span class="process-math">\(f(a) = a\text{;}\)</span> thus, the function is not left continuous.</div></div>
+</div></article><article class="example example-like" id="example-92"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.8.9</span><span class="period">.</span>
+</h4>Show that the function <span class="process-math">\(f(x) = 3+\sqrt{1-x^2}\)</span> is continuous on the interval <span class="process-math">\([-1,1]\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-97" id="solution-97"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-97"><div class="solution solution-like">
+<p id="p-90">We prove the claim in three steps: (1) show continuity at the left endpoint; (2) show continuity at the right endpoint; (3) show continuity on the interval <span class="process-math">\((-1,1)\text{.}\)</span></p>
+<p id="p-91">For continuity at <span class="process-math">\(x=-1\text{,}\)</span> we need to show right continuity of the function at the point.  For this to be true, <span class="process-math">\(\ds \lim_{x\to -1^+} = f(-1)\text{.}\)</span> Then,</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\ds \lim_{x\to -1^+} f(x)= \lim_{x\to -1^+} 3 + \sqrt{1-x^2} = 3
+\end{equation*}
+</div>
+<p class="continuation">Since <span class="process-math">\(f(-1) = 3\text{,}\)</span> the function is right continuous.</p>
+<p id="p-92">For continuity at <span class="process-math">\(x=1\text{,}\)</span> we need to show left continuity of the function at the point.  For this to be true, <span class="process-math">\(\ds \lim_{x\to 1} = f(1)\text{.}\)</span> Then,</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\ds \lim_{x\to 1^-} f(x)= \lim_{x\to 1^-} 3 + \sqrt{1-x^2} = 3
+\end{equation*}
+</div>
+<p class="continuation">Since <span class="process-math">\(f(1) = 3\text{,}\)</span> the function is left continuous.</p>
+<p id="p-93">For continuity on <span class="process-math">\((-1,1)\text{,}\)</span> let <span class="process-math">\(a\in (-1,1)\)</span> be arbitrary.  For continuity, we need to show that <span class="process-math">\(\ds \lim_{x\to a} f(x) = f(a)\text{.}\)</span>  Then,</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\ds \lim_{x\to a} f(x) = 3+\sqrt{1-a^2} 
+\end{equation*}
+</div>
+<p class="continuation">Since <span class="process-math">\(f(a) = 3+\sqrt{1-a^2}\text{,}\)</span> the function is continuous on <span class="process-math">\((-1,1)\text{,}\)</span> and thus continuous on the interval <span class="process-math">\([-1,1]\text{.}\)</span></p>
+</div></div>
+</div></article><section class="subsubsection" id="section-18-useful"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">1.8.3.1</span> <span class="title">Useful Results</span>
+</h4>
+<article class="theorem theorem-like" id="theorem-4"><h5 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.8.10</span><span class="period">.</span><span class="space"> </span><span class="title">Properties of Continuous Functions.</span>
+</h5>If <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> are continuous at <span class="process-math">\(a\text{,}\)</span> and if <span class="process-math">\(c\)</span> is a constant, then the following functions are all continuous at <span class="process-math">\(a\text{:}\)</span> <ol class="decimal">
+<li id="li-484"><p id="p-derived-li-484"><span class="process-math">\(\displaystyle f\pm g\)</span></p></li>
+<li id="li-485"><p id="p-derived-li-485"><span class="process-math">\(\displaystyle cf\)</span></p></li>
+<li id="li-486"><p id="p-derived-li-486"><span class="process-math">\(\displaystyle fg\)</span></p></li>
+<li id="li-487"><p id="p-derived-li-487"><span class="process-math">\(\dfrac{f}{g}\text{,}\)</span> for <span class="process-math">\(g\neq 0\)</span></p></li>
+<li id="li-488"><p id="p-derived-li-488"><span class="process-math">\(\displaystyle f\circ g\)</span></p></li>
+</ol></article><article class="example example-like" id="example-93"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.8.11</span><span class="period">.</span>
+</h5>Prove the first property of continuous functions.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-98" id="solution-98"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-98"><div class="solution solution-like">We want to show that <span class="process-math">\(\ds \lim_{x\to a}[f(x) \pm g(x)] = f(a) \pm g(a)\text{.}\)</span>  Since <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\)</span> are continuous, we know that <span class="process-math">\(\ds \lim_{x\to a} f(x) = f(a)\)</span> and <span class="process-math">\(\ds \lim_{x\to a} g(x) = g(a)\text{.}\)</span>  Then,<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\ds \lim_{x\to a} f(x) \pm \lim_{x\to a} g(x) = f(a) + g(a)
+\end{equation*}
+</div>By the sum/difference limit law from Section 1.6, we can rewrite the left hand side as<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\ds \lim_{x\to a} [f(x) \pm g(x)] = f(a) + g(a)
+\end{equation*}
+</div>Which is what we wanted to show.</div></div>
+</div></article><article class="question example-like" id="question-7"><h5 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.8.12</span><span class="period">.</span>
+</h5>Can you prove the remaining 4 properties?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-99" id="solution-99"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-99"><div class="solution solution-like">The proofs run similarly to the previous Example 1.8.11, utilizing limit laws from Section 1.6.</div></div>
+</div></article><article class="theorem theorem-like" id="theorem-5"><h5 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.8.13</span><span class="period">.</span><span class="space"> </span><span class="title">Types of Continuous Functions.</span>
+</h5>The following functions are continuous on their domain: <ul class="disc">
+<li id="li-489"><p id="p-derived-li-489">Polynomials</p></li>
+<li id="li-490"><p id="p-derived-li-490">Rational Functions</p></li>
+<li id="li-491"><p id="p-derived-li-491">Root Functions</p></li>
+<li id="li-492"><p id="p-derived-li-492">Trigonometric Functions</p></li>
+</ul></article><article class="example example-like" id="example-94"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.8.14</span><span class="period">.</span>
+</h5>Find the interval(s) on which the following functions are continuous <ol class="lower-alpha">
+<li id="li-493"><p id="p-derived-li-493"><span class="process-math">\(\displaystyle f(x) = x^{67}-47.521x^{51}+719\)</span></p></li>
+<li id="li-494"><p id="p-derived-li-494"><span class="process-math">\(\displaystyle g(x) = \dfrac{x^2+2x+17}{x^2-1}\)</span></p></li>
+<li id="li-495"><p id="p-derived-li-495"><span class="process-math">\(\displaystyle h(x) = \sqrt{x} + \dfrac{x+1}{x-1} + \dfrac{x+1}{x^2+1}\)</span></p></li>
+<li id="li-496"><p id="p-derived-li-496"><span class="process-math">\(\displaystyle \cos\lrpar{\dfrac{1}{x}}\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-100" id="solution-100"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-100"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-497"><p id="p-derived-li-497"><span class="process-math">\(\displaystyle (-\infty,\infty)\)</span></p></li>
+<li id="li-498"><p id="p-derived-li-498"><span class="process-math">\(\displaystyle (-\infty,-1)\cup (-1,1)\cup (1,\infty)\)</span></p></li>
+<li id="li-499"><p id="p-derived-li-499"><span class="process-math">\(\displaystyle [0,1)\cup (1,\infty)\)</span></p></li>
+<li id="li-500"><p id="p-derived-li-500"><span class="process-math">\(\displaystyle (-\infty,0)\cup (0,\infty)\)</span></p></li>
+</ol></div></div>
+</div></article></section><section class="subsubsection" id="section-18-ivt"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">1.8.3.2</span> <span class="title">The Intermediate Value Theorem</span>
+</h4>
+<article class="theorem theorem-like" id="theorem-6"><h5 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.8.15</span><span class="period">.</span><span class="space"> </span><span class="title">Intermediate Value Theorem.</span>
+</h5>
+<p id="p-94">Suppose that <span class="process-math">\(f\)</span> is continuous on the closed interval <span class="process-math">\([a,b]\text{,}\)</span> and let <span class="process-math">\(N\)</span> be any number between <span class="process-math">\(f(a)\)</span> and <span class="process-math">\(f(b)\text{,}\)</span> where <span class="process-math">\(f(a)\neq f(b)\text{.}\)</span>  Then, there exists a number <span class="process-math">\(c\)</span> in <span class="process-math">\((a,b)\)</span> such that <span class="process-math">\(f(c) = N\text{.}\)</span></p></article><p id="p-95">Here's a sketch illustrating why the Intermediate Value Theorem is true:</p>
+<p id="p-96"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-77.svg" role="img" class="contained" alt="The image shows a function which dips below the \(x-\)axis and rises back to a max, drops to a min, rises to a max again, then falls.  There is a line at some output \(N\) which shows the intersection of the function with the line \(y=4\text{.}\)  The function intersects the line at four points; \(c_1,c_2,c_3,c_4\text{.}\)  There is a dashed line from each intersection to the \(x-\)axis, with labels."></div></p>
+<article class="question example-like" id="question-8"><h5 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.8.16</span><span class="period">.</span>
+</h5>Why does a function need to be continuous in order to guarantee the conclusion of the Intermediate Value Theorem?  Sketch a graph to support your idea.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-101" id="solution-101"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-101"><div class="solution solution-like">
+<p id="p-97">If the function is not continuous, <span class="process-math">\(f(a)\)</span> is not guaranteed to exist or the limit may not exist.</p>
+<p id="p-98"><div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel top" style="width:44.4444444444444%;"><img src="generated/latex-image/image-78.svg" role="img" class="contained" alt="This image shows a function which does not have input \(x=a\) in its domain, which means the output \(N\) is not in the range of the function."></div>
+<div class="sbspanel top" style="width:44.4444444444444%;"><img src="generated/latex-image/image-79.svg" role="img" class="contained" alt="This image shows a function with a jump discontinuity at \(x=a\text{,}\) which means the output \(N\) is not in the range of the function."></div>
+</div></div></p>
+</div></div>
+</div></article><article class="example example-like" id="example-95"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.8.17</span><span class="period">.</span>
+</h5>Show that the equation <span class="process-math">\(4x^3-6x^2+3x-2 = 0\)</span> has a root between 1 and 2.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-102" id="solution-102"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-102"><div class="solution solution-like">
+<p id="p-99">Our strategy will be to (1) show that the IVT is applicable, and (2) show that the function switches from positive to negative.  Because of continuity (and the images above), the function must pass through 0 at least once.</p>
+<p id="p-100">First, note that the IVT is applicable since <span class="process-math">\(f(x) = 4x^3-6x^2+3x-2\)</span> is continuous as a polynomial.</p>
+<p id="p-101">Now, let <span class="process-math">\(N = 0\text{.}\)</span>  To show that <span class="process-math">\(f(x) = 0\text{,}\)</span> we must know we pass through 0, i.e. we switch from positive to negative.  Note that <span class="process-math">\(f(0) = -2\)</span> and <span class="process-math">\(f(2) = 12\text{,}\)</span> so we have our condition met.</p>
+<p id="p-102">Since <span class="process-math">\(f(0) = -2\)</span> and <span class="process-math">\(f(2) = 12\text{,}\)</span> by the IVT, we know that there exists at least one <span class="process-math">\(c\in (0,2)\)</span> such that <span class="process-math">\(f(c) = 0\text{.}\)</span></p>
+</div></div>
+</div></article><article class="example example-like" id="example-96"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.8.18</span><span class="period">.</span>
+</h5>For what value of the constant <span class="process-math">\(c\)</span> is the function <span class="process-math">\(f\)</span> continuous on <span class="process-math">\((-\infty,\infty)\text{?}\)</span><div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f(x) = \begin{cases} cx^2+2x \amp x \lt 2\\ x^3-cx \amp x\geq 2 \end{cases}
+\end{equation*}
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-103" id="solution-103"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-103"><div class="solution solution-like"><span class="process-math">\(c=\dfrac{2}{3}\)</span></div></div>
+</div></article></section></section><section class="subsection" id="section-18-afterclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.8.4</span> <span class="title">After Class Activities</span>
+</h3>
+<article class="example example-like" id="example-97"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.8.19</span><span class="period">.</span>
+</h4>Use the graph below to answer the following questions: <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/18fig2.svg" class="contained"></div>
+<ol class="lower-alpha">
+<li id="li-501"><p id="p-derived-li-501">State the numbers at which <span class="process-math">\(f\)</span> is discontinuous, and classify each as a <em class="emphasis">vertical asymptote</em>, <em class="emphasis">jump discontinuity</em>, or <em class="emphasis">removable discontinuity</em>.</p></li>
+<li id="li-502"><p id="p-derived-li-502">For each of the numbers in (a), determine whether <span class="process-math">\(f\)</span> is right-continuous, left-continuous, or neither.</p></li>
+<li id="li-503"><p id="p-derived-li-503">Use interval notation to write where <span class="process-math">\(f\)</span> is continuous.</p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-104" id="solution-104"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-104"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-504"><p id="p-derived-li-504">At <span class="process-math">\(x=-2\text{,}\)</span> the function has a removable discontinuity; at <span class="process-math">\(x=-1\text{,}\)</span> the function has a vertical asymptote; at <span class="process-math">\(x=0\text{,}\)</span> the function has a jump discontinuity; at <span class="process-math">\(x=1\text{,}\)</span> the function has a jump discontinuity.</p></li>
+<li id="li-505"><p id="p-derived-li-505">At <span class="process-math">\(x=-2\text{,}\)</span> the is left and right continuous; at <span class="process-math">\(x=-1\text{,}\)</span> the function is neither left nor right continuous; at <span class="process-math">\(x=0\text{,}\)</span> the function is left continuous; at <span class="process-math">\(x=1\text{,}\)</span> the function is neither left nor right continuous.</p></li>
+<li id="li-506"><p id="p-derived-li-506"><span class="process-math">\(\displaystyle [-3,-2)\cup (-2,-1)\cup (-1,3]\)</span></p></li>
+</ol></div></div>
+</div></article><article class="example example-like" id="example-98"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.8.20</span><span class="period">.</span>
+</h4>Find the numbers at which <span class="process-math">\(g\)</span> is discontinuous.  At which of these numbers is <span class="process-math">\(f\)</span> right-continuous, left-continuous, or neither?<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+g(x) = \begin{cases}x^2 + 1 \amp x \leq 1\\ 3-x \amp 1 \lt x \leq 4 \\ \sqrt{x} \amp x &gt; 4 \end{cases}
+\end{equation*}
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-105" id="solution-105"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-105"><div class="solution solution-like">The function is continuous at <span class="process-math">\(x=1\text{,}\)</span> and only left continuous at <span class="process-math">\(x=4\text{.}\)</span>
+</div></div>
+</div></article><article class="example example-like" id="example-99"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.8.21</span><span class="period">.</span>
+</h4>Find values of <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> that make <span class="process-math">\(f\)</span> continuous everywhere.<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f(x) = \begin{cases}\dfrac{x^2-4}{x-2} \amp x \lt 2 \\ ax^2 - bx + 3 \amp 2\leq x \lt 3 \\ 2x - a + b \amp x \geq 3 \end{cases}
+\end{equation*}
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-106" id="solution-106"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-106"><div class="solution solution-like"><span class="process-math">\(a=\dfrac{1}{2},b=\dfrac{1}{2}\)</span></div></div>
+</div></article><article class="example example-like" id="example-100"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.8.22</span><span class="period">.</span>
+</h4>Suppose <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> are continuous function such that <span class="process-math">\(g(2) = 6\)</span> and <span class="process-math">\(\ds \lim_{x\to 2} [3f(x) + f(x)g(x)] = 36\text{.}\)</span>  What is <span class="process-math">\(f(2)\text{?}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-107" id="solution-107"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-107"><div class="solution solution-like"><span class="process-math">\(f(2) = 4\)</span></div></div>
+</div></article><article class="example example-like" id="example-101"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.8.23</span><span class="period">.</span>
+</h4>Show that the equation <span class="process-math">\(\sqrt{x-5} = \dfrac{1}{x+3}\)</span> has at least one real root.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-108" id="solution-108"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-108"><div class="solution solution-like">Set <span class="process-math">\(f(x) = \sqrt{x-5}-\dfrac{1}{x+3}\text{.}\)</span>  <span class="process-math">\(f(x)\)</span> is continuous on <span class="process-math">\([5,\infty)\text{,}\)</span> so its root (if it exists) must occur on that interval.  Since <span class="process-math">\(f(5) = -\dfrac{1}{8}\)</span> and <span class="process-math">\(f(6) = \dfrac{8}{9}\text{,}\)</span> the function switches from positive to negative on <span class="process-math">\((5,6)\text{.}\)</span>  Since it is continuous on that interval, we may conclude that <span class="process-math">\(f(x) = 0\)</span> at least once in <span class="process-math">\((5,6)\)</span> by the IVT.  Thus, the function has at least one real root.</div></div>
+</div></article></section></section></div></main>
+</div>
+</body>
+</html>

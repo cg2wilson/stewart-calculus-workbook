@@ -1,0 +1,674 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-52">
+			<title>Volumes</title>
+			
+				<objectives>
+					<ul>
+						<li>
+							Compute volume of a three-dimensional solid as an integral of cross-sectional area of specified shapes
+						</li>
+						
+						<li>
+							Determine if the Disk Method or Washer Method is most appropriate to find the volume of a solid of revolution, and compute the volume of the solid by integrating with respect to <m>x</m> or <m>y</m>
+						</li>
+						
+						
+					</ul>
+				</objectives>
+			<subsection xml:id="section-52-beforeclass">
+				<title>Before Class</title>
+				
+				<figure>
+					<caption>Pre-Class Video 1</caption>
+					<url href = "https://mymedia.ou.edu/media/5.2-1.mp4/1_syajzn32"/>
+				</figure>
+				<figure>
+					<caption>Pre-Class Video 2</caption>
+					<url href = "https://mymedia.ou.edu/media/5.2-2/1_xp65khwr"/>
+				</figure>
+				
+				<subsubsection xml:id="section-52-volumes-crosssections">
+					<title>Volumes by Cross-Sections</title>
+					<example>
+						<statement>
+							An isosceles triangle has a base of 10 inches and height of 5 inches.  From geometry, we know that its area is 25 in<m>^2</m>; use integrals to find its area by slicing <em>vertically</em>, then by slicing <em>horizontally</em>.
+						</statement>
+						<solution>
+							<p>
+								When slicing vertically, we get the integral <m>\ds \int_{-5}^0 x+5\, dx + \int_0^5 -x + 5\, dx</m> which gives an area of 25.
+							</p>
+							<p>
+								When slicing horizontally, we get the integral <m>\ds \int_0^5 10-2y\, dy</m>, which also gives an area of 25.
+							</p>
+						</solution>
+					</example>
+					
+					<example>
+						<statement>
+							Describe how to find the volume of the triangular prism below:
+							<image>
+								<description>
+									A triangular prism with base length 10 inches and height 5 inches; the depth is not specified.
+								</description>
+							<latex-image>
+								<![CDATA[
+								\begin{tikzpicture}
+									\draw (0,0)--(2,2)--(4,0)--(0,0) node[midway, below] {10 in};
+									\draw (6,3)--(8,1);
+									\draw[dashed] (4,1)--(6,3);
+									\draw[dashed] (4,1)--(8,1);
+									\draw (2,2)--(6,3);
+									\draw (4,0)--(8,1) node[midway, below] {$L$};
+									\draw[dashed] (0,0)--(4,1);
+									\draw[thick,densely dotted] (2,0)--(2,2) node[midway,right] {5 in};
+								\end{tikzpicture}
+								]]>
+							</latex-image>
+							</image>
+						</statement>
+						<solution>
+							<p>
+								Multiply the base triangle area by the length of the prism, so that the volume is <m>25L</m>
+							</p>
+						</solution>
+					</example>
+					
+					<example>
+						<statement>
+							Show that the volume of a right cylinder of radius <m>r</m> and height <m>h</m> has volume <m>V = \pi r^2h</m>
+						</statement>
+						<solution>
+							<p>
+								Let <m>y</m> be the vertical axis.  The cross-sectional area is the area of a circle, <m>A(y) = \pi r^2</m>.  Then, the volume of the solid is 
+								<md>
+									<mrow> \ds \int_0^h \pi r^2\, dy \amp = \pi r^2 y\bigg\rvert_0^h </mrow>
+									<mrow> \amp = \pi r^2h</mrow>
+								</md> 
+							</p>
+						</solution>
+					</example>	
+					
+					<p>
+						For generic volumes, we can consider cross sections of a solid, and <q>slabs</q> of constant width.
+					</p>
+					
+					<definition>
+						<title>Volume</title>
+						<idx>Volume</idx>
+						<p>
+							Let <m>S</m> be a solid that lies between <m>x =a</m> and <m>x = b</m>.  If the cross-sectional area of <m>S</m> in the plane <m>P_x</m>, through <m>x</m> and perpendicular to the <m>x-</m>axis is <m>A(x)</m>, where <m>A</m> is a continuous function, then the <term>volume</term> of <m>S</m> is given by
+							<me>
+								V = \lim_{n\to\infty} \sum_{i=1}^n A(x_i^*)\,\Delta x = \int_a^b A(x)\,dx
+							</me>
+						</p>
+					</definition>
+					
+					<example>
+						<statement>
+							Show that the volume of a sphere of radius <m>r</m> is <m>V = \dfrac{4}{3}\pi r^3</m>
+						</statement>
+						<solution>
+							<p>
+								Since vertical cross sections are circles of raidus <m>r</m>, we have the relationship <m>x^2 + y^2 = r^2</m>, so that <m>y = \sqrt{r^2-x^2}</m>.  This means that the cross-sectional area is given by <m>\pi y^2 = \pi (r^2-x^2)</m>.  Thus, the volume is given by 
+								<md>
+									<mrow>\ds \int_{-r}^r \pi (r^2-x^2)\, dx \amp = \pi r^2 x - \dfrac{1}{3}\pi x^3\bigg\rvert_{-r}^r </mrow>
+									<mrow> \amp = \dfrac{4}{3}\pi r^3</mrow>
+								</md>
+							</p>
+						</solution>
+					</example>
+				</subsubsection>
+			</subsection>
+			<subsection xml:id="section-52-preclass">
+				<title>Pre-Class Activities</title>
+				<example>
+					<statement>
+						Draw an explicit connection between how we found area under a curve in Section 4.1 and Section 4.2, and how we've defined area here.
+					</statement>
+					<solution>
+						<p>
+							Answers vary
+						</p>
+					</solution>
+				</example>
+				
+				<example>
+					<statement>
+						Use cross-sectional areas to prove that the volume of a square-based pyramid is <m>\dfrac{1}{3}L^2h</m>, where <m>L</m> is the side length of the square base, and <m>h</m> is the pyramid's height.
+					</statement>
+					<solution>
+						<p>
+							Consider the cross-section with the tip of the pyramid at the origin, and the base at <m>x= h</m>.  We have a line going through the origin and the point <m>\lrpar{h,\dfrac{L}{2}}</m>.  This means the equation of the line is given by <m>y = \dfrac{L}{2h}x</m>.  
+						</p>
+						<p>
+							Now, cross-sectional areas are squares; this means the height of each square is given by <m>2\cdot \dfrac{L}{2h}x = \dfrac{L}{h}x</m>.  So, the cross-sectional area is <m>\dfrac{L^2}{h^2}x^2</m>.  This means the volume is given by <m>\ds \int_0^h \dfrac{L^2}{h^2}x^2\, dx = \dfrac{1}{3}L^2h</m>
+						</p>
+					</solution>
+				</example>
+				
+				<example>
+					<statement>
+						A wedge is cut out of a circular cylinder of radius 5 by two planes.  One plane is perpendicular to the axis of the cylinder.  The other intersects the first at an angle of <m>45^\circ</m> along a diameter of the cylinder.  Find the volume of the wedge.
+					</statement>
+					<solution>
+						<p>
+							<m>\dfrac{250}{3}</m>
+						</p>
+					</solution>
+				</example>
+			</subsection>
+			<subsection xml:id="section-52-inclass">
+				<title>In Class</title>
+				<subsubsection xml:id="section-52-disk-method">
+					<title>Disk Method</title>
+					
+					<example>
+						<statement>
+							Let <m>f(x) = 3</m>
+							<ol label="a">
+								<li>
+									Sketch the function on the interval <m>[0,2]</m>, and find the area between the curve and the <m>x-</m>axis on <m>[0,2]</m>.
+								</li>
+								
+								<li>
+									Sketch the cylinder created by rotating the line segment around the <m>x-</m>axis; what is the volume of the cylinder?
+								</li>
+								
+								<li>
+									Write an expression for a slice of the volume of the cylinder.
+								</li>
+								
+								<li>
+									Create and evaluate an integral expression for the volume of the cylinder.
+								</li>
+							</ol>
+						</statement>
+						<solution>
+							<p>
+								<ol label="a">
+								<li>
+									<image>
+										<description>
+											This is the graph of the function <m>f(x) = 3</m> on the interval <m>[0,3]</m>
+										</description>
+										<latex-image>
+										<![CDATA[
+											\begin{tikzpicture}
+												\begin{axis}[
+													axis x line = middle,
+													axis y line = middle,
+													every axis y label/.style={at={(ticklabel cs:1.1)}},
+													y label style={at={(axis description cs:0,1.1)},anchor=north},
+													ylabel = {$y$},
+													every axis x label/.style= {at ={(ticklabel cs:1)}},
+													x label style={at={(axis description cs:1.1,0)},anchor=east},
+													xlabel = {$x$},
+													xmin=0,xmax=3,
+												]
+												\addplot[very thick, domain=0:2,samples=50]{3}; 
+												\end{axis}
+											\end{tikzpicture}
+										]]>
+										</latex-image>
+									</image>
+								</li>
+								
+								<li>
+									<p>
+										<image>
+											<description>
+												This is the sketch of the cylinder created by rotating <m>f(x) = 3</m> on the interval <m>[0,2]</m> about the <m>x-</m>axis.
+											</description>
+											<latex-image>
+											<![CDATA[
+												\begin{tikzpicture}
+													\begin{axis}[
+														axis x line = middle,
+														axis y line = middle,
+														every axis y label/.style={at={(ticklabel cs:1.1)}},
+														y label style={at={(axis description cs:0,1.1)},anchor=north},
+														ylabel = {$y$},
+														every axis x label/.style= {at ={(ticklabel cs:1)}},
+														x label style={at={(axis description cs:1.1,.5)},anchor=east},
+														xlabel = {$x$},
+														xmin=0,xmax=3,
+													]
+													\addplot[very thick, domain=0:2,samples=50]{3}; 
+													\addplot[very thick, domain = 0:2, samples = 50] {-3};
+													\coordinate (a) at (0,3);
+													\coordinate (b) at (0,-3);
+													\coordinate (c) at (2,3);
+													\coordinate (d) at (2,-3);
+													\end{axis}
+													\draw (a) to[bend right] (b);
+													\draw[dashed] (a) to[bend left] (b);
+													\draw (c) to[bend left] (d);
+													\draw (c) to[bend right] (d);
+												\end{tikzpicture}
+											]]>
+											</latex-image>
+										</image>
+									</p>
+									<p>
+										The volume of the cylinder is <m>18\pi</m>
+									</p>
+								</li>
+								
+								<li>
+									<m>V = 9\pi \Delta x</m>, where the height of the slice is denoted with <m>\Delta x</m>
+								</li>
+								
+								<li>
+									<m>\ds \int_0^2 9\pi \, dx = 18\pi</m>
+								</li>
+							</ol>
+							</p>
+						</solution>
+					</example>
+					
+					<example>
+						<statement>
+							Let <m>f(x) = 3x</m>
+							<ol label="a">
+								<li>
+									Sketch the region bounded by <m>f(x)</m>, <m>x=1</m>, and the <m>x-</m>axis.
+								</li>
+								<li>
+									Sketch the solid created by rotating the region about the <m>x-</m>axis on <m>[0,1]</m>.
+								</li>
+								<li>
+									Sketch and label an approximating cylinder for the volume of the cone.
+								</li>
+								<li>
+									Create and evaluate an integral expression to find the volume of the cone.
+								</li>
+							</ol>
+						</statement>
+						<solution>
+							<p>
+								<ol label="a">
+								<li>
+									<image>
+										<description>
+											This is the sketch of the <m>f(x) = 3x</m> on the interval <m>[0,1.5]</m>.
+										</description>
+										<latex-image>
+										<![CDATA[
+											\begin{tikzpicture}
+												\begin{axis}[
+													axis x line = middle,
+													axis y line = middle,
+													every axis y label/.style={at={(ticklabel cs:1.1)}},
+													y label style={at={(axis description cs:0,1.1)},anchor=north},
+													ylabel = {$y$},
+													every axis x label/.style= {at ={(ticklabel cs:1)}},
+													x label style={at={(axis description cs:1.1,0)},anchor=east},
+													xlabel = {$x$},
+													xmin=0,xmax=1.5,
+												]
+												\addplot[thick, domain=0:1,samples=50]{3*x}; 
+												\end{axis}
+											\end{tikzpicture}
+										]]>
+										</latex-image>
+									</image>
+								</li>
+								<li>
+									<image>
+										<description>
+											This is the sketch of the cylinder created by rotating <m>f(x) = 3x</m> on the interval <m>[0,1]</m> about the <m>x-</m>axis.
+										</description>
+										<latex-image>
+										<![CDATA[
+											\begin{tikzpicture}
+												\begin{axis}[
+													axis x line = middle,
+													axis y line = middle,
+													every axis y label/.style={at={(ticklabel cs:1.1)}},
+													y label style={at={(axis description cs:0,1.1)},anchor=north},
+													ylabel = {$y$},
+													every axis x label/.style= {at ={(ticklabel cs:1)}},
+													x label style={at={(axis description cs:1.1,.5)},anchor=east},
+													xlabel = {$x$},
+													xmin=0,xmax=1.5,
+												]
+												\addplot[thick, domain=0:1,samples=50]{3*x}; 
+												\addplot[thick, domain = 0:1, samples = 50] {-3*x};
+												\coordinate (a) at (1,3);
+												\coordinate (b) at (1,-3);
+												\end{axis}
+												\draw (a) to[bend right] (b);
+												\draw (a) to[bend left] (b);
+											\end{tikzpicture}
+										]]>
+										</latex-image>
+									</image>
+								</li>
+								<li>
+									<p>
+										<image>
+											<description>
+												This is the sketch of the cylindrical slice of the solid created by rotating <m>f(x) = 3x</m> on the interval <m>[0,1]</m> about the <m>x-</m>axis.
+											</description>
+											<latex-image>
+											<![CDATA[
+												\begin{tikzpicture}
+													\draw (0,1)--(2,1);
+													\draw (0,-1)--(2,-1);
+													\draw (0,1) to[bend right] (0,-1);
+													\draw[dashed] (0,1) to[bend left] (0,-1);
+													\draw (2,1) to[bend right] (2,-1);
+													\draw (2,1) to[bend left] (2,-1);
+													
+												\end{tikzpicture}
+											]]>
+											</latex-image>
+										</image>
+									</p>
+									<p>
+										The radius is <m>3x_i</m> and the height is <m>\Delta x</m>
+									</p>
+								</li>
+								<li>
+									<m>\ds \int_0^1 9\pi x^2\, dx = 3\pi</m>
+								</li>
+							</ol>
+							</p>
+						</solution>
+					</example>
+					
+					<assemblage>
+						<title>Disk Method</title>
+						<p>
+							If <m>f</m> is a positive, continuous function on some interval <m>[a,b]</m>, then the volume of the solid created by rotating <m>f(x)</m> about the <m>x-</m>axis is given by
+							<me>
+								\int_a^b \pi [r(x)]^2\, dx
+							</me>
+							where <m>r(x)</m> is the radius function.
+						</p>
+					</assemblage>
+					
+					<example>
+						<statement>
+							Find the volume of the solid obtained by rotating the region under the curve <m>y = \sqrt{x}</m> from 0 to 1, about the <m>x-</m>axis.  Sketch the region and a typical approximating cylinder.  
+						</statement>
+						<solution>
+							<p>
+								<image>
+									<description>
+										This is the sketch of the region under the curve <m>y = \sqrt{x}</m> on the interval <m>[0,1]</m> that will be rotated about the <m>x-</m>axis.
+									</description>
+									<latex-image>
+									<![CDATA[
+										\begin{tikzpicture}
+											\begin{axis}[
+												axis x line = middle,
+												axis y line = middle,
+												every axis y label/.style={at={(ticklabel cs:1.1)}},
+												y label style={at={(axis description cs:0,1.1)},anchor=north},
+												ylabel = {$y$},
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												x label style={at={(axis description cs:1.1,0)},anchor=east},
+												xlabel = {$x$},
+												xmin=0,xmax=1.5,
+												ymax = 1.5
+											]
+											\addplot[thick, domain=0:1,samples=100, name path = a]{sqrt(x)};
+											\addplot[draw=none, name path = b] {0};
+											\addplot[gray, draw=none, fill opacity = 0.5] fill between[of=a and b, soft clip = {domain=0:1}];
+											\end{axis}
+
+										\end{tikzpicture}
+									]]>
+									</latex-image>
+								</image>
+							</p>
+							<p>
+								<image>
+									<description>
+										This is the sketch of the cylindrical slice of the solid created by rotating <m>y = sqrt(x)</m> on the interval <m>[0,1]</m> about the <m>x-</m>axis.
+									</description>
+									<latex-image>
+									<![CDATA[
+										\begin{tikzpicture}
+											\draw (0,1)--(2,1);
+											\draw (0,-1)--(2,-1);
+											\draw (0,1) to[bend right] (0,-1);
+											\draw[dashed] (0,1) to[bend left] (0,-1);
+											\draw (2,1) to[bend right] (2,-1);
+											\draw (2,1) to[bend left] (2,-1);
+											
+										\end{tikzpicture}
+									]]>
+									</latex-image>
+								</image>
+							</p>
+							<p>
+								The volume is <m>\dfrac{\pi}{2}</m>
+							</p>
+						</solution>
+					</example>
+					
+					<example>
+						<statement>
+							Find the volume of the solid obtained by rotating the first-quadrant region bounded by <m>y = x^2</m>, <m>y = 4</m>, and <m>x = 0</m> about the <m>y-</m>axis.
+						</statement>
+						<solution>
+							<p>
+								<m>8\pi</m>
+							</p>
+						</solution>
+					</example>
+						
+					<example>
+						<statement>
+							Find the volume of the solid formed by revolving the region between the parabola <m>x = y^2 + 1</m> and the line <m>x = 3</m> about the line <m>x = 3</m>.
+						</statement>
+						<solution>
+							<p>
+								<m>\dfrac{64\sqrt{2}}{15}\pi</m>
+							</p>
+						</solution>
+					</example>
+					
+				</subsubsection>
+				<subsubsection xml:id="section-52-washer-method">
+					<title>Washer Method</title>
+					
+					<example><statement>
+						Let <m>f(x) = x^2</m>.
+						<ol label="a">
+							<li>
+								Sketch the first-quadrant region bounded by <m>f(x)</m> and the line <m>y = 4</m>.
+							</li> 
+									
+							<li>
+								Sketch the solid resulting from rotating the region about the line <m>y = 0</m>.
+							</li> 
+								
+							<li>
+								What are some problems with using the disk method in this example?
+							</li> 
+						</ol>
+					</statement>
+					<solution>
+						<p>
+							<ol label="a">
+								<li>
+									<image>
+										<description>
+											This is the sketch of the region bounded the curves <m>y = x^2</m> and <m>y = 4</m> that will be rotated about the <m>x-</m>axis.
+										</description>
+										<latex-image>
+										<![CDATA[
+											\begin{tikzpicture}
+												\begin{axis}[
+													axis x line = middle,
+													axis y line = middle,
+													every axis y label/.style={at={(ticklabel cs:1.1)}},
+													y label style={at={(axis description cs:0,1.1)},anchor=north},
+													ylabel = {$y$},
+													every axis x label/.style= {at ={(ticklabel cs:1)}},
+													x label style={at={(axis description cs:1.1,0)},anchor=east},
+													xlabel = {$x$},
+													xmin=0,xmax=3,
+												]
+												\addplot[thick, domain=0:2.5,samples=100, name path = a]{x^2};
+												\addplot[thick, domain = 0:2.5, name path = b] {4};
+												\addplot[gray, draw=none, fill opacity = 0.5] fill between[of=a and b, soft clip = {domain=0:2}];
+												\end{axis}
+
+											\end{tikzpicture}
+										]]>
+										</latex-image>
+									</image>
+								</li> 
+										
+								<li>
+									<image>
+										<description>
+											This is the sketch of the solid formed by rotating the region between the curves <m>y = x^2</m> and <m>y = 4</m> about the <m>x-</m>axis.
+										</description>
+										<latex-image>
+										<![CDATA[
+											\begin{tikzpicture}
+												\begin{axis}[
+													axis x line = middle,
+													axis y line = middle,
+													every axis y label/.style={at={(ticklabel cs:1.1)}},
+													y label style={at={(axis description cs:0,1.1)},anchor=north},
+													ylabel = {$y$},
+													every axis x label/.style= {at ={(ticklabel cs:1)}},
+													x label style={at={(axis description cs:1.1,.5)},anchor=east},
+													xlabel = {$x$},
+													xmin=0,xmax=3,
+												]
+												\addplot[thick, domain=0:2,samples=100, name path = a]{x^2};
+												\addplot[thick, domain = 0:2, name path = b] {4};
+												\addplot[thick, domain = 0:2, samples=100, name path = c] {-x^2};	
+												\addplot[thick, domain = 0:2, name path = d] {-4};
+												\coordinate (p1) at (0,4);
+												\coordinate (p2) at (0,-4);
+												\coordinate (p3) at (2,4);
+												\coordinate (p4) at (2,-4);
+												\end{axis}
+												\draw (p1) to[bend right] (p2);
+												\draw[dashed] (p1) to[bend left] (p2);
+												\draw (p3) to[bend right] (p4);
+												\draw (p3) to[bend left] (p4);
+											\end{tikzpicture}
+										]]>
+										</latex-image>
+									</image>
+								</li> 
+									
+								<li>
+									The empty space in the middle can't be captured by a disk.
+								</li> 
+							</ol>
+						</p>
+					</solution>
+					</example>
+						
+						
+					<example><statement>
+						Find the volume of the solid formed by rotating the region bounded by <m>y = x^2</m> and <m>y = x</m> about the <m>x-</m>axis.  
+					</statement>
+					<solution>
+						<p>
+							<m>\dfrac{128\pi}{5}</m>
+						</p>
+					</solution>
+					</example>
+					
+					<assemblage>
+						<title>Washer Method</title>
+						<p>
+							If <m>f</m> and <m>g</m> are two continuous functions on <m>[a,b]</m> such that <m>f(x) \geq g(x)</m> on <m>[a,b]</m>, then the volume of the solid created by rotating the region between <m>f</m> and <m>g</m> is given by
+							<me>
+								\int_a^b \pi[(R(x))^2-(r(x))^2]\, dx
+							</me>
+							where <m>R(x)</m> is the outer radius, and <m>r(x)</m> is the inner radius.
+						</p>
+					</assemblage>
+					
+					<example><statement>
+						Find the volume of the solid obtained by rotating the region from the previous example about the line <m>y=1</m>.
+					</statement>
+					<solution>
+						<p>
+							<m>\dfrac{\pi}{5}</m>
+						</p>
+					</solution>
+					</example>
+						 
+					<example><statement>
+						The region bounded by the curve <m>y = x^2 + 1</m> and the line <m>y = -x + 3</m> is revolved about the <m>x-</m>axis to generate a solid.  Find the volume of the solid.
+					</statement>
+					<solution>
+						<p>
+							<m>\dfrac{117\pi}{5}</m>
+						</p>
+					</solution>
+					</example>	
+						 					
+					<example><statement>
+						Find the volume of the solid obtained by rotating the region bounded by the curves <m>y = x+1,y=0,x=0,x=2</m> about the <m>x-</m>axis.
+					</statement>
+					<solution>
+						<p>
+							<m>\dfrac{26\pi}{3}</m>
+						</p>
+					</solution>
+					</example>
+			 
+			
+					<example><statement>
+						Find the volume of the solid obtained by rotating the region bounded by the curves <m>y = \sqrt{25-x^2},y=0,x=2,x=4</m> about the <m>x-</m>axis.
+					</statement>
+					<solution>
+						<p>
+							<m>\dfrac{94\pi}{3}</m>
+						</p>
+					</solution>
+					</example>
+				</subsubsection>
+			</subsection>
+			<subsection xml:id="section-52-afterclass">
+				<title>After Class Activities</title>
+				
+				<example><statement>
+					Find the volume of the solid obtained by rotating the region bounded by the curves <m>y = 2\sqrt{x}, y=2, x=0</m> about the <m>x-</m>axis.
+				</statement>
+				<solution>
+					<p>
+						<m>2\pi</m>
+					</p>
+				</solution>
+				</example>
+					 
+					
+				<example><statement>
+					Find the volume of the solid obtained by rotating the region bounded by the curves <m>y = x^2,x=y^2</m> about <m>y = 1</m>.
+				</statement>
+				<solution>
+					<p>
+						<m>\dfrac{11\pi}{30}</m>
+					</p>
+				</solution>
+				</example>
+					 
+					
+				<example><statement>
+					Find the volume of the solid created by rotating the the region bounded by the curves <m>y= x^3</m>, <m>y = 0</m>, and <m>x = 1</m> about <m>x = 2</m>.
+				</statement>
+				<solution>
+					<p>
+						<m>\dfrac{3\pi}{5}</m>
+					</p>
+				</solution>
+				</example>
+			</subsection>
+		</section>
+		

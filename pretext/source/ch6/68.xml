@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-62">
+	<title>Exponential Functions &amp; Derivatives</title>
+	<objectives>
+		<ul>
+			<li>
+				Identify the general exponential function <m>y=b^x</m> for any base <m>b >0,b\neq 1</m> and its basic properties (domain, range, graphical behavior depending on value of <m>b</m>)
+			</li>
+			<li>
+				Apply rules of exponents to exponential functions
+			</li>
+			<li>
+				Evaluate limits of functions involving exponential expressions and analyze the end behavior of those functions
+			</li>
+			<li>
+				Find the inverse of a one-to-one function given a numerical, algebraic, or graphical representation
+			</li>
+			<li>
+				Apply the formula for the derivative of inverse functions
+			</li>
+		</ul>
+	</objectives>
+
+	<subsection xml:id="section-62-beforeclass">
+		<title>Before Class</title>
+		<figure>
+			<caption>Pre-Class Video 1</caption>
+			<!--
+			<url href = ""/>
+			-->
+		</figure>
+
+		<subsubsection xml:id="section-61-inverses-properties">
+			<title>Inverse Functions &amp; Properties</title>
+
+		</subsubsection>
+	</subsection>
+
+	<subsection xml:id="section-61-preclass">
+		<title>Pre-Class Activities</title>
+
+	</subsection>
+
+	<subsection xml:id="section-61-inclass">
+		<title>In Class</title>
+		<subsubsection xml:id="section-61-inverses-calculus">
+            <title></title>
+        </subsubsection>
+	</subsection>
+
+	<subsection xml:id="section-61-afterclass">
+		<title>After Class Activities</title>
+
+	</subsection>
+</section>

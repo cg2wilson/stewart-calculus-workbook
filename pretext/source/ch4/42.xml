@@ -1,0 +1,641 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-42">
+	<title>The Definite Integral</title>
+	
+		<objectives>
+			<ul>
+				<li>
+					State and use the limit definition of the definite integral to compute definite integrals of simple polynomial functions or set up integrals of more complicated functions
+				</li>
+				
+				<li>
+					Interpret definite integrals in terms of net signed area,and distinguish between total area and net area
+				</li>
+				
+				<li>
+					Identify conditions that guarantee integrability of a function on an interval
+				</li>
+				
+				<li>
+					Evaluate integrals by interpreting them in terms of area
+				</li>
+				
+				<li>
+					Use the Midpoint Rule to approximate definite integrals
+				</li>
+				
+				<li>
+					State, apply, and give examples to illustrate the properties of definite integrals
+				</li>
+				
+			</ul>
+		</objectives>
+	<subsection xml:id="section-42-beforeclass">
+		<title>Before Class</title>
+		
+		<figure>
+			<caption>Pre-Class Video 1</caption>
+			<url href = "https://mymedia.ou.edu/media/4.2-1/1_t1bcahd5"/>
+		</figure>
+
+		
+		<subsubsection xml:id="section-42-definition">
+		<title>Definition of the Definite Integral</title>
+		<idx>Definite Integral</idx>
+		<definition>
+			Let <m>f</m> be a function defined for <m>a\leq x\leq b</m>, and divide <m>[a,b]</m> into <m>n</m> subintervals of width <m>\Delta x = \dfrac{b-a}{n}</m>.  Let	
+			<me>a=x_0,x_1,x_2,\cdots,x_{n-1},x_n=b</me>
+			be the endpoints of these subintervals, and let <m>x_i^*</m> be any sample points in these subintervals, so that <m>x_i^*</m> lies in the <m>i</m>th subinterval <m>[x_{i-1},x_i]</m>.  Then, the <term>definite integral</term> of <m>f</m> from <m>a</m> to <m>b</m> is given by
+			<me>\ds \int_a^b f(x)\, dx = \sum_{n=1}^\infty f(x_i^*)\Delta x  </me>
+			provided that this limit exists and gives the same value for all possible choices of sample points.  If it does exist, we say that <m>f</m> is <term>integrable</term> on <m>[a,b]</m>. The sum <m>\ds \sum_{n=1}^\infty f(x_i^*)\Delta x</m> is called a <term>Riemann sum</term>.
+		</definition>
+		
+		<assemblage xml:id="section-42-terminology">	
+			<title>Terminology</title>
+			<p>
+				Given the definite integral <m>\ds \int_a^b f(x)\, dx</m>, we have some terminology:
+				<ul>
+					<li>
+						<m>a</m> is called the <em>lower bound/lower limit of integration</em>
+					</li>
+					<li>
+						<m>b</m> is called the <em>upper bound/upper limit of integration</em>
+					</li>
+					<li>
+						<m>\ds \int</m> is called an <em>integral sign</em>
+					</li>
+					<li>
+						We use <m>dx</m> to denote an <em>infinitesimal change in x</em>
+					</li>
+				</ul>
+			</p>
+		</assemblage>
+		
+		<theorem>
+			<statement>
+				If <m>f</m> is continuous on <m>[a,b]</m>, or if <m>f</m> has a finite number of discontinuities, then <m>f</m> is integrable on <m>[a,b]</m>.
+			</statement>
+		</theorem>
+		
+		<theorem>
+			<statement>
+				If <m>f</m> is integrable on <m>[a,b]</m>, then <m>\ds \int_a^b f(x)\, dx = \lim_{n\to\infty} \sum_{i=1}^n f(x_i)\Delta x</m> where <m>\Delta x = \dfrac{b-a}{n}</m> and <m>x_i = a + i\Delta x</m>
+			</statement>
+		</theorem>
+		
+		<assemblage xml:id="section-42-interpretation">
+			<title>Interpretation of the Integral</title>
+			
+			<p>
+				The definite integral <m>\ds \int_a^b f(x)\, dx</m> can be interpreted as 
+				<ul>
+					<li>
+						The total area between <m>f(x)</m> and the <m>x-</m>axis if <m>f(x)\geq 0</m> on <m>[a,b]</m>
+					</li>
+					
+					<li>
+						The net area between <m>f(x)</m> and the <m>x-</m>axis if <m>f(x)\geq 0</m> and <m>f(x) &lt; 0</m> on <m>[a,b]</m>
+					</li>
+				</ul>
+			</p>
+		</assemblage>
+		<p>
+			Here are some pictures to help with the interpretations:
+		</p>
+		<figure>
+			<caption>
+				Here, the net area and total area are both 1, because the function is strictly positive on the interval.
+			</caption>
+			<image>
+				<description>
+					This is the graph of <m>f(x) = 1</m> on the interval <m>[0,1]</m>
+				</description>
+				<latex-image>
+				<![CDATA[
+					\begin{tikzpicture}
+						\begin{axis}[
+							axis x line = middle,
+							axis y line = middle,
+							every axis y label/.style={at={(ticklabel cs:1.1)}},
+							y label style={at={(axis description cs:0,1.15)},anchor=north},
+							ylabel = {$f(x)$},
+							every axis x label/.style= {at ={(ticklabel cs:1)}},
+							x label style={at={(axis description cs:1.1,0)},anchor=east},
+							xlabel = {$x$},
+							xmin=0, xmax=1.5,
+							ymax = 1.5
+						]
+						\addplot[thick, domain=0:1, name path=A]{1}; 
+						\addplot[draw=none, name path = B] {0};
+						\addplot[gray, fill opacity = .5] fill between[of=A and B, soft clip = {domain=0:1}];
+						\end{axis}
+					\end{tikzpicture}
+				]]>
+				</latex-image>
+			</image>
+		</figure>
+		<figure>
+			<caption>
+				Here, the net area is 0 but the total area is 2 because the function takes on positive and negative values in the interval.
+			</caption>
+			<image>
+				<description>
+					This is the graph of <m>f(x) = 1</m> on the interval <m>[0,1]</m>
+				</description>
+				<latex-image>
+				<![CDATA[
+					\begin{tikzpicture}
+						\begin{axis}[
+							axis x line = middle,
+							axis y line = middle,
+							every axis y label/.style={at={(ticklabel cs:1.1)}},
+							y label style={at={(axis description cs:0,1.15)},anchor=north},
+							ylabel = {$f(x)$},
+							every axis x label/.style= {at ={(ticklabel cs:1)}},
+							x label style={at={(axis description cs:1.1,.5)},anchor=east},
+							xlabel = {$x$},
+							xmin=0, xmax=2.5,
+							ymax = 1.5, ymin = -1.5
+						]
+						\addplot[thick, domain=0:1, name path=A]{1}; 
+						\addplot[draw=none, name path = B] {0};
+						\addplot[gray, fill opacity = .5] fill between[of=A and B, soft clip = {domain=0:1}];
+						\addplot[thick, domain = 1:2, name path = C] {-1};
+						\addplot[gray, fill opacity = .5] fill between[of=B and C, soft clip = {domain=1:2}];
+						\end{axis}
+					\end{tikzpicture}
+				]]>
+				</latex-image>
+			</image>
+		</figure>
+		<example>
+			<statement>
+				Express <m>\ds \lim_{n\to\infty} \sum_{i=1}^\infty (x_i^3-2x_i^2+1-x_i\cos(x_i))\Delta x</m> as an integral.  Use proper notation.
+			</statement>
+			<solution>
+				<m>\ds \int_a^b x^3-2x^2 + 1 - x\cos x\, dx</m>
+			</solution>
+		</example>
+		
+		<example><statement>
+			<ol label="a">
+				<li>
+					The greatest integer function is integrable on any finite-length interval, but not necessarily differentiable on the same interval.  Why is this consistent with the above information?
+				</li>
+				<li>
+					Compute <m>\ds \int_0^5 f(x)\, dx</m>, where <m>f(x)</m> is the greatest integer function, <em>using geometry</em>.
+				</li>
+			</ol>
+		</statement>
+		<solution>
+			<ol label="a">
+				<li>
+					This is because the number of discontinuities on a finite-length interval is finite, so from the above theorem, the function is integrable.
+				</li>
+				<li>
+					<m>\ds \int_0^5 f(x)\, dx = 10</m>
+				</li>
+			</ol>
+		</solution>
+		</example>
+		</subsubsection>
+	</subsection>
+	<subsection xml:id="section-42-preclass">
+		<title>Pre-Class Activities</title>
+		
+		<example>
+			
+			<statement>
+			
+				<sidebyside widths="40% 40%">
+					<image>
+					<description>
+						The graph of <m>\sin x</m> on <m>[-3\pi,3\pi]</m>, with shading from <m>x=0</m> to <m>x=\pi/2</m>
+					</description>
+					<latex-image>
+					<![CDATA[
+						\begin{tikzpicture}
+							\begin{axis}[
+								%width = .5\textwidth,
+								every tick label/.append style={font=\scriptsize},
+								axis x line = middle,
+								axis y line = middle,
+								grid = both,
+								grid style={line width=.1pt, draw=gray!10},
+								major grid style={line width=.2pt,draw=gray!50},
+								minor grid style={line width=.2pt, draw=gray!40},
+									every axis y label/.style={at={(ticklabel cs:1.15)}},
+								ymin = -1, ymax = 1,
+								y label style={at={(axis description cs:.5,1.15)},anchor=north},
+									ylabel = {$\sin x$},
+								every axis x label/.style= {at ={(ticklabel cs:1)}},
+								xtick = {-7.85, -6.28, -4.71, -3.14,- 1.57,  0, 1.57, 3.14, 4.71, 6.28, 7.85},
+								x label style={at={(axis description cs:1.1,.5)},anchor=east},
+									xticklabels = {$-\dfrac{5\pi}{2}$, $-2\pi$, $-\dfrac{3\pi}{2}$, $-\pi$, $-\dfrac{\pi}{2}$,0,$\dfrac{\pi}{2}$, $\pi$, $\dfrac{3\pi}{2}$, $2\pi$, $\dfrac{5\pi}{2}$},
+									xlabel = {$x$},
+								xmin = -10, xmax = 10,
+							]
+							
+							\addplot[thick,smooth, samples = 100, domain = -10:10, name path = A] {sin(deg(x))};
+							\addplot[draw = none, name path = B, domain = 0:1.57] {0};
+							\addplot[gray] fill between[of = A and B, soft clip = {domain = 0:1.57}];
+							\end{axis}
+						\end{tikzpicture}]]>
+					</latex-image>
+					</image>
+					<image>
+					<description>
+						The graph of <m>\sin x</m> on <m>[-3\pi,3\pi]</m>, with shading from <m>x=0</m> to <m>x=\pi/2</m>
+					</description>
+					<latex-image>
+					<![CDATA[
+						\begin{tikzpicture}
+							\begin{axis}[
+								%width = .5\textwidth,
+								every tick label/.append style={font=\scriptsize},
+								axis x line = middle,
+								axis y line = middle,
+								grid = both,
+								grid style={line width=.1pt, draw=gray!10},
+								major grid style={line width=.2pt,draw=gray!50},
+								minor grid style={line width=.2pt, draw=gray!40},
+									every axis y label/.style={at={(ticklabel cs:1.15)}},
+									%ytick = {-4, -2, -3, -1, 1, 2, 3, 4},
+									ymin = -1, ymax = 1,
+								y label style={at={(axis description cs:.5,1.15)},anchor=north},
+									ylabel = {$\cos x$},
+									every axis x label/.style= {at ={(ticklabel cs:1)}},
+									xtick = {-7.85, -6.28, -4.71, -3.14,- 1.57,  0, 1.57, 3.14, 4.71, 6.28, 7.85},
+									x label style={at={(axis description cs:1.1,.5)},anchor=east},
+									xticklabels = {$-\dfrac{5\pi}{2}$, $-2\pi$, $-\dfrac{3\pi}{2}$, $-\pi$, $-\dfrac{\pi}{2}$,0,$\dfrac{\pi}{2}$, $\pi$, $\dfrac{3\pi}{2}$, $2\pi$, $\dfrac{5\pi}{2}$},
+									xlabel = {$x$},
+									xmin = -10, xmax = 10
+									%minor y tick num = 2,
+							]
+							
+							\addplot[thick,smooth, samples = 100, domain = -10:10, name path = A] {cos(deg(x))};
+							\addplot[draw = none, name path = B, domain = 0:1.57] {0};
+							\addplot[gray] fill between[of = A and B, soft clip = {domain = 0:1.57}];
+							\end{axis}
+						\end{tikzpicture}
+					]]>
+					</latex-image>
+					</image>
+				</sidebyside>
+				The shaded area on the graphs of <m>\sin x</m> and <m>\cos x</m> are both exactly 1.
+				<ol label = "a">
+					<li>
+						Compute the net area of <m>\sin x</m> on the interval <m>[0,2\pi]</m>
+					</li>
+					<li>
+						Compute the total area of <m>\sin x</m> on the interval <m>[0,2\pi]</m>
+					</li>
+					<li>
+						Compute the net area of <m>\cos x</m> on the interval <m>\left[-\dfrac{3\pi}{2},\pi\right]</m>
+					</li>
+					<li>
+						Compute the total area of <m>\cos x</m> on the interval <m>\left[-\dfrac{3\pi}{2},\pi\right]</m>
+					</li>
+					<li>
+						Compute the net area of <m>\sin x</m> on the intervals <m>\left[-\dfrac{\pi}{2},\dfrac{\pi}{2}\right]</m> and <m>[-\pi,\pi]</m>.  What conjecture can you make about the net area of odd functions over symmetric intervals?
+					</li>
+					<li>
+						Compute the net area of <m>\cos x</m> on the intervals <m>\left[-\dfrac{\pi}{2},\dfrac{\pi}{2}\right]</m> and <m>[-\pi,\pi]</m>.  What conjecture can you make about the net area of odd functions over symmetric intervals?
+					</li>
+				</ol>
+			</statement>
+			<solution>
+				<p>
+					<ol label="a">
+						<li>
+							0
+						</li>
+						<li>
+							2
+						</li>
+						<li>
+							<m>-1</m>
+						</li>
+						<li>
+							5
+						</li>
+						<li>
+							Both are 0.  Conjecture is left to student.
+						</li>
+						<li>
+							First interval is 2, second interval is 0.  Conjecture left to student.
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</example>
+		
+	</subsection>
+	
+	<subsection xml:id="section-42-inclass">
+		<title>In Class</title>
+		<subsubsection xml:id="section-42-evaluating-integrals">
+			<title>Evaluating Integrals</title>
+			
+			<example>
+				<statement>
+					Use the definition of the definite integral to show that <m>\ds \int_2^4 x\, dx = 6</m>
+				</statement>
+				<solution>
+					First note that 
+					<me>
+						\Delta x = \dfrac{b-a}{n} = \dfrac{2}{n}
+					</me>
+					For <m>x_i</m>, we have
+					<me>
+						x_i = a + i\Delta x = 2 + \dfrac{2i}{n}
+					</me>
+					This means that 
+					<me>
+						f(x_i) = 2 + \dfrac{2i}{n} 
+					</me>
+					So that the area of a single rectangle is given by 
+					<me>
+						f(x_i)\Delta x = \lrpar{2+\dfrac{2i}{n}}\cdot \dfrac{2}{n} = \dfrac{4}{n} + \dfrac{4i}{n^2}
+					</me>
+					And the sum of a finite number of rectangles is
+					<me>
+						\ds \sum_{i=1}^n f(x_i)\Delta x = \sum_{i=1}^n \dfrac{4}{n} + \dfrac{4i}{n^2} = 4 + \dfrac{2n(n+1)}{n^2}
+					</me>
+					after using the helpful formulas given below.  Now, the integral can be computed by taking the limit:
+					<me>
+						\ds \int_2^4 x\, dx = \lim_{n\to\infty} \sum_{i=1}^n f(x_i)\Delta x = 4 + 2 = 6
+					</me>
+					So the definite integral is 6.
+				</solution>
+			</example>
+			
+			<assemblage>
+				<p>
+				<tabular top="medium" left="medium">
+					<row bottom="medium">
+						<cell halign="center" colspan="2" left="medium" right="medium">
+							Helpful Formulas
+						</cell>
+						<cell halign="center" colspan="2" right="medium" left="medium">
+							Rules for Sigma Notation
+						</cell>
+					</row>
+					<row>
+						<cell left="medium">
+							<m>\ds \sum_{i=1}^n i</m>
+						</cell>
+						<cell right="medium">
+							<m> \dfrac{n(n+1)}{2}</m>
+						</cell>
+						<cell>
+							<m> \ds \sum_{i=1}^n c</m> 
+						</cell>
+						<cell right="medium">
+							<m> cn</m>
+						</cell>
+					</row>
+					<row>
+						<cell left="medium">
+							<m> \ds \sum_{i=1}^n i^2</m>
+						</cell>
+						<cell right="medium">
+							<m> \dfrac{n(n+1)(2n+1)}{6}</m>
+						</cell>
+						<cell>
+							<m> \ds \sum_{i=1}^n ca_i</m>
+						</cell>
+						<cell right="medium">
+							<m> \ds c\sum_{i=1}^n a_i</m>
+						</cell>
+					</row>
+					<row bottom="medium">
+						<cell left="medium">
+							<m> \ds \sum_{i=1}^n i^3</m>
+						</cell>
+						<cell right="medium">
+							<m> \lrpar{\dfrac{n(n+1)}{2}}^2</m>
+						</cell>
+						<cell>
+							<m>\ds \sum_{i=1}^n (a_i\pm b_i)</m>
+						</cell>
+						<cell right="medium">
+							<m>\ds \sum_{i=1}^n a_i \pm \sum_{i=1}^n b_i</m>
+						</cell>
+					</row>
+				</tabular>
+				</p>
+			</assemblage>
+			
+			<example>
+				<statement>
+					Evaluate <m>\ds \int_0^3 (x^3-2x)\, dx</m> using the definition of the definite integral.
+				</statement>
+				<solution>
+					<m>\dfrac{45}{4}</m>
+				</solution>
+			</example>
+			
+			<example>
+				<statement>
+					Set up an expression for <m>\ds \int_2^5 x^4\, dx</m> as a limit of sums.
+				</statement>
+				<solution>
+					<m>\ds \lim_{n\to\infty} \sum_{i=1}^n \lrpar{2 + \dfrac{3i}{n}}^4\cdot \dfrac{3}{n}</m>
+				</solution>
+			</example>
+			
+			<example>
+				<statement>
+					The graph of <m>f</m> is given below.
+					
+					<image source="42fig1.png"/>
+					
+					Evaluate each integral by interpreting it in terms of areas.
+					<ol label="a">
+						<li>
+							<m>\ds \int_0^2 f(x)\, dx</m>
+						</li>
+						<li>
+							<m>\ds \int_0^5 f(x)\, dx</m>
+						</li>
+						<li>
+							<m>\ds \int_5^7 f(x)\, dx</m>
+						</li>
+						<li>
+							<m>\ds \int_0^9 f(x)\, dx</m>
+						</li>
+					</ol>
+				</statement>
+				<solution>
+					<ol label="a">
+						<li>
+							4
+						</li>
+						<li>
+							10
+						</li>
+						<li>
+							<m>-3</m>
+						</li>
+						<li>
+							2
+						</li>
+					</ol>
+				</solution>
+			</example>
+		</subsubsection>
+		
+		<subsubsection xml:id="section-42-midpoint-rule">
+			<title>The Midpoint Rule</title>
+			
+			<introduction>
+				Instead of choosing our sample points to be left or right endpoints, we can choose any point inside the subinterval; a standout is the midpoint of the interval.
+			</introduction>
+			
+			<definition>
+				<title>Midpoint Rule</title>
+				<idx>Midpoint Rule</idx>
+				
+				<p>
+					<me>\ds \int_a^b f(x)\, dx \approx \sum_{i=1}^n f(\overline{x_i})\Delta x</me>
+					where <m>\Delta x = \dfrac{b-a}{n}</m> and <m>\overline{x_i} = \dfrac{x_{i-1}+x_i}{2}</m> is the midpoint of the interval <m>[x_{i-1},x_i]</m>.
+				</p>
+			</definition>
+			
+			<example>
+				<statement>
+					Use the Midpoint Rule with <m>n=5</m> to approximate <m>\ds \int_1^2 \dfrac{1}{x}\, dx</m>
+				</statement>
+				<solution>
+					<m>M_5 = 0.69191</m>
+				</solution>
+			</example>
+			
+		</subsubsection>
+		
+		<subsubsection xml:id="section-42-properties">
+			<title>Properties of the Definite Integral</title>
+			<introduction>
+				The following are useful properties when working with the definite integral:
+			</introduction>
+			
+			<theorem>
+				<title>Properties of the Definite Integral</title>
+				<statement>
+					Let <m>f,g</m> be continuous functions on <m>[a,b]</m>.  Let <m>c</m> be a constant.  Then,
+					<ol label="(1)">
+						<li>
+							<m>\ds \int_a^b f(x)\,dx = -\int_b^a f(x)\, dx</m>
+						</li>
+						<li>
+							<m>\ds \int_a^a f(x)\,dx = 0</m>
+						</li>
+						<li>
+							<m>\ds \int_a^b c\, dx = c(b-a)</m>
+						</li>
+						<li>
+							<m>\ds \int_a^b [f(x)\pm g(x)]\,dx = \int_a^b f(x)\,dx\pm \int_a^b g(x)\,dx</m>
+						</li>
+						<li>
+							<m>\int_a^b cf(x)\,dx = c\int_a^b f(x)\,dx</m>
+						</li>
+						<li>
+							<m>\ds \int_a^b f(x)\, dx = \int_a^d f(x)\, dx + \int_d^b f(x)\, dx</m>, for some <m>a \lt d \lt b</m>
+						</li>
+					</ol>
+				</statement>
+			</theorem>
+			
+			<example>
+				<statement>
+					If <m>\ds \int_0^6 f(x)\, dx = 10</m> and <m>\ds \int_0^8 f(x)\, dx = 4</m>, what is <m>\ds \int_6^8 f(x)\, dx</m>?
+				</statement>
+				<solution>
+					<m>\ds \int_6^8 f(x)\, dx = -6</m>
+				</solution>
+			</example>
+			
+			<example>
+				<statement>
+					Compute <m>\ds \int_1^2 (4+2x^2)\, dx</m>
+				</statement>
+				<solution>
+					<m>\dfrac{26}{3}</m>
+				</solution>
+			</example>
+			
+			<example><statement>
+				For any <m>a,b</m>, find the value of <m>\ds \int_a^b x\, dx</m>
+			</statement>
+			<solution>
+				<m>\ds \int_a^b x\, dx = \dfrac{b^2-a^2}{2}</m>
+			</solution>
+			</example>
+
+			<example>
+			<statement>
+				Evaluate the integrals by interpreting them in terms of area:
+				<ol label="a">
+					<li>
+						<m>\ds \int_0^9 \lrpar{\dfrac{2}{3}x-2}\, dx</m>
+					</li>
+					<li>
+						<m>\ds \int_{-6}^6 (x-\sqrt{36-x^2})\, dx</m>
+					</li>
+					<li>
+						<m>\ds \int_0^1 |2x-1|\, dx</m>
+					</li>
+				</ol>
+			</statement>
+			<solution>
+				<ol label="a">
+					<li>
+						<m>\ds \int_0^9 \lrpar{\dfrac{2}{3}x-2}\, dx = 9</m>
+					</li>
+					<li>
+						<m>\ds \int_{-6}^6 (x-\sqrt{36-x^2})\, dx = -18\pi</m>
+					</li>
+					<li>
+						<m>\ds \int_0^1 |2x-1|\, dx = \dfrac{1}{2}</m>
+					</li>
+				</ol>
+			</solution>
+		</example>
+
+		</subsubsection>
+	</subsection>
+	<subsection xml:id="section-42-afterclass">
+		<title>After Class Activities</title>
+		
+		
+		<example>
+			<statement>
+				Use the definition of the integral to find <m>\ds \int_1^4 (x^2-4x+2)\, dx</m>
+			</statement>
+			<solution>
+				<m>\ds \int_1^4 (x^2-4x+2)\, dx = -3</m>
+			</solution>
+		</example>
+		
+		<example>
+			<statement>
+				Use the Midpoint Rule to estimate <m>\ds \int_0^1 \sqrt{x^3+1}\, dx</m> to four decimal places, using <m>n=5</m> rectangles.
+			</statement>
+			<solution>
+				<m>M_5 = 1.1097</m>
+			</solution>
+		</example>
+		
+		<example>
+			<statement>
+				If <m>\ds \int_0^\pi \sin^4x\, dx = \dfrac{3\pi}{8}</m>, what is <m>\ds \int_\pi^0 \sin^4\, dx</m>?  Why?
+			</statement>
+			<solution>
+				<m>\ds \int_\pi^0 \sin^4\, dx = -\dfrac{3\pi}{8}</m> from the properties of integrals.
+			</solution>
+		</example>
+	</subsection>
+</section>
+		

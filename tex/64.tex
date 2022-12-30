@@ -1,0 +1,297 @@
+\documentclass[notes]{subfiles}
+\begin{document}
+	\addcontentsline{toc}{section}{6.4 - Derivatives of Logarithmic Functions}
+	\refstepcounter{section}
+	\fancyhead[RO,LE]{\bfseries \nameref{cs64}} 
+	\fancyhead[LO,RE]{\bfseries \small \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Chapter 6.4}
+	
+\section*{Derivatives of Logarithmic Functions}\label{cs64}
+	\subsection*{Before Class}
+	\addcontentsline{toc}{subsection}{Before Class}
+	\subsubsection*{The Natural Logarithm}
+	\addcontentsline{toc}{subsubsection}{The Natural Logarithm}
+		\showto{st}{
+		\begin{rmk}[Derivative of $\ln x$]
+			\[\dfrac{d}{dx}[\ln x] =\qquad\qquad\qquad \]
+		\end{rmk}
+		}
+		\showto{ins}{
+		\begin{rmk}[Derivative of $\ln x$]
+			\[\dfrac{d}{dx}[\ln x] =\dfrac{1}{x} \]
+		\end{rmk}
+		}
+		
+		\begin{pf}
+			\vspace{2.5in}
+		\end{pf}
+		
+		\begin{ex}
+			Find the derivative of $f(x) = \ln (x^2-5)$.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find the derivative of $\ln (\cos x)$.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Find the derivative of $\ln \lrpar{\dfrac{x-2}{\sqrt{x+1}}}$
+		\end{ex}
+			\vs{2}
+			
+		\begin{ex}
+			Argue why $\dfrac{d}{dx} (\ln |x|) = \dfrac{1}{x}$
+		\end{ex}
+			\vs{1}
+			
+		\showto{st}{
+		\begin{rmk}[Antiderivative of $\dfrac{1}{x}$]
+			\[\int \dfrac{1}{x}\, dx = \qquad \qquad \qquad\]
+		\end{rmk}
+		}
+		\showto{ins}{
+		\begin{rmk}[Antiderivative of $\dfrac{1}{x}$]
+			\[\int \dfrac{1}{x}\, dx = \ln |x| + C\]
+		\end{rmk}
+		}
+		\newpage
+		
+		\begin{ex}
+			Evaluate $\ds \int_1^5 \dfrac{1}{2x}\, dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Compute $\ds \int_1^e \dfrac{\ln x}{x}\, dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find $\ds \int \dfrac{x}{x^2 + 1}\, dx$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+	\subsection*{Pre-Class Activities}
+	\addcontentsline{toc}{subsection}{Pre-Class Activities}
+		\begin{ex}
+		Find the derivative:
+			\begin{enumerate}[(a)]
+				\item $f(x) = x\ln x - x$
+					\vs{.5}
+					
+				\item $g(x) = \ln (\sin^2x)$
+					\vs{1}
+					
+				\item $y = \dfrac{1}{\ln x}$
+					\vs{1}
+					
+				\item $h(t) = \ln(t + \sqrt{t^2-1})$
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+			\newpage
+		\begin{ex}
+			Find the integral:
+			\begin{enumerate}[(a)]
+				\item $\ds \int_2^4 \dfrac{3}{x}\, dx$
+					\vs{1}
+					
+				\item $\ds \int_4^9 \lrpar{\sqrt{x} + \dfrac{1}{\sqrt{x}}}^2\, dx$
+					\vs{1}
+					
+				\item $\ds \int \dfrac{\sin 2x}{1+\cos^2 x}\, dx$.  \emph{Hint}: $\sin 2x = 2\sin x\cos x$.
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+		
+		\begin{question}
+			Use this space to write any questions/concerns you have from the pre-class videos.
+		\end{question}
+			\vs{1}
+			\newpage
+			
+	\subsection*{In Class}
+	\addcontentsline{toc}{subsection}{In Class}
+	\subsubsection*{General Logs and Exponentials}
+	\addcontentsline{toc}{subsubsection}{General Logs and Exponentials}
+		\begin{ex}
+			Show that $\ds \int \tan x\, dx = \ln |\sec x| + C$
+		\end{ex}
+			\vs{1}
+		
+		\begin{ex}
+			Find the absolute minimum of the function $f(x) = x^2\ln x$
+		\end{ex}
+			\vs{1}
+			
+		\showto{st}{
+		\begin{rmk}[Derivative of General Logarithms]
+			\[\dfrac{d}{dx}\lrpar{\log_b x} = \qquad \qquad \qquad\]
+		\end{rmk}
+		}
+		\showto{ins}{
+		\begin{rmk}[Derivative of General Logarithms]
+			\[\dfrac{d}{dx}\lrpar{\log_b x} = \dfrac{1}{x\ln b}\]
+		\end{rmk}
+		}
+		\begin{pf}
+			\vs{.75}
+		\end{pf}
+			\newpage
+			
+		\begin{ex}
+			Find $\dfrac{d}{dx} [\log_7(2-\cos x)]$.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find the derivative of $g(x) = \sqrt{1+\log x}$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find the derivative of $f(x) = \log_3(x\log_4x)$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\showto{st}{
+		\begin{rmk}[Derivative of Exponential Functions]
+			\[\dfrac{d}{dx} \lrpar{b^x} = \qquad\qquad\qquad\]
+		\end{rmk}
+		}
+		\showto{ins}{
+		\begin{rmk}[Derivative of Exponential Functions]
+			\[\dfrac{d}{dx} \lrpar{b^x} = (\ln b)b^x\]
+		\end{rmk}
+		}
+		\begin{pf}
+			\vspace{1.5in}
+		\end{pf}
+		
+		\begin{ex}
+			Find $\dfrac{d}{dx}\lrpar{5^{x^3}}$
+		\end{ex}	
+			\vs{1}
+			
+		\begin{ex}
+			Find the absolute maximum and absolute minimum values of the function $f(x) = 3^{\cos 2x}$ on the interval $[0,2\pi)$.
+		\end{ex}
+			\vs{1}
+			\newpage
+	
+	\subsubsection*{Logarithmic Differentiation}
+	\addcontentsline{toc}{subsubsection}{Logarithmic Differentiation}
+		\showto{st}{
+		\begin{rmk}[Antiderivative of Exponential Functions]
+			\[\int b^x\, dx = \qquad\qquad\qquad\]
+		\end{rmk}
+		}
+		\showto{ins}{
+		\begin{rmk}[Antiderivative of Exponential Functions]
+			\[\int b^x\, dx = \dfrac{1}{\ln b} b^x + C\]
+		\end{rmk}
+		}
+		
+		\begin{ex}
+			Compute $\ds \int x2^{x^2}\, dx$
+		\end{ex}	
+			\vs{.5}
+			
+		\begin{ex}
+			Find the derivative of the function $f(x) = \dfrac{x^{2/3}\sqrt{x^2+1}}{(2x-1)^6}$
+		\end{ex}	
+			\vs{1}
+			\newpage
+		
+		\begin{rmk}[Logarithmic Differentiation]
+			\begin{enumerate}
+				\setlength\itemsep{30pt}
+				\item 
+				\item 
+				\item 
+			\end{enumerate}
+		\end{rmk}
+			
+		\begin{ex}
+			Briefly explain why logarithmic differentiation is ideal for differentiating $y = \dfrac{e^{-x}\cos^2x}{x^2+x+1}$, then compute the derivative.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Use logarithmic differentiation to find the derivative of $y = x^{\sqrt{x}}$
+		\end{ex}
+			\vs{2}
+		
+		\showto{st}{
+		\begin{rmk}[Alternate Definition of $e$]
+			The number $e$ is defined as the limit
+				\[\]
+		\end{rmk}	
+		}
+		\showto{ins}{
+		\begin{rmk}[Alternate Definition of $e$]
+			The number $e$ is defined as the limit
+				\[\lim_{x\to 0} \lrpar{1+x}^{1/x}\qquad \text{ or }\qquad \lim_{x\to\infty} \lrpar{1 + \dfrac{1}{x}}^x\]
+		\end{rmk}	
+		}
+		\begin{pf}
+			\vs{1}
+		\end{pf}
+		\newpage
+		
+	\subsection*{After Class Activities}
+	\addcontentsline{toc}{subsection}{After Class Activities}
+		\begin{ex}
+			Compute the derivative for the function:
+			\begin{enumerate}[(a)]
+				\item $f(x) =x^4 + 4^x$
+					\vs{1}
+					
+				\item $k(z) = 6^z\log_6z$
+					\vs{1}
+					
+				\item $y = \ln (\csc x - \cot x)$
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+		
+		\begin{ex}
+			Find the equation of the tangent line to the curve $y = x^2\ln x$ at the point $(1,0)$.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Let $f(x) = \log_b(3x^2-2)$.  For what value of $b$ is $f'(1) = 3$?
+		\end{ex}
+			\vs{1}
+			\newpage
+		
+		\begin{ex}
+			Compute $\dfrac{d}{dx}[x^{\sin x}]$.
+		\end{ex}	
+			\vs{1}
+			
+		\begin{ex}
+			Show that $\ds \int \cot x\, dx = \ln |\sin x| + C$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find $\ds \int \dfrac{\sin (\ln t)}{t}\, dt$.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate $\ds \int \dfrac{2^x}{2^x + 1}\, dx$
+		\end{ex}
+			\vs{1}
+\clearpage
+\end{document}

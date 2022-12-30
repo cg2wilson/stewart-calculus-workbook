@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-07-17T17:31:45-05:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Math 1914 - Differential &amp; Integral Calculus I The Chain Rule</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Math 1914 - Differential &amp; Integral Calculus">
+<meta property="book:author" content="Cory Wilson">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(      \newcommand{\ds}{\displaystyle}
+\newcommand{\lrpar}[1]{\left(#1\right)}
+\newcommand{\lrbrace}[1]{\left\lbrace #1 \right\rbrace}
+\newcommand{\inv}[1]{#1^{-1}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\dc}{^\circ}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="math1914.html"><span class="title">Math 1914 - Differential &amp; Integral Calculus</span></a></h1>
+<p class="byline">Cory Wilson</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-24.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch2.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-26.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-24.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch2.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section-26.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul><li><a href="colophon.html" data-scroll="colophon" class="internal">Colophon</a></li></ul>
+</li>
+<li class="link">
+<a href="ch1.html" data-scroll="ch1" class="internal"><span class="codenumber">1</span> <span class="title">Functions and Limits</span></a><ul>
+<li><a href="section-11.html" data-scroll="section-11" class="internal">Four Ways to Represent a Function</a></li>
+<li><a href="section-12.html" data-scroll="section-12" class="internal">Mathematical Models: A Catalog of Essential Functions</a></li>
+<li><a href="section-13.html" data-scroll="section-13" class="internal">New Functions from Old Functions</a></li>
+<li><a href="section-14.html" data-scroll="section-14" class="internal">The Tangent and Velocity Problems</a></li>
+<li><a href="section-15.html" data-scroll="section-15" class="internal">The Limit of a Function</a></li>
+<li><a href="section-16.html" data-scroll="section-16" class="internal">Calculating Limits Using Limit Laws</a></li>
+<li><a href="section-17.html" data-scroll="section-17" class="internal">(X) The Precise Definition of a Limit</a></li>
+<li><a href="section-18.html" data-scroll="section-18" class="internal">Continuity</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch2.html" data-scroll="ch2" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives</span></a><ul>
+<li><a href="section-21.html" data-scroll="section-21" class="internal">Derivatives and Rates of Change</a></li>
+<li><a href="section-22.html" data-scroll="section-22" class="internal">The Derivative as a Function</a></li>
+<li><a href="section-23.html" data-scroll="section-23" class="internal">Differentiation Formulas</a></li>
+<li><a href="section-24.html" data-scroll="section-24" class="internal">Derivatives of Trigonometric Functions</a></li>
+<li><a href="section-25.html" data-scroll="section-25" class="active">The Chain Rule</a></li>
+<li><a href="section-26.html" data-scroll="section-26" class="internal">Implicit Differentiation</a></li>
+<li><a href="section-27.html" data-scroll="section-27" class="internal">(X) Rates of Changes in the Natural and Social Sciences</a></li>
+<li><a href="section-28.html" data-scroll="section-28" class="internal">Related Rates</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch3.html" data-scroll="ch3" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Differentiation</span></a><ul>
+<li><a href="section-31.html" data-scroll="section-31" class="internal">Maximum &amp; Minimum Values</a></li>
+<li><a href="section-32.html" data-scroll="section-32" class="internal">(X) The Mean Value Theorem</a></li>
+<li><a href="section-33.html" data-scroll="section-33" class="internal">How Derivatives Affect the Shape of a Graph</a></li>
+<li><a href="section-34.html" data-scroll="section-34" class="internal">Limits at Infinity &amp; Horizontal Asymptotes</a></li>
+<li><a href="section-35.html" data-scroll="section-35" class="internal">Summary of Curve Sketching</a></li>
+<li><a href="section-36.html" data-scroll="section-36" class="internal">(X) Graphing with Calculus and Calculators</a></li>
+<li><a href="section-37.html" data-scroll="section-37" class="internal">Optimization</a></li>
+<li><a href="section-38.html" data-scroll="section-38" class="internal">(X) Newton's Method</a></li>
+<li><a href="section-39.html" data-scroll="section-39" class="internal">Antiderivatives</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch4.html" data-scroll="ch4" class="internal"><span class="codenumber">4</span> <span class="title">Integrals</span></a><ul>
+<li><a href="section-41.html" data-scroll="section-41" class="internal">Areas &amp; Distance</a></li>
+<li><a href="section-42.html" data-scroll="section-42" class="internal">The Definite Integral</a></li>
+<li><a href="section-43.html" data-scroll="section-43" class="internal">The Fundamental Theorem of Calculus</a></li>
+<li><a href="section-44.html" data-scroll="section-44" class="internal">Indefinite Integrals &amp; the Net Change Theorem</a></li>
+<li><a href="section-45.html" data-scroll="section-45" class="internal">The Substitution Rule</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch5.html" data-scroll="ch5" class="internal"><span class="codenumber">5</span> <span class="title">Applications of Integration</span></a><ul>
+<li><a href="section-51.html" data-scroll="section-51" class="internal">Areas Between Curves</a></li>
+<li><a href="section-52.html" data-scroll="section-52" class="internal">Volumes</a></li>
+<li><a href="section-53.html" data-scroll="section-53" class="internal">Volumes by Cylindrical Shells</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-25"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2.5</span> <span class="title">The Chain Rule</span>
+</h2>
+<article class="objectives goal-like" id="objectives-12"><h3 class="heading"><span class="type">Objectives</span></h3>
+<ul class="disc">
+<li id="li-647"><p id="p-derived-li-647">State and use the chain rule using different notations</p></li>
+<li id="li-648"><p id="p-derived-li-648">Use the chain rule to compute derivatives in conjunction with the derivative rules of Section 2.3 using algebraic, graphical, or numerical representations</p></li>
+</ul></article><section class="subsection" id="section-25-beforeclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.5.1</span> <span class="title">Before Class</span>
+</h3>
+<figure class="figure figure-like" id="figure-18"><a class="external" href="https://mymedia.ou.edu/media/2.5-1/1_wrjdpiy3" target="_blank"><code class="code-inline tex2jax_ignore">https://mymedia.ou.edu/media/2.5-1/1_wrjdpiy3</code></a><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">18<span class="period">.</span></span><span class="space"> </span>Pre-Class Video 1</figcaption></figure><section class="subsubsection" id="section-25-composition"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">2.5.1.1</span> <span class="title">Review: Composition of Functions</span>
+</h4>
+<article class="example example-like" id="example-187"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.1</span><span class="period">.</span>
+</h5>If <span class="process-math">\(f(u)= \sqrt{u}\)</span> and <span class="process-math">\(u(x) = x^2 + 1\text{,}\)</span> find the composition <span class="process-math">\((f\circ u)(x)\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-202" id="solution-202"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-202"><div class="solution solution-like"><span class="process-math">\((f\circ u)(x) = \sqrt{x^2+1}\)</span></div></div>
+</div></article><article class="example example-like" id="example-188"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.2</span><span class="period">.</span>
+</h5>If <span class="process-math">\(f(x) = \sqrt{x}\)</span> and <span class="process-math">\(g(x) = \sqrt{2-x}\text{,}\)</span> find <ol class="lower-alpha">
+<li id="li-649"><p id="p-derived-li-649"><span class="process-math">\(\displaystyle f\circ g\)</span></p></li>
+<li id="li-650"><p id="p-derived-li-650"><span class="process-math">\(\displaystyle g\circ f\)</span></p></li>
+<li id="li-651"><p id="p-derived-li-651"><span class="process-math">\(\displaystyle f\circ f\)</span></p></li>
+<li id="li-652"><p id="p-derived-li-652"><span class="process-math">\(\displaystyle g\circ g\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-203" id="solution-203"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-203"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-653"><p id="p-derived-li-653"><span class="process-math">\(\displaystyle f\circ g = \sqrt{\sqrt{2-x}}\)</span></p></li>
+<li id="li-654"><p id="p-derived-li-654"><span class="process-math">\(\displaystyle g\circ f = \sqrt{2-\sqrt{x}}\)</span></p></li>
+<li id="li-655"><p id="p-derived-li-655"><span class="process-math">\(\displaystyle f\circ f = \sqrt{\sqrt{x}}\)</span></p></li>
+<li id="li-656"><p id="p-derived-li-656"><span class="process-math">\(\displaystyle g\circ g = \sqrt{2-\sqrt{2-x}}\)</span></p></li>
+</ol></div></div>
+</div></article><article class="example example-like" id="example-189"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.3</span><span class="period">.</span>
+</h5>Let <span class="process-math">\(k(x) = \cos 2x\text{.}\)</span>  Find <span class="process-math">\(f,g\)</span> such that <span class="process-math">\(k(x) = f(g(x))\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-204" id="solution-204"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-204"><div class="solution solution-like">
+<span class="process-math">\(f(x) = \cos x\)</span> and <span class="process-math">\(g(x) = 2x\)</span>
+</div></div>
+</div></article><article class="example example-like" id="example-190"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.4</span><span class="period">.</span>
+</h5>Let <span class="process-math">\(f(x) = \sec^2 (x^2 + 9)\text{.}\)</span>  Find functions <span class="process-math">\(a,b,c\)</span> such that <span class="process-math">\(f(x) = (a\circ b\circ c)(x)\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-205" id="solution-205"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-205"><div class="solution solution-like">
+<span class="process-math">\(a(x) = x^2\text{,}\)</span> <span class="process-math">\(b(x) = \sec x\text{,}\)</span> and <span class="process-math">\(c(x) = x^2+9\)</span>
+</div></div>
+</div></article></section><section class="subsubsection" id="section-25-chain"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">2.5.1.2</span> <span class="title">The Chain Rule</span>
+</h4>
+<p id="p-145">The chain rule <em class="emphasis">relies</em> on being able to decompose a function into smaller pieces, and doing things in the right order.</p>
+<article class="theorem theorem-like" id="theorem-13"><h5 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.5.5</span><span class="period">.</span><span class="space"> </span><span class="title">The Chain Rule.</span>
+</h5>
+<p id="p-146">If <span class="process-math">\(g\)</span> is differentiable at <span class="process-math">\(x\text{,}\)</span> and <span class="process-math">\(f\)</span> is differentiable at <span class="process-math">\(g(x)\text{,}\)</span> then the composite function <span class="process-math">\(F = f\circ g\)</span> defined by <span class="process-math">\(F(x) = f(g(x))\)</span> is differentiable at <span class="process-math">\(x\text{,}\)</span> and <span class="process-math">\(F'(x) = f'(g(x))\cdot g'(x)\)</span></p>
+<p id="p-147">In Leibniz notatation, if <span class="process-math">\(y = f(u)\)</span> and <span class="process-math">\(u = g(x)\)</span> are both differentiable functions, then <span class="process-math">\(\dfrac{dy}{dx} = \dfrac{dy}{du}\cdot \dfrac{du}{dx}\)</span></p></article><article class="example example-like" id="example-191"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.6</span><span class="period">.</span>
+</h5>Let <span class="process-math">\(k(x) = \cos 2x\text{.}\)</span>  Find <span class="process-math">\(k'(x)\)</span> using Example 2.5.3.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-206" id="solution-206"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-206"><div class="solution solution-like"><span class="process-math">\(k'(x) = -2\sin 2x\)</span></div></div>
+</div></article><article class="example example-like" id="example-192"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.7</span><span class="period">.</span>
+</h5>Let <span class="process-math">\(g(x) = \sin 4x\text{.}\)</span>  Find <span class="process-math">\(g'(x)\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-207" id="solution-207"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-207"><div class="solution solution-like"><span class="process-math">\(g'(x) = 4\cos 4x\)</span></div></div>
+</div></article><article class="example example-like" id="example-193"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.8</span><span class="period">.</span>
+</h5>Let <span class="process-math">\(f(x) = \sec^2(x^2+9)\text{.}\)</span>  Find <span class="process-math">\(f'(x)\)</span> using Example 2.5.4.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-208" id="solution-208"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-208"><div class="solution solution-like"><span class="process-math">\(f'(x) = 2\sec(x^2+9)\cdot \sec(x^2+9)\tan(x^2+9)\cdot 2x\)</span></div></div>
+</div></article></section></section><section class="subsection" id="section-25-preclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.5.2</span> <span class="title">Pre-Class Activities</span>
+</h3>
+<article class="example example-like" id="example-194"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.9</span><span class="period">.</span>
+</h4>You are given a composite function.  Identify the inner function <span class="process-math">\(u = g(x)\)</span> and the outer function <span class="process-math">\(y = f(u)\text{.}\)</span> <ol class="lower-alpha">
+<li id="li-657"><p id="p-derived-li-657"><span class="process-math">\(\displaystyle \sqrt[3]{1+4x}\)</span></p></li>
+<li id="li-658"><p id="p-derived-li-658"><span class="process-math">\(\displaystyle \sin (\cot x)\)</span></p></li>
+<li id="li-659"><p id="p-derived-li-659"><span class="process-math">\(\displaystyle (5x^6 + 2x^3)^4\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-209" id="solution-209"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-209"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-660"><p id="p-derived-li-660"><span class="process-math">\(y = f(u) = \sqrt[3]{u}\)</span> and <span class="process-math">\(u = g(x) = 1+4x\)</span></p></li>
+<li id="li-661"><p id="p-derived-li-661"><span class="process-math">\(y = f(u) = \sin u\)</span> and <span class="process-math">\(u = g(x) = \cot x\)</span></p></li>
+<li id="li-662"><p id="p-derived-li-662"><span class="process-math">\(y = f(u) = u^4\)</span> and <span class="process-math">\(u = g(x) = 5x^6 + 2x^3\)</span></p></li>
+</ol></div></div>
+</div></article><article class="example example-like" id="example-195"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.10</span><span class="period">.</span>
+</h4>Set <span class="process-math">\(h(x) = \sin (x^2)\text{.}\)</span>  Identify the inner function <span class="process-math">\(u = g(x)\)</span> and the outer function <span class="process-math">\(y = f(u)\text{.}\)</span>  Then, find the derivative <span class="process-math">\(h'(x)\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-210" id="solution-210"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-210"><div class="solution solution-like">
+<span class="process-math">\(u = g(x) = x^2\)</span> and <span class="process-math">\(y = f(u) = \sin u\text{;}\)</span> <span class="process-math">\(f'(x) = 2x\cos(x^2)\)</span>
+</div></div>
+</div></article><article class="example example-like" id="example-196"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.11</span><span class="period">.</span>
+</h4>Set <span class="process-math">\(k(t) = \sin^2(t)\text{.}\)</span>  Identify the inner function <span class="process-math">\(u = g(t)\)</span> and the outer function <span class="process-math">\(y = f(u)\text{.}\)</span>  Then, find the derivative <span class="process-math">\(k'(t)\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-211" id="solution-211"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-211"><div class="solution solution-like">
+<span class="process-math">\(u = g(t) = \sin t\)</span> and <span class="process-math">\(y = f(u) = u^2\text{;}\)</span> <span class="process-math">\(k'(t) = 2\sin t\cos t\)</span>
+</div></div>
+</div></article></section><section class="subsection" id="section-25-inclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.5.3</span> <span class="title">In Class</span>
+</h3>
+<article class="question example-like" id="question-18"><h4 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">2.5.12</span><span class="period">.</span>
+</h4>If <span class="process-math">\(h(x) = f(g(x))\text{,}\)</span> use the chain rule to write <span class="process-math">\(h'(x)\)</span> in <em class="emphasis">prime notation</em> and <em class="emphasis">Leibniz notation</em>.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-212" id="solution-212"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-212"><div class="solution solution-like">In prime notation, <span class="process-math">\(h'(x) = f'(g(x))\cdot g'(x)\text{.}\)</span>  In Leibniz notation, <span class="process-math">\(\dfrac{dh}{dx} = \dfrac{df}{dg}\cdot \dfrac{dg}{dx}\)</span>
+</div></div>
+</div></article><article class="example example-like" id="example-197"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.13</span><span class="period">.</span>
+</h4>Let <span class="process-math">\(f(x) = \sqrt{x^2 + 1}\text{.}\)</span>  Find <span class="process-math">\(f'(x)\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-213" id="solution-213"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-213"><div class="solution solution-like"><span class="process-math">\(f'(x) = \dfrac{1}{2}(x^2+1)^{-1/2}\cdot 2x\)</span></div></div>
+</div></article><article class="example example-like" id="example-198"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.14</span><span class="period">.</span>
+</h4>Let <span class="process-math">\(g(x) = \cos (x^2)\text{.}\)</span>  Find <span class="process-math">\(g'(x)\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-214" id="solution-214"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-214"><div class="solution solution-like"><span class="process-math">\(g'(x) = -2x\sin(2x)\)</span></div></div>
+</div></article><article class="example example-like" id="example-199"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.15</span><span class="period">.</span>
+</h4>Find the derivative of <span class="process-math">\(k(t) = (2t+1)^5(t^3-t+1)^4\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-215" id="solution-215"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-215"><div class="solution solution-like"><span class="process-math">\(k'(t) = 5(2t+1)^4(2)(t^3-t+1)^4 + 4(t^3-t+1)^3(3t^2-1)(2t+1)^5\)</span></div></div>
+</div></article><article class="example example-like" id="example-200"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.16</span><span class="period">.</span>
+</h4>Let <span class="process-math">\(h(x) = \sin^2(\sqrt{x^2-1})\text{.}\)</span>  Find <span class="process-math">\(h'(x)\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-216" id="solution-216"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-216"><div class="solution solution-like"><span class="process-math">\(h'(x) = 2\sin\sqrt{x^2-1}\cdot \cos\sqrt{x^2-1}\cdot \dfrac{1}{2}(x^2-1)^{-1/2}\cdot 2x\)</span></div></div>
+</div></article><article class="example example-like" id="example-201"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.17</span><span class="period">.</span>
+</h4>Find the first derivative of <span class="process-math">\(F(x) = (5x^5+2x^3)^4\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-217" id="solution-217"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-217"><div class="solution solution-like"><span class="process-math">\(F'(x) = 4(5x^5+2x^3)^3(25x^4+6x^2)\)</span></div></div>
+</div></article><article class="example example-like" id="example-202"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.18</span><span class="period">.</span>
+</h4>Find the first derivative of <span class="process-math">\(h(t) = (2-\sin t)^{3/2}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-218" id="solution-218"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-218"><div class="solution solution-like"><span class="process-math">\(h'(t) = \dfrac{3}{2}(2-\sin t)^{1/2}\cdot (-\cos t)\)</span></div></div>
+</div></article><article class="example example-like" id="example-203"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.19</span><span class="period">.</span>
+</h4>Find the first derivative of <span class="process-math">\(y=\dfrac{1}{(\cos t + \tan t)^2}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-219" id="solution-219"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-219"><div class="solution solution-like"><span class="process-math">\(\dfrac{dy}{dx} = -2(\cos t + \tan t)^{-3}(-\sin t + \sec^2t)\)</span></div></div>
+</div></article><article class="example example-like" id="example-204"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.20</span><span class="period">.</span>
+</h4>Find the first derivative of <span class="process-math">\(h(\theta) = \tan (\theta^2\sin\theta)\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-220" id="solution-220"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-220"><div class="solution solution-like"><span class="process-math">\(h'(\theta) = \sec^2(\theta^2\sin\theta)\cdot (2\theta\sin\theta + \theta^2\cos\theta)\)</span></div></div>
+</div></article><article class="example example-like" id="example-205"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.21</span><span class="period">.</span>
+</h4>Find the first derivative of <span class="process-math">\(y=\lrpar{\dfrac{1-\cos 2x}{1+\sin 2x}}^3\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-221" id="solution-221"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-221"><div class="solution solution-like"><span class="process-math">\(\dfrac{dy}{dx} = 3\lrpar{\dfrac{1-\cos 2x}{1+\sin 2x}}^2\lrpar{\dfrac{(1+\sin2x)(2\sin2x)-(1-\cos2x)(2\cos 2x)}{(1+\sin 2x)^2}}\)</span></div></div>
+</div></article><article class="example example-like" id="example-206"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.22</span><span class="period">.</span>
+</h4>Find the first derivative of <span class="process-math">\(f(t) = \sqrt{t+\sqrt{t}}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-222" id="solution-222"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-222"><div class="solution solution-like"><span class="process-math">\(f'(t) = \dfrac{1}{2}(t+t^{1/2})^{-1/2}\lrpar{1+\dfrac{1}{2}t^{-1/2}}\)</span></div></div>
+</div></article><article class="example example-like" id="example-207"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.23</span><span class="period">.</span>
+</h4>Find the first derivative of <span class="process-math">\(r(x) = (x^2+1)^3(x^2+2)^6\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-223" id="solution-223"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-223"><div class="solution solution-like"><span class="process-math">\(r'(x) = 3(x^2+1)^2(2x)(x^2+2)^6 + 6(x^2+2)(2x)(x^2+1)^3\)</span></div></div>
+</div></article><article class="example example-like" id="example-208"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.24</span><span class="period">.</span>
+</h4>Find the first derivative of <span class="process-math">\(y = \sqrt[5]{\dfrac{x}{x-1}}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-224" id="solution-224"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-224"><div class="solution solution-like"><span class="process-math">\(\dfrac{dy}{dx} = \dfrac{1}{5}\lrpar{\dfrac{x}{x-1}}^{-4/5}\lrpar{\dfrac{-1}{(x-1)^2}}\)</span></div></div>
+</div></article><article class="example example-like" id="example-209"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.25</span><span class="period">.</span>
+</h4>Find the first derivative of <span class="process-math">\(z = \sqrt{\sin(1+x^2)}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-225" id="solution-225"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-225"><div class="solution solution-like"><span class="process-math">\(\dfrac{dz}{dx} = \dfrac{1}{2}(\sin(1+x^2))^{-1/2}\cdot \cos(1+x^2)(2x)\)</span></div></div>
+</div></article><article class="example example-like" id="example-210"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.26</span><span class="period">.</span>
+</h4>Find the first derivative of <span class="process-math">\(A(t) = \dfrac{t^2}{\sqrt{t^3+1}}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-226" id="solution-226"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-226"><div class="solution solution-like"><span class="process-math">\(A'(t) = \dfrac{(2t)(\sqrt{t^3+1})-(t^2)\lrpar{\dfrac{1}{2}(t^3+1)^{-1/2}(3t^2)}}{t^3+1}\)</span></div></div>
+</div></article><article class="example example-like" id="example-211"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.27</span><span class="period">.</span>
+</h4>Find the first derivative of <span class="process-math">\(f(x) = \cos^4(\tan^3(x))\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-227" id="solution-227"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-227"><div class="solution solution-like"><span class="process-math">\(f'(x)=4\cos^3(\tan^3x)\cdot -\sin(\tan^3x)\cdot 3\tan^2x\cdot\sec^2x\)</span></div></div>
+</div></article><article class="example example-like" id="example-212"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.28</span><span class="period">.</span>
+</h4>Find the first derivative of <span class="process-math">\(y = \cos\sqrt{\sin(\tan\pi x)}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-228" id="solution-228"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-228"><div class="solution solution-like"><span class="process-math">\(\dfrac{dy}{dx} = -\sin\sqrt{\sin(\tan\pi x)}\cdot \dfrac{1}{2}(\sin(\tan\pi x))^{-1/2}(\cos(\tan\pi x))\cdot \sec^2(\pi x)\cdot \pi\)</span></div></div>
+</div></article><article class="example example-like" id="example-213"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.29</span><span class="period">.</span>
+</h4>Find an equation of the tangent line to the curve <span class="process-math">\(y = \sqrt{1+x^3}\)</span> at the point <span class="process-math">\((2,3)\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-229" id="solution-229"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-229"><div class="solution solution-like"><span class="process-math">\(y = 2x-1\)</span></div></div>
+</div></article><article class="example example-like" id="example-214"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.30</span><span class="period">.</span>
+</h4>Let <span class="process-math">\(f(x) = [g(\cos x)]^2\text{.}\)</span>  Write an expression for <span class="process-math">\(f'(x)\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-230" id="solution-230"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-230"><div class="solution solution-like"><span class="process-math">\(f'(x) = 2g(\cos x)\cdot g'(\cos x)\cdot -\sin x\)</span></div></div>
+</div></article><article class="example example-like" id="example-215"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.31</span><span class="period">.</span>
+</h4>If <span class="process-math">\(h(x) = \sqrt{4+3f(x)}\text{,}\)</span> <span class="process-math">\(f(1) = 7\text{,}\)</span> and <span class="process-math">\(f'(1) = 4\text{,}\)</span> find <span class="process-math">\(h'(1)\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-231" id="solution-231"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-231"><div class="solution solution-like"><span class="process-math">\(h'(1) = \dfrac{6}{5}\)</span></div></div>
+</div></article><article class="example example-like" id="example-216"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.32</span><span class="period">.</span>
+</h4>If <span class="process-math">\(g(x) = \sqrt{f(x)}\text{,}\)</span> where <span class="process-math">\(f\)</span> is the function shown, evaluate <span class="process-math">\(g'(3)\text{.}\)</span> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/25fig1.svg" class="contained"></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-232" id="solution-232"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-232"><div class="solution solution-like"><span class="process-math">\(g'(3) = -\dfrac{1}{2\sqrt{3}}\)</span></div></div>
+</div></article></section><section class="subsection" id="section-25-afterclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.5.4</span> <span class="title">After Class Activities</span>
+</h3>
+<article class="example example-like" id="example-217"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.33</span><span class="period">.</span>
+</h4>Find the first and second derivatives of <span class="process-math">\(y = \sin (\cos 4\theta)\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-233" id="solution-233"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-233"><div class="solution solution-like">
+<span class="process-math">\(\dfrac{dy}{dx} = -4\sin(4\theta)\cdot cos(\cos 4\theta)\)</span> and <span class="process-math">\(\dfrac{d^2y}{dx^2} = -16\cos(4\theta)\cdot \cos(\cos 4\theta) -16\sin^2(4\theta)\cdot \sin (\cos 4\theta)\)</span>
+</div></div>
+</div></article><article class="example example-like" id="example-218"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.34</span><span class="period">.</span>
+</h4>Find the first and second derivatives of <span class="process-math">\(y = \dfrac{4x}{\sqrt{x+1}}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-234" id="solution-234"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-234"><div class="solution solution-like">
+<span class="process-math">\(\dfrac{dy}{dx} = \dfrac{2x+4}{(x+1)^{3/2}}\)</span> and <span class="process-math">\(\dfrac{d^2y}{dx^2} = \dfrac{2(x+1)^{3/2}-(2x+4)\lrpar{\dfrac{3}{2}(x+1)^{1/2}}}{(x+1)^3}\)</span>
+</div></div>
+</div></article><article class="example example-like" id="example-219"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.35</span><span class="period">.</span>
+</h4>Find <span class="process-math">\(D^{35} \sin \pi x\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-235" id="solution-235"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-235"><div class="solution solution-like"><span class="process-math">\(D^{35}[\sin \pi x] = -\pi^{35}\cos\pi x\)</span></div></div>
+</div></article><article class="example example-like" id="example-220"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.36</span><span class="period">.</span>
+</h4>A table of values for <span class="process-math">\(f,g,g'\)</span> and <span class="process-math">\(g'\)</span> is given: <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b2 r2 l2 t2 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(f(x)\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(g(x)\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(f'(x)\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(g'(x)\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(3\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(2\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(4\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(6\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(2\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(8\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(5\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(7\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(3\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(7\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(2\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(7\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(9\)</span></td>
+</tr>
+</table></div>
+<ol class="lower-alpha">
+<li id="li-663"><p id="p-derived-li-663">Find <span class="process-math">\(h'(1)\text{,}\)</span> if <span class="process-math">\(h(x) = f(g(x))\)</span></p></li>
+<li id="li-664"><p id="p-derived-li-664">Find <span class="process-math">\(H'(1)\text{,}\)</span> if <span class="process-math">\(H(x) = g(f(x))\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-236" id="solution-236"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-236"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-665"><p id="p-derived-li-665">Find <span class="process-math">\(h'(1) = 30\)</span></p></li>
+<li id="li-666"><p id="p-derived-li-666">Find <span class="process-math">\(H'(1) = 36\)</span></p></li>
+</ol></div></div>
+</div></article><article class="example example-like" id="example-221"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.37</span><span class="period">.</span>
+</h4>Suppose <span class="process-math">\(f\)</span> is differentiable on <span class="process-math">\(\R\text{,}\)</span> and <span class="process-math">\(A\)</span> is a real number.  Let <span class="process-math">\(F(x) = f(x^A)\)</span> and <span class="process-math">\(G(x) = [f(x)]^A\text{.}\)</span>  Find expressions for <span class="process-math">\(F'(x)\)</span> and <span class="process-math">\(G'(x)\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-237" id="solution-237"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-237"><div class="solution solution-like">
+<span class="process-math">\(F'(x) = f'(x^A)\cdot Ax^{A-1}\)</span> and <span class="process-math">\(G'(x) = A[f(x)]^{A-1}\cdot f'(x)\)</span>
+</div></div>
+</div></article><article class="example example-like" id="example-222"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.5.38</span><span class="period">.</span>
+</h4>The chain rule is often a source of confusion and frustration for students in (and beyond) calculus.  What do you think will help the chain rule stick out in your mind?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-238" id="solution-238"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-238"><div class="solution solution-like">Answers vary</div></div>
+</div></article></section></section></div></main>
+</div>
+</body>
+</html>

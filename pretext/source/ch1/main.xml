@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<chapter xml:id="ch1" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title> Functions and Limits</title>
+<!--    <xi:include href="outcomes/main.xml"/>
+    <xi:include href="./readiness.xml"/>
+	-->
+	
+	<introduction>
+		<p>
+			Chapter 1 focuses on algebra prerequisites of differential calculus (functions and their operations, common functions) and the theoretical foundations of differential calculus (limits, continuity).  
+		</p>
+		
+		<p>
+			Directly below are links to quickly navigate to individual sections.  Links to resources are available at the bottom of each these pages.
+		</p>
+	</introduction>
+    <xi:include href="./11.xml"/>   
+	<xi:include href="./12.xml"/>
+    <xi:include href="./13.xml"/>
+    <xi:include href="./14.xml"/>
+    <xi:include href="./15.xml"/>
+    <xi:include href="./16.xml"/>
+	<xi:include href="./17.xml"/>
+	<xi:include href="./18.xml"/>
+	
+</chapter>

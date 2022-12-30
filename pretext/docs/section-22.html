@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-07-17T17:31:44-05:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Math 1914 - Differential &amp; Integral Calculus I The Derivative as a Function</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Math 1914 - Differential &amp; Integral Calculus">
+<meta property="book:author" content="Cory Wilson">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(      \newcommand{\ds}{\displaystyle}
+\newcommand{\lrpar}[1]{\left(#1\right)}
+\newcommand{\lrbrace}[1]{\left\lbrace #1 \right\rbrace}
+\newcommand{\inv}[1]{#1^{-1}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\dc}{^\circ}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="math1914.html"><span class="title">Math 1914 - Differential &amp; Integral Calculus</span></a></h1>
+<p class="byline">Cory Wilson</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-21.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch2.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-23.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-21.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch2.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section-23.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul><li><a href="colophon.html" data-scroll="colophon" class="internal">Colophon</a></li></ul>
+</li>
+<li class="link">
+<a href="ch1.html" data-scroll="ch1" class="internal"><span class="codenumber">1</span> <span class="title">Functions and Limits</span></a><ul>
+<li><a href="section-11.html" data-scroll="section-11" class="internal">Four Ways to Represent a Function</a></li>
+<li><a href="section-12.html" data-scroll="section-12" class="internal">Mathematical Models: A Catalog of Essential Functions</a></li>
+<li><a href="section-13.html" data-scroll="section-13" class="internal">New Functions from Old Functions</a></li>
+<li><a href="section-14.html" data-scroll="section-14" class="internal">The Tangent and Velocity Problems</a></li>
+<li><a href="section-15.html" data-scroll="section-15" class="internal">The Limit of a Function</a></li>
+<li><a href="section-16.html" data-scroll="section-16" class="internal">Calculating Limits Using Limit Laws</a></li>
+<li><a href="section-17.html" data-scroll="section-17" class="internal">(X) The Precise Definition of a Limit</a></li>
+<li><a href="section-18.html" data-scroll="section-18" class="internal">Continuity</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch2.html" data-scroll="ch2" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives</span></a><ul>
+<li><a href="section-21.html" data-scroll="section-21" class="internal">Derivatives and Rates of Change</a></li>
+<li><a href="section-22.html" data-scroll="section-22" class="active">The Derivative as a Function</a></li>
+<li><a href="section-23.html" data-scroll="section-23" class="internal">Differentiation Formulas</a></li>
+<li><a href="section-24.html" data-scroll="section-24" class="internal">Derivatives of Trigonometric Functions</a></li>
+<li><a href="section-25.html" data-scroll="section-25" class="internal">The Chain Rule</a></li>
+<li><a href="section-26.html" data-scroll="section-26" class="internal">Implicit Differentiation</a></li>
+<li><a href="section-27.html" data-scroll="section-27" class="internal">(X) Rates of Changes in the Natural and Social Sciences</a></li>
+<li><a href="section-28.html" data-scroll="section-28" class="internal">Related Rates</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch3.html" data-scroll="ch3" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Differentiation</span></a><ul>
+<li><a href="section-31.html" data-scroll="section-31" class="internal">Maximum &amp; Minimum Values</a></li>
+<li><a href="section-32.html" data-scroll="section-32" class="internal">(X) The Mean Value Theorem</a></li>
+<li><a href="section-33.html" data-scroll="section-33" class="internal">How Derivatives Affect the Shape of a Graph</a></li>
+<li><a href="section-34.html" data-scroll="section-34" class="internal">Limits at Infinity &amp; Horizontal Asymptotes</a></li>
+<li><a href="section-35.html" data-scroll="section-35" class="internal">Summary of Curve Sketching</a></li>
+<li><a href="section-36.html" data-scroll="section-36" class="internal">(X) Graphing with Calculus and Calculators</a></li>
+<li><a href="section-37.html" data-scroll="section-37" class="internal">Optimization</a></li>
+<li><a href="section-38.html" data-scroll="section-38" class="internal">(X) Newton's Method</a></li>
+<li><a href="section-39.html" data-scroll="section-39" class="internal">Antiderivatives</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch4.html" data-scroll="ch4" class="internal"><span class="codenumber">4</span> <span class="title">Integrals</span></a><ul>
+<li><a href="section-41.html" data-scroll="section-41" class="internal">Areas &amp; Distance</a></li>
+<li><a href="section-42.html" data-scroll="section-42" class="internal">The Definite Integral</a></li>
+<li><a href="section-43.html" data-scroll="section-43" class="internal">The Fundamental Theorem of Calculus</a></li>
+<li><a href="section-44.html" data-scroll="section-44" class="internal">Indefinite Integrals &amp; the Net Change Theorem</a></li>
+<li><a href="section-45.html" data-scroll="section-45" class="internal">The Substitution Rule</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch5.html" data-scroll="ch5" class="internal"><span class="codenumber">5</span> <span class="title">Applications of Integration</span></a><ul>
+<li><a href="section-51.html" data-scroll="section-51" class="internal">Areas Between Curves</a></li>
+<li><a href="section-52.html" data-scroll="section-52" class="internal">Volumes</a></li>
+<li><a href="section-53.html" data-scroll="section-53" class="internal">Volumes by Cylindrical Shells</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-22"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2.2</span> <span class="title">The Derivative as a Function</span>
+</h2>
+<article class="objectives goal-like" id="objectives-9"><h3 class="heading"><span class="type">Objectives</span></h3>
+<ul class="disc">
+<li id="li-549"><p id="p-derived-li-549">State the limit definition of the derivative function and use it to compute derivative functions</p></li>
+<li id="li-550"><p id="p-derived-li-550">Sketch and interpret slope graphs</p></li>
+<li id="li-551"><p id="p-derived-li-551">Use and interpret common derivative notations for derivatives of any order</p></li>
+<li id="li-552"><p id="p-derived-li-552">Describe what it means for a function to be differentiable, determine where a function is differentiable, identify and give examples of the ways in which a function fails to be differentiable</p></li>
+<li id="li-553"><p id="p-derived-li-553">Describe the relationship between continuity and differentiability</p></li>
+<li id="li-554"><p id="p-derived-li-554">Interpret first, second, and third derivatives in the context of motion.</p></li>
+</ul></article><section class="subsection" id="section-22-beforeclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.2.1</span> <span class="title">Before Class</span>
+</h3>
+<figure class="figure figure-like" id="figure-12"><a class="external" href="https://mymedia.ou.edu/media/2.2-1/1_fb43p7ws" target="_blank"><code class="code-inline tex2jax_ignore">https://mymedia.ou.edu/media/2.2-1/1_fb43p7ws</code></a><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">12<span class="period">.</span></span><span class="space"> </span>Pre-Class Video 1</figcaption></figure><figure class="figure figure-like" id="figure-13"><a class="external" href="https://mymedia.ou.edu/media/2.2-2/1_g1ws2wmb" target="_blank"><code class="code-inline tex2jax_ignore">https://mymedia.ou.edu/media/2.2-2/1_g1ws2wmb</code></a><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">13<span class="period">.</span></span><span class="space"> </span>Pre-Class Video 2</figcaption></figure><section class="subsubsection" id="section-22-function"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">2.2.1.1</span> <span class="title">The Derivative as a Function</span>
+</h4>
+<article class="example example-like" id="example-121"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.1</span><span class="period">.</span>
+</h5>
+<ol class="lower-alpha">
+<li id="li-555"><p id="p-derived-li-555">Use either method of the previous section to find the derivative of <span class="process-math">\(f(x) = x^2 + 1\)</span> at <span class="process-math">\((1,2)\text{.}\)</span></p></li>
+<li id="li-556"><p id="p-derived-li-556">Find the derivative of <span class="process-math">\(f(x)\)</span> at <span class="process-math">\((2,5)\text{.}\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-133" id="solution-133"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-133"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-557"><p id="p-derived-li-557"><span class="process-math">\(\displaystyle f'(1) = 2\)</span></p></li>
+<li id="li-558"><p id="p-derived-li-558"><span class="process-math">\(\displaystyle f'(2) = 4\)</span></p></li>
+</ol></div></div>
+</div></article><article class="definition definition-like" id="definition-22"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">The Derivative (as a Function).</span>
+</h5>
+<p id="p-119">The <dfn class="terminology">derivative of a function</dfn> <span class="process-math">\(f(x)\)</span> is given as</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\lim_{h\to 0} \dfrac{f(x+h) - f(x)}{h}
+\end{equation*}
+</div>
+<p class="continuation">where <span class="process-math">\(h\)</span> is a small change in <span class="process-math">\(x\text{.}\)</span></p></article><article class="example example-like" id="example-122"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.3</span><span class="period">.</span>
+</h5>
+<ol class="lower-alpha">
+<li id="li-559"><p id="p-derived-li-559">Use the previous definition to compute <span class="process-math">\(f'(x)\text{,}\)</span> if <span class="process-math">\(f(x) = x^2 + 1\text{.}\)</span></p></li>
+<li id="li-560"><p id="p-derived-li-560">Find <span class="process-math">\(f'(1)\)</span> and <span class="process-math">\(f'(2)\text{.}\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-134" id="solution-134"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-134"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-561"><p id="p-derived-li-561"><span class="process-math">\(\displaystyle f'(x) = 2x\)</span></p></li>
+<li id="li-562"><p id="p-derived-li-562"><span class="process-math">\(f'(1) = 2\)</span> and <span class="process-math">\(f'(2) = 4\)</span></p></li>
+</ol></div></div>
+</div></article></section><section class="subsubsection" id="section-22-differentiability"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">2.2.1.2</span> <span class="title">Differentiability &amp; Non-Differentiability</span>
+</h4>
+<article class="definition definition-like" id="definition-23"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.4</span><span class="period">.</span><span class="space"> </span><span class="title">Differentiability.</span>
+</h5>
+<p id="p-120">A function <span class="process-math">\(f\)</span> is <dfn class="terminology">differentiable at <span class="process-math">\(a\)</span></dfn> if <span class="process-math">\(f'(a)\)</span> exists.  It is <dfn class="terminology">differentiable on an open interval</dfn> <span class="process-math">\((a,b)\)</span> if it is differentiable at every number in the interval.</p></article><article class="assemblage assemblage-like" id="assemblage-14"><h5 class="heading"><span class="title">A Note.</span></h5>
+<p id="p-121">Here is the formal definition of differentiability: a function <span class="process-math">\(f(x)\)</span> is differentiable at <span class="process-math">\(a\)</span> if</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\lim_{h\to 0^-} \dfrac{f(x+h)-f(x)}{h} = \lim_{h\to 0^+} \dfrac{f(x+h)-f(x)}{h}
+\end{equation*}
+</div></article><article class="example example-like" id="example-123"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.5</span><span class="period">.</span>
+</h5>Where is <span class="process-math">\(f(x) = |x|\)</span> differentiable?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-135" id="solution-135"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-135"><div class="solution solution-like">Everywhere but <span class="process-math">\(x=0\)</span>
+</div></div>
+</div></article><article class="example example-like" id="example-124"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.6</span><span class="period">.</span>
+</h5>Where is <span class="process-math">\(g(x) = [\!x]\!]\)</span> differentiable?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-136" id="solution-136"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-136"><div class="solution solution-like">At non-integer values</div></div>
+</div></article><article class="question example-like" id="question-14"><h5 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">2.2.7</span><span class="period">.</span>
+</h5>Rewrite the definition of continuity.  What relationship(s) do you see between continuity and differentiability?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-137" id="solution-137"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-137"><div class="solution solution-like">Continuity requires that <span class="process-math">\(\ds \lim_{x\to a} f(x) = f(a)\text{;}\)</span> for differentiability, we require that <span class="process-math">\(\ds \lim_{x\to a} \dfrac{f(x)-f(a)}{x-a}\text{.}\)</span>  Rearrangement of the differentiability condition should give something similar the condition for continuity.</div></div>
+</div></article><article class="assemblage assemblage-like" id="assemblage-15"><h5 class="heading"><span class="title">Differentiability vs. Continuity.</span></h5>
+<p id="p-122">If a function <span class="process-math">\(f\)</span> is differentiable, then it is continuous; the reverse is not true.</p></article><p id="p-123">There are several characteristics which indicate that a graph is not differentiable at a point:</p>
+<ul class="disc">
+<li id="li-563"><p id="p-derived-li-563">A sharp corner</p></li>
+<li id="li-564"><p id="p-derived-li-564">A discontinuity</p></li>
+<li id="li-565"><p id="p-derived-li-565">A vertical tangent line</p></li>
+</ul></section><section class="subsubsection" id="section-22-notation"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">2.2.1.3</span> <span class="title">Other Notations</span>
+</h4>
+<article class="assemblage assemblage-like" id="assemblage-16"><div class="displaymath process-math" data-contains-math-knowls="" id="p-124">
+\begin{equation*}
+f'(x) = y' = \dfrac{dy}{dx} = \dfrac{df}{dx} = \dfrac{d}{dx}[f(x)] = Df(x) = D_xf(x)
+\end{equation*}
+</div></article><p id="p-125">When we want to evaluate a derivative, we often use a vertical bar to communicate that we are evaluating.  If <span class="process-math">\(f(x) = x^2\text{,}\)</span> then <span class="process-math">\(f'(x) = 2x\text{,}\)</span> and <span class="process-math">\(f'(1) = 2\text{;}\)</span> we could also notate this by writing</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\dfrac{dy}{dx}\bigg\rvert_{x = 1} = 2
+\end{equation*}
+</div>
+<p id="p-126">This is read as "evaluating <span class="process-math">\(\dfrac{dy}{dx}\)</span> at <span class="process-math">\(x=1\)</span> gives 2" or "<span class="process-math">\(\dfrac{dy}{dx}\)</span> evaluated at <span class="process-math">\(x=1\)</span> is 2"</p></section></section><section class="subsection" id="section-22-preclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.2.2</span> <span class="title">Pre-Class Activities</span>
+</h3>
+<article class="example example-like" id="example-125"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.8</span><span class="period">.</span>
+</h4>What are some similarities and differences between the definitions of the derivative in Section 2.1 and the one in this section?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-138" id="solution-138"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-138"><div class="solution solution-like">Answers vary</div></div>
+</div></article><article class="example example-like" id="example-126"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.9</span><span class="period">.</span>
+</h4>For any linear function <span class="process-math">\(f(x) = ax + b\text{,}\)</span> <span class="process-math">\(f'(x) = a\text{.}\)</span>  Try showing this with the formal definition of the derivative.  <em class="emphasis">Without computation</em>, why would this be true?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-139" id="solution-139"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-139"><div class="solution solution-like">The tangent line to a linear function is the linear function itself, so the slope of the tangent line is the same as the slope of the line.</div></div>
+</div></article><article class="example example-like" id="example-127"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.10</span><span class="period">.</span>
+</h4>Let <span class="process-math">\(P\)</span> represent the percentage of a city's electrical power that is produced by solar panels, <span class="process-math">\(t\)</span> years after January 1, 2015. <ol class="lower-alpha">
+<li id="li-566"><p id="p-derived-li-566">What does <span class="process-math">\(\dfrac{dP}{dt}\)</span> represent in this context?  Include the units.</p></li>
+<li id="li-567"><p id="p-derived-li-567">Convert the statement <span class="process-math">\(\dfrac{dP}{dt}\bigg\rvert_{t = 3} = 2.1\)</span> to an English sentence.</p></li>
+<li id="li-568"><p id="p-derived-li-568">Convert the English sentence into derivative notation: Five years after 2015, the percentage of a city's electrical power produced by solar panels was decreasing by 0.7 percent per year.</p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-140" id="solution-140"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-140"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-569"><p id="p-derived-li-569">The rate of change of percentage of electrical power produced by solar panels, in percent per year</p></li>
+<li id="li-570"><p id="p-derived-li-570">The percentage of the city's power produced by solar is increasing by 2.1% per year, 3 years after 1/1/15.</p></li>
+<li id="li-571"><p id="p-derived-li-571"><span class="process-math">\(\displaystyle \dfrac{dP}{dt}\bigg\rvert_{t=5} = -0.7\)</span></p></li>
+</ol></div></div>
+</div></article><article class="example example-like" id="example-128"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.11</span><span class="period">.</span>
+</h4>The graph of a function <span class="process-math">\(f\)</span> is given.  State the input values at which <span class="process-math">\(f\)</span> is <em class="emphasis">not</em> differentiable. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/22fig1.svg" class="contained"></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-141" id="solution-141"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-141"><div class="solution solution-like">
+<span class="process-math">\(f\)</span> is not differentiable at <span class="process-math">\(x=-4,x=0\text{,}\)</span> and <span class="process-math">\(x=2.5\)</span>
+</div></div>
+</div></article></section><section class="subsection" id="section-22-inclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.2.3</span> <span class="title">In Class</span>
+</h3>
+<section class="subsubsection" id="section-22-derivatives"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">2.2.3.1</span> <span class="title">Derivatives</span>
+</h4>
+<article class="example example-like" id="example-129"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.12</span><span class="period">.</span>
+</h5>Find a formula for <span class="process-math">\(g'(x)\text{,}\)</span> if <span class="process-math">\(g(x) = x^3 + 1\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-142" id="solution-142"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-142"><div class="solution solution-like"><span class="process-math">\(g'(x) = 3x^2\)</span></div></div>
+</div></article><p id="p-127">Even in this relatively benign example, the algebra got complicated.  Here are three algebraic reminders:</p>
+<ul class="disc">
+<li id="li-572"><p id="p-derived-li-572"><span class="process-math">\((x+a)^n\neq x^n + a^n\text{.}\)</span>  <em class="alert">Please, do not make this mistake!</em></p></li>
+<li id="li-573"><p id="p-derived-li-573"><span class="process-math">\(\displaystyle (x+a)^2 = x^2 + 2ax + a^2\)</span></p></li>
+<li id="li-574"><p id="p-derived-li-574"><span class="process-math">\(\displaystyle (x+a)^3 = x^3 + 3x^2a + 3xa^2 + a^3\)</span></p></li>
+</ul>
+<article class="assemblage assemblage-like" id="assemblage-17"><h5 class="heading"><span class="title">Four-Step Method.</span></h5>
+<ol id="p-128" class="decimal">
+<li id="li-575"><p id="p-derived-li-575">Write (and expand) <span class="process-math">\(f(x+h)\)</span></p></li>
+<li id="li-576"><p id="p-derived-li-576">Subtract <span class="process-math">\(f(x)\)</span> from <span class="process-math">\(f(x+h)\)</span></p></li>
+<li id="li-577"><p id="p-derived-li-577">Divide #2 by <span class="process-math">\(h\)</span></p></li>
+<li id="li-578"><p id="p-derived-li-578">Take the limit as <span class="process-math">\(h\to 0\)</span></p></li>
+</ol></article><article class="example example-like" id="example-130"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.13</span><span class="period">.</span>
+</h5>Use the four-step method to algebraically calculate <span class="process-math">\(f'(x)\text{,}\)</span> if <span class="process-math">\(f(x) = x^2 - 3x -1\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-143" id="solution-143"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-143"><div class="solution solution-like"><div class="displaymath process-math" data-contains-math-knowls="" id="md-5">
+\begin{align*}
+f(x+h) &amp;= (x+h)^2 - 3(x+h) -1\\
+&amp;= x^2+2xh+h^2-3x-3h-1\\
+f(x+h)-f(x) &amp;= (x^2+2xh+h^2-3x-3h-1)-(x^2-3x-1)\\
+&amp;= 2xh+h^2-3h\\
+\dfrac{f(x+h)-f(x)}{h} &amp;= 2x+h-3\\
+\ds \lim_{h\to 0} \dfrac{f(x+h)-f(x)}{h} &amp;= \ds \lim_{h\to 0} 2x + h -3\\
+&amp;= 2x-3
+\end{align*}
+</div></div></div>
+</div></article><article class="example example-like" id="example-131"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.14</span><span class="period">.</span>
+</h5>Find <span class="process-math">\(h'(x)\text{,}\)</span> if <span class="process-math">\(h(x) = \sqrt{x}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-144" id="solution-144"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-144"><div class="solution solution-like">
+<span class="process-math">\(h'(x) = \dfrac{1}{2\sqrt{x}}\text{,}\)</span> or <span class="process-math">\(h'(x) = \dfrac{1}{2}x^{-1/2}\)</span>
+</div></div>
+</div></article><p id="p-129">The previous example gives rise to one of several common tips/tricks when algebraically calculating derivatives:</p>
+<ul class="disc">
+<li id="li-579"><p id="p-derived-li-579">Combine fractions</p></li>
+<li id="li-580"><p id="p-derived-li-580">Multiply by a conjugate</p></li>
+</ul>
+<article class="example example-like" id="example-132"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.15</span><span class="period">.</span>
+</h5>Let <span class="process-math">\(q(t) = \sqrt{1+t}\text{.}\)</span>  Show that <span class="process-math">\(\dfrac{dq}{dt} = \dfrac{1}{2}(1+t)^{-1/2}\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-145" id="solution-145"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-145"><div class="solution solution-like"><div class="displaymath process-math" data-contains-math-knowls="" id="md-6">
+\begin{align*}
+q(t+h) &amp;= \sqrt{1+t+h} \\
+q(t+h)-q(t) &amp;= \sqrt{1+t+h}-\sqrt{1+t}\\
+\dfrac{q(t+h)-q(t)}{h} &amp;= \dfrac{\sqrt{1+t+h}-\sqrt{1+t}}{h}\cdot \dfrac{\sqrt{1+t+h}+\sqrt{1+t}}{\sqrt{1+t+h}+\sqrt{1+t}}\\
+&amp;= \dfrac{(1+t+h)-(1+t)}{h(\sqrt{1+t+h}+\sqrt{1+t})}\\
+&amp;= \dfrac{1}{\sqrt{1+t+h}+\sqrt{1+t}}\\
+\ds \lim_{h\to 0} \dfrac{q(t+h)-q(t)}{h} &amp;= \ds \lim_{h\to 0} \dfrac{1}{\sqrt{1+t+h}+\sqrt{1+t}}\\
+&amp;= \dfrac{1}{2\sqrt{1+t}}\\
+&amp;= \dfrac{1}{2}(1+t)^{-1/2}
+\end{align*}
+</div></div></div>
+</div></article><article class="example example-like" id="example-133"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.16</span><span class="period">.</span>
+</h5>Let <span class="process-math">\(k(x) = \dfrac{3+x}{x-2}\text{.}\)</span>  Find <span class="process-math">\(k'(x)\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-146" id="solution-146"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-146"><div class="solution solution-like"><span class="process-math">\(-\dfrac{5}{(x-2)^2}\)</span></div></div>
+</div></article></section><section class="subsubsection" id="section-22-slopegraphs"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">2.2.3.2</span> <span class="title">Slope Graphs</span>
+</h4>
+<article class="example example-like" id="example-134"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.17</span><span class="period">.</span>
+</h5>Use the graph of <span class="process-math">\(f\)</span> below to sketch the graph of <span class="process-math">\(f'\text{.}\)</span> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-88.svg" role="img" class="contained" alt="The graph of the function \(.5*x^3-3.5*x^2+6*x+1.3\text{,}\) on the interval \([0,5]\text{.}\)  There are dotted lines drawn from the maximum at \(x=1.13\) to the \(x-\)axis, from another point \(x=2.33\) to the \(x-\)axis, and from the minimum \(x=3.53\) to the \(x-\)axis."></div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-89.svg" role="img" class="contained" alt="This is a blank graph for sketching the derivative, \(f'(x)\text{,}\) on the same interval/scale as \(f(x)\text{.}\)"></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-147" id="solution-147"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-147"><div class="solution solution-like"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-90.svg" role="img" class="contained" alt="This is the graph of the derivative of the function from the example."></div></div></div>
+</div></article><article class="example example-like" id="example-135"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.18</span><span class="period">.</span>
+</h5>Match the function in (a) - (d) with its derivative graph in (I) - (IV).  Give reasons for each choice. <div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel top" style="width:44.4444444444444%;"><img src="external/22fig2.svg" class="contained"></div>
+<div class="sbspanel top" style="width:44.4444444444444%;"><img src="external/22fig3.svg" class="contained"></div>
+</div></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-148" id="solution-148"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-148"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-581"><p id="p-derived-li-581">II</p></li>
+<li id="li-582"><p id="p-derived-li-582">IV</p></li>
+<li id="li-583"><p id="p-derived-li-583">I</p></li>
+<li id="li-584"><p id="p-derived-li-584">III</p></li>
+</ol></div></div>
+</div></article><article class="example example-like" id="example-136"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.19</span><span class="period">.</span>
+</h5>The graph of <span class="process-math">\(g(t)\)</span> is given.  Sketch a possible graph of <span class="process-math">\(g'(t)\text{.}\)</span> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-93.svg" role="img" class="contained" alt="This is the graph of \((0.25x)^4-(0.25x)^2\text{.}\)  There are two minima around 1 and \(-1\text{,}\) and a maximum at 0."></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-149" id="solution-149"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-149"><div class="solution solution-like"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-94.svg" role="img" class="contained" alt="This is the graph of the derivative in the example.  There is a maximum around \(-1\) and a minimum around x=1, with an inflection point at 0."></div></div></div>
+</div></article><article class="example example-like" id="example-137"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.20</span><span class="period">.</span>
+</h5>Consider the function <span class="process-math">\(y=a\cos x\text{.}\)</span>  Find <span class="process-math">\(\dfrac{df}{dx}\)</span> and <span class="process-math">\(\dfrac{df}{da}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-150" id="solution-150"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-150"><div class="solution solution-like">
+<span class="process-math">\(\dfrac{df}{dx} = -a\sin x\)</span> and <span class="process-math">\(\dfrac{df}{da} = \cos x\)</span>
+</div></div>
+</div></article></section><section class="subsubsection" id="section-22-higher"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">2.2.3.3</span> <span class="title">Higher Derivatives</span>
+</h4>
+<p id="p-130">In physics, higher-order derivatives are very important.  If <span class="process-math">\(s(t)\)</span> is a position function, then the first derivative <span class="process-math">\(s'(t)\)</span> is called the <dfn class="terminology">velocity</dfn>, often written as <span class="process-math">\(v(t)\text{.}\)</span>  The second derivative of position (so, the first derivative of velocity) is called <dfn class="terminology">acceleration</dfn>, often written as <span class="process-math">\(a(t)\text{.}\)</span>  The third derivative also has a special name, called the <dfn class="terminology">jerk</dfn>, <span class="process-math">\(j(t)\text{.}\)</span></p>
+<article class="assemblage assemblage-like" id="assemblage-18"><h5 class="heading"><span class="title">Notation for Higher-Order Derivatives.</span></h5>
+<ul id="p-131" class="disc">
+<li id="li-585"><p id="p-derived-li-585">Second derivative: <span class="process-math">\(f''(x)\text{,}\)</span> <span class="process-math">\(\dfrac{d^2y}{dx^2}\)</span></p></li>
+<li id="li-586"><p id="p-derived-li-586">Higher Derivatives: <span class="process-math">\(f^{(n)}(x)\text{,}\)</span> <span class="process-math">\(\dfrac{d^ny}{dx^n}\)</span></p></li>
+</ul></article><article class="example example-like" id="example-138"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.21</span><span class="period">.</span>
+</h5>If <span class="process-math">\(f(x) = x^3-x\text{,}\)</span> find <span class="process-math">\(f''(x)\text{,}\)</span> <span class="process-math">\(\dfrac{d^3f}{dx^3}\text{,}\)</span> and <span class="process-math">\(f^{(4)}(x)\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-151" id="solution-151"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-151"><div class="solution solution-like">
+<span class="process-math">\(f''(x) =3x^2-1\text{,}\)</span> <span class="process-math">\(\dfrac{d^3f}{dx^3} = 6x\text{,}\)</span> and <span class="process-math">\(f^{(4)}(x) = 6\)</span>
+</div></div>
+</div></article></section></section><section class="subsection" id="section-22-afterclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.2.4</span> <span class="title">After Class Activities</span>
+</h3>
+<article class="example example-like" id="example-139"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.22</span><span class="period">.</span>
+</h4>Find the first two derivatives of <span class="process-math">\(a(x) = \sqrt{9-x}\text{.}\)</span>  Write your answer using both notations for the derivative.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-152" id="solution-152"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-152"><div class="solution solution-like">
+<span class="process-math">\(a'(x) = \dfrac{da}{dx} = -\dfrac{1}{2}(9-x)^{-1/2}\)</span> and <span class="process-math">\(a''(x) = \dfrac{d^2a}{dx^2} = -\dfrac{1}{4}(9-x)^{-3/2}\)</span>
+</div></div>
+</div></article><article class="example example-like" id="example-140"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.23</span><span class="period">.</span>
+</h4>The graph of <span class="process-math">\(f\)</span> is given.  Sketch a possible graph for <span class="process-math">\(f'\text{.}\)</span> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/22fig4.svg" class="contained"></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-153" id="solution-153"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-153"><div class="solution solution-like">Answers vary</div></div>
+</div></article></section></section></div></main>
+</div>
+</body>
+</html>

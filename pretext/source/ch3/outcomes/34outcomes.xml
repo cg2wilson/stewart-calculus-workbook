@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<p>
+	<ul>
+		<li>
+			Explain what is meant by the notation <m>\ds \lim_{x\to\infty} f(x) = L</m> and <m>\ds \lim_{x\to -\infty} f(x) = L</m>
+		</li>
+		
+		<li>
+			Evaluate limits at infinity using numerical, algebraic, or graphical means
+		</li>
+		
+		<li>
+			Define horizontal asymptotes and determine if a function has them graphically or algebraically
+		</li>
+		
+		
+	</ul>
+</p>

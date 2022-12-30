@@ -1,0 +1,270 @@
+\documentclass[notes]{subfiles}
+\begin{document}
+	\addcontentsline{toc}{section}{6.2 - Exponential Functions and Their Derivatives}
+	\refstepcounter{section}
+	\fancyhead[RO,LE]{\bfseries \nameref{cs62}} 
+	\fancyhead[LO,RE]{\bfseries \small \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Chapter 6.2}
+	
+\section*{Exponential Functions \& Derivatives}\label{cs62}
+	\subsection*{Before Class}
+	\addcontentsline{toc}{subsection}{Before Class}
+	\subsubsection*{Exponential Functions}
+	\addcontentsline{toc}{subsubsection}{Exponential Functions}
+		\showto{st}{
+		\begin{defn}[Exponential Function]
+			An \textbf{exponential function} is a function of the form \blank{2.5}, where $b$ is a positive constant.
+		\end{defn}
+		}
+		
+		\showto{ins}{
+		\begin{defn}[Exponential Function]
+			An \textbf{exponential function} is a function of the form $f(x) = b^x$, where $b$ is a positive constant.
+		\end{defn}
+		}
+		
+		\showto{st}{
+		\begin{rmk}[Properties of Exponential Functions]
+			Let $f(x) = b^x$.  Then, $f(x)$ has the following properties:\\ \\
+			\begin{itemize}
+				\setlength\itemsep{25pt}
+				\item Domain: \blank{1.75}
+				\item Range: \blank{1.75}
+				\item If \blank{2}, then $f(x)$ is increasing
+				\item If \blank{2}, then $f(x)$ is decreasing
+				\item $\ds\lim_{x\to \infty} f(x) = \begin{cases}\blank{.75}& \text{if } \blank{1.5}\\ & \\ \blank{.75}& \text{if } \blank{1.5} \end{cases}$
+				\item $\ds\lim_{x\to -\infty} f(x) =\begin{cases}\blank{.75}& \text{if } \blank{1.5}\\ & \\ \blank{.75}& \text{if } \blank{1.5} \end{cases}$ 	
+			\end{itemize}
+		\end{rmk}
+		}
+		
+		\showto{ins}{
+		\begin{rmk}[Properties of Exponential Functions]
+			Let $f(x) = b^x$.  Then, $f(x)$ has the following properties:\\ \\
+			\begin{itemize}
+				\setlength\itemsep{10pt}
+				\item Domain: $(-\infty,\infty)$
+				\item Range: $(0,\infty)$
+				\item If $b > 1$, then $f(x)$ is increasing
+				\item If $0 < b < 1$, then $f(x)$ is decreasing
+				\item $\ds\lim_{x\to \infty} f(x) = \begin{cases}\infty& \text{if } b > 1\\ & \\ 0 & \text{if } 0 < b < 1 \end{cases}$
+				\item $\ds\lim_{x\to -\infty} f(x) = \begin{cases}0& \text{if } b > 1\\ & \\ \infty & \text{if } 0 < b < 1 \end{cases}$	
+			\end{itemize}
+		\end{rmk}
+		}
+		\newpage
+		
+		\begin{ex}
+			For the following functions, find the limits and sketch the graph:
+			\begin{enumerate}[(a)]
+				\item $f(x) = 2(1.2^x) + 3$
+					\vs{1}
+					
+				\item $g(x) = 3^{-x} - 1$
+					\vs{1}
+					
+			\end{enumerate}
+		\end{ex}
+			
+		\begin{defn}[Euler's Constant ($e$)]
+			$e$ is defined to be the number for which $\ds \lim_{h\to 0} \dfrac{e^h-1}{h} = 1$
+		\end{defn}
+			\newpage
+	\subsubsection*{Calculus of Exponentials}	
+	\addcontentsline{toc}{subsubsection}{Calculus of Exponentials}
+		\begin{rmk}[Derivative of an Exponential (First Attempt)]
+			If $f(x) = b^x$, then $f'(x) = f'(0)b^x$
+		\end{rmk}
+		\begin{pf}
+			\vs{2}
+		\end{pf}
+		
+		This means we have the following interpretation of $f(x) = e^x$:
+		\begin{rmk}[Special Meaning of $e$]
+			$f(x) = e^x$ is the unique exponential function whose tangent line at the point $(0,1)$ is exactly 1, i.e. $f'(0) = 1$.
+		\end{rmk}
+		
+		\begin{rmk}[Derivative of $e^x$]
+			\[\dfrac{d}{dx}\left[e^x\right] = \]
+		\end{rmk}
+		
+		\begin{rmk}[Antiderivative of $e^x$]
+			\[\ds \int e^x\, dx = \]
+		\end{rmk}
+			\newpage
+			
+	\subsection*{Pre-Class Activities}
+	\addcontentsline{toc}{subsection}{Pre-Class Activities}
+		\begin{ex}
+			Write the domain of the function:
+			\begin{enumerate}[(a)]
+				\item $f(x) = \dfrac{1-e^{x^2}}{1-e^{4-x^2}}$
+					\vs{.5}
+					
+				\item $g(x) = \dfrac{1+x}{3^{\sin x}}$
+					\vs{.5}
+					
+				\item $h(t) = \sqrt{4^t - 16}$
+					\vs{.5}
+					
+			\end{enumerate}	
+		\end{ex}
+		
+		\begin{ex}
+			Find the indicated limit:
+			\begin{enumerate}[(a)]
+				\item $\ds \lim_{x\to \infty} (1.0001)^x$
+					\vs{.5}
+					
+				\item $\ds \lim_{x\to \infty} \dfrac{e^{3x}-e^{-3x}}{e^{3x} + e^{-3x}}$
+					\vs{.5}
+					
+				\item $\ds \lim_{x\to \infty} (e^{-2x}\sin x)$
+					\vs{.5}
+			\end{enumerate}
+		\end{ex}
+		\newpage
+		
+		\begin{ex}
+			Find the derivative of the function:
+			\begin{enumerate}[(a)]
+				\item $f(x) = e^4$
+					\vs{1}
+					
+				\item $g(r) = e^r + r^e$
+					\vs{1}
+					
+				\item $f(x) = \dfrac{e^x}{1+e^x}$
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+		
+		\begin{ex}
+			Find the equation of the tangent line to the curve $y = xe^x$ at the point $(1,e)$.
+		\end{ex}
+			\vs{1}
+			
+		\begin{question}
+			Use this space to write any questions or concerns you have from the pre-class portion of this section.
+		\end{question}
+			\vs{1}
+			\newpage
+			
+	\subsection*{In Class}
+	\addcontentsline{toc}{subsection}{In Class}
+	\subsubsection*{Examples}
+	\addcontentsline{toc}{subsubsection}{Examples}
+		\begin{ex}
+			Compute $f'(x)$, if $f(x) = e^{\tan x}$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Compute $f'(x)$, if $f(x) = \tan (e^x)$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find $y'$ if $y = e^{-6x}\cos(2x)$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find the absolute maximum and absolute minimum of $y = xe^{-x}$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Find $\dfrac{dy}{dx}$, if $e^{x/y} = y - x$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Compute the derivatives:
+			\begin{enumerate}[(a)]
+				\item $y = x^2e^{-1/x}$
+					\vs{1}
+					
+				\item $g(x) = e^{x^2-x}$
+					\vs{1}
+					
+				\item $f(t) = \sqrt{1+te^{-2t}}$
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+			\newpage
+			
+		\begin{ex}
+			Find the absolute maximum and absolute minimum of $f(x) = xe^{-x^2/8}$ on $[-1,4]$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate the integral:
+			\begin{enumerate}[(a)]
+				\item $\ds \int_0^1 (x^e + e^x)\, dx$
+					\vs{1}
+					
+				\item $\ds \int x^3e^{x^4}\, dx$
+					\vs{1}
+					
+				\item $\ds \int e^x\sqrt{1+e^x}\, dx$
+					\vs{1}
+			\end{enumerate}
+		\end{ex}	
+			\newpage
+			
+		\begin{ex}
+			Compute $\ds \int_1^2 \dfrac{e^{1/x}}{x^2}\, dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find $f(x)$ if $f''(x) = 3e^x + 5\sin x$, $f(0) = 1$, and $f'(0) = 2$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			The \emph{error function}, $\ds \text{erf}(x) = \dfrac{2}{\sqrt{\pi}}\int_0^x e^{-t^2}\,dt$ is a useful function in probability, statistics, and engineering.  Show that $\ds \int_a^b e^{-t^2}\, dt = \dfrac{1}{2}\sqrt{\pi}\left[\text{erf}(b) - \text{erf}(a)\right]$.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+	\subsection*{After Class Activities}
+	\addcontentsline{toc}{subsection}{After Class Activities}
+		\begin{ex}
+			Show that the function $y = e^x + e^{-x/2}$ satisfies the differential equation $2y'' - y' - y = 0$.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find an equation of the tangent line to the curve $xe^y + ye^x = 1$ at the point $(0,1)$.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Compute $\dfrac{d^{1000}}{dx^{1000}}\left[xe^{-x}\right]$
+		\end{ex}
+			\vs{1}
+			\newpage
+		
+		\begin{ex}
+			If $f(x) = 3 + x + e^x$, find $(\inv{f})'(4)$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate $\ds \lim_{x\to \pi} \dfrac{e^{\sin x} - 1}{x-\pi}$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find the volume of the solid obtained by rotating the region bounded by the curves $y = e^x$, $y = 0$, $x = 0$, and $x = 1$ about the $x-$axis.
+		\end{ex}
+			\vs{1}
+				
+\clearpage
+\end{document}

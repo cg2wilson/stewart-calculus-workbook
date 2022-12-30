@@ -1,0 +1,659 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-41">
+			<title>Areas &amp; Distance</title>
+			
+				<objectives>
+					<ul>
+						<li>
+							Compute Riemann sums to estimate area under a curve algebraically, graphically, or numerically; specifically, compute left and right rectangle approximations
+						</li>
+						
+						<li>
+							Use summation/sigma notation to write sums in a condensed way
+						</li>
+						
+						<li>
+							Estimate distance traveled with a velocity function and connect the distance problem to the area problem
+						</li>
+						
+					</ul>
+				</objectives>
+			<subsection xml:id="section-41-beforeclass">	
+				<title>Before Class</title>
+				
+				<figure>
+					<caption>Pre-Class Video 1</caption>
+					<url href = "https://mymedia.ou.edu/media/4.1-1/1_3gm43l27"/>
+				</figure>
+				<figure>
+					<caption>Pre-Class Video 2</caption>
+					<url href = "https://mymedia.ou.edu/media/4.1-2/1_2sv8x0jk"/>
+				</figure>
+
+				
+				<subsubsection xml:id="section-41-area-problem">
+				<title>The Area Problem</title>
+					<example>
+					<statement>
+						Consider the function <m>y=x^2</m> on the interval <m>[0,1]</m>.
+					
+						<ol label="a">
+							<li>
+								Use four rectangles to approximate the area under the parabola <m>y=x^2</m> from <m>x=0</m> to <m>x=1</m>; start from the left endpoint, <m>x=0</m>.
+								
+								<figure>
+									<caption>Left-rectangle approximiation for <m>y=x^2</m>.  Slide <m>n</m> to see different approximations (hide the menu by pressing the arrows).</caption>
+									<interactive xml:id="desmos-left-riemann-sum" desmos="u7vjucfa1d" width="80%" aspect="4:2"/>
+								</figure>
+							</li>
+							
+							<li>
+								Now start from the right endpoint, <m>x=1</m>, and use four rectangles to approximate the area under the parabola.
+								
+								<figure>
+									<caption>Right-rectangle approximiation for <m>y=x^2</m>.  Slide <m>n</m> to see different approximations (hide the menu by pressing the arrows).</caption>
+									<interactive xml:id="desmos-right-riemann-sum" desmos="we7wpsmk4c" width="80%" aspect="4:2"/>	
+								</figure>
+							</li>
+						</ol>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li>
+								<m>A\approx 0.21875</m>
+							</li>
+							
+							<li>
+								<m>A\approx 0.46875</m>
+							</li>
+						</ol>
+					</solution>						
+					</example>
+					
+					<example>
+					<statement>
+						Now use eight rectangles to approximate the area under <m>y=x^2</m> from <m>x=0</m> to <m>x=1</m>, using both left and right endpoints.  Compare your estimates to the previous two calculations.
+					</statement>
+					<solution>
+						<m>L_8 = 0.2734375</m> and <m>R_8 = 0.3984375</m>
+					</solution>
+					</example>
+					<question>
+						<statement>
+							What do you think would happen to our approximation of area if we used more rectangles?
+						</statement>
+						<solution>
+							We would get a better approximation.
+						</solution>
+					</question>
+					<p>
+						Generically, the process we used above has the following steps:
+					</p>
+					<assemblage xml:id="section-41-area-under-curve">
+						<title>Approximating Area Under a Curve</title>
+						<p>
+						<ol>
+							<li>Determine the length of the interval</li>
+							<li>Divide the interval into <m>n</m> equal subintervals</li>
+							<li>Find the area of each subinterval's rectangle</li>
+							<li>Sum the areas of the rectangles</li>
+						</ol>
+						</p>
+					</assemblage>
+					<question><statement>
+						<ol label="a">
+							<li>
+								If the interval we are concerned about is <m>[a,b]</m>, and we are using <m>n</m> rectangles to approximate the area, how could we write the base length of each individual rectangle?  Denote the length by <m>\Delta x</m>
+							</li>
+
+							<li>
+								Let <m>a=x_0</m>.  How could we express <m>x_1</m>?  How about <m>x_2</m>?  What about a generic <m>x_i</m>, where <m>1\leq i\leq n</m>?
+							</li>
+							
+							<li>
+							Let <m>f(x_i)</m> be the function value at <m>x_i</m>.  Using the previous two exercises, write an expression for <m>S_n</m>, the sum of areas of our approximating rectangles.
+							</li>
+						</ol>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li>
+								<m>\Delta x = \dfrac{b-a}{n}</m>
+							</li>
+
+							<li>
+								<md>
+									<mrow> x_1 &amp;= a+\Delta x</mrow>
+									<mrow> x_2 &amp;= a+2\Delta x</mrow>
+									<mrow> x_i &amp;= a+i\Delta x</mrow>
+								</md>
+							</li>
+							
+							<li>
+								<m>S_n\approx f(a+i\Delta x)\cdot \Delta x</m>
+							</li>
+						</ol>
+					</solution>
+					</question>
+					<p>
+						From this, we can generalize to two special situations.
+					</p>
+					<assemblage xml:id="section-41-left-rectangles">
+						<title>Left Rectangle Approximation</title>
+						<p>
+							The left rectangle approximation for the area under the curve <m>f(x)</m> on the interval <m>[a,b]</m> (using <m>n</m> rectangles) is given by 
+							<me> f(x_0)\Delta x + f(x_1)\Delta x + \cdots + f(x_{n-2})\Delta x + f(x_{n-1})\Delta x</me>
+							or, in sigma notation, 
+							<me> \ds \sum_{n=0}^{n-1} f(x_i)\Delta x </me>
+							The <m>n</m>th left rectangle approximation is denoted <m>L_n</m>.
+						</p>
+					</assemblage>
+					<assemblage xml:id="section-41-right-rectangles">
+						<title>Right Rectangle Approximation</title>
+						<p>
+							The right rectangle approximation for the area under the curve <m>f(x)</m> on the interval <m>[a,b]</m> (using <m>n</m> rectangles) is given by 
+							<me> f(x_1)\Delta x + f(x_2)\Delta x + \cdots + f(x_{n-1})\Delta x + f(x_n)\Delta x</me>
+							or, in sigma notation, 
+							<me> \ds \sum_{n=1}^{n} f(x_i)\Delta x </me>
+							The <m>n</m>th right rectangle approximation is denoted <m>R_n</m>.
+						</p>
+					</assemblage>
+				</subsubsection>
+			
+				<subsubsection xml:id="section-41-sigma-notation">
+				<title>Sigma Notation</title>
+				<p>
+					<term>Sigma notation</term> is a shorthand way to write sums.  For example, for the left-rectangle approximation <m>L_4</m>, instead of writing
+					<me> L_4 = f(x_0)\Delta x + f(x_1)\Delta x + f(x_2)\Delta x + f(x_3)\Delta x</me>
+					we would write
+					<me> \ds L_4 = \sum_{n=0}^3 f(x_i)\Delta x</me>
+					Here, <m>i=0</m> refers to the <term>starting index</term>, and <m>n=3</m> is called the <term>ending index</term>.
+				</p>
+				</subsubsection>
+			</subsection>
+			<subsection xml:id="section-41-preclass">
+				<title>Pre-Class Activities</title>
+				<example>
+					<statement>
+					Consider <m>f(x) = \dfrac{1}{x}</m>.
+					<ol label="a">
+						<li>
+							Carefully sketch the graph of <m>f(x)</m> on the interval <m>[1,4]</m>.
+						</li>
+						
+						<li>
+							Find <m>R_3</m>, and draw the rectangles on your sketch.
+						</li>
+						
+						<li>
+							Express the sum from (b) in sigma notation.
+						</li>
+						
+						<li>
+							Find <m>L_3</m>, and draw the rectangles on your sketch.
+						</li>
+						
+						<li>
+							Express the sum from (d) in sigma notation.
+						</li>
+					</ol>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li>
+								<image>
+									<description>
+										The graph of <m>f(x) = \dfrac{1}{x}</m> on the interval <m>[1,4]</m>
+									</description>
+									<latex-image>
+									<![CDATA[
+										\begin{tikzpicture}
+											\begin{axis}[
+												axis x line = middle,
+												axis y line = middle,
+												every axis y label/.style={at={(ticklabel cs:1.1)}},
+												y label style={at={(axis description cs:0,1.15)},anchor=north},
+												ylabel = {$f(x)$},
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												x label style={at={(axis description cs:1.1,0)},anchor=east},
+												xlabel = {$x$},
+												xmin=0,xmax=5,
+												ymin = 0
+											]
+											\addplot[thick,smooth,samples=50,domain=1:4]{1/x}; 
+											\end{axis}
+										\end{tikzpicture}
+									]]>
+									</latex-image>
+								</image>
+							</li>
+							
+							<li>
+								<figure>
+									<caption>Right-rectangle approximiation for <m>y=\dfrac{1}{x}</m>.  Slide <m>n</m> to see different approximations (hide the menu by pressing the arrows).</caption>
+									<interactive xml:id="desmos-right-riemann-sum-preclass" desmos="6dkgz4p4pp" width="80%" aspect="4:2"/>
+								</figure>
+								<m>R_3 = 1.083</m>
+							</li>
+							
+							<li>
+								<m>R_3=\ds \sum_{i=1}^3 f(x_i)\Delta x</m>
+							</li>
+							
+							<li>
+								<figure>
+									<caption>Left-rectangle approximiation for <m>y=\dfrac{1}{x}</m>.  Slide <m>n</m> to see different approximations (hide the menu by pressing the arrows).</caption>
+									<interactive xml:id="desmos-left-riemann-sum-preclass" desmos="l9vi13wdjc" width="80%" aspect="4:2"/>
+								</figure>
+								<m>L_3 = 1.833</m>
+							</li>
+							
+							<li>
+								<m>L_3=\ds \sum_{i=0}^2 f(x_i)\Delta x</m>
+							</li>
+						</ol>
+					</solution>
+				</example>
+				<example>
+					<statement>
+					Again, consider <m>f(x) = \dfrac{1}{x}</m> on <m>[1,4]</m>
+					<ol label="a">
+						<li>
+							Resketch the graph of <m>f(x)</m>.
+						</li>
+						
+						
+						<li>
+							Find <m>R_6</m> and include the rectangles on your sketch from (a).  How do these rectangles compare to the <m>R_3</m> rectangles?
+						</li>
+					
+						<li>
+							Find <m>L_6</m> and include the rectangles on your sketch from (a).  How do these rectangles compare to the <m>L_3</m> rectangles?
+						</li>
+					</ol>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li>
+								<image>
+									<description>
+										The graph of <m>f(x) = \dfrac{1}{x}</m> on the interval <m>[1,4]</m>
+									</description>
+									<latex-image>
+									<![CDATA[
+										\begin{tikzpicture}
+											\begin{axis}[
+												axis x line = middle,
+												axis y line = middle,
+												every axis y label/.style={at={(ticklabel cs:1.1)}},
+												y label style={at={(axis description cs:0,1.15)},anchor=north},
+												ylabel = {$f(x)$},
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												x label style={at={(axis description cs:1.1,0)},anchor=east},
+												xlabel = {$x$},
+												xmin=0,xmax=5,
+												ymin = 0
+											]
+											\addplot[thick,smooth,samples=50,domain=1:4]{1/x}; 
+											\end{axis}
+										\end{tikzpicture}
+									]]>
+									</latex-image>
+								</image>
+							</li>
+							
+							
+							<li>
+								<figure>
+									<caption>Right-rectangle approximiation for <m>y=\dfrac{1}{x}</m>.  Slide <m>n</m> to see different approximations (hide the menu by pressing the arrows).</caption>
+									<interactive xml:id="desmos-right-riemann-sum-inclass" desmos="6dkgz4p4pp" width="80%" aspect="4:2"/>
+								</figure>
+								<m>R_6 = 1.218</m>
+							</li>
+						
+							<li>
+								<figure>
+									<caption>Left-rectangle approximiation for <m>y=\dfrac{1}{x}</m>.  Slide <m>n</m> to see different approximations (hide the menu by pressing the arrows).</caption>
+									<interactive xml:id="desmos-left-riemann-sum-inclass" desmos="l9vi13wdjc" width="80%" aspect="4:2"/>
+								</figure>
+								<m>L_6 = 1.593</m>
+							</li>
+						</ol>
+					</solution>
+				</example>
+				
+			</subsection>
+			<subsection xml:id="section-41-inclass">
+				
+				<title>In Class</title>
+				
+				<example>
+					<statement>
+						For <m>f(x) = x^2</m> on <m>[0,1]</m>, show that the sum of the areas of the upper approximating rectangles approaches <m>\dfrac{1}{3}</m>, i.e. <m>\ds \lim_{n\to\infty} R_n = \dfrac{1}{3}</m>.
+					</statement>
+					<solution>
+						First, 
+						<me>\Delta x = \dfrac{b-a}{n}\dfrac{1}{n}</me> 
+						Now, to find <m>f(x_i)</m>, write <m>x_i</m> as
+						<me>x_i= i\Delta x = \dfrac{i}{n}</me>
+						This means that 
+						<me>f(x_i) = \lrpar{\dfrac{i}{n}}^2 = \dfrac{i^2}{n^2}</me>
+						So, the area of a single rectangle can be expressed as 
+						<me>f(x_i)\Delta x = \lrpar{\dfrac{i}{n}}^2\cdot \dfrac{i}{n} = \dfrac{i^2}{n^3}</me>
+						To find the area of a finite number of rectangles, we add these single rectangles:
+						<me>
+							R_n = \ds \sum_{i=1}^n f(x_i)\Delta x = \sum_{i=1}^n \dfrac{i^2}{n^3}
+						</me>
+						Since the summation is over the variable <m>i</m>, we can use the formula <m>\ds \sum_{i=1}^n i^2 = \dfrac{n(n+1)(2n+1)}{6}</m> to get
+						<me>
+							R_n = \ds \sum_{i=1}^n \dfrac{i^2}{n^3} = \dfrac{1}{n^3}\cdot \dfrac{n(n+1)(2n+1)}{6}
+						</me>
+						Now, the area under the curve is found by taking infinitely many rectangles in the approximation.  The way we can do that is by taking a limit:
+						<me>
+							A = \ds \lim_{n\to \infty} R_n = \lim_{n\to\infty} \sum_{i=1}^n f(x_i)\Delta x = \lim_{n\to\infty} \dfrac{1}{n^3}\cdot \dfrac{n(n+1)(2n+1)}{6} = \dfrac{1}{3}
+						</me>
+						So we conclude the area is precisely <m>\dfrac{1}{3}</m>
+					</solution>
+				</example>
+				
+				<definition>
+					<title>Area Under a Curve</title>
+					<idx>Area</idx>
+					The <term>area</term> of the region <m>S</m> that lies under the graph of the continuous function <m>f</m> is the limit of the sum of the areas of approximating rectangles:
+					<me>A = \lim_{n\to\infty} L_n = \lim_{n\to\infty} \sum_{i=0}^{n-1} f(x_i)\Delta x</me>
+					or
+					<me>A = \lim_{n\to\infty} R_n = \lim_{n\to\infty} \sum_{i=1}^{n} f(x_i)\Delta x</me>
+				</definition>
+				
+				<example>
+					<statement>
+						Let <m>A</m> be the area of the region that lies under the graph of <m>f(x) = x^3</m> between <m>x = 1</m> and <m>x=b</m>, where <m>1\leq b\leq 3</m>
+						
+						<ol label="a">
+							<li>
+								Using left endpoints, find an expression for <m>A</m> as a limit; do not evaluate the limit.
+							</li>
+							
+							<li>
+								Estimate the area when <m>b=3</m> by taking sample points to be midpoints and using four subintervals.
+							</li>
+						</ol>
+					</statement>
+					<solution>	
+						<ol label="a">
+							<li>
+								<m>A = \ds \lim_{n\to \infty} L_n = \lim_{n\to\infty} \sum_{i=0}^{n-1} \lrpar{1 + \dfrac{(b-1)i}{n}}^3\cdot \dfrac{b-1}{n}</m>
+							</li>
+							
+							<li>
+								<m>L_4 = 14</m>
+							</li>
+						</ol>
+					</solution>
+				</example>
+				
+				<example>
+					<statement>
+						The expression <m>\ds \lim_{n\to \infty} \sum_{i=1}^n \dfrac{3}{n} \sqrt{1+\dfrac{3i}{n}}</m> gives the area of a region; describe such a region.  <alert>Do not try to evaluate the limit</alert>.
+					</statement>
+					<solution>
+						One possible description is the function <m>f(x) = \sqrt{1+x}</m> on the interval <m>[0,3]</m>
+					</solution>
+				</example>
+			
+				<subsubsection xml:id="section-41-distance-problem">
+				<title>The Distance Problem</title>
+				<introduction>
+					Given constant velocity, we can use the formula distance<m>=</m>velocity<m>\times</m> time to calculate the distance an object travels over a certain period of time.
+				</introduction>
+				
+				<example>
+					<statement>
+						Consider a moving car, with increasing velocity.  The velocity was measured every two seconds, and the results collected in the table below.
+						
+						<tabular top="medium" left="medium">
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+							 Time (sec) 
+							</cell>
+							<cell halign="center" right="medium">
+							 0 
+							</cell>
+							<cell halign="center" right="medium">
+							 2 
+							</cell>
+							<cell halign="center" right="medium">
+							 4 
+							</cell>
+							<cell halign="center" right="medium">
+							 6
+							</cell>
+							<cell halign="center" right="medium">
+							 8
+							</cell>
+							<cell halign="center" right="medium">
+							 10 
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+							Velocity (ft/s)
+							</cell>
+							<cell halign="center" right="medium">
+							20
+							</cell>
+							<cell halign="center" right="medium">
+							30
+							</cell>
+							<cell halign="center" right="medium">
+							38
+							</cell>
+							<cell halign="center" right="medium">
+							44
+							</cell>
+							<cell halign="center" right="medium">
+							48
+							</cell>
+							<cell halign="center" right="medium">
+							50
+							</cell>
+						</row>
+					</tabular>
+					
+					<ol label="a">
+						<li>
+							Find an upper estimate for the distance the car traveled in 10 seconds.
+						</li>
+						
+						<li>
+							Find a lower estimate for the distance the car traveled in 10 seconds.
+						</li>
+					</ol>
+					</statement>
+					<solution>
+						<ol label="a">
+						<li>
+							420 feet
+						</li>
+						
+						<li>
+							360 feet
+						</li>
+					</ol>
+					</solution>
+				</example>
+				
+				<example>
+					<statement>
+						Roger is training for a marathon.  His friend Jeff rides behind him on a bicycle and clocks his speed every 15 minutes.  Roger starts out strong, but stops after an hour and a half.  
+						
+						<tabular top="medium" left="medium">
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+							 Time elapsed(min) 
+							</cell>
+							<cell halign="center" right="medium">
+							 0 
+							</cell>
+							<cell halign="center" right="medium">
+							 15 
+							</cell>
+							<cell halign="center" right="medium">
+							 30 
+							</cell>
+							<cell halign="center" right="medium">
+							 45
+							</cell>
+							<cell halign="center" right="medium">
+							 60
+							</cell>
+							<cell halign="center" right="medium">
+							 75 
+							</cell>
+							<cell halign="center" right="medium">
+							 90 
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+							Speed (mph)
+							</cell>
+							<cell halign="center" right="medium">
+							12
+							</cell>
+							<cell halign="center" right="medium">
+							11
+							</cell>
+							<cell halign="center" right="medium">
+							10
+							</cell>
+							<cell halign="center" right="medium">
+							10
+							</cell>
+							<cell halign="center" right="medium">
+							8
+							</cell>
+							<cell halign="center" right="medium">
+							7
+							</cell>
+							<cell halign="center" right="medium">
+							 0 
+							</cell>
+						</row>
+					</tabular>
+					Give upper and lower rectangle estimates for the distance Roger ran.
+					</statement>
+					<solution>
+						The upper distance is 14.5 miles and the lower distance is 11.5 miles.
+					</solution>
+				</example>
+				
+				</subsubsection>
+			</subsection>
+			<subsection xml:id="section-41-afterclass">
+				<title>After Class Activities</title>
+				
+				<example>
+					<statement>
+						We showed that, for <m>f(x) =x^2</m> on <m>[0,1]</m>, <m>\ds \lim_{n\to\infty} R_n = \dfrac{1}{3}</m> was the area under the curve.  Show that <m>\ds \lim_{n\to\infty} L_n = \dfrac{1}{3}</m> as well.  Use the fact that <m>\ds \sum_{i=0}^{n-1} f(x_i)\Delta x = \sum_{i=1}^{n} f(x_{i-1})\Delta x</m> and that <m>\ds \sum_{i=1}^n i =\dfrac{n(n+1)}{2}</m>.
+					</statement>
+					<solution>
+						First, 
+						<me>\Delta x = \dfrac{b-a}{n}\dfrac{1}{n}</me> 
+						Now, to find <m>f(x_i)</m>, write <m>x_i</m> as
+						<me>x_i= i\Delta x = \dfrac{i}{n}</me>
+						This means that 
+						<me>f(x_i) = \lrpar{\dfrac{i}{n}}^2 = \dfrac{i^2}{n^2}</me>
+						So, the area of a single rectangle can be expressed as 
+						<me>f(x_i)\Delta x = \lrpar{\dfrac{i}{n}}^2\cdot \dfrac{i}{n} = \dfrac{i^2}{n^3}</me>
+						To find the area of a finite number of rectangles, we add these single rectangles:
+						<me>
+							L_n = \ds \sum_{i=0}^{n-1} f(x_i)\Delta x = \sum_{i=1}^n \dfrac{(i-1)^2}{n^3}
+						</me>
+						Since the summation is over the variable <m>i</m>, we can use the formula <m>\ds \sum_{i=1}^n i^2 = \dfrac{n(n+1)(2n+1)}{6}</m> to get
+						<me>
+							L_n = \ds \sum_{i=1}^n \dfrac{(i-1)^2}{n^3} = \dfrac{1}{n^3}\sum_{i=1}^n i^2-2i+1 = \dfrac{1}{n^3}\cdot \lrpar{\dfrac{n(n+1)(2n+1)}{6}- n(n+1) + 1}
+						</me>
+						Now, the area under the curve is found by taking infinitely many rectangles in the approximation.  The way we can do that is by taking a limit:
+						<me>
+							A = \ds \lim_{n\to \infty} L_n = \lim_{n\to\infty} \sum_{i=1}^n f(x_i)\Delta x = \lim_{n\to\infty} \dfrac{1}{n^3}\cdot \lrpar{\dfrac{n(n+1)(2n+1)}{6}- n(n+1) + 1} = \dfrac{1}{3}
+						</me>
+						So we conclude the area is precisely <m>\dfrac{1}{3}</m>
+					</solution>
+				</example>
+				<example>
+					<statement>
+						A stock car prototype is being tested.  Over the course of one minute, its speed was recorded in ten-second intervals.
+					
+					<tabular top="medium" left="medium">
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+							 Time (sec) 
+							</cell>
+							<cell halign="center" right="medium">
+							 0 
+							</cell>
+							<cell halign="center" right="medium">
+							 10 
+							</cell>
+							<cell halign="center" right="medium">
+							 20 
+							</cell>
+							<cell halign="center" right="medium">
+							 30 
+							</cell>
+							<cell halign="center" right="medium">
+							 40 
+							</cell>
+							<cell halign="center" right="medium">
+							 50 
+							</cell>
+							<cell halign="center" right="medium">
+							 60 
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center" left="medium" right="medium">
+							Velocity (mi/h)
+							</cell>
+							<cell halign="center" right="medium">
+							182.9
+							</cell>
+							<cell halign="center" right="medium">
+							168
+							</cell>
+							<cell halign="center" right="medium">
+							106.6
+							</cell>
+							<cell halign="center" right="medium">
+							99.8
+							</cell>
+							<cell halign="center" right="medium">
+							124.5
+							</cell>
+							<cell halign="center" right="medium">
+							176.1
+							</cell>
+							<cell halign="center" right="medium">
+							175.6
+							</cell>
+						</row>
+					</tabular>
+					Find upper and lower estimates for the distance traveled by the car in one minute.
+					</statement>
+					<solution>
+						The upper estimate is 2.59 miles and the lower estimate is 2.15 miles
+					</solution>
+				</example>
+				<example>
+					<statement>
+						If a curve measures the rate of change of some function, what is the <em>explicit connection</em> between the area under the curve on a given interval and the total change of the function on that interval?
+					</statement>
+					<solution>
+						The net area between the rate of change curve and the axis gives the total change of the function on the interval.
+					</solution>
+				</example>
+			</subsection>
+		</section>
+		

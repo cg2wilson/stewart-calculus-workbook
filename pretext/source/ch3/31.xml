@@ -1,0 +1,432 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-31">
+			<title>Maximum &amp; Minimum Values</title>
+			
+				<objectives>
+					<ul>
+						<li>
+							Define and identify absolute and local extrema graphically
+						</li>
+						
+						<li>
+							State and describe the use of the Extreme Value Theorem and Fermat's Theorem; give examples of when these theorems fail and explain why they fail
+						</li>
+						
+						<li>
+							Identify critical numbers of a function algebraically and graphically
+						</li>
+						
+						<li>
+							Use the Closed Interval Method to identify absolute extrema on a closed, bounded interval
+						</li>
+						
+						
+					</ul>
+				</objectives>
+			<subsection xml:id="section-31-beforeclass">
+				<title>Before Class</title>
+				
+				<figure>
+					<caption>Pre-Class Video 1</caption>
+					<url href = "https://mymedia.ou.edu/media/3.1-1.mp4/1_ww51e1ib"/>
+				</figure>
+				<figure>
+					<caption>Pre-Class Video 2</caption>
+					<url href = "https://mymedia.ou.edu/media/3.1-2/1_43uuyr3l"/>
+				</figure>
+
+				
+				<subsubsection xml:id="section-31-definitions">
+					<title>Definitions</title>
+					
+					<definition>
+						<title>Absolute (Global) Extrema</title>
+						<idx>Absolute Maximum</idx>
+						<idx>Global Minimum</idx>
+						<p>
+							Let <m>c</m> be a number in the domain <m>D</m> of a function <m>f</m>.  Then, <m>f(c)</m> is the <term>absolute maximum</term> value of <m>f</m> on <m>D</m> if <m>f(c)\geq f(x)</m> for all <m>x\in D</m>; <m>f(c)</m> is the <term>absolute minimum</term> value of <m>f</m> on <m>D</m> if <m>f(c)\leq f(x)</m> for all <m>x\in D</m>.
+						</p>
+						<p>
+							Absolute maxima and minima are also called <em>global</em> maxima/minima (or extrema).
+						</p>
+					</definition>
+					
+					<example><statement>
+						Below are two graphs.  Identify their absolute maxima/minima, if any exist.  Justify your responses.
+						<sidebyside widths="40% 40%">
+							<image>
+								<description>
+									The graph of <m>f(x) = x^2-2</m> on the interval <m>[-2,2]</m>
+								</description>
+								<latex-image>
+									<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+											every tick label/.append style={font=\small},
+											axis x line = middle,
+											axis y line = middle,
+												every axis y label/.style={at={(ticklabel cs:1.15)}},
+												%ytick = {-4, -2, -3, -1, 1, 2, 3, 4},
+											y label style={at={(axis description cs:.47,1.15)},anchor=north},
+												ylabel = {$f(x)$},
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												%xtick = {-4,-3,-2,-1,1,2,3,4},
+												x label style={at={(axis description cs:1.1,.5)},anchor=east},
+												xlabel = {$x$},
+												xmin = -2.2, xmax = 2.2
+										]
+											\addplot[<->,thick, samples = 100, smooth, domain = -2:2] {x^2-2};
+										\end{axis}
+									\end{tikzpicture}
+									]]>
+								</latex-image>
+							</image>
+							<image>
+								<description>
+									The graph of <m>f(x) =\cos x</m> on the interval <m>[-7.5,7.5]</m>
+								</description>
+								<latex-image>
+									<![CDATA[
+										\begin{tikzpicture}
+											\begin{axis}[
+												every tick label/.append style={font=\small},
+												axis x line = middle,
+												axis y line = middle,
+													every axis y label/.style={at={(ticklabel cs:1.15)}},
+													%ytick = {-4, -2, -3, -1, 1, 2, 3, 4},
+												y label style={at={(axis description cs:.47,1.15)},anchor=north},
+													ylabel = {$f(x)$},
+													ymin = -1.1, ymax = 1.1,
+													every axis x label/.style= {at ={(ticklabel cs:1)}},
+													xtick = {-6.28, -3.14, 0, 3.14, 6.28},
+													x label style={at={(axis description cs:1.1,.5)},anchor=east},
+													xticklabels = {$-2\pi$,$-\pi$,0,$\pi$, $2\pi$},
+													xlabel = {$x$},
+													xmin = -7.7, xmax = 7.7
+											]
+												\addplot[<->,thick, samples = 100, smooth, domain = -7.5:7.5] {cos(deg(x))};
+											\end{axis}
+										\end{tikzpicture}
+									]]>
+								</latex-image>
+							</image>
+						</sidebyside>
+					</statement>
+					<solution>
+						In the first picture, the vertex is an absolute minimum.  In the second, each peak (<m>-2\pi, 0, 2\pi</m>) is an absolute maximum, and each valley (<m>-\pi, \pi</m>) is an absolute minimum.
+					</solution>
+					</example>
+					
+					<definition>
+						<title>Local Max/Min</title>
+						<idx>Local Maximum</idx>
+						<idx>Local Minimum</idx>
+						<p>
+							The number <m>f(c)</m> is a <term>local maximum</term> value of <m>f</m> if <m>f(c)\geq f(x)</m> when <m>x</m> is near <m>c</m>.  <m>f(c)</m> is a <term>local minimum</term> value of <m>f</m> if <m>f(c)\leq f(x)</m> when <m>x</m> is near <m>c</m>.
+						</p>
+					</definition>
+					
+					<example><statement>
+						Estimate the inputs of any local or absolute extrema.
+						<image>
+							<description>
+								The graph of <m>f(x)=6x^4-6x^3-5x^2+5x-1</m> on the interval <m>[-1.4,1.9]</m>.
+							</description>
+							<latex-image>
+								<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+											every tick label/.append style={font=\small},
+											axis x line = middle,
+											axis y line = middle,
+												every axis y label/.style={at={(ticklabel cs:1.15)}},
+												%ytick = {-4, -2, -3, -1, 1, 2, 3, 4},
+											y label style={at={(axis description cs:.47,1.15)},anchor=north},
+												ylabel = {$f(x)$},
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												%xtick = {-4,-3,-2,-1,1,2,3,4},
+												x label style={at={(axis description cs:1.1,.1)},anchor=east},
+												xlabel = {$x$},
+												xmin = -1.5, xmax = 2
+										]
+											\addplot[<->,thick, samples = 100, smooth, domain = -1.4:1.9] {6*x^4-6*x^3-5*x^2+5*x-1};
+										\end{axis}
+									\end{tikzpicture}
+								]]>
+							</latex-image>
+						</image>
+					</statement>
+					<solution>
+						<image>
+							<description>
+								The graph of <m>f(x)=6x^4-6x^3-5x^2+5x-1</m> on the interval <m>[-1.4,1.9]</m>.  Absolute and local extrema are marked and labeled on the graph.
+							</description>
+							<latex-image>
+								<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+											every tick label/.append style={font=\small},
+											axis x line = middle,
+											axis y line = middle,
+												every axis y label/.style={at={(ticklabel cs:1.15)}},
+												%ytick = {-4, -2, -3, -1, 1, 2, 3, 4},
+											y label style={at={(axis description cs:.47,1.15)},anchor=north},
+												ylabel = {$f(x)$},
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												%xtick = {-4,-3,-2,-1,1,2,3,4},
+												x label style={at={(axis description cs:1.1,.1)},anchor=east},
+												xlabel = {$x$},
+												xmin = -1.5, xmax = 2
+										]
+											\addplot[<->,thick, samples = 100, smooth, domain = -1.4:1.9] {6*x^4-6*x^3-5*x^2+5*x-1};
+											\coordinate (a) at (-0.581,-3.73);
+											\coordinate (b) at (0.374,-0.03);
+											\coordinate (c) at (0.958,-1.02);
+										\end{axis}
+											\fill (a) circle (0.1) node[below] {Absolute/local min};
+											\fill (b) circle (0.1) node[above] {Local max};
+											\fill (c) circle (0.1) node[below, yshift=-5pt] {Local min};
+									\end{tikzpicture}
+								]]>
+							</latex-image>
+						</image>
+					</solution>
+					</example>
+					
+					<question><statement>
+						Are local extrema automatically absolute extrema?  Are absolute extrema automatically local extrema?
+					</statement>
+					<solution>
+						No, local extrema are not automatically absolute extrema.  However, an absolute extremum can be a local extremum (as long as it doesn't occur at the endpoints)
+					</solution>
+					</question>
+					
+					<example><statement>
+						Identify any local maxes, local mins, absolute maxes, or absolute mins on the graph below.
+						<image source="31fig1.svg" />
+					</statement>
+					<solution>
+						There are local maxima at <m>b,r</m>, a local min at <m>d</m>, an absolute max at <m>r</m>, and an absolute min at <m>a</m>
+					</solution>
+					</example>
+				</subsubsection>
+				<subsubsection xml:id="section-31-results">
+					<title>Important Results</title>
+					
+					<p>
+						In order to use maxima/minima, some results will be helpful.
+					</p>
+					
+					<theorem>
+						<title>Extreme Value Theorem</title>
+						<statement>
+							If <m>f</m> is continuous on a closed interval <m>[a,b]</m>, then <m>f</m> attains an absolute maximum value <m>f(c)</m> and an absolute minimum value <m>f(d)</m> at some numbers <m>c,d</m> in <m>[a,b]</m>.
+						</statement>
+					</theorem>
+					
+					<question><statement>
+						Why does the extreme value theorem fail on an open interval?  
+					</statement>
+					<solution>
+						Take the function <m>y=x</m> on the interval <m>(0,1)</m>.  There is neither an absolute max nor an absolute min, since the function does not achieve the output at the expected max/min.
+					</solution>
+					</question>
+					
+					<theorem>
+						<title>Fermat's Theorem</title>
+						<statement>
+							If <m>f</m> has a local maximum or minimum at <m>c</m>, and if <m>f'(c)</m> exists, then <m>f'(c) = 0</m>.
+						</statement>
+					</theorem>
+					
+					<question><statement>
+						Is it true that if <m>f'(c) = 0</m>, then <m>f</m> has a local max or min at <m>c</m>?
+					</statement>
+					<solution>
+						No.  If <m>f(x) = x^3</m>, then <m>f'(0) = 0</m> but the function does not have a local extremum at 0.
+					</solution>
+					</question>
+				</subsubsection>
+			</subsection>
+			<subsection xml:id="section-31-preclass">
+				<title>Pre-Class Activities</title>
+				
+				<example><statement>
+					Give the coordinates for the absolute and local extrema for the function given below.
+					<image source="31fig2.svg"/>
+				</statement>
+				<solution>
+					The absolute max is at <m>(4,5)</m>.  There is no absolute min.  There are local maxes at <m>(4,5)</m> and <m>(6,4)</m>, and local minima at <m>(2,2)</m> and <m>(5,3)</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Sketch the graph of a function that has two local maxima, one local minimum, and no absolute minimum.
+				</statement>
+				<solution>
+					Answers vary
+				</solution>
+				</example>
+
+				<example><statement>
+					Can we apply Fermat's Theorem to the function <m>f(x) = |x|</m> on the interval <m>[-5,5]</m>?  Why or why not? 
+				</statement>
+				<solution>
+					No.  <m>|x|</m> is not differentiable at <m>x=0</m>.
+				</solution>
+				</example>
+					
+				<example><statement>
+					Can we apply the Extreme Value Theorem to the function <m>f(x) = |x|</m> on the interval <m>[-5,5]</m>?  Why or why not?
+				</statement>
+				<solution>
+					Yes.  <m>f(x)</m> is continuous, so we may use the Theorem.
+				</solution>
+				</example>
+			</subsection>
+			<subsection xml:id="section-31-inclass">
+				<title>In Class</title>
+				<subsubsection xml:id="section-31-critical">
+					<title>Critical Numbers</title>
+					
+					<definition>
+						<title>Critical Number/Value/Point</title>
+						<idx>Critical Number</idx>
+						<idx>Critical Value</idx>
+						<idx>Critical Point</idx>
+						<p>
+							A <term>critical number</term> of a function <m>f</m> is a number <m>c</m> in the domain of <m>f</m> such that either <m>f'(c) = 0</m> or <m>f'(c)</m> does not exist.  A <term>critical value</term> is the output at a critical input, namely <m>f(c)</m>.  A <term>critical point</term> is the coordinate pair <m>(c, f(c))</m>.
+						</p>	
+					</definition>
+					
+					<example><statement>
+						Find the critical number(s) of <m>f(x) = x^3 -3x^2 + 1</m>.
+					</statement>
+					<solution>
+						The critical numbers are <m>x=0,x=2</m>.
+					</solution>
+					</example>
+						
+					<example><statement>
+						Find the critical numbers of <m>f(t) = t^4 + t^3+t^2 + 1</m>.
+					</statement>
+					<solution>
+						The critical number is <m>t=0</m>.
+					</solution>
+					</example>
+
+					<example><statement>
+						For some function <m>f(x)</m>, its derivative is given by <m>f'(x) = \dfrac{100(x-2)^2}{5-x^2}</m>.  How many critical numbers does <m>f</m> have?  What are they?
+					</statement>
+					<solution>
+						<m>x=2</m> is certainly a critical number.  If <m>x=\sqrt{5}</m> or <m>x=-\sqrt{5}</m> are in the domain of <m>f(x)</m>, then they are critical numbers as well.
+					</solution>
+					</example>	
+						
+					<example><statement>
+						Find the critical numbers of <m>f(x) = \cos x</m>.
+					</statement>
+					<solution>
+						<m>x=\pi k</m> for <m>k\in \Z</m>
+					</solution>
+					</example>
+				</subsubsection>
+				<subsubsection xml:id="section-31-finding-absolute">
+					<title>Finding Absolute Maxima &amp; Minima</title>
+					<p>
+						In order to find <em>absolute</em> extrema on closed intervals, we need to find local extrema and compare the values against the endpoints.  So, finding absolute maxima and minima comes down to the following process:
+						<ol>
+							<li>
+								Find the critical numbers of <m>f</m> on a closed interval <m>[a,b]</m>.
+							</li>
+							<li>
+								Compute the output values at each critical number.
+							</li>
+							<li>
+								Compute the output values at the two endpoints.
+							</li>
+							<li>
+								Compare the results from #2 and #3.  The biggest output is the absolute maximum, and the smallest output is the absolute minimum.
+							</li>
+						</ol>
+					</p>
+					
+					<example><statement>
+						Locate the absolute extrema for <m>f(x) = x^3 -3x^2+1</m> on the interval <m>\left[\dfrac{1}{2},4\right]</m>.
+					</statement>
+					<solution>
+						The absolute max is <m>(4,17)</m> and the absolute min is <m>(2,-3)</m>.
+					</solution>
+					</example>
+						
+					<example><statement>
+						Locate the absolute extrema for <m>f(x) = \sin x</m> on the interval <m>[-2\pi,2\pi]</m>.
+					</statement>
+					<solution>
+						The absolute maxes are at <m>\lrpar{\dfrac{\pi}{2},1}</m> and <m>\lrpar{-\dfrac{3\pi}{2},1}</m>, while the absolute minima are at <m>\lrpar{-\dfrac{\pi}{2},-1}</m> and <m>\lrpar{\dfrac{3\pi}{2},-1}</m>
+					</solution>
+					</example>
+						
+					<example><statement>
+						Locate the absolute extrema for the function <m>f(t) = (t^2-4)^3</m> on <m>[-3,3]</m>.
+					</statement>
+					<solution>
+						The absolute maxes are at <m>(3,125)</m> and <m>(-3,125)</m>, and the absolute min is at <m>(0,-64)</m>.
+					</solution>
+					</example>
+						
+					<example><statement>
+						Find and classify the extrema of the function <m>f(x) = x + \dfrac{1}{x}</m> on <m>[0.2,4]</m>.
+					</statement>
+					<solution>
+						The absolute max is at <m>(0,2,5.2)</m> and the absolute min is at <m>(1,2)</m>.
+					</solution>
+					</example>
+				</subsubsection>
+			</subsection>
+			<subsection xml:id="section-31-afterclass">
+				<title>After Class Activities</title>
+				
+				<example><statement>
+					If <m>f(x) = 3x^4 - 4x^3 - 12x^2 + 1</m>, find the absolute maximum and absolute minimium on the interval <m>[-2,3]</m>.
+				</statement>
+				<solution>
+					The absolute max is at <m>(-2,33)</m> and the absolute min is at <m>(2,-31)</m>
+				</solution>
+				</example>
+
+				<example><statement>
+					Find the critical numbers of the function <m>h(p) =\dfrac{p-1}{p^2+4}</m>
+				</statement>
+				<solution>
+					<m>p = 1\pm \sqrt{5}</m>
+				</solution>
+				</example>
+
+				<example><statement>
+					If <m>a,b</m> are positive integers, find the maximum value of <m>f(x) = x^a(1-x)^b</m>, for <m>0\leq x\leq 1</m>.
+				</statement>
+				<solution>
+					The max value is <m>f\lrpar{\dfrac{a}{a+b}} = \lrpar{\dfrac{a}{a+b}}^a\lrpar{1-\dfrac{a}{a+b}}^b</m>
+				</solution>
+				</example>
+				
+				<example><statement>
+					Find the absolute maximum and absolute minimum of the function <m>f(x) = x\sqrt{3-x}</m> on <m>[-6,3]</m>.
+				</statement>
+				<solution>
+					The absolute max is at <m>\lrpar{\dfrac{3}{2},\dfrac{3}{2}\sqrt{\dfrac{3}{2}}}</m>
+				</solution>
+				</example>	
+					
+				<example><statement>
+					Sketch the graph of a function with two local maxima, one local minimum, and no absolute minimum.
+				</statement>
+				<solution>
+					Answers vary
+				</solution>
+				</example>
+			</subsection>
+		</section>
+		

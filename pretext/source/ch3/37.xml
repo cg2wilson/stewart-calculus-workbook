@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-37">
+			<title>Optimization</title>
+			
+				<objectives>
+					<ul>
+						<li>
+							Solve optimization problems 
+						</li>
+						
+						
+					</ul>
+				</objectives>
+			<subsection xml:id="section-37-beforeclass">
+				<title>Before Class</title>
+				
+				<figure>
+					<caption>Pre-Class Video 1</caption>
+					<url href = "https://mymedia.ou.edu/media/3.7-1/1_dby87rvf"/>
+				</figure>
+				<figure>
+					<caption>Pre-Class Video 2</caption>
+					<url href = "https://mymedia.ou.edu/media/3.7-2/1_4wf321rg"/>
+				</figure>
+
+				
+				<subsubsection xml:id="section-37-optimization">
+					<title>Optimization</title>
+					
+					Rather than go straight into optimization, we'll give some motivation for the process first, as well as connect it to material we have already learned.
+					
+					<example><statement>
+						Consider the function <m>f(x) = -x^2 + 6x + 11</m>.
+						<ol label="a">
+							<li>
+								Use the methods of Section 3.3 to find the critical point of <m>f(x)</m>; give your answer as an ordered pair.
+							</li>
+								
+							<li>
+								Sketch the graph of <m>f(x)</m> to visually confirm your answer from (a).
+							</li>
+								
+							<li>
+								Now suppose that <m>f(x)</m> gives the profit (in hundred dollars) that a company makes from a certain product, when <m>x</m> thousand units are sold.  The critical point you found in (a) has a physical meaning now; what is it?
+							</li>
+						</ol>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li>
+								<m>(3,20)</m>
+							</li>
+								
+							<li>
+								<image>
+									<description>
+										The graph of <m>f(x) = -x^2+6x+11</m> on the interval <m>[-3,3]</m>.  
+									</description>
+									<latex-image>
+										<![CDATA[
+											\begin{tikzpicture}
+												\begin{axis}[
+													every tick label/.append style={font=\small},
+													axis x line = middle,
+													axis y line = middle,
+														every axis y label/.style={at={(ticklabel cs:1.15)}},
+														%ytick = {-4, -2, -3, -1, 1, 2, 3, 4},
+													y label style={at={(axis description cs:.25,1.15)},anchor=north},
+														ylabel = {$f(x)$},
+														every axis x label/.style= {at ={(ticklabel cs:1)}},
+														%xtick = {-4,-3,-2,-1,1,2,3,4},
+														x label style={at={(axis description cs:1.1,.45)},anchor=east},
+														xlabel = {$x$},
+														xmin = -3, xmax = 9,
+														xtick = \empty,
+														ytick = \empty
+												]
+													\addplot[thick, samples = 100, smooth, domain =-3:10] {-x^2 + 6*x + 11};
+												\end{axis}
+											\end{tikzpicture}
+										]]>
+									</latex-image>
+								</image>
+							</li>
+								
+							<li>
+								It gives the location of maximum profit.
+							</li>
+						</ol>
+					</solution>
+					</example>
+					
+					In the previous example, you were given the function for profit.  More often than not, however, you will need to develop the formula for yourself.
+					
+					<example><statement>
+						 A farmer has 2400 ft of fencing and wants to fence off a rectangular field that borders a straight river.  He needs no fence along the river.  What are the dimensions of the field with the largest area?
+					</statement>
+					<solution>
+						Let <m>x</m> be the length of the side parallel to the river, and <m>y</m> be length of the perpendicular sides.  Then, <m>x = 1200\text{ ft}</m> and <m>y = 600 \text{ ft}</m>
+					</solution>
+					</example>
+					
+					<assemblage>
+						<title>Strategy for Optimization</title>
+						<p>
+							<ol>
+								<li>
+									Draw a picture of the situation (if possible).  Label all pieces of your diagram with a variable that will not confuse you later.
+								</li>
+								<li>
+									Use the picture (or the description) to find equation(s) which relate to the problem.
+								</li>
+								<li>
+									Identify the equation which will be optimized.  Use the equations from (2) and algebra to reduce the variables in the optimizing equation, and simplify.
+								</li>
+								<li>
+									Take the derivative of your optimizing equation, set it equal to zero, and solve.
+								</li>
+								<li>	
+									If necessary, use your answer to find the remaining pieces of information.
+								</li>
+							</ol>
+						</p>
+					</assemblage>
+					
+					<p>
+						The key to optimization problems is <alert>practice</alert>.  Many optimization problems follow a similar pattern, and require only slight modification from other problems.  Practice is the only way that one will learn and recognize these patterns and tricks.
+					</p>
+					
+					<example><statement>
+						A cylindrical can is to hold 1 L of oil.  Find the dimensions that will minimize the cost of the metal to manufacture the can.
+					</statement>
+					<solution>
+						Let <m>r</m> be the radius of the can, <m>h</m> be the height.  Then, <m>r = \sqrt[3]{\dfrac{500}{\pi}}</m> and <m>h = 2\sqrt[3]{\dfrac{500}{\pi}}</m>
+					</solution>
+					</example>			
+						
+					<example><statement>
+						Find the point on the parabola <m>y^2 = 2x</m> that is closest to the point <m>(1,4)</m>.
+					</statement>
+					<solution>
+						<m>(2,2)</m>
+					</solution>
+					</example>
+				</subsubsection>				
+			</subsection>	
+			<subsection xml:id="section-37-preclass">
+				<title>Pre-Class Activities</title>
+				
+				<example><statement>
+					Find two numbers whose difference is 150 and whose product is a minimum.
+				</statement>
+				<solution>
+					Let <m>x</m> and <m>y</m> be the numbers.  Then, <m>x = 75</m> and <m>y = -75</m>.
+				</solution>
+				</example>
+					
+				<example><statement>
+					The sum of two positive numbers is 20.  What is the smallest possible value of the sum of their squares?
+				</statement>
+				<solution>
+					200
+				</solution>
+				</example>
+				
+				<example><statement>
+					What is the maximum vertical distance between the line <m>y=x+2</m> and the parabola <m>y=x^2</m> for <m>-1\leq x\leq 2</m>?
+				</statement>
+				<solution>
+					<m>\dfrac{9}{4}</m>
+				</solution>
+				</example>
+				<example><statement>
+					How are you feeling about optimization problems so far?  What can we do to make you feel better about them?
+				</statement>
+				<solution>
+					Answers vary
+				</solution>
+				</example>
+			</subsection>
+			<subsection xml:id="section-37-inclass">
+				<title>In Class</title>
+				
+				<example><statement>
+					A woman launches her boat from point <m>A</m> on a bank of a straight river, 3 miles wide, and wants to reach point <m>B</m>, 8 miles downstream on the opposite bank, as quickly as possible.  She could: row her boat directly across the river to point <m>C</m> and run to point <m>B</m>; row directly to <m>B</m>; or, row to some intermediate point <m>D</m> and run to <m>B</m>.  She can can row 5 mi/h and run 6 mi/h; where should she land in order to reach <m>B</m> as soon as possible?
+				</statement>
+				<solution>
+					Let <m>x</m> be the distance between <m>C</m> and <m>D</m>.  Then, <m>x = \dfrac{15}{\sqrt{11}} \text{ mi}</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Find the area of the largest rectangle which can be inscribed in a semicircle of radius <m>r</m>.
+				</statement>
+				<solution>
+					<m>A = r^2</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					A box with a square base and open top must have a volume of 32,000 cm<m>^3</m>.  Find the dimensions of the box that minimize the amount of material used.
+				</statement>
+				<solution>
+					Let <m>x</m> be the length of the base, and <m>y</m> be the height.  Then, <m>x = 40\text{ cm}</m> and <m>y = 20 \text{ cm}</m>.
+				</solution>
+				</example>
+					
+				<example><statement>
+					A rectangular storage container with an open top is to have a volume of 10 m<m>^3</m>.  The length of its base is twice the width.  Material for the base costs $10 per square meter.  Material for the sides costs $6 per square meter.  Find the cost of materials for the cheapest such container.
+				</statement>
+				<solution>
+					The minimal cost is <m>20\lrpar{\sqrt[3]{\dfrac{9}{2}}}^2 + \dfrac{180}{\sqrt[3]{9/2}}</m> dollars
+				</solution>
+				</example>
+					
+				<example><statement>
+					Find the area of the largest rectangle that can be inscribed in the ellipse <m>\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2} = 1</m>.
+				</statement>
+				<solution>
+					<m>A = 2ab</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					A right circular cylinder is inscribed in a sphere of radius <m>r</m>.  Find the largest possible volume of such a cylinder.
+				</statement>
+				<solution>
+					<m>V = \dfrac{4\pi}{3\sqrt{3}}r^3</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					A poster is to have an area of 180 in<m>^2</m> with 1-inch margins at the bottom and sides, and a 2-inch margin at the top.  What dimensions will give the largest printed area?
+				</statement>
+				<solution>
+					Let <m>x</m> be the printed length and <m>y</m> be the printed height.  Then, <m>x = \dfrac{180}{\sqrt{270}}-2</m> in and <m>y = \sqrt{270} - 3</m> in.
+				</solution>
+				</example>
+					
+				<example><statement>
+					If the two equal sides of an isosceles triangle have length <m>a</m>, find the length of the third side that maximizes the area of the triangle.
+				</statement>
+				<solution>
+					The side length is <m>\dfrac{2a}{\sqrt{3}}</m> units
+				</solution>
+				</example>
+					
+				<example><statement>
+					A rain gutter is to be constructed from a metal sheet of width 30 cm by bending up one-third of the sheet on each side through an angle <m>\theta</m>.  How should <m>\theta</m> be chosen so that the gutter will carry the maximum amount of water?
+				</statement>
+				<solution>
+					<m>\theta = \dfrac{\pi}{3}</m>
+				</solution>
+				</example>
+			</subsection>
+			<subsection xml:id="section-37-afterclass">
+				<title>After Class Activities</title>
+				
+				<example><statement>
+					A farmer with 1000 feet of fencing wants to enclose a rectangular area, and divide it into four pens with fencing parallel to one side of the rectangle.  What is the largest possible total area of the four pens?
+				</statement>
+				<solution>
+					Let <m>x</m> from the length of the side perpendicular to the pen fencing, and <m>y</m> be the length of the side parallel to the pen fencing.  Then, <m>x = 250</m> feet and <m>y = 100</m> feet.
+				</solution>
+				</example>
+					
+				<example><statement>
+					Find the point on the curve <m>y = \sqrt{x}</m> that is closest to the point <m>(4,0)</m>.
+				</statement>
+				<solution>
+					<m>\lrpar{\dfrac{7}{2},\sqrt{\dfrac{7}{2}}}</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					A piece of wire 10 inches long is cut into two pieces.  One piece is bent into a square, and the other is bent into an equilateral triangle.  How should the wire be cut so that the total area enclosed is (a) maximized? (b) minimized?
+				</statement>
+				<solution>
+					For the minimal area, cut <m> \dfrac{\sqrt{3}/18}{1/8 + \sqrt{3}/18}</m> inches from either end; for the maximal area, don't cut the wire.
+				</solution>
+				</example>
+					
+				<example><statement>
+					Find an equation of the line through the point <m>(5,3)</m> that cuts off the least area from quadrant one.
+				</statement>
+				<solution>
+					<m>y = -\dfrac{3}{5}x + 6</m>
+				</solution>
+				</example>	
+			</subsection>
+		</section>
+		

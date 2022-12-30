@@ -1,0 +1,1569 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-15">
+			<title>The Limit of a Function</title>
+			
+				<objectives>
+					<ul>
+						<li>
+							Describe what it means for a function to have a finite or infinite limit and what it means for a limit to not exist
+						</li>
+						<li>
+							Use and interpret limit notation
+						</li>
+						<li>
+							Compute limits graphically and numerically
+						</li>
+						<li>
+							Define one-sided limits and approximate them graphically and numerically
+						</li>
+						<li>
+							Define and identify vertical asymptotes of a function
+						</li>
+						
+					</ul>
+				</objectives>
+			<subsection xml:id="section-15-beforeclass">
+				<title>Before Class</title>
+				
+				<figure>
+					<caption>Pre-Class Video 1</caption>
+					<url href = "https://mymedia.ou.edu/media/1.5-1/1_42ce57lj"/>
+				</figure>
+
+				
+				<subsubsection xml:id="section-15-motivation">
+					<title>Motivating Example</title>
+					
+					<example><statement>
+						Consider the function <m>f(x) = x^3 -2x+1</m>.  A table of its values (to 6 decimal places) are given below:
+						<tabular top="medium" left="medium" right="medium">
+							<row bottom="medium">
+								<cell halign="center">
+									<m>x</m>
+								</cell>
+								<cell halign="center">
+									<m>f(x)</m>
+								</cell>
+								<cell halign="center">
+									<m>x</m>
+								</cell>
+								<cell halign="center">
+									<m>f(x)</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>1.0</m>
+								</cell>
+								<cell halign="center">
+									<m>0.000000</m>
+								</cell>
+								<cell halign="center">
+									<m>3.0</m>
+								</cell>
+								<cell halign="center">
+									<m>22.000000</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>1.5</m>
+								</cell>
+								<cell halign="center">
+									<m>1.375000</m>
+								</cell>
+								<cell halign="center">
+									<m>2.5</m>
+								</cell>
+								<cell halign="center">
+									<m>11.625000</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>1.8</m>
+								</cell>
+								<cell halign="center">
+									<m>3.232000</m>
+								</cell>
+								<cell halign="center">
+									<m>2.2</m>
+								</cell>
+								<cell halign="center">
+									<m>7.248000</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>1.9</m>
+								</cell>
+								<cell halign="center">
+									<m>4.059000</m>
+								</cell>
+								<cell halign="center">
+									<m>2.1</m>
+								</cell>
+								<cell halign="center">
+									<m>6.061000</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>1.95</m>
+								</cell>
+								<cell halign="center">
+									<m>4.514875</m>
+								</cell>
+								<cell halign="center">
+									<m>2.05</m>
+								</cell>
+								<cell halign="center">
+									<m>5.515125</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>1.99</m>
+								</cell>
+								<cell halign="center">
+									<m>4.900599</m>
+								</cell>
+								<cell halign="center">
+									<m>2.01</m>
+								</cell>
+								<cell halign="center">
+									<m>5.100601</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>1.999</m>
+								</cell>
+								<cell halign="center">
+									<m>4.990006</m>
+								</cell>
+								<cell halign="center">
+									<m>2.001</m>
+								</cell>
+								<cell halign="center">
+									<m>5.010006</m>
+								</cell>
+							</row>
+						</tabular>
+						<p>
+							Describe what is happening to the output values as <m>x</m> approaches 2.
+						</p>
+					</statement>
+					<solution>
+						As <m>x\to 2</m>, <m>f(x)\to 5</m>
+					</solution>
+					</example>
+				</subsubsection>
+				
+				<subsubsection xml:id="section-15-limit">
+					<title>The Limit</title>
+					
+					<definition>
+						<title>Intuitive Definition of a Limit</title>
+						<idx>Limit</idx>
+						
+						Suppose <m>f(x)</m> is defined when <m>x</m> is near the input <m>a</m>.  We write
+						<me>
+							\lim_{x\to a} f(x) = L \qquad f(x)\to L\text{ as }x\to a
+						</me>
+						and say
+						<p>
+							<q>the limit of <m>f(x)</m>, as <m>x</m> approaches <m>a</m>, equals <m>L</m></q> or <q><m>f(x)</m> approaches <m>L</m> as <m>x</m> approaches <m>a</m></q>
+						</p>
+						<p>
+							if we can make the values of <m>f(x)</m> arbitrarily close to <m>L</m> by restricting <m>x</m> to be sufficiently close to <m>a</m> (on either side of <m>a</m>) but not equal to <m>a</m> itself.
+						</p>
+					</definition>
+					<p>
+						There is a more rigorous definition given in Section 1.7.  One important aspect of the definition of a limit is that we do not require the function to <em>exist</em> at the input <m>a</m>. 
+					</p>
+					<assemblage>
+						<title>A Word About Notation</title>
+						<p>
+							In mathematics, notation is the way you succinctly communicate your ideas.  Notation is part of the  <q>language</q> of math; proper notation ensures proper communication.  Please pay very careful attention to how I am writing the notation in class.
+						</p>
+						<p>
+							Notation can be a confusing aspect of mathematics; that's ok.  It happens for Calculus I students and even for tenured professors.  If you have any questions, please refer to your notes and/or ask me!  I am happy to help you navigate things that are confusing or don't make sense to you.
+						</p>
+					</assemblage>
+					
+					<example><statement>
+						Draw three graphs so that the limit <m>L</m> is defined at the input <m>a</m>, but <m>f(a)</m> is distinct at all three points.  This illustrates three possibilities when dealing with limits.
+					</statement>
+					<solution>
+						<sidebyside widths="30% 30% 30%">
+							<image>
+								<description>
+									The graph of <m>y=x</m> with a point located at <m>(a,f(a))</m>
+								</description>
+								<latex-image>
+									<![CDATA[
+										\begin{tikzpicture}
+											\begin{axis}[
+												axis x line = middle,
+												axis y line = middle,
+												every axis y label/.style={at={(ticklabel cs:1.1)}},
+												y label style={at={(axis description cs:0,1.1)},anchor=north},
+												ylabel = {$y$},
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												x label style={at={(axis description cs:1.1,0)},anchor=east},
+												xlabel = {$x$},
+												xmin=0,xmax=2,
+												xtick = \empty,
+												ytick = \empty
+											]
+											\addplot[thick, domain=0:2,samples=50]{x}; 
+											\coordinate (up) at (1,.05);
+											\coordinate (down) at (1,-.05);
+											\coordinate (pt1) at (1,1);
+											\coordinate (right) at (.05,1);
+											\coordinate (left) at (-.05,1);
+											\end{axis}
+											\draw (up)--(down) node[below] {$a$};
+											\draw (right)--(left) node[left] {$f(a)$};
+											\fill (pt1) circle (0.1);
+											\draw[dashed] (right)--(pt1);
+											\draw[dashed] (up)--(pt1);
+											
+										\end{tikzpicture}
+									]]>
+								</latex-image>
+							</image>
+							<image>
+								<description>
+									The graph of <m>y=x</m> with the point located at <m>(a,f(a))</m> removed
+								</description>
+								<latex-image>
+									<![CDATA[
+										\begin{tikzpicture}
+											\begin{axis}[
+												axis x line = middle,
+												axis y line = middle,
+												every axis y label/.style={at={(ticklabel cs:1.1)}},
+												y label style={at={(axis description cs:0,1.1)},anchor=north},
+												ylabel = {$y$},
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												x label style={at={(axis description cs:1.1,0)},anchor=east},
+												xlabel = {$x$},
+												xmin=0,xmax=2,
+												xtick = \empty,
+												ytick = \empty
+											]
+											\addplot[thick, domain=0:2,samples=50]{x}; 
+											\coordinate (up) at (1,.05);
+											\coordinate (down) at (1,-.05);
+											\coordinate (pt1) at (1,1);
+											\coordinate (right) at (.05,1);
+											\coordinate (left) at (-.05,1);
+											\end{axis}
+											\draw (up)--(down) node[below] {$a$};
+											\draw (right)--(left) node[left] {$f(a)$};
+											\draw[dashed] (right)--(pt1);
+											\draw[dashed] (up)--(pt1);
+											\fill[white] (pt1) circle (0.1);
+											\draw (pt1) circle (0.1);
+											
+										\end{tikzpicture}
+									]]>
+								</latex-image>
+							</image>
+							<image>
+								<description>
+									The graph of <m>y=x</m> with a point located at <m>(a,f(a))</m> removed and moved above
+								</description>
+								<latex-image>
+									<![CDATA[
+										\begin{tikzpicture}
+											\begin{axis}[
+												axis x line = middle,
+												axis y line = middle,
+												every axis y label/.style={at={(ticklabel cs:1.1)}},
+												y label style={at={(axis description cs:0,1.1)},anchor=north},
+												ylabel = {$y$},
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												x label style={at={(axis description cs:1.1,0)},anchor=east},
+												xlabel = {$x$},
+												xmin=0,xmax=2,
+												xtick = \empty,
+												ytick = \empty
+											]
+											\addplot[thick, domain=0:2,samples=50]{x}; 
+											\coordinate (up) at (1,.05);
+											\coordinate (down) at (1,-.05);
+											\coordinate (pt1) at (1,1);
+											\coordinate (pt2) at (1,1.5);
+											\coordinate (right) at (.05,1);
+											\coordinate (left) at (-.05,1);
+											\end{axis}
+											\draw (up)--(down) node[below] {$a$};
+											\draw (right)--(left) node[left] {$f(a)$};
+											\draw[dashed] (right)--(pt1);
+											\draw[dashed] (up)--(pt1);
+											\fill[white] (pt1) circle (0.1);
+											\draw (pt1) circle (0.1);
+											\fill (pt2) circle (0.1);
+											
+										\end{tikzpicture}
+									]]>
+								</latex-image>
+							</image>
+							
+						</sidebyside>
+					</solution>
+					</example>
+					
+					<example><statement>
+						Consider <m>f(x) = \dfrac{x-1}{x^2-1}</m>.  What is <m>\ds \lim_{x\to 1} f(x)</m>?
+						<ol label="a">
+							<li>
+								Fill out the table below (using a calculator) to six decimal places.  What do you think the limit will be?  Why?
+								<tabular top="medium" left="medium" right="medium">
+									<row bottom="medium">
+										<cell halign="center">
+											<m>x</m>
+										</cell>
+										<cell halign="center">
+											<m>f(x)</m>
+										</cell>
+										<cell halign="center">
+											<m>x</m>
+										</cell>
+										<cell halign="center">
+											<m>f(x)</m>
+										</cell>
+									</row>
+									<row bottom="medium">
+										<cell halign="center">
+											0
+										</cell>
+										<cell halign="center">
+											
+										</cell>
+										<cell halign="center">
+											2
+										</cell>
+										<cell halign="center">
+											
+										</cell>
+									</row>
+									<row bottom="medium">
+										<cell halign="center">
+											0.5
+										</cell>
+										<cell halign="center">
+											
+										</cell>
+										<cell halign="center">
+											1.5
+										</cell>
+										<cell halign="center">
+											
+										</cell>
+									</row>
+									<row bottom="medium">
+										<cell halign="center">
+											0.75
+										</cell>
+										<cell halign="center">
+											
+										</cell>
+										<cell halign="center">
+											1.25
+										</cell>
+										<cell halign="center">
+											
+										</cell>
+									</row>
+									<row bottom="medium">
+										<cell halign="center">
+											0.99
+										</cell>
+										<cell halign="center">
+											
+										</cell>
+										<cell halign="center">
+											1.01
+										</cell>
+										<cell halign="center">
+											
+										</cell>
+									</row>
+								</tabular>
+							</li>
+							<li>
+								Simplify the function.  Can you determine the limit from your simplified version?
+							</li>
+						</ol>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li>
+								<tabular top="medium" left="medium" right="medium">
+									<row bottom="medium">
+										<cell halign="center">
+											<m>x</m>
+										</cell>
+										<cell halign="center">
+											<m>f(x)</m>
+										</cell>
+										<cell halign="center">
+											<m>x</m>
+										</cell>
+										<cell halign="center">
+											<m>f(x)</m>
+										</cell>
+									</row>
+									<row bottom="medium">
+										<cell halign="center">
+											0
+										</cell>
+										<cell halign="center">
+											1
+										</cell>
+										<cell halign="center">
+											2
+										</cell>
+										<cell halign="center">
+											0.333333
+										</cell>
+									</row>
+									<row bottom="medium">
+										<cell halign="center">
+											0.5
+										</cell>
+										<cell halign="center">
+											0.666667
+										</cell>
+										<cell halign="center">
+											1.5
+										</cell>
+										<cell halign="center">
+											.4
+										</cell>
+									</row>
+									<row bottom="medium">
+										<cell halign="center">
+											0.75
+										</cell>
+										<cell halign="center">
+											0.571429
+										</cell>
+										<cell halign="center">
+											1.25
+										</cell>
+										<cell halign="center">
+											0.444444
+										</cell>
+									</row>
+									<row bottom="medium">
+										<cell halign="center">
+											0.99
+										</cell>
+										<cell halign="center">
+											0.502513
+										</cell>
+										<cell halign="center">
+											1.01
+										</cell>
+										<cell halign="center">
+											0.497512
+										</cell>
+									</row>
+								</tabular>
+							</li>
+							<li>
+								The function simplifies to <m>\dfrac{1}{x+1}</m>, so at <m>x=1</m> we would expect an answer of <m>\dfrac{1}{2}</m>
+							</li>
+						</ol>
+					</solution>
+					</example>
+				</subsubsection>
+			</subsection>
+			
+			<subsection xml:id="section-15-preclass">
+				<title>Pre-Class Activities</title>
+					<example><statement>
+						What if instead we tweaked the function in the previous example to be 
+						<me>
+							g(x) = \begin{cases}\dfrac{x-1}{x^2-1} \amp x\neq 1 \\ 2 \amp x = 1 \end{cases}
+						</me>
+						What will happen to the limit?  Explain your answer.
+					</statement>
+					<solution>
+						Nothing changes; the limit cares about "expected" output, not actual output.
+					</solution>
+					</example>
+					
+					<example><statement>
+						<ol label="a">
+							<li>
+								Translate the expression <m>\ds \lim_{x\to 3} f(x) = 7</m> from math into English.  Explain the sentence you wrote. 
+							</li>
+							<li>
+								Is it possible for <m>f(3)</m> to be <m>-10</m> instead of 7?  Why or why not?
+							</li>
+						</ol>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li>
+								As <m>x</m> approaches 3, the output approaches 7.  This means that when the inputs get close to 3, the outputs get closer to 7
+							</li>
+							<li>
+								Yes.  Limits are concerned with expected output, not actual output; a function can have a different output than its limit at the same point.
+							</li>
+						</ol>
+					</solution>
+					</example>
+			</subsection>
+			
+			<subsection xml:id="section-15-inclass">
+				<title>In Class</title>
+				<subsubsection xml:id="section-15-onesided">
+					<title>One-Sided Limits</title>
+					
+					<p>
+						When we developed the intuition of a limit, we looked at input values which were smaller and larger than our desired input.  These values are to the <em>left</em> and <em>right</em> of our input; secretly, we were taking <em>one-sided limits</em>.
+					</p>
+					<definition>
+						<title>One-Sided Limits</title>
+						Suppose <m>f(x)</m> is defined when <m>x</m> is near the input <m>a</m>.  We write
+						<me>
+							\lim_{x\to a^+} f(x) = L
+						</me>
+						and say 
+						<p>
+							<q>the limit of <m>f(x)</m>, as <m>x</m> approaches <m>a</m> from the right, equals <m>L</m></q> or <q><m>f(x)</m> approaches <m>L</m> as <m>x</m> approaches <m>a</m> from the right</q>
+						</p>
+						<p>
+							if we can make the values of <m>f(x)</m> arbitrarily close to <m>L</m> by restricting <m>x</m> to be sufficiently close to <m>a</m> (using <m>x \lt a</m>).  We write
+							<me>
+								\lim_{x\to a^-} f(x) = L
+							</me>
+						</p>
+						and say
+						<p>
+							<q>the limit of <m>f(x)</m>, as <m>x</m> approaches <m>a</m> from the left, equals <m>L</m></q> or <q><m>f(x)</m> approaches <m>L</m> as <m>x</m> approaches <m>a</m> from the left</q>
+						</p>
+						<p>
+							if we can make the values of <m>f(x)</m> arbitrarily close to <m>L</m> by restricting <m>x</m> to be sufficiently close to <m>a</m> (using <m>x \gt a</m>)
+						</p>
+					</definition>
+					
+					<assemblage>
+						<title>Existence of a Limit</title>
+						<p>
+							A function <m>f(x)</m> has a limit at <m>x = c</m> if and only if its one-sided limits exist and agree.
+						</p>
+					</assemblage>
+					
+					<example><statement>
+						Use the graph of <m>g</m> to answer the following:
+						<image>
+							<description>
+								This graph is not filled in at <m>(3,7)</m>, is filled in at <m>(3,5)</m>, and continues.
+							</description>
+							<latex-image>
+								<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+											scale = .8,
+											axis x line = middle,
+											axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.15)}},
+											ytick = {1,2,...,10},
+											y label style={at={(axis description cs:0,1.15)},anchor=north},
+											ylabel = {$g(x)$},
+											ymin = 0, ymax = 11,
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											xtick = {1,2,3,4,5},
+											x label style={at={(axis description cs:1.1,0)},anchor=east},
+											xlabel = {$x$},
+											xmin = 0, xmax = 6			
+										]
+											\addplot [line width=1pt,smooth,samples=100,domain=0.:2.93] {(-.444)*x^2 + 10}; % plots first piece of function
+											\coordinate (circle1) at (3,6);
+											\addplot[line width = 1pt, smooth, samples = 100, domain = 3.0:4.0] {-3.*x + 14.}; %plot second piece
+											\coordinate (circle2) at (3,5);
+											\addplot[->,line width = 1pt, smooth, samples = 100, domain = 4.0:6.0] {5*(x - 4)^2 + 2}; %plot third piece
+										\end{axis}
+										\fill[white] (circle1) circle (.1);
+										\draw (circle1) circle (.1);
+										\fill (circle2) circle (.1);
+									\end{tikzpicture}
+								]]>
+							</latex-image>
+						</image>
+						<ol label="a">
+							<li>
+								<m>\ds \lim_{x\to 4^-} g(x)=</m> 
+							</li>
+							<li>
+								<m>\ds \lim_{x\to 4^+} g(x)=</m>     
+							</li>
+							<li>
+								<m>\ds \lim_{x\to 4} g(x)=</m> 
+							</li>
+							<li>
+								<m>\ds \lim_{x\to 3^-} g(x)=</m>     
+							</li>
+							<li>
+								<m>\ds \lim_{x\to 3^+} g(x)=</m> 
+							</li>
+							<li>
+								<m>\ds \lim_{x\to 3} g(x)=</m>   
+							</li>
+						</ol>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li>
+								<m>\ds \lim_{x\to 4^-} g(x)=2</m> 
+							</li>
+							<li>
+								<m>\ds \lim_{x\to 4^+} g(x)=2</m>     
+							</li>
+							<li>
+								<m>\ds \lim_{x\to 4} g(x)=2</m> 
+							</li>
+							<li>
+								<m>\ds \lim_{x\to 3^-} g(x)=6</m>     
+							</li>
+							<li>
+								<m>\ds \lim_{x\to 3^+} g(x)=5</m> 
+							</li>
+							<li>
+								<m>\ds \lim_{x\to 3} g(x) \text{ does not exist}</m>   
+							</li>
+						</ol>
+					</solution></example>
+					
+					<example><statement>
+						Use a calculator to examine the limit behavior of the function <m>r(p) = \dfrac{p^2-64}{p+8}</m> at <m>p = -8</m>.  Record your answers will full decimal accuracy, and round your final answer to the thousandths place, if necessary.
+						
+						<sidebyside widths="40% 40%">
+						<tabular top="medium" right="medium" left="medium">
+							<row bottom="medium">
+								<cell halign="center">
+									<m>p</m>
+								</cell>
+								<cell halign="center">
+									<m>r(p)</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>-8.1</m>
+								</cell>
+								<cell halign="center">
+									<m></m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>-8.01</m>
+								</cell>
+								<cell halign="center">
+									<m> </m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>-8.001</m>
+								</cell>
+								<cell halign="center">
+									<m> </m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>-8.0001</m>
+								</cell>
+								<cell halign="center">
+									<m> </m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>-8.00001</m>
+								</cell>
+								<cell halign="center">
+									<m> </m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>\ds \lim_{p\to -8^-}r(p)  =</m>
+								</cell>
+								<cell halign="center">
+									<m> </m>
+								</cell>
+							</row>
+						</tabular>
+						
+						<tabular top="medium" right="medium" left="medium">
+							<row bottom="medium">
+								<cell halign="center">
+									<m>p</m>
+								</cell>
+								<cell halign="center">
+									<m>r(p)</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>-7.9</m>
+								</cell>
+								<cell halign="center">
+									<m></m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>-7.99</m>
+								</cell>
+								<cell halign="center">
+									<m> </m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>-7.999</m>
+								</cell>
+								<cell halign="center">
+									<m> </m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>-7.9999</m>
+								</cell>
+								<cell halign="center">
+									<m> </m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>-7.99999</m>
+								</cell>
+								<cell halign="center">
+									<m> </m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>\ds \lim_{p\to -8^+}r(p)  =</m>
+								</cell>
+								<cell halign="center">
+									<m> </m>
+								</cell>
+							</row>
+						</tabular>
+						</sidebyside>
+						<p>
+							<me>\ds \lim_{p\to -8}r(p)=</me>		
+						</p>
+			
+					</statement>
+					<solution>
+						<sidebyside widths="40% 40%">
+						<tabular top="medium" right="medium" left="medium">
+							<row bottom="medium">
+								<cell halign="center">
+									<m>p</m>
+								</cell>
+								<cell halign="center">
+									<m>r(p)</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>-8.1</m>
+								</cell>
+								<cell halign="center">
+									<m>-16.1</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>-8.01</m>
+								</cell>
+								<cell halign="center">
+									<m>-16.01</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>-8.001</m>
+								</cell>
+								<cell halign="center">
+									<m>-16.001</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>-8.0001</m>
+								</cell>
+								<cell halign="center">
+									<m>-16.0001</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>-8.00001</m>
+								</cell>
+								<cell halign="center">
+									<m>-16.00001</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>\ds \lim_{p\to -8^-}r(p)  = </m>
+								</cell>
+								<cell halign="center">
+									<m>-16 </m>
+								</cell>
+							</row>
+						</tabular>
+						
+						<tabular top="medium" right="medium" left="medium">
+							<row bottom="medium">
+								<cell halign="center">
+									<m>p</m>
+								</cell>
+								<cell halign="center">
+									<m>r(p)</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>-7.9</m>
+								</cell>
+								<cell halign="center">
+									<m>-15.9</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>-7.99</m>
+								</cell>
+								<cell halign="center">
+									<m>-15.99</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>-7.999</m>
+								</cell>
+								<cell halign="center">
+									<m>-15.999</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>-7.9999</m>
+								</cell>
+								<cell halign="center">
+									<m>-15.9999</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>-7.99999</m>
+								</cell>
+								<cell halign="center">
+									<m>-15.99999</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>\ds \lim_{p\to -8^+}r(p)  = </m>
+								</cell>
+								<cell halign="center">
+									<m>-16</m>
+								</cell>
+							</row>
+						</tabular>
+						</sidebyside>
+						<p>
+							<me>\ds \lim_{p\to -8}r(p)= -16</me>		
+						</p>
+					</solution></example>
+				</subsubsection>
+				
+				<subsubsection xml:id="section-15-infinite">
+					<title>Infinite Limits</title>
+					<example><statement>
+						Estimate <m>\ds \lim_{x\to 0} -\dfrac{1}{x^2}</m>.
+						<sidebyside widths="40% 40%">
+						<tabular top="medium" left="medium" right="medium">
+							<row bottom="medium">
+								<cell halign="center">
+									<m>x</m>
+								</cell>
+								<cell halign="center">
+									<m>-\dfrac{1}{x^2}</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>-0.1</m>
+								</cell>
+								<cell halign="center">
+									<m></m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>-0.01</m>
+								</cell>
+								<cell halign="center">
+									<m></m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>-0.001</m>
+								</cell>
+								<cell halign="center">
+									<m></m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>-0.0001</m>
+								</cell>
+								<cell halign="center">
+									<m></m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>-0.00001</m>
+								</cell>
+								<cell halign="center">
+									<m></m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>\ds \lim_{x\to 0^-}\lrpar{-\dfrac{1}{x^2}} =</m>
+								</cell>
+								<cell halign="center">
+									<m></m>
+								</cell>
+							</row>
+						</tabular>
+						<tabular top="medium" left="medium" right="medium">
+							<row bottom="medium">
+								<cell halign="center">
+									<m>x</m>
+								</cell>
+								<cell halign="center">
+									<m>-\dfrac{1}{x^2}</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>0.1</m>
+								</cell>
+								<cell halign="center">
+									<m></m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>0.01</m>
+								</cell>
+								<cell halign="center">
+									<m></m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>0.001</m>
+								</cell>
+								<cell halign="center">
+									<m></m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>0.0001</m>
+								</cell>
+								<cell halign="center">
+									<m></m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>0.00001</m>
+								</cell>
+								<cell halign="center">
+									<m></m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>\ds \lim_{x\to 0^+}\lrpar{-\dfrac{1}{x^2}} =</m>
+								</cell>
+								<cell halign="center">
+									<m></m>
+								</cell>
+							</row>
+						</tabular>
+						</sidebyside>
+						<me>
+							\lim_{x\to 0}\lrpar{-\dfrac{1}{x^2}}=
+						</me>
+					</statement>
+					<solution>
+						<sidebyside widths="40% 40%">
+						<tabular top="medium" left="medium" right="medium">
+							<row bottom="medium">
+								<cell halign="center">
+									<m>x</m>
+								</cell>
+								<cell halign="center">
+									<m>-\dfrac{1}{x^2}</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>-0.1</m>
+								</cell>
+								<cell halign="center">
+									<m>-100</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>-0.01</m>
+								</cell>
+								<cell halign="center">
+									<m>-10000</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>-0.001</m>
+								</cell>
+								<cell halign="center">
+									<m>-1000000</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>-0.0001</m>
+								</cell>
+								<cell halign="center">
+									<m>-100000000</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>-0.00001</m>
+								</cell>
+								<cell halign="center">
+									<m>-10000000000</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>\ds \lim_{x\to 0^-}\lrpar{-\dfrac{1}{x^2}} =</m>
+								</cell>
+								<cell halign="center">
+									<m>-\infty</m>
+								</cell>
+							</row>
+						</tabular>
+						<tabular top="medium" left="medium" right="medium">
+							<row bottom="medium">
+								<cell halign="center">
+									<m>x</m>
+								</cell>
+								<cell halign="center">
+									<m>-\dfrac{1}{x^2}</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>0.1</m>
+								</cell>
+								<cell halign="center">
+									<m>-100</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>0.01</m>
+								</cell>
+								<cell halign="center">
+									<m>-10000</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>0.001</m>
+								</cell>
+								<cell halign="center">
+									<m>-1000000</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>0.0001</m>
+								</cell>
+								<cell halign="center">
+									<m>-100000000</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>0.00001</m>
+								</cell>
+								<cell halign="center">
+									<m>-10000000000</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									<m>\ds \lim_{x\to 0^+}\lrpar{-\dfrac{1}{x^2}} =</m>
+								</cell>
+								<cell halign="center">
+									<m>-\infty</m>
+								</cell>
+							</row>
+						</tabular>
+						</sidebyside>
+						<me>
+							\lim_{x\to 0}\lrpar{-\dfrac{1}{x^2}}= -\infty
+						</me>
+					</solution></example>
+					
+					<question><statement>
+						What is different about these outputs than in our previous examples?
+					</statement>
+					<solution>
+						Answers vary
+					</solution>
+					</question>
+					
+					<assemblage>
+						<title>Notation</title>
+						<p>
+							We use the notation <m>\infty</m> or <m>-\infty</m> to indicate a value which gets arbitrarily large.  IT IS NOT A NUMBER!
+						</p>
+					</assemblage>
+					
+					<definition>
+						<title>Intuitive Definition of an Infinite Limit</title>
+						<idx>Infinite Limit</idx>
+						
+						<p>
+							Let <m>f</m> be a function defined on both sides of <m>a</m>, except possibly at <m>a</m> itself.  If the values of <m>f(x)</m> can be made arbitrarily large, by taking <m>x</m> sufficiently close to <m>a</m> (but not equal to <m>a</m>).  We denote this as
+							<me>
+								\lim_{x\to a} f(x) = \infty
+							</me>
+						</p>
+						<p>
+							If the values can be made arbitrarily negative, we denote this as
+							<me>
+								\lim_{x\to a} f(x) = -\infty
+							</me>
+						</p>
+						<p>
+							One-sided limits are defined similarly.	
+						</p>
+					</definition>
+					
+					<example><statement>
+						Sketch an example of each of the following:
+							<ol label="a">
+								<li>
+									<m>\displaystyle \lim_{x\to a^-} f(x) = \infty</m>
+								</li>
+										 
+								<li>
+									<m>\displaystyle \lim_{x\to a^+} f(x) = \infty</m>
+								</li>
+										 
+								<li>
+									<m>\displaystyle \lim_{x\to a} f(x) = \infty</m>
+								</li>
+										
+								<li>
+									<m>\displaystyle \lim_{x\to a^-} f(x) = -\infty</m>
+								</li>
+										 
+								<li>
+									<m>\displaystyle \lim_{x\to a^+} f(x) = -\infty</m>
+								</li>
+										 
+								<li>
+									<m>\displaystyle \lim_{x\to a} f(x) = -\infty</m>
+								</li>
+							</ol>
+					</statement>
+					<solution>
+						<ol label="a">
+								<li>
+									<image>
+										<description>
+											A graph with vertical asymptote at <m>x=a</m>, increasing as <m>x\to a^-</m>
+										</description>
+										<latex-image>
+											<![CDATA[
+												\begin{tikzpicture}
+													\begin{axis}[
+														axis x line = middle,
+														axis y line = middle,
+														every axis y label/.style={at={(ticklabel cs:1.1)}},
+														y label style={at={(axis description cs:0,1.1)},anchor=north},
+														ylabel = {$y$},
+														every axis x label/.style= {at ={(ticklabel cs:1)}},
+														x label style={at={(axis description cs:1.1,0)},anchor=east},
+														xlabel = {$x$},
+														xmin=0,xmax=2,
+														xtick = \empty,
+														ytick = \empty
+													]
+													\addplot[thick, domain=0:.9,samples=100]{-1/(x-1)}; 
+													\coordinate (up) at (1,1.1);
+													\coordinate (down) at (1,.9);
+													\coordinate (top) at (1,10);
+													\coordinate (bottom) at (1,1);
+													\end{axis}
+													\draw (up)--(down) node[below] {$a$};
+													\draw[dashed] (top)--(bottom);
+												\end{tikzpicture}
+											]]>
+										</latex-image>
+									</image>
+								</li>
+									
+								<li>
+									<image>
+										<description>
+											A graph with vertical asymptote at <m>x=a</m>, increasing as <m>x\to a^+</m>
+										</description>
+										<latex-image>
+											<![CDATA[
+												\begin{tikzpicture}
+													\begin{axis}[
+														axis x line = bottom,
+														axis y line = middle,
+														every axis y label/.style={at={(ticklabel cs:1.1)}},
+														y label style={at={(axis description cs:0,1.1)},anchor=north},
+														ylabel = {$y$},
+														every axis x label/.style= {at ={(ticklabel cs:1)}},
+														x label style={at={(axis description cs:1.1,0)},anchor=east},
+														xlabel = {$x$},
+														xmin=0,xmax=2,
+														xtick = \empty,
+														ytick = \empty
+													]
+													\addplot[thick, domain=1.2:2,samples=100]{1/(x-1)+10}; 
+													\coordinate (up) at (1,11.1);
+													\coordinate (down) at (1,10.9);
+													\coordinate (top) at (1,15);
+													\coordinate (bottom) at (1,11);
+													\end{axis}
+													\draw (up)--(down) node[below] {$a$};
+													\draw[dashed] (top)--(bottom);
+												\end{tikzpicture}
+											]]>
+										</latex-image>
+									</image>
+								</li>
+										 
+								<li>
+									<image>
+										<description>
+											A graph with vertical asymptote at <m>x=a</m>, increasing as <m>x\to a^-</m> and as <m>x\to a^+</m>
+										</description>
+										<latex-image>
+											<![CDATA[
+												\begin{tikzpicture}
+													\begin{axis}[
+														axis x line = bottom,
+														axis y line = middle,
+														every axis y label/.style={at={(ticklabel cs:1.1)}},
+														y label style={at={(axis description cs:0,1.1)},anchor=north},
+														ylabel = {$y$},
+														every axis x label/.style= {at ={(ticklabel cs:1)}},
+														x label style={at={(axis description cs:1.1,0)},anchor=east},
+														xlabel = {$x$},
+														xmin=0,xmax=2,
+														xtick = \empty,
+														ytick = \empty
+													]
+													\addplot[thick, domain=0:0.9,samples=100]{1/((x-1)^2}; 
+													\addplot[thick, domain=1.1:2,samples=100]{1/(x-1)^2};
+													\coordinate (up) at (1,1);
+													\coordinate (down) at (1,-1);
+													\coordinate (top) at (1,100);
+													\coordinate (bottom) at (1,0);
+													\end{axis}
+													\draw (up)--(down) node[below] {$a$};
+													\draw[dashed] (top)--(bottom);
+												\end{tikzpicture}
+											]]>
+										</latex-image>
+									</image>
+								</li>
+										
+								<li>
+									<image>
+										<description>
+											A graph with vertical asymptote at <m>x=a</m>, decreasing as <m>x\to a^-</m>
+										</description>
+										<latex-image>
+											<![CDATA[
+												\begin{tikzpicture}
+													\begin{axis}[
+														axis x line = bottom,
+														axis y line = middle,
+														every axis y label/.style={at={(ticklabel cs:1.1)}},
+														y label style={at={(axis description cs:0,1.1)},anchor=north},
+														ylabel = {$y$},
+														every axis x label/.style= {at ={(ticklabel cs:1)}},
+														x label style={at={(axis description cs:1.1,0)},anchor=east},
+														xlabel = {$x$},
+														xmin=0,xmax=2,
+														xtick = \empty,
+														ytick = \empty
+													]
+													\addplot[thick, domain=0:.9,samples=100]{1/(x-1)+10}; 
+													\coordinate (up) at (1,.1);
+													\coordinate (down) at (1,-.1);
+													\coordinate (top) at (1,9);
+													\coordinate (bottom) at (1,0);
+													\end{axis}
+													\draw (up)--(down) node[below] {$a$};
+													\draw[dashed] (top)--(bottom);
+												\end{tikzpicture}
+											]]>
+										</latex-image>
+									</image>
+								</li>
+										 
+								<li>
+									<image>
+										<description>
+											A graph with vertical asymptote at <m>x=a</m>, decreasing as <m>x\to a^+</m>
+										</description>
+										<latex-image>
+											<![CDATA[
+												\begin{tikzpicture}
+													\begin{axis}[
+														axis x line = bottom,
+														axis y line = middle,
+														every axis y label/.style={at={(ticklabel cs:1.1)}},
+														y label style={at={(axis description cs:0,1.1)},anchor=north},
+														ylabel = {$y$},
+														every axis x label/.style= {at ={(ticklabel cs:1)}},
+														x label style={at={(axis description cs:1.1,0)},anchor=east},
+														xlabel = {$x$},
+														xmin=0,xmax=2,
+														xtick = \empty,
+														ytick = \empty
+													]
+													\addplot[thick, domain=1.1:2,samples=100]{1/(1-x)+10}; 
+													\coordinate (up) at (1,.05);
+													\coordinate (down) at (1,-.1);
+													\coordinate (top) at (1,9);
+													\coordinate (bottom) at (1,0);
+													\end{axis}
+													\draw (up)--(down) node[below] {$a$};
+													\draw[dashed] (top)--(bottom);
+												\end{tikzpicture}
+											]]>
+										</latex-image>
+									</image>
+								</li>
+										 
+								<li>
+									<image>
+										<description>
+											A graph with vertical asymptote at <m>x=a</m>, decreasing as <m>x\to a^-</m> and <m>x\to a^+</m>
+										</description>
+										<latex-image>
+											<![CDATA[
+												\begin{tikzpicture}
+													\begin{axis}[
+														axis x line = bottom,
+														axis y line = middle,
+														every axis y label/.style={at={(ticklabel cs:1.1)}},
+														y label style={at={(axis description cs:0,1.1)},anchor=north},
+														ylabel = {$y$},
+														every axis x label/.style= {at ={(ticklabel cs:1)}},
+														x label style={at={(axis description cs:1.1,0)},anchor=east},
+														xlabel = {$x$},
+														xmin=0,xmax=2,
+														xtick = \empty,
+														ytick = \empty
+													]
+													\addplot[thick, domain=0:0.9,samples=100]{-1/((x-1)^2}; 
+													\addplot[thick, domain=1.1:2,samples=100]{-1/(x-1)^2};
+													\coordinate (up) at (1,-99);
+													\coordinate (down) at (1,-101);
+													\coordinate (top) at (1,-100);
+													\coordinate (bottom) at (1,0);
+													\end{axis}
+													\draw (up)--(down) node[below] {$a$};
+													\draw[dashed] (top)--(bottom);
+												\end{tikzpicture}
+											]]>
+										</latex-image>
+									</image>
+								</li>
+							</ol>
+					</solution>
+					</example>
+					
+					<definition>
+						<title>Vertical Asymptote</title>
+						<idx>Vertical Asymptote</idx>
+						
+						The vertical line <m>x = a</m> is called a <term>vertical asymptote</term> of the curve <m>y = f(x)</m> if at least one of the following statements is true:
+						<me>
+							\lim_{x\to a} f(x) = \infty \qquad \lim_{x\to a^-} f(x) = \infty \qquad \lim_{x\to a^+}f(x) = \infty
+						</me>
+						<me>
+							\lim_{x\to a} f(x) = -\infty \qquad \lim_{x\to a^-} f(x) = -\infty \qquad \lim_{x\to a^+} f(x) = -\infty
+						</me>
+					</definition>
+					
+					<example><statement>
+						Find the left- and right-hand limits for the function <m>f(x) = \dfrac{4x}{x-6}</m> at <m>x = 6</m>.  
+					</statement>
+					<solution>
+						<m>\ds \lim_{x\to 6^-} \dfrac{4x}{x-6} = -\infty</m> and <m>\ds \lim_{x\to 6^+} \dfrac{4x}{x-6} = \infty</m>
+					</solution>
+					</example>
+						
+					<example><statement>
+						In the theory of relativity, the mass of a particle with velocity <m>v</m> is given by <m>m = \dfrac{m_0}{\sqrt{1-v^2/c^2}}</m>, where <m>m_0</m> is the mass of the particle at rest and <m>c</m> is the speed of light.  What happens as <m>v\to c^-</m>?
+					</statement>
+					<solution>
+						As <m>v\to c^-</m>, <m>m\to \infty</m>, since we create a vertical asymptote in the function.
+					</solution>
+					</example>
+				</subsubsection>
+			</subsection>
+			<subsection xml:id="section-15-afterclass">
+				<title>After Class Activities</title>
+					<example><statement>
+						For the function <m>g</m> whose graph is given below, state the value of each quantity (if it exist).  If it does not exist, explain why.
+						
+						<image source="15fig1.svg"/>
+						
+						<ol label="a">
+							<li>
+								<m>\ds \lim_{t\to 0^-} g(t)</m> 
+							</li>
+							<li>
+								<m>\ds \lim_{t\to 0^+} g(t)</m>
+							</li>
+							<li>
+								<m>\ds \lim_{t\to 0} g(t)</m>
+							</li>
+							<li>
+								<m>\ds \lim_{t\to 2^-} g(t)</m>
+							</li>
+							<li>
+								<m>\ds \lim_{t\to 2^+} g(t)</m>
+							</li>
+							<li>
+								<m>\ds \lim_{t\to 2} g(t)</m>
+							</li>
+							<li>
+								<m>g(2)</m>
+							</li>
+							<li>
+								<m>\ds \lim_{t\to 4} g(t)</m>
+							</li>
+						</ol>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li>
+								<m>-1</m> 
+							</li>
+							<li>
+								<m>-2</m>
+							</li>
+							<li>
+								<m>DNE</m>
+							</li>
+							<li>
+								<m>2</m>
+							</li>
+							<li>
+								<m>0</m>
+							</li>
+							<li>
+								<m>DNE</m>
+							</li>
+							<li>
+								<m>1</m>
+							</li>
+							<li>
+								<m>3</m>
+							</li>
+						</ol>
+					</solution>
+					</example>
+
+					<example><statement>
+						Sketch a graph of an example of a function <m>f</m> that satisfies the given conditions: <m>\ds \lim_{x\to 0} f(x) = 1</m>, <m>\ds \lim_{x\to 3^-} f(x) = -2</m>, <m>\ds \lim_{x\to 3^+} f(x) = 2</m>, <m>f(0) = -1</m>, <m>f(3) = 1</m>.
+					</statement>
+					<solution>
+						Answers vary
+					</solution>
+					</example>
+						
+					<example><statement>
+						Determine the limits for the following functions:
+						<ol label="a">
+							<li>
+								<m>\ds \lim_{x\to 5^+} \dfrac{x+1}{x-5}</m>
+							</li>
+								
+							<li>
+								<m>\ds \lim_{x\to 5^-} \dfrac{x+1}{x-5}</m>
+							</li>
+								
+							<li>
+								<m>\ds \lim_{x\to 2\pi^+} x\csc x</m>
+							</li>
+								
+						</ol>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li>
+								<m>\infty</m>
+							</li>
+								
+							<li>
+								<m>-\infty</m>
+							</li>
+								
+							<li>
+								<m>\infty</m>
+							</li>
+								
+						</ol>
+					</solution>
+					</example>
+			</subsection>
+		</section>
+		

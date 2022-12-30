@@ -1,0 +1,281 @@
+\documentclass[notes]{subfiles}
+
+\begin{document}
+	\addcontentsline{toc}{section}{4.5 - The Substitution Rule}
+	\refstepcounter{section}
+	\fancyhead[RO,LE]{\bfseries \large\nameref{cs45}} 
+	\fancyhead[LO,RE]{\bfseries \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Chapter 4.5}
+
+\section*{The Substitution Rule}\label{cs45}
+	\subsection*{Before Class}
+	\addcontentsline{toc}{subsection}{Before Class}
+	\subsubsection*{The Rule for Indefinite \& Definite Integrals}
+	\addcontentsline{toc}{subsubsection}{The Rule for Indefinite \& Definite Integrals}
+		The \emph{substitution rule} for integrals allows us to take antiderivatives of composite functions.
+		\begin{thm}[Substitution Rule]
+			If $u = g(x)$ is a differentiable function whose range is an interval $I$ and $f$ is continuous on $I$, then
+			\showto{ins}{
+				\[\int f(g(x))g'(x)\,dx = \int f(u)\,du\]
+			}
+			\showto{st}{
+				\vspace{.5in}
+			}
+		\end{thm}
+		 	\vs{.25}
+		 	
+		\begin{ex}
+		 	  Let $f(x) = \sin (x^3 + 1)$.  
+		 	  \begin{enumerate}[(a)]
+		 	  	\item Let $u = x^3 + 1$.  Find $\dfrac{du}{dx}$.
+		 	  		\vs{1}
+		 	  		
+		 	  	\item Find $\dfrac{df}{dx}$.
+					\vs{1}	 	  	
+		 	  		
+		 	  \end{enumerate}
+		\end{ex}
+			
+		\begin{ex}
+			Using the previous example, compute $\ds \int 3x^2\cos(x^3+1)\, dx$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Find the general antiderivative of $\sin (2x)$.
+		\end{ex}
+			\vs{1}
+
+		\begin{ex}
+			Find $\ds \int 54x\sqrt{9x^2 + 5}\, dx$.
+		\end{ex}
+			\vs{1}
+		
+		\begin{ex}
+			Evaluate $\ds \int_0^4 \sqrt{2x+1}\,dx$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{rmk}[Steps for $u$-substitution]
+		\showto{ins}{
+			\begin{enumerate}[(1)]
+				\item Identify the ``chain rule'' term; call it $u=f(x)$.
+				\item Differentiate $u$, so that you end up with something that looks like $du = f'(x)\,dx$.
+				\item Solve for $dx$, and substitute into the integral.
+			\end{enumerate}\\ 
+		}
+		\showto{st}{
+			\begin{enumerate}[(1)]
+			\setlength\itemsep{30pt}
+				\item 
+				\item 
+				\item 
+			\end{enumerate}
+			\\ \vspace{.25in}
+		}
+			If we have a definite integral rather than an indefinite integral, we add a fourth step prior to integrating:
+		\showto{ins}{
+			\begin{enumerate}[(4)]
+				\item Change the bounds of integration by setting $u = f(a)$ and $u = f(b)$ and solving.  These are your new bounds of integration.
+			\end{enumerate}
+		}
+		\showto{st}{\\
+			\begin{enumerate}[(4)]
+				\item $ $
+			\end{enumerate} \\
+		}
+		
+		\end{rmk}
+			\vs{.25}
+		\begin{rmk}[Integrals of Symmetric Functions]
+			For symmetric functions, we have the following properties:\\
+			\showto{ins}{
+				\begin{enumerate}[(1)]
+				\setlength\itemsep{5pt}
+					\item If $f$ is continuous on $[-a,a]$ and $f$ is even, then \fbox{$\ds \int_{-a}^a f(x)\,dx = 2\int_0^a f(x)\,dx$}
+					\item If $f$ is continuous on $[-a,a]$ and $f$ is odd, then \fbox{$\ds \int_{-a}^a f(x)\,dx = 0$}
+				\end{enumerate}
+			}
+			\showto{st}{
+				\begin{enumerate}[(1)]
+				\setlength\itemsep{5pt}
+					\item If $f$ is continuous on $[-a,a]$ and $f$ is even, then\vspace{.75in}
+					\item If $f$ is continuous on $[-a,a]$ and $f$ is odd, then\vspace{.75in}
+				\end{enumerate}
+			}
+		\end{rmk}
+			\vs{.25}
+			\newpage
+	
+	\subsubsection*{Pre-Class Activities}
+	\addcontentsline{toc}{subsubsection}{Pre-Class Activities}
+		\begin{ex}
+			Since the chain rule is something that gives many students trouble, using the substitution rule sometimes also gives people trouble.  What, if any, part of the process would you like to see more examples of in class?
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Compute $\ds \int \cos (3x)\, dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Let $f(x) = (x-3)^3$.
+			\begin{enumerate}[(a)]
+				\item Compute $\ds \int f(x)\, dx$ \emph{without} using $u-$substitution.
+					\vs{1.5}
+					
+				\item Now compute $\ds \int f(x)\, dx$ with $u-$substitution.
+					\vs{1}
+					
+				\item Which method do you prefer?
+					\vs{.5}
+			\end{enumerate}
+		\end{ex}
+			\newpage
+			
+		\begin{ex}
+			Compute $\ds \int_1^2 (x-1)^{2021}\, dx$.  Why is $u-$substitution the only viable way of approaching this problem?
+		\end{ex}
+			\vs{1}\\ 
+			\newsec $ $
+			
+	\subsection*{In-Class}
+	\addcontentsline{toc}{subsection}{In-Class}
+	\subsubsection*{Examples}
+	\addcontentsline{toc}{subsubsection}{Examples}
+		\begin{ex}
+			Find $\ds \int_0^1 \dfrac{x}{\sqrt{6-4x^2}}\,dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate $\ds \int_1^2 \dfrac{dx}{(3-5x)^2}$
+		\end{ex}
+			\vs{1}
+			\newpage 
+
+		\begin{ex}
+			Find the indefinite integral of $f(x) = x^5\sqrt{1+x^2}$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate $\ds \int_{\pi/2}^\pi \sin\lrpar{\dfrac{2\theta}{3}}\,d\theta$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Evaluate $\ds \int (x^2+1)(x^3+3x)^4\,dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate $\ds \int \dfrac{dt}{\cos^2t\sqrt{1+\tan t}}$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate $\ds \int_0^1\cos\lrpar{\dfrac{\pi t}{2}}\, dt$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Evaluate $\ds \int_0^a x\sqrt{a^2-x^2}\,dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate $\ds \int x(2x+5)^8\,dx$
+		\end{ex}	
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate $\ds \int \sin x\sin (\cos x)\,dx$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Evaluate $\ds \int y^2(4-y^3)^{2/3}\,dy$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate $\ds \int_{-\pi/3}^{\pi/3} x^4\sin x\,dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate $\ds \int_0^{\sqrt{\pi}} x\cos (x^2)\, dx$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Evaluate $\ds \int_0^{\pi/2}\cos x \sin (\sin x)\, dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate $\ds \int_0^1 \dfrac{dx}{(1+\sqrt{x})^4}$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate $\ds \int_0^{13} \dfrac{dx}{\sqrt[3]{(1+2x)^2}}$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Evaluate $\ds \int \dfrac{\cos (\pi/x)}{x^2}\,dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate $\ds \int_0^1 \sqrt[3]{1+7x}\, dx$
+		\end{ex}
+			\vs{1}
+		
+		\begin{ex}
+			If $f$ is continuous at $\ds \int_0^4 f(x)\, dx = 10$, find $\ds \int_0^2 f(2x)\, dx$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+	\subsection*{After Class}
+	\addcontentsline{toc}{subsection}{After Class}
+		\begin{ex}
+			Find $\ds \int \dfrac{\cos \sqrt{x}}{\sqrt{x}}\, dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find $\ds \int \sin x \cos^4 x\, dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Compute $\ds \int_{-\pi/4}^{\pi/4} \lrpar{x^3 + x^4 \tan x}\, dx$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Evaluate $\ds \int_{1/2}^1 \dfrac{\sin (x^{-2})}{x^3}\, dx$
+		\end{ex}
+			\vs{1}
+		
+		\begin{ex}
+			Evaluate $\ds \int_{\pi/3}^{2\pi/3} \csc^2\lrpar{\dfrac{t}{2}}\,dt$
+		\end{ex}
+			\vs{1}
+	\clearpage
+\end{document}

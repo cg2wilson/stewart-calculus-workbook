@@ -1,0 +1,738 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-18">
+			<title>Continuity</title>
+			
+				<objectives>
+						<ul>
+							<li>
+								State the definition of continuity at a point and use the definition to determine if a function is continuous at a point
+							</li>
+							<li>
+								Identify removable, jump, and infinite discontinuities and give examples of functions that include at least one of these types of discontinuities
+							</li>
+							<li>
+								Define one-sided continuity and connect one-sided continuity to overall continuity at a point.
+							</li>
+							<li>
+								Justify when a function is continuous on an interval by using theorems, limit laws, and the definition of continuity
+							</li>
+							<li>
+								State and use the Intermediate Value Theorem
+							</li>
+							
+						</ul>
+				</objectives>
+				
+			<subsection xml:id="section-18-beforeclass">
+				<title>Before Class</title>
+				
+				<figure>
+					<caption>Pre-Class Video 1</caption>
+					<url href = "https://mymedia.ou.edu/media/1.8-1/1_tbdlbou8"/>
+				</figure>
+
+				
+				<subsubsection xml:id="section-18-definition">
+					<title>The Definition</title>
+					
+					<definition>
+						<title>Continuity</title>
+						<idx>Continuity (at a point)</idx>
+						<idx>Continuity (on an interval)</idx>
+						<p>
+							A function is <term>continuous at input <m>a</m></term> if <m> \ds \lim_{x\to a} f(x) = f(a)</m>
+						</p>
+						<p>
+							If this condition fails, then <m>f</m> is said to be <term>discontinuous at input <m>a</m></term>.
+						</p>
+						<p>
+							<m>f</m> is <term>continuous on an interval</term> if it is continuous at every number in the interval.
+						</p>
+					</definition>
+					
+					<assemblage>
+						<title>Conditions for Continuity</title>
+						<p>
+							Continuity of a function requires three things:
+							<ol>
+								<li>
+									<m>a</m> is in the domain of <m>f</m>
+								</li>
+								<li>
+									<m>\ds \lim_{x\to a} f(x)</m> exists
+								</li>
+								<li>
+									<m>\ds \lim_{x\to a} f(x) = f(a)</m>
+								</li>
+							</ol>
+						</p>
+					</assemblage>
+					
+					<question><statement>
+						Look back at Section 1.5 and the conditions for the existence of a limit.  What connections can you draw between the existence of a limit and the conditions for continuity?
+					</statement>
+					<solution>
+						In order for a function to be continuous, the limit must exist.
+					</solution>
+					</question>
+					
+					<example><statement>
+						Use the graph to find the following:
+						<image>
+							<description>
+								The graph has some discontinuities; I'm not sure how to describe the graph without giving away the question.
+							</description>
+							<latex-image>
+								<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+											scale = 1.5,
+											every tick label/.append style={font=\small},
+											axis x line = middle,
+											axis y line = middle,
+												every axis y label/.style={at={(ticklabel cs:1.15)}},
+												ytick = {-4, -2, -3, -1, 1, 2, 3, 4},
+											y label style={at={(axis description cs:.5,1.15)},anchor=north},
+												ylabel = {$f(x)$},
+												ymin = -5, ymax = 5,
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												xtick = {-4,-3,-2,-1,1,2,3,4},
+												x label style={at={(axis description cs:1.1,.5)},anchor=east},
+												xlabel = {$x$},
+												xmin = -5, xmax = 5			
+											]
+											\addplot[<-,thick,smooth,domain = 1.4:3.] {4/(x-1)-5};
+											\addplot[->,thick,smooth,domain = 3.:4.9] {x-6};
+											\addplot[<-,thick,smooth, domain = -4.9:1]  {2^x -4};
+											\coordinate (circle1) at (1,-2);
+											\coordinate (circle2) at (3,-3);
+											\coordinate (circle3) at (3,2);
+										\end{axis}
+											\fill[white] (circle1) circle (.1);
+											\draw[thick] (circle1) circle (.1);
+											\fill[white] (circle2) circle (.1);
+											\draw[thick] (circle2) circle (.1);
+											\fill (circle3) circle (.1);
+									\end{tikzpicture}
+								]]>
+							</latex-image>
+						</image>
+						<ol label="a" cols="4">
+							<li> <m>\ds \lim_{x\to 1^+} f(x)</m></li>
+							<li> <m>\ds \lim_{x\to 1^-} f(x)</m></li> 
+							<li> <m>\ds \lim_{x\to 1} f(x)</m></li> 
+							<li> Is <m>f</m> continuous at <m>x =1 </m>?</li>
+							<li> <m>\ds \lim_{x\to 3^+} f(x)</m></li> 
+							<li> <m>\ds \lim_{x\to 3^-} f(x)</m></li>  
+							<li> <m>\ds \lim_{x\to 3} f(x)</m></li> 
+							<li> Is <m>f</m> continuous at <m>x =3 </m>?</li>
+							<li> <m>\ds \lim_{x\to 0^+} f(x)</m></li> 
+							<li> <m>\ds \lim_{x\to 0^-} f(x)</m></li>  
+							<li> <m>\ds \lim_{x\to 0} f(x)</m></li> 
+							<li> Is <m>f</m> continuous at <m>x =0 </m>?</li>
+						</ol>
+					</statement>
+					<solution>
+						<ol label="a" cols="4">
+							<li> <m>\infty</m></li>
+							<li> <m>-2</m></li> 
+							<li> <m>DNE</m></li> 
+							<li> No</li>
+							<li> <m>-3</m></li> 
+							<li> <m>-3</m></li>  
+							<li> <m>-3</m></li> 
+							<li> No</li>
+							<li> <m>-3</m></li> 
+							<li> <m>-3</m></li>  
+							<li> <m>-3</m></li>  
+							<li> Yes</li>
+						</ol>
+					</solution>
+					</example>
+					
+					<assemblage>
+						<title>Types of Discontinuities</title>
+						<p>
+							There are three kinds of discontinuities which we will encounter:
+							<ul>
+								<li>
+									Vertical Asymptote
+								</li>
+								<li>
+									Jump Discontinuity
+								</li>
+								<li>
+									Removable Discontinuity
+								</li>
+							</ul>
+						</p>
+					</assemblage>
+					
+					<example><statement>
+						Sketch an example of each of the three kinds of discontinuities.
+					</statement>
+					<solution>
+						<sidebyside widths="30% 30% 30%">
+							<image>
+							<description>
+								The graph of a function with a vertical asymptote-type discontinuity.  As <m>x</m> approaches the asymptote, the output on the right approaches <m>\infty</m> and the output on the left approaches <m>-\infty</m>.
+							</description>
+							<latex-image>
+								<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+												axis x line = middle,
+												axis y line = middle,
+												every axis y label/.style={at={(ticklabel cs:1.1)}},
+												y label style={at={(axis description cs:.33,1.1)},anchor=north},
+												ylabel = {$y$},
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												x label style={at={(axis description cs:1.1,.5)},anchor=east},
+												xlabel = {$x$},
+												xmin=-2, xmax = 4,
+												xtick = \empty,
+												ytick = \empty
+											]
+											\addplot[thick, domain=-2:1.9,samples=50] {1/(x-2)};
+											\addplot[thick, domain=2.1:4,samples=50] {1/(x-2)}; 
+											\coordinate (a) at (2,10);
+											\coordinate (b) at (2,-10);
+										\end{axis}
+										\draw[thick, dashed] (a)--(b);
+									\end{tikzpicture}
+								]]>
+							</latex-image>
+						</image>
+						<image>
+							<description>
+								The graph shows jump discontinuities; the graph jumps from one output value to another.
+							</description>
+							<latex-image>
+								<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+												axis x line = middle,
+												axis y line = middle,
+												every axis y label/.style={at={(ticklabel cs:1.1)}},
+												y label style={at={(axis description cs:0,1.1)},anchor=north},
+												ylabel = {$y$},
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												x label style={at={(axis description cs:1.1,0)},anchor=east},
+												xlabel = {$x$},
+												xmin=0, xmax = 3,
+												ymin = 0, ymax = 3,
+												xtick = \empty,
+												ytick = \empty
+											]
+											\addplot[domain=1:2] {0};
+											\coordinate (a) at (0,0);
+											\coordinate (b) at (1,0);
+											\coordinate (c) at (1,1);
+											\coordinate (d) at (2,1);
+											\coordinate (e) at (2,2);
+											\coordinate (f) at (3,2);
+										\end{axis}
+
+										\draw[thick] (a)--(b);
+										\draw[thick] (c)--(d);
+										\draw[thick] (e)--(f);
+										\fill (a) circle (0.1);
+										\fill[white] (b) circle (0.1);
+										\draw (b) circle (0.1);
+										\fill (c) circle (0.1);
+										\fill[white] (d) circle (0.1);
+										\draw (d) circle (0.1);
+										\fill (e) circle (0.1);
+										\fill[white] (f) circle (0.1);
+										\draw (f) circle (0.1);
+									\end{tikzpicture}
+								]]>
+							</latex-image>
+						</image>
+						<image>
+							<description>
+								Here a parabola has a removable discontinuity at its vertex; the output at the vertex has been "moved" to above the vertex rather than on it.
+							</description>
+							<latex-image>
+								<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+												axis x line = middle,
+												axis y line = middle,
+												every axis y label/.style={at={(ticklabel cs:1.1)}},
+												y label style={at={(axis description cs:.25,1.1)},anchor=north},
+												ylabel = {$y$},
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												x label style={at={(axis description cs:1.1,.6)},anchor=east},
+												xlabel = {$x$},
+												xmin=-1, xmax = 3,
+												ymax =2,
+												xtick = \empty,
+												ytick = \empty
+											]
+											\addplot[domain=-1:3] {2*x-x^2};
+											\coordinate (a) at (1,1);
+											\coordinate (b) at (1,2);
+										\end{axis}
+
+										\fill[white] (a) circle (0.1);
+										\draw (a) circle (0.1);
+										\fill (b) circle (0.1);
+									\end{tikzpicture}
+								]]>
+							</latex-image>
+						</image>
+						</sidebyside>
+					</solution>
+					</example>
+					
+					<definition>
+						<title>Continuity from the Right and Left</title>
+						<idx>Continuity (Right and Left)</idx>
+						A function <m>f</m> is said to be <term>continuous from the right</term> at input <m>a</m> if <m>\ds \lim_{x\to a^+} f(x) = f(a)</m>, and <m>f</m> is <term>continuous from the left</term> at input <m>a</m> if <m>\ds \lim_{x\to a^-} f(x) = f(a)</m>.
+					</definition>
+				</subsubsection>
+			</subsection>
+			<subsection xml:id="section-18-preclass">
+				<title>Pre-Class Activities</title>
+				
+				<example><statement>
+					Use the graph below to answer the following questions:
+					<image source="18fig1.svg"/>
+					<ol label="a">
+						<li>
+							State the numbers at which <m>f</m> is discontinuous, and classify each as a <em>vertical asymptote</em>, <em>jump discontinuity</em>, or <em>removable discontinuity</em>.
+						</li>
+						<li>
+							For each of the numbers in (a), determine whether <m>f</m> is right-continuous, left-continuous, or neither.  
+						</li>
+						<li>
+							Use interval notation to write where <m>f</m> is continuous.
+						</li>
+					</ol>
+				</statement>
+				<solution>
+					<ol label="a">
+						<li>
+							At <m>x=-4</m> we have a removable discontinuity; at <m>x=-2</m> and <m>x=2</m>, there are jump discontinuities; at <m>x=4</m> there is a vertical asymptote.
+						</li>
+						<li>
+							At <m>x=-4</m> the function is left and right continuous; at <m>x=-2</m>, the function is left continuous; and <m>x=2</m>, the function is right continuous; at <m>x=4</m> the function is right continuous. 
+						</li>
+						<li>
+							<m>(-\infty,-4)\cup(-4,-2)\cup(-2,2)\cup(2,4)\cup(4,\infty)</m>
+						</li>
+					</ol>
+				</solution>
+				</example>
+				
+				<example><statement>
+					Sketch the graph of a function <m>f</m> that is continuous everywhere, but is:
+						<ul>
+							<li>
+								Discontinuous at <m>x = 5</m>
+							</li>
+							<li>
+								Left-continuous at <m>x = -1</m>
+							</li>
+							<li>
+								Has a removable discontinuity at <m>x = 3</m>
+							</li>
+						</ul>
+				</statement>
+				<solution>
+					Answers vary
+				</solution>
+				</example>
+			</subsection>
+			<subsection xml:id="section-18-inclass">
+				<title>In Class</title>
+				
+				<example><statement>
+					Show that <m>[\![x]\!]</m> is right-continuous, but not left-continuous at integer values.
+				</statement>
+				<solution>
+					Let <m>x=a</m> be any integer.  For right continuity, we need to show that <m>\ds \lim_{x\to a^+} = f(a)</m>.  Note that <m>\ds \lim_{x\to a^+} f(x) = a</m>, and that <m>f(a) = a</m>.  Thus, the function is right continuous.  Similarly, for left continuity, we require <m>\ds \lim_{x\to a^-} = f(a)</m>.  However, <m>\ds \lim_{x\to a^-} = a-1</m> and <m>f(a) = a</m>; thus, the function is not left continuous.
+				</solution>
+				</example>
+				
+				<example><statement>
+					Show that the function <m>f(x) = 3+\sqrt{1-x^2}</m> is continuous on the interval <m>[-1,1]</m>.
+				</statement>
+				<solution>
+					<p>
+						We prove the claim in three steps: (1) show continuity at the left endpoint; (2) show continuity at the right endpoint; (3) show continuity on the interval <m>(-1,1)</m>.
+					</p>
+					<p>
+						For continuity at <m>x=-1</m>, we need to show right continuity of the function at the point.  For this to be true, <m>\ds \lim_{x\to -1^+} = f(-1)</m>. Then, 
+							<me>\ds \lim_{x\to -1^+} f(x)= \lim_{x\to -1^+} 3 + \sqrt{1-x^2} = 3</me>
+						Since <m>f(-1) = 3</m>, the function is right continuous.
+					</p>
+					<p>
+						For continuity at <m>x=1</m>, we need to show left continuity of the function at the point.  For this to be true, <m>\ds \lim_{x\to 1} = f(1)</m>. Then, 
+							<me>\ds \lim_{x\to 1^-} f(x)= \lim_{x\to 1^-} 3 + \sqrt{1-x^2} = 3</me>
+						Since <m>f(1) = 3</m>, the function is left continuous.
+					</p>
+					<p>
+						For continuity on <m>(-1,1)</m>, let <m>a\in (-1,1)</m> be arbitrary.  For continuity, we need to show that <m>\ds \lim_{x\to a} f(x) = f(a)</m>.  Then,
+							<me>\ds \lim_{x\to a} f(x) = 3+\sqrt{1-a^2} </me>
+						Since <m>f(a) = 3+\sqrt{1-a^2}</m>, the function is continuous on <m>(-1,1)</m>, and thus continuous on the interval <m>[-1,1]</m>.
+					</p>
+				</solution>
+				</example>
+				
+				<subsubsection xml:id="section-18-useful">
+					<title>Useful Results</title>
+					
+					<theorem>
+						<title>Properties of Continuous Functions</title>
+						<statement>
+							If <m>f</m> and <m>g</m> are continuous at <m>a</m>, and if <m>c</m> is a constant, then the following functions are all continuous at <m>a</m>:
+							<ol>
+								<li>
+									<m>f\pm g</m>
+								</li>
+								<li>
+									<m>cf</m>
+								</li>
+								<li>
+									<m>fg</m>
+								</li>
+								<li>
+									<m>\dfrac{f}{g}</m>, for <m>g\neq 0</m>
+								</li>
+								<li>
+									<m>f\circ g</m>
+								</li>
+							</ol>
+						</statement>
+					</theorem>
+					
+					<example><statement>
+						Prove the first property of continuous functions.
+					</statement>
+					<solution>
+						We want to show that <m>\ds \lim_{x\to a}[f(x) \pm g(x)] = f(a) \pm g(a)</m>.  Since <m>f(x)</m> and <m>g(x)</m> are continuous, we know that <m>\ds \lim_{x\to a} f(x) = f(a)</m> and <m>\ds \lim_{x\to a} g(x) = g(a)</m>.  Then, 
+							<me>\ds \lim_{x\to a} f(x) \pm \lim_{x\to a} g(x) = f(a) + g(a)</me>
+						By the sum/difference limit law from Section 1.6, we can rewrite the left hand side as
+							<me>\ds \lim_{x\to a} [f(x) \pm g(x)] = f(a) + g(a)</me>
+						Which is what we wanted to show.
+					</solution>
+					</example>
+					
+					<question><statement>
+						Can you prove the remaining 4 properties?
+					</statement>
+					<solution>
+						The proofs run similarly to the previous Example 1.8.11, utilizing limit laws from Section 1.6.
+					</solution>
+					</question>
+					
+					<theorem>
+						<title>Types of Continuous Functions</title>
+						<statement>
+							The following functions are continuous on their domain:
+							<ul>
+								<li>
+									Polynomials
+								</li>
+								<li>
+									Rational Functions
+								</li>
+								<li>
+									Root Functions
+								</li>
+								<li>
+									Trigonometric Functions
+								</li>
+							</ul>
+						</statement>
+					</theorem>
+					
+					<example><statement>
+						Find the interval(s) on which the following functions are continuous
+						<ol label="a">
+							<li>
+								<m>f(x) = x^{67}-47.521x^{51}+719</m>
+							</li>
+								
+							<li>
+								<m>g(x) = \dfrac{x^2+2x+17}{x^2-1}</m>
+							</li>
+								
+							<li>
+								<m>h(x) = \sqrt{x} + \dfrac{x+1}{x-1} + \dfrac{x+1}{x^2+1}</m>
+							</li>
+								
+							<li>
+								<m>\cos\lrpar{\dfrac{1}{x}}</m>
+							</li>								
+						</ol>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li>
+								<m>(-\infty,\infty)</m>
+							</li>
+								
+							<li>
+								<m>(-\infty,-1)\cup (-1,1)\cup (1,\infty)</m>
+							</li>
+								
+							<li>
+								<m>[0,1)\cup (1,\infty)</m>
+							</li>
+								
+							<li>
+								<m>(-\infty,0)\cup (0,\infty)</m>
+							</li>								
+						</ol>
+					</solution>
+					</example>
+				</subsubsection>
+				
+				<subsubsection xml:id="section-18-ivt">
+					<title>The Intermediate Value Theorem</title>
+					
+					<theorem>
+						<title>Intermediate Value Theorem</title>
+						<p>
+							Suppose that <m>f</m> is continuous on the closed interval <m>[a,b]</m>, and let <m>N</m> be any number between <m>f(a)</m> and <m>f(b)</m>, where <m>f(a)\neq f(b)</m>.  Then, there exists a number <m>c</m> in <m>(a,b)</m> such that <m>f(c) = N</m>.
+						</p>
+					</theorem>
+					<p>
+						Here's a sketch illustrating why the Intermediate Value Theorem is true:
+					</p>
+					<p>
+						<image>
+							<description>
+								The image shows a function which dips below the <m>x-</m>axis and rises back to a max, drops to a min, rises to a max again, then falls.  There is a line at some output <m>N</m> which shows the intersection of the function with the line <m>y=4</m>.  The function intersects the line at four points; <m>c_1,c_2,c_3,c_4</m>.  There is a dashed line from each intersection to the <m>x-</m>axis, with labels.
+							</description>
+							<latex-image>
+								<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+												axis x line = middle,
+												axis y line = middle,
+												every axis y label/.style={at={(ticklabel cs:1.1)}},
+												y label style={at={(axis description cs:0,1.1)},anchor=north},
+												ylabel = {$y$},
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												x label style={at={(axis description cs:1.1,.45)},anchor=east},
+												xlabel = {$x$},
+												xmin=0, xmax=5,
+												xtick = \empty,
+												ytick = \empty
+											]
+											\addplot[thick, samples = 100, domain=0:5] {-0.45*x^5 + 5.79*x^4 - 26.67 *x^3 + 51.71*x^2 - 35.38*x + 4};
+											\coordinate (c1) at (1.647,4);
+											\coordinate (c2) at (2.6,4);
+											\coordinate (c3) at (3.9,4);
+											\coordinate (c4) at (4.75,4);
+											\coordinate (d1) at (1.647,0);
+											\coordinate (d2) at (2.6,0);
+											\coordinate (d3) at (3.82,0);
+											\coordinate (d4) at (4.792,0);
+											\coordinate (f) at (0,4);
+										\end{axis}
+										\fill (c1) circle (0.1);
+										\fill (c2) circle (0.1);
+										\fill (c3) circle (0.1);
+										\fill (c4) circle (0.1);
+										\draw[dashed] (c1)--(d1) node[below] {$c_1$};
+										\draw[dashed] (c2)--(d2) node[below] {$c_2$};
+										\draw[dashed] (c3)--(d3) node[below] {$c_3$};
+										\draw[dashed] (c4)--(d4) node[below] {$c_4$};
+										\draw[densely dotted] (c4)--(f) node[left] {$N$};
+									\end{tikzpicture}
+								]]>
+							</latex-image>
+						</image>
+					</p>
+					<question><statement>
+						Why does a function need to be continuous in order to guarantee the conclusion of the Intermediate Value Theorem?  Sketch a graph to support your idea.
+					</statement>
+					<solution>
+						<p>
+							If the function is not continuous, <m>f(a)</m> is not guaranteed to exist or the limit may not exist.
+						</p>
+						<p>
+							<sidebyside widths="40% 40%">
+								<image>
+									<description>
+										This image shows a function which does not have input <m>x=a</m> in its domain, which means the output <m>N</m> is not in the range of the function.
+									</description>
+									<latex-image>
+										<![CDATA[
+											\begin{tikzpicture}
+												\begin{axis}[
+														axis x line = middle,
+														axis y line = middle,
+														every axis y label/.style={at={(ticklabel cs:1.1)}},
+														y label style={at={(axis description cs:0,1.1)},anchor=north},
+														ylabel = {$y$},
+														every axis x label/.style= {at ={(ticklabel cs:1)}},
+														x label style={at={(axis description cs:1.1,0)},anchor=east},
+														xlabel = {$x$},
+														xmin=0, xmax=3,
+														xtick = \empty,
+														ytick = \empty
+													]
+													\addplot[thick, samples = 50, domain=0:3] {x};
+													\coordinate (a) at (0,2);
+													\coordinate (b) at (2,2);
+													\coordinate (c) at (2,0);
+												\end{axis}
+													\draw[dashed] (b)--(a) node[left] {$N$};
+													\draw[dashed] (b)--(c) node[below] {$a$};
+													\fill[white] (b) circle (0.1);
+													\draw (b) circle (0.1);
+											\end{tikzpicture}
+										]]>
+									</latex-image>
+								</image>
+								<image>
+									<description>
+										This image shows a function with a jump discontinuity at <m>x=a</m>, which means the output <m>N</m> is not in the range of the function.
+									</description>
+									<latex-image>
+										<![CDATA[
+											\begin{tikzpicture}
+												\begin{axis}[
+														axis x line = middle,
+														axis y line = middle,
+														every axis y label/.style={at={(ticklabel cs:1.1)}},
+														y label style={at={(axis description cs:0,1.1)},anchor=north},
+														ylabel = {$y$},
+														every axis x label/.style= {at ={(ticklabel cs:1)}},
+														x label style={at={(axis description cs:1.1,0)},anchor=east},
+														xlabel = {$x$},
+														xmin=0, xmax=3,
+														xtick = \empty,
+														ytick = \empty
+													]
+													\addplot[thick, samples = 50, domain=0:2] {x};
+													\addplot[thick, samples = 50, domain = 2:3] {3};
+													\coordinate (a) at (0,2.5);
+													\coordinate (a1) at (2,2.5);
+													\coordinate (b) at (2,2);
+													\coordinate (c) at (2,0);
+													\coordinate (d) at (2,3);
+												\end{axis}
+													\draw[dashed] (a1)--(a) node[left] {$N$};
+													\draw[dashed] (b)--(c) node[below] {$a$};
+													\fill[white] (b) circle (0.1);
+													\draw (b) circle (0.1);
+													\fill (d) circle (0.1);
+											\end{tikzpicture}
+										]]>
+									</latex-image>
+								</image>
+							</sidebyside>
+						</p>
+					</solution>
+					</question>
+					
+					<example><statement>
+						Show that the equation <m>4x^3-6x^2+3x-2 = 0</m> has a root between 1 and 2.
+					</statement>
+					<solution>
+						<p>
+							Our strategy will be to (1) show that the IVT is applicable, and (2) show that the function switches from positive to negative.  Because of continuity (and the images above), the function must pass through 0 at least once.
+						</p>
+						<p>
+							First, note that the IVT is applicable since <m>f(x) = 4x^3-6x^2+3x-2</m> is continuous as a polynomial.
+						</p>
+						<p>
+							Now, let <m>N = 0</m>.  To show that <m>f(x) = 0</m>, we must know we pass through 0, i.e. we switch from positive to negative.  Note that <m>f(0) = -2</m> and <m>f(2) = 12</m>, so we have our condition met.
+						</p>
+						<p>
+							Since <m>f(0) = -2</m> and <m>f(2) = 12</m>, by the IVT, we know that there exists at least one <m>c\in (0,2)</m> such that <m>f(c) = 0</m>.
+						</p>
+					</solution>
+					</example>
+						
+					<example><statement>
+						For what value of the constant <m>c</m> is the function <m>f</m> continuous on <m>(-\infty,\infty)</m>?
+						<me>f(x) = \begin{cases} cx^2+2x \amp x \lt 2\\ x^3-cx \amp x\geq 2 \end{cases}</me>
+					</statement>
+					<solution>
+						<m>c=\dfrac{2}{3}</m>
+					</solution>
+					</example>
+				</subsubsection>
+			</subsection>
+			<subsection xml:id="section-18-afterclass">
+				<title>After Class Activities</title>
+				
+				<example><statement>
+					Use the graph below to answer the following questions:
+					<image source="18fig2.svg" />
+					<ol label="a">
+						<li>
+							State the numbers at which <m>f</m> is discontinuous, and classify each as a <em>vertical asymptote</em>, <em>jump discontinuity</em>, or <em>removable discontinuity</em>.
+						</li>
+						<li>
+							For each of the numbers in (a), determine whether <m>f</m> is right-continuous, left-continuous, or neither.  
+						</li>
+						<li>
+							Use interval notation to write where <m>f</m> is continuous.
+						</li>
+					</ol>
+				</statement>
+				<solution>
+					<ol label="a">
+						<li>
+							At <m>x=-2</m>, the function has a removable discontinuity; at <m>x=-1</m>, the function has a vertical asymptote; at <m>x=0</m>, the function has a jump discontinuity; at <m>x=1</m>, the function has a jump discontinuity.
+						</li>
+						<li>
+							At <m>x=-2</m>, the is left and right continuous; at <m>x=-1</m>, the function is neither left nor right continuous; at <m>x=0</m>, the function is left continuous; at <m>x=1</m>, the function is neither left nor right continuous.  
+						</li>
+						<li>
+							<m>[-3,-2)\cup (-2,-1)\cup (-1,3]</m>
+						</li>
+					</ol>
+				</solution>
+				</example>
+				
+				<example><statement>
+					Find the numbers at which <m>g</m> is discontinuous.  At which of these numbers is <m>f</m> right-continuous, left-continuous, or neither?
+						<me>
+							g(x) = \begin{cases}x^2 + 1 \amp x \leq 1\\ 3-x \amp 1 \lt x \leq 4 \\ \sqrt{x} \amp x > 4 \end{cases}
+						</me>
+				</statement>
+				<solution>
+					The function is continuous at <m>x=1</m>, and only left continuous at <m>x=4</m>.
+				</solution>
+				</example>
+
+				<example><statement>
+					Find values of <m>a</m> and <m>b</m> that make <m>f</m> continuous everywhere.
+						<me>
+							f(x) = \begin{cases}\dfrac{x^2-4}{x-2} \amp x \lt 2 \\ ax^2 - bx + 3 \amp 2\leq x \lt 3 \\ 2x - a + b \amp x \geq 3 \end{cases}
+						</me>
+				</statement>
+				<solution>
+					<m>a=\dfrac{1}{2},b=\dfrac{1}{2}</m>
+				</solution>
+				</example>
+				
+				<example><statement>
+					Suppose <m>f</m> and <m>g</m> are continuous function such that <m>g(2) = 6</m> and <m>\ds \lim_{x\to 2} [3f(x) + f(x)g(x)] = 36</m>.  What is <m>f(2)</m>?
+				</statement>
+				<solution>
+					<m>f(2) = 4</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Show that the equation <m>\sqrt{x-5} = \dfrac{1}{x+3}</m> has at least one real root.
+				</statement>
+				<solution>
+					Set <m>f(x) = \sqrt{x-5}-\dfrac{1}{x+3}</m>.  <m>f(x)</m> is continuous on <m>[5,\infty)</m>, so its root (if it exists) must occur on that interval.  Since <m>f(5) = -\dfrac{1}{8}</m> and <m>f(6) = \dfrac{8}{9}</m>, the function switches from positive to negative on <m>(5,6)</m>.  Since it is continuous on that interval, we may conclude that <m>f(x) = 0</m> at least once in <m>(5,6)</m> by the IVT.  Thus, the function has at least one real root.
+				</solution>
+				</example>
+			</subsection>
+		</section>
+	

@@ -1,0 +1,499 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-25">
+			<title>The Chain Rule</title>
+			
+				<objectives>
+					<ul>
+						<li>
+							State and use the chain rule using different notations
+						</li>
+						<li>
+							Use the chain rule to compute derivatives in conjunction with the derivative rules of Section 2.3 using algebraic, graphical, or numerical representations
+						</li>
+						
+						
+					</ul>
+				</objectives>
+			<subsection xml:id="section-25-beforeclass">
+				<title>Before Class</title>
+				
+				<figure>
+					<caption>Pre-Class Video 1</caption>
+					<url href = "https://mymedia.ou.edu/media/2.5-1/1_wrjdpiy3"/>
+				</figure>
+
+				
+				<subsubsection xml:id="section-25-composition">
+					<title>Review: Composition of Functions</title>
+					
+					<example><statement>
+						If <m>f(u)= \sqrt{u}</m> and <m>u(x) = x^2 + 1</m>, find the composition <m>(f\circ u)(x)</m>.
+					</statement>
+					<solution>
+						<m>(f\circ u)(x) = \sqrt{x^2+1}</m>
+					</solution>
+					</example>
+					
+					<example><statement>
+						If <m>f(x) = \sqrt{x}</m> and <m>g(x) = \sqrt{2-x}</m>, find 
+							<ol label="a">
+								<li>
+									<m>f\circ g</m>
+								</li>
+									
+								<li>
+									<m>g\circ f</m>
+								</li>
+									
+								<li>
+									<m>f\circ f</m>
+								</li>
+									
+								<li>
+									<m>g\circ g</m>
+								</li>
+							</ol>
+					</statement>
+					<solution>
+						<ol label="a">
+								<li>
+									<m>f\circ g = \sqrt{\sqrt{2-x}}</m>
+								</li>
+									
+								<li>
+									<m>g\circ f = \sqrt{2-\sqrt{x}}</m>
+								</li>
+									
+								<li>
+									<m>f\circ f = \sqrt{\sqrt{x}}</m>
+								</li>
+									
+								<li>
+									<m>g\circ g = \sqrt{2-\sqrt{2-x}}</m>
+								</li>
+							</ol>
+					</solution>
+					</example>
+					
+					<example><statement>
+						Let <m>k(x) = \cos 2x</m>.  Find <m>f,g</m> such that <m>k(x) = f(g(x))</m>.
+					</statement>
+					<solution>
+						<m>f(x) = \cos x</m> and <m>g(x) = 2x</m>
+					</solution>
+					</example>
+					
+					<example><statement>
+						Let <m>f(x) = \sec^2 (x^2 + 9)</m>.  Find functions <m>a,b,c</m> such that <m>f(x) = (a\circ b\circ c)(x)</m>
+					</statement>
+					<solution>
+						<m>a(x) = x^2</m>, <m>b(x) = \sec x</m>, and <m>c(x) = x^2+9</m>
+					</solution>
+					</example>
+				</subsubsection>
+				<subsubsection xml:id="section-25-chain">
+					<title>The Chain Rule</title>
+					<p>
+						The chain rule <em>relies</em> on being able to decompose a function into smaller pieces, and doing things in the right order.  
+					</p>
+					
+					<theorem>
+						<title>The Chain Rule</title>
+						<statement>
+							<p>
+								If <m>g</m> is differentiable at <m>x</m>, and <m>f</m> is differentiable at <m>g(x)</m>, then the composite function <m>F = f\circ g</m> defined by <m>F(x) = f(g(x))</m> is differentiable at <m>x</m>, and <m>F'(x) = f'(g(x))\cdot g'(x)</m>
+							</p>
+							<p>
+								In Leibniz notatation, if <m>y = f(u)</m> and <m>u = g(x)</m> are both differentiable functions, then <m>\dfrac{dy}{dx} = \dfrac{dy}{du}\cdot \dfrac{du}{dx}</m>
+							</p>
+						</statement>
+					</theorem>
+					
+					<example><statement>
+						Let <m>k(x) = \cos 2x</m>.  Find <m>k'(x)</m> using Example 2.5.3.
+					</statement>
+					<solution>
+						<m>k'(x) = -2\sin 2x</m>
+					</solution>
+					</example>
+
+					<example><statement>
+						Let <m>g(x) = \sin 4x</m>.  Find <m>g'(x)</m>.
+					</statement>
+					<solution>
+						<m>g'(x) = 4\cos 4x</m>
+					</solution>
+					</example>
+
+					<example><statement>
+						Let <m>f(x) = \sec^2(x^2+9)</m>.  Find <m>f'(x)</m> using Example 2.5.4.
+					</statement>
+					<solution>
+						<m>f'(x) = 2\sec(x^2+9)\cdot \sec(x^2+9)\tan(x^2+9)\cdot 2x</m>
+					</solution>
+					</example>
+				</subsubsection>
+			</subsection>
+			<subsection xml:id="section-25-preclass">
+				<title>Pre-Class Activities</title>
+				
+				<example><statement>
+					You are given a composite function.  Identify the inner function <m>u = g(x)</m> and the outer function <m>y = f(u)</m>.
+					<ol label="a">
+						<li>
+							<m> \sqrt[3]{1+4x}</m>
+						</li>
+							
+						<li>
+							<m>\sin (\cot x)</m>
+						</li>
+							
+						<li>
+							<m>(5x^6 + 2x^3)^4</m>
+						</li>
+					</ol>
+				</statement>
+				<solution>
+					<ol label="a">
+						<li>
+							<m>y = f(u) = \sqrt[3]{u}</m> and <m> u = g(x) = 1+4x</m>
+						</li>
+							
+						<li>
+							<m>y = f(u) = \sin u</m> and <m> u = g(x) = \cot x</m>
+						</li>
+							
+						<li>
+							<m>y = f(u) = u^4</m> and <m>u = g(x) = 5x^6 + 2x^3</m>
+						</li>
+					</ol>
+				</solution>
+				</example>
+				
+				<example><statement>
+					Set <m>h(x) = \sin (x^2)</m>.  Identify the inner function <m>u = g(x)</m> and the outer function <m>y = f(u)</m>.  Then, find the derivative <m>h'(x)</m>.
+				</statement>
+				<solution>
+					<m>u = g(x) = x^2</m> and <m>y = f(u) = \sin u</m>; <m>f'(x) = 2x\cos(x^2)</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Set <m>k(t) = \sin^2(t)</m>.  Identify the inner function <m>u = g(t)</m> and the outer function <m>y = f(u)</m>.  Then, find the derivative <m>k'(t)</m>.
+				</statement>
+				<solution>
+					<m>u = g(t) = \sin t</m> and <m>y = f(u) = u^2</m>; <m>k'(t) = 2\sin t\cos t</m>
+				</solution>
+				</example>
+			</subsection>
+			<subsection xml:id="section-25-inclass">
+				<title>In Class</title>
+				
+				<question><statement>
+					If <m>h(x) = f(g(x))</m>, use the chain rule to write <m>h'(x)</m> in <em>prime notation</em> and <em>Leibniz notation</em>.
+				</statement>
+				<solution>
+					In prime notation, <m>h'(x) = f'(g(x))\cdot g'(x)</m>.  In Leibniz notation, <m>\dfrac{dh}{dx} = \dfrac{df}{dg}\cdot \dfrac{dg}{dx}</m>
+				</solution>
+				</question>
+				
+				<example><statement>
+					Let <m>f(x) = \sqrt{x^2 + 1}</m>.  Find <m>f'(x)</m>.
+				</statement>
+				<solution>
+					<m>f'(x) = \dfrac{1}{2}(x^2+1)^{-1/2}\cdot 2x</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Let <m>g(x) = \cos (x^2)</m>.  Find <m>g'(x)</m>.
+				</statement>
+				<solution>
+					<m>g'(x) = -2x\sin(2x)</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Find the derivative of <m>k(t) = (2t+1)^5(t^3-t+1)^4</m>
+				</statement>
+				<solution>
+					<m>k'(t) = 5(2t+1)^4(2)(t^3-t+1)^4 + 4(t^3-t+1)^3(3t^2-1)(2t+1)^5</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Let <m>h(x) = \sin^2(\sqrt{x^2-1})</m>.  Find <m>h'(x)</m>.
+				</statement>
+				<solution>
+					<m>h'(x) = 2\sin\sqrt{x^2-1}\cdot \cos\sqrt{x^2-1}\cdot \dfrac{1}{2}(x^2-1)^{-1/2}\cdot 2x</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Find the first derivative of <m>F(x) = (5x^5+2x^3)^4</m>
+				</statement>
+				<solution>
+					<m>F'(x) = 4(5x^5+2x^3)^3(25x^4+6x^2)</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Find the first derivative of <m>h(t) = (2-\sin t)^{3/2}</m>
+				</statement>
+				<solution>
+					<m>h'(t) = \dfrac{3}{2}(2-\sin t)^{1/2}\cdot (-\cos t)</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Find the first derivative of <m>y=\dfrac{1}{(\cos t + \tan t)^2}</m>
+				</statement>
+				<solution>
+					<m>\dfrac{dy}{dx} = -2(\cos t + \tan t)^{-3}(-\sin t + \sec^2t)</m>
+				</solution>
+				</example>
+
+				<example><statement>
+					Find the first derivative of <m>h(\theta) = \tan (\theta^2\sin\theta)</m>
+				</statement>
+				<solution>
+					<m>h'(\theta) = \sec^2(\theta^2\sin\theta)\cdot (2\theta\sin\theta + \theta^2\cos\theta)</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Find the first derivative of <m>y=\lrpar{\dfrac{1-\cos 2x}{1+\sin 2x}}^3</m>
+				</statement>
+				<solution>
+					<m>\dfrac{dy}{dx} = 3\lrpar{\dfrac{1-\cos 2x}{1+\sin 2x}}^2\lrpar{\dfrac{(1+\sin2x)(2\sin2x)-(1-\cos2x)(2\cos 2x)}{(1+\sin 2x)^2}}</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Find the first derivative of <m>f(t) = \sqrt{t+\sqrt{t}}</m>
+				</statement>
+				<solution>
+					<m>f'(t) = \dfrac{1}{2}(t+t^{1/2})^{-1/2}\lrpar{1+\dfrac{1}{2}t^{-1/2}}</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Find the first derivative of <m>r(x) = (x^2+1)^3(x^2+2)^6</m>
+				</statement>
+				<solution>
+					<m>r'(x) = 3(x^2+1)^2(2x)(x^2+2)^6 + 6(x^2+2)(2x)(x^2+1)^3</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Find the first derivative of <m>y = \sqrt[5]{\dfrac{x}{x-1}}</m>
+				</statement>
+				<solution>
+					<m>\dfrac{dy}{dx} = \dfrac{1}{5}\lrpar{\dfrac{x}{x-1}}^{-4/5}\lrpar{\dfrac{-1}{(x-1)^2}}</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Find the first derivative of <m>z = \sqrt{\sin(1+x^2)}</m>
+				</statement>
+				<solution>
+					<m>\dfrac{dz}{dx} = \dfrac{1}{2}(\sin(1+x^2))^{-1/2}\cdot \cos(1+x^2)(2x)</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Find the first derivative of <m>A(t) = \dfrac{t^2}{\sqrt{t^3+1}}</m>
+				</statement>
+				<solution>
+					<m>A'(t) = \dfrac{(2t)(\sqrt{t^3+1})-(t^2)\lrpar{\dfrac{1}{2}(t^3+1)^{-1/2}(3t^2)}}{t^3+1}</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Find the first derivative of <m>f(x) = \cos^4(\tan^3(x))</m>
+				</statement>
+				<solution>
+					<m>f'(x)=4\cos^3(\tan^3x)\cdot -\sin(\tan^3x)\cdot 3\tan^2x\cdot\sec^2x</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Find the first derivative of <m>y = \cos\sqrt{\sin(\tan\pi x)}</m>
+				</statement>
+				<solution>
+					<m>\dfrac{dy}{dx} = -\sin\sqrt{\sin(\tan\pi x)}\cdot \dfrac{1}{2}(\sin(\tan\pi x))^{-1/2}(\cos(\tan\pi x))\cdot \sec^2(\pi x)\cdot \pi</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Find an equation of the tangent line to the curve <m>y = \sqrt{1+x^3}</m> at the point <m>(2,3)</m>
+				</statement>
+				<solution>
+					<m>y = 2x-1</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Let <m>f(x) = [g(\cos x)]^2</m>.  Write an expression for <m>f'(x)</m>.
+				</statement>
+				<solution>
+					<m>f'(x) = 2g(\cos x)\cdot g'(\cos x)\cdot -\sin x</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					If <m>h(x) = \sqrt{4+3f(x)}</m>, <m>f(1) = 7</m>, and <m>f'(1) = 4</m>, find <m>h'(1)</m>.
+				</statement>
+				<solution>
+					<m>h'(1) = \dfrac{6}{5}</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					If <m>g(x) = \sqrt{f(x)}</m>, where <m>f</m> is the function shown, evaluate <m>g'(3)</m>.
+					<image source="25fig1.svg"/>
+				</statement>
+				<solution>
+					<m>g'(3) = -\dfrac{1}{2\sqrt{3}}</m>
+				</solution>
+				</example>
+			</subsection>
+			<subsection xml:id="section-25-afterclass">
+				<title>After Class Activities</title>
+				
+				<example><statement>
+					Find the first and second derivatives of <m>y = \sin (\cos 4\theta)</m>
+				</statement>
+				<solution>
+					<m>\dfrac{dy}{dx} = -4\sin(4\theta)\cdot cos(\cos 4\theta)</m> and <m>\dfrac{d^2y}{dx^2} = -16\cos(4\theta)\cdot \cos(\cos 4\theta) -16\sin^2(4\theta)\cdot \sin (\cos 4\theta)</m>
+				</solution>
+				</example>
+
+				<example><statement>
+					Find the first and second derivatives of <m>y = \dfrac{4x}{\sqrt{x+1}}</m>
+				</statement>
+				<solution>
+					<m>\dfrac{dy}{dx} = \dfrac{2x+4}{(x+1)^{3/2}}</m> and <m>\dfrac{d^2y}{dx^2} = \dfrac{2(x+1)^{3/2}-(2x+4)\lrpar{\dfrac{3}{2}(x+1)^{1/2}}}{(x+1)^3}</m>
+				</solution>
+				</example>
+
+				<example><statement>
+					Find <m>D^{35} \sin \pi x</m>
+				</statement>
+				<solution>
+					<m>D^{35}[\sin \pi x] = -\pi^{35}\cos\pi x</m>
+				</solution>
+				</example>
+				
+				<example><statement>
+					A table of values for <m>f,g,g'</m> and <m>g'</m> is given:
+					<tabular top="medium" left="medium" right="medium">
+						<row bottom="medium">
+							<cell halign="center">
+								<m>x</m>
+							</cell>
+							<cell halign="center">
+								<m>f(x)</m>
+							</cell>
+							<cell halign="center">
+								<m>g(x)</m>
+							</cell>
+							<cell halign="center">
+								<m>f'(x)</m>
+							</cell>
+							<cell halign="center">
+								<m>g'(x)</m>
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center">
+								<m>1</m>
+							</cell>
+							<cell halign="center">
+								<m>3</m>
+							</cell>
+							<cell halign="center">
+								<m>2</m>
+							</cell>
+							<cell halign="center">
+								<m>4</m>
+							</cell>
+							<cell halign="center">
+								<m>6</m>
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center">
+								<m>2</m>
+							</cell>
+							<cell halign="center">
+								<m>1</m>
+							</cell>
+							<cell halign="center">
+								<m>8</m>
+							</cell>
+							<cell halign="center">
+								<m>5</m>
+							</cell>
+							<cell halign="center">
+								<m>7</m>
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center">
+								<m>3</m>
+							</cell>
+							<cell halign="center">
+								<m>7</m>
+							</cell>
+							<cell halign="center">
+								<m>2</m>
+							</cell>
+							<cell halign="center">
+								<m>7</m>
+							</cell>
+							<cell halign="center">
+								<m>9</m>
+							</cell>
+						</row>
+					</tabular>
+					<ol label="a">
+						<li>
+							Find <m>h'(1)</m>, if <m>h(x) = f(g(x))</m>
+						</li>
+						<li>
+							Find <m>H'(1)</m>, if <m>H(x) = g(f(x))</m>
+						</li>
+					</ol>
+				</statement>
+				<solution>
+					<ol label="a">
+						<li>
+							Find <m>h'(1) = 30</m>
+						</li>
+						<li>
+							Find <m>H'(1) = 36</m>
+						</li>
+					</ol>
+				</solution>
+				</example>
+				
+				<example><statement>
+					Suppose <m>f</m> is differentiable on <m>\R</m>, and <m>A</m> is a real number.  Let <m>F(x) = f(x^A)</m> and <m>G(x) = [f(x)]^A</m>.  Find expressions for <m>F'(x)</m> and <m>G'(x)</m>.
+				</statement>
+				<solution>
+					<m>F'(x) = f'(x^A)\cdot Ax^{A-1}</m> and <m>G'(x) = A[f(x)]^{A-1}\cdot f'(x)</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					The chain rule is often a source of confusion and frustration for students in (and beyond) calculus.  What do you think will help the chain rule stick out in your mind?
+				</statement>
+				<solution>
+					Answers vary
+				</solution>
+				</example>
+			</subsection>
+		</section>
+		

@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-29">
+			<title>Linearization &amp; Differentials</title>
+			<subsection xml:id="section-29-beforeclass">
+				<title>Before Class</title>
+				<subsubsection xml:id="section-29-linearapproximation">
+					<title>Linear Approximation</title>
+					
+					<example><statement>
+						A linear function takes the form <m>f(x) = mx + b</m>, where <m>m</m> is the slope and <m>b</m> is the <m>y</m>-intercept.  Describe what the slope and <m>y</m>-intercept <em>mean</em>.
+					</statement></example>
+					
+					<example><statement>
+						Any line can also be described in terms of graphical transformations to the base graph of <m>y = x</m>.
+						<ol label="a">
+							<li> 
+								Write the transformation necessary to shift the graph <m>a</m> units horizontally.
+							</li>
+								
+							<li> 
+								Write the transformation necessary to shift the function from (a) <m>b</m> units vertically.
+							</li>
+								
+							<li> 
+								Write the transformation necessary to make the slope of the function from (b) <m>m</m>.
+							</li>
+								
+							<li> 
+								Combine parts (a) - (c) to write the transformed function; call the new line <m>L</m>.
+							</li>
+								
+							<li> 
+								Assume that the slope of <m>L</m> is the slope of the tangent line to some function <m>f(x)</m> at the input <m>a</m>; rewrite <m>L</m> with this new slope.
+							</li>
+								
+							<li> 
+								Now, assume that the vertical shift will move <m>L</m> up to the function <m>f(x)</m> at the input <m>a</m>; rewrite <m>L</m> with this vertical shift.
+							</li>
+						</ol>
+					</statement></example>
+					
+					<definition>
+						<title>Linearization</title>
+						<idx>Linearization</idx>
+						<p>
+							Let the function <m>f</m> be differentiable at input <m>x = a</m>.  The <term>linearization</term> of <m>f</m> at <m>a</m> is given by the equation <m> L(x) = f(a) + f'(a)(x-a)</m>.
+						</p>
+					</definition>
+						
+					<question><statement>
+						What is the point of finding the linearization of a function?
+					</statement></question>
+					
+					<example><statement>
+						Find the linearization of the function <m>f(x) = \sqrt{x}</m> at the input <m>x = 4</m>.
+					</statement></example>
+				</subsubsection>
+			</subsection>
+			<subsection xml:id="section-29-preclass">
+				<title>Pre-Class Activities</title>
+				
+				<example><statement>
+					Find the linearization of the function <m>\sqrt{x}</m> at the inputs <m>x = 16</m> and at <m>x = 36</m>.  
+				</statement></example>
+					
+				<example><statement>
+					You've now found three linearizations for the same function.  Why do you think we need three different ones?  Would one suffice?
+				</statement></example>
+			</subsection>
+			<subsection xml:id="section-29-inclass">
+				<title>In Class</title>
+				<subsubsection xml:id="section-29-linearization">
+					<title>Linearization</title>
+					
+					<example><statement>
+						<ol label="a">
+							<li> 
+								Find the linearization of <m>\sqrt{x}</m> at the input <m>x = 100</m>
+							</li>
+								
+							<li> 
+								Use your linearization in (a) to estimate the value of <m>\sqrt{99}</m>.
+							</li>
+								
+							<li> 
+								Use the linearization to estimate the value of <m>\sqrt{110}</m>.
+							</li>
+								
+							<li> 
+								Use the linearization to estimate the value of <m>\sqrt{121}</m>.  Is this an appropriate estimation?
+							</li>
+						</ol>
+					</statement></example>
+					
+					<example><statement>
+						Find the linearization for <m>f(x) = \sin x</m> at <m>x = 0</m>.  How is this related to the limit <m>\ds \lim_{x\to 0} \dfrac{\sin x}{x} = 1</m>?
+					</statement></example>						
+						
+					<example><statement>
+						<ol label="a">
+							<li> 
+								Find the linearization of the function <m>f(x) = \sqrt[3]{2 + x}</m> at <m>a = 6</m>.
+							</li>								
+							<li> 
+								Estimate the value of <m>\sqrt[3]{8.1}</m>
+							</li>
+						</ol>
+					</statement></example>
+				</subsubsection>
+				<subsubsection xml:id="section-29-differentials">
+					<title>Differentials</title>
+					<p>
+						Linearization allows us to estimate <em>function values</em> using derivatives.  We can also investigate how a function responds to a small change in input; this leads to the idea of a differential.
+					</p>
+					
+					<definition>
+						<title>Differential</title>
+						<idx>Differential</idx>
+						<p>
+							If <m>y=f(x)</m>, where <m>f</m> is a differentiable function, then the <term>differentials</term> <m>dy</m> and <m>dx</m> are related by the equation <m>dy = f'(x)\, dx</m>, where <m>dx</m> is considered to be an <em>independent variable</em> and <m>dy</m> is considered a <em>dependent variable</em>.
+						</p>	
+					</definition>
+					<p>
+						Here is a geometric interpretation of differentials:
+						<image>
+							<description>
+								This is the graph of a function that bends downward, along with a tangent line at a specific point.  This graph is meant to be completed in-class.
+							</description>
+							<latex-image>
+								<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+											%grid style = {line width = .1pt, draw = gray!60},
+											%grid = both,
+											every tick label/.append style={font=\small},
+											ticks  = none,
+											axis x line = middle,
+											axis y line = middle,
+												every axis y label/.style={at={(ticklabel cs:1.15)}, yshift = -3pt},
+												y label style={at={(axis description cs: 0.06, 1)},above},
+											yticklabels = {, ,},
+												ylabel = {$y$},
+												%ymin = -4.5, ymax = 4.5,
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												xticklabels = {, ,},
+													x label style={at={(axis description cs: 1, 0.33)},right},
+												xlabel = {$x$},
+												xmin = -.5, xmax = 10			
+										]
+											\addplot[thick, samples = 100, domain = .3:10] {.5*ln(x)};
+											\addplot[domain = 0:6.5] {(1/5.43656)*x};
+										\end{axis}
+			\end{tikzpicture}
+								]]>
+							</latex-image>
+						</image>
+					</p>
+					
+					<example><statement>
+						Compare the values of <m>\Delta y</m> and <m>dy</m> if <m>y = f(x) = x^3 + x^2 -2x + 1</m>, and <m>x</m> changes from 
+						<ol label="a">
+							<li> 
+								2 to 2.05
+							</li>
+							<li> 
+								2 to 2.01
+							</li>
+						</ol>
+					</statement></example>
+					
+					<example><statement>
+						The radius of a sphere was measured and found to be 20 cm with a possible error in measurement of at most 0.03 cm.  What is the maximum error in using this value of the radius to compute the volume of the sphere?  What is the relative error?
+					</statement></example>
+						
+					<example><statement>
+						Find the differential <m>dy</m> of each function, and evaluate it for the given values of <m>x</m> and <m>dx</m>.
+						<ol label="a">
+							<li> 
+								<m>y = \tan x</m>, <m>x = \pi/4</m>, <m>dx = -0.1</m>
+							</li>
+								
+							<li> 
+								<m>y = \sqrt{3 + x^2}</m>, <m>x = 1</m>, <m>dx = -0.2</m>
+							</li>
+						</ol>
+					</statement></example>
+						
+					<example><statement>
+						Use differentials to estimate the amount of paint needed to apply a coat of pain 0.05 cm thick to a hemispherical dome with diameter 50 m.
+					</statement></example>
+				</subsubsection>
+			</subsection>
+			<subsection xml:id="section-29-afterclass">
+				<title>After Class Activities</title>
+				
+				<example><statement>
+					Estimate the value of <m>\tan 2^{\circ}</m>
+				</statement></example>
+					
+				<example><statement>
+					Estimate the value of <m>(1.999)^4</m>
+				</statement></example>
+					
+				<example><statement>
+					The circumference of a sphere is measured to be 84 cm with a possible error of 0.5 cm.
+					<ol label="a">
+						<li> 
+							Use differentials to estimate the maximum error in the calculated surface area.  What is the relative error?
+						</li>
+							
+						<li> 
+							Use differentials to estimate the maximum error in the calculated volume.  What is the relative error?
+						</li>							
+					</ol>
+				</statement></example>
+							
+				<example><statement>
+					If a current <m>I</m> passes through a resistor with resistance <m>R</m>, Ohm's Law states that the voltage drop is <m>V = IR</m>.  If <m>V</m> is constant and <m>R</m> is measured with a certain error, use differentials to show tht the relative error in calculating <m>I</m> is approximately the same (in magnitude) as the relative error in <m>R</m>.
+				</statement></example>
+			</subsection>
+		</section>
+		

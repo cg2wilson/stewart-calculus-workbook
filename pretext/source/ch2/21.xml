@@ -1,0 +1,753 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-21">
+			<title>Derivatives and Rates of Change</title>
+			
+				<objectives>
+					<ul>
+						<li>
+							Translate between interpretations of the slope of the tangent line and derivative (there are three statements)
+						</li>
+						<li>
+							Use the two limit definitions of a derivative a point to compute derivatives
+						</li>
+						<li>
+							Find the equation of the tangent line to a curve at a point
+						</li>
+						<li>
+							Interpret derivatives in a real-world context
+						</li>
+						
+					</ul>
+				</objectives>
+			<subsection xml:id="section-21-beforeclass">
+				<title>Before Class</title>
+				
+				<figure>
+					<caption>Pre-Class Video 1</caption>
+					<url href = "https://mymedia.ou.edu/media/2.1-1/1_f2pd3tar"/>
+				</figure>
+				<figure>
+					<caption>Pre-Class Video 2</caption>
+					<url href = "https://mymedia.ou.edu/media/2.1-2/1_rt2uraug"/>
+				</figure>
+
+				
+				<subsubsection xml:id="section-21-tangents">
+					<question><statement>
+						How did we define the slope of the secant line between two points <m>(a,f(a))</m> and <m>(x,f(x))</m>?
+					</statement>
+					<solution>
+						<m>\dfrac{f(x)-f(a)}{x-a}</m>
+					</solution>
+					</question>
+					
+					<definition>
+						<title>Slope of the Tangent Line 1</title>
+						<p>
+							The <term>tangent line</term> to a curve <m>y=f(x)</m> at the point <m>P(a(f(a))</m> is the line through the point <m>P</m> with slope <m> \ds m=\lim_{x\to a} \dfrac{f(x)-f(a)}{x-a}</m>, provided that this limit exists.
+						</p>
+					</definition>
+					<p>
+						Here are some pictures to help give some intuition to the definition.
+					</p>
+					<sidebyside widths = "30% 30% 30%">
+						<image>
+							<description>
+								The graph of <m>f(x) = x^3-6x^2+9x</m>.  Two points are listed, <m>a</m> and <m>x</m>, with the secant line between them drawn.
+							</description>
+							<latex-image>
+								<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+											axis x line = middle,
+											axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.1)}},
+											y label style={at={(axis description cs:0,1.1)},anchor=north},
+											ylabel = {$f(x)$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											x label style={at={(axis description cs:1.1,0)},anchor=east},
+											xlabel = {$x$},
+											xmin=0,xmax=4,
+											xtick = \empty,
+											ytick = \empty
+											]
+											\addplot[thick, domain=0:4,samples=50]{x^3-6*x^2+9*x}; 
+											\coordinate (a) at (.25,1.89);
+											\coordinate (b) at (2,2);
+											\coordinate (c) at (1,4);
+											\addplot[domain = 0:3] {0.0625*x + 1.875};
+											\coordinate (a1) at (.25,0);
+											\coordinate (b1) at (2,0);
+											\coordinate (c1) at (1,0);
+										\end{axis}
+										\fill (a) circle (0.1);
+										\fill (b) circle (0.1);
+										\draw[dashed] (a)--(a1) node[below] {$a$};
+										\draw[dashed] (b)--(b1) node[below] {$x$};
+
+									\end{tikzpicture}
+								]]>
+							</latex-image>
+						</image>
+						<image>
+							<description>
+								The graph of <m>f(x) = x^3-6x^2+9x</m>.  Two points are listed, <m>a</m> and <m>x</m>, with the secant line between them drawn. The <m>x</m> in this image is drawn closer to <m>a</m> than in the previous image.
+							</description>
+							<latex-image>
+								<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+											axis x line = middle,
+											axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.1)}},
+											y label style={at={(axis description cs:0,1.1)},anchor=north},
+											ylabel = {$f(x)$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											x label style={at={(axis description cs:1.1,0)},anchor=east},
+											xlabel = {$x$},
+											xmin=0,xmax=4,
+											ymax=6.8125,
+											xtick = \empty,
+											ytick = \empty
+											]
+											\addplot[thick, domain=0:4,samples=50]{x^3-6*x^2+9*x}; 
+											\coordinate (a) at (.25,1.89);
+											\coordinate (b) at (2,2);
+											\coordinate (c) at (1,4);
+											\addplot[domain = 0:2] {2.8125*x + 1.1875};
+											\coordinate (a1) at (.25,0);
+											\coordinate (b1) at (2,0);
+											\coordinate (c1) at (1,0);
+										\end{axis}
+										\fill (a) circle (0.1);
+										\fill (c) circle (0.1);
+										\draw[dashed] (a)--(a1) node[below] {$a$};
+										\draw[dashed] (c)--(c1) node[below] {$x$};
+
+									\end{tikzpicture}
+								]]>
+							</latex-image>
+						</image>
+						<image>
+							<description>
+								The graph of <m>f(x) = x^3-6x^2+9x</m>.  Two points are listed, <m>a</m> and <m>x</m>, with the secant line between them drawn. The <m>x</m> in this image is drawn closer to <m>a</m> than in the previous image.
+							</description>
+							<latex-image>
+								<![CDATA[
+									\begin{tikzpicture}
+										\begin{axis}[
+											axis x line = middle,
+											axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.1)}},
+											y label style={at={(axis description cs:0,1.1)},anchor=north},
+											ylabel = {$f(x)$},
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											x label style={at={(axis description cs:1.1,0)},anchor=east},
+											xlabel = {$x$},
+											xmin=0,xmax=4,
+											ymax=6.8125,
+											xtick = \empty,
+											ytick = \empty
+											]
+											\addplot[thick, domain=0:4,samples=50]{x^3-6*x^2+9*x}; 
+											\coordinate (a) at (.25,1.89);
+											\coordinate (b) at (2,2);
+											\coordinate (c) at (1,4);
+											\addplot[domain = 0:2] {4.9375*x+0.65625};
+											\coordinate (a1) at (.25,0);
+											\coordinate (b1) at (2,0);
+											\coordinate (c1) at (1,0);
+											\coordinate (d) at (.5,3.125);
+											\coordinate (d1) at (.5,0);
+										\end{axis}
+										\fill (a) circle (0.1);
+										\fill (d) circle (0.1);
+										\draw[dashed] (a)--(a1) node[below] {$a$};
+										\draw[dashed] (d)--(d1) node[below] {$x$};
+
+									\end{tikzpicture}
+								]]>
+							</latex-image>
+						</image>
+					</sidebyside>
+					<example><statement>
+						Find the slope of the tangent line through the points <m>(a,f(a)))</m> and <m>(a+h,(f(a+h))</m>
+					</statement>
+					<solution>
+						<m>\ds \lim_{h\to 0} \dfrac{f(a+h)-f(a)}{h}</m>
+					</solution>
+					</example>
+					
+					<definition>
+						<title>Slope of the Tangent Line 2</title>
+						<p>
+							The <term>tangent line</term> to a curve <m>y=f(x)</m> at the point <m>P(a,f(a))</m> is the line through the point <m>P</m> with slope <m>\ds m = \lim_{h\to 0} \dfrac{f(a+h)-f(a)}{h}</m>, provided that this limit exists, where <m>h</m> is considered to be a small change in <m>x</m>.
+						</p>
+					</definition>
+					<p>
+						Here are some more pictures for the new definition
+					</p>
+					<p>
+						<sidebyside>
+							<image>
+								<description>
+									The graph of <m>f(x) = x^3-6x^2+9x</m>.  Two points are listed, <m>a</m> and <m>a+h</m>, with the secant line between them drawn.
+								</description>
+								<latex-image>
+									<![CDATA[
+										\begin{tikzpicture}
+											\begin{axis}[
+												axis x line = middle,
+												axis y line = middle,
+												every axis y label/.style={at={(ticklabel cs:1.1)}},
+												y label style={at={(axis description cs:0,1.1)},anchor=north},
+												ylabel = {$f(x)$},
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												x label style={at={(axis description cs:1.1,0)},anchor=east},
+												xlabel = {$x$},
+												xmin=0,xmax=4,
+												ymax=6.8125,
+												xtick = \empty,
+												ytick = \empty
+												]
+												\addplot[thick, domain=0:4,samples=50]{x^3-6*x^2+9*x}; 
+												\coordinate (a) at (.25,1.89);
+												\coordinate (b) at (2,2);
+												\coordinate (c) at (1,4);
+												\addplot[domain = 0:3] {0.0625*x + 1.875};
+												\coordinate (a1) at (.25,0);
+												\coordinate (b1) at (2,0);
+												\coordinate (c1) at (1,0);
+												\coordinate (d) at (.5,3.125);
+												\coordinate (d1) at (.5,0);
+												\coordinate (e) at (.25,-.6);
+												\coordinate (e1) at (.25,-.76);
+												\coordinate (f) at (2,-.6);
+												\coordinate (f1) at (2,-.75);
+											\end{axis}
+											\fill (a) circle (0.1);
+											\fill (b) circle (0.1);
+											\draw[dashed] (a)--(a1) node[below] {$a$};
+											\draw[dashed] (b)--(b1) node[below] {$a+h$};
+											\draw (e)--(e1);
+											\draw (e1)--(f1) node[midway, below] {$h$};
+											\draw (f1)--(f);
+
+										\end{tikzpicture}
+									]]>
+								</latex-image>
+							</image>
+							<image>
+								<description>
+									The graph of <m>f(x) = x^3-6x^2+9x</m>.  Two points are listed, <m>a</m> and <m>a+h</m>, with the secant line between them drawn. The <m>h</m> in this image is smaller than in the previous image, so the points are drawn closer.
+								</description>
+								<latex-image>
+									<![CDATA[
+										\begin{tikzpicture}
+											\begin{axis}[
+												axis x line = middle,
+												axis y line = middle,
+												every axis y label/.style={at={(ticklabel cs:1.1)}},
+												y label style={at={(axis description cs:0,1.1)},anchor=north},
+												ylabel = {$f(x)$},
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												x label style={at={(axis description cs:1.1,0)},anchor=east},
+												xlabel = {$x$},
+												xmin=0,xmax=4,
+												ymax=6.8125,
+												xtick = \empty,
+												ytick = \empty
+												]
+												\addplot[thick, domain=0:4,samples=50]{x^3-6*x^2+9*x}; 
+												\coordinate (a) at (.25,1.89);
+												\coordinate (b) at (2,2);
+												\coordinate (c) at (1,4);
+												\addplot[domain = 0:2] {2.8125*x + 1.1875};
+												\coordinate (a1) at (.25,0);
+												\coordinate (b1) at (2,0);
+												\coordinate (c1) at (1,0);
+												\coordinate (d) at (.5,3.125);
+												\coordinate (d1) at (.5,0);
+												\coordinate (e) at (.25,-.6);
+												\coordinate (e1) at (.25,-.76);
+												\coordinate (f) at (1,-.6);
+												\coordinate (f1) at (1,-.75);
+											\end{axis}
+											\fill (a) circle (0.1);
+											\fill (c) circle (0.1);
+											\draw[dashed] (a)--(a1) node[below] {$a$};
+											\draw[dashed] (c)--(c1) node[below] {$a+h$};
+											\draw (e)--(e1);
+											\draw (e1)--(f1) node[midway, below] {$h$};
+											\draw (f1)--(f);
+
+										\end{tikzpicture}
+									]]>
+								</latex-image>
+							</image>
+						</sidebyside>
+					</p>
+				</subsubsection>
+				<subsubsection xml:id="section-21-tangents-velocities">
+					<title>Tangents &amp; Velocities</title>
+					
+					<question><statement>
+						Rewrite what it means for a line to be <em>tangent</em> to a curve, and what it means for a line to be <em>secant</em> to a curve.
+					</statement>
+					<solution>
+						A tangent line touches the curve once intentionally, while a secant line intentionally goes through two points.
+					</solution>
+					</question>	
+					
+					<question><statement>
+						In Section 1.4, we discussed how to compute average velocity; what was the formula?  How could we find instantaneous velocity from average velocity?
+					</statement>
+					<solution>
+						<m>v_{avg} = \dfrac{s(t)-s(a)}{t-a}</m>
+					</solution>
+					</question>
+					
+					<assemblage>
+						<title>Instantaneous Velocity</title>
+						<p>
+							The <term>instantaneous velocity</term> of an object, given its position function <m>f(x)</m>, is <m>\ds v(a) = \lim_{h\to 0} \dfrac{f(a+h)-f(a)}{h}</m>
+						</p>
+					</assemblage>
+					
+					<example><statement>
+						Suppose that a ball is dropped from the upper observation deck of a building which is 980 m above the ground.
+						<ol label="a">
+							<li>
+								What is the velocity of the ball after 10 seconds?  Use that the equation of motion is <m>s(t) = 4.9t^2</m>.
+							</li>
+							<li>	
+								How fast is the ball traveling when it hits the ground?
+							</li>
+						</ol>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li>
+								98 m/s
+							</li>
+							<li>	
+								138.59 m/s
+							</li>
+						</ol>
+					</solution>
+					</example>
+				</subsubsection>
+				<subsubsection xml:id="section-21-derivatives">
+					<title>Derivatives</title>
+					
+					<definition>
+						<title>The Derivative (at <m>x=a</m>)</title>
+						<idx>Derivative (at a Point)</idx>
+						<p>
+							The <term>derivative of a function</term> <m>f</m> at input <m>x=a</m> is given by
+							<me>
+								f'(a) = \lim_{h\to 0} \dfrac{f(a+h)-f(a)}{h}
+							</me>
+							or
+							<me>
+								f'(a) = \lim_{x\to a} \dfrac{f(x)-f(a)}{x-a}
+							</me>
+							if this limit exists.
+						</p>
+					</definition>
+					
+					<p>
+						We have two ways of interpreting what the derivative actually means:
+						<ul>
+							<li>
+								The derivative <m>f'(a)</m> is the instantaneous rate of change of <m>y=f(x)</m> wish respect to <m>x</m> when <m>x=a</m>.
+							</li>
+							<li>
+								The derivative <m>f'(a)</m> is equal to the slope of the tangent line to the function <m>y=f(x)</m> at the point <m>(a,f(a))</m>.
+							</li>
+						</ul>
+					</p>
+					
+					<example><statement>
+						Let <m>f(x) = x^2</m>.  Show that <m>f'(1) = 2</m> using <em>both</em> formulas for the derivative at a point.
+					</statement>
+					<solution>
+						<p>	
+							Using the first definition of the slope of the tangent line, we have
+							<md>
+							<mrow> f'(1) &amp;= \ds \lim_{x\to 1} \dfrac{f(x)-f(1)}{x-1}</mrow>
+							<mrow> &amp;= \ds \lim_{x\to 1} \dfrac{x^2-1}{x-1}</mrow>
+							<mrow> &amp;= \ds \lim_{x\to 1} \dfrac{(x+1)(x-1)}{x-1}</mrow>
+							<mrow> &amp;= \ds \lim_{x\to 1} x+1</mrow>
+							<mrow> &amp;= 2</mrow>
+							</md>
+						</p>
+						<p>
+							Using the second definition of the slope of the tangent line, we have
+							<md>
+							<mrow> f'(1) &amp;=\ds \lim_{h\to 0} \dfrac{f(1+h)-f(1)}{h}</mrow>
+							<mrow> &amp;= \ds \lim_{h\to 0} \dfrac{(1+h)^2-1}{h}</mrow>
+							<mrow> &amp;= \ds \lim_{h\to 0} \dfrac{1+2h+h^2-1}{h}</mrow>
+							<mrow> &amp;= \ds \lim_{h\to 0} \dfrac{2h+h^2}{h}</mrow>
+							<mrow> &amp;= \ds \lim_{h\to 0} 2+h</mrow>
+							<mrow> &amp;= 2</mrow>
+							</md>
+						</p>
+					</solution>
+					</example>
+					
+				</subsubsection>
+			</subsection>
+			<subsection xml:id="section-21-preclass">
+				<title>Pre-Class Activities</title>
+				
+				<example><statement>
+					We have two definitions of the derivative at a point, <m>x = a</m>.  Rewrite them here.
+				</statement>
+				<solution>
+					<ul>
+						<li>
+							<m>\ds f'(a) = \lim_{x\to a} \dfrac{f(x)-f(a)}{x-a}</m>
+						</li>
+						<li>
+							<m>\ds f'(a) = \lim_{h\to 0} \dfrac{f(a+h)-f(a)}{h}</m>
+						</li>
+					</ul>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Let <m>f(x) = x^2 + 1</m> and <m>a = 3</m>.
+					<ol label="a">
+						<li>
+							Using either definition you wrote down above, complete the <em>setup</em> for the derivative.  Do not use algebra; that is what part (b) will do.  You only need to write the setup.
+							<me>
+								f'(3) = \lim
+							</me>
+						</li>
+						<li>
+							Simplify your answer from part (a) to show that <m>f'(3) = 6</m>.
+						</li>
+					</ol>
+				</statement>
+				<solution>
+					<ol label="a">
+						<li>
+							<p>
+								<m>f'(3) = \ds \lim_{x\to 3} \dfrac{f(x)-f(3)}{x-3}</m>
+							</p>
+							<p>
+								or
+							</p>
+							<p>
+								<m>f'(3) = \ds \lim_{h\to 0} \dfrac{f(3+h)-f(3)}{h}</m>
+							</p>
+						</li>
+						<li>
+							Answers vary
+						</li>
+					</ol>
+				</solution>
+				</example>
+				
+				<example><statement>
+					A function <m>f(x)</m> is graphed, along with several tangent lines.  Identify the derivative at the points <m>x = -3</m> and <m>x = 2</m>
+					<image>
+						<description>
+							The graph of <m>f(x) = \dfrac{1}{3}x^3-4x</m>, with tangent lines at <m>x=-3</m> and <m>x=2</m> drawn.
+						</description>
+						<latex-image>
+						<![CDATA[
+							\begin{tikzpicture}
+								\begin{axis}[
+										grid style = {line width = .1pt, draw = gray!60},
+										grid = both,
+										every tick label/.append style={font=\small},
+										axis x line = middle,
+										axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.15)}, yshift = -3pt},
+											y label style={at={(axis description cs: 0.5, 1)},above},
+										ytick = {-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10},
+											ylabel = {$y$},
+											ymin = -6, ymax = 6,
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+											xtick = {-4,-3,-2,-1,1,2,3,4},
+												x label style={at={(axis description cs: 1, 0.5)},right},
+											xlabel = {$x$},
+											xmin = -4.5, xmax = 4.5			
+									]
+									\addplot[smooth,domain = -4:4] {(1/3)*x^3 - 4*x};
+									\addplot[smooth, ultra thick, domain = 0:4] {-16/3};
+									\addplot[smooth, ultra thick, domain = -6:0] {5*x + 18};
+								\end{axis}
+							\end{tikzpicture}
+							]]>
+						</latex-image>
+					</image>
+				</statement>
+				<solution>
+					<m>f'(3) = 5</m> and <m>f'(2) = 0</m>
+				</solution>
+				</example>
+						
+				<example><statement>
+					Imagine that a classmate couldn't watch the videos and didn't have the workbook for this section, and has asked you to explain the relationship between average rate of change, instantaneous rate of change, tangent lines, and secant lines.  What would you tell them?
+				</statement>
+				<solution>
+					Answers vary
+				</solution>
+				</example>
+			</subsection>
+			<subsection xml:id="section-21-inclass">
+				<title>In Class</title>
+				
+				<question><statement>
+					There are a few ways to write a line; what are they?
+				</statement>
+				<solution>
+					<m>y=mx+b</m> or <m>y-y_1=m(x-x_1)</m>
+				</solution>
+				</question>
+				
+				<example><statement>
+					<ol label="a">
+						<li>
+							Use both definitions of the derivative at a point to show that for <m>f(x) = x^3</m>, <m>f'(1) = 3</m>.
+						</li>
+							
+						<li>
+							Find the equation of the tangent line to <m>f(x)</m> at the point <m>x = 1</m>.
+						</li>
+					</ol>
+				</statement>
+				<solution>
+					<ol label="a">
+						<li>
+							<p>	
+							Using the first definition of the slope of the tangent line, we have
+							<md>
+							<mrow> f'(1) &amp;= \ds \lim_{x\to 1} \dfrac{f(x)-f(1)}{x-1}</mrow>
+							<mrow> &amp;= \ds \lim_{x\to 1} \dfrac{x^3-1}{x-1}</mrow>
+							<mrow> &amp;= \ds \lim_{x\to 1} \dfrac{(x-1)(x^2+x+1)}{x-1}</mrow>
+							<mrow> &amp;= \ds \lim_{x\to 1} x^2+x+1</mrow>
+							<mrow> &amp;= 3</mrow>
+							</md>
+						</p>
+						<p>
+							Using the second definition of the slope of the tangent line, we have
+							<md>
+							<mrow> f'(1) &amp;=\ds \lim_{h\to 0} \dfrac{f(1+h)-f(1)}{h}</mrow>
+							<mrow> &amp;= \ds \lim_{h\to 0} \dfrac{(1+h)^3-1}{h}</mrow>
+							<mrow> &amp;= \ds \lim_{h\to 0} \dfrac{1+3h+3h^2+h^3-1}{h}</mrow>
+							<mrow> &amp;= \ds \lim_{h\to 0} \dfrac{3h+3h^2+h^3}{h}</mrow>
+							<mrow> &amp;= \ds \lim_{h\to 0} 3+3h+h^2</mrow>
+							<mrow> &amp;= 3</mrow>
+							</md>
+						</p>
+						</li>
+							
+						<li>
+							<m>y=3x</m>
+						</li>
+					</ol>
+				</solution>
+				</example>
+
+				<example><statement>
+					<ol label="a">
+						<li>
+							Use the first definition of the derivative to find <m>g'(2)</m> for <m>g(x) = \dfrac{2}{x}</m>.
+						</li>
+							
+						<li>
+							Use the second definition of the derivative to find <m>g'\lrpar{\dfrac{1}{2}}</m> for <m>g(x) = \dfrac{2}{x}</m>.
+						</li>
+							
+						<li>
+							Use either definition of the derivative to find <m>g'(10)</m> for <m>g(x) = \dfrac{2}{x}</m>.
+						</li>
+							
+						<li>
+							Find the equation of the tangent line to <m>g(x)</m> at <m>x = \dfrac{1}{2}</m> and at <m>x = 10</m>.
+						</li>
+					</ol>
+				</statement>
+				<solution>
+					<ol label="a">
+						<li>
+							<m>g'(2) = -\dfrac{1}{2}</m>
+						</li>
+							
+						<li>
+							<m>g'\lrpar{\dfrac{1}{2}} = -8</m>
+						</li>
+							
+						<li>
+							<m>g'(10) = -\dfrac{1}{50}</m>
+						</li>
+							
+						<li>
+							<m>y=-\dfrac{1}{50}x + \dfrac{2}{5}</m>
+						</li>
+					</ol>
+				</solution>
+				</example>
+
+				<question><statement>
+					Do these slopes make sense given the graph of <m>g(x)</m>?  Make a conjecture about the slopes as <m>x</m> gets arbitrarily large (as <m>x\to \infty</m>), and as <m>x\to 0^+</m>.
+				</statement>
+				<solution>
+					As <m>x\to \infty</m>, the slopes go to 0; as <m>x\to 0^+</m>, the slopes go to <m>\infty</m>.
+				</solution></question>
+					
+				<example><statement>
+					Find the derivative of the function <m>f(x) = x^2-6x+1</m> at the input <m>x = a</m>.
+				</statement>
+				<solution>
+					<m>f'(a) = 2a-6</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Find the equation of the tangent line to the parabola <m>y = x^2 + 4x</m> at the point <m>(-1,-3)</m>.
+				</statement>
+				<solution>
+					<m>y=2x-1</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Find an equation of the tangent line to the graph of <m>y = h(x)</m> at <m>x = 5</m> if <m>h(5) = -3</m> and <m>h'(5) = 4</m>.
+				</statement>
+				<solution>
+					<m>y=4x-23</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					If <m>\ds f'(a) = \lim_{h\to 0} \dfrac{\sqrt{16 + h} - 4}{h}</m> represents the derivative of the function <m>f(x)</m> at <m>x = a</m>, what is <m>f(x)</m> and what is <m>a</m>?
+				</statement>
+				<solution>
+					<m>f(x) = \sqrt{x}</m>, and <m>a=16</m>
+				</solution>
+				</example>
+				
+				<subsubsection xml:id="section-21-rates">
+					<title>Rates of Change</title>
+					<p>
+						If we use the function <m>y = f(x)</m>, then the derivative tells us the rate of change of the <em>output</em> <m>y</m> with respect to the <em>input</em> <m>x</m>.  Another way of writing this is
+						<me>
+							\text{instantaneous ROC } = \lim_{\Delta x\to 0} \dfrac{\Delta y}{\Delta x} = \lim_{x_2\to x_1}\dfrac{f(x_2)-f(x_1)}{x_2-x_1}
+						</me>
+					</p>
+					
+					<example><statement>
+						The function <m>C</m> gives the number of bushels of corn produced on a tract of farmland that is treated with <m>f</m> pounds of nitrogen per acre.
+						<ol label="a">
+							<li>
+								Is it possible for <m>C(90)</m> to be negative?  Why or why not?
+							</li>
+								
+							<li>
+								What are the units on <m>C'(90)</m>?
+							</li>
+
+							<li>
+								Is it possible for <m>C'(90)</m> to be negative?  Why or why not?
+							</li>
+						</ol>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li>
+								No- you can't have negative bushels of corn
+							</li>
+								
+							<li>
+								bushels of corn per pound of nitrogen per acre
+							</li>
+
+							<li>
+								Yes- this would mean that production is decreasing, so corn is produced at a slower rate
+							</li>
+						</ol>
+					</solution>
+					</example>
+						
+					<example><statement>
+						The function <m>p</m> gives the number of miles from an airport that a plane has flown after <m>t</m> hours.
+						<ol label="a">
+							<li>
+								What are the units of <m>p'(1.5)</m>?
+							</li>
+
+							<li>
+								What is the common word used for <m>p'(1.5)</m>?
+							</li>
+						</ol>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li>
+								miles per hour
+							</li>
+
+							<li>
+								speed/velocity
+							</li>
+						</ol>
+					</solution></example>
+
+					<example><statement>
+						The cost of producing <m>x</m> ounces of gold from a new gold mine is <m>C=f(x)</m> dollars.
+						<ol label="a">
+							<li>
+								What is the meaning of the derivative <m>f'(x)</m>? What are its units?
+							</li>
+							<li>
+								Interpret the statement <m>f'(800) = 17</m>.
+							</li>
+						</ol>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li>
+								<m>f'(x)</m> gives the rate of change of production cost; its units are dollars per ounce.
+							</li>
+							<li>
+								When 800 ounces of gold are mined, the cost is increasing by 17 dollars per ounce.
+							</li>
+						</ol>
+					</solution></example>
+				</subsubsection>
+			</subsection>
+			<subsection xml:id="section-21-afterclass">
+				<title>After Class Activities</title>
+				
+				<example><statement>
+					The tangent line to <m>y = f(x)</m> at <m>(3,4)</m> passes through the point <m>(0,2)</m>.  Find <m>f(3)</m> and <m>f'(3)</m>.
+				</statement>
+				<solution>
+					<m>f(3)=4</m> and <m>f'(3) = \dfrac{2}{3}</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Sketch the graph of a function <m>f</m> for which <m>g(0) = g(2) = g(4) = 0</m>, <m>g'(1) = g'(3) = 0</m>, <m>g'(0) = g'(4) = 1</m>, <m>g'(2) = -1</m>, <m>\ds \lim_{x\to 5^-} g(x) = \infty</m>, and <m>\ds \lim_{x\to -1^+} g(x) = -\infty</m>.
+				</statement>
+				<solution>
+					Answers vary
+				</solution>
+				</example>
+					
+				<example><statement>
+					<m>\ds \lim_{\theta\to \pi/6} \dfrac{\sin\theta - \frac{1}{2}}{\theta - \pi/6}</m> represents the derivative of a function <m>f(\theta)</m> at some value of <m>\theta = a </m>.  What is <m>f(\theta)</m> and what is <m>a</m>?
+				</statement>
+				<solution>
+					<m>f(\theta) = \sin\theta</m> and <m>a=\dfrac{\pi}{6}</m>
+				</solution>
+				</example>
+			</subsection>
+		</section>
+		

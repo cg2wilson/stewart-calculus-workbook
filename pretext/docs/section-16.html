@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-07-17T17:31:43-05:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Math 1914 - Differential &amp; Integral Calculus I Calculating Limits Using Limit Laws</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Math 1914 - Differential &amp; Integral Calculus">
+<meta property="book:author" content="Cory Wilson">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(      \newcommand{\ds}{\displaystyle}
+\newcommand{\lrpar}[1]{\left(#1\right)}
+\newcommand{\lrbrace}[1]{\left\lbrace #1 \right\rbrace}
+\newcommand{\inv}[1]{#1^{-1}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\dc}{^\circ}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="math1914.html"><span class="title">Math 1914 - Differential &amp; Integral Calculus</span></a></h1>
+<p class="byline">Cory Wilson</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-15.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch1.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-17.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-15.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch1.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section-17.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul><li><a href="colophon.html" data-scroll="colophon" class="internal">Colophon</a></li></ul>
+</li>
+<li class="link">
+<a href="ch1.html" data-scroll="ch1" class="internal"><span class="codenumber">1</span> <span class="title">Functions and Limits</span></a><ul>
+<li><a href="section-11.html" data-scroll="section-11" class="internal">Four Ways to Represent a Function</a></li>
+<li><a href="section-12.html" data-scroll="section-12" class="internal">Mathematical Models: A Catalog of Essential Functions</a></li>
+<li><a href="section-13.html" data-scroll="section-13" class="internal">New Functions from Old Functions</a></li>
+<li><a href="section-14.html" data-scroll="section-14" class="internal">The Tangent and Velocity Problems</a></li>
+<li><a href="section-15.html" data-scroll="section-15" class="internal">The Limit of a Function</a></li>
+<li><a href="section-16.html" data-scroll="section-16" class="active">Calculating Limits Using Limit Laws</a></li>
+<li><a href="section-17.html" data-scroll="section-17" class="internal">(X) The Precise Definition of a Limit</a></li>
+<li><a href="section-18.html" data-scroll="section-18" class="internal">Continuity</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch2.html" data-scroll="ch2" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives</span></a><ul>
+<li><a href="section-21.html" data-scroll="section-21" class="internal">Derivatives and Rates of Change</a></li>
+<li><a href="section-22.html" data-scroll="section-22" class="internal">The Derivative as a Function</a></li>
+<li><a href="section-23.html" data-scroll="section-23" class="internal">Differentiation Formulas</a></li>
+<li><a href="section-24.html" data-scroll="section-24" class="internal">Derivatives of Trigonometric Functions</a></li>
+<li><a href="section-25.html" data-scroll="section-25" class="internal">The Chain Rule</a></li>
+<li><a href="section-26.html" data-scroll="section-26" class="internal">Implicit Differentiation</a></li>
+<li><a href="section-27.html" data-scroll="section-27" class="internal">(X) Rates of Changes in the Natural and Social Sciences</a></li>
+<li><a href="section-28.html" data-scroll="section-28" class="internal">Related Rates</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch3.html" data-scroll="ch3" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Differentiation</span></a><ul>
+<li><a href="section-31.html" data-scroll="section-31" class="internal">Maximum &amp; Minimum Values</a></li>
+<li><a href="section-32.html" data-scroll="section-32" class="internal">(X) The Mean Value Theorem</a></li>
+<li><a href="section-33.html" data-scroll="section-33" class="internal">How Derivatives Affect the Shape of a Graph</a></li>
+<li><a href="section-34.html" data-scroll="section-34" class="internal">Limits at Infinity &amp; Horizontal Asymptotes</a></li>
+<li><a href="section-35.html" data-scroll="section-35" class="internal">Summary of Curve Sketching</a></li>
+<li><a href="section-36.html" data-scroll="section-36" class="internal">(X) Graphing with Calculus and Calculators</a></li>
+<li><a href="section-37.html" data-scroll="section-37" class="internal">Optimization</a></li>
+<li><a href="section-38.html" data-scroll="section-38" class="internal">(X) Newton's Method</a></li>
+<li><a href="section-39.html" data-scroll="section-39" class="internal">Antiderivatives</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch4.html" data-scroll="ch4" class="internal"><span class="codenumber">4</span> <span class="title">Integrals</span></a><ul>
+<li><a href="section-41.html" data-scroll="section-41" class="internal">Areas &amp; Distance</a></li>
+<li><a href="section-42.html" data-scroll="section-42" class="internal">The Definite Integral</a></li>
+<li><a href="section-43.html" data-scroll="section-43" class="internal">The Fundamental Theorem of Calculus</a></li>
+<li><a href="section-44.html" data-scroll="section-44" class="internal">Indefinite Integrals &amp; the Net Change Theorem</a></li>
+<li><a href="section-45.html" data-scroll="section-45" class="internal">The Substitution Rule</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch5.html" data-scroll="ch5" class="internal"><span class="codenumber">5</span> <span class="title">Applications of Integration</span></a><ul>
+<li><a href="section-51.html" data-scroll="section-51" class="internal">Areas Between Curves</a></li>
+<li><a href="section-52.html" data-scroll="section-52" class="internal">Volumes</a></li>
+<li><a href="section-53.html" data-scroll="section-53" class="internal">Volumes by Cylindrical Shells</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-16"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.6</span> <span class="title">Calculating Limits Using Limit Laws</span>
+</h2>
+<article class="objectives goal-like" id="objectives-6"><h3 class="heading"><span class="type">Objectives</span></h3>
+<ul class="disc">
+<li id="li-348"><p id="p-derived-li-348">State limit laws and use the laws (if appropriate) to determine the limit of a function using multiple representations</p></li>
+<li id="li-349"><p id="p-derived-li-349">Use the Direct Substitution Property to evaluate limits algebraically</p></li>
+<li id="li-350"><p id="p-derived-li-350">Develop strategies to compute <span class="process-math">\(\dfrac{0}{0}\)</span> indeterminate forms</p></li>
+<li id="li-351"><p id="p-derived-li-351">Apply the Limit Inequality Theorem and Squeeze Theorem to determine limits</p></li>
+</ul></article><section class="subsection" id="section-16-beforeclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.6.1</span> <span class="title">Before Class</span>
+</h3>
+<figure class="figure figure-like" id="figure-8"><a class="external" href="https://mymedia.ou.edu/media/1.6-1/1_1uboropy" target="_blank"><code class="code-inline tex2jax_ignore">https://mymedia.ou.edu/media/1.6-1/1_1uboropy</code></a><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">8<span class="period">.</span></span><span class="space"> </span>Pre-Class Video 1</figcaption></figure><section class="subsubsection" id="section-16-laws"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">1.6.1.1</span> <span class="title">Limit Laws</span>
+</h4>
+<article class="theorem theorem-like" id="limit-laws"><h5 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.6.1</span><span class="period">.</span><span class="space"> </span><span class="title">Limit Laws.</span>
+</h5>Suppose that <span class="process-math">\(c\)</span> is a constant, and that the limits <span class="process-math">\(\ds \lim_{x\to a} f(x)\)</span> and <span class="process-math">\(\ds \lim_{x\to a}\)</span> exist.  Then, <ol class="decimal">
+<li id="li-352"><p id="p-derived-li-352"><span class="process-math">\(\displaystyle \ds \lim_{x\to a} [f(x) \pm g(x)] = \ds \lim_{x\to a} f(x) \pm \lim_{x\to a} g(x)\)</span></p></li>
+<li id="li-353"><p id="p-derived-li-353"><span class="process-math">\(\displaystyle \ds \lim_{x\to a} [cf(x)] = c\cdot \lim_{x\to a} f(x)\)</span></p></li>
+<li id="li-354"><p id="p-derived-li-354"><span class="process-math">\(\displaystyle \ds \lim_{x\to a} [f(x)\cdot g(x)] = \lim_{x\to a} f(x)\cdot \lim_{x\to a} g(x)\)</span></p></li>
+<li id="li-355"><p id="p-derived-li-355"><span class="process-math">\(\ds \lim_{x\to a} \dfrac{f(x)}{g(x)} = \dfrac{\ds \lim_{x\to a} f(x)}{\ds \lim_{x\to a} g(x)}\text{,}\)</span> provided that <span class="process-math">\(\ds \lim_{x\to a} g(x)\neq 0\)</span></p></li>
+<li id="li-356"><p id="p-derived-li-356"><span class="process-math">\(\displaystyle \ds \lim_{x\to a} [f(x)]^n = \left[\lim_{x\to a} f(x)\right]^n\)</span></p></li>
+<li id="li-357"><p id="p-derived-li-357"><span class="process-math">\(\displaystyle \ds \lim_{x\to a} c = c\)</span></p></li>
+<li id="li-358"><p id="p-derived-li-358"><span class="process-math">\(\ds \lim_{x\to a} [f(x)]^{1/n} = \left[\lim_{x\to a} f(x)\right]^{1/n}\text{,}\)</span> where <span class="process-math">\(n\)</span>  is a positive integer (we assume the limit is positive if <span class="process-math">\(n\)</span> is even)</p></li>
+</ol></article><ol class="decimal">
+<li id="li-359"><p id="p-derived-li-359">Sum/Difference Rule: The limit of a sum/difference of functions is the sum/difference of the limit of the functions.</p></li>
+<li id="li-360"><p id="p-derived-li-360">Constant Multiplier Rule: The limit of a constant times a function is the constant times the limit of the function.</p></li>
+<li id="li-361"><p id="p-derived-li-361">Product Rule: The limit of a product of functions is the product of the limits.</p></li>
+<li id="li-362"><p id="p-derived-li-362">Quotient Rule: The limit of a quotient of functions is the quotient of the limits (provided the denominator is nonzero).</p></li>
+<li id="li-363"><p id="p-derived-li-363">Power Rule: The limit of a function raised to a power is the power of the limit of the function.</p></li>
+<li id="li-364"><p id="p-derived-li-364">Constant Rule: The limit of a constant is a constant.</p></li>
+<li id="li-365"><p id="p-derived-li-365">Root Rule: The limit of the <span class="process-math">\(n\)</span>th-root of a function is the <span class="process-math">\(n\)</span>th-root of the limit of a function.</p></li>
+</ol>
+<article class="example example-like" id="example-76"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.6.2</span><span class="period">.</span>
+</h5>Use the limit laws to determine the following limits, if they exist.  The function <span class="process-math">\(f(x)\)</span> is graphed as the solid line, and <span class="process-math">\(g(x)\)</span> is graphed as the dashed line. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-70.svg" role="img" class="contained" alt="The function \(f(x)\) is graphed as the solid line, and \(g(x)\) is graphed as the dashed line."></div>
+<ol class="lower-alpha">
+<li id="li-366"><p id="p-derived-li-366"><span class="process-math">\(\displaystyle \ds \lim_{x\to 1} [f(x)]\)</span></p></li>
+<li id="li-367"><p id="p-derived-li-367"><span class="process-math">\(\displaystyle \ds \lim_{x\to -1} [g(x)]\)</span></p></li>
+<li id="li-368"><p id="p-derived-li-368"><span class="process-math">\(\displaystyle \ds \lim_{x\to -2}\left[\dfrac{f(x)}{g(x)}\right]\)</span></p></li>
+<li id="li-369"><p id="p-derived-li-369"><span class="process-math">\(\displaystyle \ds \lim_{x\to -1}\left[f(x)g(x)\right]\)</span></p></li>
+<li id="li-370"><p id="p-derived-li-370"><span class="process-math">\(\displaystyle \ds \lim_{x\to -1}\left[-2f(x)+3g(x)\right]\)</span></p></li>
+<li id="li-371"><p id="p-derived-li-371"><span class="process-math">\(\displaystyle \ds \lim_{x\to 2} [3f(x)]\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-79" id="solution-79"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-79"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-372"><p id="p-derived-li-372"><span class="process-math">\(\displaystyle \ds \lim_{x\to 1} [f(x)]  \text{ DNE}\)</span></p></li>
+<li id="li-373"><p id="p-derived-li-373"><span class="process-math">\(\displaystyle \ds \lim_{x\to -1} [g(x)]=1\)</span></p></li>
+<li id="li-374"><p id="p-derived-li-374"><span class="process-math">\(\displaystyle \ds \lim_{x\to -2}\left[\dfrac{f(x)}{g(x)}\right]=-\dfrac{2}{3}\)</span></p></li>
+<li id="li-375"><p id="p-derived-li-375"><span class="process-math">\(\displaystyle \ds \lim_{x\to -1}\left[f(x)g(x)\right]= -1\)</span></p></li>
+<li id="li-376"><p id="p-derived-li-376"><span class="process-math">\(\displaystyle \ds \lim_{x\to -1}\left[-2f(x)+3g(x)\right]=5\)</span></p></li>
+<li id="li-377"><p id="p-derived-li-377"><span class="process-math">\(\displaystyle \ds \lim_{x\to 2} [3f(x)]=0\)</span></p></li>
+</ol></div></div>
+</div></article><article class="assemblage assemblage-like" id="assemblage-10"><h5 class="heading"><span class="title">Direct Substitution Property.</span></h5>
+<p id="p-80">If <span class="process-math">\(f\)</span> is a polynomial, rational, or algebraic function with <span class="process-math">\(a\)</span> in the domain of <span class="process-math">\(f\text{,}\)</span> then <span class="process-math">\(\ds \lim_{x\to a} f(x) = f(a)\)</span></p></article><article class="example example-like" id="example-77"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.6.3</span><span class="period">.</span>
+</h5>Calculate the following limits.  Justify each answer with one (or more) of the limit laws. <ol class="lower-alpha">
+<li id="li-378"><p id="p-derived-li-378"><span class="process-math">\(\displaystyle \ds \lim_{x\to -1} 3x^3+5x^2-7\)</span></p></li>
+<li id="li-379"><p id="p-derived-li-379"><span class="process-math">\(\displaystyle \ds \lim_{x\to 2} \dfrac{x^3+2x^2-1}{5-3x}\)</span></p></li>
+<li id="li-380"><p id="p-derived-li-380"><span class="process-math">\(\displaystyle \ds \lim_{x\to 1} \dfrac{x-1}{x^2+1}\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-80" id="solution-80"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-80"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-381"><p id="p-derived-li-381"><span class="process-math">\(\ds \lim_{x\to -1} 3x^3+5x^2-7 = -9\text{.}\)</span>  Since this is a polynomial, you can use the direct substitution property.</p></li>
+<li id="li-382"><p id="p-derived-li-382"><span class="process-math">\(\ds \lim_{x\to 2} \dfrac{x^3+2x^2-1}{5-3x}=-15\text{.}\)</span>  Since this is a rational function with 2 in the domain, we can use direct substitution.</p></li>
+<li id="li-383"><p id="p-derived-li-383"><span class="process-math">\(\ds \lim_{x\to 1} \dfrac{x-1}{x^2+1}=0\text{.}\)</span>  Since this is a rational function with 1 in the domain, we can use direct substitution.</p></li>
+</ol></div></div>
+</div></article><article class="question example-like" id="question-5"><h5 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.6.4</span><span class="period">.</span>
+</h5>Let <span class="process-math">\(k(x)=\dfrac{x+1}{x^2-1}\text{.}\)</span> <ol class="lower-alpha">
+<li id="li-384"><p id="p-derived-li-384">The Direct Substitution Property <em class="emphasis">cannot</em> be applied to the function at <span class="process-math">\(x = -1\text{.}\)</span>  Why not?</p></li>
+<li id="li-385"><p id="p-derived-li-385">Modify the function so that you <em class="emphasis">can</em> use the Direct Substitution Property.</p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-81" id="solution-81"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-81"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-386"><p id="p-derived-li-386"><span class="process-math">\(-1\)</span> is not in the domain</p></li>
+<li id="li-387"><p id="p-derived-li-387">Factor the denominator as <span class="process-math">\((x+1)(x-1)\)</span> and cancel to get <span class="process-math">\(\dfrac{1}{x-1}\text{.}\)</span></p></li>
+</ol></div></div>
+</div></article></section></section><section class="subsection" id="section-16-preclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.6.2</span> <span class="title">Pre-Class Activities</span>
+</h3>
+<article class="example example-like" id="example-78"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.6.5</span><span class="period">.</span>
+</h4>Assume that <span class="process-math">\(\ds \lim_{x\to 3} f(x) = -1\text{,}\)</span> <span class="process-math">\(\ds \lim_{x\to 3} g(x) = 2\text{,}\)</span> and <span class="process-math">\(\ds \lim_{x\to 3} h(x) = 0\text{.}\)</span>  Find the following limits, if they exist.  If they don't, explain why.  Justify each answer with the appropriate limit law(s). <ol class="lower-alpha">
+<li id="li-388"><p id="p-derived-li-388"><span class="process-math">\(\displaystyle \ds \lim_{x\to 3} [f(x) + 5g(x)]\)</span></p></li>
+<li id="li-389"><p id="p-derived-li-389"><span class="process-math">\(\displaystyle \ds \lim_{x\to 3} [f(x)]^5\)</span></p></li>
+<li id="li-390"><p id="p-derived-li-390"><span class="process-math">\(\displaystyle \ds \lim_{x\to 3} \sqrt{g(x)}\)</span></p></li>
+<li id="li-391"><p id="p-derived-li-391"><span class="process-math">\(\displaystyle \ds \lim_{x\to 3} \dfrac{3f(x)}{g(x)}\)</span></p></li>
+<li id="li-392"><p id="p-derived-li-392"><span class="process-math">\(\displaystyle \ds \lim_{x\to 3} \dfrac{g(x)}{h(x)}\)</span></p></li>
+<li id="li-393"><p id="p-derived-li-393"><span class="process-math">\(\displaystyle \ds \lim_{x\to 3} \dfrac{f(x)h(x)}{g(x)}\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-82" id="solution-82"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-82"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-394"><p id="p-derived-li-394"><span class="process-math">\(\ds \lim_{x\to 3} [f(x) + 5g(x)] = 9\text{.}\)</span>  Use the sum/difference law to split the limit, then use the constant multiple rule to multiply <span class="process-math">\(\ds \lim_{x\to 3} g(x)\)</span> by 5.</p></li>
+<li id="li-395"><p id="p-derived-li-395"><span class="process-math">\(\ds \lim_{x\to 3} [f(x)]^5=-1\text{.}\)</span>  Use the power rule to take the power out of the limit, then evaluate.</p></li>
+<li id="li-396"><p id="p-derived-li-396"><span class="process-math">\(\ds \lim_{x\to 3} \sqrt{g(x)}=\sqrt{2}\text{.}\)</span>  Use the root rule to take the root out of the limit, then evaluate.</p></li>
+<li id="li-397"><p id="p-derived-li-397"><span class="process-math">\(\ds \lim_{x\to 3} \dfrac{3f(x)}{g(x)}=-\dfrac{3}{2}\text{.}\)</span>  Use the quotient rule to split into two limits, then the constant multiple rule to get <span class="process-math">\(\ds \lim_{x\to 3} f(x)\)</span> by itself.</p></li>
+<li id="li-398"><p id="p-derived-li-398"><span class="process-math">\(\ds \lim_{x\to 3} \dfrac{g(x)}{h(x)}\)</span> does not exist.  There is a non-removable factor of 0 in the denominator.</p></li>
+<li id="li-399"><p id="p-derived-li-399"><span class="process-math">\(\ds \lim_{x\to 3} \dfrac{f(x)h(x)}{g(x)}=0\text{.}\)</span> Use the quotient rule to split into two limits, then the product rule to split the numerator into two limits as well.</p></li>
+</ol></div></div>
+</div></article></section><section class="subsection" id="section-16-inclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.6.3</span> <span class="title">In Class</span>
+</h3>
+<article class="example example-like" id="example-79"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.6.6</span><span class="period">.</span>
+</h4>Compute the following limits: <ol class="lower-alpha">
+<li id="li-400"><p id="p-derived-li-400"><span class="process-math">\(\ds \lim_{t\to -5} g(t)\text{,}\)</span> where <span class="process-math">\(g(t) = \begin{cases}t^2 -1 \amp t\neq -5\\ \pi+1 \amp t = -5 \end{cases}\)</span></p></li>
+<li id="li-401"><p id="p-derived-li-401"><span class="process-math">\(\ds \lim_{h\to 0} \dfrac{f(x+h)-f(x)}{h}\text{,}\)</span> where <span class="process-math">\(f(x) = x^2+2x-1\)</span></p></li>
+<li id="li-402"><p id="p-derived-li-402"><span class="process-math">\(\ds \lim_{h\to 0} \dfrac{f(1+h)-f(1)}{h}\text{,}\)</span> where <span class="process-math">\(f(x) = \sqrt{x}\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-83" id="solution-83"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-83"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-403"><p id="p-derived-li-403"><span class="process-math">\(\displaystyle \ds \lim_{t\to -5} g(t) = 24\)</span></p></li>
+<li id="li-404"><p id="p-derived-li-404"><span class="process-math">\(\displaystyle \ds \lim_{h\to 0} \dfrac{f(x+h)-f(x)}{h} = 2x+2\)</span></p></li>
+<li id="li-405"><p id="p-derived-li-405"><span class="process-math">\(\displaystyle \ds \lim_{h\to 0} \dfrac{f(1+h)-f(1)}{h}=\dfrac{1}{2}\)</span></p></li>
+</ol></div></div>
+</div></article><article class="example example-like" id="example-80"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.6.7</span><span class="period">.</span>
+</h4>Show that <span class="process-math">\(\ds \lim_{x\to a} |x-a| = 0\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-84" id="solution-84"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-84"><div class="solution solution-like">Since we can't use the direct substitution property, we split into right- and left-hand limits.<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\ds \lim_{x\to a^+} |x-a| = \lim_{x\to a^+} (x-a) = a-a = 0 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\ds \lim_{x\to a^-} |x-a| = \lim_{x\to a^-} -(x-a) = -a+a = 0 
+\end{equation*}
+</div>Since the left- and right-hand limits are the same, we conclude that<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\ds \lim_{x\to a} |x-a|=0 
+\end{equation*}
+</div>
+</div></div>
+</div></article><article class="definition definition-like" id="definition-16"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.6.8</span><span class="period">.</span><span class="space"> </span><span class="title">Greatest Integer Function.</span>
+</h4>
+<p id="p-81">The <dfn class="terminology">greatest integer function</dfn>, <span class="process-math">\([\![x]\!]\text{,}\)</span> is the largest integer that is less than or equal to <span class="process-math">\(x\text{.}\)</span></p></article><article class="example example-like" id="example-81"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.6.9</span><span class="period">.</span>
+</h4>Find <span class="process-math">\([\![x]\!]\)</span> for the following values of <span class="process-math">\(x\text{.}\)</span> <ol class="lower-alpha">
+<li id="li-406"><p id="p-derived-li-406"><span class="process-math">\(\displaystyle x = 2\)</span></p></li>
+<li id="li-407"><p id="p-derived-li-407"><span class="process-math">\(\displaystyle x = -1\)</span></p></li>
+<li id="li-408"><p id="p-derived-li-408"><span class="process-math">\(\displaystyle x = 5.1\)</span></p></li>
+<li id="li-409"><p id="p-derived-li-409"><span class="process-math">\(\displaystyle x = \pi\)</span></p></li>
+<li id="li-410"><p id="p-derived-li-410"><span class="process-math">\(\displaystyle x = -6.7\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-85" id="solution-85"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-85"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-411"><p id="p-derived-li-411"><span class="process-math">\(\displaystyle 2\)</span></p></li>
+<li id="li-412"><p id="p-derived-li-412"><span class="process-math">\(\displaystyle -1\)</span></p></li>
+<li id="li-413"><p id="p-derived-li-413"><span class="process-math">\(\displaystyle 5\)</span></p></li>
+<li id="li-414"><p id="p-derived-li-414"><span class="process-math">\(\displaystyle 3\)</span></p></li>
+<li id="li-415"><p id="p-derived-li-415"><span class="process-math">\(\displaystyle -7\)</span></p></li>
+</ol></div></div>
+</div></article><article class="example example-like" id="example-82"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.6.10</span><span class="period">.</span>
+</h4>Find the limits. <ol class="decimal">
+<li id="li-416"><p id="p-derived-li-416"><span class="process-math">\(\displaystyle \ds\lim_{x\to 0.5} [\![x]\!]\)</span></p></li>
+<li id="li-417"><p id="p-derived-li-417"><span class="process-math">\(\displaystyle \ds\lim_{x\to 2} [\![x]\!]\)</span></p></li>
+<li id="li-418"><p id="p-derived-li-418"><span class="process-math">\(\displaystyle \ds \lim_{x\to 3} \dfrac{\frac{1}{x}-\frac{1}{3}}{x-3}\)</span></p></li>
+<li id="li-419"><p id="p-derived-li-419"><span class="process-math">\(\displaystyle \ds\lim_{h\to 1} \dfrac{h^4-1}{h^3-1}\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-86" id="solution-86"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-86"><div class="solution solution-like"><ol class="decimal">
+<li id="li-420"><p id="p-derived-li-420"><span class="process-math">\(\displaystyle \ds\lim_{x\to 0.5} [\![x]\!] = 0\)</span></p></li>
+<li id="li-421"><p id="p-derived-li-421"><span class="process-math">\(\displaystyle \ds\lim_{x\to 2} [\![x]\!] \text{ DNE}\)</span></p></li>
+<li id="li-422"><p id="p-derived-li-422"><span class="process-math">\(\displaystyle \ds \lim_{x\to 3} \dfrac{\frac{1}{x}-\frac{1}{3}}{x-3} = -\dfrac{1}{9}\)</span></p></li>
+<li id="li-423"><p id="p-derived-li-423"><span class="process-math">\(\displaystyle \ds\lim_{h\to 1} \dfrac{h^4-1}{h^3-1} = \dfrac{4}{3}\)</span></p></li>
+</ol></div></div>
+</div></article><section class="subsubsection" id="section-16-theorems"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">1.6.3.1</span> <span class="title">Two Theorems</span>
+</h4>
+<article class="theorem theorem-like" id="theorem-2"><h5 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.6.11</span><span class="period">.</span><span class="space"> </span><span class="title">Limit Inequality.</span>
+</h5>If <span class="process-math">\(f(x)\leq g(x)\)</span> when <span class="process-math">\(x\)</span> is near <span class="process-math">\(a\)</span> (except possibly at <span class="process-math">\(a\)</span>) and the limits of <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> both exist as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(a\text{,}\)</span> then <span class="process-math">\(\ds\lim_{x\to a} f(x)\leq \lim_{x\to a} g(x)\)</span></article><article class="theorem theorem-like" id="theorem-3"><h5 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.6.12</span><span class="period">.</span><span class="space"> </span><span class="title">Squeeze Theorem.</span>
+</h5>If <span class="process-math">\(f(x)\leq g(x)\leq h(x)\)</span> when <span class="process-math">\(x\)</span> is near <span class="process-math">\(a\)</span> (except possibly at <span class="process-math">\(a\)</span>) and <span class="process-math">\(\ds\lim_{x\to a} f(x) = \ds\lim_{x\to a} h(x) = L\text{,}\)</span> then <span class="process-math">\(\ds \lim_{x\to a} g(x) = L\)</span></article><article class="example example-like" id="example-83"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.6.13</span><span class="period">.</span>
+</h5>Use the Squeeze Theorem to show that <span class="process-math">\(\ds \lim_{x\to 0} x^2 \sin \lrpar{\dfrac{1}{x}}= 0\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-87" id="solution-87"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-87"><div class="solution solution-like">Since <span class="process-math">\(-1\leq \sin\theta \leq 1\text{,}\)</span> it must be true that <span class="process-math">\(-1\leq \sin\lrpar{\dfrac{1}{x}}\leq 1\text{.}\)</span>  Then, <span class="process-math">\(-x^2\leq x^2\sin\lrpar{\dfrac{1}{x}}\leq x^2\text{.}\)</span>  Since <span class="process-math">\(\ds\lim_{x\to 0} (-x^2) = 0\)</span> and <span class="process-math">\(\ds \lim_{x\to 0} x^2 = 0\text{,}\)</span> we conclude that <span class="process-math">\(\ds \lim_{x\to 0} x^2 \sin \lrpar{\dfrac{1}{x}}= 0\)</span> by the Squeeze Theorem.</div></div>
+</div></article></section></section><section class="subsection" id="section-16-afterclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.6.4</span> <span class="title">After Class Activities</span>
+</h3>
+<article class="example example-like" id="example-84"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.6.14</span><span class="period">.</span>
+</h4>If <span class="process-math">\(2x\leq g(x) \leq x^6 - x^4 + 2\)</span> for all <span class="process-math">\(x\text{,}\)</span> find <span class="process-math">\(\ds \lim_{x\to 1} g(x)\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-88" id="solution-88"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-88"><div class="solution solution-like">
+<span class="process-math">\(\ds \lim_{x\to 1} g(x) = 2\)</span> by the Squeeze Theorem</div></div>
+</div></article><article class="example example-like" id="example-85"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.6.15</span><span class="period">.</span>
+</h4>The <em class="emphasis">signum function</em> (or the <em class="emphasis">sign function</em>), <span class="process-math">\(\text{sgn}(x)\text{,}\)</span> is given by<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\text{sgn}(x) = \begin{cases}-1 \amp x \lt 0\\ 0 \amp x = 0\\ 1 \amp x &gt; 0 \end{cases}
+\end{equation*}
+</div>
+<ol class="lower-alpha">
+<li id="li-424"><p id="p-derived-li-424">Sketch the graph of <span class="process-math">\(\text{sgn}(x)\text{.}\)</span></p></li>
+<li id="li-425">
+<p id="p-82">Find the limits, or explain why they don't exist:</p>
+<ol class="lower-roman">
+<li id="li-426"><p id="p-derived-li-426"><span class="process-math">\(\displaystyle \ds \lim_{x\to 0} \text{sgn}(x)\)</span></p></li>
+<li id="li-427"><p id="p-derived-li-427"><span class="process-math">\(\displaystyle \ds \lim_{x\to 0} |\text{sgn}(x)|\)</span></p></li>
+</ol>
+</li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-89" id="solution-89"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-89"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-428"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-71.svg" role="img" class="contained" alt="The graph of the signum function on the interval \([-2,2]\text{.}\)"></div></li>
+<li id="li-429">
+<p id="p-83">Find the limits, or explain why they don't exist:</p>
+<ol class="lower-roman">
+<li id="li-430"><p id="p-derived-li-430"><span class="process-math">\(\ds \lim_{x\to 0} \text{sgn}(x) \text{ DNE}\text{.}\)</span>  This is because the left and right hand limits disagree.</p></li>
+<li id="li-431"><p id="p-derived-li-431"><span class="process-math">\(\displaystyle \ds \lim_{x\to 0} |\text{sgn}(x)| = 1\)</span></p></li>
+</ol>
+</li>
+</ol></div></div>
+</div></article><article class="example example-like" id="example-86"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.6.16</span><span class="period">.</span>
+</h4>Find the limit: <ol class="lower-alpha">
+<li id="li-432"><p id="p-derived-li-432"><span class="process-math">\(\displaystyle \ds \lim_{x\to -4} \dfrac{3x + 12}{|x + 4|}\)</span></p></li>
+<li id="li-433"><p id="p-derived-li-433"><span class="process-math">\(\displaystyle \ds \lim_{x\to 2} \dfrac{\sqrt{4x+1} - 3}{x-2}\)</span></p></li>
+<li id="li-434"><p id="p-derived-li-434"><span class="process-math">\(\displaystyle \ds \lim_{x\to -1} \dfrac{2x^2 + 3x + 1}{x^2 - 2x -3}\)</span></p></li>
+<li id="li-435"><p id="p-derived-li-435"><span class="process-math">\(\displaystyle \ds \lim_{h\to 0} \dfrac{(x+h)^3 - x^3}{h}\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-90" id="solution-90"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-90"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-436"><p id="p-derived-li-436"><span class="process-math">\(\displaystyle \ds \lim_{x\to -4} \dfrac{3x + 12}{|x + 4|} \text{ DNE}\)</span></p></li>
+<li id="li-437"><p id="p-derived-li-437"><span class="process-math">\(\displaystyle \ds \lim_{x\to 2} \dfrac{\sqrt{4x+1} - 3}{x-2} = \dfrac{2}{3}\)</span></p></li>
+<li id="li-438"><p id="p-derived-li-438"><span class="process-math">\(\displaystyle \ds \lim_{x\to -1} \dfrac{2x^2 + 3x + 1}{x^2 - 2x -3} = \dfrac{1}{4}\)</span></p></li>
+<li id="li-439"><p id="p-derived-li-439"><span class="process-math">\(\displaystyle \ds \lim_{h\to 0} \dfrac{(x+h)^3 - x^3}{h} = 3x^2\)</span></p></li>
+</ol></div></div>
+</div></article></section></section></div></main>
+</div>
+</body>
+</html>

@@ -1,0 +1,281 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-28">
+			<title>Related Rates</title>
+			
+				<objectives>
+					<ul>
+						<li>
+							Solve related rates problems
+						</li>
+						
+						
+					</ul>
+				</objectives>
+			<subsection xml:id="section-28-beforeclass">
+				<title>Before Class</title>
+				
+				<figure>
+					<caption>Pre-Class Video 1</caption>
+					<url href = "https://mymedia.ou.edu/media/2.8-1/1_wy6maavz"/>
+				</figure>
+				
+				<subsubsection xml:id="section-28-time">
+					<title>Functions of Time</title>
+					
+					<example><statement>
+						<ol label="a">
+							<li> 
+								Think about the equation <m>x^2 + y^2 = 64</m>.  Is this an implicit or explicit equation?  Why?
+							</li>
+								
+							<li> 
+								To find the derivative of both sides of the equation, we think of <m>y</m> as a function of <m>x</m>, i.e. <q><m>y</m></q><m>= y(x)</m>.  This is so that we can use which differentiation rule?  Find the derivative, <m>\dfrac{dy}{dx}</m>.
+							</li>
+								
+							<li> 
+								Now think of <m>x</m> as a function of <m>y</m>, i.e. <q><m>x</m></q> <m>=x(y)</m>.  Find the derivative, <m>\dfrac{dx}{dy}</m>.  
+							</li>								
+						</ol>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li> 
+								Implicit- <m>y</m> can't be written as a function of <m>x</m>
+							</li>
+								
+							<li> 
+								This is so that we can use the chain rule.  Using it, we find that <m>\dfrac{dy}{dx} = -\dfrac{x}{y}</m>
+							</li>
+								
+							<li> 
+								<m>\dfrac{dx}{dy} = -\dfrac{y}{x}</m> 
+							</li>								
+						</ol>
+					</solution>
+					</example>
+					
+					<example><statement>
+						<ol label="a">
+							<li> 
+								Now assume that <m>y</m> is a function of <m>t</m>, i.e. <q><m>y</m></q> <m>= y(t)</m>.  Find <m>\dfrac{dy}{dt}</m> if we have the relationship <m>y^2 = t</m>.
+							</li>
+								
+							<li> 
+								Reconsider <m>x^2 + y^2 = 64</m>.  If both <m>x</m> and <m>y</m> are functions of <m>t</m>, i.e. <q><m>x</m></q> <m>=x(t)</m> and <q><m>y</m></q> <m>=y(t)</m>, then take the derivative of both sides of the equation.
+							</li>
+								
+							<li> 
+								Solve part (b) for <m>\dfrac{dy}{dt}</m>.
+							</li>								
+						</ol>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li> 
+								<m>\dfrac{dy}{dt} =\dfrac{1}{2y}</m>
+							</li>
+								
+							<li> 
+								<m>2x\cdot \dfrac{dx}{dt} + 2y\cdot \dfrac{dy}{dt} = 0</m>
+							</li>
+								
+							<li> 
+								<m>\dfrac{dy}{dt} = -\dfrac{x\cdot \dfrac{dx}{dt}}{y}</m>
+							</li>								
+						</ol>
+					</solution>
+					</example>
+					
+					<example><statement>
+						Consider the equation <m>V = \dfrac{1}{3}\pi r^2 h</m>.
+						<ol label="a">
+							<li> 
+								If <m>r</m> is a function of <m>t</m> and <m>h</m> is a <em>constant</em>, find an expression for <m>\dfrac{dV}{dt}</m>.
+							</li>
+								
+							<li> 
+								If <m>h</m> is a function of <m>t</m> and <m>r</m> is a <em>constant</em>, find an expression for <m>\dfrac{dV}{dt}</m>.
+							</li>
+								
+							<li> 
+								If both <m>r</m> and <m>h</m> are functions of <m>t</m>, find an expression for <m>\dfrac{dV}{dt}</m>.
+							</li>
+						</ol>
+					</statement>
+					<solution>
+						<ol label="a">
+							<li> 
+								<m>\dfrac{dV}{dt} = \dfrac{2}{3}\pi rh\cdot \dfrac{dr}{dt}</m>
+							</li>
+								
+							<li> 
+								<m>\dfrac{dV}{dt} = \dfrac{1}{3}\pi r^2\cdot \dfrac{dh}{dt}</m>
+							</li>
+								
+							<li> 
+								<m>\dfrac{dV}{dt} = \dfrac{1}{3}\pi \lrpar{2r\cdot \dfrac{dr}{dt} + r^2\dfrac{dh}{dt}}</m>
+							</li>
+						</ol>
+					</solution>
+					</example>
+				</subsubsection>				
+			</subsection>
+			<subsection xml:id="section-28-preclass">
+				<title>Pre-Class Activities</title>
+				
+				<example><statement>
+					Find <m>\dfrac{dP}{dt}</m>, if <m>P = 2x + 2y</m>, and write an explanation as if you were explaining to a friend.
+				</statement>
+				<solution>
+					<m>\dfrac{dP}{dt} =2\dfrac{dx}{dt} + 2\dfrac{dy}{dt}</m>.  The explanation will vary person-to-person.
+				</solution>
+				</example>
+					
+				<example><statement>
+					Compute <m>\dfrac{dA}{dt}</m>, if <m>A = xy</m>.  Why is the computation different than the previous example? 
+				</statement>
+				<solution>
+					<m>\dfrac{dA}{dt} = x\dfrac{dy}{dt} + y\dfrac{dx}{dt}</m>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Compute <m>\dfrac{dV}{dt}</m>, if <m>V = xyz</m>.  Why is this computation different than the previous examples?
+				</statement>
+				<solution>
+					<m>\dfrac{dV}{dt} = yz\dfrac{dx}{dt} + xz\dfrac{dy}{dt} + xy\dfrac{dz}{dt}</m>
+				</solution>
+				</example>
+			</subsection>
+			<subsection xml:id="section-28-inclass">
+				<title>In Class</title>
+				<subsubsection xml:id="section-28-rates">
+					<title>Related Rates</title>
+					
+					<example><statement>
+						Air is being pumped into a spherical balloon so that its volume is increasing at a rate of 100 cm<m>^3</m>/s.  How fast is the radius of the balloon increasing when the diameter is 50cm?
+					</statement>
+					<solution>
+						<m>\dfrac{dr}{dt} = \dfrac{1}{25}\pi</m> cm/s
+					</solution>
+					</example>
+					
+					<assemblage>
+						<title>Steps for Solving Related Rates Problems</title>
+						<p>
+							<ol label="a">
+								<li> 
+									Identify equations and variables involved, as well as the variable we are differentiating against.
+								</li>
+								<li> 
+									If possible, sketch <em>two</em> pictures of the situation: one with the variables, and one with the numbers.
+								</li>
+								<li> 
+									Implicitly differentiate.
+								</li>
+								<li> 
+									Use your sketch/the problem to input known quantities.
+								</li>
+								<li> 
+									Solve for the quantity you desire.
+								</li>
+							</ol>
+						</p>
+					</assemblage>
+					
+					<example><statement>
+						A 10-foot ladder rests along a vertical wall.  If the bottom of the ladder slides away from the wall at a rate of 1 ft/s, how fast is the top of the ladder sliding down the wall when the bottom of the ladder is 6 ft from the wall?
+					</statement>
+					<solution>
+						<m>-\dfrac{3}{4}</m> ft/s
+					</solution>
+					</example>
+					
+					<example><statement>
+						A 10-foot ladder rests along a vertical wall.  If the bottom of the ladder slides away from the wall at a rate of 1 ft/s, how fast is the angle between the wall and the ladder changing at the moment when the bottom of the ladder is 5ft from the wall?
+					</statement>
+					<solution>
+						<m>\dfrac{d\theta}{dt} = \dfrac{1}{5\sqrt{3}}</m> rad/s
+					</solution>
+					</example>
+					
+					<example><statement>
+						A conical water tank has a base radius of 3 m and height 6 m.  If water is being pumped into the tank at a rate of 2 m<m>^3</m>/min, find the rate at which the water level is rising when the water is 3 m deep.
+					</statement>
+					<solution>
+						<m>\dfrac{dh}{dt} =\dfrac{8}{9\pi}</m> m/min
+					</solution>
+					</example>
+					
+					<example><statement>
+						A Toyota Camry is traveling west at 50 mi/h and a Ford Focus is traveling north at 65 mi/h.  Both cars are heading for the intersection of the two roads.  At what rate are the cars approaching each other when the Camry is 0.4 mi and the Focus is 0.3 mi from the intersection?
+					</statement>
+					<solution>
+						79 mph
+					</solution>
+					</example>
+					
+					<example><statement>
+						A plane flying horizontally at an altitude of 1 mi and speed of 500 mi/h passes directly over a radar station.  Find the rate at which the distance from the plane to the station is increasing when it is 2 mi away from the station.
+					</statement>
+					<solution>
+						<m>250\sqrt{3}</m> mph
+					</solution>
+					</example>
+						
+					<example><statement>
+						A boat is pulled into a dock by a rope attached to the bow of the boat and passing through a pulley on the dock that is 1 m higher than the bow of the boat.  If the rope is pulled in at a rate of 1 m/s, how fast is the boat approaching the dock when it is 8 m from the dock?
+					</statement>
+					<solution>
+						<m>\dfrac{\sqrt{65}}{8}</m> m/s
+					</solution>
+					</example>
+						
+					<example><statement>
+						A particle moves along the curve <m>y = 2\sin\lrpar{\dfrac{\pi x}{2}}</m>.  As the particle passes through the point <m>\lrpar{\dfrac{1}{3},1}</m>, its <m>x-</m>coordinate increases at a rate of <m>\sqrt{10}</m> cm/s.  How fast is the distance from the particle to the origin changing at this instant?
+					</statement>
+					<solution>
+						<m>\dfrac{1+3\pi\sqrt{3}}{2}</m> cm/s
+					</solution>
+					</example>
+						
+					<example><statement>
+						Gravel is being dumped from a conveyor belt at a rate of 30 ft<m>^3</m>/min, and forms a pile in the shape of a cone whose base diameter and height are always equal.  How fast is the height of the pile increasing when the pile is 10 ft high?
+					</statement>
+					<solution>
+						<m>\dfrac{dh}{dt} = \dfrac{120}{25\pi}</m> ft/min
+					</solution>
+					</example>
+				</subsubsection>				
+			</subsection>
+			<subsection xml:id="section-28-afterclass">
+				<title>After Class Activities</title>
+				
+				<example><statement>
+					Two sides of a triangle have lengths 12 m and 15 m.  The angle between them is increasing at a rate of <m>2\dc</m>/min.  How fast is the length of the third side increasing when the angle between the sides of fixed length is <m>60\dc</m>?
+				</statement>
+				<solution>
+					<m>\dfrac{dc}{dt} = \dfrac{\pi\sqrt{3}}{\sqrt{189}}</m> m/min
+				</solution>
+				</example>
+					
+				<example><statement>
+					Two carts <m>A</m> and <m>B</m> are connected by a rope 39 ft long that passes over a pulley <m>P</m>.  The point <m>Q</m> is on the floor 12 ft directly beneath <m>P</m> and between the carts.  Cart <m>A</m> is being pulled away from <m>Q</m> at a speed of 2 ft/s.  How fast is cart <m>B</m> moving toward <m>Q</m> at the instant when cart <m>A</m> is 5 ft from <m>Q</m>?
+				</statement>
+				<solution>
+					<m>-\dfrac{20}{\sqrt{532}}</m> ft/s
+				</solution>
+				</example>		
+					
+				<question><statement>
+					Related rates are often considered one of the most difficult topics in Calculus I.  After working these problems, what do you think is making sense to you?  What do you think you need some more practice with?
+				</statement>
+				<solution>
+					Answers vary
+				</solution>
+				</question>
+				
+			</subsection>
+		</section>
+		

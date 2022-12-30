@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-07-17T17:31:44-05:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Math 1914 - Differential &amp; Integral Calculus I Derivatives and Rates of Change</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Math 1914 - Differential &amp; Integral Calculus">
+<meta property="book:author" content="Cory Wilson">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(      \newcommand{\ds}{\displaystyle}
+\newcommand{\lrpar}[1]{\left(#1\right)}
+\newcommand{\lrbrace}[1]{\left\lbrace #1 \right\rbrace}
+\newcommand{\inv}[1]{#1^{-1}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\dc}{^\circ}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="math1914.html"><span class="title">Math 1914 - Differential &amp; Integral Calculus</span></a></h1>
+<p class="byline">Cory Wilson</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="ch2.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch2.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-22.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="ch2.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch2.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section-22.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul><li><a href="colophon.html" data-scroll="colophon" class="internal">Colophon</a></li></ul>
+</li>
+<li class="link">
+<a href="ch1.html" data-scroll="ch1" class="internal"><span class="codenumber">1</span> <span class="title">Functions and Limits</span></a><ul>
+<li><a href="section-11.html" data-scroll="section-11" class="internal">Four Ways to Represent a Function</a></li>
+<li><a href="section-12.html" data-scroll="section-12" class="internal">Mathematical Models: A Catalog of Essential Functions</a></li>
+<li><a href="section-13.html" data-scroll="section-13" class="internal">New Functions from Old Functions</a></li>
+<li><a href="section-14.html" data-scroll="section-14" class="internal">The Tangent and Velocity Problems</a></li>
+<li><a href="section-15.html" data-scroll="section-15" class="internal">The Limit of a Function</a></li>
+<li><a href="section-16.html" data-scroll="section-16" class="internal">Calculating Limits Using Limit Laws</a></li>
+<li><a href="section-17.html" data-scroll="section-17" class="internal">(X) The Precise Definition of a Limit</a></li>
+<li><a href="section-18.html" data-scroll="section-18" class="internal">Continuity</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch2.html" data-scroll="ch2" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives</span></a><ul>
+<li><a href="section-21.html" data-scroll="section-21" class="active">Derivatives and Rates of Change</a></li>
+<li><a href="section-22.html" data-scroll="section-22" class="internal">The Derivative as a Function</a></li>
+<li><a href="section-23.html" data-scroll="section-23" class="internal">Differentiation Formulas</a></li>
+<li><a href="section-24.html" data-scroll="section-24" class="internal">Derivatives of Trigonometric Functions</a></li>
+<li><a href="section-25.html" data-scroll="section-25" class="internal">The Chain Rule</a></li>
+<li><a href="section-26.html" data-scroll="section-26" class="internal">Implicit Differentiation</a></li>
+<li><a href="section-27.html" data-scroll="section-27" class="internal">(X) Rates of Changes in the Natural and Social Sciences</a></li>
+<li><a href="section-28.html" data-scroll="section-28" class="internal">Related Rates</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch3.html" data-scroll="ch3" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Differentiation</span></a><ul>
+<li><a href="section-31.html" data-scroll="section-31" class="internal">Maximum &amp; Minimum Values</a></li>
+<li><a href="section-32.html" data-scroll="section-32" class="internal">(X) The Mean Value Theorem</a></li>
+<li><a href="section-33.html" data-scroll="section-33" class="internal">How Derivatives Affect the Shape of a Graph</a></li>
+<li><a href="section-34.html" data-scroll="section-34" class="internal">Limits at Infinity &amp; Horizontal Asymptotes</a></li>
+<li><a href="section-35.html" data-scroll="section-35" class="internal">Summary of Curve Sketching</a></li>
+<li><a href="section-36.html" data-scroll="section-36" class="internal">(X) Graphing with Calculus and Calculators</a></li>
+<li><a href="section-37.html" data-scroll="section-37" class="internal">Optimization</a></li>
+<li><a href="section-38.html" data-scroll="section-38" class="internal">(X) Newton's Method</a></li>
+<li><a href="section-39.html" data-scroll="section-39" class="internal">Antiderivatives</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch4.html" data-scroll="ch4" class="internal"><span class="codenumber">4</span> <span class="title">Integrals</span></a><ul>
+<li><a href="section-41.html" data-scroll="section-41" class="internal">Areas &amp; Distance</a></li>
+<li><a href="section-42.html" data-scroll="section-42" class="internal">The Definite Integral</a></li>
+<li><a href="section-43.html" data-scroll="section-43" class="internal">The Fundamental Theorem of Calculus</a></li>
+<li><a href="section-44.html" data-scroll="section-44" class="internal">Indefinite Integrals &amp; the Net Change Theorem</a></li>
+<li><a href="section-45.html" data-scroll="section-45" class="internal">The Substitution Rule</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch5.html" data-scroll="ch5" class="internal"><span class="codenumber">5</span> <span class="title">Applications of Integration</span></a><ul>
+<li><a href="section-51.html" data-scroll="section-51" class="internal">Areas Between Curves</a></li>
+<li><a href="section-52.html" data-scroll="section-52" class="internal">Volumes</a></li>
+<li><a href="section-53.html" data-scroll="section-53" class="internal">Volumes by Cylindrical Shells</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-21"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2.1</span> <span class="title">Derivatives and Rates of Change</span>
+</h2>
+<article class="objectives goal-like" id="objectives-8"><h3 class="heading"><span class="type">Objectives</span></h3>
+<ul class="disc">
+<li id="li-507"><p id="p-derived-li-507">Translate between interpretations of the slope of the tangent line and derivative (there are three statements)</p></li>
+<li id="li-508"><p id="p-derived-li-508">Use the two limit definitions of a derivative a point to compute derivatives</p></li>
+<li id="li-509"><p id="p-derived-li-509">Find the equation of the tangent line to a curve at a point</p></li>
+<li id="li-510"><p id="p-derived-li-510">Interpret derivatives in a real-world context</p></li>
+</ul></article><section class="subsection" id="section-21-beforeclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.1.1</span> <span class="title">Before Class</span>
+</h3>
+<figure class="figure figure-like" id="figure-10"><a class="external" href="https://mymedia.ou.edu/media/2.1-1/1_f2pd3tar" target="_blank"><code class="code-inline tex2jax_ignore">https://mymedia.ou.edu/media/2.1-1/1_f2pd3tar</code></a><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">10<span class="period">.</span></span><span class="space"> </span>Pre-Class Video 1</figcaption></figure><figure class="figure figure-like" id="figure-11"><a class="external" href="https://mymedia.ou.edu/media/2.1-2/1_rt2uraug" target="_blank"><code class="code-inline tex2jax_ignore">https://mymedia.ou.edu/media/2.1-2/1_rt2uraug</code></a><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">11<span class="period">.</span></span><span class="space"> </span>Pre-Class Video 2</figcaption></figure><section class="subsubsection" id="section-21-tangents"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">2.1.1.1</span> <span class="title"></span>
+</h4>
+<article class="question example-like" id="question-9"><h5 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">2.1.1</span><span class="period">.</span>
+</h5>How did we define the slope of the secant line between two points <span class="process-math">\((a,f(a))\)</span> and <span class="process-math">\((x,f(x))\text{?}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-109" id="solution-109"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-109"><div class="solution solution-like"><span class="process-math">\(\dfrac{f(x)-f(a)}{x-a}\)</span></div></div>
+</div></article><article class="definition definition-like" id="definition-19"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.2</span><span class="period">.</span><span class="space"> </span><span class="title">Slope of the Tangent Line 1.</span>
+</h5>
+<p id="p-103">The <dfn class="terminology">tangent line</dfn> to a curve <span class="process-math">\(y=f(x)\)</span> at the point <span class="process-math">\(P(a(f(a))\)</span> is the line through the point <span class="process-math">\(P\)</span> with slope <span class="process-math">\(\ds m=\lim_{x\to a} \dfrac{f(x)-f(a)}{x-a}\text{,}\)</span> provided that this limit exists.</p></article><p id="p-104">Here are some pictures to help give some intuition to the definition.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;">
+<div class="sbspanel top" style="width:31.0344827586207%;"><img src="generated/latex-image/image-81.svg" role="img" class="contained" alt="The graph of \(f(x) = x^3-6x^2+9x\text{.}\)  Two points are listed, \(a\) and \(x\text{,}\) with the secant line between them drawn."></div>
+<div class="sbspanel top" style="width:31.0344827586207%;"><img src="generated/latex-image/image-82.svg" role="img" class="contained" alt="The graph of \(f(x) = x^3-6x^2+9x\text{.}\)  Two points are listed, \(a\) and \(x\text{,}\) with the secant line between them drawn. The \(x\) in this image is drawn closer to \(a\) than in the previous image."></div>
+<div class="sbspanel top" style="width:31.0344827586207%;"><img src="generated/latex-image/image-83.svg" role="img" class="contained" alt="The graph of \(f(x) = x^3-6x^2+9x\text{.}\)  Two points are listed, \(a\) and \(x\text{,}\) with the secant line between them drawn. The \(x\) in this image is drawn closer to \(a\) than in the previous image."></div>
+</div></div>
+<article class="example example-like" id="example-102"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.3</span><span class="period">.</span>
+</h5>Find the slope of the tangent line through the points <span class="process-math">\((a,f(a)))\)</span> and <span class="process-math">\((a+h,(f(a+h))\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-110" id="solution-110"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-110"><div class="solution solution-like"><span class="process-math">\(\ds \lim_{h\to 0} \dfrac{f(a+h)-f(a)}{h}\)</span></div></div>
+</div></article><article class="definition definition-like" id="definition-20"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.4</span><span class="period">.</span><span class="space"> </span><span class="title">Slope of the Tangent Line 2.</span>
+</h5>
+<p id="p-105">The <dfn class="terminology">tangent line</dfn> to a curve <span class="process-math">\(y=f(x)\)</span> at the point <span class="process-math">\(P(a,f(a))\)</span> is the line through the point <span class="process-math">\(P\)</span> with slope <span class="process-math">\(\ds m = \lim_{h\to 0} \dfrac{f(a+h)-f(a)}{h}\text{,}\)</span> provided that this limit exists, where <span class="process-math">\(h\)</span> is considered to be a small change in <span class="process-math">\(x\text{.}\)</span></p></article><p id="p-106">Here are some more pictures for the new definition</p>
+<p id="p-107"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><img src="generated/latex-image/image-84.svg" role="img" class="contained" alt="The graph of \(f(x) = x^3-6x^2+9x\text{.}\)  Two points are listed, \(a\) and \(a+h\text{,}\) with the secant line between them drawn."></div>
+<div class="sbspanel top" style="width:50%;"><img src="generated/latex-image/image-85.svg" role="img" class="contained" alt="The graph of \(f(x) = x^3-6x^2+9x\text{.}\)  Two points are listed, \(a\) and \(a+h\text{,}\) with the secant line between them drawn. The \(h\) in this image is smaller than in the previous image, so the points are drawn closer."></div>
+</div></div></p></section><section class="subsubsection" id="section-21-tangents-velocities"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">2.1.1.2</span> <span class="title">Tangents &amp; Velocities</span>
+</h4>
+<article class="question example-like" id="question-10"><h5 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">2.1.5</span><span class="period">.</span>
+</h5>Rewrite what it means for a line to be <em class="emphasis">tangent</em> to a curve, and what it means for a line to be <em class="emphasis">secant</em> to a curve.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-111" id="solution-111"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-111"><div class="solution solution-like">A tangent line touches the curve once intentionally, while a secant line intentionally goes through two points.</div></div>
+</div></article><article class="question example-like" id="question-11"><h5 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">2.1.6</span><span class="period">.</span>
+</h5>In Section 1.4, we discussed how to compute average velocity; what was the formula?  How could we find instantaneous velocity from average velocity?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-112" id="solution-112"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-112"><div class="solution solution-like"><span class="process-math">\(v_{avg} = \dfrac{s(t)-s(a)}{t-a}\)</span></div></div>
+</div></article><article class="assemblage assemblage-like" id="assemblage-13"><h5 class="heading"><span class="title">Instantaneous Velocity.</span></h5>
+<p id="p-108">The <dfn class="terminology">instantaneous velocity</dfn> of an object, given its position function <span class="process-math">\(f(x)\text{,}\)</span> is <span class="process-math">\(\ds v(a) = \lim_{h\to 0} \dfrac{f(a+h)-f(a)}{h}\)</span></p></article><article class="example example-like" id="example-103"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.7</span><span class="period">.</span>
+</h5>Suppose that a ball is dropped from the upper observation deck of a building which is 980 m above the ground. <ol class="lower-alpha">
+<li id="li-511"><p id="p-derived-li-511">What is the velocity of the ball after 10 seconds?  Use that the equation of motion is <span class="process-math">\(s(t) = 4.9t^2\text{.}\)</span></p></li>
+<li id="li-512"><p id="p-derived-li-512">How fast is the ball traveling when it hits the ground?</p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-113" id="solution-113"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-113"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-513"><p id="p-derived-li-513">98 m/s</p></li>
+<li id="li-514"><p id="p-derived-li-514">138.59 m/s</p></li>
+</ol></div></div>
+</div></article></section><section class="subsubsection" id="section-21-derivatives"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">2.1.1.3</span> <span class="title">Derivatives</span>
+</h4>
+<article class="definition definition-like" id="definition-21"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.8</span><span class="period">.</span><span class="space"> </span><span class="title">The Derivative (at <span class="process-math">\(x=a\)</span>).</span>
+</h5>
+<p id="p-109">The <dfn class="terminology">derivative of a function</dfn> <span class="process-math">\(f\)</span> at input <span class="process-math">\(x=a\)</span> is given by</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f'(a) = \lim_{h\to 0} \dfrac{f(a+h)-f(a)}{h}
+\end{equation*}
+</div>
+<p class="continuation">or</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f'(a) = \lim_{x\to a} \dfrac{f(x)-f(a)}{x-a}
+\end{equation*}
+</div>
+<p class="continuation">if this limit exists.</p></article><p id="p-110">We have two ways of interpreting what the derivative actually means:</p>
+<ul class="disc">
+<li id="li-515"><p id="p-derived-li-515">The derivative <span class="process-math">\(f'(a)\)</span> is the instantaneous rate of change of <span class="process-math">\(y=f(x)\)</span> wish respect to <span class="process-math">\(x\)</span> when <span class="process-math">\(x=a\text{.}\)</span></p></li>
+<li id="li-516"><p id="p-derived-li-516">The derivative <span class="process-math">\(f'(a)\)</span> is equal to the slope of the tangent line to the function <span class="process-math">\(y=f(x)\)</span> at the point <span class="process-math">\((a,f(a))\text{.}\)</span></p></li>
+</ul>
+<article class="example example-like" id="example-104"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.9</span><span class="period">.</span>
+</h5>Let <span class="process-math">\(f(x) = x^2\text{.}\)</span>  Show that <span class="process-math">\(f'(1) = 2\)</span> using <em class="emphasis">both</em> formulas for the derivative at a point.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-114" id="solution-114"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-114"><div class="solution solution-like">
+<p id="p-111">Using the first definition of the slope of the tangent line, we have</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-1">
+\begin{align*}
+f'(1) &amp;= \ds \lim_{x\to 1} \dfrac{f(x)-f(1)}{x-1}\\
+&amp;= \ds \lim_{x\to 1} \dfrac{x^2-1}{x-1}\\
+&amp;= \ds \lim_{x\to 1} \dfrac{(x+1)(x-1)}{x-1}\\
+&amp;= \ds \lim_{x\to 1} x+1\\
+&amp;= 2
+\end{align*}
+</div>
+<p id="p-112">Using the second definition of the slope of the tangent line, we have</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-2">
+\begin{align*}
+f'(1) &amp;=\ds \lim_{h\to 0} \dfrac{f(1+h)-f(1)}{h}\\
+&amp;= \ds \lim_{h\to 0} \dfrac{(1+h)^2-1}{h}\\
+&amp;= \ds \lim_{h\to 0} \dfrac{1+2h+h^2-1}{h}\\
+&amp;= \ds \lim_{h\to 0} \dfrac{2h+h^2}{h}\\
+&amp;= \ds \lim_{h\to 0} 2+h\\
+&amp;= 2
+\end{align*}
+</div>
+</div></div>
+</div></article></section></section><section class="subsection" id="section-21-preclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.1.2</span> <span class="title">Pre-Class Activities</span>
+</h3>
+<article class="example example-like" id="example-105"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.10</span><span class="period">.</span>
+</h4>We have two definitions of the derivative at a point, <span class="process-math">\(x = a\text{.}\)</span>  Rewrite them here.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-115" id="solution-115"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-115"><div class="solution solution-like"><ul class="disc">
+<li id="li-517"><p id="p-derived-li-517"><span class="process-math">\(\displaystyle \ds f'(a) = \lim_{x\to a} \dfrac{f(x)-f(a)}{x-a}\)</span></p></li>
+<li id="li-518"><p id="p-derived-li-518"><span class="process-math">\(\displaystyle \ds f'(a) = \lim_{h\to 0} \dfrac{f(a+h)-f(a)}{h}\)</span></p></li>
+</ul></div></div>
+</div></article><article class="example example-like" id="example-106"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.11</span><span class="period">.</span>
+</h4>Let <span class="process-math">\(f(x) = x^2 + 1\)</span> and <span class="process-math">\(a = 3\text{.}\)</span> <ol class="lower-alpha">
+<li id="li-519"><p id="p-derived-li-519">Using either definition you wrote down above, complete the <em class="emphasis">setup</em> for the derivative.  Do not use algebra; that is what part (b) will do.  You only need to write the setup.<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f'(3) = \lim
+\end{equation*}
+</div></p></li>
+<li id="li-520"><p id="p-derived-li-520">Simplify your answer from part (a) to show that <span class="process-math">\(f'(3) = 6\text{.}\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-116" id="solution-116"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-116"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-521">
+<p id="p-113"><span class="process-math">\(f'(3) = \ds \lim_{x\to 3} \dfrac{f(x)-f(3)}{x-3}\)</span></p>
+<p id="p-114">or</p>
+<p id="p-115"><span class="process-math">\(f'(3) = \ds \lim_{h\to 0} \dfrac{f(3+h)-f(3)}{h}\)</span></p>
+</li>
+<li id="li-522"><p id="p-derived-li-522">Answers vary</p></li>
+</ol></div></div>
+</div></article><article class="example example-like" id="example-107"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.12</span><span class="period">.</span>
+</h4>A function <span class="process-math">\(f(x)\)</span> is graphed, along with several tangent lines.  Identify the derivative at the points <span class="process-math">\(x = -3\)</span> and <span class="process-math">\(x = 2\)</span><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-86.svg" role="img" class="contained" alt="The graph of \(f(x) = \dfrac{1}{3}x^3-4x\text{,}\) with tangent lines at \(x=-3\) and \(x=2\) drawn."></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-117" id="solution-117"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-117"><div class="solution solution-like">
+<span class="process-math">\(f'(3) = 5\)</span> and <span class="process-math">\(f'(2) = 0\)</span>
+</div></div>
+</div></article><article class="example example-like" id="example-108"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.13</span><span class="period">.</span>
+</h4>Imagine that a classmate couldn't watch the videos and didn't have the workbook for this section, and has asked you to explain the relationship between average rate of change, instantaneous rate of change, tangent lines, and secant lines.  What would you tell them?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-118" id="solution-118"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-118"><div class="solution solution-like">Answers vary</div></div>
+</div></article></section><section class="subsection" id="section-21-inclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.1.3</span> <span class="title">In Class</span>
+</h3>
+<article class="question example-like" id="question-12"><h4 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">2.1.14</span><span class="period">.</span>
+</h4>There are a few ways to write a line; what are they?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-119" id="solution-119"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-119"><div class="solution solution-like">
+<span class="process-math">\(y=mx+b\)</span> or <span class="process-math">\(y-y_1=m(x-x_1)\)</span>
+</div></div>
+</div></article><article class="example example-like" id="example-109"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.15</span><span class="period">.</span>
+</h4>
+<ol class="lower-alpha">
+<li id="li-523"><p id="p-derived-li-523">Use both definitions of the derivative at a point to show that for <span class="process-math">\(f(x) = x^3\text{,}\)</span> <span class="process-math">\(f'(1) = 3\text{.}\)</span></p></li>
+<li id="li-524"><p id="p-derived-li-524">Find the equation of the tangent line to <span class="process-math">\(f(x)\)</span> at the point <span class="process-math">\(x = 1\text{.}\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-120" id="solution-120"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-120"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-525">
+<p id="p-116">Using the first definition of the slope of the tangent line, we have</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-3">
+\begin{align*}
+f'(1) &amp;= \ds \lim_{x\to 1} \dfrac{f(x)-f(1)}{x-1}\\
+&amp;= \ds \lim_{x\to 1} \dfrac{x^3-1}{x-1}\\
+&amp;= \ds \lim_{x\to 1} \dfrac{(x-1)(x^2+x+1)}{x-1}\\
+&amp;= \ds \lim_{x\to 1} x^2+x+1\\
+&amp;= 3
+\end{align*}
+</div>
+<p id="p-117">Using the second definition of the slope of the tangent line, we have</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-4">
+\begin{align*}
+f'(1) &amp;=\ds \lim_{h\to 0} \dfrac{f(1+h)-f(1)}{h}\\
+&amp;= \ds \lim_{h\to 0} \dfrac{(1+h)^3-1}{h}\\
+&amp;= \ds \lim_{h\to 0} \dfrac{1+3h+3h^2+h^3-1}{h}\\
+&amp;= \ds \lim_{h\to 0} \dfrac{3h+3h^2+h^3}{h}\\
+&amp;= \ds \lim_{h\to 0} 3+3h+h^2\\
+&amp;= 3
+\end{align*}
+</div>
+</li>
+<li id="li-526"><p id="p-derived-li-526"><span class="process-math">\(\displaystyle y=3x\)</span></p></li>
+</ol></div></div>
+</div></article><article class="example example-like" id="example-110"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.16</span><span class="period">.</span>
+</h4>
+<ol class="lower-alpha">
+<li id="li-527"><p id="p-derived-li-527">Use the first definition of the derivative to find <span class="process-math">\(g'(2)\)</span> for <span class="process-math">\(g(x) = \dfrac{2}{x}\text{.}\)</span></p></li>
+<li id="li-528"><p id="p-derived-li-528">Use the second definition of the derivative to find <span class="process-math">\(g'\lrpar{\dfrac{1}{2}}\)</span> for <span class="process-math">\(g(x) = \dfrac{2}{x}\text{.}\)</span></p></li>
+<li id="li-529"><p id="p-derived-li-529">Use either definition of the derivative to find <span class="process-math">\(g'(10)\)</span> for <span class="process-math">\(g(x) = \dfrac{2}{x}\text{.}\)</span></p></li>
+<li id="li-530"><p id="p-derived-li-530">Find the equation of the tangent line to <span class="process-math">\(g(x)\)</span> at <span class="process-math">\(x = \dfrac{1}{2}\)</span> and at <span class="process-math">\(x = 10\text{.}\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-121" id="solution-121"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-121"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-531"><p id="p-derived-li-531"><span class="process-math">\(\displaystyle g'(2) = -\dfrac{1}{2}\)</span></p></li>
+<li id="li-532"><p id="p-derived-li-532"><span class="process-math">\(\displaystyle g'\lrpar{\dfrac{1}{2}} = -8\)</span></p></li>
+<li id="li-533"><p id="p-derived-li-533"><span class="process-math">\(\displaystyle g'(10) = -\dfrac{1}{50}\)</span></p></li>
+<li id="li-534"><p id="p-derived-li-534"><span class="process-math">\(\displaystyle y=-\dfrac{1}{50}x + \dfrac{2}{5}\)</span></p></li>
+</ol></div></div>
+</div></article><article class="question example-like" id="question-13"><h4 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">2.1.17</span><span class="period">.</span>
+</h4>Do these slopes make sense given the graph of <span class="process-math">\(g(x)\text{?}\)</span>  Make a conjecture about the slopes as <span class="process-math">\(x\)</span> gets arbitrarily large (as <span class="process-math">\(x\to \infty\)</span>), and as <span class="process-math">\(x\to 0^+\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-122" id="solution-122"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-122"><div class="solution solution-like">As <span class="process-math">\(x\to \infty\text{,}\)</span> the slopes go to 0; as <span class="process-math">\(x\to 0^+\text{,}\)</span> the slopes go to <span class="process-math">\(\infty\text{.}\)</span>
+</div></div>
+</div></article><article class="example example-like" id="example-111"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.18</span><span class="period">.</span>
+</h4>Find the derivative of the function <span class="process-math">\(f(x) = x^2-6x+1\)</span> at the input <span class="process-math">\(x = a\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-123" id="solution-123"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-123"><div class="solution solution-like"><span class="process-math">\(f'(a) = 2a-6\)</span></div></div>
+</div></article><article class="example example-like" id="example-112"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.19</span><span class="period">.</span>
+</h4>Find the equation of the tangent line to the parabola <span class="process-math">\(y = x^2 + 4x\)</span> at the point <span class="process-math">\((-1,-3)\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-124" id="solution-124"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-124"><div class="solution solution-like"><span class="process-math">\(y=2x-1\)</span></div></div>
+</div></article><article class="example example-like" id="example-113"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.20</span><span class="period">.</span>
+</h4>Find an equation of the tangent line to the graph of <span class="process-math">\(y = h(x)\)</span> at <span class="process-math">\(x = 5\)</span> if <span class="process-math">\(h(5) = -3\)</span> and <span class="process-math">\(h'(5) = 4\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-125" id="solution-125"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-125"><div class="solution solution-like"><span class="process-math">\(y=4x-23\)</span></div></div>
+</div></article><article class="example example-like" id="example-114"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.21</span><span class="period">.</span>
+</h4>If <span class="process-math">\(\ds f'(a) = \lim_{h\to 0} \dfrac{\sqrt{16 + h} - 4}{h}\)</span> represents the derivative of the function <span class="process-math">\(f(x)\)</span> at <span class="process-math">\(x = a\text{,}\)</span> what is <span class="process-math">\(f(x)\)</span> and what is <span class="process-math">\(a\text{?}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-126" id="solution-126"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-126"><div class="solution solution-like">
+<span class="process-math">\(f(x) = \sqrt{x}\text{,}\)</span> and <span class="process-math">\(a=16\)</span>
+</div></div>
+</div></article><section class="subsubsection" id="section-21-rates"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">2.1.3.1</span> <span class="title">Rates of Change</span>
+</h4>
+<p id="p-118">If we use the function <span class="process-math">\(y = f(x)\text{,}\)</span> then the derivative tells us the rate of change of the <em class="emphasis">output</em> <span class="process-math">\(y\)</span> with respect to the <em class="emphasis">input</em> <span class="process-math">\(x\text{.}\)</span>  Another way of writing this is</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\text{instantaneous ROC } = \lim_{\Delta x\to 0} \dfrac{\Delta y}{\Delta x} = \lim_{x_2\to x_1}\dfrac{f(x_2)-f(x_1)}{x_2-x_1}
+\end{equation*}
+</div>
+<article class="example example-like" id="example-115"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.22</span><span class="period">.</span>
+</h5>The function <span class="process-math">\(C\)</span> gives the number of bushels of corn produced on a tract of farmland that is treated with <span class="process-math">\(f\)</span> pounds of nitrogen per acre. <ol class="lower-alpha">
+<li id="li-535"><p id="p-derived-li-535">Is it possible for <span class="process-math">\(C(90)\)</span> to be negative?  Why or why not?</p></li>
+<li id="li-536"><p id="p-derived-li-536">What are the units on <span class="process-math">\(C'(90)\text{?}\)</span></p></li>
+<li id="li-537"><p id="p-derived-li-537">Is it possible for <span class="process-math">\(C'(90)\)</span> to be negative?  Why or why not?</p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-127" id="solution-127"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-127"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-538"><p id="p-derived-li-538">No- you can't have negative bushels of corn</p></li>
+<li id="li-539"><p id="p-derived-li-539">bushels of corn per pound of nitrogen per acre</p></li>
+<li id="li-540"><p id="p-derived-li-540">Yes- this would mean that production is decreasing, so corn is produced at a slower rate</p></li>
+</ol></div></div>
+</div></article><article class="example example-like" id="example-116"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.23</span><span class="period">.</span>
+</h5>The function <span class="process-math">\(p\)</span> gives the number of miles from an airport that a plane has flown after <span class="process-math">\(t\)</span> hours. <ol class="lower-alpha">
+<li id="li-541"><p id="p-derived-li-541">What are the units of <span class="process-math">\(p'(1.5)\text{?}\)</span></p></li>
+<li id="li-542"><p id="p-derived-li-542">What is the common word used for <span class="process-math">\(p'(1.5)\text{?}\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-128" id="solution-128"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-128"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-543"><p id="p-derived-li-543">miles per hour</p></li>
+<li id="li-544"><p id="p-derived-li-544">speed/velocity</p></li>
+</ol></div></div>
+</div></article><article class="example example-like" id="example-117"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.24</span><span class="period">.</span>
+</h5>The cost of producing <span class="process-math">\(x\)</span> ounces of gold from a new gold mine is <span class="process-math">\(C=f(x)\)</span> dollars. <ol class="lower-alpha">
+<li id="li-545"><p id="p-derived-li-545">What is the meaning of the derivative <span class="process-math">\(f'(x)\text{?}\)</span> What are its units?</p></li>
+<li id="li-546"><p id="p-derived-li-546">Interpret the statement <span class="process-math">\(f'(800) = 17\text{.}\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-129" id="solution-129"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-129"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-547"><p id="p-derived-li-547"><span class="process-math">\(f'(x)\)</span> gives the rate of change of production cost; its units are dollars per ounce.</p></li>
+<li id="li-548"><p id="p-derived-li-548">When 800 ounces of gold are mined, the cost is increasing by 17 dollars per ounce.</p></li>
+</ol></div></div>
+</div></article></section></section><section class="subsection" id="section-21-afterclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.1.4</span> <span class="title">After Class Activities</span>
+</h3>
+<article class="example example-like" id="example-118"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.25</span><span class="period">.</span>
+</h4>The tangent line to <span class="process-math">\(y = f(x)\)</span> at <span class="process-math">\((3,4)\)</span> passes through the point <span class="process-math">\((0,2)\text{.}\)</span>  Find <span class="process-math">\(f(3)\)</span> and <span class="process-math">\(f'(3)\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-130" id="solution-130"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-130"><div class="solution solution-like">
+<span class="process-math">\(f(3)=4\)</span> and <span class="process-math">\(f'(3) = \dfrac{2}{3}\)</span>
+</div></div>
+</div></article><article class="example example-like" id="example-119"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.26</span><span class="period">.</span>
+</h4>Sketch the graph of a function <span class="process-math">\(f\)</span> for which <span class="process-math">\(g(0) = g(2) = g(4) = 0\text{,}\)</span> <span class="process-math">\(g'(1) = g'(3) = 0\text{,}\)</span> <span class="process-math">\(g'(0) = g'(4) = 1\text{,}\)</span> <span class="process-math">\(g'(2) = -1\text{,}\)</span> <span class="process-math">\(\ds \lim_{x\to 5^-} g(x) = \infty\text{,}\)</span> and <span class="process-math">\(\ds \lim_{x\to -1^+} g(x) = -\infty\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-131" id="solution-131"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-131"><div class="solution solution-like">Answers vary</div></div>
+</div></article><article class="example example-like" id="example-120"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.27</span><span class="period">.</span>
+</h4>
+<span class="process-math">\(\ds \lim_{\theta\to \pi/6} \dfrac{\sin\theta - \frac{1}{2}}{\theta - \pi/6}\)</span> represents the derivative of a function <span class="process-math">\(f(\theta)\)</span> at some value of <span class="process-math">\(\theta = a \text{.}\)</span>  What is <span class="process-math">\(f(\theta)\)</span> and what is <span class="process-math">\(a\text{?}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-132" id="solution-132"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-132"><div class="solution solution-like">
+<span class="process-math">\(f(\theta) = \sin\theta\)</span> and <span class="process-math">\(a=\dfrac{\pi}{6}\)</span>
+</div></div>
+</div></article></section></section></div></main>
+</div>
+</body>
+</html>

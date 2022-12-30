@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-07-17T17:31:47-05:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Math 1914 - Differential &amp; Integral Calculus I Antiderivatives</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Math 1914 - Differential &amp; Integral Calculus">
+<meta property="book:author" content="Cory Wilson">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(      \newcommand{\ds}{\displaystyle}
+\newcommand{\lrpar}[1]{\left(#1\right)}
+\newcommand{\lrbrace}[1]{\left\lbrace #1 \right\rbrace}
+\newcommand{\inv}[1]{#1^{-1}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\dc}{^\circ}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="math1914.html"><span class="title">Math 1914 - Differential &amp; Integral Calculus</span></a></h1>
+<p class="byline">Cory Wilson</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-38.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch3.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="ch4.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-38.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch3.html" title="Up">Up</a><a class="next-button button toolbar-item" href="ch4.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul><li><a href="colophon.html" data-scroll="colophon" class="internal">Colophon</a></li></ul>
+</li>
+<li class="link">
+<a href="ch1.html" data-scroll="ch1" class="internal"><span class="codenumber">1</span> <span class="title">Functions and Limits</span></a><ul>
+<li><a href="section-11.html" data-scroll="section-11" class="internal">Four Ways to Represent a Function</a></li>
+<li><a href="section-12.html" data-scroll="section-12" class="internal">Mathematical Models: A Catalog of Essential Functions</a></li>
+<li><a href="section-13.html" data-scroll="section-13" class="internal">New Functions from Old Functions</a></li>
+<li><a href="section-14.html" data-scroll="section-14" class="internal">The Tangent and Velocity Problems</a></li>
+<li><a href="section-15.html" data-scroll="section-15" class="internal">The Limit of a Function</a></li>
+<li><a href="section-16.html" data-scroll="section-16" class="internal">Calculating Limits Using Limit Laws</a></li>
+<li><a href="section-17.html" data-scroll="section-17" class="internal">(X) The Precise Definition of a Limit</a></li>
+<li><a href="section-18.html" data-scroll="section-18" class="internal">Continuity</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch2.html" data-scroll="ch2" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives</span></a><ul>
+<li><a href="section-21.html" data-scroll="section-21" class="internal">Derivatives and Rates of Change</a></li>
+<li><a href="section-22.html" data-scroll="section-22" class="internal">The Derivative as a Function</a></li>
+<li><a href="section-23.html" data-scroll="section-23" class="internal">Differentiation Formulas</a></li>
+<li><a href="section-24.html" data-scroll="section-24" class="internal">Derivatives of Trigonometric Functions</a></li>
+<li><a href="section-25.html" data-scroll="section-25" class="internal">The Chain Rule</a></li>
+<li><a href="section-26.html" data-scroll="section-26" class="internal">Implicit Differentiation</a></li>
+<li><a href="section-27.html" data-scroll="section-27" class="internal">(X) Rates of Changes in the Natural and Social Sciences</a></li>
+<li><a href="section-28.html" data-scroll="section-28" class="internal">Related Rates</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch3.html" data-scroll="ch3" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Differentiation</span></a><ul>
+<li><a href="section-31.html" data-scroll="section-31" class="internal">Maximum &amp; Minimum Values</a></li>
+<li><a href="section-32.html" data-scroll="section-32" class="internal">(X) The Mean Value Theorem</a></li>
+<li><a href="section-33.html" data-scroll="section-33" class="internal">How Derivatives Affect the Shape of a Graph</a></li>
+<li><a href="section-34.html" data-scroll="section-34" class="internal">Limits at Infinity &amp; Horizontal Asymptotes</a></li>
+<li><a href="section-35.html" data-scroll="section-35" class="internal">Summary of Curve Sketching</a></li>
+<li><a href="section-36.html" data-scroll="section-36" class="internal">(X) Graphing with Calculus and Calculators</a></li>
+<li><a href="section-37.html" data-scroll="section-37" class="internal">Optimization</a></li>
+<li><a href="section-38.html" data-scroll="section-38" class="internal">(X) Newton's Method</a></li>
+<li><a href="section-39.html" data-scroll="section-39" class="active">Antiderivatives</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch4.html" data-scroll="ch4" class="internal"><span class="codenumber">4</span> <span class="title">Integrals</span></a><ul>
+<li><a href="section-41.html" data-scroll="section-41" class="internal">Areas &amp; Distance</a></li>
+<li><a href="section-42.html" data-scroll="section-42" class="internal">The Definite Integral</a></li>
+<li><a href="section-43.html" data-scroll="section-43" class="internal">The Fundamental Theorem of Calculus</a></li>
+<li><a href="section-44.html" data-scroll="section-44" class="internal">Indefinite Integrals &amp; the Net Change Theorem</a></li>
+<li><a href="section-45.html" data-scroll="section-45" class="internal">The Substitution Rule</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch5.html" data-scroll="ch5" class="internal"><span class="codenumber">5</span> <span class="title">Applications of Integration</span></a><ul>
+<li><a href="section-51.html" data-scroll="section-51" class="internal">Areas Between Curves</a></li>
+<li><a href="section-52.html" data-scroll="section-52" class="internal">Volumes</a></li>
+<li><a href="section-53.html" data-scroll="section-53" class="internal">Volumes by Cylindrical Shells</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-39"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.9</span> <span class="title">Antiderivatives</span>
+</h2>
+<article class="objectives goal-like" id="objectives-20"><h3 class="heading"><span class="type">Objectives</span></h3>
+<ul class="disc">
+<li id="li-795"><p id="p-derived-li-795">Explain the definition of an antiderivative and distinguish between particular and general antiderivatives</p></li>
+<li id="li-796"><p id="p-derived-li-796">Apply antiderivatives formulas to find antiderivatives and recover position functions, possibly by using algebraic/trigonometric manipulation</p></li>
+</ul></article><section class="subsection" id="section-39-beforeclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.9.1</span> <span class="title">Before Class</span>
+</h3>
+<figure class="figure figure-like" id="figure-29"><a class="external" href="https://mymedia.ou.edu/media/3.9-1/1_47ve5csu" target="_blank"><code class="code-inline tex2jax_ignore">https://mymedia.ou.edu/media/3.9-1/1_47ve5csu</code></a><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">29<span class="period">.</span></span><span class="space"> </span>Pre-Class Video 1</figcaption></figure><section class="subsubsection" id="section-39-derivatives"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">3.9.1.1</span> <span class="title">Derivatives</span>
+</h4>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b2 r2 l2 t2 lines">Function</td>
+<td class="c m b2 r2 l0 t2 lines">Derivative</td>
+<td class="c m b2 r2 l0 t2 lines">Function</td>
+<td class="c m b2 r2 l0 t2 lines">Derivative</td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(c\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(x^n\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(nx^{n-1}\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(\sin x\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\cos x\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\cos x\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(-\sin x\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(\tan x\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\sec^2 x\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\cot x\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(-\csc^2 x\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(\sec x\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\sec x\tan x\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\csc x\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(-\csc x\cot x\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(c\cdot f(x)\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(c\cdot f'(x)\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(f(x)\pm g(x)\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(f'(x)\pm g'(x)\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(f(x)\cdot g(x)\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(f'(x)g(x) + f(x)g'(x)\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\dfrac{f(x)}{g(x)}\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\dfrac{f'(x)g(x)-f(x)g'(x)}{[g(x)]^2}\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(f(g(x))\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(f'(g(x))\cdot g'(x)\)</span></td>
+</tr>
+</table></div></section><section class="subsubsection" id="section-39-antiderivative"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">3.9.1.2</span> <span class="title">The Antiderivative</span>
+</h4>
+<article class="definition definition-like" id="definition-31"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.9.1</span><span class="period">.</span><span class="space"> </span><span class="title">Antiderivative.</span>
+</h5> A function <span class="process-math">\(F\)</span> is called an <dfn class="terminology">antiderivative</dfn> of <span class="process-math">\(f\)</span> on an interval <span class="process-math">\(I\)</span> if <span class="process-math">\(F'(x) = f(x)\)</span> for all <span class="process-math">\(x\in I\text{.}\)</span></article><article class="example example-like" id="example-365"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.9.2</span><span class="period">.</span>
+</h5>Find five antiderivatives for the function <span class="process-math">\(f(x) = 2x\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-366" id="solution-366"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-366"><div class="solution solution-like">Answers vary</div></div>
+</div></article><article class="question example-like" id="question-24"><h5 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">3.9.3</span><span class="period">.</span>
+</h5>How might we write the general antiderivative <span class="process-math">\(F(x)\)</span> for <span class="process-math">\(f(x) = 2x\text{?}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-367" id="solution-367"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-367"><div class="solution solution-like"><span class="process-math">\(F(x) = x^2 + C\)</span></div></div>
+</div></article><article class="example example-like" id="example-366"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.9.4</span><span class="period">.</span>
+</h5>Find the most general antiderivative for the functions <span class="process-math">\(f(x) = \cos x\text{,}\)</span> <span class="process-math">\(g(x) = x^n\)</span> (<span class="process-math">\(n\geq 0\)</span>), and <span class="process-math">\(h(x) = x^{-2}\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-368" id="solution-368"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-368"><div class="solution solution-like"><span class="process-math">\(F(x) = \sin x + C, G(x) = \dfrac{x^{n+1}}{n+1}+C, H(x) = -x^{-1} + C\)</span></div></div>
+</div></article><p id="p-175">A table of useful antiderivatives is given below: <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b2 r2 l2 t2 lines">Function</td>
+<td class="c m b2 r2 l0 t2 lines">Antiderivative</td>
+<td class="c m b2 r2 l0 t2 lines">Function</td>
+<td class="c m b2 r2 l0 t2 lines">Antiderivative</td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(C\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(k\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(kx + C\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(x^n\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\dfrac{x^{n+1}}{n+1} + C\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\sin x\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(-\cos x + C\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(\cos x\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\sin x + C\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\sec^2 x\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\tan x + C\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(\csc^2 x\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(-\cot x + C\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\sec x\tan x\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\sec x + C\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(\cot x \csc x\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(-\csc x\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(c\cdot f(x)\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(c\cdot F(x)\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(f(x)\pm g(x)\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(F(x) \pm G(x)\)</span></td>
+</tr>
+</table></div></p>
+<article class="example example-like" id="example-367"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.9.5</span><span class="period">.</span>
+</h5>
+<span class="process-math">\(g'(x) = 3\sin x - \dfrac{9x^4-\sqrt[3]{x}}{x^2}\text{.}\)</span>  Find <span class="process-math">\(g(x)\text{,}\)</span> the most general antiderivative of <span class="process-math">\(g\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-369" id="solution-369"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-369"><div class="solution solution-like"><span class="process-math">\(g(x) = -3\cos x - 3x^3 - \dfrac{3}{2}x^{-2/3} + C\)</span></div></div>
+</div></article><article class="example example-like" id="example-368"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.9.6</span><span class="period">.</span>
+</h5>Find <span class="process-math">\(f\)</span> if <span class="process-math">\(f'(x) = x\sqrt{x}\)</span> and <span class="process-math">\(f(1) = 5\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-370" id="solution-370"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-370"><div class="solution solution-like"><span class="process-math">\(f(x) = \dfrac{2}{5}x^{5/2} + \dfrac{23}{5}\)</span></div></div>
+</div></article></section></section><section class="subsection" id="section-39-preclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.9.2</span> <span class="title">Pre-Class Activities</span>
+</h3>
+<article class="example example-like" id="example-369"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.9.7</span><span class="period">.</span>
+</h4>Find the most general antiderivative of the following functions; check your answer by differentiation. <ol class="lower-alpha">
+<li id="li-797"><p id="p-derived-li-797"><span class="process-math">\(\displaystyle f(x) = 5x + 3\)</span></p></li>
+<li id="li-798"><p id="p-derived-li-798"><span class="process-math">\(\displaystyle f(x) = x(12x + 8)\)</span></p></li>
+<li id="li-799"><p id="p-derived-li-799"><span class="process-math">\(\displaystyle g(x) = \sqrt{5}\)</span></p></li>
+<li id="li-800"><p id="p-derived-li-800"><span class="process-math">\(\displaystyle h(x) = -3\sqrt{x} - 8\sqrt[3]{x}\)</span></p></li>
+<li id="li-801"><p id="p-derived-li-801"><span class="process-math">\(\displaystyle k(x) = \dfrac{6}{x^7}\)</span></p></li>
+<li id="li-802"><p id="p-derived-li-802"><span class="process-math">\(\displaystyle f(t) = \dfrac{5-4t^3 + 2t^6}{t^6}\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-371" id="solution-371"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-371"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-803"><p id="p-derived-li-803"><span class="process-math">\(\displaystyle F(x) = \dfrac{5}{2}x^2 + 3x + C\)</span></p></li>
+<li id="li-804"><p id="p-derived-li-804"><span class="process-math">\(\displaystyle F(x) = 4x^3 + 4x^2 + C\)</span></p></li>
+<li id="li-805"><p id="p-derived-li-805"><span class="process-math">\(\displaystyle G(x) = x\sqrt{5}+ C\)</span></p></li>
+<li id="li-806"><p id="p-derived-li-806"><span class="process-math">\(\displaystyle H(x) = -2x^{3/2} - 6x^{4/3} + C\)</span></p></li>
+<li id="li-807"><p id="p-derived-li-807"><span class="process-math">\(\displaystyle k(x) = -x^{-6} + C\)</span></p></li>
+<li id="li-808"><p id="p-derived-li-808"><span class="process-math">\(\displaystyle F(t) = -t^{-5} + 2t^{-2} + 2t + C\)</span></p></li>
+</ol></div></div>
+</div></article></section><section class="subsection" id="section-39-inclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.9.3</span> <span class="title">In Class</span>
+</h3>
+<article class="assemblage assemblage-like" id="assemblage-24"><h4 class="heading"><span class="title">General Antiderivative vs. Specific Antiderivative.</span></h4>
+<p id="p-176">A <dfn class="terminology">general antiderivative</dfn> takes the form <span class="process-math">\(F(x) + C\text{,}\)</span> while a <dfn class="terminology">specific antiderivative</dfn> takes the form <span class="process-math">\(F(x)\text{.}\)</span>  For a specific antiderivative, we must have information about the value(s) of the original function.</p></article><article class="example example-like" id="example-370"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.9.8</span><span class="period">.</span>
+</h4>Find <span class="process-math">\(f\)</span> if <span class="process-math">\(f''(x) = 12x^2+6x-4\text{,}\)</span> <span class="process-math">\(f(0) = 4\text{,}\)</span> and <span class="process-math">\(f(1) = 2\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-372" id="solution-372"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-372"><div class="solution solution-like"><span class="process-math">\(f(x) = x^4 + x^3-2x^2-2x+4\)</span></div></div>
+</div></article><article class="example example-like" id="example-371"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.9.9</span><span class="period">.</span>
+</h4>A particle moves in a straight line, and its acceleration is given by <span class="process-math">\(a(t) = 3t+2\text{.}\)</span>  Its initial velocity is <span class="process-math">\(v(0) = -3\)</span> cm/s, and its initial displacement is <span class="process-math">\(s(0) = 5\)</span> cm.  Find the position function <span class="process-math">\(s(t)\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-373" id="solution-373"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-373"><div class="solution solution-like"><span class="process-math">\(s(t) = \dfrac{1}{2}t^3 + t^2-3t+5\)</span></div></div>
+</div></article><article class="example example-like" id="example-372"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.9.10</span><span class="period">.</span>
+</h4>A ball is thrown upward with speed 24 ft/s from the edge of a cliff which is 432 ft above the ground.  Find its height above the ground <span class="process-math">\(t\)</span> seconds later.  When does it reach its maximum height?  When does it hit the ground?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-374" id="solution-374"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-374"><div class="solution solution-like">The position function is <span class="process-math">\(s(t) = -16t^2 + 24t + 432\text{.}\)</span>  The ball reaches maximum height <span class="process-math">\(\dfrac{3}{4}\)</span> seconds after being thrown, and hits the ground 6 seconds after being thrown.</div></div>
+</div></article><article class="example example-like" id="example-373"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.9.11</span><span class="period">.</span>
+</h4>Find the most general antiderivative of <span class="process-math">\(f(x) = (x-5)^2\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-375" id="solution-375"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-375"><div class="solution solution-like"><span class="process-math">\(F(x) = \dfrac{1}{3}x^3-5x^2+25x+C\)</span></div></div>
+</div></article><article class="example example-like" id="example-374"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.9.12</span><span class="period">.</span>
+</h4>Find the most general antiderivative of <span class="process-math">\(f(x) = \pi^2\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-376" id="solution-376"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-376"><div class="solution solution-like"><span class="process-math">\(F(x) = \pi^2x + C\)</span></div></div>
+</div></article><article class="example example-like" id="example-375"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.9.13</span><span class="period">.</span>
+</h4>Find the most general antiderivative of <span class="process-math">\(f(t) = 3\cos t - 4\sin t\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-377" id="solution-377"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-377"><div class="solution solution-like"><span class="process-math">\(F(t) = 3\sin t + 4\cos t + C\)</span></div></div>
+</div></article><article class="example example-like" id="example-376"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.9.14</span><span class="period">.</span>
+</h4>Find the most general antiderivative of <span class="process-math">\(f(x) = 8\sqrt{x}-\sec x\tan x\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-378" id="solution-378"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-378"><div class="solution solution-like"><span class="process-math">\(F(x) = \dfrac{16}{3}x^{3/2} - \sec x + C\)</span></div></div>
+</div></article><article class="example example-like" id="example-377"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.9.15</span><span class="period">.</span>
+</h4>Find <span class="process-math">\(f\text{,}\)</span> if <span class="process-math">\(f''(x) = \sin x + \cos x\text{,}\)</span> <span class="process-math">\(f(0) = 3\text{,}\)</span> and <span class="process-math">\(f'(0)= 4\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-379" id="solution-379"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-379"><div class="solution solution-like"><span class="process-math">\(f(x) = -\sin x - \cos x + 5x + 4\)</span></div></div>
+</div></article><article class="example example-like" id="example-378"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.9.16</span><span class="period">.</span>
+</h4>The graph of <span class="process-math">\(f\)</span> passes through the point <span class="process-math">\((2,5)\text{,}\)</span> and the slope of its tangent line at <span class="process-math">\((x,f(x))\)</span> is <span class="process-math">\(3-4x\text{.}\)</span>  Find <span class="process-math">\(f(1)\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-380" id="solution-380"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-380"><div class="solution solution-like"><span class="process-math">\(f(1) = 8\)</span></div></div>
+</div></article></section><section class="subsection" id="section-39-afterclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.9.4</span> <span class="title">After Class Activities</span>
+</h3>
+<article class="example example-like" id="example-379"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.9.17</span><span class="period">.</span>
+</h4>Find <span class="process-math">\(g\text{,}\)</span> if <span class="process-math">\(g'''(t) = 12+\cos t\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-381" id="solution-381"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-381"><div class="solution solution-like"><span class="process-math">\(g(t) = 2t^3-\sin t + Ct^2 + Dt + E\)</span></div></div>
+</div></article><article class="example example-like" id="example-380"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.9.18</span><span class="period">.</span>
+</h4>A car is traveling at 60 mi/h when the brakes are fully applied, producing a constant deceleration of 20 ft/s<span class="process-math">\(^2\text{.}\)</span>  What is the distance traveled before the car comes to a stop?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-382" id="solution-382"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-382"><div class="solution solution-like">90 feet</div></div>
+</div></article><article class="example example-like" id="example-381"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.9.19</span><span class="period">.</span>
+</h4>The graph of a function is show below.  Make a rough sketch of an antiderivative <span class="process-math">\(F\text{,}\)</span> if <span class="process-math">\(F(0) = 1\text{.}\)</span> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/39fig1.svg" class="contained"></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-383" id="solution-383"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-383"><div class="solution solution-like">Answers vary</div></div>
+</div></article></section></section></div></main>
+</div>
+</body>
+</html>

@@ -1,0 +1,486 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-53">
+			<title>Volumes by Cylindrical Shells</title>
+			
+				<objectives>
+					<ul>
+						<li>
+							Determine whether the Shell Method, Disk Method, or Washer Method is most appropriate to compute the volume of a solid of revolution, and compute the volume by integrating with respect to <m>x</m> or <m>y</m>
+						</li>
+						
+					</ul>
+				</objectives>
+			<subsection xml:id="section-53-beforeclass">
+				<title>Before Class</title>
+				
+				<figure>
+					<caption>Pre-Class Video 1</caption>
+					<url href = "https://mymedia.ou.edu/media/5.3-1/1_fyryg6z8"/>
+				</figure>
+
+				
+				<subsubsection xml:id="section-53-slicing-cylinders">
+					<title>Slicing with Cylinders</title>
+					<example>
+						<statement>
+							Let <m>f(x) = x-x^2</m>.
+							<ol label="a">
+								<li>
+									Sketch the region bounded by <m>f(x)</m> and the <m>x-</m>axis.
+								</li>
+								<li>
+									Set up (but do not solve) an integral to find the volume of the solid created by rotating the region about the line <m>y = 0</m>.  Why can we use the disk method?
+								</li>
+								<li>
+									Are there problems if we instead rotate about the line <m>x = 0</m>?  Explain with pictures, words, etc.
+								</li>
+							</ol>
+						</statement>
+						<solution>
+							<p>
+								<ol label="a">
+									<li>
+										<image>
+											<description>
+												This is the sketch of the region bounded the curve <m>f(x) = x-x^2</m> and the <m>x-</m> axis.
+											</description>
+											<latex-image>
+											<![CDATA[
+												\begin{tikzpicture}
+													\begin{axis}[
+														axis x line = middle,
+														axis y line = middle,
+														every axis y label/.style={at={(ticklabel cs:1.1)}},
+														y label style={at={(axis description cs:0,1.1)},anchor=north},
+														ylabel = {$y$},
+														every axis x label/.style= {at ={(ticklabel cs:1)}},
+														x label style={at={(axis description cs:1.1,0)},anchor=east},
+														xlabel = {$x$},
+														xmin=0,xmax=1.5,
+														ymax = .5
+													]
+													\addplot[thick, domain=0:1,samples=100, name path = a]{x-x^2};
+													\addplot[draw=none, domain = 0:1, name path = b] {0};
+													\addplot[gray, draw=none, fill opacity = 0.5] fill between[of=a and b, soft clip = {domain=0:1}];
+													\end{axis}
+
+												\end{tikzpicture}
+											]]>
+											</latex-image>
+										</image>
+									</li>
+									<li>
+										The disk method integral is given by <m>\ds \int_0^1 \pi (x-x^2)^2\, dx</m>.  We may use the disk method because there is no gap between the axis of rotation and the region.
+									</li>
+									<li>
+										Yes- in an approximating washer, there is no function to create the radius; each input has multiple outputs.
+									</li>
+								</ol>
+							</p>
+						</solution>
+					</example>
+					
+					<example>
+						<statement>
+							Again consider <m>f(x) = x-x^2</m>.
+							<ol label="a">
+								<li>
+									Draw four midpoint rectangles for the area of the region bounded by <m>f(x)</m> and the <m>x-</m>axis.  Be sure to label things appropriately!
+								</li>
+									
+								<li>
+									Sketch what happens to the rectangles when rotated about the line <m>x = 0</m>.
+								</li>
+									
+								<li>
+									How can we find the surface area of the shape from part (b)?  
+								</li>
+									
+								<li>
+									Use your answers from parts (b) and (c) to approximate the volume of the solid.
+								</li>
+									
+								<li>
+									Write an expression that uses <q>infinitely many</q> rectangles to approximate the the volume of the solid.
+								</li>
+									
+								<li>
+									Convert your answer from part (d) into an integral expression, and evaluate it.
+								</li>
+							</ol>
+						</statement>
+						<solution>
+							<p>
+								<ol label="a">
+									<li>
+										The sketch is tough to digitally reproduce, so it is left to the reader.
+									</li>
+										
+									<li>
+										The sketch is tough to digitally reproduce, so it is left to the reader.
+									</li>
+										
+									<li>
+										Since the surface area of a cylinder is <m>SA = 2\pi rh</m>, we can use the information from any singular cylinder to develop the expression <m>SA = 2\pi x_i f(x_i)</m>.
+									</li>
+										
+									<li>
+										We'll use the width of the approximating rectangle as the thickness of the shell, so that our cylindrical shell's volume is given by <m>V = 2\pi x_i f(x_i)\Delta x</m>.  So, the volume of the solid is approximated by
+										<me>
+											\ds V\approx \sum_{i=1}^n 2\pi x_i(x_i-x_i^2)\Delta x
+										</me>
+										
+									</li>
+										
+									<li>
+										<me>
+											\ds V = \lim_{n\to \infty}\sum_{i=1}^n 2\pi x_i(x_i-x_i^2)\Delta x
+										</me>
+										
+									</li>
+										
+									<li>
+										<me>
+											\ds V = \int_0^1 2\pi x(x-x^2)\, dx = \dfrac{\pi}{6}
+										</me>
+										
+									</li>
+								</ol>
+							</p>
+						</solution>
+					</example>
+				</subsubsection>
+				<subsubsection xml:id="section-53-shell-method">
+					<title>The Shell Method</title>
+					
+					<assemblage>
+						<title>Method of Cylindrical Shells</title>
+						<p>
+							Let <m>f(x)</m> be a continuous function on the interval <m>[a,b]</m>.  Then, the volume of the solid created by rotating the region bounded by <m>f(x)</m> and the <m>x-</m>axis about the line <m>x = 0</m> is given by
+							<me>
+								\int_a^b 2\pi r(x)f(x)\, dx
+							</me>
+							where <m>r(x)</m> is the radius function.
+						</p>
+					</assemblage>
+					
+					<example>
+						<statement>
+							Consider the region bounded by the curve <m>y = 2\sqrt{x}</m>, the <m>x-</m>axis, and the line <m>x = 4</m>.  
+							<ol label="a">
+								<li>
+									Sketch and label the region.
+								</li>
+									
+								<li>
+									Sketch and label a typical approximating cylinder, when rotated about <m>x = 0</m>.
+								</li>
+									
+								<li>
+									Use the formula for the cylinder to set up an integral for the volume of the resulting solid, then evaluate it.
+								</li>
+							</ol>
+						</statement>
+						<solution>
+							<p>
+								<ol label="a">
+									<li>
+										<image>
+											<description>
+												This is the sketch of the region bounded by the curve <m>y = 2\sqrt{x}</m> and the <m>x-</m>axis between <m>x=0</m> and <m>x=4</m>.
+											</description>
+											<latex-image>
+											<![CDATA[
+												\begin{tikzpicture}
+													\begin{axis}[
+														axis x line = middle,
+														axis y line = middle,
+														every axis y label/.style={at={(ticklabel cs:1.1)}},
+														y label style={at={(axis description cs:0,1.1)},anchor=north},
+														ylabel = {$y$},
+														every axis x label/.style= {at ={(ticklabel cs:1)}},
+														x label style={at={(axis description cs:1.1,0)},anchor=east},
+														xlabel = {$x$},
+														xmin=0,xmax=5
+													]
+													\addplot[thick, domain=0:4,samples=100, name path = a]{2*sqrt(x)};
+													\addplot[draw=none, domain = 0:4, name path = b] {0};
+													\addplot[gray, draw=none, fill opacity = 0.5] fill between[of=a and b, soft clip = {domain=0:4}];
+													\coordinate (p1) at (4,4);
+													\coordinate (p2) at (4,0);
+													\end{axis}
+													\draw[thick] (p1)--(p2);
+												\end{tikzpicture}
+											]]>
+											</latex-image>
+										</image>
+									</li>
+										
+									<li>
+										<image>
+											<description>
+												This is the sketch of the typical approximating cylindrical shell when rotating the region contained between <m>y = 2\sqrt{x}</m> and <m>x=4</m> about <m>x=0</m>
+											</description>
+											<latex-image>
+											<![CDATA[
+												\begin{tikzpicture}
+													\draw (0,0) ellipse (80pt and 40pt);
+													\draw (0,-5) ellipse (80pt and 40pt);
+													\draw (80pt,0)--(80pt,-5);
+													\draw (-80pt,0)--(-80pt,-5);
+													\draw (0,0) ellipse (60pt and 30pt);
+													\draw[dashed] (0,-5) ellipse (60pt and 30pt);
+													\draw[dashed] (60pt,0)--(60pt,-5);
+													\draw[dashed] (-60pt,0)--(-60pt,-5);
+													\draw[thick] (0,0)--(70pt,0) node[midway, below] {$r = x_i$};
+													\fill (0,0) circle (0.1);
+													\draw[densely dotted] (0,0)--(0,-5) node[midway, right] {$h=2\sqrt{x_i}$};
+													\draw (0,0)--(0,60pt) node[above] {$x=0$};
+												\end{tikzpicture}
+											]]>
+											</latex-image>
+										</image>
+									</li>
+										
+									<li>
+										<m>V = \ds \int_0^4 2\pi x(2\sqrt{x})\, dx = \dfrac{256\pi}{5}</m>
+									</li>
+								</ol>
+							</p>
+						</solution>
+					</example>
+				</subsubsection>
+			</subsection>
+			<subsection xml:id="section-53-preclass">
+				<title>Pre-Class Activities</title>
+				
+				<example><statement>
+					If you were presented with a problem, how would you know whether to use the disk method, washer method, or shell method?  Examples 1 and 2 might be good places to get ideas.
+				</statement>
+				<solution>
+					<p>
+						Answers vary
+					</p>
+				</solution>
+				</example>
+					 
+					
+				<example><statement>
+					Find the volume of the solid obtained by rotating the region bouded by <m>y = 2x^2 - x^3</m> and <m>y = 0</m> about the <m>y-</m>axis.
+				</statement>
+				<solution>
+					<p>
+						<m>V =\dfrac{16\pi}{5}</m>
+					</p>
+				</solution>
+				</example>
+				
+			</subsection>
+			<subsection xml:id="section-53-inclass">
+				<title>In Class</title>
+				
+				<example><statement>
+					Use the shell method to find the volume of the solid generated by revolving the region bounded by the curves <m>xy = 1</m>, <m>x = 0</m>, <m>y = 1</m>, and <m>y = 3</m> about the <m>x-</m>axis.  Hint: Sketch the solid and its approximating cylinders.
+				</statement>
+				<solution>
+					<p>
+						<m>4\pi</m>
+					</p>
+				</solution>
+				</example>					
+					
+				<example><statement>
+					Find the volume of the solid created by rotating the region bounded by the curves <m>y = x^3</m>, <m>y = 0</m>, <m>x = 1</m>, and <m>x = 2</m> about the <m>y-</m>axis.  Be sure to label your diagram, if you choose to draw one.
+				</statement>
+				<solution>
+					<p>
+						<m>\dfrac{62\pi}{5}</m>
+					</p>
+				</solution>
+				</example>
+
+				<example><statement>
+					Find the volume of the solid created by rotating the first-quadrant region bounded by the curves <m>y = 4x-x^2</m>, and <m>y = x</m> about the <m>y-</m>axis.  Be sure to label your diagram, if you choose to draw one.
+				</statement>
+				<solution>
+					<p>
+						<m>\dfrac{27\pi}{2}</m>
+					</p>
+				</solution></example>
+	
+				<example><statement>
+					Find the volume of the solid created by rotating the region bounded by the curves <m>x = 2y^2</m>, <m>y\geq 0</m>, and <m>x=8</m> about <m>y = 2</m>.  Hint: Draw and label a diagram.  Remember that this is a function of <m>y</m>, not a function of <m>x</m>!
+				</statement>
+				<solution>
+					<p>
+						<m>\dfrac{80\pi}{3}</m>
+					</p>
+				</solution>
+				</example>
+	
+				<example><statement>
+					Find the volume of the solid created by rotating the region bounded by the curves <m>y = x^3</m>, <m>y = 8</m>, <m>x = 0</m> about <m>x = 2</m>.  Be sure to label your diagram, if you choose to draw one.
+				</statement>
+				<solution>
+					<p>
+						<m>\dfrac{144\pi}{5}</m>
+					</p>
+				</solution>
+				</example>
+			  
+			</subsection>
+			
+			<subsection xml:id="section-53-afterclass">
+				<title>After Class Activities</title>
+				
+				<example><statement>
+					Find the volume of the solid created by rotating the region bounded by the curves <m>x = 2y^2</m>, <m>x = y^2 + 1</m> about <m>y = -2</m>.
+				</statement>
+				<solution>
+					<p>
+						<m>\dfrac{16\pi}{3}</m>
+					</p>
+				</solution>
+				</example>
+					
+				<example><statement>
+					Sketch the region described in the volume integral below:
+						<me>V = \int_1^4 \dfrac{2\pi (y+2)}{y^2}\, dy</me>
+				</statement>
+				<solution>
+					<p>
+						<image>
+							<description>
+								This is the sketch of the region bounded by the curve <m>y = \dfrac{1}{x^2}</m> on the interval <m>x=0</m> to <m>x=4</m>, rotated about the line <m>y=-2</m>.
+							</description>
+							<latex-image>
+							<![CDATA[
+								\begin{tikzpicture}
+									\begin{axis}[
+										axis x line = middle,
+										axis y line = middle,
+										every axis y label/.style={at={(ticklabel cs:1.1)}},
+										y label style={at={(axis description cs:0,1.1)},anchor=north},
+										ylabel = {$y$},
+										every axis x label/.style= {at ={(ticklabel cs:1)}},
+										x label style={at={(axis description cs:1.1,.72)},anchor=east},
+										xlabel = {$x$},
+										xmin=0,xmax=5,
+										ymin = -2.5
+									]
+									\addplot[thick, domain=1:4,samples=100, name path = a]{1/x^2};
+									\addplot[draw=none, domain = 1:4, name path = b] {0};
+									\addplot[gray, draw=none, fill opacity = 0.5] fill between[of=a and b, soft clip = {domain=0:4}];
+									\coordinate (p1) at (1,1);
+									\coordinate (p3) at (1,0);
+									\coordinate (p2) at (4,.0625);
+									\coordinate (p4) at (4,0);
+									\addplot[densely dotted, domain = 0:4] {-2};
+									\coordinate (p5) at (4.5,-2);
+									\end{axis}
+									\draw[dashed] (p1)--(p3);
+									\draw[dashed] (p2)--(p4);
+									\node at (p5) {$y=-2$};
+								\end{tikzpicture}
+							]]>
+							</latex-image>
+						</image>
+					</p>
+				</solution>
+				</example>
+					 
+					
+				<example><statement>
+					The region bounded by the curves <m>y = -x^2 + 6x-8</m> and <m>y = 0</m> is rotated about the <m>y-</m>axis.
+						<ol label="a">
+							<li>
+								Sketch the region described above.
+							</li>
+								
+							<li>
+								Of our three methods, which one do you want to use?  Give a quick explanation why you chose that particular method.
+							</li>
+								
+							<li>
+								Compute the volume of the solid.
+							</li>	 
+						</ol>
+				</statement>
+				<solution>
+					<p>
+						<ol label="a">
+							<li>
+								<image>
+									<description>
+										This is the sketch of the region bounded by the curve <m>y = \dfrac{1}{x^2}</m> on the interval <m>x=0</m> to <m>x=4</m>, rotated about the line <m>y=-2</m>.
+									</description>
+									<latex-image>
+									<![CDATA[
+										\begin{tikzpicture}
+											\begin{axis}[
+												axis x line = middle,
+												axis y line = middle,
+												every axis y label/.style={at={(ticklabel cs:1.1)}},
+												y label style={at={(axis description cs:0,1.1)},anchor=north},
+												ylabel = {$y$},
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												x label style={at={(axis description cs:1.1,0)},anchor=east},
+												xlabel = {$x$},
+												xmin=0,xmax=5,
+												ymax = 2
+											]
+											\addplot[thick, domain=2:4,samples=100, name path = a]{-1*x^2+6*x-8};
+											\addplot[draw=none, domain = 2:4, name path = b] {0};
+											\addplot[gray, draw=none, fill opacity = 0.5] fill between[of=a and b, soft clip = {domain=0:4}];
+
+											\end{axis}
+										\end{tikzpicture}
+									]]>
+									</latex-image>
+								</image>
+							</li>
+								
+							<li>
+								Answers vary
+							</li>
+								
+							<li>
+								<m>8\pi</m>
+							</li>	 
+						</ol>
+					</p>
+				</solution>
+				</example>
+					
+				<example><statement>	
+					Consider the region bounded by the curves <m>y = 4x</m>, <m>y = 0</m>, and <m>x = 2</m>.  Find the volume of the solid formed when the region is rotated about the given lines:
+					<ol label="a">
+						<li>
+							The <m>y-</m>axis
+						</li>						 
+							
+						<li>
+							<m>x = 4</m>
+						</li>
+						
+					</ol>
+				</statement>
+				<solution>
+					<p>
+						<ol label="a">
+							<li>
+								<m>\dfrac{64\pi}{3}</m>
+							</li>						 
+								
+							<li>
+								<m>\dfrac{128\pi}{3}</m>
+							</li>
+							
+						</ol>
+					</p>
+				</solution>
+				</example>
+			</subsection>
+		</section>
+		

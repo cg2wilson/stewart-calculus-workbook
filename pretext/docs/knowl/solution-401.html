@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-07-17T17:32:07-05:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<div class="solution solution-like">
+<h5 class="heading">
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">4.2.7.1</span><span class="period">.</span>
+</h5>First note that<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\Delta x = \dfrac{b-a}{n} = \dfrac{2}{n}
+\end{equation*}
+</div>For <span class="process-math">\(x_i\text{,}\)</span> we have<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+x_i = a + i\Delta x = 2 + \dfrac{2i}{n}
+\end{equation*}
+</div>This means that<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f(x_i) = 2 + \dfrac{2i}{n} 
+\end{equation*}
+</div>So that the area of a single rectangle is given by<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f(x_i)\Delta x = \lrpar{2+\dfrac{2i}{n}}\cdot \dfrac{2}{n} = \dfrac{4}{n} + \dfrac{4i}{n^2}
+\end{equation*}
+</div>And the sum of a finite number of rectangles is<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\ds \sum_{i=1}^n f(x_i)\Delta x = \sum_{i=1}^n \dfrac{4}{n} + \dfrac{4i}{n^2} = 4 + \dfrac{2n(n+1)}{n^2}
+\end{equation*}
+</div>after using the helpful formulas given below.  Now, the integral can be computed by taking the limit:<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\ds \int_2^4 x\, dx = \lim_{n\to\infty} \sum_{i=1}^n f(x_i)\Delta x = 4 + 2 = 6
+\end{equation*}
+</div>So the definite integral is 6.</div>
+<span class="incontext"><a href="section-42.html#solution-401" class="internal">in-context</a></span>
+</body>
+</html>

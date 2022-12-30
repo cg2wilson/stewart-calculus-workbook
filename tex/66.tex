@@ -1,0 +1,332 @@
+\documentclass[notes]{subfiles}
+\begin{document}
+	\addcontentsline{toc}{section}{6.6 - Inverse Trigonmetric Functions}
+	\setcounter{section}{6}
+	\setcounter{ex}{0}
+	\fancyhead[RO,LE]{\bfseries \nameref{cs66}} 
+	\fancyhead[LO,RE]{\bfseries \small \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Chapter 6.6}
+	
+\section*{Inverse Trigonometric Functions}\label{cs66}
+	\subsection*{Before Class}
+	\addcontentsline{toc}{subsection}{Before Class}
+	\subsubsection*{Building Inverse Trig Functions}
+	\addcontentsline{toc}{subsubsection}{Building Inverse Trig Functions}
+		\begin{question}
+			Refer back to Section 6.1$-$how can we determine if a function has an inverse?
+		\end{question}
+			\vs{1}
+			
+		\begin{ex}
+			Let $f(x) = \sin x$.
+			\begin{enumerate}[(a)]
+				\item Graph $\sin x$ on the interval $[-2\pi,2\pi]$.
+					\vs{1}
+					
+				\item Identify an interval on which $\sin x$ could possess an inverse.
+					\vs{.5}
+				
+				\item Sketch the graph of the inverse function.
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+		\begin{rmk}[Inverse Sine (Arcsine)]
+			The function $y = \sin x$ has the inverse $x = \inv{\sin}y$ (also written $\arcsin y$).  The domain of \\[20pt] $\inv{\sin}y$ is \blank{2} and the range is \blank{2.5}.
+		\end{rmk}
+		\newpage
+		
+		\begin{ex}
+			Evaluate $\inv{\sin}\lrpar{\dfrac{\sqrt{2}}{2}}$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate $\tan\lrpar{\arcsin \dfrac{1}{4}}$
+		\end{ex}
+			\vs{1}
+		
+		\begin{ex}
+			Let $f(x) = \cos x$.
+			\begin{enumerate}[(a)]
+				\item Graph $\cos x$ on $[-2\pi, 2\pi]$
+					\vs{1}
+					
+				\item Identify an interval on which $\cos x$ could possess an inverse.
+					\vs{.5}
+					
+				\item Sketch the graph of the inverse function.
+					\vs{1}
+					
+			\end{enumerate}
+		\end{ex}	
+		\newpage
+		
+		\begin{rmk}[Inverse Cosine (Arccosine)]
+			The function $y = \cos x$ has the inverse $x = \inv{\cos}y$ (also written $\arccos y$).  The domain of \\[20pt] $\inv{\cos} y$ is \blank{2} and the range is \blank{2.5}.
+		\end{rmk}
+		
+		\begin{ex}
+			Repeat the process we used for sine and cosine to find an inverse function for tangent.  Sketch the graph of the inverse function.
+		\end{ex}
+			\vs{1}
+			
+		\begin{rmk}[Inverse Tangent (Arctangent)]
+			The function $y = \tan x$ has the inverse $x = \inv{\tan}y$ (also written $\arctan y$).  The domain of \\[20pt] $\inv{\tan}y$ is \blank{2} and the range is \blank{2.5}.  
+		\end{rmk}
+		
+		\begin{ex}
+			Simplify the expression $\tan\lrpar{\arccos x}$.
+		\end{ex}
+			\vs{.5}
+			
+		\begin{ex}
+			Using the sketch of arctangent from above, compute $\ds\lim_{x\to \infty} \arctan x$ and $\ds\lim_{x\to -\infty} \arctan x$.
+		\end{ex}
+			\vs{.5}
+			\newpage
+			
+	\subsection*{Pre-Class Activities}
+	\addcontentsline{toc}{subsection}{Pre-Class Activities}
+		\begin{ex}
+			Evaluate the following:
+			\begin{enumerate}[(a)]
+				\item $\inv{\tan}(\sqrt{3})$
+					\vs{.5}
+					
+				\item $\inv{\cos}\lrpar{\dfrac{\sqrt{3}}{2}}$
+					\vs{.5}
+					
+				\item $\tan\lrpar{\arcsin\lrpar{\dfrac{2}{3}}}$
+					\vs{1}
+					
+				\item $\cos\lrpar{2\inv{\sin}\lrpar{\dfrac{5}{13}}}$
+					\vs{1}
+			\end{enumerate}
+		\end{ex}	
+		
+		\begin{ex}
+			Simplify the expressions:
+			\begin{enumerate}[(a)]
+				\item $\tan \lrpar{\inv{\sin}(x)}$
+					\vs{1}
+					
+				\item $\cos\lrpar{\inv{\sin}(x)}$
+					\vs{1}
+					
+				\item $\sin (2\arccos x)$
+					\vs{1}
+			\end{enumerate}	
+		\end{ex}
+		\newpage
+		
+	\subsection*{In Class}
+	\addcontentsline{toc}{subsection}{In Class}
+		\subsubsection*{Derivatives of Inverse Trig Functions}
+		\addcontentsline{toc}{subsubsection}{Derivatives of Inverse Trig Functions}
+		\showto{ins}{
+			\begin{center}
+				\tabulinesep = 4mm
+				\begin{tabu}{|X[c] || X[c] | X[c]|}\hline
+					\textbf{Function}	& \textbf{Domain}	& \textbf{Range} \\ \hline
+					$\inv{\sin}(x)$		& $[-1,1]$			& $\left[-\dfrac{\pi}{2},\dfrac{\pi}{2}\right]$\\ \hline
+					$\inv{\cos}(x)$		& $[-1,1]$			& $[0,\pi]$\\ \hline
+					$\inv{\tan}(x)$		& $(-\infty,\infty)$	& $\left[-\dfrac{\pi}{2}, \dfrac{\pi}{2}\right]$ \\ \hline
+					$\inv{\cot}(x)$		& $(-\infty,\infty)$	& $(0,\pi)$\\ \hline
+					$\inv{\sec}(x)$		& $(-\infty,-1)\cup (1,\infty)$	& $\left[0,\dfrac{\pi}{2}\right)\cup \left[\pi, \dfrac{3\pi}{2}\right)$\\ \hline
+					$\inv{\csc}(x)$		& $(-\infty,-1)\cup (1,\infty)$	& $\left(0,\dfrac{\pi}{2}\right]\cup \left(\pi, \dfrac{3\pi}{2}\right]$\\ \hline
+				\end{tabu}
+			\end{center}
+		}
+		\showto{st}{
+			\begin{center}
+				\tabulinesep = 2mm
+				\begin{tabu}to .85\textwidth {| X[c] || X[c] | X[c] |}\hline
+					\textbf{Function}	& \textbf{Domain}	& \textbf{Range}	\\ \hline
+									&					&					 \\
+					$\inv{\sin}(x)$				&			&						 \\
+									&					&					 \\ \hline
+									&					&					 \\
+					$\inv{\cos}(x)$			&					& 			 \\
+									&					&					 \\ \hline
+									&					&					 \\
+					$\inv{\tan}(x)$			&					& 			 \\
+									&					&					 \\ \hline
+									&					&					 \\
+					$\inv{\cot}(x)$			&					& 			 \\
+									&					&					 \\ \hline
+									&					&					 \\
+					$\inv{\sec}(x)$		&					& 		 \\
+									&					&					 \\ \hline
+									&					&					 \\
+					$\inv{\csc}(x)$	&					& 	 \\
+									&					&					 \\ \hline
+				\end{tabu}
+			\end{center}
+		}
+		
+		\begin{ex}
+			Use implicit differentiation to show that $\dfrac{d}{dx}\left[\inv{\sin}(x)\right] = \dfrac{1}{\sqrt{1-x^2}}$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Use the same process to find the derivative of $\inv{\cos}(x)$.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Again, use the same process to find the derivative of $\inv{\tan}(x)$.
+		\end{ex}
+			\vs{1}
+			
+		The table below collects the derivatives of the six inverse trig functions:
+		\showto{st}{
+			\begin{center}
+				\tabulinesep = 2mm
+				\begin{tabu}to .8\textwidth {| X[.75,c] | X[1.25c] || X[.75,c] | X[1.25,c] |}\hline
+					\textbf{Function}	& \textbf{Derivative}	& \textbf{Function}	& \textbf{Derivative} \\ \hline
+									&					&					& \\
+					$\inv{\sin}(x)$				&					& $\inv{\csc}(x)$				& \\
+									&					&					& \\ \hline
+									&					&					& \\
+					$\inv{\cos}(x)$			&					& $\inv{\sec}(x)$			& \\
+									&					&					& \\ \hline
+									&					&					& \\
+					$\inv{\tan}(x)$			&					& $\inv{\cot}(x)$			& \\
+									&					&					& \\ \hline
+
+				\end{tabu}
+			\end{center}
+		}
+		\showto{ins}{
+			\begin{center}
+				\tabulinesep = 4mm
+				\begin{tabu} {| X[.75,c] | X[c] || X[.75,c] | X[c] |}\hline
+					\textbf{Function}	& \textbf{Derivative}	& \textbf{Function}	& \textbf{Derivative} \\ \hline
+					$\inv{\sin}(x)$		& $\dfrac{1}{\sqrt{1-x^2}}$			& $\inv{\csc}(x)$	& $-\dfrac{1}{x\sqrt{x^2-1}}$ \\ \hline
+					$\inv{\cos}(x)$		& $-\dfrac{1}{\sqrt{1-x^2}}$			& $\inv{\sec}(x)$	& $\dfrac{1}{x\sqrt{x^2-1}}$ \\ \hline
+					$\inv{\tan}(x)$		& $\dfrac{1}{1+x^2}$				& $\inv{\cot}(x)$	& $-\dfrac{1}{1+x^2}$ \\ \hline
+				\end{tabu}
+			\end{center}
+		}
+		
+		\begin{ex}
+			Find the domain of the function $y = \arcsin(x^2-4)$.  Then, find its derivative, and the domain of the derivative.
+		\end{ex}
+			\vs{1}
+			\newpage
+		
+		\begin{ex}
+			Find the derivative of $f(x) = x\arccos(\sqrt{x})$
+		\end{ex}	
+			\vs{1}
+			
+		\begin{ex}
+			Write the derivative of $f(x) = \dfrac{1}{\inv{\tan}(x)}$
+		\end{ex}
+			\vs{1}
+		
+		\begin{ex}
+			Find the derivatives:
+			\begin{enumerate}[(a)]
+				\item $\lrpar{\inv{\tan}(x)}^2$
+					\vs{1}
+					
+				\item $\inv{\cot}(t) + \inv{\cot}\lrpar{\dfrac{1}{t}}$
+					\vs{1}
+			\end{enumerate}
+		\end{ex}	
+			\newpage
+			
+		\begin{ex}
+			If $g(x) = x\inv{\sin}\lrpar{\dfrac{x}{4}} +\sqrt{16-x^2}$, find $g'(2)$.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find an equation of the tangent line to the curve $y = 3\arccos\lrpar{\dfrac{x}{2}}$ at the point $(1,\pi)$.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find $y'$ if $\inv{\tan}(x^2y) = x + xy^2$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+	\subsubsection*{Integrals of Inverse Trig Functions}
+	\addcontentsline{toc}{subsubsection}{Integrals of Inverse Trig Functions}
+			The derivatives for the inverse trig functions give way to corresponding antiderivatives.  There are two important ones:
+			
+		\showto{st}{
+			\begin{center}
+				\tabulinesep = 2mm
+				\begin{tabu}to .8\textwidth {| X[.75,c] | X[1.25c] || X[.75,c] | X[1.25,c] |}\hline
+					\textbf{Function}	& \textbf{Antiderivative}	& \textbf{Function}	& \textbf{Antiderivative} \\ \hline
+									&					&					& \\
+					$\dfrac{1}{\sqrt{1-x^2}}$	& 				& $\dfrac{1}{x^2+1}$				& \\
+									&					&					& \\ \hline
+
+				\end{tabu}
+			\end{center}
+		}
+		\showto{ins}{
+			\begin{center}
+				\tabulinesep = 4mm
+				\begin{tabu} {| X[.75,c] | X[c] || X[.75,c] | X[c] |}\hline
+					\textbf{Function}	& \textbf{Derivative}	& \textbf{Function}	& \textbf{Derivative} \\ \hline
+					$\dfrac{1}{\sqrt{1-x^2}}$	& $\inv{\sin}(x)+C$	& $\dfrac{1}{x^2+1}$	& $\inv{\tan}(x) + C$ \\ \hline
+				\end{tabu}
+			\end{center}
+		}
+		
+		\begin{ex}
+			Compute $\ds \int_0^{1/2} \dfrac{1}{\sqrt{1-4x^2}}\, dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			For any real number $a$, find $\ds \int \dfrac{1}{x^2 + a^2}\, dx$
+		\end{ex}
+			\vs{1}
+		\newpage
+	\subsection*{After Class Activities}
+	\addcontentsline{toc}{subsection}{After Class Activities}
+		\begin{ex}
+			Compute the derivatives of the functions below:
+			\begin{enumerate}[(a)]
+				\item $f(x) = x\inv{\sin}(x) + \sqrt{1-x^2}$
+					\vs{1}
+				
+				\item $F(x) = x\inv{\sec}(x^3)$
+					\vs{1}
+					
+				\item $y = \inv{\tan}\lrpar{x-\sqrt{1+x^2}}$
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+		
+		\begin{ex}
+			Explain why $\ds \lim_{x\to\infty} \arccos \lrpar{\dfrac{1+x^2}{1+2x^2}} = \dfrac{\pi}{3}$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Compute the integrals:
+			\begin{enumerate}[(a)]
+				\item $\ds \int_{1/\sqrt{3}}^{\sqrt{3}} \dfrac{8}{1+x^2}\, dx$
+					\vs{1}
+					
+				\item $\ds \int_0^{\pi/2} \dfrac{\sin x}{1+\cos^2x}\, dx$
+					\vs{1}
+					
+				\item $\ds \int \dfrac{e^{2x}}{\sqrt{1-e^{4x}}}\, dx$
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+\clearpage
+\end{document}

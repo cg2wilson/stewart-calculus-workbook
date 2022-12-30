@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-32">
+			<title>(X) The Mean Value Theorem</title>
+			<subsection xml:id="section-32-beforeclass">
+			
+				<introduction>
+				We don't cover this section, but feel free to read this material!
+				</introduction>
+				
+				<title>Before Class</title>
+				<subsubsection xml:id="section-32-rolles">
+					<title>Rolle's Theorem</title>
+					
+					<theorem>
+						<title>Rolle's Theorem</title>
+						<statement>
+							Let <m>f</m> be a function that satisfies the following three properties:
+							<ul>
+								<li>
+									<m>f</m> is continuous on the closed interval <m>[a,b]</m>.
+								</li>
+								<li>
+									<m>f</m> is differentiable on the open interval <m>(a,b)</m>.
+								</li>
+								<li>
+									<m>f(a) = f(b)</m>.
+								</li>
+							</ul>
+							Then, there is some number <m>c</m> in <m>(a,b)</m> such that <m>f'(c) = 0</m>.
+						</statement>
+					</theorem>
+					<proof>
+						<statement>
+						
+						</statement>
+					</proof>
+					
+					<example><statement>
+						Rolle's Theorem has three hypotheses<m>-</m>conditions upon which the conclusion depends.
+						<ol label="a">
+							<li>
+								If we remove the first hypothesis, does Rolle's Theorem still hold?  Give an argument why or why not, and include a picture if possible.
+							</li>
+								
+							<li>
+								If we remove the second hypothesis, does the theorem still hold?  Give an argument why or why not, and include a picture if possible.
+							</li>
+								
+							<li>
+								If the third hypothesis is removed, what then?  Justify as before.
+							</li>								
+						</ol>
+					</statement></example>	
+				</subsubsection>
+				<subsubsection xml:id="section-32-mvt">
+					<title>Mean Value Theorem</title>
+					
+					<theorem>
+						<title>Mean Value Theorem</title>
+						<statement>
+							Let <m>f</m> be a function that satisfies the two conditions:
+							<ul>
+								<li>
+									<m>f</m> is continuous on the closed interval <m>[a,b]</m>
+								</li>
+								<li>
+									<m>f</m> is differentiable on the open interval <m>(a,b)</m>
+								</li>
+							</ul>
+							Then, there is some number <m>c</m> in <m>(a,b)</m> such that <m>f'(c) = \dfrac{f(b)-f(a)}{b-a}</m>
+						</statement>
+					</theorem>
+					
+					<example><statement>
+						Restate the mean value theorem in words.
+					</statement></example>
+					
+					<proof>
+						<title>(of the Mean Value Theorem)</title>
+						<statement>
+						
+						</statement>
+					</proof>
+					
+					<example><statement>
+						Let <m>f(x) = x^2 + x</m> on the interval <m>[0,5]</m>.  Find the value(s) of <m>c</m> which satisfy the Mean Value Theorem.
+					</statement></example>
+				</subsubsection>
+			</subsection>
+			<subsection xml:id="section-32-preclass">
+				<title>Pre-Class Activities</title>
+				
+				<example><statement>
+					Let <m>f(x) = \tan x</m>.  Show that <m>f(0) = f(\pi)</m>, but that there is no number <m>c</m> in <m>(0,\pi)</m> such that <m>f'(c) = 0</m>.  Why does this not contradict Rolle's Theorem?
+				</statement></example>
+					
+				<example><statement>
+					Verify that <m>f(x) = x^3-2x^2-4x+2</m> satisfies the hypotheses of Rolle's Theorem on <m>[-2,2]</m>, then find all numbers <m>c</m> that satisfy the conclusion of Rolle's Theorem.
+				</statement></example>
+					
+				<example><statement>
+					Draw the graph of a function that is continuous on <m>[0,8]</m>, with <m>f(0) = 1</m> and <m>f(8) = 4</m>, but that does <em>not</em> satisfy the conclusion of the Mean Value Theorem on <m>[0,8]</m>.
+				</statement></example>
+			</subsection>
+			<subsection xml:id="section-32-inclass">
+				<title>In Class</title>
+				
+				<example><statement>
+					Use Rolle's Theorem to prove that the equation <m>x^3 + x -2 = 0</m> has exactly one real root.
+				</statement></example>
+					
+				<example><statement>
+					Show that the equation <m>2x + \cos x = 0</m> has exactly one real root.
+				</statement></example>
+					
+				<example><statement>
+					Suppose <m>f(0) = -3</m> and <m>f'(x)\leq 5</m> for all values of <m>x</m>.  How large can <m>f(2)</m> be?
+				</statement></example>
+
+				<example><statement>
+					Suppose that <m>3\leq f'(x)\leq 5</m> for all values of <m>x</m>.  Show that <m>18\leq f(8)-f(2)\leq 30</m>.
+				</statement></example>
+				
+				<example><statement>
+					At 1:00pm, a car's speedometer reads 30 mi/h.  At 1:15pm, it reads 50 mi/h.  Show that at some time between 1:00 and 1:15, the acceleration is exactly 80 mi/h<m>^2</m>.
+				</statement></example>
+				
+				<example><statement>
+					Find the number <m>c</m> that satisfies the conclusion of the Mean Value Theorem for the function <m>f(x) = x^3-2x</m> on the interval <m>[-2,2]</m>.
+				</statement></example>
+					
+				<example><statement>
+					Show that if <m>f'(x) = 0</m> on the interval <m>(a,b)</m>, then <m>f(x) = c</m> on <m>(a,b)</m> for some constant <m>c</m>.
+				</statement></example>
+				
+				<example><statement>
+					Suppose that <m>f</m> is an odd function that is differentiable everywhere.  Show that for every positive number <m>b</m>, there exists some number <m>c</m> in <m>(-b,b)</m> such that <m>f'(c) = \dfrac{f(b)}{b}</m>.
+				</statement></example>
+			</subsection>
+			<subsection xml:id="section-32-afterclass">
+				<title>After Class Activities</title>
+				
+				<example><statement>
+					Show that the equation <m>2x - 1 - \sin x = 0</m> has exactly one real root.
+				</statement></example>
+					
+				<example><statement>
+					Show that the equation <m>x^3 - 15x + C = 0</m> has at most one root in the interval <m>[-2,2]</m>.
+				</statement></example>
+					
+				<example><statement>
+					Does there exist a function <m>f</m> such that <m>f(0) = -1</m>, <m>f(2) = 4</m>, and <m>f'(x)\leq 2</m> for all <m>x</m>?  Why or why not?  Justify your answer using a theorem from this section.
+				</statement></example>
+					
+				<example><statement>
+					In the Mean Value Theorem, we assume that <m>f</m> is continuous on <m>[a,b]</m> and differentiable on <m>(a,b)</m>.  Since differentiablity implies continuity, why do we have to assume continuity on <m>[a,b]</m>?
+				</statement></example>
+					
+				<example><statement>
+					Use the Mean Value Theorem to show that <m>|\cos x - \cos y| \leq |x - y|</m> for any choice of <m>x</m> and <m>y</m>. 
+				</statement></example>
+			</subsection>
+		</section>
+		

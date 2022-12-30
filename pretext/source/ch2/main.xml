@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<chapter xml:id="ch2" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Derivatives</title>
+<!--    <xi:include href="outcomes/main.xml"/>
+    <xi:include href="./readiness.xml"/>
+	-->
+	
+	<introduction>
+		Here you should put prerequisite material or things students needs to be confident with.
+	</introduction>
+    <xi:include href="./21.xml"/>   
+	<xi:include href="./22.xml"/>
+    <xi:include href="./23.xml"/>
+    <xi:include href="./24.xml"/>
+    <xi:include href="./25.xml"/>
+    <xi:include href="./26.xml"/>
+	<xi:include href="./27.xml"/>
+	<xi:include href="./28.xml"/>
+</chapter>

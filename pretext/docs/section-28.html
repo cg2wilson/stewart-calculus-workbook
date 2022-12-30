@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-07-17T17:31:45-05:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Math 1914 - Differential &amp; Integral Calculus I Related Rates</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Math 1914 - Differential &amp; Integral Calculus">
+<meta property="book:author" content="Cory Wilson">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(      \newcommand{\ds}{\displaystyle}
+\newcommand{\lrpar}[1]{\left(#1\right)}
+\newcommand{\lrbrace}[1]{\left\lbrace #1 \right\rbrace}
+\newcommand{\inv}[1]{#1^{-1}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\dc}{^\circ}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="math1914.html"><span class="title">Math 1914 - Differential &amp; Integral Calculus</span></a></h1>
+<p class="byline">Cory Wilson</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-27.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch2.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="ch3.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-27.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch2.html" title="Up">Up</a><a class="next-button button toolbar-item" href="ch3.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul><li><a href="colophon.html" data-scroll="colophon" class="internal">Colophon</a></li></ul>
+</li>
+<li class="link">
+<a href="ch1.html" data-scroll="ch1" class="internal"><span class="codenumber">1</span> <span class="title">Functions and Limits</span></a><ul>
+<li><a href="section-11.html" data-scroll="section-11" class="internal">Four Ways to Represent a Function</a></li>
+<li><a href="section-12.html" data-scroll="section-12" class="internal">Mathematical Models: A Catalog of Essential Functions</a></li>
+<li><a href="section-13.html" data-scroll="section-13" class="internal">New Functions from Old Functions</a></li>
+<li><a href="section-14.html" data-scroll="section-14" class="internal">The Tangent and Velocity Problems</a></li>
+<li><a href="section-15.html" data-scroll="section-15" class="internal">The Limit of a Function</a></li>
+<li><a href="section-16.html" data-scroll="section-16" class="internal">Calculating Limits Using Limit Laws</a></li>
+<li><a href="section-17.html" data-scroll="section-17" class="internal">(X) The Precise Definition of a Limit</a></li>
+<li><a href="section-18.html" data-scroll="section-18" class="internal">Continuity</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch2.html" data-scroll="ch2" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives</span></a><ul>
+<li><a href="section-21.html" data-scroll="section-21" class="internal">Derivatives and Rates of Change</a></li>
+<li><a href="section-22.html" data-scroll="section-22" class="internal">The Derivative as a Function</a></li>
+<li><a href="section-23.html" data-scroll="section-23" class="internal">Differentiation Formulas</a></li>
+<li><a href="section-24.html" data-scroll="section-24" class="internal">Derivatives of Trigonometric Functions</a></li>
+<li><a href="section-25.html" data-scroll="section-25" class="internal">The Chain Rule</a></li>
+<li><a href="section-26.html" data-scroll="section-26" class="internal">Implicit Differentiation</a></li>
+<li><a href="section-27.html" data-scroll="section-27" class="internal">(X) Rates of Changes in the Natural and Social Sciences</a></li>
+<li><a href="section-28.html" data-scroll="section-28" class="active">Related Rates</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch3.html" data-scroll="ch3" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Differentiation</span></a><ul>
+<li><a href="section-31.html" data-scroll="section-31" class="internal">Maximum &amp; Minimum Values</a></li>
+<li><a href="section-32.html" data-scroll="section-32" class="internal">(X) The Mean Value Theorem</a></li>
+<li><a href="section-33.html" data-scroll="section-33" class="internal">How Derivatives Affect the Shape of a Graph</a></li>
+<li><a href="section-34.html" data-scroll="section-34" class="internal">Limits at Infinity &amp; Horizontal Asymptotes</a></li>
+<li><a href="section-35.html" data-scroll="section-35" class="internal">Summary of Curve Sketching</a></li>
+<li><a href="section-36.html" data-scroll="section-36" class="internal">(X) Graphing with Calculus and Calculators</a></li>
+<li><a href="section-37.html" data-scroll="section-37" class="internal">Optimization</a></li>
+<li><a href="section-38.html" data-scroll="section-38" class="internal">(X) Newton's Method</a></li>
+<li><a href="section-39.html" data-scroll="section-39" class="internal">Antiderivatives</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch4.html" data-scroll="ch4" class="internal"><span class="codenumber">4</span> <span class="title">Integrals</span></a><ul>
+<li><a href="section-41.html" data-scroll="section-41" class="internal">Areas &amp; Distance</a></li>
+<li><a href="section-42.html" data-scroll="section-42" class="internal">The Definite Integral</a></li>
+<li><a href="section-43.html" data-scroll="section-43" class="internal">The Fundamental Theorem of Calculus</a></li>
+<li><a href="section-44.html" data-scroll="section-44" class="internal">Indefinite Integrals &amp; the Net Change Theorem</a></li>
+<li><a href="section-45.html" data-scroll="section-45" class="internal">The Substitution Rule</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch5.html" data-scroll="ch5" class="internal"><span class="codenumber">5</span> <span class="title">Applications of Integration</span></a><ul>
+<li><a href="section-51.html" data-scroll="section-51" class="internal">Areas Between Curves</a></li>
+<li><a href="section-52.html" data-scroll="section-52" class="internal">Volumes</a></li>
+<li><a href="section-53.html" data-scroll="section-53" class="internal">Volumes by Cylindrical Shells</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-28"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2.8</span> <span class="title">Related Rates</span>
+</h2>
+<article class="objectives goal-like" id="objectives-14"><h3 class="heading"><span class="type">Objectives</span></h3>
+<ul class="disc"><li id="li-689"><p id="p-derived-li-689">Solve related rates problems</p></li></ul></article><section class="subsection" id="section-28-beforeclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.8.1</span> <span class="title">Before Class</span>
+</h3>
+<figure class="figure figure-like" id="figure-20"><a class="external" href="https://mymedia.ou.edu/media/2.8-1/1_wy6maavz" target="_blank"><code class="code-inline tex2jax_ignore">https://mymedia.ou.edu/media/2.8-1/1_wy6maavz</code></a><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">20<span class="period">.</span></span><span class="space"> </span>Pre-Class Video 1</figcaption></figure><section class="subsubsection" id="section-28-time"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">2.8.1.1</span> <span class="title">Functions of Time</span>
+</h4>
+<article class="example example-like" id="example-242"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.8.1</span><span class="period">.</span>
+</h5>
+<ol class="lower-alpha">
+<li id="li-690"><p id="p-derived-li-690">Think about the equation <span class="process-math">\(x^2 + y^2 = 64\text{.}\)</span>  Is this an implicit or explicit equation?  Why?</p></li>
+<li id="li-691"><p id="p-derived-li-691">To find the derivative of both sides of the equation, we think of <span class="process-math">\(y\)</span> as a function of <span class="process-math">\(x\text{,}\)</span> i.e. “<span class="process-math">\(y\)</span>”<span class="process-math">\(= y(x)\text{.}\)</span>  This is so that we can use which differentiation rule?  Find the derivative, <span class="process-math">\(\dfrac{dy}{dx}\text{.}\)</span></p></li>
+<li id="li-692"><p id="p-derived-li-692">Now think of <span class="process-math">\(x\)</span> as a function of <span class="process-math">\(y\text{,}\)</span> i.e. “<span class="process-math">\(x\)</span>” <span class="process-math">\(=x(y)\text{.}\)</span>  Find the derivative, <span class="process-math">\(\dfrac{dx}{dy}\text{.}\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-258" id="solution-258"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-258"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-693"><p id="p-derived-li-693">Implicit- <span class="process-math">\(y\)</span> can't be written as a function of <span class="process-math">\(x\)</span></p></li>
+<li id="li-694"><p id="p-derived-li-694">This is so that we can use the chain rule.  Using it, we find that <span class="process-math">\(\dfrac{dy}{dx} = -\dfrac{x}{y}\)</span></p></li>
+<li id="li-695"><p id="p-derived-li-695"><span class="process-math">\(\displaystyle \dfrac{dx}{dy} = -\dfrac{y}{x}\)</span></p></li>
+</ol></div></div>
+</div></article><article class="example example-like" id="example-243"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.8.2</span><span class="period">.</span>
+</h5>
+<ol class="lower-alpha">
+<li id="li-696"><p id="p-derived-li-696">Now assume that <span class="process-math">\(y\)</span> is a function of <span class="process-math">\(t\text{,}\)</span> i.e. “<span class="process-math">\(y\)</span>” <span class="process-math">\(= y(t)\text{.}\)</span>  Find <span class="process-math">\(\dfrac{dy}{dt}\)</span> if we have the relationship <span class="process-math">\(y^2 = t\text{.}\)</span></p></li>
+<li id="li-697"><p id="p-derived-li-697">Reconsider <span class="process-math">\(x^2 + y^2 = 64\text{.}\)</span>  If both <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> are functions of <span class="process-math">\(t\text{,}\)</span> i.e. “<span class="process-math">\(x\)</span>” <span class="process-math">\(=x(t)\)</span> and “<span class="process-math">\(y\)</span>” <span class="process-math">\(=y(t)\text{,}\)</span> then take the derivative of both sides of the equation.</p></li>
+<li id="li-698"><p id="p-derived-li-698">Solve part (b) for <span class="process-math">\(\dfrac{dy}{dt}\text{.}\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-259" id="solution-259"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-259"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-699"><p id="p-derived-li-699"><span class="process-math">\(\displaystyle \dfrac{dy}{dt} =\dfrac{1}{2y}\)</span></p></li>
+<li id="li-700"><p id="p-derived-li-700"><span class="process-math">\(\displaystyle 2x\cdot \dfrac{dx}{dt} + 2y\cdot \dfrac{dy}{dt} = 0\)</span></p></li>
+<li id="li-701"><p id="p-derived-li-701"><span class="process-math">\(\displaystyle \dfrac{dy}{dt} = -\dfrac{x\cdot \dfrac{dx}{dt}}{y}\)</span></p></li>
+</ol></div></div>
+</div></article><article class="example example-like" id="example-244"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.8.3</span><span class="period">.</span>
+</h5>Consider the equation <span class="process-math">\(V = \dfrac{1}{3}\pi r^2 h\text{.}\)</span> <ol class="lower-alpha">
+<li id="li-702"><p id="p-derived-li-702">If <span class="process-math">\(r\)</span> is a function of <span class="process-math">\(t\)</span> and <span class="process-math">\(h\)</span> is a <em class="emphasis">constant</em>, find an expression for <span class="process-math">\(\dfrac{dV}{dt}\text{.}\)</span></p></li>
+<li id="li-703"><p id="p-derived-li-703">If <span class="process-math">\(h\)</span> is a function of <span class="process-math">\(t\)</span> and <span class="process-math">\(r\)</span> is a <em class="emphasis">constant</em>, find an expression for <span class="process-math">\(\dfrac{dV}{dt}\text{.}\)</span></p></li>
+<li id="li-704"><p id="p-derived-li-704">If both <span class="process-math">\(r\)</span> and <span class="process-math">\(h\)</span> are functions of <span class="process-math">\(t\text{,}\)</span> find an expression for <span class="process-math">\(\dfrac{dV}{dt}\text{.}\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-260" id="solution-260"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-260"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-705"><p id="p-derived-li-705"><span class="process-math">\(\displaystyle \dfrac{dV}{dt} = \dfrac{2}{3}\pi rh\cdot \dfrac{dr}{dt}\)</span></p></li>
+<li id="li-706"><p id="p-derived-li-706"><span class="process-math">\(\displaystyle \dfrac{dV}{dt} = \dfrac{1}{3}\pi r^2\cdot \dfrac{dh}{dt}\)</span></p></li>
+<li id="li-707"><p id="p-derived-li-707"><span class="process-math">\(\displaystyle \dfrac{dV}{dt} = \dfrac{1}{3}\pi \lrpar{2r\cdot \dfrac{dr}{dt} + r^2\dfrac{dh}{dt}}\)</span></p></li>
+</ol></div></div>
+</div></article></section></section><section class="subsection" id="section-28-preclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.8.2</span> <span class="title">Pre-Class Activities</span>
+</h3>
+<article class="example example-like" id="example-245"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.8.4</span><span class="period">.</span>
+</h4>Find <span class="process-math">\(\dfrac{dP}{dt}\text{,}\)</span> if <span class="process-math">\(P = 2x + 2y\text{,}\)</span> and write an explanation as if you were explaining to a friend.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-261" id="solution-261"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-261"><div class="solution solution-like">
+<span class="process-math">\(\dfrac{dP}{dt} =2\dfrac{dx}{dt} + 2\dfrac{dy}{dt}\text{.}\)</span>  The explanation will vary person-to-person.</div></div>
+</div></article><article class="example example-like" id="example-246"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.8.5</span><span class="period">.</span>
+</h4>Compute <span class="process-math">\(\dfrac{dA}{dt}\text{,}\)</span> if <span class="process-math">\(A = xy\text{.}\)</span>  Why is the computation different than the previous example?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-262" id="solution-262"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-262"><div class="solution solution-like"><span class="process-math">\(\dfrac{dA}{dt} = x\dfrac{dy}{dt} + y\dfrac{dx}{dt}\)</span></div></div>
+</div></article><article class="example example-like" id="example-247"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.8.6</span><span class="period">.</span>
+</h4>Compute <span class="process-math">\(\dfrac{dV}{dt}\text{,}\)</span> if <span class="process-math">\(V = xyz\text{.}\)</span>  Why is this computation different than the previous examples?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-263" id="solution-263"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-263"><div class="solution solution-like"><span class="process-math">\(\dfrac{dV}{dt} = yz\dfrac{dx}{dt} + xz\dfrac{dy}{dt} + xy\dfrac{dz}{dt}\)</span></div></div>
+</div></article></section><section class="subsection" id="section-28-inclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.8.3</span> <span class="title">In Class</span>
+</h3>
+<section class="subsubsection" id="section-28-rates"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">2.8.3.1</span> <span class="title">Related Rates</span>
+</h4>
+<article class="example example-like" id="example-248"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.8.7</span><span class="period">.</span>
+</h5>Air is being pumped into a spherical balloon so that its volume is increasing at a rate of 100 cm<span class="process-math">\(^3\)</span>/s.  How fast is the radius of the balloon increasing when the diameter is 50cm?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-264" id="solution-264"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-264"><div class="solution solution-like">
+<span class="process-math">\(\dfrac{dr}{dt} = \dfrac{1}{25}\pi\)</span> cm/s</div></div>
+</div></article><article class="assemblage assemblage-like" id="assemblage-20"><h5 class="heading"><span class="title">Steps for Solving Related Rates Problems.</span></h5>
+<ol id="p-152" class="lower-alpha">
+<li id="li-708"><p id="p-derived-li-708">Identify equations and variables involved, as well as the variable we are differentiating against.</p></li>
+<li id="li-709"><p id="p-derived-li-709">If possible, sketch <em class="emphasis">two</em> pictures of the situation: one with the variables, and one with the numbers.</p></li>
+<li id="li-710"><p id="p-derived-li-710">Implicitly differentiate.</p></li>
+<li id="li-711"><p id="p-derived-li-711">Use your sketch/the problem to input known quantities.</p></li>
+<li id="li-712"><p id="p-derived-li-712">Solve for the quantity you desire.</p></li>
+</ol></article><article class="example example-like" id="example-249"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.8.8</span><span class="period">.</span>
+</h5>A 10-foot ladder rests along a vertical wall.  If the bottom of the ladder slides away from the wall at a rate of 1 ft/s, how fast is the top of the ladder sliding down the wall when the bottom of the ladder is 6 ft from the wall?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-265" id="solution-265"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-265"><div class="solution solution-like">
+<span class="process-math">\(-\dfrac{3}{4}\)</span> ft/s</div></div>
+</div></article><article class="example example-like" id="example-250"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.8.9</span><span class="period">.</span>
+</h5>A 10-foot ladder rests along a vertical wall.  If the bottom of the ladder slides away from the wall at a rate of 1 ft/s, how fast is the angle between the wall and the ladder changing at the moment when the bottom of the ladder is 5ft from the wall?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-266" id="solution-266"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-266"><div class="solution solution-like">
+<span class="process-math">\(\dfrac{d\theta}{dt} = \dfrac{1}{5\sqrt{3}}\)</span> rad/s</div></div>
+</div></article><article class="example example-like" id="example-251"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.8.10</span><span class="period">.</span>
+</h5>A conical water tank has a base radius of 3 m and height 6 m.  If water is being pumped into the tank at a rate of 2 m<span class="process-math">\(^3\)</span>/min, find the rate at which the water level is rising when the water is 3 m deep.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-267" id="solution-267"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-267"><div class="solution solution-like">
+<span class="process-math">\(\dfrac{dh}{dt} =\dfrac{8}{9\pi}\)</span> m/min</div></div>
+</div></article><article class="example example-like" id="example-252"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.8.11</span><span class="period">.</span>
+</h5>A Toyota Camry is traveling west at 50 mi/h and a Ford Focus is traveling north at 65 mi/h.  Both cars are heading for the intersection of the two roads.  At what rate are the cars approaching each other when the Camry is 0.4 mi and the Focus is 0.3 mi from the intersection?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-268" id="solution-268"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-268"><div class="solution solution-like">79 mph</div></div>
+</div></article><article class="example example-like" id="example-253"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.8.12</span><span class="period">.</span>
+</h5>A plane flying horizontally at an altitude of 1 mi and speed of 500 mi/h passes directly over a radar station.  Find the rate at which the distance from the plane to the station is increasing when it is 2 mi away from the station.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-269" id="solution-269"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-269"><div class="solution solution-like">
+<span class="process-math">\(250\sqrt{3}\)</span> mph</div></div>
+</div></article><article class="example example-like" id="example-254"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.8.13</span><span class="period">.</span>
+</h5>A boat is pulled into a dock by a rope attached to the bow of the boat and passing through a pulley on the dock that is 1 m higher than the bow of the boat.  If the rope is pulled in at a rate of 1 m/s, how fast is the boat approaching the dock when it is 8 m from the dock?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-270" id="solution-270"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-270"><div class="solution solution-like">
+<span class="process-math">\(\dfrac{\sqrt{65}}{8}\)</span> m/s</div></div>
+</div></article><article class="example example-like" id="example-255"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.8.14</span><span class="period">.</span>
+</h5>A particle moves along the curve <span class="process-math">\(y = 2\sin\lrpar{\dfrac{\pi x}{2}}\text{.}\)</span>  As the particle passes through the point <span class="process-math">\(\lrpar{\dfrac{1}{3},1}\text{,}\)</span> its <span class="process-math">\(x-\)</span>coordinate increases at a rate of <span class="process-math">\(\sqrt{10}\)</span> cm/s.  How fast is the distance from the particle to the origin changing at this instant?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-271" id="solution-271"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-271"><div class="solution solution-like">
+<span class="process-math">\(\dfrac{1+3\pi\sqrt{3}}{2}\)</span> cm/s</div></div>
+</div></article><article class="example example-like" id="example-256"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.8.15</span><span class="period">.</span>
+</h5>Gravel is being dumped from a conveyor belt at a rate of 30 ft<span class="process-math">\(^3\)</span>/min, and forms a pile in the shape of a cone whose base diameter and height are always equal.  How fast is the height of the pile increasing when the pile is 10 ft high?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-272" id="solution-272"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-272"><div class="solution solution-like">
+<span class="process-math">\(\dfrac{dh}{dt} = \dfrac{120}{25\pi}\)</span> ft/min</div></div>
+</div></article></section></section><section class="subsection" id="section-28-afterclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.8.4</span> <span class="title">After Class Activities</span>
+</h3>
+<article class="example example-like" id="example-257"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.8.16</span><span class="period">.</span>
+</h4>Two sides of a triangle have lengths 12 m and 15 m.  The angle between them is increasing at a rate of <span class="process-math">\(2\dc\)</span>/min.  How fast is the length of the third side increasing when the angle between the sides of fixed length is <span class="process-math">\(60\dc\text{?}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-273" id="solution-273"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-273"><div class="solution solution-like">
+<span class="process-math">\(\dfrac{dc}{dt} = \dfrac{\pi\sqrt{3}}{\sqrt{189}}\)</span> m/min</div></div>
+</div></article><article class="example example-like" id="example-258"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.8.17</span><span class="period">.</span>
+</h4>Two carts <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are connected by a rope 39 ft long that passes over a pulley <span class="process-math">\(P\text{.}\)</span>  The point <span class="process-math">\(Q\)</span> is on the floor 12 ft directly beneath <span class="process-math">\(P\)</span> and between the carts.  Cart <span class="process-math">\(A\)</span> is being pulled away from <span class="process-math">\(Q\)</span> at a speed of 2 ft/s.  How fast is cart <span class="process-math">\(B\)</span> moving toward <span class="process-math">\(Q\)</span> at the instant when cart <span class="process-math">\(A\)</span> is 5 ft from <span class="process-math">\(Q\text{?}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-274" id="solution-274"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-274"><div class="solution solution-like">
+<span class="process-math">\(-\dfrac{20}{\sqrt{532}}\)</span> ft/s</div></div>
+</div></article><article class="question example-like" id="question-19"><h4 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">2.8.18</span><span class="period">.</span>
+</h4>Related rates are often considered one of the most difficult topics in Calculus I.  After working these problems, what do you think is making sense to you?  What do you think you need some more practice with?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-275" id="solution-275"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-275"><div class="solution solution-like">Answers vary</div></div>
+</div></article></section></section></div></main>
+</div>
+</body>
+</html>

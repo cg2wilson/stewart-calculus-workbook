@@ -1,0 +1,165 @@
+\documentclass[notes]{subfiles}
+\begin{document}
+	\chapter{Further Applications of Integration}
+	\addcontentsline{toc}{section}{8.1 - Arc Length}
+	\refstepcounter{section}
+	\fancyhead[RO,LE]{\bfseries \nameref{cs81}} 
+	\fancyhead[LO,RE]{\bfseries \small \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Chapter 8.1}
+	
+\section*{Arc Length}\label{cs81}
+	\subsection*{Before Class}
+	\addcontentsline{toc}{subsection}{Before Class}
+	\subsubsection*{The Formula}
+	\addcontentsline{toc}{subsubsection}{The Formula}
+		\begin{ex}
+			\begin{enumerate}[(a)]
+				\item Find the distance between the points $(0,-2)$ and $(5,0)$.
+					\vs{.5}
+					
+				\item Now, find the length of the curve $y = \dfrac{2}{5}x - 2$.
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+		
+		\begin{ex}
+			Consider $f(x) = x-x^2$.  
+			\begin{enumerate}[(a)]
+				\item What difficulties does one have in finding the length of the curve between $x = 0$ and $x = 1$?
+					\vs{.5}
+					
+				\item Approximate this length.
+					\vs{1}
+				
+				\item How could we get a better approximation of the length?
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+			\newpage
+			
+		\begin{rmk}[Arc Length Formula]
+			If $f'$ is continuous on $[a,b]$, then the length of the curve $y = f(x)$ on $[a,b]$ is given by\\[30pt]
+		\end{rmk}
+		\begin{pf}
+			$ $
+		\end{pf}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Find the length of the arc of the curve $y^2 = x^3$ between $(1,1)$ and $(4,8)$.
+		\end{ex}
+			\vs{1}
+		
+		\begin{ex}
+			Find the length of the curve $y = \dfrac{1}{2}x^2$ between $x = -1$ and $ x = 1$.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+	\subsection*{Pre-Class Activities}
+	\addcontentsline{toc}{subsection}{Pre-Class Activities}
+		\begin{ex}
+			Use this space to write any questions you might have from the videos.
+		\end{ex}	
+			\vs{1}
+			
+		\begin{ex}
+			Set up (but do not evaluate!) a definite integral that would find the length of the curve $f(x) = x-x^2$ between $x = 0$ and $x = 1$.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find the exact length of the curve $f(x) = 1 + 6x^{3/2}$ on the interval $0\leq x \leq 1$.
+		\end{ex}
+			\vs{2}
+			\newpage
+			
+	\subsection*{In Class}
+	\addcontentsline{toc}{subsection}{In Class}
+	\subsubsection*{Some Examples}	
+	\addcontentsline{toc}{subsubsection}{Some Examples}
+		\begin{ex}
+			Find the length of the curve $f(x) =x-x^2$ between $x = 0$ and $x =1$.
+		\end{ex}	
+			\vs{2}
+		
+		\begin{ex}
+			If $g(x) = \ln |\sec x|$, find the length of $g(x)$ between $x = \pi/6$ and $x = \pi/4$.
+		\end{ex}
+			\vs{1}
+			\newpage
+		\begin{ex}
+			Find the length of the arc of the parabola $x = y^2$ from $(1,1)$ to $(4,2)$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find the length of the curve $x = \dfrac{1}{8}y^4 + \dfrac{1}{4y^2}$ for $1\leq y \leq 2$.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Determine the length of the arc of the curve $x^2 = (y-4)^3$ between $y = 5$ and $y = 8$
+		\end{ex}
+			\vs{1}
+		
+	\subsubsection*{The Arc Length Function}
+	\addcontentsline{toc}{subsubsection}{The Arc Length Function}
+		\begin{defn}[Arc Length Function]
+			If $C$ is a smooth curve with equation $y = f(x)$ on the interval $[a,b]$, then the function \\[50pt]
+			
+			gives the length of $f(x)$ between the starting point $(a,f(a))$ and the endpoint $(x,f(x))$.
+		\end{defn}
+		
+		\begin{ex}
+			Find the arc length function for the curve $y = x^2 - \dfrac{1}{8}\ln x$, starting at the point $(1,1)$.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Find the arc length function for the curve $y = \inv{\sin}(x) + \sqrt{1-x^2}$, starting at $x = 0$.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Let $f(x) = \dfrac{1}{4}e^x + e^{-x}$.  Show that on any interval $[a,b]$, the arc length of $f(x)$ is exactly the area under the curve.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+	\subsection*{After Class Activities}
+	\addcontentsline{toc}{subsection}{After Class Activities}
+		\begin{ex}
+			Find the length of the curve $y = \dfrac{1}{3}x^3 + \dfrac{1}{4x}$ on the interval $[1,2]$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find the length of the curve $y = \ln(\cos x)$ on $0\leq x\leq \pi/3$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Find the length of the curve $y = \dfrac{1}{4}x^2 -\dfrac{1}{2}\ln x$ on the interval $[1,2]$.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find the arc length function for the following curves:
+			\begin{enumerate}[(a)]
+				\item $y = 2x^{3/2}$, starting at $(1,2)$.
+					\vs{1}
+					
+				\item $y = \ln (\sin x)$ (on $(0,\pi)$), with the starting point of $(\pi/2,0)$.
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+	
+\clearpage
+\end{document}

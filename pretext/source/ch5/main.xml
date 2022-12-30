@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<chapter xml:id="ch5" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Applications of Integration</title>
+<!--    <xi:include href="outcomes/main.xml"/>
+    <xi:include href="./readiness.xml"/>
+	-->
+	
+	<introduction>
+		Here you should put prerequisite material or things students needs to be confident with.
+	</introduction>
+    <xi:include href="./51.xml"/>   
+	<xi:include href="./52.xml"/>
+    <xi:include href="./53.xml"/>
+
+
+</chapter>

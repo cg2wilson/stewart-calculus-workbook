@@ -1,0 +1,219 @@
+\documentclass[notes]{subfiles}
+\begin{document}
+	\addcontentsline{toc}{section}{7.8 - Improper Integrals}
+	\setcounter{section}{8}
+	\setcounter{ex}{0}
+	\fancyhead[RO,LE]{\bfseries \nameref{cs78}} 
+	\fancyhead[LO,RE]{\bfseries \small \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Chapter 7.8}
+	
+\section*{Improper Integrals}\label{cs78}
+	\subsection*{Before Class}
+	\addcontentsline{toc}{subsection}{Before Class}
+	\subsubsection*{Type 1 Integrals}
+	\addcontentsline{toc}{subsubsection}{Type 1 Integrals}
+		\begin{ex}
+			Fill out the following table of values for $\ds \int_0^a e^{-x}\, dx$:
+			\begin{center}
+				\tabulinesep = 2mm
+				\begin{tabu} to .9\textwidth {| X[.25,c] | X[.5,c] | X[c] |} \hline
+					\textbf{a} & \textbf{Exact Value}	& \textbf{Approximate Value}\\ \hline
+							& & \\
+						1	& & \\ 
+							& & \\ \hline
+							& & \\ 
+						100	& & \\ 
+							& & \\ \hline
+							& & \\
+						1000	& & \\ 
+							& & \\ \hline
+							& & \\
+						10000	& & \\
+							& & \\ \hline
+				\end{tabu}
+			\end{center}
+			Based on the table, do you expect the integral to settle on a specific value?  If so, what is the value (to 3 decimal places)?
+		\end{ex}
+			\vs{.5}
+			
+		\begin{ex}
+			\begin{enumerate}[(a)]
+				\item Compute $\ds \int_0^a e^{-x}\, dx$ in general.
+					\vs{1}
+					
+				\item Take the limit as $a\to \infty$; what is the interpretation of your answer?
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+			\newpage
+		
+		\begin{defn}[Improper Integral (Type 1)]
+			An \textbf{improper integral of type 1} is an integral of the form \\[70pt]
+			provided that $f(x)$ is continuous on the domain of integration.
+			
+		\end{defn}	
+		
+		\begin{defn}[Convergence/Divergence (Type 1)]
+			An improper integral of type 1 is said to \textbf{converge} if the limits below exist:\\[70pt]
+			
+			If the limit does not exist or is infinite, then we say the integral is \textbf{divergent}.
+		\end{defn}
+		
+		\begin{ex}
+			Determine if $\ds \int_1^\infty \dfrac{1}{x^2}\, dx$ converges or diverges.  If it converges, give its exact value.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Determine if $\ds \int_1^\infty \dfrac{1}{x^3}\, dx$ converges or diverges.  If it converges, give its exact value.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Evaluate $\ds \int_{\infty}^0 xe^x\, dx$.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Show that $\ds \int_{-\infty}^{\infty} \dfrac{1}{1+x^2}\, dx = \pi$
+		\end{ex}
+			\vs{1.5}
+			
+		\begin{ex}
+			Does $\ds \int_{-\infty}^0 \dfrac{1}{2-4x}\, dx$ converge or diverge?  Why?
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\newpage
+	\subsection*{Pre-Class Activities}
+	\addcontentsline{toc}{subsection}{Pre-Class Activities}
+		\begin{ex}
+			Use this space to write any questions you might have from the videos.
+		\end{ex}
+			\vs{.5}
+			
+		\begin{ex}
+			Evaluate $\ds \int_2^\infty e^{-5p}\, dp$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Determine if $\ds \int_{-\infty}^{\infty} xe^{-x^2}\, dx$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Determine if $\ds \int_{-\infty}^0 \dfrac{z}{z^4 + 4}\, dz$ converges or diverges.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate $\ds \int_e^\infty \dfrac{1}{x(\ln x)^2}\, dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			The integral $\ds \int_0^\infty \sin^2\alpha\, d\alpha$ diverges.  Compute the integral to see why.  How could we come to the same conclusion without any computation?
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+	\subsection*{In Class}
+	\addcontentsline{toc}{subsection}{In Class}
+		\begin{ex}
+			For what values of $p$ does $\ds \int_1^\infty \dfrac{1}{x^p}\, dx$ converge?
+		\end{ex}
+			\vs{1}
+		
+		\begin{ex}
+			Evaluate $\ds \int_0^\infty \dfrac{x^2}{\sqrt{1+x^3}}\, dx$
+		\end{ex}	
+			\vs{1}
+		
+		\begin{ex}
+			Compute $\ds \int_{-\infty}^0 2^r\, dr$
+		\end{ex}	
+			\vs{1}
+			\newpage
+			
+	\subsubsection*{Type 2 Integrals}
+	\addcontentsline{toc}{subsubsection}{Type 2 Integrals}
+
+		\begin{defn}[Improper Integral (Type 2)]
+			An \textbf{improper integral of type 2} is an integral of the form\\[70pt]
+			where $f(x)$ has a discontinuity at either $a$ or $b$.
+		\end{defn}
+			
+		\begin{defn}[Convergence/Divergence (Type 2)]
+			An improper integral of type 2 is said to \textbf{converge} if the limits below exist:\\[70pt]
+			
+			If the limit does not exist or is infinite, then we say the integral is \textbf{divergent}.
+		\end{defn}
+		
+		\begin{ex}
+			Find $\ds \int_1^4 \dfrac{1}{\sqrt{x-1}}\, dx$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Determine if $\ds \int_0^{\pi/2} \csc \theta \, d\theta$ converges or diverges.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			A classmate claims that $\ds \int_0^5 \dfrac{1}{x-3}\, dx = \ln 2 - \ln 3$.  Are they correct or incorrect?  Why?
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Compute $\ds \int_0^1 \ln x\, dx$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			If $f(t)$ is continuous on $(0,\infty)$, we define the \emph{Laplace transform} $\mathcal{L}$ of $f$ to be the function $F$ defined as \[\mathcal{L}[f(t)] = F(s) = \int_0^\infty f(t)e^{-st}\, dt\]
+			Compute $\mathcal{L}[1]$ and $\mathcal{L}[t]$.
+		\end{ex}
+			\vs{2}
+			
+		\begin{ex}
+			Evaluate $\ds \int_0^1 \dfrac{dx}{\sqrt{1-x^2}}$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+	\subsection*{After Class Activities}
+	\addcontentsline{toc}{subsection}{After Class Activities}
+		\begin{ex}
+			Determine if the following converge or diverge:
+			\begin{enumerate}[(a)]
+				\item $\ds \int_0^\infty \dfrac{1}{x^2 + x}\, dx$
+					\vs{1}
+					
+				\item $\ds \int_1^\infty \dfrac{\ln x}{x^2}\, dx$
+					\vs{1}
+					
+				\item $\ds \int_2^\infty \dfrac{dv}{v^2 + 2v-3}$
+					\vs{1}
+					\newpage
+					
+				\item $\ds \int_{-1}^2 \dfrac{x}{(x+1)^2}\, dx$	
+					\vs{1}
+					
+				\item $\ds \int_{-2}^3 \dfrac{1}{x^4}\, dx$
+					\vs{1}
+					
+				\item $\ds \int_0^4 \dfrac{1}{x^2-x-2}\, dx$
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+	
+\clearpage
+\end{document}

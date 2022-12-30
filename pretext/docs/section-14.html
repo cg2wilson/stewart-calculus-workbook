@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-07-17T17:31:43-05:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Math 1914 - Differential &amp; Integral Calculus I The Tangent and Velocity Problems</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Math 1914 - Differential &amp; Integral Calculus">
+<meta property="book:author" content="Cory Wilson">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(      \newcommand{\ds}{\displaystyle}
+\newcommand{\lrpar}[1]{\left(#1\right)}
+\newcommand{\lrbrace}[1]{\left\lbrace #1 \right\rbrace}
+\newcommand{\inv}[1]{#1^{-1}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\dc}{^\circ}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="math1914.html"><span class="title">Math 1914 - Differential &amp; Integral Calculus</span></a></h1>
+<p class="byline">Cory Wilson</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-13.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch1.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-15.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-13.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch1.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section-15.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul><li><a href="colophon.html" data-scroll="colophon" class="internal">Colophon</a></li></ul>
+</li>
+<li class="link">
+<a href="ch1.html" data-scroll="ch1" class="internal"><span class="codenumber">1</span> <span class="title">Functions and Limits</span></a><ul>
+<li><a href="section-11.html" data-scroll="section-11" class="internal">Four Ways to Represent a Function</a></li>
+<li><a href="section-12.html" data-scroll="section-12" class="internal">Mathematical Models: A Catalog of Essential Functions</a></li>
+<li><a href="section-13.html" data-scroll="section-13" class="internal">New Functions from Old Functions</a></li>
+<li><a href="section-14.html" data-scroll="section-14" class="active">The Tangent and Velocity Problems</a></li>
+<li><a href="section-15.html" data-scroll="section-15" class="internal">The Limit of a Function</a></li>
+<li><a href="section-16.html" data-scroll="section-16" class="internal">Calculating Limits Using Limit Laws</a></li>
+<li><a href="section-17.html" data-scroll="section-17" class="internal">(X) The Precise Definition of a Limit</a></li>
+<li><a href="section-18.html" data-scroll="section-18" class="internal">Continuity</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch2.html" data-scroll="ch2" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives</span></a><ul>
+<li><a href="section-21.html" data-scroll="section-21" class="internal">Derivatives and Rates of Change</a></li>
+<li><a href="section-22.html" data-scroll="section-22" class="internal">The Derivative as a Function</a></li>
+<li><a href="section-23.html" data-scroll="section-23" class="internal">Differentiation Formulas</a></li>
+<li><a href="section-24.html" data-scroll="section-24" class="internal">Derivatives of Trigonometric Functions</a></li>
+<li><a href="section-25.html" data-scroll="section-25" class="internal">The Chain Rule</a></li>
+<li><a href="section-26.html" data-scroll="section-26" class="internal">Implicit Differentiation</a></li>
+<li><a href="section-27.html" data-scroll="section-27" class="internal">(X) Rates of Changes in the Natural and Social Sciences</a></li>
+<li><a href="section-28.html" data-scroll="section-28" class="internal">Related Rates</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch3.html" data-scroll="ch3" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Differentiation</span></a><ul>
+<li><a href="section-31.html" data-scroll="section-31" class="internal">Maximum &amp; Minimum Values</a></li>
+<li><a href="section-32.html" data-scroll="section-32" class="internal">(X) The Mean Value Theorem</a></li>
+<li><a href="section-33.html" data-scroll="section-33" class="internal">How Derivatives Affect the Shape of a Graph</a></li>
+<li><a href="section-34.html" data-scroll="section-34" class="internal">Limits at Infinity &amp; Horizontal Asymptotes</a></li>
+<li><a href="section-35.html" data-scroll="section-35" class="internal">Summary of Curve Sketching</a></li>
+<li><a href="section-36.html" data-scroll="section-36" class="internal">(X) Graphing with Calculus and Calculators</a></li>
+<li><a href="section-37.html" data-scroll="section-37" class="internal">Optimization</a></li>
+<li><a href="section-38.html" data-scroll="section-38" class="internal">(X) Newton's Method</a></li>
+<li><a href="section-39.html" data-scroll="section-39" class="internal">Antiderivatives</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch4.html" data-scroll="ch4" class="internal"><span class="codenumber">4</span> <span class="title">Integrals</span></a><ul>
+<li><a href="section-41.html" data-scroll="section-41" class="internal">Areas &amp; Distance</a></li>
+<li><a href="section-42.html" data-scroll="section-42" class="internal">The Definite Integral</a></li>
+<li><a href="section-43.html" data-scroll="section-43" class="internal">The Fundamental Theorem of Calculus</a></li>
+<li><a href="section-44.html" data-scroll="section-44" class="internal">Indefinite Integrals &amp; the Net Change Theorem</a></li>
+<li><a href="section-45.html" data-scroll="section-45" class="internal">The Substitution Rule</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch5.html" data-scroll="ch5" class="internal"><span class="codenumber">5</span> <span class="title">Applications of Integration</span></a><ul>
+<li><a href="section-51.html" data-scroll="section-51" class="internal">Areas Between Curves</a></li>
+<li><a href="section-52.html" data-scroll="section-52" class="internal">Volumes</a></li>
+<li><a href="section-53.html" data-scroll="section-53" class="internal">Volumes by Cylindrical Shells</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-14"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.4</span> <span class="title">The Tangent and Velocity Problems</span>
+</h2>
+<article class="objectives goal-like" id="objectives-4"><h3 class="heading"><span class="type">Objectives</span></h3>
+<ul class="disc">
+<li id="li-221"><p id="p-derived-li-221">Use secant lines to determine average rate of change of a function</p></li>
+<li id="li-222"><p id="p-derived-li-222">Describe the process of approximating the slope of a tangent line by using slopes of secant lines.</p></li>
+<li id="li-223"><p id="p-derived-li-223">Use the tangent line to describe qualitative characteristics of a function</p></li>
+<li id="li-224"><p id="p-derived-li-224">Use average velocity to approximate instantaneous velocity, and describe the relationship between average velocity/average rate of change and instantaneous velocity/instantaneous rate of change</p></li>
+</ul></article><section class="subsection" id="section-14-beforeclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.4.1</span> <span class="title">Before Class</span>
+</h3>
+<figure class="figure figure-like" id="figure-5"><a class="external" href="https://mymedia.ou.edu/media/1.4-1/1_dfuhtyzs" target="_blank"><code class="code-inline tex2jax_ignore">https://mymedia.ou.edu/media/1.4-1/1_dfuhtyzs</code></a><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5<span class="period">.</span></span><span class="space"> </span>Pre-Class Video 1</figcaption></figure><section class="subsubsection" id="section-14-tangent-secant"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">1.4.1.1</span> <span class="title">Tangent Lines &amp; Secant Lines</span>
+</h4>
+<p id="p-50">Recall that the slope of the line between two points on the curve <span class="process-math">\(f(x)\)</span> is given in a few ways:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\dfrac{\text{rise}}{\text{run}} \qquad \dfrac{y_2-y_1}{x_2-x_1} \qquad \dfrac{f(x_2)-f(x_1)}{x_2-x_1}
+\end{equation*}
+</div>
+<article class="definition definition-like" id="definition-11"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">Tangent/Secant Lines.</span>
+</h5> The <dfn class="terminology">tangent line</dfn> to a curve <span class="process-math">\(f(x)\)</span> is a line which intersects the curve at only one point.  A <dfn class="terminology">secant line</dfn> intersects a curve in at least two points.</article><figure class="figure figure-like" id="figure-6"><iframe src="https://www.desmos.com/calculator/zr7siihtmz" id="section-14-desmos-tangent-secant" width="480" height="240"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6<span class="period">.</span></span><span class="space"> </span>Illustration of the transformation from a secant line to a tangent line.  Use the slider to look at different values of <span class="process-math">\(h\text{;}\)</span> when <span class="process-math">\(h = 0\text{,}\)</span> the secant line becomes a tangent line.</figcaption></figure><article class="example example-like" id="example-54"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.2</span><span class="period">.</span>
+</h5>The points <span class="process-math">\((2,4)\)</span> and <span class="process-math">\((4,16)\)</span> lie on the graph of <span class="process-math">\(f(x)\text{.}\)</span> <ol class="lower-alpha">
+<li id="li-225"><p id="p-derived-li-225">Find the slope of the secant line between these two points.</p></li>
+<li id="li-226"><p id="p-derived-li-226">Find the formula for the secant line between these points.</p></li>
+<li id="li-227"><p id="p-derived-li-227">Assume <span class="process-math">\(f(x) = x^2\text{.}\)</span>  Give a quick sketch of <span class="process-math">\(f(x)\text{,}\)</span> along with the points given (you don't have to be super precise).  How “close” are we to having a tangent line?  Is there a way to get “closer” to having a tangent line?</p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-54" id="solution-54"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-54"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-228"><p id="p-derived-li-228">The slope is 6</p></li>
+<li id="li-229"><p id="p-derived-li-229"><span class="process-math">\(\displaystyle y = 6x-8\)</span></p></li>
+<li id="li-230">
+<p id="p-51"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-57.svg" role="img" class="contained" alt="The graph of \(f(x) = x^2\) on the interval \([-1,5]\text{,}\) with the points \((2,4)\) and \((4,16)\) plotted, as well as the secant line between the points."></div></p>
+<p id="p-52">We aren't very close to having a tangent line; we could get closer to a tangent line by making the points closer.</p>
+</li>
+</ol></div></div>
+</div></article><article class="example example-like" id="example-55"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.3</span><span class="period">.</span>
+</h5>The function <span class="process-math">\(f(x) = x^2\)</span> is graphed below. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-58.svg" role="img" class="contained" alt="A graph of \(f(x)=x^2\) with an \(x-\)window of \([0,2]\text{,}\) and a \(y-\)window of \([0,4]\text{.}\)  There are grid lines every 0.1 unit on the \(x-\)axis, and every 0.2 units on the \(y-\)axis."></div> Approximate the slope of the tangent line to <span class="process-math">\(f\)</span> at <span class="process-math">\(x = 1\)</span> by finding the slope of the secant line through <span class="process-math">\((1,1)\)</span> and the following points.  Sketch a few secant lines on the graph above as well. <ol class="lower-alpha">
+<li id="li-231"><p id="p-derived-li-231"><span class="process-math">\(\displaystyle (0.7,0.49)\)</span></p></li>
+<li id="li-232"><p id="p-derived-li-232"><span class="process-math">\(\displaystyle (0.8,0.64)\)</span></p></li>
+<li id="li-233"><p id="p-derived-li-233"><span class="process-math">\(\displaystyle (0,9,0.81)\)</span></p></li>
+<li id="li-234"><p id="p-derived-li-234"><span class="process-math">\(\displaystyle (1.3,1.69)\)</span></p></li>
+<li id="li-235"><p id="p-derived-li-235"><span class="process-math">\(\displaystyle (1.2,1.44)\)</span></p></li>
+<li id="li-236"><p id="p-derived-li-236"><span class="process-math">\(\displaystyle (1.1, 1.21)\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-55" id="solution-55"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-55"><div class="solution solution-like">
+<ol id="p-53" class="lower-alpha">
+<li id="li-237"><p id="p-derived-li-237">1.7</p></li>
+<li id="li-238"><p id="p-derived-li-238">1.8</p></li>
+<li id="li-239"><p id="p-derived-li-239">1.9</p></li>
+<li id="li-240"><p id="p-derived-li-240">2.3</p></li>
+<li id="li-241"><p id="p-derived-li-241">2.2</p></li>
+<li id="li-242"><p id="p-derived-li-242">2.1</p></li>
+</ol>
+<p id="p-54">Answers vary for secant lines</p>
+</div></div>
+</div></article></section></section><section class="subsection" id="section-14-preclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.4.2</span> <span class="title">Pre-Class Activities</span>
+</h3>
+<article class="example example-like" id="example-56"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.4</span><span class="period">.</span>
+</h4>
+<ol class="lower-alpha">
+<li id="li-243"><p id="p-derived-li-243">In Example 1.4.3, what happened to the slopes as you moved from (a) to (c), and from (d) to (f)?  Be descriptive.</p></li>
+<li id="li-244"><p id="p-derived-li-244">Example 1.4.4 does not give us an exact value for the tangent line.  How could we improve the approximation we got?</p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-56" id="solution-56"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-56"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-245"><p id="p-derived-li-245">Moving from (a) to (c), the slopes increase toward 2; moving from (d) to (f), the slopes decrease toward 2.</p></li>
+<li id="li-246"><p id="p-derived-li-246">We can improve the approximation by taking the secant line through points closer to <span class="process-math">\((1,1)\text{.}\)</span></p></li>
+</ol></div></div>
+</div></article></section><section class="subsection" id="section-14-inclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.4.3</span> <span class="title">In Class</span>
+</h3>
+<article class="example example-like" id="example-57"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.5</span><span class="period">.</span>
+</h4>Use a calculator to estimate the slope of the tangent line to the curve <span class="process-math">\(f(x) = \sqrt{x}\)</span> at <span class="process-math">\(x = 3\text{.}\)</span>  Record your answers will full decimal accuracy, and round your final answer to the hundredths place, if necessary. <div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel fixed-width top" style="width:44.4444444444444%;"><table class="tabular">
+<tr>
+<td class="c m b2 r2 l2 t2 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(\dfrac{f(x)-f(3)}{x-3}\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(2.9\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(2.99\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(2.999\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(2.9999\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(2.99999\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines">Left-hand slope <span class="process-math">\(\approx\)</span>
+</td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+</tr>
+</table></div>
+<div class="sbspanel fixed-width top" style="width:44.4444444444444%;"><table class="tabular">
+<tr>
+<td class="c m b2 r2 l2 t2 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(\dfrac{f(x)-f(3)}{x-3}\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(3.1\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(3.01\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(3.001\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(3.0001\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(3.00001\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines">Right-hand slope <span class="process-math">\(\approx\)</span>
+</td>
+<td class="c m b2 r2 l0 t0 lines"></td>
+</tr>
+</table></div>
+</div></div>
+<p id="p-55">Slope at <span class="process-math">\(x=3\approx\)</span></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-tabular" data-refid="hk-solution-57" id="solution-57"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-57"><div class="solution solution-like">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel fixed-width top" style="width:44.4444444444444%;"><table class="tabular">
+<tr>
+<td class="c m b2 r2 l2 t2 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(\dfrac{f(x)-f(3)}{x-3}\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(2.9\)</span></td>
+<td class="c m b2 r2 l0 t0 lines">0.291122</td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(2.99\)</span></td>
+<td class="c m b2 r2 l0 t0 lines">0.288916</td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(2.999\)</span></td>
+<td class="c m b2 r2 l0 t0 lines">0.288699</td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(2.9999\)</span></td>
+<td class="c m b2 r2 l0 t0 lines">0.288678</td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(2.99999\)</span></td>
+<td class="c m b2 r2 l0 t0 lines">0.288675</td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines">Left-hand slope <span class="process-math">\(\approx\)</span>
+</td>
+<td class="c m b2 r2 l0 t0 lines">0.29</td>
+</tr>
+</table></div>
+<div class="sbspanel fixed-width top" style="width:44.4444444444444%;"><table class="tabular">
+<tr>
+<td class="c m b2 r2 l2 t2 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(\dfrac{f(x)-f(3)}{x-3}\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(3.1\)</span></td>
+<td class="c m b2 r2 l0 t0 lines">0.286309</td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(3.01\)</span></td>
+<td class="c m b2 r2 l0 t0 lines">0.288435</td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(3.001\)</span></td>
+<td class="c m b2 r2 l0 t0 lines">0.288651</td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(3.0001\)</span></td>
+<td class="c m b2 r2 l0 t0 lines">0.288673</td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(3.00001\)</span></td>
+<td class="c m b2 r2 l0 t0 lines">0.288675</td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines">Right-hand slope <span class="process-math">\(\approx\)</span>
+</td>
+<td class="c m b2 r2 l0 t0 lines">0.29</td>
+</tr>
+</table></div>
+</div></div>
+<p id="p-56">Slope at <span class="process-math">\(x=3\approx 0.29\)</span></p>
+</div></div>
+</div></article><section class="subsubsection" id="section-14-velocity"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">1.4.3.1</span> <span class="title">Velocity</span>
+</h4>
+<p id="p-57">Suppose we want to find the average velocity of an object.  We can use the same approach as we did above to find this.  The average velocity of an object is given by</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+v_{avg} = \dfrac{\text{change in position}}{\text{change in time}}
+\end{equation*}
+</div>
+<article class="question example-like" id="question-2"><h5 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.4.6</span><span class="period">.</span>
+</h5>What connection might exist between <span class="process-math">\(v_{avg}\)</span> and the work we did in the previous exercises?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-58" id="solution-58"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-58"><div class="solution solution-like">Answers vary</div></div>
+</div></article><article class="example example-like" id="example-58"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.7</span><span class="period">.</span>
+</h5>Suppose a ball is dropped from the top of Dale Hall Tower, which is 250m tall.  Find the average velocity of the ball over the given intervals.  Use the fact  that free-fall of an object is given by the equation <span class="process-math">\(s(t) = 4.9t^2\)</span> m. <ol class="lower-alpha">
+<li id="li-247"><p id="p-derived-li-247"><span class="process-math">\(\displaystyle [0,6]\)</span></p></li>
+<li id="li-248"><p id="p-derived-li-248"><span class="process-math">\(\displaystyle [2,5]\)</span></p></li>
+<li id="li-249"><p id="p-derived-li-249"><span class="process-math">\(\displaystyle [3,3.5]\)</span></p></li>
+<li id="li-250"><p id="p-derived-li-250"><span class="process-math">\(\displaystyle [3,3.01]\)</span></p></li>
+<li id="li-251"><p id="p-derived-li-251"><span class="process-math">\(\displaystyle [3,3.0001]\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-59" id="solution-59"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-59"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-252"><p id="p-derived-li-252">29.4 m/s</p></li>
+<li id="li-253"><p id="p-derived-li-253">34.3 m/s</p></li>
+<li id="li-254"><p id="p-derived-li-254">31.85 m/s</p></li>
+<li id="li-255"><p id="p-derived-li-255">29.449 m/s</p></li>
+<li id="li-256"><p id="p-derived-li-256">24.40049 m/s</p></li>
+</ol></div></div>
+</div></article><article class="question example-like" id="question-3"><h5 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.4.8</span><span class="period">.</span>
+</h5>In the previous example, what do you think the purpose was of looking at so many average velocities?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-60" id="solution-60"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-60"><div class="solution solution-like">We want to get a better idea of how the velocity changes as we look at smaller and smaller intervals.</div></div>
+</div></article></section></section><section class="subsection" id="section-14-afterclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.4.4</span> <span class="title">After Class Activities</span>
+</h3>
+<article class="example example-like" id="example-59"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.9</span><span class="period">.</span>
+</h4>The point <span class="process-math">\(P = \lrpar{\dfrac{1}{2},0}\)</span> lies on the curve <span class="process-math">\(y = \cos \pi x\text{.}\)</span> <ol class="lower-alpha">
+<li id="li-257">
+<p id="p-58">If <span class="process-math">\(Q\)</span> is the point <span class="process-math">\((x,\cos \pi x)\text{,}\)</span> find the slope of the secant line <span class="process-math">\(PQ\)</span> (to six decimal places) for the following values of <span class="process-math">\(x\text{.}\)</span>  Show your work, and make sure yoru calculator is in radian mode.</p>
+<ol class="lower-roman">
+<li id="li-258"><p id="p-derived-li-258">0.4</p></li>
+<li id="li-259"><p id="p-derived-li-259">0.49</p></li>
+<li id="li-260"><p id="p-derived-li-260">0.4999</p></li>
+<li id="li-261"><p id="p-derived-li-261">0.6</p></li>
+<li id="li-262"><p id="p-derived-li-262">0.51</p></li>
+<li id="li-263"><p id="p-derived-li-263">0.5001</p></li>
+</ol>
+</li>
+<li id="li-264"><p id="p-derived-li-264">Using part (a), estimate the value of the slope of the tangent line to <span class="process-math">\(y\)</span> at <span class="process-math">\(x = 0.5\)</span> to two decimal places.</p></li>
+<li id="li-265"><p id="p-derived-li-265">Using part (b), find an equation for the tangent line to <span class="process-math">\(y\)</span> at <span class="process-math">\(x = 0.5\text{.}\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-61" id="solution-61"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-61"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-266"><ol id="p-59" class="lower-roman">
+<li id="li-267"><p id="p-derived-li-267"><span class="process-math">\(\displaystyle -3.090170\)</span></p></li>
+<li id="li-268"><p id="p-derived-li-268"><span class="process-math">\(\displaystyle -3.141076\)</span></p></li>
+<li id="li-269"><p id="p-derived-li-269"><span class="process-math">\(\displaystyle -3.141593\)</span></p></li>
+<li id="li-270"><p id="p-derived-li-270"><span class="process-math">\(\displaystyle -3.090170\)</span></p></li>
+<li id="li-271"><p id="p-derived-li-271"><span class="process-math">\(\displaystyle -3.151076\)</span></p></li>
+<li id="li-272"><p id="p-derived-li-272"><span class="process-math">\(\displaystyle -3.141593\)</span></p></li>
+</ol></li>
+<li id="li-273"><p id="p-derived-li-273">The slope is about 3.14</p></li>
+<li id="li-274"><p id="p-derived-li-274"><span class="process-math">\(\displaystyle y = -3.14x + 1.57\)</span></p></li>
+</ol></div></div>
+</div></article><article class="example example-like" id="example-60"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.10</span><span class="period">.</span>
+</h4>If a rock is thrown upward on Io with a velocity of 10 m/s, its height (in meters) <span class="process-math">\(t\)</span> seconds later is given by <span class="process-math">\(y = 10t - 1.86\text{.}\)</span> <ol class="lower-alpha">
+<li id="li-275">
+<p id="p-60">Find the average velocity over the given time intervals:</p>
+<ol class="lower-roman">
+<li id="li-276"><p id="p-derived-li-276"><span class="process-math">\(\displaystyle [1,2]\)</span></p></li>
+<li id="li-277"><p id="p-derived-li-277"><span class="process-math">\(\displaystyle [1,1.5]\)</span></p></li>
+<li id="li-278"><p id="p-derived-li-278"><span class="process-math">\(\displaystyle [1,1.1]\)</span></p></li>
+<li id="li-279"><p id="p-derived-li-279"><span class="process-math">\(\displaystyle [1,1.01]\)</span></p></li>
+<li id="li-280"><p id="p-derived-li-280"><span class="process-math">\(\displaystyle [1,1.001]\)</span></p></li>
+</ol>
+</li>
+<li id="li-281"><p id="p-derived-li-281">Estimate the instantaneous velocity when <span class="process-math">\(t = 1\text{.}\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-62" id="solution-62"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-62"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-282"><ol id="p-61" class="lower-roman">
+<li id="li-283"><p id="p-derived-li-283">10 m/s</p></li>
+<li id="li-284"><p id="p-derived-li-284">10 m/s</p></li>
+<li id="li-285"><p id="p-derived-li-285">10 m/s</p></li>
+<li id="li-286"><p id="p-derived-li-286">10 m/s</p></li>
+<li id="li-287"><p id="p-derived-li-287">10 m/s</p></li>
+</ol></li>
+<li id="li-288"><p id="p-derived-li-288">10 m/s</p></li>
+</ol></div></div>
+</div></article><article class="example example-like" id="example-61"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4.11</span><span class="period">.</span>
+</h4>Imagine you need to teach this section to a student in another section.  How would you explain the connection between tangent lines and secant lines to them?  Be descriptive!<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-63" id="solution-63"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-63"><div class="solution solution-like">Answers vary</div></div>
+</div></article></section></section></div></main>
+</div>
+</body>
+</html>

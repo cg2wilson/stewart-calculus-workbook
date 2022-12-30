@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-07-17T17:31:43-05:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Math 1914 - Differential &amp; Integral Calculus I Mathematical Models: A Catalog of Essential Functions</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Math 1914 - Differential &amp; Integral Calculus">
+<meta property="book:author" content="Cory Wilson">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(      \newcommand{\ds}{\displaystyle}
+\newcommand{\lrpar}[1]{\left(#1\right)}
+\newcommand{\lrbrace}[1]{\left\lbrace #1 \right\rbrace}
+\newcommand{\inv}[1]{#1^{-1}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\dc}{^\circ}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="math1914.html"><span class="title">Math 1914 - Differential &amp; Integral Calculus</span></a></h1>
+<p class="byline">Cory Wilson</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-11.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch1.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-13.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-11.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch1.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section-13.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul><li><a href="colophon.html" data-scroll="colophon" class="internal">Colophon</a></li></ul>
+</li>
+<li class="link">
+<a href="ch1.html" data-scroll="ch1" class="internal"><span class="codenumber">1</span> <span class="title">Functions and Limits</span></a><ul>
+<li><a href="section-11.html" data-scroll="section-11" class="internal">Four Ways to Represent a Function</a></li>
+<li><a href="section-12.html" data-scroll="section-12" class="active">Mathematical Models: A Catalog of Essential Functions</a></li>
+<li><a href="section-13.html" data-scroll="section-13" class="internal">New Functions from Old Functions</a></li>
+<li><a href="section-14.html" data-scroll="section-14" class="internal">The Tangent and Velocity Problems</a></li>
+<li><a href="section-15.html" data-scroll="section-15" class="internal">The Limit of a Function</a></li>
+<li><a href="section-16.html" data-scroll="section-16" class="internal">Calculating Limits Using Limit Laws</a></li>
+<li><a href="section-17.html" data-scroll="section-17" class="internal">(X) The Precise Definition of a Limit</a></li>
+<li><a href="section-18.html" data-scroll="section-18" class="internal">Continuity</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch2.html" data-scroll="ch2" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives</span></a><ul>
+<li><a href="section-21.html" data-scroll="section-21" class="internal">Derivatives and Rates of Change</a></li>
+<li><a href="section-22.html" data-scroll="section-22" class="internal">The Derivative as a Function</a></li>
+<li><a href="section-23.html" data-scroll="section-23" class="internal">Differentiation Formulas</a></li>
+<li><a href="section-24.html" data-scroll="section-24" class="internal">Derivatives of Trigonometric Functions</a></li>
+<li><a href="section-25.html" data-scroll="section-25" class="internal">The Chain Rule</a></li>
+<li><a href="section-26.html" data-scroll="section-26" class="internal">Implicit Differentiation</a></li>
+<li><a href="section-27.html" data-scroll="section-27" class="internal">(X) Rates of Changes in the Natural and Social Sciences</a></li>
+<li><a href="section-28.html" data-scroll="section-28" class="internal">Related Rates</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch3.html" data-scroll="ch3" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Differentiation</span></a><ul>
+<li><a href="section-31.html" data-scroll="section-31" class="internal">Maximum &amp; Minimum Values</a></li>
+<li><a href="section-32.html" data-scroll="section-32" class="internal">(X) The Mean Value Theorem</a></li>
+<li><a href="section-33.html" data-scroll="section-33" class="internal">How Derivatives Affect the Shape of a Graph</a></li>
+<li><a href="section-34.html" data-scroll="section-34" class="internal">Limits at Infinity &amp; Horizontal Asymptotes</a></li>
+<li><a href="section-35.html" data-scroll="section-35" class="internal">Summary of Curve Sketching</a></li>
+<li><a href="section-36.html" data-scroll="section-36" class="internal">(X) Graphing with Calculus and Calculators</a></li>
+<li><a href="section-37.html" data-scroll="section-37" class="internal">Optimization</a></li>
+<li><a href="section-38.html" data-scroll="section-38" class="internal">(X) Newton's Method</a></li>
+<li><a href="section-39.html" data-scroll="section-39" class="internal">Antiderivatives</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch4.html" data-scroll="ch4" class="internal"><span class="codenumber">4</span> <span class="title">Integrals</span></a><ul>
+<li><a href="section-41.html" data-scroll="section-41" class="internal">Areas &amp; Distance</a></li>
+<li><a href="section-42.html" data-scroll="section-42" class="internal">The Definite Integral</a></li>
+<li><a href="section-43.html" data-scroll="section-43" class="internal">The Fundamental Theorem of Calculus</a></li>
+<li><a href="section-44.html" data-scroll="section-44" class="internal">Indefinite Integrals &amp; the Net Change Theorem</a></li>
+<li><a href="section-45.html" data-scroll="section-45" class="internal">The Substitution Rule</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch5.html" data-scroll="ch5" class="internal"><span class="codenumber">5</span> <span class="title">Applications of Integration</span></a><ul>
+<li><a href="section-51.html" data-scroll="section-51" class="internal">Areas Between Curves</a></li>
+<li><a href="section-52.html" data-scroll="section-52" class="internal">Volumes</a></li>
+<li><a href="section-53.html" data-scroll="section-53" class="internal">Volumes by Cylindrical Shells</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-12"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.2</span> <span class="title">Mathematical Models: A Catalog of Essential Functions</span>
+</h2>
+<article class="objectives goal-like" id="objectives-2"><h3 class="heading"><span class="type">Objectives</span></h3>
+<ul class="disc">
+<li id="li-43">
+<p id="p-19">Recognize and graph essential functions:</p>
+<ul class="circle">
+<li id="li-44"><p id="p-derived-li-44">Constant functions</p></li>
+<li id="li-45"><p id="p-derived-li-45">Linear functions</p></li>
+<li id="li-46"><p id="p-derived-li-46">Power functions</p></li>
+<li id="li-47"><p id="p-derived-li-47">Reciprocal functions</p></li>
+<li id="li-48"><p id="p-derived-li-48">Root functions</p></li>
+<li id="li-49"><p id="p-derived-li-49">Polynomial functions</p></li>
+<li id="li-50"><p id="p-derived-li-50">Rational functions</p></li>
+<li id="li-51"><p id="p-derived-li-51">Trigonometric functions</p></li>
+<li id="li-52"><p id="p-derived-li-52">Exponential functions</p></li>
+<li id="li-53"><p id="p-derived-li-53">Logarithmic functions</p></li>
+</ul>
+</li>
+<li id="li-54"><p id="p-derived-li-54">Identify the basic characteristics of essential functions, including: domain, range, end behavior, roots, asymptotes, <span class="process-math">\(x-\)</span> and <span class="process-math">\(y-\)</span>intercepts, slope, symmetry.</p></li>
+</ul></article><section class="subsection" id="section-12-beforeclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.2.1</span> <span class="title">Before Class</span>
+</h3>
+<figure class="figure figure-like" id="figure-3"><a class="external" href="https://mymedia.ou.edu/media/1.2-1/1_s05beatp" target="_blank"><code class="code-inline tex2jax_ignore">https://mymedia.ou.edu/media/1.2-1/1_s05beatp</code></a><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3<span class="period">.</span></span><span class="space"> </span>Pre-Class Video 1</figcaption></figure><section class="subsubsection" id="section-12-linear"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">1.2.1.1</span> <span class="title">Linear Functions</span>
+</h4>
+<p id="p-20">Remember that a linear function requires two pieces of information- a starting value (<span class="process-math">\(b\text{,}\)</span> the <span class="process-math">\(y\)</span>-intercept), and an amount of incremental change in the independent variable (<span class="process-math">\(m\text{,}\)</span> the slope of the function).  This gives us three ways to describe a linear function:</p>
+<ul class="disc">
+<li id="li-55"><p id="p-derived-li-55">Verbally: A function with a constant rate of change</p></li>
+<li id="li-56">
+<p id="p-21">Graphically: Lines can look like one of four cases:</p>
+<p id="p-22"><div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel top" style="width:44.4444444444444%;"><img src="generated/latex-image/image-11.svg" role="img" class="contained" alt="A line with positive slope, passing through the origin"></div>
+<div class="sbspanel top" style="width:44.4444444444444%;"><img src="generated/latex-image/image-12.svg" role="img" class="contained" alt="A line with negative slope, passing through the origin"></div>
+</div></div></p>
+<p id="p-23"><div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel top" style="width:44.4444444444444%;"><img src="generated/latex-image/image-13.svg" role="img" class="contained" alt="A line with slope 0 (horizontal line)"></div>
+<div class="sbspanel top" style="width:44.4444444444444%;"><img src="generated/latex-image/image-14.svg" role="img" class="contained" alt="A line with undefined slope (vertical line)"></div>
+</div></div></p>
+</li>
+<li id="li-57"><p id="p-derived-li-57">Algebraically: <span class="process-math">\(f(x) = mx+b\)</span></p></li>
+</ul>
+<article class="question example-like" id="question-1"><h5 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="period">.</span>
+</h5>Given two points <span class="process-math">\((x_1,y_1)\)</span> and <span class="process-math">\((x_2,y_2)\text{,}\)</span> how can we find the slope of the line between them?<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-21" id="solution-21"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-21"><div class="solution solution-like"><p id="p-24"><span class="process-math">\(m =\dfrac{y_2-y_1}{x_2-x_1}\)</span></p></div></div>
+</div></article><article class="example example-like" id="example-21"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="period">.</span>
+</h5>The following table gives the percentage of new companies which remained open <span class="process-math">\(t\)</span> years after beginning business. <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b2 r2 l2 t2 lines">Years After Opening</td>
+<td class="c m b2 r2 l0 t2 lines">5</td>
+<td class="c m b2 r2 l0 t2 lines">6</td>
+<td class="c m b2 r2 l0 t2 lines">7</td>
+<td class="c m b2 r2 l0 t2 lines">8</td>
+<td class="c m b2 r2 l0 t2 lines">9</td>
+<td class="c m b2 r2 l0 t2 lines">10</td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines">Companies Still Open (in %)</td>
+<td class="c m b2 r2 l0 t0 lines">50</td>
+<td class="c m b2 r2 l0 t0 lines">47</td>
+<td class="c m b2 r2 l0 t0 lines">44</td>
+<td class="c m b2 r2 l0 t0 lines">41</td>
+<td class="c m b2 r2 l0 t0 lines">38</td>
+<td class="c m b2 r2 l0 t0 lines">35</td>
+</tr>
+</table></div>
+<ol class="lower-alpha">
+<li id="li-58">Plot the points on the graph below <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-15.svg" role="img" class="contained" alt="A blank graph to plot the points"></div>
+</li>
+<li id="li-59"><p id="p-derived-li-59">Use the data to find an equation for the line between these points.</p></li>
+<li id="li-60"><p id="p-derived-li-60">Give an interpretation for the slope of <span class="process-math">\(C(t)\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-22" id="solution-22"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-22"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-61"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-16.svg" role="img" class="contained" alt="The graph from part (a) with the points plotted"></div></li>
+<li id="li-62"><p id="p-derived-li-62"><span class="process-math">\(\displaystyle C(t) = -3t + 65\)</span></p></li>
+<li id="li-63"><p id="p-derived-li-63">Each year, the percentage of companies still open decreases by 3 percent per year.</p></li>
+</ol></div></div>
+</div></article></section><section class="subsubsection" id="section-12-polynomial"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">1.2.1.2</span> <span class="title">Polynomials</span>
+</h4>
+<article class="definition definition-like" id="definition-6"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="period">.</span><span class="space"> </span><span class="title">Polynomial.</span>
+</h5> A function <span class="process-math">\(P\)</span> is called a <dfn class="terminology">polynomial</dfn> if<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+P(x) = a_nx^n + a_{n-1}x^{n-1}+\cdots + a_2x^2 + a_1x + a_0
+\end{equation*}
+</div></article><div class="tabular-box natural-width"><table class="tabular">
+<tr><td class="c m b2 r2 l2 t2 lines" colspan="4">Common Polynomials</td></tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines">Polynomial</td>
+<td class="c m b2 r2 l0 t0 lines">Equation</td>
+<td class="c m b2 r2 l0 t0 lines">Graph (<span class="process-math">\(a_n \gt 0\)</span>)</td>
+<td class="c m b2 r2 l0 t0 lines">Graph (<span class="process-math">\(a_n \lt 0\)</span>)</td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines">Linear</td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(a_1x + a_0\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-17.svg" role="img" class="contained" alt="The graph of a linear function with positive leading coefficient.  The line goes up left to right."></div></td>
+<td class="c m b2 r2 l0 t0 lines"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-18.svg" role="img" class="contained" alt="The graph of a linear function with negative leading coefficient.  The line goes down left to right."></div></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines">Quadratic</td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(a_2x^2+a_1x + a_0\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-19.svg" role="img" class="contained" alt="The graph of a quadratic function with positive leading coefficient.  The curve goes down until it reaches a vertex, then turns back upward."></div></td>
+<td class="c m b2 r2 l0 t0 lines"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-20.svg" role="img" class="contained" alt="The graph of a quadratic function with negative leading coefficient.  The curve goes up until it reaches a vertex, then turns back downward."></div></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines">Cubic</td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(a_3x^3+a_2x^2+a_1x +a_0\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-21.svg" role="img" class="contained" alt="The graph of a cubic function with positive leading coefficient.  The curve begins going upward, slows down to be flat for a moment, then turns back upward."></div></td>
+<td class="c m b2 r2 l0 t0 lines"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-22.svg" role="img" class="contained" alt="The graph of a cubic function with negative leading coefficient.  The curve begins going downward, slows down to be flat for a moment, then turns back downward."></div></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines">Even Degree</td>
+<td class="c m b2 r2 l0 t0 lines">
+<span class="process-math">\(a_nx^n +\cdots a_1x+a_0 \)</span>  (<span class="process-math">\(n\)</span> even)</td>
+<td class="c m b2 r2 l0 t0 lines"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-23.svg" role="img" class="contained" alt="The graph of an even function with positive leading coefficient.  The curve goes begins moving upward and ends moving downward; the behavior in the middle depends on the function."></div></td>
+<td class="c m b2 r2 l0 t0 lines"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-24.svg" role="img" class="contained" alt="The graph of an even function with negative leading coefficient.  The curve goes begins moving downward and ends moving upward; the behavior in the middle depends on the function."></div></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines">Odd Degree</td>
+<td class="c m b2 r2 l0 t0 lines">
+<span class="process-math">\(a_nx^n +\cdots a_1x+a_0 \)</span>  (<span class="process-math">\(n\)</span> odd)</td>
+<td class="c m b2 r2 l0 t0 lines"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-25.svg" role="img" class="contained" alt="The graph of an odd function with positive leading coefficient.  The curve goes begins moving upward and ends moving upward; the behavior in the middle depends on the function."></div></td>
+<td class="c m b2 r2 l0 t0 lines"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-26.svg" role="img" class="contained" alt="The graph of an odd function with negative leading coefficient.  The curve goes begins moving downward and ends moving downward; the behavior in the middle depends on the function."></div></td>
+</tr>
+</table></div></section><section class="subsubsection" id="section-12-other"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">1.2.1.3</span> <span class="title">Other Functions</span>
+</h4>
+<article class="definition definition-like" id="definition-7"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="period">.</span><span class="space"> </span><span class="title">Exponential/Logarithmic Function.</span>
+</h5>
+<p id="p-25">An <dfn class="terminology">exponential function</dfn> is a function of the form <span class="process-math">\(f(x)=b^x\text{,}\)</span> where the base <span class="process-math">\(b\)</span> is a positive constant.</p>
+<p id="p-26">A <dfn class="terminology">logarithmic function</dfn> is a function of the form <span class="process-math">\(f(x)=\log_b x\text{,}\)</span> where the base <span class="process-math">\(b\)</span> is a positive constant.</p></article><p id="p-27">Exponential and logarithmic functions have these properties:</p>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b2 r2 l2 t2 lines"></td>
+<td class="c m b2 r2 l0 t2 lines">Domain</td>
+<td class="c m b2 r2 l0 t2 lines">Range</td>
+<td class="c m b2 r2 l0 t2 lines">Asymptotes?</td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(f(x)=b^x\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\((-\infty,\infty)\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\((0,\infty)\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(y = 0\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines"><span class="process-math">\(f(x)=\log_b (x)\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\((0,\infty)\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\((-\infty,\infty)\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(x = 0\)</span></td>
+</tr>
+</table></div></section></section><section class="subsection" id="section-12-preclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.2.2</span> <span class="title">Pre-Class Activities</span>
+</h3>
+<article class="example example-like" id="example-22"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.5</span><span class="period">.</span>
+</h4>
+<ol class="lower-alpha">
+<li id="li-64"><p id="p-derived-li-64">Find an equation for the family of linear functions with slope <span class="process-math">\(-1\text{,}\)</span> and sketch a few members of the family.</p></li>
+<li id="li-65"><p id="p-derived-li-65">Find an equation for the family of linear functions such that <span class="process-math">\(f(2) = 1\text{,}\)</span> and sketch a few members of the family.</p></li>
+<li id="li-66"><p id="p-derived-li-66">Which function belongs to both families?</p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-23" id="solution-23"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-23"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-67"><p id="p-derived-li-67">The family is given by <span class="process-math">\(y = -x+b\text{.}\)</span>  Answers will vary on the sketch.</p></li>
+<li id="li-68"><p id="p-derived-li-68">The family is given by <span class="process-math">\(1=2m + b\text{.}\)</span>  Answers will vary on the sketch.</p></li>
+<li id="li-69"><p id="p-derived-li-69"><span class="process-math">\(\displaystyle y = -x+3\)</span></p></li>
+</ol></div></div>
+</div></article><article class="example example-like" id="example-23"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.6</span><span class="period">.</span>
+</h4>Find an expression for a quadratic function <span class="process-math">\(f\)</span> if <span class="process-math">\(f(-2) = 2\text{,}\)</span> <span class="process-math">\(f(0) = 1\text{,}\)</span> and <span class="process-math">\(f(1) = -2.5\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-24" id="solution-24"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-24"><div class="solution solution-like"><span class="process-math">\(f(x) = -x^2 -2.5x + 1\)</span></div></div>
+</div></article><article class="example example-like" id="example-24"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.7</span><span class="period">.</span>
+</h4>The monthly cost of driving a car depends on the number of miles driven.  Casey found that in April, it cost her $350 to drive 450 miles, and in June, it cost her $460 to drive 800 miles. Express your answer exactly (no decimals). <ol class="lower-alpha">
+<li id="li-70"><p id="p-derived-li-70">Express the monthly cost <span class="process-math">\(C\)</span> as a function of the distance driven (<span class="process-math">\(d\)</span>), assuming that a linear relationship gives a suitable model.</p></li>
+<li id="li-71"><p id="p-derived-li-71">Use (a) to predict the cost of driving 1500 miles per month.</p></li>
+<li id="li-72"><p id="p-derived-li-72">Sketch the graph of the linear function.  What does the slope represent?  Include units.</p></li>
+<li id="li-73"><p id="p-derived-li-73">What does the <span class="process-math">\(C-\)</span>intercept represent?</p></li>
+<li id="li-74"><p id="p-derived-li-74">Why does a linear function give a suitable model in this situation?</p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-25" id="solution-25"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-25"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-75"><p id="p-derived-li-75"><span class="process-math">\(\displaystyle C(d) = \dfrac{11}{35}x + \dfrac{1460}{7}\)</span></p></li>
+<li id="li-76"><p id="p-derived-li-76">680 dollars</p></li>
+<li id="li-77">
+<p id="p-28"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-27.svg" role="img" class="contained" alt="The graph of \(C(d) = \dfrac{11}{35}x + \dfrac{1460}{7}\)"></div></p>
+<p id="p-29">The slope represents the rate of change of cost (dollars per month)</p>
+</li>
+<li id="li-78"><p id="p-derived-li-78">The base cost of owning/maintaining the car without driving it.</p></li>
+<li id="li-79"><p id="p-derived-li-79">Answers vary.</p></li>
+</ol></div></div>
+</div></article></section><section class="subsection" id="section-12-inclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.2.3</span> <span class="title">In Class</span>
+</h3>
+<section class="subsubsection" id="section-12-power"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">1.2.3.1</span> <span class="title">Power Functions</span>
+</h4>
+<article class="definition definition-like" id="definition-8"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.8</span><span class="period">.</span><span class="space"> </span><span class="title">Power Function.</span>
+</h5> A <dfn class="terminology">power function</dfn> is any function of the form <span class="process-math">\(x^a\text{,}\)</span> where <span class="process-math">\(a\)</span> is a constant.</article><article class="example example-like" id="example-25"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.9</span><span class="period">.</span>
+</h5>Describe the difference between a <em class="emphasis">power function</em> and a <em class="emphasis">polynomial</em>.</article><article class="example example-like" id="example-26"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.10</span><span class="period">.</span>
+</h5>We will look at three special power functions. <ol class="lower-alpha">
+<li id="li-80"><p id="p-derived-li-80">If <span class="process-math">\(a\)</span> is a positive integer, what kind of functions do we see? Sketch a few examples.</p></li>
+<li id="li-81"><p id="p-derived-li-81">If <span class="process-math">\(a=\dfrac{1}{n}\)</span> (where <span class="process-math">\(n\)</span> is a positive integer), rewrite the power function using rules of exponents.</p></li>
+<li id="li-82"><p id="p-derived-li-82">The functions in part (b) are called <dfn class="terminology">root functions</dfn>.  Sketch the graph of the power function if <span class="process-math">\(a=\dfrac{1}{2}\)</span> and <span class="process-math">\(= \dfrac{1}{3}\text{.}\)</span></p></li>
+<li id="li-83"><p id="p-derived-li-83">When <span class="process-math">\(a=-1\text{,}\)</span> we call the power function the <dfn class="terminology">reciprocal function</dfn>. Sketch the graph.</p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-26" id="solution-26"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-26"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-84"><p id="p-derived-li-84">We see the standard polynomial functions.  Graphs will vary.</p></li>
+<li id="li-85"><p id="p-derived-li-85"><span class="process-math">\(\displaystyle x^{a} = x^{1/n} = \sqrt[n]{x}\)</span></p></li>
+<li id="li-86"><div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel top" style="width:44.4444444444444%;"><img src="generated/latex-image/image-28.svg" role="img" class="contained" alt="The graph of \(\sqrt{x}\) on the interval \([-1,1]\)"></div>
+<div class="sbspanel top" style="width:44.4444444444444%;"><img src="generated/latex-image/image-29.svg" role="img" class="contained" alt="The graph of \(\sqrt[3]{x}\) on the interval \([-1,1]\)"></div>
+</div></div></li>
+<li id="li-87"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-30.svg" role="img" class="contained" alt="The graph of \(1/x\) on the interval \([-2,2]\)"></div></li>
+</ol></div></div>
+</div></article></section><section class="subsubsection" id="section-12-rational"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">1.2.3.2</span> <span class="title">Rational Functions</span>
+</h4>
+<article class="definition definition-like" id="definition-9"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.11</span><span class="period">.</span><span class="space"> </span><span class="title">Rational Function.</span>
+</h5>
+<p id="p-30">A <dfn class="terminology">rational function</dfn> is a ratio of two polynomials, written as <span class="process-math">\(f(x) = \dfrac{P(x)}{Q(x)}\text{,}\)</span> where <span class="process-math">\(P(x)\)</span> and <span class="process-math">\(Q(x)\)</span> are polynomials.</p>
+<p id="p-31">The domain of a rational function consists of all values <span class="process-math">\(x\)</span> such that <span class="process-math">\(Q(x)\neq 0\text{.}\)</span></p></article><article class="example example-like" id="example-27"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.12</span><span class="period">.</span>
+</h5>Write the domain of the following functions, in interval notation. <ol class="lower-alpha">
+<li id="li-88"><p id="p-derived-li-88"><span class="process-math">\(\displaystyle f(x) = \dfrac{1}{x}\)</span></p></li>
+<li id="li-89"><p id="p-derived-li-89"><span class="process-math">\(\displaystyle g(x) = \dfrac{2x^3 - 1}{x^5 + 1}\)</span></p></li>
+<li id="li-90"><p id="p-derived-li-90"><span class="process-math">\(\displaystyle h(x) = \dfrac{6x^4 + x^3 - 7x^2 + 6.5029}{x^2 - 9}\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-27" id="solution-27"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-27"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-91"><p id="p-derived-li-91"><span class="process-math">\(\displaystyle (-\infty,0)\cup (0,\infty)\)</span></p></li>
+<li id="li-92"><p id="p-derived-li-92"><span class="process-math">\(\displaystyle (-\infty,-1)\cup (-1,\infty)\)</span></p></li>
+<li id="li-93"><p id="p-derived-li-93"><span class="process-math">\(\displaystyle (-\infty,-3)\cup (-3,3)\cup (3,\infty)\)</span></p></li>
+</ol></div></div>
+</div></article></section><section class="subsubsection" id="section-12-algebraic"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">1.2.3.3</span> <span class="title">Algebraic Functions</span>
+</h4>
+<article class="definition definition-like" id="definition-10"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.13</span><span class="period">.</span><span class="space"> </span><span class="title">Algebraic Function.</span>
+</h5> A function <span class="process-math">\(f\)</span> is called an <dfn class="terminology">algebraic function</dfn> if it can be constructed using algebraic operations, such as addition, subtraction, multiplication, division, and taking roots.</article><article class="example example-like" id="example-28"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.14</span><span class="period">.</span>
+</h5>Write an example of an algebraic function using at least one of each type of function we have covered so far.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-28" id="solution-28"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-28"><div class="solution solution-like">Answers vary</div></div>
+</div></article></section><section class="subsubsection" id="section-12-trig"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">1.2.3.4</span> <span class="title">Trigonometric Functions</span>
+</h4>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel fixed-width top" style="width:44.4444444444444%;"><table class="tabular">
+<tr><td class="c m b2 r2 l2 t2 lines" colspan="3">Basic Trigonometric Functions</td></tr>
+<tr>
+<td class="l m b0 r2 l2 t0 lines"><span class="process-math">\(\sin x = \dfrac{opp}{hyp}\)</span></td>
+<td class="l m b0 r2 l0 t0 lines"><span class="process-math">\(\cos x = \dfrac{adj}{hyp}\)</span></td>
+<td class="l m b0 r2 l0 t0 lines"><span class="process-math">\(\tan x = \dfrac{opp}{adj}\)</span></td>
+</tr>
+<tr>
+<td class="l m b2 r2 l2 t0 lines"><span class="process-math">\(\csc x = \dfrac{hyp}{opp}\)</span></td>
+<td class="l m b2 r2 l0 t0 lines"><span class="process-math">\(\sec x = \dfrac{hyp}{adj}\)</span></td>
+<td class="l m b2 r2 l0 t0 lines"><span class="process-math">\(\cot x = \dfrac{adj}{opp}\)</span></td>
+</tr>
+</table></div>
+<div class="sbspanel top" style="width:44.4444444444444%;"><img src="generated/latex-image/image-31.svg" role="img" class="contained" alt="A right triangle with angle \(x\text{,}\) with hypotenuse labeled “hyp”, opposite side labeled “opp”, and adjacent labeled “adj”."></div>
+</div></div>
+<p id="p-32">Here are some useful properties of trigonometric functions</p>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b2 r2 l2 t2 lines"></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(\sin x\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(\cos x\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(\tan x\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(\cot x\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(\sec x\)</span></td>
+<td class="c m b2 r2 l0 t2 lines"><span class="process-math">\(\csc x\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines">Domain</td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\((-\infty,\infty)\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\((-\infty,\infty)\)</span></td>
+<td class="c m b2 r2 l0 t0 lines">
+<span class="process-math">\(x \neq \dfrac{\pi}{2} + \pi k\text{,}\)</span> <span class="process-math">\(k\in \Z\)</span>
+</td>
+<td class="c m b2 r2 l0 t0 lines">
+<span class="process-math">\(x\neq \pi k\text{,}\)</span> <span class="process-math">\(k\in \Z\)</span>
+</td>
+<td class="c m b2 r2 l0 t0 lines">
+<span class="process-math">\(x \neq \dfrac{\pi}{2} + \pi k\text{,}\)</span> <span class="process-math">\(k\in \Z\)</span>
+</td>
+<td class="c m b2 r2 l0 t0 lines">
+<span class="process-math">\(x\neq \pi k\text{,}\)</span> <span class="process-math">\(k\in \Z\)</span>
+</td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines">Range</td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\([-1,1]\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\([-1,1]\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\((-\infty,\infty)\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\((-\infty,\infty)\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\((-\infty,1]\cup [1,\infty)\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\((-\infty,1]\cup [1,\infty)\)</span></td>
+</tr>
+<tr>
+<td class="c m b2 r2 l2 t0 lines">Period</td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(2\pi\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(2\pi\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\pi\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(\pi\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(2\pi\)</span></td>
+<td class="c m b2 r2 l0 t0 lines"><span class="process-math">\(2\pi\)</span></td>
+</tr>
+</table></div>
+<p id="p-33">Knowing the values of the unit circle will make your life much easier; fill it out below.</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-32.svg" role="img" class="contained" alt="The unit circle with special angles marked, as well as trig values for the angles"></div>
+<article class="assemblage assemblage-like" id="assemblage-2"><h5 class="heading"><span class="title">Common Trig Identities.</span></h5>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\sin^2\theta +\cos^2\theta=1\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\sin(2\theta) = 2\sin\theta\cos\theta\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\cos(2\theta) = \cos^2\theta - \sin^2\theta\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\cos(2\theta) = 2\cos^2\theta - 1\)</span></td>
+</tr>
+<tr><td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\cos(2\theta) = 1-2\sin^2\theta\)</span></td></tr>
+</table></div></article><article class="example example-like" id="example-29"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.15</span><span class="period">.</span>
+</h5>Sketch the graph of each trig function over one period.  If necessary, sketch any asymptotes the graph has.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-29" id="solution-29"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-29"><div class="solution solution-like">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;">
+<div class="sbspanel top" style="width:31.0344827586207%;"><img src="generated/latex-image/image-33.svg" role="img" class="contained" alt="The graph of \(\sin x\) over one period"></div>
+<div class="sbspanel top" style="width:31.0344827586207%;"><img src="generated/latex-image/image-34.svg" role="img" class="contained" alt="The graph of \(\cos x\) over one period"></div>
+<div class="sbspanel top" style="width:31.0344827586207%;"><img src="generated/latex-image/image-35.svg" role="img" class="contained" alt="The graph of \(\tan x\) over one period"></div>
+</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;">
+<div class="sbspanel top" style="width:31.0344827586207%;"><img src="generated/latex-image/image-36.svg" role="img" class="contained" alt="The graph of \(\csc x\) over one period"></div>
+<div class="sbspanel top" style="width:31.0344827586207%;"><img src="generated/latex-image/image-37.svg" role="img" class="contained" alt="The graph of \(\sec x\) over one period"></div>
+<div class="sbspanel top" style="width:31.0344827586207%;"><img src="generated/latex-image/image-38.svg" role="img" class="contained" alt="The graph of \(\cot x\) over one period"></div>
+</div></div>
+</div></div>
+</div></article><article class="example example-like" id="example-30"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.16</span><span class="period">.</span>
+</h5>Find the domain of the function <span class="process-math">\(f(x) = \dfrac{3}{2\sin x + 1}\text{,}\)</span> first on the interval <span class="process-math">\([0,2\pi)\text{,}\)</span> then in general.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-30" id="solution-30"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-30"><div class="solution solution-like">On <span class="process-math">\([0,2pi)\text{,}\)</span> the domain is <span class="process-math">\(\left[0,\dfrac{7\pi}{6}\right)\cup \left(\dfrac{7\pi}{6},\dfrac{11\pi}{6}\right)\text{.}\)</span>  The general domain is <span class="process-math">\(x\neq \dfrac{7\pi}{6} + 2\pi k\)</span> and <span class="process-math">\(x\neq \dfrac{11\pi}{6}+2\pi k\text{,}\)</span> where <span class="process-math">\(k\)</span> is an integer.</div></div>
+</div></article></section></section><section class="subsection" id="section-12-afterclass"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.2.4</span> <span class="title">After Class Activities</span>
+</h3>
+<article class="example example-like" id="example-31"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.17</span><span class="period">.</span>
+</h4>Classify each function as one of the types of functions discussed in this section. <ol class="lower-alpha">
+<li id="li-94"><p id="p-derived-li-94"><span class="process-math">\(\displaystyle k(t) = t-5+t^2\)</span></p></li>
+<li id="li-95"><p id="p-derived-li-95"><span class="process-math">\(\displaystyle \ell(x) = (0.25)^x\)</span></p></li>
+<li id="li-96"><p id="p-derived-li-96"><span class="process-math">\(\displaystyle m(y) = \dfrac{1-x}{\sqrt{1-x^2}}\)</span></p></li>
+<li id="li-97"><p id="p-derived-li-97"><span class="process-math">\(\displaystyle n(\theta) = \theta^{0.25}\)</span></p></li>
+<li id="li-98"><p id="p-derived-li-98"><span class="process-math">\(\displaystyle o(r) = \dfrac{r^3-5r^2 + r^4-1}{r^2 + r+10}\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-31" id="solution-31"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-31"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-99"><p id="p-derived-li-99">Polynomial, algebraic</p></li>
+<li id="li-100"><p id="p-derived-li-100">Exponential</p></li>
+<li id="li-101"><p id="p-derived-li-101">Algebraic</p></li>
+<li id="li-102"><p id="p-derived-li-102">Power, algebraic</p></li>
+<li id="li-103"><p id="p-derived-li-103">Rational, algebraic</p></li>
+</ol></div></div>
+</div></article><article class="example example-like" id="example-32"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.18</span><span class="period">.</span>
+</h4>Ecologists have modeled the relationship between the area of a region and the number of species inhabiting the region.  In particular, the number of species <span class="process-math">\(S\)</span> of bats living in and around Austin has been related to the surface area <span class="process-math">\(A\)</span> of the structure by the equation <span class="process-math">\(S = 0.3A^{0.5}\text{.}\)</span> <ol class="lower-alpha">
+<li id="li-104"><p id="p-derived-li-104">A structure near I-35 has a surface area <span class="process-math">\(A = 10000\)</span> m<span class="process-math">\(^2\text{;}\)</span> how many species of bat do you expect to find on the structure?</p></li>
+<li id="li-105"><p id="p-derived-li-105">If an overpass has nine species of bats, estimate the area of overpass.</p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-32" id="solution-32"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-32"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-106"><p id="p-derived-li-106">30 species</p></li>
+<li id="li-107"><p id="p-derived-li-107">900m<span class="process-math">\(^2\)</span></p></li>
+</ol></div></div>
+</div></article><article class="example example-like" id="example-33"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.19</span><span class="period">.</span>
+</h4>Find the domain of the following functions. <ol class="lower-alpha">
+<li id="li-108"><p id="p-derived-li-108"><span class="process-math">\(\displaystyle t(k) = \sqrt{k^2-6}\)</span></p></li>
+<li id="li-109"><p id="p-derived-li-109"><span class="process-math">\(\displaystyle y(b) = \sec\lrpar{\dfrac{\pi}{2}b}\)</span></p></li>
+<li id="li-110"><p id="p-derived-li-110"><span class="process-math">\(\displaystyle h(x) = \dfrac{x+3}{2\sqrt{5-x}}\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-33" id="solution-33"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-33"><div class="solution solution-like"><ol class="lower-alpha">
+<li id="li-111"><p id="p-derived-li-111"><span class="process-math">\(\displaystyle (-\infty,-\sqrt{6}]\cup [\sqrt{6},\infty)\)</span></p></li>
+<li id="li-112"><p id="p-derived-li-112"><span class="process-math">\(b\neq 2k+1\)</span> for <span class="process-math">\(k\in \Z\)</span></p></li>
+<li id="li-113"><p id="p-derived-li-113"><span class="process-math">\(\displaystyle (-\infty,5)\)</span></p></li>
+</ol></div></div>
+</div></article></section><section class="subsection" id="section-12-resources"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.2.5</span> <span class="title">Section 1.2 Resources</span>
+</h3>
+<section class="subsubsection" id="subsubsection-17"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span> <span class="codenumber">1.2.5.1</span> <span class="title">Essential Functions</span>
+</h4>
+<ul class="disc">
+<li id="li-114"><p id="p-derived-li-114">Quick Resource from Chegg <a class="external" href="https://www.chegg.com/learn/calculus/calculus/mathematical-models-a-catalog-of-essential-functions" target="_blank"><code class="code-inline tex2jax_ignore">https://www.chegg.com/learn/calculus/calculus/mathematical-models-a-catalog-of-essential-functions</code></a></p></li>
+<li id="li-115"><p id="p-derived-li-115">Another Quick Resource <a class="external" href="https://mathonweb.com/help_ebook/html/functions_4.htm" target="_blank"><code class="code-inline tex2jax_ignore">https://mathonweb.com/help_ebook/html/functions_4.htm</code></a></p></li>
+<li id="li-116"><p id="p-derived-li-116">Common Graphs in Calculus from Michigan <a class="external" href="https://prep.math.lsa.umich.edu/cgi-bin/pmc/crtopic?sxn=14&amp;top=1&amp;stpc=1&amp;crssxn=prep" target="_blank"><code class="code-inline tex2jax_ignore">https://prep.math.lsa.umich.edu/cgi-bin/pmc/crtopic?sxn=14&amp;top=1&amp;stpc=1&amp;crssxn=prep</code></a></p></li>
+</ul></section></section></section></div></main>
+</div>
+</body>
+</html>

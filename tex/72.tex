@@ -1,0 +1,192 @@
+\documentclass[notes]{subfiles}
+\begin{document}
+	\addcontentsline{toc}{section}{7.2 - Trigonometric Integrals}
+	\refstepcounter{section}
+	\fancyhead[RO,LE]{\bfseries \nameref{cs72}} 
+	\fancyhead[LO,RE]{\bfseries \small \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Chapter 7.2}
+	
+\section*{Trigonometric Integrals}\label{cs72}
+	\subsection*{Before Class}
+	\addcontentsline{toc}{subsection}{Before Class}
+	\subsubsection*{Trigonometric Identities}
+	\addcontentsline{toc}{subsubsection}{Trigonometric Identities}
+		Here are some identities from trigonometry which will be helpful as we move through this section:
+		\begin{center}
+			\tabulinesep = 2mm
+			\begin{tabu}to .8\textwidth {| X[c]| X[c] |}\hline
+				$\sin^2\theta + \cos^2\theta = 1$	& $\sin 2\theta = 2\sin\theta\cos\theta$ \\ \hline
+				$\cos 2\theta =1-2\sin^2\theta$		& $\cos 2\theta = 2\cos^2\theta - 1$\\ \hline
+				$\tan^2\theta + 1 = \sec^2\theta$	& $1 + \cot^2\theta = \csc^2\theta$\\ \hline
+				$\sin (\theta + \phi) = \sin\theta\cos\phi + \sin\phi\cos\theta$ & $\sin(\theta - \phi) =\sin\theta\cos\phi -\sin\phi\cos\theta$\\ \hline
+				$\cos (\theta + \phi) = \cos\theta\cos\phi - \sin\theta\sin\phi$ & $\cos(\theta - \phi) = \cos\theta\cos\phi + \sin\theta\sin\phi$\\ \hline
+			\end{tabu}
+		\end{center}
+			\vspace{.5in}
+			
+		Occasionally, you'll want to rearrange some of these identities to arrive at new ones:		
+		\begin{center}
+			\tabulinesep = 2mm
+			\begin{tabu}to .8\textwidth {| X[c]| X[c] |}\hline
+				$\sin\theta\cos\phi = \dfrac{1}{2}[\sin(\theta - \phi) + \sin (\theta + \phi)]$ & $\sin\theta\sin\phi = \dfrac{1}{2}[\cos(\theta - \phi) - \cos(\theta + \phi)]$\\ \hline 
+				$\cos\theta\cos\phi =\dfrac{1}{2}[\cos(\theta-\phi) + \cos (\theta + \phi)]$ & \\ \hline
+			\end{tabu}
+		\end{center}
+	
+	\subsubsection*{Trigonometric Integrals}
+	\addcontentsline{toc}{subsubsection}{Trigonometric Integrals}
+		\begin{ex}
+			Compute $\ds \int \sin^3 x\, dx$
+		\end{ex}
+			\vs{1}			
+			\newpage
+			
+		\begin{ex}
+			Compute $\ds \int \sin^5x\cos^2x\, dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find the area under the curve of $f(x) = \sin^2x$ from $0$ to $\pi$.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Compute $\ds \int \cos^4x\, dx$
+		\end{ex}
+			\vs{1}
+			\newpage
+		
+	\subsection*{Pre-Class Activities}
+	\addcontentsline{toc}{subsection}{Pre-Class Activities}
+		\begin{ex}
+			Use this space to write any questions you might have from the videos.
+		\end{ex}
+			\vs{.5}
+			
+		\begin{ex}
+			Evaluate $\ds \int \sin^2 x\cos^3x\, dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate $\ds \int \sin x\cos x\, dx$ in four ways: (1) using the substitution $u = \cos x$; (2) using the substitution $u = \sin x$; (3) using the double-angle identity for sine; (4) using integration by parts.  Compare your work between the four methods.
+		\end{ex}	
+			\vs{1.5}
+			\newpage
+			
+	\subsection*{In Class}
+	\addcontentsline{toc}{subsection}{In Class}
+	\subsubsection*{Strategies for Trig Integrals}
+	\addcontentsline{toc}{subsubsection}{Strategies for Trig Integrals}
+		\begin{rmk}[Evaluating $\ds \int \sin^mx\cos^nx\, dx$]
+			\begin{itemize}
+				\setlength \itemsep{60pt}
+				\item If the power of cosine is odd: 
+				\item If the power of sine is odd:
+				\item If the powers of sine and cosine are even: 
+			\end{itemize}\\ \\ 
+		\end{rmk}
+		
+		\begin{ex}
+			Evaluate $\ds \int \sin^3\theta\cos^4\theta \, d\theta$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Evaluate $\ds \int \tan x \sec x\, dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{rmk}[Evaluating $\ds \int \tan^mx\sec^nx\, dx$]
+			\begin{itemize}
+				\setlength\itemsep{60pt}
+				\item If the power of secant is even:
+				\item If the power of tangent is odd:
+			\end{itemize}\\ \\
+		\end{rmk}
+		\begin{ex}
+			Evaluate $\ds \int \tan^3\theta\sec^5\theta\, d\theta$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Show that $\ds \int \sec x\, dx = \ln |\sec x + \tan x| + C$
+		\end{ex}
+			\vs{1}
+		
+		\begin{ex}
+			Evaluate $\ds \int \tan^3x\, dx$
+		\end{ex}	
+			\vs{1}
+			
+		\begin{ex}
+			Find $\ds \int \sec^3x\, dx$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Evaluate $\ds \int \sin 3x\cos 4x\, dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate $\ds \int \cos 5x\cos 7x\, dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate $\ds \int_{\pi/4}^{\pi/2} \csc^4\theta\cot^4\theta\, d\theta$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Find $\ds \int_0^{\pi/2} \sin^2x\cos^2x\, dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate $\ds \int t\sin^2 t\, dt$
+		\end{ex}
+			\vs{1}
+			\newpage
+	\subsection*{After Class Activities}
+	\addcontentsline{toc}{subsubsection}{After Class Activities}
+		\begin{ex}
+			Explain why $\ds \int_{-\pi}^{\pi} \sin mx \cos nx = 0$ for any positive integers $m$ and $n$.  There are several ways of coming to this answer!
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate $\ds \int_0^\pi \cos^4(2t)\, dt$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate $\ds \int \sqrt{\cos\theta}\sin^3\theta \, d\theta$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Find $\ds \int \tan^2\theta \sec^4\theta\, d\theta$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate $\ds \int_0^{\pi/2} \cos 5t\cos 10t\, dt$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate $\ds \int \dfrac{dx}{\cos x - 1}$
+		\end{ex}
+			\vs{1}
+\clearpage
+\end{document}

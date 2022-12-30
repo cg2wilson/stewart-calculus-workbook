@@ -1,0 +1,190 @@
+\documentclass[notes]{subfiles}
+
+\begin{document}
+	\addcontentsline{toc}{section}{3.2 - The Mean Value Theorem}
+	\refstepcounter{section}
+	\fancyhead[RO,LE]{\bfseries \large\nameref{cs32}} 
+	\fancyhead[LO,RE]{\bfseries \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Chapter 3.2}
+	
+\section*{The Mean Value Theorem}\label{cs32}
+	\subsection*{Before Class}
+	\addcontentsline{toc}{subsection}{Before Class}
+	\subsubsection*{Rolle's Theorem}
+	\addcontentsline{toc}{subsubsection}{Rolle's Theorem}
+		\begin{thm}[Rolle's Theorem]
+			Let $f$ be a function that satisfies the following three properties:
+				\showto{ins}{
+					\begin{itemize}
+						\item $f$ is continuous on the closed interval $[a,b]$.
+						\item $f$ is differentiable on the open interval $(a,b)$.
+						\item $f(a) = f(b)$.
+					\end{itemize}
+				}
+				\showto{st}{\\
+					\begin{itemize}
+					\setlength\itemsep{25pt}
+						\item 
+						\item 
+						\item
+					\end{itemize}\\
+				}
+			Then, there is some number $c$ in $(a,b)$ such that 
+			\showto{ins}{
+				\fbox{$f'(c) = 0$}.
+			}
+			\showto{st}{
+				\blank{2.5}.
+			}
+		\end{thm}
+		
+		\begin{pf}
+		
+		\end{pf}
+			\newpage
+		\begin{ex}
+			Rolle's Theorem has three hypotheses$-$conditions upon which the conclusion depends.
+			\begin{enumerate}[(a)]
+				\item If we remove the first hypothesis, does Rolle's Theorem still hold?  Give an argument why or why not, and include a picture if possible.
+					\vs{1}
+					
+				\item If we remove the second hypothesis, does the theorem still hold?  Give an argument why or why not, and include a picture if possible.
+					\vs{1}
+					
+				\item If the third hypothesis is removed, what then?  Justify as before.
+					\vs{1}
+					
+			\end{enumerate}
+		\end{ex}	
+	\subsubsection*{Mean Value Theorem}
+	\addcontentsline{toc}{subsubsection}{Mean Value Theorem}
+		\begin{thm}[Mean Value Theorem]
+			Let $f$ be a function that satisfies the two conditions:
+			\begin{itemize}
+				\item $f$ is continuous on the closed interval $[a,b]$.
+				\item $f$ is differentiable on the open interval $(a,b)$.
+			\end{itemize}
+			Then, 
+			\showto{ins}{
+				there is some number $c$ in $(a,b)$ such that
+					\[f'(c) = \dfrac{f(b)-f(a)}{b-a}\]
+			}
+			\showto{st}{
+				\vspace{1in}
+			}
+		\end{thm}
+		
+		\begin{ex}
+			Restate the mean value theorem in words.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{pf}[of the Mean Value Theorem]
+		
+		\end{pf}
+			\newpage
+		
+		\begin{ex}
+			Let $f(x) = x^2 + x$ on the interval $[0,5]$.  Find the value(s) of $c$ which satisfy the Mean Value Theorem.
+		\end{ex}	
+			\vs{1}\\
+			
+			\newsec $ $
+			
+	\subsubsection*{Pre-Class Activities}
+	\addcontentsline{toc}{subsubsection}{Pre-Class Activities}
+		\begin{ex}
+			Let $f(x) = \tan x$.  Show that $f(0) = f(\pi)$, but that there is no number $c$ in $(0,\pi)$ such that $f'(c) = 0$.  Why does this not contradict Rolle's Theorem?
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Verify that $f(x) = x^3-2x^2-4x+2$ satisfies the hypotheses of Rolle's Theorem on $[-2,2]$, then find all numbers $c$ that satisfy the conclusion of Rolle's Theorem.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Draw the graph of a function that is continuous on $[0,8]$, with $f(0) = 1$ and $f(8) = 4$, but that does \emph{not} satisfy the conclusion of the Mean Value Theorem on $[0,8]$.
+		\end{ex}
+			\vs{2}
+			\newpage
+			
+	\subsection*{In-Class}		
+	\addcontentsline{toc}{subsection}{In-Class}
+		\begin{ex}
+			Use Rolle's Theorem to prove that the equation $x^3 + x -2 = 0$ has exactly one real root.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Show that the equation $2x + \cos x = 0$ has exactly one real root.
+		\end{ex}
+			\vs{3}	
+			
+		\begin{ex}
+			Suppose $f(0) = -3$ and $f'(x)\leq 5$ for all values of $x$.  How large can $f(2)$ be?
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Suppose that $3\leq f'(x)\leq 5$ for all values of $x$.  Show that $18\leq f(8)-f(2)\leq 30$.
+		\end{ex}
+			\vs{1}
+		
+		
+		\begin{ex}
+			At 1:00pm, a car's speedometer reads 30 mi/h.  At 1:15pm, it reads 50 mi/h.  Show that at some time between 1:00 and 1:15, the acceleration is exactly 80 mi/h$^2$.
+		\end{ex}
+			\vs{1}
+		
+		\begin{ex}
+			Find the number $c$ that satisfies the conclusion of the Mean Value Theorem for the function $f(x) = x^3-2x$ on the interval $[-2,2]$.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Show that if $f'(x) = 0$ on the interval $(a,b)$, then $f(x) = c$ on $(a,b)$ for some constant $c$.
+		\end{ex}
+			\vs{1}
+		
+		\begin{ex}
+			Suppose that $f$ is an odd function that is differentiable everywhere.  Show that for every positive number $b$, there exists some number $c$ in $(-b,b)$ such that $f'(c) = \dfrac{f(b)}{b}$.
+		\end{ex}	
+			\vs{1}
+			\newpage
+			
+	\subsection*{After Class}
+	\addcontentsline{toc}{subsection}{After Class}
+		\begin{ex}
+			Show that the equation $2x - 1 - \sin x = 0$ has exactly one real root.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Show that the equation $x^3 - 15x + C = 0$ has at most one root in the interval $[-2,2]$.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Does there exist a function $f$ such that $f(0) = -1$, $f(2) = 4$, and $f'(x)\leq 2$ for all $x$?  Why or why not?  Justify your answer using a theorem from this section.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			In the Mean Value Theorem, we assume that $f$ is continuous on $[a,b]$ and differentiable on $(a,b)$.  Since differentiablity implies continuity, why do we have to assume continuity on $[a,b]$?
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Use the Mean Value Theorem to show that $|\cos x - \cos y| \leq |x - y|$ for any choice of $x$ and $y$. 
+		\end{ex}
+			\vs{1}
+	\clearpage
+\end{document}
