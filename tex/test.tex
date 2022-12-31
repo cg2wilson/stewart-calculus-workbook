@@ -160,17 +160,14 @@
 		axis x line = middle,
 			axis y line = middle,
 			every axis y label/.style={at={(ticklabel cs:1.1)}},
-		y label style={at={(axis description cs:.5,1.1)},anchor=north},
+		y label style={at={(axis description cs:0,1.1)},anchor=north},
 			ylabel = {$y$},
 			every axis x label/.style= {at ={(ticklabel cs:1)}},
 		x label style={at={(axis description cs:1.1,.165)},anchor=east},
 			xlabel = {$x$},
-		xmin=-3,xmax=3,
-		ymin = -5,
-		ytick ={-5,5,10,15,20,25},
-		xtick = {-3,-2,-1,1,2,3},
+		xmin=0,
 		]
-		\addplot[thick,smooth,domain = -3:3] {3^(-x) -1};
+		\addplot[thick,smooth,samples=100,domain = 1.05:25] {ln(x-1)+2};
 		\end{axis}
 	\end{tikzpicture}
 
