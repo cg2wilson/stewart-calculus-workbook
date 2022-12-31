@@ -7289,6 +7289,276 @@ var ptx_lunr_docs = [
   "number": "6.2.25",
   "title": "",
   "body": "  Find the volume of the solid obtained by rotating the region bounded by the curves , , , and about the axis.    The volume is    "
+},
+{
+  "id": "section-63",
+  "level": "1",
+  "url": "section-63.html",
+  "type": "Section",
+  "number": "6.3",
+  "title": "Logarithmic Functions",
+  "body": " Logarithmic Functions    Identify logarithmic functions for any base and its basic properties (domain, range, graphical behavior depending on value of ), and relate logarithms to exponentials using inverse relationships  Apply properties and rules of logarithms as well as algebra to: simplify logarithmic expressions, solve equations\/inequalities involving exponentials\/logarithms, find inverses of exponential\/logarithmic functions  Describe the end behavior of logarithmic expressions using limits     Before Class   Pre-Class Video 1     Logarithmic Functions   Logarithmic Functions  Logarithmic Functions   Let . The inverse of this exponential function, called a logarithmic function , is defined using the relationship .      Find the following:                               Does not exist       Cancellation Properties     for    for       Properties of Logarithmic Functions  Let . Then, has the following properties:    Domain:   Range:   If , then is increasing  If , then is decreasing            Logarithm Rules  For and , the following properties hold:                  Use the rules of logarithms to write the following as a single logarithm:                            Use the rules of logarithms to expand the given quantity:                             Pre-Class Activities    Find the exact value of the expression:                                  Write as a single logarithm.           Can be written as a single logarithm? Why or why not?    Not with our current tools; the bases of the logarithms are different      Let . Use log rules to completely simplify , then use limit laws to compute .     simplifies as , and the limit is       Use this space to write any questions or thoughts you have from the videos.    Answers vary      In Class   The Natural Logarithm   The Natural Logarithm  Natural Logarithm   The natural logarithm is the logarithm with base . is written as       Find if            Sketch the graph of       The graph of          Solve the equation            Solve the equations for :                                                          Find the following limits:                                  If , find the domain of , the inverse function , and the domain of .    The domain is , , and the domain of is       Find the inverse of the function .           Where is the function increasing?           Find an equation of the tangent to the curve that is perpendicular to the line .          Change of Base Formula  For any positive number ( ), we have      Write the logarithm in terms of the natural logarithm.           Use the change of base formula to write as a single logarithm.            After Class Activities    Solve the equation            Find the limits:                            Find the domain of the function            Find the domain of the function , the inverse function , and the domain of .    The domain is , , and the domain is       If , find .           On what interval is the curve concave down?          "
+},
+{
+  "id": "objectives-31",
+  "level": "2",
+  "url": "section-63.html#objectives-31",
+  "type": "Objectives",
+  "number": "6.3",
+  "title": "",
+  "body": "  Identify logarithmic functions for any base and its basic properties (domain, range, graphical behavior depending on value of ), and relate logarithms to exponentials using inverse relationships  Apply properties and rules of logarithms as well as algebra to: simplify logarithmic expressions, solve equations\/inequalities involving exponentials\/logarithms, find inverses of exponential\/logarithmic functions  Describe the end behavior of logarithmic expressions using limits   "
+},
+{
+  "id": "figure-51",
+  "level": "2",
+  "url": "section-63.html#figure-51",
+  "type": "Figure",
+  "number": "51",
+  "title": "",
+  "body": " Pre-Class Video 1   "
+},
+{
+  "id": "definition-41",
+  "level": "2",
+  "url": "section-63.html#definition-41",
+  "type": "Definition",
+  "number": "6.3.1",
+  "title": "Logarithmic Functions.",
+  "body": " Logarithmic Functions  Logarithmic Functions   Let . The inverse of this exponential function, called a logarithmic function , is defined using the relationship .   "
+},
+{
+  "id": "example-588",
+  "level": "2",
+  "url": "section-63.html#example-588",
+  "type": "Example",
+  "number": "6.3.2",
+  "title": "",
+  "body": "  Find the following:                               Does not exist     "
+},
+{
+  "id": "example-589",
+  "level": "2",
+  "url": "section-63.html#example-589",
+  "type": "Example",
+  "number": "6.3.3",
+  "title": "",
+  "body": "  Use the rules of logarithms to write the following as a single logarithm:                         "
+},
+{
+  "id": "example-590",
+  "level": "2",
+  "url": "section-63.html#example-590",
+  "type": "Example",
+  "number": "6.3.4",
+  "title": "",
+  "body": "  Use the rules of logarithms to expand the given quantity:                         "
+},
+{
+  "id": "example-591",
+  "level": "2",
+  "url": "section-63.html#example-591",
+  "type": "Example",
+  "number": "6.3.5",
+  "title": "",
+  "body": "  Find the exact value of the expression:                               "
+},
+{
+  "id": "example-592",
+  "level": "2",
+  "url": "section-63.html#example-592",
+  "type": "Example",
+  "number": "6.3.6",
+  "title": "",
+  "body": "  Write as a single logarithm.        "
+},
+{
+  "id": "example-593",
+  "level": "2",
+  "url": "section-63.html#example-593",
+  "type": "Example",
+  "number": "6.3.7",
+  "title": "",
+  "body": "  Can be written as a single logarithm? Why or why not?    Not with our current tools; the bases of the logarithms are different   "
+},
+{
+  "id": "example-594",
+  "level": "2",
+  "url": "section-63.html#example-594",
+  "type": "Example",
+  "number": "6.3.8",
+  "title": "",
+  "body": "  Let . Use log rules to completely simplify , then use limit laws to compute .     simplifies as , and the limit is    "
+},
+{
+  "id": "question-33",
+  "level": "2",
+  "url": "section-63.html#question-33",
+  "type": "Question",
+  "number": "6.3.9",
+  "title": "",
+  "body": "  Use this space to write any questions or thoughts you have from the videos.    Answers vary   "
+},
+{
+  "id": "definition-42",
+  "level": "2",
+  "url": "section-63.html#definition-42",
+  "type": "Definition",
+  "number": "6.3.10",
+  "title": "The Natural Logarithm.",
+  "body": " The Natural Logarithm  Natural Logarithm   The natural logarithm is the logarithm with base . is written as    "
+},
+{
+  "id": "example-595",
+  "level": "2",
+  "url": "section-63.html#example-595",
+  "type": "Example",
+  "number": "6.3.11",
+  "title": "",
+  "body": "  Find if         "
+},
+{
+  "id": "example-596",
+  "level": "2",
+  "url": "section-63.html#example-596",
+  "type": "Example",
+  "number": "6.3.12",
+  "title": "",
+  "body": "  Sketch the graph of       The graph of       "
+},
+{
+  "id": "example-597",
+  "level": "2",
+  "url": "section-63.html#example-597",
+  "type": "Example",
+  "number": "6.3.13",
+  "title": "",
+  "body": "  Solve the equation         "
+},
+{
+  "id": "example-598",
+  "level": "2",
+  "url": "section-63.html#example-598",
+  "type": "Example",
+  "number": "6.3.14",
+  "title": "",
+  "body": "  Solve the equations for :                                                       "
+},
+{
+  "id": "example-599",
+  "level": "2",
+  "url": "section-63.html#example-599",
+  "type": "Example",
+  "number": "6.3.15",
+  "title": "",
+  "body": "  Find the following limits:                               "
+},
+{
+  "id": "example-600",
+  "level": "2",
+  "url": "section-63.html#example-600",
+  "type": "Example",
+  "number": "6.3.16",
+  "title": "",
+  "body": "  If , find the domain of , the inverse function , and the domain of .    The domain is , , and the domain of is    "
+},
+{
+  "id": "example-601",
+  "level": "2",
+  "url": "section-63.html#example-601",
+  "type": "Example",
+  "number": "6.3.17",
+  "title": "",
+  "body": "  Find the inverse of the function .        "
+},
+{
+  "id": "example-602",
+  "level": "2",
+  "url": "section-63.html#example-602",
+  "type": "Example",
+  "number": "6.3.18",
+  "title": "",
+  "body": "  Where is the function increasing?        "
+},
+{
+  "id": "example-603",
+  "level": "2",
+  "url": "section-63.html#example-603",
+  "type": "Example",
+  "number": "6.3.19",
+  "title": "",
+  "body": "  Find an equation of the tangent to the curve that is perpendicular to the line .        "
+},
+{
+  "id": "example-604",
+  "level": "2",
+  "url": "section-63.html#example-604",
+  "type": "Example",
+  "number": "6.3.20",
+  "title": "",
+  "body": "  Write the logarithm in terms of the natural logarithm.        "
+},
+{
+  "id": "example-605",
+  "level": "2",
+  "url": "section-63.html#example-605",
+  "type": "Example",
+  "number": "6.3.21",
+  "title": "",
+  "body": "  Use the change of base formula to write as a single logarithm.        "
+},
+{
+  "id": "example-606",
+  "level": "2",
+  "url": "section-63.html#example-606",
+  "type": "Example",
+  "number": "6.3.22",
+  "title": "",
+  "body": "  Solve the equation         "
+},
+{
+  "id": "example-607",
+  "level": "2",
+  "url": "section-63.html#example-607",
+  "type": "Example",
+  "number": "6.3.23",
+  "title": "",
+  "body": "  Find the limits:                         "
+},
+{
+  "id": "example-608",
+  "level": "2",
+  "url": "section-63.html#example-608",
+  "type": "Example",
+  "number": "6.3.24",
+  "title": "",
+  "body": "  Find the domain of the function         "
+},
+{
+  "id": "example-609",
+  "level": "2",
+  "url": "section-63.html#example-609",
+  "type": "Example",
+  "number": "6.3.25",
+  "title": "",
+  "body": "  Find the domain of the function , the inverse function , and the domain of .    The domain is , , and the domain is    "
+},
+{
+  "id": "example-610",
+  "level": "2",
+  "url": "section-63.html#example-610",
+  "type": "Example",
+  "number": "6.3.26",
+  "title": "",
+  "body": "  If , find .        "
+},
+{
+  "id": "example-611",
+  "level": "2",
+  "url": "section-63.html#example-611",
+  "type": "Example",
+  "number": "6.3.27",
+  "title": "",
+  "body": "  On what interval is the curve concave down?        "
 }
 ]
 
