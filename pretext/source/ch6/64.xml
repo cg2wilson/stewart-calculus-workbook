@@ -1,28 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<section xml:id="section-62">
-	<title>Exponential Functions &amp; Derivatives</title>
+<section xml:id="section-64">
+	<title>Derivatives of Logarithmic Functions</title>
 	<objectives>
 		<ul>
 			<li>
-				Identify the general exponential function <m>y=b^x</m> for any base <m>b >0,b\neq 1</m> and its basic properties (domain, range, graphical behavior depending on value of <m>b</m>)
+				Apply differentiation and antidifferentiation rules, potentially using algebra or properties of logarithms, to compute derivatives and antiderivatives of the logarithms of any base and exponentials of any base.
 			</li>
 			<li>
-				Apply rules of exponents to exponential functions
+				Use derivatives to analyze qualitative behaviors of logarithmic expressions, including: intervals of increase/decrease, concavity, local extrema, etc.
 			</li>
-			<li>
-				Evaluate limits of functions involving exponential expressions and analyze the end behavior of those functions
-			</li>
-			<li>
-				Find the inverse of a one-to-one function given a numerical, algebraic, or graphical representation
-			</li>
-			<li>
-				Apply the formula for the derivative of inverse functions
-			</li>
+			
 		</ul>
 	</objectives>
 
-	<subsection xml:id="section-62-beforeclass">
+	<subsection xml:id="section-64-beforeclass">
 		<title>Before Class</title>
 		<figure>
 			<caption>Pre-Class Video 1</caption>
@@ -31,26 +23,654 @@
 			-->
 		</figure>
 
-		<subsubsection xml:id="section-61-inverses-properties">
-			<title>Inverse Functions &amp; Properties</title>
+		<subsubsection xml:id="section-64-natural-logarithm">
+			<title>The Natural Logarithm</title>
 
+			<assemblage>
+				<title>The Natural Logarithm</title>
+				<p>
+					<m>\dfrac{d}{dx}[\ln x] = \dfrac{1}{x}</m>
+				</p>
+			</assemblage>
+			<proof>
+				Let <m>y=\ln x</m>. From inverse relationships, we know that <m>x=e^y</m>. Implicitly differentiating, we have 
+					<me>
+						1 = e^y\cdot \dfrac{dy}{dx}
+					</me>
+				So that <m>\dfrac{dy}{dx} = \dfrac{1}{e^y}</m>. Since <m>y=\ln x</m>, we have 
+					<me>
+						\dfrac{dy}{dx} = \dfrac{1}{e^{\ln x}} = \dfrac{1}{x}
+					</me>
+			</proof>
+
+			<example>
+				<statement>
+					<p>
+						Find the derivative of <m>f(x) = \ln (x^2-5)</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>f'(x) = \dfrac{1}{x^2-5}\cdot (2x-5)</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find the derivative of <m>f(x) = \ln (\cos x)</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>f'(x) = -\tan x</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find the derivative of <m>\ln \lrpar{\dfrac{x-2}{\sqrt{x+1}}}</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						The (simplified) derivative is <m>\dfrac{\sqrt{x+1}}{x-2}\cdot \lrpar{\dfrac{\sqrt{x+1}-(x-2)\lrpar{\dfrac{1}{2}(x+1)^{-1/2})}}{x+1}}</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Argue why  <m>\dfrac{d}{dx} (\ln |x|) = \dfrac{1}{x}</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						Note first that 
+							<me>
+								|x| = \begin{cases}-x &amp; x \lt 0 \\ x &amp; x\geq 0\end{cases}
+							</me>
+						Then, we have two cases: 
+							<me>
+								\ln |x| = \begin{cases} \ln (-x) &amp; x \lt 0 \\ \ln (x) &amp; x\geq 0 \end{cases}
+							</me>
+						When we take the derivative, we have 
+							<me>
+								\dfrac{d}{dx}[\ln |x|] = \begin{cases} \dfrac{d}{dx} [\ln (-x)] &amp; x \lt 0 \\ \dfrac{d}{dx}[\ln (x)] &amp; x\geq 0 \end{cases}
+							</me>
+						In the first branch, since <m>x\lt 0</m>, <m>\ln(-x) = \ln (x)</m>. So, 
+							<me>
+								\dfrac{d}{dx} [\ln (-x)] = \dfrac{d}{dx} [\ln (x)] = \dfrac{1}{x}
+							</me>
+						The second branch agrees, namely that 
+							<me>
+								\dfrac{d}{dx} [\ln (x)] = \dfrac{1}{x}
+							</me>
+						So for any value of <m>x</m>, the statement holds:
+							<me>
+								\dfrac{d}{dx} [\ln |x|] = \dfrac{1}{x}
+							</me>
+					</p>
+				</solution>
+			</example>
+
+			<assemblage>
+				<title>Antiderivative of <m>\dfrac{1}{x}</m></title>
+				<p>
+					<me>\ds \int \dfrac{1}{x}\, dx = \ln |x| + C</me>
+				</p>
+			</assemblage>
+
+			<example>
+				<statement>
+					<p>
+						Evaluate <m>\ds \int_1^5 \dfrac{1}{2x}\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int_1^5 \dfrac{1}{2x}\, dx = \dfrac{1}{2}\ln 5</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Compute <m>\ds \int_1^e \dfrac{\ln x}{x}\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int_1^e \dfrac{\ln x}{x}\, dx = \dfrac{1}{2}</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find <m>\ds \int \dfrac{x}{x^2 + 1}\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int \dfrac{x}{x^2 + 1}\, dx = \dfrac{1}{2}\ln (x^2+1) +C</m>
+					</p>
+				</solution>
+			</example>
 		</subsubsection>
 	</subsection>
 
-	<subsection xml:id="section-61-preclass">
+	<subsection xml:id="section-64-preclass">
 		<title>Pre-Class Activities</title>
 
+		<example>
+			<statement>
+				<p>
+					Find the derivative:
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<m>f(x) = x\ln x - x</m>
+						</li>
+						<li>
+							<m>g(x) = \ln (\sin^2x)</m>
+						</li>
+						<li>
+							<m>y = \dfrac{1}{\ln x}</m>
+						</li>
+						<li>
+							<m>h(t) = \ln(t + \sqrt{t^2-1})</m>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a">
+						<li>
+							<m>f'(x) = \ln x</m>
+						</li>
+						<li>
+							<m>g'(x) = 2\cot x</m>
+						</li>
+						<li>
+							<m>y' = -(\ln x)^{-2}\cdot \dfrac{1}{x}</m>
+						</li>
+						<li>
+							<m>h'(t) = \dfrac{1}{t+\sqrt{t^2-1}}\cdot \lrpar{1 + \dfrac{1}{2}(t^2-1)^{-1/2}\cdot (2t)}</m>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Find the integral:
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<m>\ds \int_2^4 \dfrac{3}{x}\, dx</m>
+						</li>
+						<li>
+							<m>\ds \int_4^9 \lrpar{\sqrt{x} + \dfrac{1}{\sqrt{x}}}^2\, dx</m>
+						</li>
+						<li>
+							<m>\ds \int \dfrac{\sin 2x}{1+\cos^2 x}\, dx</m>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a">
+						<li>
+							<m>\ds \int_2^4 \dfrac{3}{x}\, dx = 3\ln 4 - 3\ln 2</m> or <m>\ln 8</m>
+						</li>
+						<li>
+							<m>\ds \int_4^9 \lrpar{\sqrt{x} + \dfrac{1}{\sqrt{x}}}^2\, dx = \dfrac{73}{2}+\ln 9 - \ln 4</m>
+						</li>
+						<li>
+							<m>\ds \int \dfrac{\sin 2x}{1+\cos^2 x}\, dx = -\dfrac{1}{2}(1+\cos^2x)^2 + C</m>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Use this space to write any questions/concerns you have from the pre-class videos.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Answers vary
+				</p>
+			</solution>
+		</example>
 	</subsection>
 
-	<subsection xml:id="section-61-inclass">
+	<subsection xml:id="section-64-inclass">
 		<title>In Class</title>
-		<subsubsection xml:id="section-61-inverses-calculus">
-            <title></title>
+		<subsubsection xml:id="section-64-general-logs-exponentials">
+            <title>General Logs and Exponentials</title>
+
+			<example>
+				<statement>
+					<p>
+						Show that <m>\ds \int \tan x\, dx = \ln |\sec x| + C</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						Note that <m>\tan x = \dfrac{\sin x}{\cos x}</m>. Then, we may rewrite the integral as 
+						<me>
+							\ds \int \tan x\, dx = \int \dfrac{\sin x}{\cos x}\, dx
+						</me>
+						Set <m>u = \cos x</m>, so that <m>du = -\sin x\, dx</m>. Making the substitutions, we have 
+						<me>
+							\ds \int \dfrac{\sin x}{\cos x}\, dx = \int - \dfrac{1}{u}\, du
+						</me>
+						so
+						<me>
+							\ds \int - \dfrac{1}{u}\, du = -\ln |u| + C = -\ln |\cos x| + C
+						</me>
+						Using log rules, we can rewrite:
+						<me>
+							-\ln |\cos x| + C = \ln |(\cos x)^{-1}|+C = \ln \left|\dfrac{1}{\cos x}\right| + C = \ln |\sec x| + C
+						</me>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find the absolute minimum of the function <m>f(x) = x^2\ln x</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						The absolute minimum occurs at <m>\lrpar{e^{-1/2},-\dfrac{1}{2}e^{-1}}</m>
+					</p>
+				</solution>
+			</example>
+
+			<assemblage>
+				<title>Derivative of General Logarithms</title>
+				<p>
+					<me>\dfrac{d}{dx}\lrpar{\log_b x} = \dfrac{1}{x\ln b}</me>
+				</p>
+			</assemblage>
+			<proof>
+				Using the Change of Base formula (see Section 6.3), we have 
+				<me>
+					\log_b x = \dfrac{\ln x}{\ln b} = \dfrac{1}{\ln b}\cdot \ln x
+				</me>
+				<m>\ln b</m> is a constant, so we have 
+				<md>
+					<mrow>\dfrac{d}{dx}\left[\log_b x\right] \amp = \dfrac{d}{dx}\left[\dfrac{1}{\ln b}\cdot \ln x\right]</mrow>
+					<mrow> \amp = \dfrac{1}{\ln b}\cdot \dfrac{1}{x}</mrow>
+				</md>
+			</proof>
+
+			<example>
+				<statement>
+					<p>
+						Find <m>\dfrac{d}{dx} [\log_7(2-\cos x)]</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\dfrac{1}{\ln 7}\cdot \dfrac{1}{2-\cos x}\cdot \sin x</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find the derivative of <m>g(x) = \sqrt{1+\log x}</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>g'(x) = \dfrac{1}{2}(1+\log x)^{-1/2}\cdot \dfrac{1}{\ln 10} \cdot \dfrac{1}{x}</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find the derivative of <m>f(x) = \log_3(x\log_4x)</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>f'(x) = \dfrac{1}{\ln 3}\cdot \dfrac{1}{x\log_4 x}\lrpar{\log_4 x + \dfrac{1}{\ln 4}}</m>
+					</p>
+				</solution>
+			</example>
+
+			<assemblage>
+				<title>Derivative of Exponential Functions</title>
+				<p>
+					<me>\dfrac{d}{dx}\lrpar{b^x} = \ln b\cdot b^x</me>
+				</p>
+			</assemblage>
+			<proof>
+				Let <m>y=b^x</m>. Then, <m>x=\log_b y</m> using inverse properties. Implicitly differentiating, we have 
+				<md>
+					<mrow>
+						\dfrac{d}{dx} (x) \amp = \dfrac{d}{dx} \lrpar{\log_b y}
+					</mrow>
+					<mrow>
+						1 \amp = \dfrac{1}{\ln b}\cdot \dfrac{1}{y}\cdot \dfrac{dy}{dx}
+					</mrow>
+				</md>
+				Rearranging, we have 
+				<me>
+					\dfrac{dy}{dx} = \ln b\cdot y
+				</me>
+				but since <m>y = b^x</m>, we can write as
+				<me>
+					\dfrac{dy}{d} = \ln b\cdot b^x
+				</me>
+			</proof>
+
+			<example>
+				<statement>
+					<p>
+						Find <m>\dfrac{d}{dx}\lrpar{5^{x^3}}</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ln 5\cdot 5^{x^3}\cdot 3x^2</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find the absolute maximum and absolute minimum values of the function <m>f(x) = 3^{\cos 2x}</m> on the interval <m>[0,2\pi)</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						The absolute max occurs in two places, at <m>\lrpar{0,3}</m> and <m>(\pi,3)</m>; the absolute minimum occurs in two places as well, at <m>\lrpar{\dfrac{\pi}{2},1}</m> and <m>\lrpar{\dfrac{3\pi}{2},1}</m>
+					</p>
+				</solution>
+			</example>
         </subsubsection>
+
+		<subsubsection xml:id="section-64-logarithmic-differentiation">
+			<title>Logarithmic Differentiation</title>
+			
+			<assemblage>
+				<title>Antiderivative of Exponential Functions</title>
+				<p>
+					<me>\ds \int b^x\, dx = \dfrac{1}{\ln b}\cdot b^x + C</me>
+				</p>
+			</assemblage>
+
+			<example>
+				<statement>
+					<p>
+						Compute <m>\ds \int x2^{x^2}\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int x2^{x^2}\, dx = \dfrac{1}{2\ln 2}\cdot 2^{x^2} + C</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find the derivative of the function <m>f(x) = \dfrac{x^{2/3}\sqrt{x^2+1}}{(2x-1)^6}</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>f'(x) = \lrpar{\dfrac{x^{2/3}\sqrt{x^2+1}}{(2x-1)^6}}\lrpar{\dfrac{2}{3x}+\dfrac{x}{x^2+1}-\dfrac{12}{2x-1}}</m>
+					</p>
+				</solution>
+			</example>
+
+			<assemblage>
+				<title>Logarithmic Differentiation</title>
+				<p>
+					<ol>
+						<li>
+							Set <m>y=f(x)</m> and take the natural log of both sides
+						</li>
+						<li>
+							Use log rules to simplify the right hand side
+						</li>
+						<li>
+							Take the implict derivative, solve for <m>\dfrac{dy}{dx}</m>, and replace <m>y</m> with <m>f(x)</m>
+						</li>
+					</ol>
+				</p>
+			</assemblage>
+
+			<example>
+				<statement>
+					<p>
+						Briefly explain why logarithmic differentiation is ideal for differentiating <m>y = \dfrac{e^{-x}\cos^2x}{x^2+x+1}</m>, then compute the derivative.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						The answers will vary for why it's ideal, but should center around the complexity of the expression.
+					</p>
+					<p>
+						<m>y' = \lrpar{\dfrac{e^{-x}\cos^2x}{x^2+x+1}}\lrpar{-1-2\tan x -\dfrac{2x+1}{x^2+x+1}}</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Use logarithmic differentiation to find the derivative of <m>y = x^{\sqrt{x}}</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>y' = \lrpar{x^{\sqrt{x}}}\lrpar{\dfrac{\ln x}{2\sqrt{x}}+\dfrac{1}{\sqrt{x}}}</m>
+					</p>
+				</solution>
+			</example>
+
+			<assemblage>
+				<title>Alternate Definition of <m>e</m></title>
+				<p>
+					The number <m>e</m> is defined as the limit
+					<me>
+						\lim_{x\to 0} \lrpar{1+x}^{1/x}\qquad \text{ or }\qquad \lim_{x\to\infty} \lrpar{1 + \dfrac{1}{x}}^x\]
+					</me>
+				</p>
+			</assemblage>
+			<proof>
+				First note that if <m>f(x) = \ln x</m>, then <m>f'(1) = 1</m>. Writing this using the definition of the derivative (at a point), we have
+				<md>
+					<mrow>
+						f'(1) \amp = \ds \lim_{x\to 0} \dfrac{f(1+x)-f(1)}{x}
+					</mrow>
+					<mrow>
+						\amp = \ds \lim_{x\to 0} \dfrac{\ln (1+x) = \ln 1}{x}
+					</mrow>
+					<mrow>
+						\amp = \ds \lim_{x\to 0} \dfrac{1}{x}\cdot \ln(1+x)
+					</mrow>
+					<mrow>
+						\amp = \ds \lim_{x\to 0} \ln \lrpar{(1+x)^{1/x}}
+					</mrow>
+				</md>
+				Since <m>f'(1) = 1</m>, the limit above is exactly 1. Using properties of continuous functions, we can raise both sides of the expression above as powers of <m>e</m>:
+				<md>
+					<mrow>
+						\ds \lim_{x\to 0} \ln \lrpar{(1+x)^{1/x}} \amp = 1
+					</mrow>
+					<mrow>
+						\ds \lim_{x\to 0} (1+x)^{1/x} \amp = e
+					</mrow>
+				</md>
+				If we set <m>n=\dfrac{1}{x}</m>, the limit becomes
+				<me>
+					\ds \lim_{n\to \infty} \lrpar{1 + \dfrac{1}{n}}^n  = e
+				</me>
+			</proof>
+		</subsubsection>
 	</subsection>
 
-	<subsection xml:id="section-61-afterclass">
+	<subsection xml:id="section-64-afterclass">
 		<title>After Class Activities</title>
 
+		<example>
+			<statement>
+				<p>
+					Compute the derivative for the function:
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<m>
+								f(x) =x^4 + 4^x
+							</m>
+						</li>
+						<li>
+							<m>
+								k(z) = 6^z\log_6z
+							</m>
+						</li>
+						<li>
+							<m>
+								y = \ln (\csc x - \cot x)
+							</m>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a">
+						<li>
+							<m>
+								f'(x) = 4x^3 + \ln 4\cdot 4^x
+							</m>
+						</li>
+						<li>
+							<m>
+								k'(z) = \ln 6\cdot 6^z\log_6z + (6^z)\lrpar{\dfrac{1}{\ln 6}\cdot \dfrac{1}{x}}
+							</m>
+						</li>
+						<li>
+							<m>
+								y' = \dfrac{1}{\csc x- \cot x}\cdot \lrpar{-\csc x\cot x -\csc^2x}
+							</m>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Find the equation of the tangent line to the curve <m>y = x^2\ln x</m> at the point <m>(1,0)</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>y=x-1</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Let <m>>f(x) = \log_b(3x^2-2)</m>.  For what value of <m>b</m> is <m>f'(1) = 3</m>?
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>b=e^2</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Compute <m>\dfrac{d}{dx}[x^{\sin x}]</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>\dfrac{d}{dx}[x^{\sin x}] = \lrpar{x^{\sin x}}\lrpar{\cos x\ln x + \dfrac{\sin x}{x}}</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Show that <m>\ds \int \cot x\, dx = \ln |\sin x| + C</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Rewrite <m>\cot x</m> as <m>\dfrac{\cos x}{\sin x}</m>. Set <m>u = \sin x</m>, so that <m>du = \cos x\, dx</m>. Then, we have
+					<me>
+						\ds \int \cot x\, dx = \int \dfrac{1}{u}\, du = \ln |u| + C = \ln |\sin x| + C
+					</me>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Find <m>\ds \int \dfrac{\sin (\ln t)}{t}\, dt</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>\ds \int \dfrac{\sin (\ln t)}{t}\, dt = -\cos (\ln t) + C</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Evaluate <m>\ds \int \dfrac{2^x}{2^x + 1}\, dx</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>\ds \int \dfrac{2^x}{2^x + 1}\, dx = \dfrac{1}{\ln 2}\ln(2^x + 1) + C</m>
+				</p>
+			</solution>
+		</example>
 	</subsection>
 </section>

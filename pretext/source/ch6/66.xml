@@ -1,28 +1,25 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<section xml:id="section-62">
-	<title>Exponential Functions &amp; Derivatives</title>
+<section xml:id="section-66">
+	<title>Inverse Trigonometric Functions</title>
 	<objectives>
 		<ul>
 			<li>
-				Identify the general exponential function <m>y=b^x</m> for any base <m>b >0,b\neq 1</m> and its basic properties (domain, range, graphical behavior depending on value of <m>b</m>)
+				Communicate (via words and graphs) how and why the domains of each trig function may be restricted in order to define the corresponding inverse function
 			</li>
 			<li>
-				Apply rules of exponents to exponential functions
+				Apply basic properties of inverse trig functions (cancellation, domain, range, etc.) and sketch their graphs
 			</li>
 			<li>
-				Evaluate limits of functions involving exponential expressions and analyze the end behavior of those functions
+				Derive the derivative formulas for the six inverse trig functions, and use the formulas to compute derivatives of inverse trig expressions and analyze qualitative behavior of those expressions
 			</li>
 			<li>
-				Find the inverse of a one-to-one function given a numerical, algebraic, or graphical representation
-			</li>
-			<li>
-				Apply the formula for the derivative of inverse functions
+				Evaluate indefinite integrals involving inverse trig functions
 			</li>
 		</ul>
 	</objectives>
 
-	<subsection xml:id="section-62-beforeclass">
+	<subsection xml:id="section-66-beforeclass">
 		<title>Before Class</title>
 		<figure>
 			<caption>Pre-Class Video 1</caption>
@@ -31,26 +28,971 @@
 			-->
 		</figure>
 
-		<subsubsection xml:id="section-61-inverses-properties">
-			<title>Inverse Functions &amp; Properties</title>
+		<subsubsection xml:id="section-66-building-inverse-trig">
+			<title>Building Inverse Trig Functions</title>
 
+			<question>
+				<statement>
+					<p>
+						Refer back to Section 6.1-how can we determine if a function has an inverse?
+					</p>
+				</statement>
+				<solution>
+					<p>
+						The function must be one-to-one on the interval in question.
+					</p>
+				</solution>
+			</question>
+
+			<example>
+				<statement>
+					<p>
+						Let <m>f(x) = \sin x</m>
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								Graph <m>\sin x</m> on the interval <m>[-2\pi,2\pi]</m>
+							</li>
+							<li>
+								Identify an interval on which <m>\sin x</m> could possess an inverse
+							</li>
+							<li>
+								Sketch the graph of the inverse function
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								<image>
+									<description>
+										The graph of <m>\sin x</m> on the interval <m>[-2\pi,2\pi]</m>
+									</description>
+									<latex-image>
+										<![CDATA[
+										\begin{tikzpicture}
+											\begin{axis}[
+												axis x line = middle,
+												axis y line = middle,
+												every axis y label/.style={at={(ticklabel cs:1.1)}},
+												y label style={at={(axis description cs:.5,1.1)},anchor=north},
+												ylabel = {$y$},
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												x label style={at={(axis description cs:1.1,.48)},anchor=east},
+												xlabel = {$x$},
+												trig format plots = rad,
+												xmin = -6.5, xmax = 6.5,
+												ymin = -1.5, ymax = 1.5,
+											]
+											\addplot[thick, smooth, domain = -2*pi:2*pi] {sin(x)};
+											\end{axis}
+										\end{tikzpicture}
+										]]>
+									</latex-image>
+								</image>
+							</li>
+							<li>
+								Sine achieves all its potential values on the interval <m>\left[-\dfrac{\pi}{2},\dfrac{\pi}{2}\right]</m>, so use this as our restricted domain.
+							</li>
+							<li>
+								<image>
+									<description>
+										The graph of <m>\arcsin x</m>
+									</description>
+									<latex-image>
+										<![CDATA[ 
+										\begin{tikzpicture}
+											\begin{axis}[
+												axis x line = middle,
+												axis y line = middle,
+												every axis y label/.style={at={(ticklabel cs:1.1)}},
+												y label style={at={(axis description cs:.5,1.1)},anchor=north},
+												ylabel = {$y$},
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												x label style={at={(axis description cs:1.1,.5)},anchor=east},
+												xlabel = {$x$},
+												trig format plots = rad,
+												xmin = -1.5, xmax = 1.5,
+												ymin = -2, ymax = 2,
+											]
+											\addplot[thick, smooth, samples=100 ,domain = -1:1] {asin(x)};
+											\end{axis}
+										\end{tikzpicture}
+										]]>
+									</latex-image>
+								</image>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
+
+			<assemblage>
+				<title>Inverse Sine (Arcsine)</title>
+				<p>
+					The function <m>y = \sin x</m> has the inverse <m>x=\inv{\sin}y</m> (also written <m>\arcsin y</m>). The domain of <m>\inv{\sin}y</m> is <m>[-1,1]</m> and the range is <m>\left[-\dfrac{\pi}{2},\dfrac{\pi}{2}\right]</m>
+				</p>
+			</assemblage>
+
+			<example>
+				<statement>
+					<p>
+						Evaluate <m>\inv{\sin}\lrpar{\dfrac{\sqrt{2}}{2}}</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\inv{\sin}\lrpar{\dfrac{\sqrt{2}}{2}} = \dfrac{\pi}{4}</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Evaluate <m>\tan\lrpar{\arcsin \dfrac{1}{4}}</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\tan\lrpar{\arcsin \dfrac{1}{4}} = \dfrac{1}{\sqrt{15}}</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Let <m>f(x) = \cos x</m>
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								Graph <m>\cos x</m> on the interval <m>[-2\pi,2\pi]</m>
+							</li>
+							<li>
+								Identify an interval on which <m>\cos x</m> could possess an inverse
+							</li>
+							<li>
+								Sketch the graph of the inverse function
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								<image>
+									<description>
+										The graph of <m>\cos x</m> on the interval <m>[-2\pi,2\pi]</m>
+									</description>
+									<latex-image>
+										<![CDATA[
+										\begin{tikzpicture}
+											\begin{axis}[
+												axis x line = middle,
+												axis y line = middle,
+												every axis y label/.style={at={(ticklabel cs:1.1)}},
+												y label style={at={(axis description cs:.5,1.1)},anchor=north},
+												ylabel = {$y$},
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												x label style={at={(axis description cs:1.1,.48)},anchor=east},
+												xlabel = {$x$},
+												trig format plots = rad,
+												xmin = -6.5, xmax = 6.5,
+												ymin = -1.5, ymax = 1.5,
+											]
+											\addplot[thick, smooth, domain = -2*pi:2*pi] {cos(x)};
+											\end{axis}
+										\end{tikzpicture}
+										]]>
+									</latex-image>
+								</image>
+							</li>
+							<li>
+								Cosine achieves all its potential values on the interval <m>[0,\pi]</m>, so use this as our restricted domain.
+							</li>
+							<li>
+								<image>
+									<description>
+										The graph of <m>\arccos x</m>
+									</description>
+									<latex-image>
+										<![CDATA[ 
+										\begin{tikzpicture}
+											\begin{axis}[
+												axis x line = middle,
+												axis y line = middle,
+												every axis y label/.style={at={(ticklabel cs:1.1)}},
+												y label style={at={(axis description cs:.5,1.1)},anchor=north},
+												ylabel = {$y$},
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												x label style={at={(axis description cs:1.1,0)},anchor=east},
+												xlabel = {$x$},
+												trig format plots = rad,
+												xmin = -1, xmax = 1.5,
+												ymin = 0, ymax = 3,
+											]
+											\addplot[thick, smooth, samples=100 ,domain = -1:1] {acos(x)};
+											\end{axis}
+										\end{tikzpicture}
+										]]>
+									</latex-image>
+								</image>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
+
+			<assemblage>
+				<title>Inverse Cosine (Arccosine)</title>
+				<p>
+					The function <m>y = \cos x</m> has the inverse <m>x=\inv{\cos}y</m> (also written <m>\arccos y</m>). The domain of <m>\inv{\cos}y</m> is <m>[-1,1]</m> and the range is <m>[0,\pi]</m>
+				</p>
+			</assemblage>
+
+			<example>
+				<statement>
+					<p>
+						Repeat the process we used for sine and cosine to find an inverse function for tangent.  Sketch the graph of the inverse function.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						The graph of tangent is below:
+					</p>
+					<p>
+						<image>
+							<description>
+								The graph of <m>\tan x</m> on the interval <m>\left[-\dfrac{\pi}{2},\dfrac{\pi}{2}\right]</m>
+							</description>
+							<latex-image>
+							<![CDATA[
+								\begin{tikzpicture}
+									\begin{axis}[
+										axis x line = middle,
+										axis y line = middle,
+										every axis y label/.style={at={(ticklabel cs:1.1)}},
+										y label style={at={(axis description cs:.5,1.1)},anchor=north},
+										ylabel = {$y$},
+										every axis x label/.style= {at ={(ticklabel cs:1)}},
+										x label style={at={(axis description cs:1.1,.48)},anchor=east},
+										xlabel = {$x$},
+										trig format plots = rad,
+										xmin = -2, xmax = 2,
+										ymin = -5, ymax = 5,
+									]
+									\addplot[thick, smooth, samples=100,domain = -1.5:1.5] {tan(x)};
+									\coordinate (a) at (-1.57,5);
+									\coordinate (b) at (-1.57,-5);
+									\coordinate (c) at (1.57,5);
+									\coordinate (d) at (1.57,-5);
+									\end{axis}
+									\draw[dashed] (a)--(b);
+									\draw[dashed] (c)--(d);
+								\end{tikzpicture}]]>
+							</latex-image>
+						</image>
+					</p>
+					<p>
+						From the graph, we can identify a potential restricted domain as <m>\left[-\dfrac{\pi}{2},\dfrac{\pi}{2}\right]</m>
+					</p>
+					<p>
+						The graph of this inverse is given below:
+					</p>
+					<p>
+						<image>
+							<description>
+								The graph of <m>\arctan x</m> on <m>[-10,10]</m>
+							</description>
+							<latex-image>
+								<![CDATA[ 
+								\begin{tikzpicture}
+									\begin{axis}[
+										axis x line = middle,
+										axis y line = middle,
+										every axis y label/.style={at={(ticklabel cs:1.1)}},
+										y label style={at={(axis description cs:.5,1.1)},anchor=north},
+										ylabel = {$y$},
+										every axis x label/.style= {at ={(ticklabel cs:1)}},
+										x label style={at={(axis description cs:1.1,.5)},anchor=east},
+										xlabel = {$x$},
+										trig format plots = rad,
+										xmin = -10, xmax = 10,
+										ymin = -1.5, ymax = 1.5,
+									]
+									\addplot[thick, smooth, samples=100 ,domain = -10:10] {atan(x)};
+									\end{axis}
+								\end{tikzpicture}
+								]]>
+							</latex-image>
+						</image>
+					</p>
+				</solution>
+			</example>
+
+			<assemblage>
+				<title>Inverse Tangent (Arctangent)</title>
+				<p>
+					The function <m>y = \tan x</m> has the inverse <m>x=\inv{\tan}y</m> (also written <m>\arctan y</m>). The domain of <m>\inv{\tan}y</m> is <m>(-\infty,\infty)</m> and the range is <m>\left[-\dfrac{\pi}{2},\dfrac{\pi}{2}\right]</m>
+				</p>
+			</assemblage>
+
+			<example>
+				<statement>
+					<p>
+						Simplify the expression <m>\tan\lrpar{\arccos x}</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\tan\lrpar{\arccos x} = \dfrac{\sqrt{1-x^2}}{x}</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Using the sketch of arctangent from above, compute <m>\ds\lim_{x\to \infty} \arctan x</m> and <m>\ds\lim_{x\to -\infty} \arctan x</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<md>
+							<mrow>
+								\ds\lim_{x\to \infty} \arctan x \amp = \dfrac{\pi}{2}
+							</mrow>
+							<mrow>
+								\ds\lim_{x\to -\infty} \arctan x \amp = -\dfrac{\pi}{2}
+							</mrow>
+						</md>
+					</p>
+				</solution>
+			</example>
 		</subsubsection>
 	</subsection>
 
-	<subsection xml:id="section-61-preclass">
+	<subsection xml:id="section-66-preclass">
 		<title>Pre-Class Activities</title>
 
+		<example>
+			<statement>
+				<p>
+					Evaluate the following:
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<m>
+								\inv{\tan}(\sqrt{3})
+							</m>
+						</li>
+						<li>
+							<m>
+								\inv{\cos}\lrpar{\dfrac{\sqrt{3}}{2}}
+							</m>
+						</li>
+						<li>
+							<m>
+								\tan\lrpar{\arcsin\lrpar{\dfrac{2}{3}}}
+							</m>
+						</li>
+						<li>
+							<m>
+								\cos\lrpar{2\inv{\sin}\lrpar{\dfrac{5}{13}}}
+							</m>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a">
+						<li>
+							<m>
+								\dfrac{\pi}{3}
+							</m>
+						</li>
+						<li>
+							<m>
+								\dfrac{\pi}{6}
+							</m>
+						</li>
+						<li>
+							<m>
+								\dfrac{2}{\sqrt{5}}
+							</m>
+						</li>
+						<li>
+							<m>
+								\dfrac{119}{169}
+							</m>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Simplify the expressions:
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<m>
+								\tan \lrpar{\inv{\sin}(x)}
+							</m>
+						</li>
+						<li>
+							<m>
+								\cos\lrpar{\inv{\sin}(x)}
+							</m>
+						</li>
+						<li>
+							<m>
+								\sin (2\arccos x)
+							</m>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a">
+						<li>
+							<m>
+								\dfrac{x}{\sqrt{1-x^2}}
+							</m>
+						</li>
+						<li>
+							<m>
+								\sqrt{1-x^2}
+							</m>
+						</li>
+						<li>
+							<m>
+								x\sqrt{1-x^2}
+							</m>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</example>
 	</subsection>
 
-	<subsection xml:id="section-61-inclass">
+	<subsection xml:id="section-66-inclass">
 		<title>In Class</title>
-		<subsubsection xml:id="section-61-inverses-calculus">
-            <title></title>
+		<subsubsection xml:id="section-66-inverse-trig-derivatives">
+            <title>Derivatives of Inverse Trig Functions</title>
+
+			<tabular top="medium" right="medium" left="medium">
+				<row bottom="medium">
+					<cell halign="center">
+						Function
+					</cell>
+					<cell halign="center">
+						Domain
+					</cell>
+					<cell halign="center">
+						Range
+					</cell>
+				</row>
+				<row bottom="medium">
+					<cell halign="center">
+						<m>\inv{sin}(x)</m>
+					</cell>
+					<cell halign="center">
+						<m>[-1,1]</m>
+					</cell>
+					<cell halign="center">
+						<m>\left[-\dfrac{\pi}{2},\dfrac{\pi}{2}\right]</m>
+					</cell>
+				</row>
+				<row bottom="medium">
+					<cell halign="center">
+						<m>\inv{\cos}(x)</m>
+					</cell>
+					<cell halign="center">
+						<m>[-1,1]</m>
+					</cell>
+					<cell halign="center">
+						<m>[0,\pi]</m>
+					</cell>
+				</row>
+				<row bottom="medium">
+					<cell halign="center">
+						<m>\inv{\tan}(x)</m>
+					</cell>
+					<cell halign="center">
+						<m>(-\infty,\infty)</m>
+					</cell>
+					<cell halign="center">
+						<m>\left[-\dfrac{\pi}{2}, \dfrac{\pi}{2}\right]</m>
+					</cell>
+				</row>
+				<row bottom="medium">
+					<cell halign="center">
+						<m>\inv{\cot}(x)</m>
+					</cell>
+					<cell halign="center">
+						<m>(-\infty\infty)</m>
+					</cell>
+					<cell halign="center">
+						<m>(0,\pi)</m>
+					</cell>
+				</row>
+				<row bottom="medium">
+					<cell halign="center">
+						<m>\inv{\sec}(x)</m>
+					</cell>
+					<cell halign="center">
+						<m>(-\infty,1)\cup (1,\infty)</m>
+					</cell>
+					<cell halign="center">
+						<m>\left[0,\dfrac{\pi}{2}\right)\cup \left[\pi, \dfrac{3\pi}{2}\right)</m>
+					</cell>
+				</row>
+				<row bottom="medium">
+					<cell halign="center">
+						<m>\inv{\csc}(x)</m>
+					</cell>
+					<cell halign="center">
+						<m>(-\infty,1)\cup (1,\infty)</m>
+					</cell>
+					<cell halign="center">
+						<m>\left(0,\dfrac{\pi}{2}\right]\cup \left(\pi, \dfrac{3\pi}{2}\right]</m>
+					</cell>
+				</row>
+			</tabular>
+
+			<example>
+				<statement>
+					<p>
+						Use implicit differentiation to show that <m>\dfrac{d}{dx}\left[\inv{\sin}(x)\right] = \dfrac{1}{\sqrt{1-x^2}}</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						Let <m>y = \sin x</m>. Then, <m>x = \sin y</m>. Taking the implicit derivative, we have 
+						<me>
+							1 = \cos y \dfrac{dy}{dx}
+						</me>
+						From the Pythagorean Theorem, we know that <m>\cos^2 y = 1-\sin^2y</m>. But <m>x = \sin y</m>, so <m>\cos^2 y = 1-x^2 </m>. Then, we can say that <m>\cos y = \pm \sqrt{1-x^2}</m>. 
+					</p>
+					<p>
+						From the restricted domain for <m>x = \sin y</m>, we know that <m>x\in \left[-\dfrac{\pi}{2},\dfrac{\pi}{2}\right]</m>, so that <m>\cos y</m> is always positive (the angle is in quadrants 1 and 4). This allows us to say that <m>\cos y = \sqrt{1-x^2}</m>.
+					</p>
+					<p>
+						Solving for <m>\dfrac{dy}{dx}</m>, we have 
+						<md>
+							<mrow>
+								\dfrac{dy}{dx} \amp = \dfrac{1}{\cos y}
+							</mrow>
+							<mrow>
+								\amp = \dfrac{1}{\sqrt{1-x^2}}
+							</mrow>
+						</md>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Use the same process to find the derivative of <m>\inv{\cos}(x)</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						Let <m>y = \cos x</m>. Then, <m>x = \cos y</m>. Taking the implicit derivative, we have 
+						<me>
+							1 = -\sin y \dfrac{dy}{dx}
+						</me>
+						From the Pythagorean Theorem, we know that <m>\sin^2 y = 1-\cos^2y</m>. But <m>x = \cos y</m>, so <m>\sin^2 y = 1-x^2 </m>. Then, we can say that <m>\sin y = \pm \sqrt{1-x^2}</m>. 
+					</p>
+					<p>
+						From the restricted domain for <m>x = \cos y</m>, we know that <m>x\in [0,\pi]</m>, so that <m>\sin y</m> is always positive (the angle is in quadrants 1 and 2). This allows us to say that <m>\sin y = \sqrt{1-x^2}</m>.
+					</p>
+					<p>
+						Solving for <m>\dfrac{dy}{dx}</m>, we have 
+						<md>
+							<mrow>
+								\dfrac{dy}{dx} \amp = -\dfrac{1}{\sin y}
+							</mrow>
+							<mrow>
+								\amp = -\dfrac{1}{\sqrt{1-x^2}}
+							</mrow>
+						</md>
+						So <m>\dfrac{d}{dx}[\inv{\cos}(x)] = -\dfrac{1}{\sqrt{1-x^2}}</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Again, use the same process to find the derivative of <m>\inv{\tan}(x)</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						Let <m>y = \tan x</m>. Then, <m>x = \tan y</m>. Taking the implicit derivative, we have 
+						<me>
+							1 = \sec^2 y \dfrac{dy}{dx}
+						</me>
+						From the Pythagorean Theorem, we know that <m>\sec^2 y = 1+\tan^2y</m>. Since <m>x=\tan y</m>, we conclude that <m>\sec^2y = 1 + x^2</m>
+					</p>
+					<p>
+						Solving for <m>\dfrac{dy}{dx}</m>, we have 
+						<md>
+							<mrow>
+								\dfrac{dy}{dx} \amp = \dfrac{1}{\sec^2 y}
+							</mrow>
+							<mrow>
+								\amp = \dfrac{1}{1+x^2}
+							</mrow>
+						</md>
+						So <m>\dfrac{d}{dx}[\inv{\tan}(x)] = \dfrac{1}{1+x^2}</m>
+					</p>
+				</solution>
+			</example>
+			
+			<p>
+				The table below collects the derivatives of the six inverse trig functions:
+			</p>
+
+			<p>
+				<tabular top="medium" right="medium" left="medium">
+					<row bottom="medium">
+						<cell halign="center">
+							Function
+						</cell>
+						<cell halign="center">
+							Derivative
+						</cell>
+						<cell halign="center">
+							Function
+						</cell>
+						<cell halign="center">
+							Derivative
+						</cell>
+					</row>
+					<row bottom="medium">
+						<cell halign="center">
+							<m>\inv{\sin}(x)</m>
+						</cell>
+						<cell halign="center">
+							<m>\dfrac{1}{\sqrt{1-x^2}}</m>
+						</cell>
+						<cell halign="center">
+							<m>\inv{\csc}(x)</m>
+						</cell>
+						<cell halign="center">
+							<m>-\dfrac{1}{x\sqrt{x^2-1}}</m>
+						</cell>
+					</row>
+					<row bottom="medium">
+						<cell halign="center">
+							<m>\inv{\cos}(x)</m>
+						</cell>
+						<cell halign="center">
+							<m>-\dfrac{1}{\sqrt{1-x^2}}</m>
+						</cell>
+						<cell halign="center">
+							<m>\inv{\sec}(x)</m>
+						</cell>
+						<cell halign="center">
+							<m>\dfrac{1}{x\sqrt{x^2-1}}</m>
+						</cell>
+					</row>
+					<row bottom="medium">
+						<cell halign="center">
+							<m>\inv{\tan}(x)</m>
+						</cell>
+						<cell halign="center">
+							<m>\dfrac{1}{1+x^2}</m>
+						</cell>
+						<cell halign="center">
+							<m>\inv{\cot}(x)</m>
+						</cell>
+						<cell halign="center">
+							<m>-\dfrac{1}{1+x^2}</m>
+						</cell>
+					</row>
+				</tabular>
+			</p>
+
+			<example>
+				<statement>
+					<p>
+						Find the domain of the function <m>y = \arcsin(x^2-4)</m>.  Then, find its derivative, and the domain of the derivative.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						The domain is <m>[-\sqrt{5},-\sqrt{3}]\cup [\sqrt{3},\sqrt{5}]</m>
+					</p>
+					<p>
+						The derivative is <m>y' = \dfrac{2x}{\sqrt{1-(x^2-4)^2}}</m>
+					</p>
+					<p>
+						The domain of the derivative is <m>(-\sqrt{5},-\sqrt{3})\cup (\sqrt{3},\sqrt{5})</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find the derivative of <m>f(x) = x\arccos(\sqrt{x})</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>f'(x) = \arccos(\sqrt{x}) - \dfrac{\sqrt{x}}{2\sqrt{1-x}}</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Write the derivative of <m>f(x) = \dfrac{1}{\inv{\tan}(x)}</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>f'(x) = -\dfrac{1}{(\inv{\tan}(x))^2(1+x^2)}</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find the derivatives:
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								<m>\lrpar{\inv{\tan}(x)}^2</m>
+							</li>
+							<li>
+								<m>\inv{\cot}(t) + \inv{\cot}\lrpar{\dfrac{1}{t}}</m>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								<m>\dfrac{2\arctan x}{1+x^2}</m>
+							</li>
+							<li>
+								<m>
+									-\dfrac{1}{1+t^2} + \dfrac{t^{-2}}{1+t^{-2}}
+								</m>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						If <m>g(x) = x\inv{\sin}\lrpar{\dfrac{x}{4}} +\sqrt{16-x^2}</m>, find <m>g'(2)</m>.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>g'(2) = \dfrac{\pi}{6}</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find an equation of the tangent line to the curve <m>y = 3\arccos\lrpar{\dfrac{x}{2}}</m> at the point <m>(1,\pi)</m>.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>y = -\dfrac{3}{\sqrt{3}}x + \dfrac{3}{\sqrt{3}}+\pi</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find <m>y'</m> if <m>\inv{\tan}(x^2y) = x + xy^2</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<me>
+							\dfrac{dy}{dx} = \dfrac{1+y^2-\dfrac{2xy}{1+(x^2y)^2}}{\dfrac{x^2}{1+(x^2y)^2}-2xy}
+						</me>
+					</p>
+				</solution>
+			</example>
         </subsubsection>
+
+		<subsubsection xml:id="section-66-inverse-trig-integrals">
+			<title>Integrals of Inverse Trig Functions</title>
+
+			<p>
+				The derivatives for the inverse trig functions give way to corresponding antiderivatives.  There are two important ones:
+			</p>
+
+			<p>
+				<tabular top="medium" right="medium" left="medium">
+					<row bottom="medium">
+						<cell halign="center">
+							Function
+						</cell>
+						<cell halign="center">
+							Derivative
+						</cell>
+						<cell halign="center">
+							Function
+						</cell>
+						<cell halign="center">
+							Derivative
+						</cell>
+					</row>
+					<row bottom="medium">
+						<cell halign="center">
+							<m>\dfrac{1}{\sqrt{1-x^2}}</m>
+						</cell>
+						<cell halign="center">
+							<m>\inv{\sin}(x) + C</m>
+						</cell>
+						<cell halign="center">
+							<m>\dfrac{1}{1+x^2}</m>
+						</cell>
+						<cell halign="center">
+							<m>\inv{\tan}(x) + C</m>
+						</cell>
+					</row>
+				</tabular>
+			</p>
+
+			<example>
+				<statement>
+					<p>
+						Compute <m>\ds \int_0^{1/4} \dfrac{1}{\sqrt{1-4x^2}}\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\dfrac{\pi}{12}</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						For any real number <m>a</m>, find <m>\ds \int \dfrac{1}{x^2 + a^2}\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int \dfrac{1}{x^2 + a^2}\, dx = \dfrac{1}{a}\inv{\tan}\lrpar{\dfrac{x}{a}} + C</m>
+					</p>
+				</solution>
+			</example>
+		</subsubsection>
 	</subsection>
 
-	<subsection xml:id="section-61-afterclass">
+	<subsection xml:id="section-66-afterclass">
 		<title>After Class Activities</title>
 
+		<example>
+			<statement>
+				<p>
+					Compute the derivatives of the functions below:
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<m>f(x) = x\inv{\sin}(x) + \sqrt{1-x^2}</m>
+						</li>
+						<li>
+							<m>F(x) = x\inv{\sec}(x^3)</m>
+						</li>
+						<li>
+							<m>y = \inv{\tan}\lrpar{x-\sqrt{1+x^2}}</m>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Explain why <m>\ds \lim_{x\to\infty} \arccos \lrpar{\dfrac{1+x^2}{1+2x^2}} = \dfrac{\pi}{3}</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Compute the integrals:
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<m>\ds \int_{1/\sqrt{3}}^{\sqrt{3}} \dfrac{8}{1+x^2}\, dx</m>
+						</li>
+						<li>
+							<m>\ds \int_0^{\pi/2} \dfrac{\sin x}{1+\cos^2x}\, dx</m>
+						</li>
+						<li>
+							<m>\ds \int \dfrac{e^{2x}}{\sqrt{1-e^{4x}}}\, dx</m>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a">
+						<li>
+							<m>\ds \int_{1/\sqrt{3}}^{\sqrt{3}} \dfrac{8}{1+x^2}\, dx = \dfrac{4\pi}{3}</m>
+						</li>
+						<li>
+							<m>\ds \int_0^{\pi/2} \dfrac{\sin x}{1+\cos^2x}\, dx = \dfrac{\pi}{4}</m>
+						</li>
+						<li>
+							<m>\ds \int \dfrac{e^{2x}}{\sqrt{1-e^{4x}}}\, dx = \dfrac{1}{2}\inv{\sin}\lrpar{e^{2x}}</m>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</example>
 	</subsection>
 </section>

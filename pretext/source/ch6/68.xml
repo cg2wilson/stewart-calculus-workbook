@@ -1,28 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<section xml:id="section-62">
-	<title>Exponential Functions &amp; Derivatives</title>
+<section xml:id="section-68">
+	<title>Indeterminate Forms &amp; l'Hospital's Rule</title>
 	<objectives>
 		<ul>
 			<li>
-				Identify the general exponential function <m>y=b^x</m> for any base <m>b >0,b\neq 1</m> and its basic properties (domain, range, graphical behavior depending on value of <m>b</m>)
+				Identify and distinguish between the following indeterminate forms: 
+				<me>
+					\dfrac{0}{0},\dfrac{\infty}{\infty},0\cdot\infty,\infty-\infty,0^0,\infty^0,1^\infty
+				</me>
+				and explain why certain limits are of these forms
 			</li>
 			<li>
-				Apply rules of exponents to exponential functions
-			</li>
-			<li>
-				Evaluate limits of functions involving exponential expressions and analyze the end behavior of those functions
-			</li>
-			<li>
-				Find the inverse of a one-to-one function given a numerical, algebraic, or graphical representation
-			</li>
-			<li>
-				Apply the formula for the derivative of inverse functions
+				State l'Hospital's Rule and determine when it is appropriate to apply it and/or appropriate strategies to limits of indeterminate forms
 			</li>
 		</ul>
 	</objectives>
 
-	<subsection xml:id="section-62-beforeclass">
+	<subsection xml:id="section-68-beforeclass">
 		<title>Before Class</title>
 		<figure>
 			<caption>Pre-Class Video 1</caption>
@@ -31,26 +26,515 @@
 			-->
 		</figure>
 
-		<subsubsection xml:id="section-61-inverses-properties">
-			<title>Inverse Functions &amp; Properties</title>
+		<subsubsection xml:id="section-68-lhospital">
+			<title>l'Hospital's Rule</title>
 
+			<question>
+				<statement>
+					<p>
+						In Calculus 1, you learned the Direct Substitution Property to compute limits.  It says that if <m>f</m> is a polynomial or rational function, and <m>a</m> is in the domain of <m>f</m>, then <m>\ds \lim_{x\to a} f(x) = f(a)</m>.
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								Consider this limit: <m>\ds \lim_{x\to 2} \dfrac{x^2-4}{x-2}</m>.  Why can we not use the Direct Substitution Property?
+							</li>
+							<li>
+								Rewrite the function so that you can use Direct Substitution, and then find the limit.
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								You get division by zero if you were to plug in 2.
+							</li>
+							<li>
+								<m>\ds \lim_{x\to 2} \dfrac{x^2-4}{x-2} = \lim_{x\to 2} x+2</m>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</question>
+
+			<definition>
+				<title>Indeterminate Form (Type <m>0/0</m> and <m>\infty/\infty</m></title>
+				<idx>Indeterminate Form: <m>0/0</m> and <m>\infty/\infty</m></idx>
+				<statement>
+					<p>
+						An <term>indeterminate form</term> is a limit of the form <m>\ds \lim_{x\to a} \dfrac{f(x)}{g(x)}</m>, where either <m>f(x),g(x)\to 0</m> or <m>f(x),g(x)\to \pm\infty</m>
+					</p>
+				</statement>
+			</definition>
+
+			<example>
+				<statement>
+					<p>
+						Each limit below is an indeterminate form.  Classify it as Type <m>0/0</m> or Type <m>\infty/\infty</m>
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								<m>\ds\lim_{x\to 1} \dfrac{\ln x}{x - 1}</m>
+							</li>
+							<li>
+								<m>\ds \lim_{x\to \pi/2^-} \dfrac{\sec x}{1+\tan x}</m>
+							</li>
+							<li>
+								<m>\ds \lim_{x\to \infty} \dfrac{e^x}{x^2}</m>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								<m>0/0</m>
+							</li>
+							<li>
+								<m>\infty/\infty</m>
+							</li>
+							<li>
+								<m>\infty/\infty</m>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
+
+			<assemblage>
+				<title>l'Hospital's Rule</title>
+				<p>
+					Let <m>f</m> and <m>g</m> be differentiable functions such that <m>g'(x)\neq 0</m> on an open interval <m>I</m> that contains <m>a</m> (except possibly at <m>a</m>).  Suppose that the limit creates an indeterminate form of Type <m>0/0</m> or <m>\infty/\infty</m>.  Then,
+					<me>
+						\lim_{x\to a} \dfrac{f(x)}{g(x)} = \lim_{x\to a} \dfrac{f'(x)}{g'(x)}
+					</me>
+					if the limit on the right side exists, or is <m>\pm \infty</m>.
+				</p>
+			</assemblage>
+
+			<example>
+				<statement>
+					<p>
+						Use l'Hospital's Rule to compute the limits: 
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								<m>\ds\lim_{x\to 1} \dfrac{\ln x}{x - 1}</m>
+							</li>
+							<li>
+								<m>\ds \lim_{x\to \pi/2^-} \dfrac{\sec x}{1+\tan x}</m>
+							</li>
+							<li>
+								<m>\ds \lim_{x\to \infty} \dfrac{e^x}{x^2}</m>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								<m>\ds\lim_{x\to 1} \dfrac{\ln x}{x - 1} = 1</m>
+							</li>
+							<li>
+								<m>\ds \lim_{x\to \pi/2^-} \dfrac{\sec x}{1+\tan x}=1</m>
+							</li>
+							<li>
+								<m>\ds \lim_{x\to \infty} \dfrac{e^x}{x^2}=\infty</m>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Show that <m>\ds \lim_{x \to 0} \dfrac{\tan x - x}{x^3} = \dfrac{1}{3}</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						The expression <m>\dfrac{\tan x - x}{x^3}</m> is a <m>0/0</m> indeterminate form, so we may use l'Hospital's Rule. Applying it gives 
+						<me>
+							\ds \lim_{x \to 0} \dfrac{\tan x - x}{x^3} \overset{LH}{=} \lim_{x\to 0} \dfrac{\sec^2x - 1}{3x^2}
+						</me>
+						Attempting to evaluate gives another <m>0/0</m> indeterminate form, so applying l'Hospital's Rule again gives
+						<me>
+							\ds \lim_{x\to 0} \dfrac{\sec^2x -1}{3x^2} \overset{LH}{=} \lim_{x\to 0} \dfrac{2\sec^2x\tan x}{6x}
+						</me>
+						Again we have a <m>0/0</m> indeterminate form, so apply the Rule a third time:
+						<me>
+							\ds \lim_{x\to 0} \dfrac{2\sec^2x\tan x}{6x} \overset{LH}{=} \lim_{x\to 0} \dfrac{4\sec^2x\tan x + 2\sec^4x}{6}
+						</me>
+						Now we can resolve the limit as <m>\dfrac{0 + 2}{6} = \dfrac{1}{3}</m>
+					</p>
+				</solution>
+			</example>
 		</subsubsection>
 	</subsection>
 
-	<subsection xml:id="section-61-preclass">
+	<subsection xml:id="section-68-preclass">
 		<title>Pre-Class Activities</title>
 
+		<example>
+			<statement>
+				<p>
+					Compute these limits; you may or may not need l'Hospital's Rule.
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<m>\ds \lim_{x\to -2} \dfrac{x^3+8}{x+2}</m>
+						</li>
+						<li>
+							<m>\ds \lim_{x\to (\pi/2)^+} \dfrac{\cos x}{1-\sin x}</m>
+						</li>
+						<li>
+							<m>\ds \lim_{x\to \pi^-} \dfrac{\sin x}{1-\cos x}</m>
+						</li>
+						<li>
+							<m>\ds \lim_{u\to \infty} \dfrac{e^{u/10}}{u^3}</m>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a">
+						<li>
+							<m>\ds \lim_{x\to -2} \dfrac{x^3+8}{x+2} = -12</m>; l'Hospital's Rule is not needed, but may be used.
+						</li>
+						<li>
+							<m>\ds \lim_{x\to (\pi/2)^+} \dfrac{\cos x}{1-\sin x}= -\infty</m>; l'Hospital's Rule is required here.
+						</li>
+						<li>
+							<m>\ds \lim_{x\to \pi^-} \dfrac{\sin x}{1-\cos x} = 0</m>; l'Hospital's Rule may not be used here.
+						</li>
+						<li>
+							<m>\ds \lim_{u\to \infty} \dfrac{e^{u/10}}{u^3} = \infty</m>; l'Hospital's Rule is required here.
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</example>
 	</subsection>
 
-	<subsection xml:id="section-61-inclass">
+	<subsection xml:id="section-68-inclass">
 		<title>In Class</title>
-		<subsubsection xml:id="section-61-inverses-calculus">
-            <title></title>
+		<subsubsection xml:id="section-68-other-indeterminate-forms">
+            <title>Other Indeterminate Forms</title>
+
+			<definition>
+				<title>Indeterminate Form (Type <m>0\cdot \infty</m>)</title>
+				<idx>Indeterminate Form (<m>0\cdot \infty</m>)</idx>
+				<statement>
+					<p>
+						An <term>indeterminate form of type</term> <m>0\cdot \infty</m> is a limit of the form <m>\ds \lim_{x\to a} f(x)g(x)</m>, where <m>\ds \lim_{x\to a} f(x) = 0</m> and <m>\ds \lim_{x\to a}g(x) = \pm \infty</m>
+					</p>
+				</statement>
+			</definition>
+
+			<assemblage>
+				<title>Handling Type <m>0\cdot \infty</m> Indeterminate Forms</title>
+				<p>
+					Rewrite <m>f(x)g(x)</m> as <m>\dfrac{f(x)}{1/g(x)}</m> or <m>\dfrac{g(x)}{1/f(x)}</m>
+				</p>
+			</assemblage>
+
+			<example>
+				<statement>
+					<p>
+						Find <m>\ds\lim_{x\to 0^+} x\ln x</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds\lim_{x\to 0^+} x\ln x = 0</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Evaluate <m>\ds\lim_{x\to \infty} x\sin\lrpar{\dfrac{\pi}{x}}</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds\lim_{x\to \infty} x\sin\lrpar{\dfrac{\pi}{x}} = \pi</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Show that <m>\ds \lim_{x\to (\pi/2)^-} \cos x\sec 5x = \dfrac{1}{5}</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						We can verify that this is an indeterminate form of Type <m>0\cdot \infty</m>. Rewrite the limit as:
+						<me>
+							\ds \lim_{x\to (\pi/2)^-} \cos x\sec 5x = \lim_{x\to (\pi/2)^-} \dfrac{\cos x}{\cos 5x}
+						</me>
+						Now applying l'Hospital's Rule, we have
+						<me>
+							\ds \lim_{x\to (\pi/2)^-} \dfrac{\cos x}{\cos 5x} \overset{LH}{=} \lim_{x\to (\pi/2)^-} \dfrac{\sin x}{5\sin 5x} = \dfrac{1}{5}
+						</me>
+					</p>
+				</solution>
+			</example>
+
+			<definition>
+				<title>Indeterminate Form (Type <m>\infty - \infty</m>)</title>
+				<idx>Indeterminate Form (<m>\infty-\infty</m>)</idx>
+				<p>
+					An <term>indeterminant form of type</term> <m>\infty - \infty</m> is a limit of the form <m>\ds \lim_{x\to a}[f(x) - g(x)]</m>, where <m>\ds \lim_{x\to a}f(x) = \lim_{x\to a}g(x) = \infty</m>
+				</p>
+			</definition>
+
+			<example>
+				<statement>
+					<p>
+						Compute <m>\ds \lim_{x\to (\pi/2)^-} (\sec x - \tan x)</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \lim_{x\to (\pi/2)^-} (\sec x - \tan x) = 0</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find <m>\ds \lim_{x\to 1} \lrpar{\dfrac{x}{x-1} -\dfrac{1}{\ln x}}</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \lim_{x\to 1} \lrpar{\dfrac{x}{x-1} -\dfrac{1}{\ln x}} = \dfrac{1}{2}</m>
+					</p>
+				</solution>
+			</example>
+			
+			<definition>
+				<title>Indeterminate Form (Types <m>0^0,\infty^0,1^\infty</m>)</title>
+				<idx>Indeterminate Form (<m>0^0,\infty^0,1^\infty</m>)</idx>
+				<statement>
+					<p>
+						Consider the limit <m>\ds \lim_{x\to a} [f(x)]^{g(x)}</m>.  This is an <term>indeterminate form of</term>: 
+					</p>
+					<p>
+						<ul>
+							<li>
+								Type <m>0^0</m> if <m>\ds \lim_{x\to a}f(x) = 0</m> and <m>\ds \lim_{x\to a}g(x) = 0</m>
+							</li>
+							<li>
+								Type <m>\infty^0</m> if <m>\ds \lim_{x\to a}f(x) = \infty</m> and <m>\ds \lim_{x\to a}g(x) = 0</m>
+							</li>
+							<li>
+								Type <m>1^\infty</m> if <m>\ds \lim_{x\to a}f(x) = 1</m> and <m>\ds \lim_{x\to a}g(x) = \pm \infty</m>
+							</li>
+						</ul>
+					</p>
+				</statement>
+			</definition>
+
+			<assemblage>
+				<title>Handling Indeterminate Powers</title>
+				<p>
+					If <m>y= f(x)^{g(x)}</m>, set <m>\ln y = \ln\lrpar{f(x)^{g(x)}} = g(x) \ln (f(x))</m> and take the limit
+				</p>
+			</assemblage>
+
+			<example>
+				<statement>
+					<p>
+						Compute <m>\ds \lim_{x\to 0^+} (1-\sin 2x)^{\cot x}</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \lim_{x\to 0^+} (1-\sin 2x)^{\cot x} = e^{-2}</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find <m>\ds \lim_{x\to 0^+} x^x</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \lim_{x\to 0^+} x^x=1</m>
+					</p>
+				</solution>
+			</example>
         </subsubsection>
+
+		<subsubsection xml:id="section-68-examples">
+			<title>Examples</title>
+
+			<example>
+				<statement>
+					<p>
+						Find the limits:
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								<m>\ds \lim_{x\to \infty} \dfrac{(\ln x)^2}{x}</m>
+							</li>
+					
+							<li>
+								<m>\ds \lim_{x\to 1^+} \ln x\tan\lrpar{\dfrac{\pi x}{2}}</m>
+							</li>
+					
+							<li>
+								<m>\ds \lim_{x\to 0^+} \lrpar{\dfrac{1}{x} - \dfrac{1}{e^x-1}}</m>
+							</li>
+						
+							<li>
+								<m>\ds \lim_{x\to 0^+} \lrpar{\dfrac{1}{x} -\dfrac{1}{\inv{\tan}(x)}}</m>
+							</li>
+							
+							<li>
+								<m>\ds \lim_{x\to 0^+} (\tan 2x)^x</m>
+							</li>
+					
+							<li>
+								<m>\ds \lim_{x\to \infty} x^{e^{-x}}</m>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								<m>\ds \lim_{x\to \infty} \dfrac{(\ln x)^2}{x} = 0</m>
+							</li>
+					
+							<li>
+								<m>\ds \lim_{x\to 1^+} \ln x\tan\lrpar{\dfrac{\pi x}{2}} = -\dfrac{2}{\pi}</m>
+							</li>
+					
+							<li>
+								<m>\ds \lim_{x\to 0^+} \lrpar{\dfrac{1}{x} - \dfrac{1}{e^x-1}} = \dfrac{1}{2}</m>
+							</li>
+						
+							<li>
+								<m>\ds \lim_{x\to 0^+} \lrpar{\dfrac{1}{x} -\dfrac{1}{\inv{\tan}(x)}}= 0</m>
+							</li>
+							
+							<li>
+								<m>\ds \lim_{x\to 0^+} (\tan 2x)^x = 1</m>
+							</li>
+					
+							<li>
+								<m>\ds \lim_{x\to \infty} x^{e^{-x}} = 1</m>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						The equation of the tangent line to <m>f(x)</m> at the point <m>(2,0)</m> is <m>1.5x-3</m>, and the equation of the tangent line to <m>g(x)</m> at <m>(2,0)</m> is <m>2-x</m>.  What is <m>\ds \lim_{x\to 2} \dfrac{f(x)}{g(x)}</m>?  
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \lim_{x\to 2} \dfrac{f(x)}{g(x)} = -1.5</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						If <m>f'</m> is continuous, <m>f(2) = 0</m>, and <m>f'(2) = 7</m>, then find <m>\ds \lim_{x\to 0} \dfrac{f(2+3x) + f(2+5x)}{x}</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \lim_{x\to 0} \dfrac{f(2+3x) + f(2+5x)}{x} = 56</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						For what values of <m>a</m> and <m>b</m> is the equation <m>\ds \lim_{x\to 0} \lrpar{\dfrac{\sin 2x}{x^3} + a + \dfrac{b}{x^2}} = 0</m> true?
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>b = -2</m> and <m>a = -\dfrac{4}{3}</m>
+					</p>
+				</solution>
+			</example>
+		</subsubsection>
 	</subsection>
 
-	<subsection xml:id="section-61-afterclass">
+	<subsection xml:id="section-68-afterclass">
 		<title>After Class Activities</title>
 
+		<example>
+			<statement>
+				<p>
+					Compute the limits:
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<m>\ds \lim_{x\to 0} \dfrac{\inv{\sin}(x)}{x}</m>
+						</li>
+						<li>
+							<m>\ds \lim_{x\to 0} \dfrac{\ln (1+x)}{\cos x + e^x - 1}</m>	
+						</li>
+						<li>
+							<m>\ds \lim_{x\to -\infty} x\ln\lrpar{1 - \dfrac{1}{x}}</m>
+						</li>
+						<li>
+							<m>\ds \lim_{x\to 0^+} (\sin 3x + 1)^{1/x}</m>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a">
+						<li>
+							<m>\ds \lim_{x\to 0} \dfrac{\inv{\sin}(x)}{x} = 1</m>
+						</li>
+						<li>
+							<m>\ds \lim_{x\to 0} \dfrac{\ln (1+x)}{\cos x + e^x - 1}=0</m>	
+						</li>
+						<li>
+							<m>\ds \lim_{x\to -\infty} x\ln\lrpar{1 - \dfrac{1}{x}}=-\dfrac{1}{2}</m>
+						</li>
+						<li>
+							<m>\ds \lim_{x\to 0^+} (\sin 3x + 1)^{1/x} = e^{3\cot 1}</m>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</example>
 	</subsection>
 </section>
