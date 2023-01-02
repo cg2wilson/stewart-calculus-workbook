@@ -7559,6 +7559,807 @@ var ptx_lunr_docs = [
   "number": "6.3.27",
   "title": "",
   "body": "  On what interval is the curve concave down?        "
+},
+{
+  "id": "section-64",
+  "level": "1",
+  "url": "section-64.html",
+  "type": "Section",
+  "number": "6.4",
+  "title": "Derivatives of Logarithmic Functions",
+  "body": " Derivatives of Logarithmic Functions    Apply differentiation and antidifferentiation rules, potentially using algebra or properties of logarithms, to compute derivatives and antiderivatives of the logarithms of any base and exponentials of any base.  Use derivatives to analyze qualitative behaviors of logarithmic expressions, including: intervals of increase\/decrease, concavity, local extrema, etc.     Before Class   Pre-Class Video 1     The Natural Logarithm   The Natural Logarithm      Let . From inverse relationships, we know that . Implicitly differentiating, we have So that . Since , we have     Find the derivative of            Find the derivative of            Find the derivative of     The (simplified) derivative is       Argue why     Note first that Then, we have two cases: When we take the derivative, we have In the first branch, since , . So, The second branch agrees, namely that So for any value of , the statement holds:      Antiderivative of        Evaluate            Compute            Find             Pre-Class Activities    Find the derivative:                                        Find the integral:                    or               Use this space to write any questions\/concerns you have from the pre-class videos.    Answers vary      In Class   General Logs and Exponentials    Show that     Note that . Then, we may rewrite the integral as Set , so that . Making the substitutions, we have so Using log rules, we can rewrite:       Find the absolute minimum of the function     The absolute minimum occurs at      Derivative of General Logarithms      Using the Change of Base formula (see Section 6.3), we have  is a constant, so we have     Find            Find the derivative of            Find the derivative of           Derivative of Exponential Functions      Let . Then, using inverse properties. Implicitly differentiating, we have Rearranging, we have but since , we can write as     Find            Find the absolute maximum and absolute minimum values of the function on the interval     The absolute max occurs in two places, at and ; the absolute minimum occurs in two places as well, at and       Logarithmic Differentiation   Antiderivative of Exponential Functions        Compute            Find the derivative of the function           Logarithmic Differentiation    Set and take the natural log of both sides  Use log rules to simplify the right hand side  Take the implict derivative, solve for , and replace with        Briefly explain why logarithmic differentiation is ideal for differentiating , then compute the derivative.    The answers will vary for why it's ideal, but should center around the complexity of the expression.         Use logarithmic differentiation to find the derivative of           Alternate Definition of  The number is defined as the limit    First note that if , then . Writing this using the definition of the derivative (at a point), we have Since , the limit above is exactly 1. Using properties of continuous functions, we can raise both sides of the expression above as powers of : If we set , the limit becomes      After Class Activities    Compute the derivative for the function:                                  Find the equation of the tangent line to the curve at the point            Let . For what value of is ?           Compute            Show that     Rewrite as . Set , so that . Then, we have       Find            Evaluate           "
+},
+{
+  "id": "objectives-32",
+  "level": "2",
+  "url": "section-64.html#objectives-32",
+  "type": "Objectives",
+  "number": "6.4",
+  "title": "",
+  "body": "  Apply differentiation and antidifferentiation rules, potentially using algebra or properties of logarithms, to compute derivatives and antiderivatives of the logarithms of any base and exponentials of any base.  Use derivatives to analyze qualitative behaviors of logarithmic expressions, including: intervals of increase\/decrease, concavity, local extrema, etc.   "
+},
+{
+  "id": "figure-52",
+  "level": "2",
+  "url": "section-64.html#figure-52",
+  "type": "Figure",
+  "number": "52",
+  "title": "",
+  "body": " Pre-Class Video 1   "
+},
+{
+  "id": "proof-5",
+  "level": "2",
+  "url": "section-64.html#proof-5",
+  "type": "Proof",
+  "number": "6.4.1.1.1",
+  "title": "",
+  "body": "Let . From inverse relationships, we know that . Implicitly differentiating, we have So that . Since , we have  "
+},
+{
+  "id": "example-612",
+  "level": "2",
+  "url": "section-64.html#example-612",
+  "type": "Example",
+  "number": "6.4.1",
+  "title": "",
+  "body": "  Find the derivative of         "
+},
+{
+  "id": "example-613",
+  "level": "2",
+  "url": "section-64.html#example-613",
+  "type": "Example",
+  "number": "6.4.2",
+  "title": "",
+  "body": "  Find the derivative of         "
+},
+{
+  "id": "example-614",
+  "level": "2",
+  "url": "section-64.html#example-614",
+  "type": "Example",
+  "number": "6.4.3",
+  "title": "",
+  "body": "  Find the derivative of     The (simplified) derivative is    "
+},
+{
+  "id": "example-615",
+  "level": "2",
+  "url": "section-64.html#example-615",
+  "type": "Example",
+  "number": "6.4.4",
+  "title": "",
+  "body": "  Argue why     Note first that Then, we have two cases: When we take the derivative, we have In the first branch, since , . So, The second branch agrees, namely that So for any value of , the statement holds:    "
+},
+{
+  "id": "example-616",
+  "level": "2",
+  "url": "section-64.html#example-616",
+  "type": "Example",
+  "number": "6.4.5",
+  "title": "",
+  "body": "  Evaluate         "
+},
+{
+  "id": "example-617",
+  "level": "2",
+  "url": "section-64.html#example-617",
+  "type": "Example",
+  "number": "6.4.6",
+  "title": "",
+  "body": "  Compute         "
+},
+{
+  "id": "example-618",
+  "level": "2",
+  "url": "section-64.html#example-618",
+  "type": "Example",
+  "number": "6.4.7",
+  "title": "",
+  "body": "  Find         "
+},
+{
+  "id": "example-619",
+  "level": "2",
+  "url": "section-64.html#example-619",
+  "type": "Example",
+  "number": "6.4.8",
+  "title": "",
+  "body": "  Find the derivative:                                     "
+},
+{
+  "id": "example-620",
+  "level": "2",
+  "url": "section-64.html#example-620",
+  "type": "Example",
+  "number": "6.4.9",
+  "title": "",
+  "body": "  Find the integral:                    or            "
+},
+{
+  "id": "example-621",
+  "level": "2",
+  "url": "section-64.html#example-621",
+  "type": "Example",
+  "number": "6.4.10",
+  "title": "",
+  "body": "  Use this space to write any questions\/concerns you have from the pre-class videos.    Answers vary   "
+},
+{
+  "id": "example-622",
+  "level": "2",
+  "url": "section-64.html#example-622",
+  "type": "Example",
+  "number": "6.4.11",
+  "title": "",
+  "body": "  Show that     Note that . Then, we may rewrite the integral as Set , so that . Making the substitutions, we have so Using log rules, we can rewrite:    "
+},
+{
+  "id": "example-623",
+  "level": "2",
+  "url": "section-64.html#example-623",
+  "type": "Example",
+  "number": "6.4.12",
+  "title": "",
+  "body": "  Find the absolute minimum of the function     The absolute minimum occurs at    "
+},
+{
+  "id": "proof-6",
+  "level": "2",
+  "url": "section-64.html#proof-6",
+  "type": "Proof",
+  "number": "6.4.3.1.1",
+  "title": "",
+  "body": "Using the Change of Base formula (see Section 6.3), we have  is a constant, so we have  "
+},
+{
+  "id": "example-624",
+  "level": "2",
+  "url": "section-64.html#example-624",
+  "type": "Example",
+  "number": "6.4.13",
+  "title": "",
+  "body": "  Find         "
+},
+{
+  "id": "example-625",
+  "level": "2",
+  "url": "section-64.html#example-625",
+  "type": "Example",
+  "number": "6.4.14",
+  "title": "",
+  "body": "  Find the derivative of         "
+},
+{
+  "id": "example-626",
+  "level": "2",
+  "url": "section-64.html#example-626",
+  "type": "Example",
+  "number": "6.4.15",
+  "title": "",
+  "body": "  Find the derivative of         "
+},
+{
+  "id": "proof-7",
+  "level": "2",
+  "url": "section-64.html#proof-7",
+  "type": "Proof",
+  "number": "6.4.3.1.2",
+  "title": "",
+  "body": "Let . Then, using inverse properties. Implicitly differentiating, we have Rearranging, we have but since , we can write as  "
+},
+{
+  "id": "example-627",
+  "level": "2",
+  "url": "section-64.html#example-627",
+  "type": "Example",
+  "number": "6.4.16",
+  "title": "",
+  "body": "  Find         "
+},
+{
+  "id": "example-628",
+  "level": "2",
+  "url": "section-64.html#example-628",
+  "type": "Example",
+  "number": "6.4.17",
+  "title": "",
+  "body": "  Find the absolute maximum and absolute minimum values of the function on the interval     The absolute max occurs in two places, at and ; the absolute minimum occurs in two places as well, at and    "
+},
+{
+  "id": "example-629",
+  "level": "2",
+  "url": "section-64.html#example-629",
+  "type": "Example",
+  "number": "6.4.18",
+  "title": "",
+  "body": "  Compute         "
+},
+{
+  "id": "example-630",
+  "level": "2",
+  "url": "section-64.html#example-630",
+  "type": "Example",
+  "number": "6.4.19",
+  "title": "",
+  "body": "  Find the derivative of the function         "
+},
+{
+  "id": "example-631",
+  "level": "2",
+  "url": "section-64.html#example-631",
+  "type": "Example",
+  "number": "6.4.20",
+  "title": "",
+  "body": "  Briefly explain why logarithmic differentiation is ideal for differentiating , then compute the derivative.    The answers will vary for why it's ideal, but should center around the complexity of the expression.      "
+},
+{
+  "id": "example-632",
+  "level": "2",
+  "url": "section-64.html#example-632",
+  "type": "Example",
+  "number": "6.4.21",
+  "title": "",
+  "body": "  Use logarithmic differentiation to find the derivative of         "
+},
+{
+  "id": "proof-8",
+  "level": "2",
+  "url": "section-64.html#proof-8",
+  "type": "Proof",
+  "number": "6.4.3.2.1",
+  "title": "",
+  "body": "First note that if , then . Writing this using the definition of the derivative (at a point), we have Since , the limit above is exactly 1. Using properties of continuous functions, we can raise both sides of the expression above as powers of : If we set , the limit becomes  "
+},
+{
+  "id": "example-633",
+  "level": "2",
+  "url": "section-64.html#example-633",
+  "type": "Example",
+  "number": "6.4.22",
+  "title": "",
+  "body": "  Compute the derivative for the function:                               "
+},
+{
+  "id": "example-634",
+  "level": "2",
+  "url": "section-64.html#example-634",
+  "type": "Example",
+  "number": "6.4.23",
+  "title": "",
+  "body": "  Find the equation of the tangent line to the curve at the point         "
+},
+{
+  "id": "example-635",
+  "level": "2",
+  "url": "section-64.html#example-635",
+  "type": "Example",
+  "number": "6.4.24",
+  "title": "",
+  "body": "  Let . For what value of is ?        "
+},
+{
+  "id": "example-636",
+  "level": "2",
+  "url": "section-64.html#example-636",
+  "type": "Example",
+  "number": "6.4.25",
+  "title": "",
+  "body": "  Compute         "
+},
+{
+  "id": "example-637",
+  "level": "2",
+  "url": "section-64.html#example-637",
+  "type": "Example",
+  "number": "6.4.26",
+  "title": "",
+  "body": "  Show that     Rewrite as . Set , so that . Then, we have    "
+},
+{
+  "id": "example-638",
+  "level": "2",
+  "url": "section-64.html#example-638",
+  "type": "Example",
+  "number": "6.4.27",
+  "title": "",
+  "body": "  Find         "
+},
+{
+  "id": "example-639",
+  "level": "2",
+  "url": "section-64.html#example-639",
+  "type": "Example",
+  "number": "6.4.28",
+  "title": "",
+  "body": "  Evaluate         "
+},
+{
+  "id": "section-65",
+  "level": "1",
+  "url": "section-65.html",
+  "type": "Section",
+  "number": "6.5",
+  "title": "(X) Exponential Growth and Decay",
+  "body": " (X) Exponential Growth and Decay  We don't cover this section, but feel free to read it!  "
+},
+{
+  "id": "section-66",
+  "level": "1",
+  "url": "section-66.html",
+  "type": "Section",
+  "number": "6.6",
+  "title": "Inverse Trigonometric Functions",
+  "body": " Inverse Trigonometric Functions    Communicate (via words and graphs) how and why the domains of each trig function may be restricted in order to define the corresponding inverse function  Apply basic properties of inverse trig functions (cancellation, domain, range, etc.) and sketch their graphs  Derive the derivative formulas for the six inverse trig functions, and use the formulas to compute derivatives of inverse trig expressions and analyze qualitative behavior of those expressions  Evaluate indefinite integrals involving inverse trig functions     Before Class   Pre-Class Video 1     Building Inverse Trig Functions    Refer back to Section 6.1-how can we determine if a function has an inverse?    The function must be one-to-one on the interval in question.      Let     Graph on the interval   Identify an interval on which could possess an inverse  Sketch the graph of the inverse function          The graph of on the interval      Sine achieves all its potential values on the interval , so use this as our restricted domain.    The graph of           Inverse Sine (Arcsine)  The function has the inverse (also written ). The domain of is and the range is      Evaluate            Evaluate            Let     Graph on the interval   Identify an interval on which could possess an inverse  Sketch the graph of the inverse function          The graph of on the interval      Cosine achieves all its potential values on the interval , so use this as our restricted domain.    The graph of           Inverse Cosine (Arccosine)  The function has the inverse (also written ). The domain of is and the range is      Repeat the process we used for sine and cosine to find an inverse function for tangent. Sketch the graph of the inverse function.    The graph of tangent is below:    The graph of on the interval      From the graph, we can identify a potential restricted domain as   The graph of this inverse is given below:    The graph of on         Inverse Tangent (Arctangent)  The function has the inverse (also written ). The domain of is and the range is      Simplify the expression            Using the sketch of arctangent from above, compute and             Pre-Class Activities    Evaluate the following:                                        Simplify the expressions:                                  In Class   Derivatives of Inverse Trig Functions    Function  Domain  Range                                                                        Use implicit differentiation to show that     Let . Then, . Taking the implicit derivative, we have From the Pythagorean Theorem, we know that . But , so . Then, we can say that .  From the restricted domain for , we know that , so that is always positive (the angle is in quadrants 1 and 4). This allows us to say that .  Solving for , we have       Use the same process to find the derivative of     Let . Then, . Taking the implicit derivative, we have From the Pythagorean Theorem, we know that . But , so . Then, we can say that .  From the restricted domain for , we know that , so that is always positive (the angle is in quadrants 1 and 2). This allows us to say that .  Solving for , we have So       Again, use the same process to find the derivative of     Let . Then, . Taking the implicit derivative, we have From the Pythagorean Theorem, we know that . Since , we conclude that   Solving for , we have So     The table below collects the derivatives of the six inverse trig functions:     Function  Derivative  Function  Derivative                                                 Find the domain of the function . Then, find its derivative, and the domain of the derivative.    The domain is   The derivative is   The domain of the derivative is       Find the derivative of            Write the derivative of            Find the derivatives:                            If , find .           Find an equation of the tangent line to the curve at the point .           Find if            Integrals of Inverse Trig Functions  The derivatives for the inverse trig functions give way to corresponding antiderivatives. There are two important ones:     Function  Derivative  Function  Derivative                     Compute            For any real number , find             After Class Activities    Compute the derivatives of the functions below:                       Explain why           Compute the integrals:                                 "
+},
+{
+  "id": "objectives-33",
+  "level": "2",
+  "url": "section-66.html#objectives-33",
+  "type": "Objectives",
+  "number": "6.6",
+  "title": "",
+  "body": "  Communicate (via words and graphs) how and why the domains of each trig function may be restricted in order to define the corresponding inverse function  Apply basic properties of inverse trig functions (cancellation, domain, range, etc.) and sketch their graphs  Derive the derivative formulas for the six inverse trig functions, and use the formulas to compute derivatives of inverse trig expressions and analyze qualitative behavior of those expressions  Evaluate indefinite integrals involving inverse trig functions   "
+},
+{
+  "id": "figure-53",
+  "level": "2",
+  "url": "section-66.html#figure-53",
+  "type": "Figure",
+  "number": "53",
+  "title": "",
+  "body": " Pre-Class Video 1   "
+},
+{
+  "id": "question-34",
+  "level": "2",
+  "url": "section-66.html#question-34",
+  "type": "Question",
+  "number": "6.6.1",
+  "title": "",
+  "body": "  Refer back to Section 6.1-how can we determine if a function has an inverse?    The function must be one-to-one on the interval in question.   "
+},
+{
+  "id": "example-640",
+  "level": "2",
+  "url": "section-66.html#example-640",
+  "type": "Example",
+  "number": "6.6.2",
+  "title": "",
+  "body": "  Let     Graph on the interval   Identify an interval on which could possess an inverse  Sketch the graph of the inverse function          The graph of on the interval      Sine achieves all its potential values on the interval , so use this as our restricted domain.    The graph of         "
+},
+{
+  "id": "example-641",
+  "level": "2",
+  "url": "section-66.html#example-641",
+  "type": "Example",
+  "number": "6.6.3",
+  "title": "",
+  "body": "  Evaluate         "
+},
+{
+  "id": "example-642",
+  "level": "2",
+  "url": "section-66.html#example-642",
+  "type": "Example",
+  "number": "6.6.4",
+  "title": "",
+  "body": "  Evaluate         "
+},
+{
+  "id": "example-643",
+  "level": "2",
+  "url": "section-66.html#example-643",
+  "type": "Example",
+  "number": "6.6.5",
+  "title": "",
+  "body": "  Let     Graph on the interval   Identify an interval on which could possess an inverse  Sketch the graph of the inverse function          The graph of on the interval      Cosine achieves all its potential values on the interval , so use this as our restricted domain.    The graph of         "
+},
+{
+  "id": "example-644",
+  "level": "2",
+  "url": "section-66.html#example-644",
+  "type": "Example",
+  "number": "6.6.6",
+  "title": "",
+  "body": "  Repeat the process we used for sine and cosine to find an inverse function for tangent. Sketch the graph of the inverse function.    The graph of tangent is below:    The graph of on the interval      From the graph, we can identify a potential restricted domain as   The graph of this inverse is given below:    The graph of on       "
+},
+{
+  "id": "example-645",
+  "level": "2",
+  "url": "section-66.html#example-645",
+  "type": "Example",
+  "number": "6.6.7",
+  "title": "",
+  "body": "  Simplify the expression         "
+},
+{
+  "id": "example-646",
+  "level": "2",
+  "url": "section-66.html#example-646",
+  "type": "Example",
+  "number": "6.6.8",
+  "title": "",
+  "body": "  Using the sketch of arctangent from above, compute and         "
+},
+{
+  "id": "example-647",
+  "level": "2",
+  "url": "section-66.html#example-647",
+  "type": "Example",
+  "number": "6.6.9",
+  "title": "",
+  "body": "  Evaluate the following:                                     "
+},
+{
+  "id": "example-648",
+  "level": "2",
+  "url": "section-66.html#example-648",
+  "type": "Example",
+  "number": "6.6.10",
+  "title": "",
+  "body": "  Simplify the expressions:                               "
+},
+{
+  "id": "example-649",
+  "level": "2",
+  "url": "section-66.html#example-649",
+  "type": "Example",
+  "number": "6.6.11",
+  "title": "",
+  "body": "  Use implicit differentiation to show that     Let . Then, . Taking the implicit derivative, we have From the Pythagorean Theorem, we know that . But , so . Then, we can say that .  From the restricted domain for , we know that , so that is always positive (the angle is in quadrants 1 and 4). This allows us to say that .  Solving for , we have    "
+},
+{
+  "id": "example-650",
+  "level": "2",
+  "url": "section-66.html#example-650",
+  "type": "Example",
+  "number": "6.6.12",
+  "title": "",
+  "body": "  Use the same process to find the derivative of     Let . Then, . Taking the implicit derivative, we have From the Pythagorean Theorem, we know that . But , so . Then, we can say that .  From the restricted domain for , we know that , so that is always positive (the angle is in quadrants 1 and 2). This allows us to say that .  Solving for , we have So    "
+},
+{
+  "id": "example-651",
+  "level": "2",
+  "url": "section-66.html#example-651",
+  "type": "Example",
+  "number": "6.6.13",
+  "title": "",
+  "body": "  Again, use the same process to find the derivative of     Let . Then, . Taking the implicit derivative, we have From the Pythagorean Theorem, we know that . Since , we conclude that   Solving for , we have So    "
+},
+{
+  "id": "example-652",
+  "level": "2",
+  "url": "section-66.html#example-652",
+  "type": "Example",
+  "number": "6.6.14",
+  "title": "",
+  "body": "  Find the domain of the function . Then, find its derivative, and the domain of the derivative.    The domain is   The derivative is   The domain of the derivative is    "
+},
+{
+  "id": "example-653",
+  "level": "2",
+  "url": "section-66.html#example-653",
+  "type": "Example",
+  "number": "6.6.15",
+  "title": "",
+  "body": "  Find the derivative of         "
+},
+{
+  "id": "example-654",
+  "level": "2",
+  "url": "section-66.html#example-654",
+  "type": "Example",
+  "number": "6.6.16",
+  "title": "",
+  "body": "  Write the derivative of         "
+},
+{
+  "id": "example-655",
+  "level": "2",
+  "url": "section-66.html#example-655",
+  "type": "Example",
+  "number": "6.6.17",
+  "title": "",
+  "body": "  Find the derivatives:                         "
+},
+{
+  "id": "example-656",
+  "level": "2",
+  "url": "section-66.html#example-656",
+  "type": "Example",
+  "number": "6.6.18",
+  "title": "",
+  "body": "  If , find .        "
+},
+{
+  "id": "example-657",
+  "level": "2",
+  "url": "section-66.html#example-657",
+  "type": "Example",
+  "number": "6.6.19",
+  "title": "",
+  "body": "  Find an equation of the tangent line to the curve at the point .        "
+},
+{
+  "id": "example-658",
+  "level": "2",
+  "url": "section-66.html#example-658",
+  "type": "Example",
+  "number": "6.6.20",
+  "title": "",
+  "body": "  Find if         "
+},
+{
+  "id": "example-659",
+  "level": "2",
+  "url": "section-66.html#example-659",
+  "type": "Example",
+  "number": "6.6.21",
+  "title": "",
+  "body": "  Compute         "
+},
+{
+  "id": "example-660",
+  "level": "2",
+  "url": "section-66.html#example-660",
+  "type": "Example",
+  "number": "6.6.22",
+  "title": "",
+  "body": "  For any real number , find         "
+},
+{
+  "id": "example-661",
+  "level": "2",
+  "url": "section-66.html#example-661",
+  "type": "Example",
+  "number": "6.6.23",
+  "title": "",
+  "body": "  Compute the derivatives of the functions below:                    "
+},
+{
+  "id": "example-662",
+  "level": "2",
+  "url": "section-66.html#example-662",
+  "type": "Example",
+  "number": "6.6.24",
+  "title": "",
+  "body": "  Explain why        "
+},
+{
+  "id": "example-663",
+  "level": "2",
+  "url": "section-66.html#example-663",
+  "type": "Example",
+  "number": "6.6.25",
+  "title": "",
+  "body": "  Compute the integrals:                               "
+},
+{
+  "id": "section-67",
+  "level": "1",
+  "url": "section-67.html",
+  "type": "Section",
+  "number": "6.7",
+  "title": "(X) Hyperbolic Functions",
+  "body": " (X) Hyperbolic Functions  We don't cover this section, but feel free to read it!  "
+},
+{
+  "id": "section-68",
+  "level": "1",
+  "url": "section-68.html",
+  "type": "Section",
+  "number": "6.8",
+  "title": "Indeterminate Forms & l'Hospital's Rule",
+  "body": " Indeterminate Forms & l'Hospital's Rule    Identify and distinguish between the following indeterminate forms: and explain why certain limits are of these forms  State l'Hospital's Rule and determine when it is appropriate to apply it and\/or appropriate strategies to limits of indeterminate forms     Before Class   Pre-Class Video 1     l'Hospital's Rule    In Calculus 1, you learned the Direct Substitution Property to compute limits. It says that if is a polynomial or rational function, and is in the domain of , then .    Consider this limit: . Why can we not use the Direct Substitution Property?  Rewrite the function so that you can use Direct Substitution, and then find the limit.        You get division by zero if you were to plug in 2.          Indeterminate Form (Type and  Indeterminate Form: and   An indeterminate form is a limit of the form , where either or       Each limit below is an indeterminate form. Classify it as Type or Type                                  l'Hospital's Rule  Let and be differentiable functions such that on an open interval that contains (except possibly at ). Suppose that the limit creates an indeterminate form of Type or . Then, if the limit on the right side exists, or is .     Use l'Hospital's Rule to compute the limits:                                  Show that     The expression is a indeterminate form, so we may use l'Hospital's Rule. Applying it gives Attempting to evaluate gives another indeterminate form, so applying l'Hospital's Rule again gives Again we have a indeterminate form, so apply the Rule a third time: Now we can resolve the limit as        Pre-Class Activities    Compute these limits; you may or may not need l'Hospital's Rule.                       ; l'Hospital's Rule is not needed, but may be used.   ; l'Hospital's Rule is required here.   ; l'Hospital's Rule may not be used here.   ; l'Hospital's Rule is required here.        In Class   Other Indeterminate Forms   Indeterminate Form (Type )  Indeterminate Form ( )   An indeterminate form of type  is a limit of the form , where and      Handling Type Indeterminate Forms  Rewrite as or      Find            Evaluate            Show that     We can verify that this is an indeterminate form of Type . Rewrite the limit as: Now applying l'Hospital's Rule, we have      Indeterminate Form (Type )  Indeterminate Form ( )  An indeterminant form of type  is a limit of the form , where      Compute            Find           Indeterminate Form (Types )  Indeterminate Form ( )   Consider the limit . This is an indeterminate form of :    Type if and   Type if and   Type if and        Handling Indeterminate Powers  If , set and take the limit     Compute            Find            Examples    Find the limits:                                                    The equation of the tangent line to at the point is , and the equation of the tangent line to at is . What is ?           If is continuous, , and , then find            For what values of and is the equation true?     and        After Class Activities    Compute the limits:                                       "
+},
+{
+  "id": "objectives-34",
+  "level": "2",
+  "url": "section-68.html#objectives-34",
+  "type": "Objectives",
+  "number": "6.8",
+  "title": "",
+  "body": "  Identify and distinguish between the following indeterminate forms: and explain why certain limits are of these forms  State l'Hospital's Rule and determine when it is appropriate to apply it and\/or appropriate strategies to limits of indeterminate forms   "
+},
+{
+  "id": "figure-54",
+  "level": "2",
+  "url": "section-68.html#figure-54",
+  "type": "Figure",
+  "number": "54",
+  "title": "",
+  "body": " Pre-Class Video 1   "
+},
+{
+  "id": "question-35",
+  "level": "2",
+  "url": "section-68.html#question-35",
+  "type": "Question",
+  "number": "6.8.1",
+  "title": "",
+  "body": "  In Calculus 1, you learned the Direct Substitution Property to compute limits. It says that if is a polynomial or rational function, and is in the domain of , then .    Consider this limit: . Why can we not use the Direct Substitution Property?  Rewrite the function so that you can use Direct Substitution, and then find the limit.        You get division by zero if you were to plug in 2.        "
+},
+{
+  "id": "definition-43",
+  "level": "2",
+  "url": "section-68.html#definition-43",
+  "type": "Definition",
+  "number": "6.8.2",
+  "title": "Indeterminate Form (Type <span class=\"process-math\">\\(0\/0\\)<\/span> and <span class=\"process-math\">\\(\\infty\/\\infty\\)<\/span>.",
+  "body": " Indeterminate Form (Type and  Indeterminate Form: and   An indeterminate form is a limit of the form , where either or    "
+},
+{
+  "id": "example-664",
+  "level": "2",
+  "url": "section-68.html#example-664",
+  "type": "Example",
+  "number": "6.8.3",
+  "title": "",
+  "body": "  Each limit below is an indeterminate form. Classify it as Type or Type                                "
+},
+{
+  "id": "example-665",
+  "level": "2",
+  "url": "section-68.html#example-665",
+  "type": "Example",
+  "number": "6.8.4",
+  "title": "",
+  "body": "  Use l'Hospital's Rule to compute the limits:                               "
+},
+{
+  "id": "example-666",
+  "level": "2",
+  "url": "section-68.html#example-666",
+  "type": "Example",
+  "number": "6.8.5",
+  "title": "",
+  "body": "  Show that     The expression is a indeterminate form, so we may use l'Hospital's Rule. Applying it gives Attempting to evaluate gives another indeterminate form, so applying l'Hospital's Rule again gives Again we have a indeterminate form, so apply the Rule a third time: Now we can resolve the limit as    "
+},
+{
+  "id": "example-667",
+  "level": "2",
+  "url": "section-68.html#example-667",
+  "type": "Example",
+  "number": "6.8.6",
+  "title": "",
+  "body": "  Compute these limits; you may or may not need l'Hospital's Rule.                       ; l'Hospital's Rule is not needed, but may be used.   ; l'Hospital's Rule is required here.   ; l'Hospital's Rule may not be used here.   ; l'Hospital's Rule is required here.     "
+},
+{
+  "id": "definition-44",
+  "level": "2",
+  "url": "section-68.html#definition-44",
+  "type": "Definition",
+  "number": "6.8.7",
+  "title": "Indeterminate Form (Type <span class=\"process-math\">\\(0\\cdot \\infty\\)<\/span>).",
+  "body": " Indeterminate Form (Type )  Indeterminate Form ( )   An indeterminate form of type  is a limit of the form , where and    "
+},
+{
+  "id": "example-668",
+  "level": "2",
+  "url": "section-68.html#example-668",
+  "type": "Example",
+  "number": "6.8.8",
+  "title": "",
+  "body": "  Find         "
+},
+{
+  "id": "example-669",
+  "level": "2",
+  "url": "section-68.html#example-669",
+  "type": "Example",
+  "number": "6.8.9",
+  "title": "",
+  "body": "  Evaluate         "
+},
+{
+  "id": "example-670",
+  "level": "2",
+  "url": "section-68.html#example-670",
+  "type": "Example",
+  "number": "6.8.10",
+  "title": "",
+  "body": "  Show that     We can verify that this is an indeterminate form of Type . Rewrite the limit as: Now applying l'Hospital's Rule, we have    "
+},
+{
+  "id": "definition-45",
+  "level": "2",
+  "url": "section-68.html#definition-45",
+  "type": "Definition",
+  "number": "6.8.11",
+  "title": "Indeterminate Form (Type <span class=\"process-math\">\\(\\infty - \\infty\\)<\/span>).",
+  "body": " Indeterminate Form (Type )  Indeterminate Form ( )  An indeterminant form of type  is a limit of the form , where   "
+},
+{
+  "id": "example-671",
+  "level": "2",
+  "url": "section-68.html#example-671",
+  "type": "Example",
+  "number": "6.8.12",
+  "title": "",
+  "body": "  Compute         "
+},
+{
+  "id": "example-672",
+  "level": "2",
+  "url": "section-68.html#example-672",
+  "type": "Example",
+  "number": "6.8.13",
+  "title": "",
+  "body": "  Find         "
+},
+{
+  "id": "definition-46",
+  "level": "2",
+  "url": "section-68.html#definition-46",
+  "type": "Definition",
+  "number": "6.8.14",
+  "title": "Indeterminate Form (Types <span class=\"process-math\">\\(0^0,\\infty^0,1^\\infty\\)<\/span>).",
+  "body": " Indeterminate Form (Types )  Indeterminate Form ( )   Consider the limit . This is an indeterminate form of :    Type if and   Type if and   Type if and      "
+},
+{
+  "id": "example-673",
+  "level": "2",
+  "url": "section-68.html#example-673",
+  "type": "Example",
+  "number": "6.8.15",
+  "title": "",
+  "body": "  Compute         "
+},
+{
+  "id": "example-674",
+  "level": "2",
+  "url": "section-68.html#example-674",
+  "type": "Example",
+  "number": "6.8.16",
+  "title": "",
+  "body": "  Find         "
+},
+{
+  "id": "example-675",
+  "level": "2",
+  "url": "section-68.html#example-675",
+  "type": "Example",
+  "number": "6.8.17",
+  "title": "",
+  "body": "  Find the limits:                                                 "
+},
+{
+  "id": "example-676",
+  "level": "2",
+  "url": "section-68.html#example-676",
+  "type": "Example",
+  "number": "6.8.18",
+  "title": "",
+  "body": "  The equation of the tangent line to at the point is , and the equation of the tangent line to at is . What is ?        "
+},
+{
+  "id": "example-677",
+  "level": "2",
+  "url": "section-68.html#example-677",
+  "type": "Example",
+  "number": "6.8.19",
+  "title": "",
+  "body": "  If is continuous, , and , then find         "
+},
+{
+  "id": "example-678",
+  "level": "2",
+  "url": "section-68.html#example-678",
+  "type": "Example",
+  "number": "6.8.20",
+  "title": "",
+  "body": "  For what values of and is the equation true?     and    "
+},
+{
+  "id": "example-679",
+  "level": "2",
+  "url": "section-68.html#example-679",
+  "type": "Example",
+  "number": "6.8.21",
+  "title": "",
+  "body": "  Compute the limits:                                     "
 }
 ]
 

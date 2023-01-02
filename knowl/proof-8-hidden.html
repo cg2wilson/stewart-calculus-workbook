@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><article class="hiddenproof">First note that if <span class="process-math">\(f(x) = \ln x\text{,}\)</span> then <span class="process-math">\(f'(1) = 1\text{.}\)</span> Writing this using the definition of the derivative (at a point), we have<div class="displaymath process-math">
+\begin{align*}
+f'(1) \amp = \ds \lim_{x\to 0} \dfrac{f(1+x)-f(1)}{x}\\
+\amp = \ds \lim_{x\to 0} \dfrac{\ln (1+x) = \ln 1}{x}\\
+\amp = \ds \lim_{x\to 0} \dfrac{1}{x}\cdot \ln(1+x)\\
+\amp = \ds \lim_{x\to 0} \ln \lrpar{(1+x)^{1/x}}
+\end{align*}
+</div>Since <span class="process-math">\(f'(1) = 1\text{,}\)</span> the limit above is exactly 1. Using properties of continuous functions, we can raise both sides of the expression above as powers of <span class="process-math">\(e\text{:}\)</span><div class="displaymath process-math">
+\begin{align*}
+\ds \lim_{x\to 0} \ln \lrpar{(1+x)^{1/x}} \amp = 1\\
+\ds \lim_{x\to 0} (1+x)^{1/x} \amp = e
+\end{align*}
+</div>If we set <span class="process-math">\(n=\dfrac{1}{x}\text{,}\)</span> the limit becomes<div class="displaymath process-math">
+\begin{equation*}
+\ds \lim_{n\to \infty} \lrpar{1 + \dfrac{1}{n}}^n  = e
+\end{equation*}
+</div></article></body>
+</html>
