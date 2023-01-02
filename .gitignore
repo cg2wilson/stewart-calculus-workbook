@@ -90,12 +90,12 @@ GitHub.sublime-settings
 .dropbox.cache
 
 #don't track pdfs or certain .tex files
-tex/notes.pdf
-tex/notes.synctex.gz
-tex/test.tex
-tex/test.synctex.gz
-tex/test.pdf
-tex/1823_notes.pdf
-tex/1914_notes.pdf
-tex/2423_notes.pdf
+notes.pdf
+notes.synctex.gz
+test.tex
+test.synctex.gz
+test.pdf
+1823_notes.pdf
+1914_notes.pdf
+2423_notes.pdf
 
