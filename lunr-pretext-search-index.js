@@ -8360,6 +8360,357 @@ var ptx_lunr_docs = [
   "number": "6.8.21",
   "title": "",
   "body": "  Compute the limits:                                     "
+},
+{
+  "id": "section-71",
+  "level": "1",
+  "url": "section-71.html",
+  "type": "Section",
+  "number": "7.1",
+  "title": "Integration by Parts",
+  "body": " Integration by Parts    State and apply the formula for integration by parts in order to evaluate definite and indefinite integrals involving one or multiple applications of integration by parts and possibly other integration techniques     Before Class   Pre-Class Video 1     The Formula      Let and be differentiable functions. Use the product rule to find   Integrate both sides of the equation, and rewrite to get the formula for integration by parts.                   Integration by Parts Formula   or      Evaluate            What would happen if we switched our choices of and in the previous example?    We would have which means the problem gets harder      Compute            Find the most general antiderivative of            Evaluate            Evaluate             Pre-Class Activities    What questions\/concerns do you have from the videos?    Answers vary      The following problems require integration by parts to solve. For each, answer why integration by parts is necessary, and then compute the integral.                       The integrand is a product function, and we don't have a derivaive rule to take care of that type of integrand.       The integrand is a product function, and we don't have a derivaive rule to take care of that type of integrand.       The integrand is a product function, and we don't have a derivaive rule to take care of that type of integrand.         In Class   Examples    Show that     Set and . Then, and and we have For the integral, use a substitution: , so . Changing the bounds, we see that and ; then,       Prove that     Write the integrand as . Now we have an integral patterned to use integration by parts; set and . Then, and . So, we have Combining like terms and dividing, we have       Compute the integrals:                                                    Evaluate            Find             After Class Activities    Evaluate            Evaluate     Evaluate       Find            Evaluate            Prove the reduction formula:     Let and . Then, and . Using integration by parts, we have      "
+},
+{
+  "id": "objectives-35",
+  "level": "2",
+  "url": "section-71.html#objectives-35",
+  "type": "Objectives",
+  "number": "7.1",
+  "title": "",
+  "body": "  State and apply the formula for integration by parts in order to evaluate definite and indefinite integrals involving one or multiple applications of integration by parts and possibly other integration techniques   "
+},
+{
+  "id": "figure-55",
+  "level": "2",
+  "url": "section-71.html#figure-55",
+  "type": "Figure",
+  "number": "55",
+  "title": "",
+  "body": " Pre-Class Video 1   "
+},
+{
+  "id": "example-680",
+  "level": "2",
+  "url": "section-71.html#example-680",
+  "type": "Example",
+  "number": "7.1.1",
+  "title": "",
+  "body": "    Let and be differentiable functions. Use the product rule to find   Integrate both sides of the equation, and rewrite to get the formula for integration by parts.                 "
+},
+{
+  "id": "example-681",
+  "level": "2",
+  "url": "section-71.html#example-681",
+  "type": "Example",
+  "number": "7.1.2",
+  "title": "",
+  "body": "  Evaluate         "
+},
+{
+  "id": "question-36",
+  "level": "2",
+  "url": "section-71.html#question-36",
+  "type": "Question",
+  "number": "7.1.3",
+  "title": "",
+  "body": "  What would happen if we switched our choices of and in the previous example?    We would have which means the problem gets harder   "
+},
+{
+  "id": "example-682",
+  "level": "2",
+  "url": "section-71.html#example-682",
+  "type": "Example",
+  "number": "7.1.4",
+  "title": "",
+  "body": "  Compute         "
+},
+{
+  "id": "example-683",
+  "level": "2",
+  "url": "section-71.html#example-683",
+  "type": "Example",
+  "number": "7.1.5",
+  "title": "",
+  "body": "  Find the most general antiderivative of         "
+},
+{
+  "id": "example-684",
+  "level": "2",
+  "url": "section-71.html#example-684",
+  "type": "Example",
+  "number": "7.1.6",
+  "title": "",
+  "body": "  Evaluate         "
+},
+{
+  "id": "example-685",
+  "level": "2",
+  "url": "section-71.html#example-685",
+  "type": "Example",
+  "number": "7.1.7",
+  "title": "",
+  "body": "  Evaluate         "
+},
+{
+  "id": "example-686",
+  "level": "2",
+  "url": "section-71.html#example-686",
+  "type": "Example",
+  "number": "7.1.8",
+  "title": "",
+  "body": "  What questions\/concerns do you have from the videos?    Answers vary   "
+},
+{
+  "id": "example-687",
+  "level": "2",
+  "url": "section-71.html#example-687",
+  "type": "Example",
+  "number": "7.1.9",
+  "title": "",
+  "body": "  The following problems require integration by parts to solve. For each, answer why integration by parts is necessary, and then compute the integral.                       The integrand is a product function, and we don't have a derivaive rule to take care of that type of integrand.       The integrand is a product function, and we don't have a derivaive rule to take care of that type of integrand.       The integrand is a product function, and we don't have a derivaive rule to take care of that type of integrand.      "
+},
+{
+  "id": "example-688",
+  "level": "2",
+  "url": "section-71.html#example-688",
+  "type": "Example",
+  "number": "7.1.10",
+  "title": "",
+  "body": "  Show that     Set and . Then, and and we have For the integral, use a substitution: , so . Changing the bounds, we see that and ; then,    "
+},
+{
+  "id": "example-689",
+  "level": "2",
+  "url": "section-71.html#example-689",
+  "type": "Example",
+  "number": "7.1.11",
+  "title": "",
+  "body": "  Prove that     Write the integrand as . Now we have an integral patterned to use integration by parts; set and . Then, and . So, we have Combining like terms and dividing, we have    "
+},
+{
+  "id": "example-690",
+  "level": "2",
+  "url": "section-71.html#example-690",
+  "type": "Example",
+  "number": "7.1.12",
+  "title": "",
+  "body": "  Compute the integrals:                                                 "
+},
+{
+  "id": "example-691",
+  "level": "2",
+  "url": "section-71.html#example-691",
+  "type": "Example",
+  "number": "7.1.13",
+  "title": "",
+  "body": "  Evaluate         "
+},
+{
+  "id": "example-692",
+  "level": "2",
+  "url": "section-71.html#example-692",
+  "type": "Example",
+  "number": "7.1.14",
+  "title": "",
+  "body": "  Find         "
+},
+{
+  "id": "example-693",
+  "level": "2",
+  "url": "section-71.html#example-693",
+  "type": "Example",
+  "number": "7.1.15",
+  "title": "",
+  "body": "  Evaluate         "
+},
+{
+  "id": "example-694",
+  "level": "2",
+  "url": "section-71.html#example-694",
+  "type": "Example",
+  "number": "7.1.16",
+  "title": "",
+  "body": "  Evaluate     Evaluate    "
+},
+{
+  "id": "example-695",
+  "level": "2",
+  "url": "section-71.html#example-695",
+  "type": "Example",
+  "number": "7.1.17",
+  "title": "",
+  "body": "  Find         "
+},
+{
+  "id": "example-696",
+  "level": "2",
+  "url": "section-71.html#example-696",
+  "type": "Example",
+  "number": "7.1.18",
+  "title": "",
+  "body": "  Evaluate         "
+},
+{
+  "id": "example-697",
+  "level": "2",
+  "url": "section-71.html#example-697",
+  "type": "Example",
+  "number": "7.1.19",
+  "title": "",
+  "body": "  Prove the reduction formula:     Let and . Then, and . Using integration by parts, we have    "
+},
+{
+  "id": "section-72",
+  "level": "1",
+  "url": "section-72.html",
+  "type": "Section",
+  "number": "7.2",
+  "title": "Inverse Functions",
+  "body": " Inverse Functions         Before Class   Pre-Class Video 1     Inverse Functions & Properties     Pre-Class Activities    In Class   Calculus of Inverse Functions     After Class Activities   "
+},
+{
+  "id": "objectives-36",
+  "level": "2",
+  "url": "section-72.html#objectives-36",
+  "type": "Objectives",
+  "number": "7.2",
+  "title": "",
+  "body": "     "
+},
+{
+  "id": "figure-56",
+  "level": "2",
+  "url": "section-72.html#figure-56",
+  "type": "Figure",
+  "number": "56",
+  "title": "",
+  "body": " Pre-Class Video 1   "
+},
+{
+  "id": "section-73",
+  "level": "1",
+  "url": "section-73.html",
+  "type": "Section",
+  "number": "7.3",
+  "title": "Inverse Functions",
+  "body": " Inverse Functions         Before Class   Pre-Class Video 1     Inverse Functions & Properties     Pre-Class Activities    In Class   Calculus of Inverse Functions     After Class Activities   "
+},
+{
+  "id": "objectives-37",
+  "level": "2",
+  "url": "section-73.html#objectives-37",
+  "type": "Objectives",
+  "number": "7.3",
+  "title": "",
+  "body": "     "
+},
+{
+  "id": "figure-57",
+  "level": "2",
+  "url": "section-73.html#figure-57",
+  "type": "Figure",
+  "number": "57",
+  "title": "",
+  "body": " Pre-Class Video 1   "
+},
+{
+  "id": "section-74",
+  "level": "1",
+  "url": "section-74.html",
+  "type": "Section",
+  "number": "7.4",
+  "title": "Inverse Functions",
+  "body": " Inverse Functions         Before Class   Pre-Class Video 1     Inverse Functions & Properties     Pre-Class Activities    In Class   Calculus of Inverse Functions     After Class Activities   "
+},
+{
+  "id": "objectives-38",
+  "level": "2",
+  "url": "section-74.html#objectives-38",
+  "type": "Objectives",
+  "number": "7.4",
+  "title": "",
+  "body": "     "
+},
+{
+  "id": "figure-58",
+  "level": "2",
+  "url": "section-74.html#figure-58",
+  "type": "Figure",
+  "number": "58",
+  "title": "",
+  "body": " Pre-Class Video 1   "
+},
+{
+  "id": "section-75",
+  "level": "1",
+  "url": "section-75.html",
+  "type": "Section",
+  "number": "7.5",
+  "title": "Inverse Functions",
+  "body": " Inverse Functions         Before Class   Pre-Class Video 1     Inverse Functions & Properties     Pre-Class Activities    In Class   Calculus of Inverse Functions     After Class Activities   "
+},
+{
+  "id": "objectives-39",
+  "level": "2",
+  "url": "section-75.html#objectives-39",
+  "type": "Objectives",
+  "number": "7.5",
+  "title": "",
+  "body": "     "
+},
+{
+  "id": "figure-59",
+  "level": "2",
+  "url": "section-75.html#figure-59",
+  "type": "Figure",
+  "number": "59",
+  "title": "",
+  "body": " Pre-Class Video 1   "
+},
+{
+  "id": "section-76",
+  "level": "1",
+  "url": "section-76.html",
+  "type": "Section",
+  "number": "7.6",
+  "title": "(X) Integration Using Tables and Computer Algebra Systems",
+  "body": " (X) Integration Using Tables and Computer Algebra Systems  We don't cover this section, but feel free to read it!  "
+},
+{
+  "id": "section-77",
+  "level": "1",
+  "url": "section-77.html",
+  "type": "Section",
+  "number": "7.7",
+  "title": "(X) Approximate Integration",
+  "body": " (X) Approximate Integration  We don't cover this section, but feel free to read it!  "
+},
+{
+  "id": "section-78",
+  "level": "1",
+  "url": "section-78.html",
+  "type": "Section",
+  "number": "7.8",
+  "title": "Inverse Functions",
+  "body": " Inverse Functions         Before Class   Pre-Class Video 1     Inverse Functions & Properties     Pre-Class Activities    In Class   Calculus of Inverse Functions     After Class Activities   "
+},
+{
+  "id": "objectives-40",
+  "level": "2",
+  "url": "section-78.html#objectives-40",
+  "type": "Objectives",
+  "number": "7.8",
+  "title": "",
+  "body": "     "
+},
+{
+  "id": "figure-60",
+  "level": "2",
+  "url": "section-78.html#figure-60",
+  "type": "Figure",
+  "number": "60",
+  "title": "",
+  "body": " Pre-Class Video 1   "
 }
 ]
 
