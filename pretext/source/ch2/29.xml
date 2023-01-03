@@ -13,7 +13,7 @@
 					
 					<example><statement>
 						Any line can also be described in terms of graphical transformations to the base graph of <m>y = x</m>.
-						<ol label="a">
+						<ol marker="a">
 							<li> 
 								Write the transformation necessary to shift the graph <m>a</m> units horizontally.
 							</li>
@@ -74,7 +74,7 @@
 					<title>Linearization</title>
 					
 					<example><statement>
-						<ol label="a">
+						<ol marker="a">
 							<li> 
 								Find the linearization of <m>\sqrt{x}</m> at the input <m>x = 100</m>
 							</li>
@@ -98,7 +98,7 @@
 					</statement></example>						
 						
 					<example><statement>
-						<ol label="a">
+						<ol marker="a">
 							<li> 
 								Find the linearization of the function <m>f(x) = \sqrt[3]{2 + x}</m> at <m>a = 6</m>.
 							</li>								
@@ -159,7 +159,7 @@
 					
 					<example><statement>
 						Compare the values of <m>\Delta y</m> and <m>dy</m> if <m>y = f(x) = x^3 + x^2 -2x + 1</m>, and <m>x</m> changes from 
-						<ol label="a">
+						<ol marker="a">
 							<li> 
 								2 to 2.05
 							</li>
@@ -175,7 +175,7 @@
 						
 					<example><statement>
 						Find the differential <m>dy</m> of each function, and evaluate it for the given values of <m>x</m> and <m>dx</m>.
-						<ol label="a">
+						<ol marker="a">
 							<li> 
 								<m>y = \tan x</m>, <m>x = \pi/4</m>, <m>dx = -0.1</m>
 							</li>
@@ -204,7 +204,7 @@
 					
 				<example><statement>
 					The circumference of a sphere is measured to be 84 cm with a possible error of 0.5 cm.
-					<ol label="a">
+					<ol marker="a">
 						<li> 
 							Use differentials to estimate the maximum error in the calculated surface area.  What is the relative error?
 						</li>

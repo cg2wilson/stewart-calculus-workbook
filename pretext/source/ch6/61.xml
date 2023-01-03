@@ -424,7 +424,7 @@
 					</row>
 				</tabular>
 				<p>
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							<m>\inv{g}(3)</m>
 						</li>
@@ -442,7 +442,7 @@
 			</statement>
 			<solution>
 				<p>
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							<m>\inv{g}(3)=2</m>
 						</li>
@@ -620,7 +620,7 @@
 						Let <m>g(x) = \sqrt{x-2}</m> and <m>a = 2</m>.  
 					</p>
 					<p>
-						<ol label = "a">
+						<ol marker="a">
 							<li> 
 								Show that <m>g</m> is one-to-one.
 							</li>
@@ -635,7 +635,7 @@
 				</statement>
 				<solution>
 					<p>
-						<ol label = "a">
+						<ol marker="a">
 							<li> 
 								<m>g</m> is increasing: <m>g'(x) = \dfrac{1}{2}(x-2)^{-1/2}</m>, which is always positive because <m>\sqrt{x-2}>0</m>
 							</li>
@@ -656,7 +656,7 @@
 						Let <m>h(x) = 2x^2-8x</m>.
 					</p>
 					<p>
-						<ol label = "a">
+						<ol marker="a">
 							<li> 
 								<m>h(x)</m> is not one-to-one.  Sketch it and determine an interval on which it can be made one-to-one.  This is called the <term>restricted domain</term>.
 							</li>
@@ -677,7 +677,7 @@
 				</statement>
 				<solution>
 					<p>
-						<ol label = "a">
+						<ol marker="a">
 							<li> 
 								<p>
 									Here is the graph of <m>h(x)</m>:
@@ -735,7 +735,7 @@
 						Find <m>(\inv{f})'(a)</m> for the given functions:
 					</p>
 					<p>
-						<ol label = "a">
+						<ol marker="a">
 							<li> 
 								<m>f(x) = 3x^3 + 4x^2 + 6x + 5</m>, <m>a = 5</m>
 							</li>
@@ -748,7 +748,7 @@
 				</statement>
 				<solution>
 					<p>
-						<ol label = "a">
+						<ol marker="a">
 							<li> 
 								<m>(\inv{f})'(5) = \dfrac{1}{6}</m>
 							</li>

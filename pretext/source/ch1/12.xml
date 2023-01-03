@@ -248,7 +248,7 @@
 								</row>
 							</tabular>
 							
-							<ol label="a">
+							<ol marker="a">
 								<li>
 									Plot the points on the graph below
 									<image>
@@ -293,7 +293,7 @@
 							</ol>
 						</statement>
 						<solution>
-							<ol label = "a">
+							<ol marker="a">
 								<li>
 									<image>
 										<description>
@@ -612,7 +612,7 @@
 				<title>Pre-Class Activities</title>
 				
 				<example><statement>
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							Find an equation for the family of linear functions with slope <m>-1</m>, and sketch a few members of the family.
 						</li>
@@ -627,7 +627,7 @@
 					</ol>
 				</statement>
 				<solution>
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							The family is given by <m>y = -x+b</m>.  Answers will vary on the sketch.
 						</li>
@@ -653,7 +653,7 @@
 			
 				<example><statement>
 					The monthly cost of driving a car depends on the number of miles driven.  Casey found that in April, it cost her $350 to drive 450 miles, and in June, it cost her $460 to drive 800 miles. Express your answer exactly (no decimals).
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							Express the monthly cost <m>C</m> as a function of the distance driven (<m>d</m>), assuming that a linear relationship gives a suitable model.
 						</li>
@@ -672,7 +672,7 @@
 					</ol>
 				</statement>
 				<solution>
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							<m>C(d) = \dfrac{11}{35}x + \dfrac{1460}{7}</m>
 						</li>
@@ -738,7 +738,7 @@
 					
 					<example><statement>
 						We will look at three special power functions.
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								If <m>a</m> is a positive integer, what kind of functions do we see? Sketch a few examples.
 							</li>
@@ -754,7 +754,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								We see the standard polynomial functions.  Graphs will vary.
 							</li>
@@ -858,7 +858,7 @@
 					
 					<example><statement>
 						Write the domain of the following functions, in interval notation.
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<m>f(x) = \dfrac{1}{x}</m>
 							</li>
@@ -873,7 +873,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<m>(-\infty,0)\cup (0,\infty)</m>
 							</li>
@@ -1372,7 +1372,7 @@
 				<title>After Class Activities</title>
 					<example><statement>
 						Classify each function as one of the types of functions discussed in this section.
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<m>k(t) = t-5+t^2</m>
 							</li>
@@ -1396,7 +1396,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								Polynomial, algebraic
 							</li>
@@ -1422,7 +1422,7 @@
 					
 					<example><statement>
 						Ecologists have modeled the relationship between the area of a region and the number of species inhabiting the region.  In particular, the number of species <m>S</m> of bats living in and around Austin has been related to the surface area <m>A</m> of the structure by the equation <m>S = 0.3A^{0.5}</m>.
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								A structure near I-35 has a surface area <m>A = 10000</m> m<m>^2</m>; how many species of bat do you expect to find on the structure?
 							</li>
@@ -1433,7 +1433,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								30 species
 							</li>
@@ -1447,7 +1447,7 @@
 					
 					<example><statement>
 						Find the domain of the following functions.
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<m>t(k) = \sqrt{k^2-6}</m>
 							</li>
@@ -1462,7 +1462,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<m>(-\infty,-\sqrt{6}]\cup [\sqrt{6},\infty)</m>
 							</li>

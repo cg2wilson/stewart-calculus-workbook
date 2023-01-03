@@ -291,7 +291,7 @@
 				
 				<example><statement>
 					Find the most general antiderivative of the following functions; check your answer by differentiation.
-					<ol label="a">
+					<ol marker="a">
 						<li> 
 							<m>f(x) = 5x + 3</m>
 						</li>
@@ -318,7 +318,7 @@
 					</ol>
 				</statement>
 				<solution>
-					<ol label="a">
+					<ol marker="a">
 						<li> 
 							<m>F(x) = \dfrac{5}{2}x^2 + 3x + C</m>
 						</li>

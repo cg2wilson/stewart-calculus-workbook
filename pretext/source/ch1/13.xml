@@ -57,7 +57,7 @@
 						If <m>f(x) = \sqrt{3-x}</m> and <m>g(x) =\sqrt{x^2-1}</m>, write (i) <m>f+g</m>, (ii) <m>f-g</m>, (iii) <m>fg</m>, and (iv) <m>f/g</m> and find their domains.
 					</statement>
 					<solution>
-						<ol label="i">
+						<ol marker="i">
 							<li>
 								<m>(f+g)(x) = \sqrt{3-x}+\sqrt{x^2-1}</m> with domain <m>(-\infty,-1]</m>
 							</li>
@@ -249,7 +249,7 @@
 							</latex-image>
 						</image>
 						<p>
-							<ol label="a" cols="2">
+							<ol marker="a" cols="2">
 								<li>
 									Vertical shrink
 								</li>
@@ -275,7 +275,7 @@
 						</p>
 					</sidebyside>
 					<p>	
-						<ol label="i">
+						<ol marker="i">
 							<li>
 								<image>
 									<description>
@@ -640,7 +640,7 @@
 				
 				<example><statement>
 					Sketch the graphs of the given functions by using transformations to a base graph:
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							<m>f(x) = \dfrac{2}{x+3}</m>
 						</li>
@@ -655,7 +655,7 @@
 					</ol>				
 				</statement>
 				<solution>	
-					<ol label = "a">
+					<ol marker="a">
 						<li>
 							<image>
 								<description>
@@ -759,7 +759,7 @@
 				
 				<example><statement>
 					For each function below, (1) find the domain of the composite function, (2) completely decompose the function into smaller ones.
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							<m>f(x) = \dfrac{1}{x+2}</m>
 						</li>
@@ -782,7 +782,7 @@
 					</ol>
 				</statement>
 				<solution>
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							The domain is <m>(-\infty,-2)\cup (-2,\infty)</m>. The function can decompose as <m>f(x) = a(b(x))</m>, where <m>a(x) = \dfrac{1}{x}, b(x) = x+2</m>
 						</li>
@@ -804,7 +804,7 @@
 				
 				<example><statement>
 					If <m>f(x) = \sqrt{x}</m> and <m>g(x) = \sqrt{2-x}</m>, find 
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<m>f\circ g</m>
 							</li>
@@ -823,7 +823,7 @@
 						</ol>
 				</statement>
 				<solution>
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							<m>\sqrt{\sqrt{2-x}} =\sqrt[4]{2-x}</m>
 						</li>
@@ -874,7 +874,7 @@
 				
 				<example><statement>
 					For each function below, (i) identify the base graph, (ii) identify any transformation applied to the base graph, and (iii) sketch a rough graph of the function.
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							<m>y = 2\cos 3x</m>
 						</li>
@@ -889,7 +889,7 @@
 					</ol>
 				</statement>
 				<solution>
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							<p>
 								The base graph is <m>\cos x</m>.  We transform by compressing horizontally by 3, then stretching vertically by 2.
@@ -1064,7 +1064,7 @@
 						</row>
 					</tabular>
 					Evaluate each expression below:
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							<m>f(g(1))</m>
 						</li>
@@ -1091,7 +1091,7 @@
 					</ol>
 				</statement>
 				<solution>
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							5
 						</li>
@@ -1115,7 +1115,7 @@
 				
 				<example><statement>
 					If you invest <m>x</m> dollars at at 6% interest compounded annually, then the amount <m>A(x)</m> of the investment after one year is <m>A(x) = 1.06x</m>.  
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							Find <m>A\circ A\circ A\circ A</m> and <m>A\circ A\circ A\circ A\circ A</m>.
 						</li>
@@ -1130,7 +1130,7 @@
 					</ol>
 				</statement>
 				<solution>
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							<m>A\circ A\circ A\circ A = (1.06)^4x</m> and <m>A\circ A\circ A\circ A\circ A = (1.06)^5x</m>
 						</li>

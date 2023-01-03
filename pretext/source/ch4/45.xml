@@ -44,7 +44,7 @@
 					<example>
 						<statement>
 							Let <m>f(x) = \sin (x^3+1)</m>
-							<ol label="a">
+							<ol marker="a">
 								<li>
 									Let <m>u=x^3+1</m>.  Find <m>\dfrac{du}{dx}</m>.
 								</li>
@@ -54,7 +54,7 @@
 							</ol>
 						</statement>
 						<solution>
-							<ol label="a">
+							<ol marker="a">
 								<li>
 									<m>\dfrac{du}{dx} = 3x^2</m>
 								</li>
@@ -112,7 +112,7 @@
 					<assemblage>
 						<title>Steps for <m>u-</m>substitution</title>
 						<p>
-							<ol label="(1)">
+							<ol marker="(1)">
 								<li>
 									Identify the <q>chain rule</q> term; call it <m>u=f(x)</m>
 								</li>
@@ -171,7 +171,7 @@
 				<example>
 					<statement>
 						Let <m>f(x) = (x-3)^3</m>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								Compute <m>\ds \int f(x)\, dx</m> <em>without</em> using <m>u-</m>substitution.
 							</li>
@@ -184,7 +184,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<m> \dfrac{1}{4}x^4-3x^3+\dfrac{27}{2}x^2 -27x + C </m>
 							</li>

@@ -57,7 +57,7 @@
 					
 					<example><statement>
 						The points <m>(2,4)</m> and <m>(4,16)</m> lie on the graph of <m>f(x)</m>.  
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								Find the slope of the secant line between these two points.
 							</li>
@@ -72,7 +72,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								The slope is 6
 							</li>
@@ -155,7 +155,7 @@
 								</latex-image>
 							</image>
 						Approximate the slope of the tangent line to <m>f</m> at <m>x = 1</m> by finding the slope of the secant line through <m>(1,1)</m> and the following points.  Sketch a few secant lines on the graph above as well.
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<m>(0.7,0.49)</m>
 							</li>
@@ -178,7 +178,7 @@
 					</statement>
 					<solution>
 						<p>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								1.7
 							</li>
@@ -210,7 +210,7 @@
 				<title>Pre-Class Activities</title>
 				
 					<example><statement>
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							In Example 1.4.3, what happened to the slopes as you moved from (a) to (c), and from (d) to (f)?  Be descriptive.
 						</li>
@@ -221,7 +221,7 @@
 					</ol>
 				</statement>
 				<solution>
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							Moving from (a) to (c), the slopes increase toward 2; moving from (d) to (f), the slopes decrease toward 2.
 						</li>
@@ -508,7 +508,7 @@
 					
 					<example><statement>
 						Suppose a ball is dropped from the top of Dale Hall Tower, which is 250m tall.  Find the average velocity of the ball over the given intervals.  Use the fact  that free-fall of an object is given by the equation <m>s(t) = 4.9t^2</m> m.  
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<m>[0,6]</m>
 							</li>
@@ -531,7 +531,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								29.4 m/s
 							</li>
@@ -569,10 +569,10 @@
 				<title>After Class Activities</title>
 					<example><statement>
 						The point <m>P = \lrpar{\dfrac{1}{2},0}</m> lies on the curve <m>y = \cos \pi x</m>.
-						<ol label="a">
+						<ol marker="a">
 							<li><p>
 								If <m>Q</m> is the point <m>(x,\cos \pi x)</m>, find the slope of the secant line <m>PQ</m> (to six decimal places) for the following values of <m>x</m>.  Show your work, and make sure yoru calculator is in radian mode.
-								<ol label="i">
+								<ol marker="i">
 									<li>
 										0.4
 									</li>
@@ -602,9 +602,9 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li><p>
-								<ol label="i">
+								<ol marker="i">
 									<li>
 										<m>-3.090170</m>
 									</li>
@@ -637,10 +637,10 @@
 						
 					<example><statement>
 						If a rock is thrown upward on Io with a velocity of 10 m/s, its height (in meters) <m>t</m> seconds later is given by <m>y = 10t - 1.86</m>.
-						<ol label="a">
+						<ol marker="a">
 							<li><p>
 								Find the average velocity over the given time intervals:
-								<ol label="i">
+								<ol marker="i">
 									<li>
 										<m>[1,2]</m>
 									</li>
@@ -664,9 +664,9 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li><p>
-								<ol label="i">
+								<ol marker="i">
 									<li>
 										10 m/s
 									</li>

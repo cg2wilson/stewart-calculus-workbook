@@ -166,7 +166,7 @@
 					<example>
 						<statement>
 							Let <m>f(x) = 3</m>
-							<ol label="a">
+							<ol marker="a">
 								<li>
 									Sketch the function on the interval <m>[0,2]</m>, and find the area between the curve and the <m>x-</m>axis on <m>[0,2]</m>.
 								</li>
@@ -186,7 +186,7 @@
 						</statement>
 						<solution>
 							<p>
-								<ol label="a">
+								<ol marker="a">
 								<li>
 									<image>
 										<description>
@@ -270,7 +270,7 @@
 					<example>
 						<statement>
 							Let <m>f(x) = 3x</m>
-							<ol label="a">
+							<ol marker="a">
 								<li>
 									Sketch the region bounded by <m>f(x)</m>, <m>x=1</m>, and the <m>x-</m>axis.
 								</li>
@@ -287,7 +287,7 @@
 						</statement>
 						<solution>
 							<p>
-								<ol label="a">
+								<ol marker="a">
 								<li>
 									<image>
 										<description>
@@ -478,7 +478,7 @@
 					
 					<example><statement>
 						Let <m>f(x) = x^2</m>.
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								Sketch the first-quadrant region bounded by <m>f(x)</m> and the line <m>y = 4</m>.
 							</li> 
@@ -494,7 +494,7 @@
 					</statement>
 					<solution>
 						<p>
-							<ol label="a">
+							<ol marker="a">
 								<li>
 									<image>
 										<description>

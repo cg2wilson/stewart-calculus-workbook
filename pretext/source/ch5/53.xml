@@ -25,7 +25,7 @@
 					<example>
 						<statement>
 							Let <m>f(x) = x-x^2</m>.
-							<ol label="a">
+							<ol marker="a">
 								<li>
 									Sketch the region bounded by <m>f(x)</m> and the <m>x-</m>axis.
 								</li>
@@ -39,7 +39,7 @@
 						</statement>
 						<solution>
 							<p>
-								<ol label="a">
+								<ol marker="a">
 									<li>
 										<image>
 											<description>
@@ -84,7 +84,7 @@
 					<example>
 						<statement>
 							Again consider <m>f(x) = x-x^2</m>.
-							<ol label="a">
+							<ol marker="a">
 								<li>
 									Draw four midpoint rectangles for the area of the region bounded by <m>f(x)</m> and the <m>x-</m>axis.  Be sure to label things appropriately!
 								</li>
@@ -112,7 +112,7 @@
 						</statement>
 						<solution>
 							<p>
-								<ol label="a">
+								<ol marker="a">
 									<li>
 										The sketch is tough to digitally reproduce, so it is left to the reader.
 									</li>
@@ -168,7 +168,7 @@
 					<example>
 						<statement>
 							Consider the region bounded by the curve <m>y = 2\sqrt{x}</m>, the <m>x-</m>axis, and the line <m>x = 4</m>.  
-							<ol label="a">
+							<ol marker="a">
 								<li>
 									Sketch and label the region.
 								</li>
@@ -184,7 +184,7 @@
 						</statement>
 						<solution>
 							<p>
-								<ol label="a">
+								<ol marker="a">
 									<li>
 										<image>
 											<description>
@@ -393,7 +393,7 @@
 					
 				<example><statement>
 					The region bounded by the curves <m>y = -x^2 + 6x-8</m> and <m>y = 0</m> is rotated about the <m>y-</m>axis.
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								Sketch the region described above.
 							</li>
@@ -409,7 +409,7 @@
 				</statement>
 				<solution>
 					<p>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<image>
 									<description>
@@ -455,7 +455,7 @@
 					
 				<example><statement>	
 					Consider the region bounded by the curves <m>y = 4x</m>, <m>y = 0</m>, and <m>x = 2</m>.  Find the volume of the solid formed when the region is rotated about the given lines:
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							The <m>y-</m>axis
 						</li>						 
@@ -468,7 +468,7 @@
 				</statement>
 				<solution>
 					<p>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<m>\dfrac{64\pi}{3}</m>
 							</li>						 

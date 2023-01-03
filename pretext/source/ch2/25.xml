@@ -37,7 +37,7 @@
 					
 					<example><statement>
 						If <m>f(x) = \sqrt{x}</m> and <m>g(x) = \sqrt{2-x}</m>, find 
-							<ol label="a">
+							<ol marker="a">
 								<li>
 									<m>f\circ g</m>
 								</li>
@@ -56,7 +56,7 @@
 							</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 								<li>
 									<m>f\circ g = \sqrt{\sqrt{2-x}}</m>
 								</li>
@@ -140,7 +140,7 @@
 				
 				<example><statement>
 					You are given a composite function.  Identify the inner function <m>u = g(x)</m> and the outer function <m>y = f(u)</m>.
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							<m> \sqrt[3]{1+4x}</m>
 						</li>
@@ -155,7 +155,7 @@
 					</ol>
 				</statement>
 				<solution>
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							<m>y = f(u) = \sqrt[3]{u}</m> and <m> u = g(x) = 1+4x</m>
 						</li>
@@ -458,7 +458,7 @@
 							</cell>
 						</row>
 					</tabular>
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							Find <m>h'(1)</m>, if <m>h(x) = f(g(x))</m>
 						</li>
@@ -468,7 +468,7 @@
 					</ol>
 				</statement>
 				<solution>
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							Find <m>h'(1) = 30</m>
 						</li>

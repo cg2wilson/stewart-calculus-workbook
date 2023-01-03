@@ -165,7 +165,7 @@
 					
 					<example><statement>
 						Find the derivatives of the following functions using the rules from Section 2.3 and the definition of the remaining four functions:
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<m>\tan x</m>
 							</li>
@@ -184,7 +184,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<m>\sec^2x</m>
 							</li>
@@ -303,7 +303,7 @@
 						
 					<example><statement>
 						An object at the end of a vertical spring is stretched 5 cm beyond its resting position, and released at time <m>t = 0</m>.  Its position at time <m>t</m> is given by <m>s(t) = 5\sin t</m>.
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								Find the velocity and acceleration at time <m>t</m>
 							</li>
@@ -313,7 +313,7 @@
 							</li>
 						</ol>
 					</statement>
-					<ol label="a">
+					<ol marker="a">
 							<li>
 								The velocity is <m>v(t) = 5\cos t</m> and the acceleration is <m>a(t) = -5\sin t</m>
 							</li>

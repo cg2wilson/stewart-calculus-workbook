@@ -317,7 +317,7 @@
 					
 					<example><statement>
 						Suppose that a ball is dropped from the upper observation deck of a building which is 980 m above the ground.
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								What is the velocity of the ball after 10 seconds?  Use that the equation of motion is <m>s(t) = 4.9t^2</m>.
 							</li>
@@ -327,7 +327,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								98 m/s
 							</li>
@@ -419,7 +419,7 @@
 					
 				<example><statement>
 					Let <m>f(x) = x^2 + 1</m> and <m>a = 3</m>.
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							Using either definition you wrote down above, complete the <em>setup</em> for the derivative.  Do not use algebra; that is what part (b) will do.  You only need to write the setup.
 							<me>
@@ -432,7 +432,7 @@
 					</ol>
 				</statement>
 				<solution>
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							<p>
 								<m>f'(3) = \ds \lim_{x\to 3} \dfrac{f(x)-f(3)}{x-3}</m>
@@ -511,7 +511,7 @@
 				</question>
 				
 				<example><statement>
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							Use both definitions of the derivative at a point to show that for <m>f(x) = x^3</m>, <m>f'(1) = 3</m>.
 						</li>
@@ -522,7 +522,7 @@
 					</ol>
 				</statement>
 				<solution>
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							<p>	
 							Using the first definition of the slope of the tangent line, we have
@@ -555,7 +555,7 @@
 				</example>
 
 				<example><statement>
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							Use the first definition of the derivative to find <m>g'(2)</m> for <m>g(x) = \dfrac{2}{x}</m>.
 						</li>
@@ -574,7 +574,7 @@
 					</ol>
 				</statement>
 				<solution>
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							<m>g'(2) = -\dfrac{1}{2}</m>
 						</li>
@@ -644,7 +644,7 @@
 					
 					<example><statement>
 						The function <m>C</m> gives the number of bushels of corn produced on a tract of farmland that is treated with <m>f</m> pounds of nitrogen per acre.
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								Is it possible for <m>C(90)</m> to be negative?  Why or why not?
 							</li>
@@ -659,7 +659,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								No- you can't have negative bushels of corn
 							</li>
@@ -677,7 +677,7 @@
 						
 					<example><statement>
 						The function <m>p</m> gives the number of miles from an airport that a plane has flown after <m>t</m> hours.
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								What are the units of <m>p'(1.5)</m>?
 							</li>
@@ -688,7 +688,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								miles per hour
 							</li>
@@ -701,7 +701,7 @@
 
 					<example><statement>
 						The cost of producing <m>x</m> ounces of gold from a new gold mine is <m>C=f(x)</m> dollars.
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								What is the meaning of the derivative <m>f'(x)</m>? What are its units?
 							</li>
@@ -711,7 +711,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<m>f'(x)</m> gives the rate of change of production cost; its units are dollars per ounce.
 							</li>

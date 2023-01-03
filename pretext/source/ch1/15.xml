@@ -320,7 +320,7 @@
 					
 					<example><statement>
 						Consider <m>f(x) = \dfrac{x-1}{x^2-1}</m>.  What is <m>\ds \lim_{x\to 1} f(x)</m>?
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								Fill out the table below (using a calculator) to six decimal places.  What do you think the limit will be?  Why?
 								<tabular top="medium" left="medium" right="medium">
@@ -402,7 +402,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<tabular top="medium" left="medium" right="medium">
 									<row bottom="medium">
@@ -501,7 +501,7 @@
 					</example>
 					
 					<example><statement>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								Translate the expression <m>\ds \lim_{x\to 3} f(x) = 7</m> from math into English.  Explain the sentence you wrote. 
 							</li>
@@ -511,7 +511,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								As <m>x</m> approaches 3, the output approaches 7.  This means that when the inputs get close to 3, the outputs get closer to 7
 							</li>
@@ -600,7 +600,7 @@
 								]]>
 							</latex-image>
 						</image>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<m>\ds \lim_{x\to 4^-} g(x)=</m> 
 							</li>
@@ -622,7 +622,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<m>\ds \lim_{x\to 4^-} g(x)=2</m> 
 							</li>
@@ -1185,7 +1185,7 @@
 					
 					<example><statement>
 						Sketch an example of each of the following:
-							<ol label="a">
+							<ol marker="a">
 								<li>
 									<m>\displaystyle \lim_{x\to a^-} f(x) = \infty</m>
 								</li>
@@ -1212,7 +1212,7 @@
 							</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 								<li>
 									<image>
 										<description>
@@ -1465,7 +1465,7 @@
 						
 						<image source="15fig1.svg"/>
 						
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<m>\ds \lim_{t\to 0^-} g(t)</m> 
 							</li>
@@ -1493,7 +1493,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<m>-1</m> 
 							</li>
@@ -1532,7 +1532,7 @@
 						
 					<example><statement>
 						Determine the limits for the following functions:
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<m>\ds \lim_{x\to 5^+} \dfrac{x+1}{x-5}</m>
 							</li>
@@ -1548,7 +1548,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<m>\infty</m>
 							</li>

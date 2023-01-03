@@ -1,0 +1,455 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-71">
+	<title>Integration by Parts</title>
+	<objectives>
+		<ul>
+			<li>
+				State and apply the formula for integration by parts in order to evaluate definite and indefinite integrals involving one or multiple applications of integration by parts and possibly other integration techniques
+			</li>
+		</ul>
+	</objectives>
+
+	<subsection xml:id="section-71-beforeclass">
+		<title>Before Class</title>
+		<figure>
+			<caption>Pre-Class Video 1</caption>
+			<!--
+			<url href = ""/>
+			-->
+		</figure>
+
+		<subsubsection xml:id="section-71-formula">
+			<title>The Formula</title>
+
+			<example>
+				<statement>
+					<p>
+						<ol marker="a">
+							<li>
+								Let <m>f(x)</m> and <m>g(x)</m> be differentiable functions.  Use the product rule to find <m>\dfrac{d}{dx}\left[f(x)g(x)\right]</m>
+							</li>
+							<li>
+								Integrate both sides of the equation, and rewrite to get the formula for integration by parts.
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								<m>\dfrac{d}{dx}\left[f(x)g(x)\right] = f'(x)g(x) + f(x)g'(x)</m>
+							</li>
+							<li>
+								<md>
+									<mrow>
+										\dfrac{d}{dx}\left[f(x)g(x)\right] \amp = f'(x)g(x) + f(x)g'(x)
+									</mrow>
+									<mrow>
+										\ds \int \dfrac{d}{dx}\left[f(x)g(x)\right]\, dx \amp = \int f'(x)g(x)\, dx + \int f(x)g'(x)\, dx
+									</mrow>
+									<mrow>
+										\ds f(x)g(x) \amp = \int f'(x)g(x)\, dx + \int f(x)g'(x)\, dx
+									</mrow>
+									<mrow>
+										\ds \int f(x)g'(x)\, dx \amp = f(x)g(x) - \int f'(x)g(x)\, dx
+									</mrow>
+								</md>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
+
+			<assemblage>
+				<title>Integration by Parts Formula</title>
+				<p>
+					<me>
+						\ds \int u\, dv = uv - \int v\, du
+					</me>
+					or 
+					<me>
+						\ds \int f(x)g'(x)\, dx = f(x)g(x) - \int f'(x)g(x)\, dx
+					</me>
+				</p>
+			</assemblage>
+
+			<example>
+				<statement>
+					<p>
+						Evaluate <m>\ds \int xe^x\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int xe^x\, dx = (x-1)e^x + C</m>
+					</p>
+				</solution>
+			</example>
+
+			<question>
+				<statement>
+					<p>
+						What would happen if we switched our choices of <m>u</m> and <m>dv</m> in the previous example?
+					</p>
+				</statement>
+				<solution>
+					<p>
+						We would have 
+						<me>
+							\ds \int xe^x\, dx = \dfrac{1}{2}x^2e^x - \int \dfrac{1}{2}x^2e^x\, dx
+						</me>
+						which means the problem gets harder
+					</p>
+				</solution>
+			</question>
+
+			<example>
+				<statement>
+					<p>
+						Compute <m>\ds \int x\cos x\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int x\cos x\, dx = x\sin x + \cos x + C</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find the most general antiderivative of <m>\ln x</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int \ln x\, dx = x\ln x - x + C</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Evaluate <m>\ds \int x^2\cos 2x\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int x^2\cos 2x\, dx = \dfrac{1}{2}x^2\sin 2x + \dfrac{1}{2}x\cos 2x - \dfrac{1}{4}\sin 2x + C</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Evaluate <m>\ds \int e^x\sin x\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int e^x\sin x\, dx = \dfrac{1}{2}\lrpar{e^x\sin x - e^x\cos x} + C</m>
+					</p>
+				</solution>
+			</example>
+		</subsubsection>
+	</subsection>
+
+	<subsection xml:id="section-71-preclass">
+		<title>Pre-Class Activities</title>
+
+		<example>
+			<statement>
+				<p>
+					What questions/concerns do you have from the videos?
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Answers vary
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					The following problems require integration by parts to solve.  For each, answer why integration by parts is necessary, and then compute the integral.
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<m>\ds \int x\sin 3x\, dx</m>
+						</li>
+						<li>
+							<m>\ds \int (x-1)\sin (\pi x)\, dx</m>
+						</li>
+						<li>
+							<m>\ds \int xe^{2x}\, dx</m>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								<m>\ds \int x\sin 3x\, dx = -\dfrac{1}{3}x\cos 3x - \dfrac{1}{9}\cos 3x + C</m>
+							</p>
+							<p>
+								The integrand is a product function, and we don't have a derivative rule to take care of that type of integrand.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>\ds \int (x-1)\sin (\pi x)\, dx = -\dfrac{1}{\pi}(x-1)\cos \pi x + \dfrac{1}{\pi^2}\sin \pi x + C</m>
+							</p>
+							<p>
+								The integrand is a product function, and we don't have a derivative rule to take care of that type of integrand.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>\ds \int xe^{2x}\, dx = \dfrac{1}{2}xe^{2x} - \dfrac{1}{4}e^{2x} + C</m>
+							</p>
+							<p>
+								The integrand is a product function, and we don't have a derivative rule to take care of that type of integrand.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</example>
+	</subsection>
+
+	<subsection xml:id="section-71-inclass">
+		<title>In Class</title>
+		<subsubsection xml:id="section-71-examples">
+			<title>Examples</title>
+
+			<example>
+				<statement>
+					<p>
+						Show that <m>\ds \int_0^1 \inv{\tan}(x)\, dx = \dfrac{\pi}{4} - \dfrac{\ln 2}{2}</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						Set <m>u = \arctan x</m> and <m>dv = dx</m>. Then, <m>du = \dfrac{1}{1+x^2}\, dx</m> and <m>v = x</m> and we have
+						<me>
+							\ds \int_0^1 \inv{\tan}(x)\, dx  = x\arctan x \bigg\rvert_0^1  - \int_0^1 \dfrac{x}{x^2+1}\, dx
+						</me>
+						For the integral, use a substitution: <m>u = 1+x^2</m>, so <m>du = 2x\, dx</m>. Changing the bounds, we see that <m>x=0\to u = 1</m> and <m>x=1\to u=2</m>; then,
+						<md>
+							<mrow>
+								\ds \int_0^1 \inv{\tan}(x)\, dx \amp = x\arctan x \bigg\rvert_0^1  - \int_0^1 \dfrac{x}{x^2+1}\, dx
+							</mrow>
+							<mrow>
+								\amp = x\arctan x \bigg\rvert_0^1  - \dfrac{1}{2}\int_1^2 \dfrac{1}{u}\, du
+							</mrow>
+							<mrow>
+								\amp = x\arctan x \bigg\rvert_0^1 - \dfrac{1}{2}\ln u\bigg\rvert_1^2
+							</mrow>
+							<mrow>
+								\amp = \dfrac{\pi}{4} - \dfrac{1}{2}\ln 2
+							</mrow>
+						</md>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Prove that <m>\ds \int \sin^n x\, dx = -\dfrac{1}{n}\cos x \sin^{n-1}x + \dfrac{n-1}{n}\int \sin^{n-2}x\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						Write the integrand as <m>\sin^nx = \sin x\cdot \sin^{n-1}x</m>. Now we have an integral patterned to use integration by parts; set <m>u = \sin^{n-1}x</m> and <m>dv = \sin x\, dx</m>. Then, <m>du = (n-1)\cos^{n-2}x\, dx</m> and <m>v = -\cos x</m>. So, we have
+						<md>
+							<mrow>
+								\ds \int \sin^nx\, dx \amp = \int \sin x\cdot \sin^{n-1}x\, dx
+							</mrow>
+							<mrow>
+								\amp = \ds -\sin^{n-1}x\cos x + \int (n-1)\sin^{n-2}x\cos^2 x\, dx 
+							</mrow>
+							<mrow>
+								\amp = \ds -\sin^{n-1}x\cos x + (n-1)\int \sin^{n-2}x(1-\sin^2 x)\,dx
+							</mrow>
+							<mrow>
+								\amp = \ds -\sin^{n-1}x\cos x + (n-1)\int \sin^{n-2}x\, dx - (n-1)\int \sin^nx\, dx
+							</mrow>
+						</md>
+						Combining like terms and dividing, we have 
+						<md>
+							<mrow>
+								\ds n\int \sin^nx\, dx \amp = -\sin^{n-1}x\cos x + (n-1)\int \sin^{n-2}x\, dx
+							</mrow>
+							<mrow>
+								\ds \int \sin^nx\, dx \amp = -\dfrac{1}{n}\cos x\sin^{n-1}x + \dfrac{n-1}{n}\int \sin^{n-2}x\, dx
+							</mrow>
+						</md>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Compute the integrals:
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								<m>\ds \int \dfrac{z}{10^z}\, dz</m>
+							</li>
+							<li>
+								<m>\ds \int e^{-\theta}\cos 2\theta\, d\theta</m>
+							</li>
+							<li>
+								<m>\ds \int_0^{1/2} w\cos \pi w \, dw</m>
+							</li>
+							<li>
+								<m>\ds \int_1^{\sqrt{3}} \arctan\lrpar{\dfrac{1}{y}}\, dy</m>
+							</li>
+							<li>
+								<m>\ds \int_1^2 \dfrac{(\ln x)^2}{x^3}\, dx</m>
+							</li>
+							<li>
+								<m>\ds \int_0^{\pi/3} \sin x\ln (\cos x)\, dx</m>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								<m>\ds \int \dfrac{z}{10^z}\, dz = -\dfrac{1}{\ln 10}z\cdot 10^{-z} - \dfrac{1}{(\ln 10)^2}\cdot 10^{-z} + C</m>
+							</li>
+							<li>
+								<m>\ds \int e^{-\theta}\cos 2\theta\, d\theta = \dfrac{4}{5}\lrpar{\dfrac{1}{2}e^{-\theta}\sin 2\theta - \dfrac{1}{4}e^{-\theta}\cos 2\theta} + C</m>
+							</li>
+							<li>
+								<m>\ds \int_0^{1/2} w\cos \pi w \, dw = \dfrac{1}{2\pi} - \dfrac{1}{\pi^2}</m>
+							</li>
+							<li>
+								<m>\ds \int_1^{\sqrt{3}} \arctan\lrpar{\dfrac{1}{y}}\, dy = \dfrac{\pi\sqrt{3}}{6} -\dfrac{\pi}{4} + \ln(\sqrt{2})</m>
+							</li>
+							<li>
+								<m>\ds \int_1^2 \dfrac{(\ln x)^2}{x^3}\, dx = -\dfrac{1}{8}(\ln 2)^2 - \dfrac{1}{8}\ln 2 + \dfrac{3}{16}</m>
+							</li>
+							<li>
+								<m>\ds \int_0^{\pi/3} \sin x\ln (\cos x)\, dx = \ln(\sqrt{2}) - \dfrac{1}{2}</m>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Evaluate <m>\ds \int \cos (\ln x)\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int \cos (\ln x)\, dx = \dfrac{1}{2}\lrpar{x\cos (\ln x) + x\sin (\ln x)} + C</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find <m>\ds \int_0^\pi e^{\cos t}\sin 2t\, dt</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int_0^\pi e^{\cos t}\sin 2t\, dt = \dfrac{4}{e}</m>
+					</p>
+				</solution>
+			</example>
+		</subsubsection>
+	</subsection>
+
+	<subsection xml:id="section-71-afterclass">
+		<title>After Class Activities</title>
+
+		<example>
+			<statement>
+				<p>
+					Evaluate <m>\ds \int e^{\sqrt{x}}\, dx</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>\ds \int e^{\sqrt{x}}\, dx = 2\sqrt{x}e^{\sqrt{x}} - 2e^{\sqrt{x}} + C</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Evaluate <m>\ds \int_1^2 x^4 (\ln x)^2\, dx</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Evaluate <m>\ds \int_1^2 x^4 (\ln x)^2\, dx = \dfrac{1}{5}(\ln 2)^2 - \dfrac{64}{25}\ln 2 + \dfrac{62}{125}</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Find <m>\ds \int (\arcsin x)^2\, dx</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>\ds \int (\arcsin x)^2\, dx = x\arcsin x + \sqrt{1-x^2} + C</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Evaluate <m>\ds \int \ln (\sqrt{x})\, dx</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>\ds \int \ln (\sqrt{x})\, dx = x\ln (\sqrt{x}) - \dfrac{1}{2}x + C</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Prove the reduction formula: <m>\ds \int (\ln x)^n\, dx = x(\ln x)^n - n\int (\ln x)^{n-1}\, dx</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Let <m>u = (\ln x)^n</m> and <m>dv = dx</m>. Then, <m>du = n(\ln x)^{n-1}\, dx</m> and <m>v = x</m>. Using integration by parts, we have
+					<me>
+						\ds \int (\ln x)^n\, dx = x(\ln x)^n - n\int (\ln x)^{n-1}\, dx
+					</me>
+				</p>
+			</solution>
+		</example>
+	</subsection>
+</section>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<chapter xml:id="ch7" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Techniques of Integration</title>
+<!--    <xi:include href="outcomes/main.xml"/>
+    <xi:include href="./readiness.xml"/>
+	-->
+	
+	<introduction>
+		Here you should put prerequisite material or things students needs to be confident with.
+	</introduction>
+    <xi:include href="./71.xml"/>   
+	<xi:include href="./72.xml"/>
+    <xi:include href="./73.xml"/>
+	<xi:include href="./74.xml"/>
+	<xi:include href="./75.xml"/>
+	<xi:include href="./76.xml"/>
+	<xi:include href="./77.xml"/>
+	<xi:include href="./78.xml"/>
+
+</chapter>

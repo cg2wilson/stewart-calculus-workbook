@@ -32,7 +32,7 @@
 					
 					<example><statement>
 						Consider the function <m>f(x) = -x^2 + 6x + 11</m>.
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								Use the methods of Section 3.3 to find the critical point of <m>f(x)</m>; give your answer as an ordered pair.
 							</li>
@@ -47,7 +47,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<m>(3,20)</m>
 							</li>

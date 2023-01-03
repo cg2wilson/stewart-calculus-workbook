@@ -57,7 +57,7 @@
 							]]>
 						</latex-image>
 						</image>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								Write (and evaluate) an expression to find the area between <m>f(x)</m> and the <m>x-</m>axis on <m>[0,2]</m>.  Shade the area on the graph.
 							</li>
@@ -70,7 +70,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<p>
 									<image>

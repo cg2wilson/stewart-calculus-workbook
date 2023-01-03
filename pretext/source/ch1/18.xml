@@ -118,7 +118,7 @@
 								]]>
 							</latex-image>
 						</image>
-						<ol label="a" cols="4">
+						<ol marker="a" cols="4">
 							<li> <m>\ds \lim_{x\to 1^+} f(x)</m></li>
 							<li> <m>\ds \lim_{x\to 1^-} f(x)</m></li> 
 							<li> <m>\ds \lim_{x\to 1} f(x)</m></li> 
@@ -134,7 +134,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a" cols="4">
+						<ol marker="a" cols="4">
 							<li> <m>\infty</m></li>
 							<li> <m>-2</m></li> 
 							<li> <m>DNE</m></li> 
@@ -300,7 +300,7 @@
 				<example><statement>
 					Use the graph below to answer the following questions:
 					<image source="18fig1.svg"/>
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							State the numbers at which <m>f</m> is discontinuous, and classify each as a <em>vertical asymptote</em>, <em>jump discontinuity</em>, or <em>removable discontinuity</em>.
 						</li>
@@ -313,7 +313,7 @@
 					</ol>
 				</statement>
 				<solution>
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							At <m>x=-4</m> we have a removable discontinuity; at <m>x=-2</m> and <m>x=2</m>, there are jump discontinuities; at <m>x=4</m> there is a vertical asymptote.
 						</li>
@@ -452,7 +452,7 @@
 					
 					<example><statement>
 						Find the interval(s) on which the following functions are continuous
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<m>f(x) = x^{67}-47.521x^{51}+719</m>
 							</li>
@@ -471,7 +471,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<m>(-\infty,\infty)</m>
 							</li>
@@ -669,7 +669,7 @@
 				<example><statement>
 					Use the graph below to answer the following questions:
 					<image source="18fig2.svg" />
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							State the numbers at which <m>f</m> is discontinuous, and classify each as a <em>vertical asymptote</em>, <em>jump discontinuity</em>, or <em>removable discontinuity</em>.
 						</li>
@@ -682,7 +682,7 @@
 					</ol>
 				</statement>
 				<solution>
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							At <m>x=-2</m>, the function has a removable discontinuity; at <m>x=-1</m>, the function has a vertical asymptote; at <m>x=0</m>, the function has a jump discontinuity; at <m>x=1</m>, the function has a jump discontinuity.
 						</li>

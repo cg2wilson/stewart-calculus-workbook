@@ -179,7 +179,7 @@
 		</example>
 		
 		<example><statement>
-			<ol label="a">
+			<ol marker="a">
 				<li>
 					The greatest integer function is integrable on any finite-length interval, but not necessarily differentiable on the same interval.  Why is this consistent with the above information?
 				</li>
@@ -189,7 +189,7 @@
 			</ol>
 		</statement>
 		<solution>
-			<ol label="a">
+			<ol marker="a">
 				<li>
 					This is because the number of discontinuities on a finite-length interval is finite, so from the above theorem, the function is integrable.
 				</li>
@@ -284,7 +284,7 @@
 					</image>
 				</sidebyside>
 				The shaded area on the graphs of <m>\sin x</m> and <m>\cos x</m> are both exactly 1.
-				<ol label = "a">
+				<ol marker="a">
 					<li>
 						Compute the net area of <m>\sin x</m> on the interval <m>[0,2\pi]</m>
 					</li>
@@ -307,7 +307,7 @@
 			</statement>
 			<solution>
 				<p>
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							0
 						</li>
@@ -453,7 +453,7 @@
 					<image source="42fig1.png"/>
 					
 					Evaluate each integral by interpreting it in terms of areas.
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							<m>\ds \int_0^2 f(x)\, dx</m>
 						</li>
@@ -469,7 +469,7 @@
 					</ol>
 				</statement>
 				<solution>
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							4
 						</li>
@@ -525,7 +525,7 @@
 				<title>Properties of the Definite Integral</title>
 				<statement>
 					Let <m>f,g</m> be continuous functions on <m>[a,b]</m>.  Let <m>c</m> be a constant.  Then,
-					<ol label="(1)">
+					<ol marker="(1)">
 						<li>
 							<m>\ds \int_a^b f(x)\,dx = -\int_b^a f(x)\, dx</m>
 						</li>
@@ -577,7 +577,7 @@
 			<example>
 			<statement>
 				Evaluate the integrals by interpreting them in terms of area:
-				<ol label="a">
+				<ol marker="a">
 					<li>
 						<m>\ds \int_0^9 \lrpar{\dfrac{2}{3}x-2}\, dx</m>
 					</li>
@@ -590,7 +590,7 @@
 				</ol>
 			</statement>
 			<solution>
-				<ol label="a">
+				<ol marker="a">
 					<li>
 						<m>\ds \int_0^9 \lrpar{\dfrac{2}{3}x-2}\, dx = 9</m>
 					</li>

@@ -179,7 +179,7 @@
 					
 					<example><statement>
 						The price of gas at a certain 7-11 in Norman was $4.37 per gallon on June 26th.  
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								Is this information presented numerically, algebraically, verbally, or graphically?
 							</li>
@@ -190,7 +190,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li>		
 								Verbally
 							</li>
@@ -485,7 +485,7 @@
 					
 					<example><statement>
 						Find the domain of the functions below:
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<m>f(x) = \dfrac{3x^4 - 5}{x^2 +2x - 8}</m>
 							</li>
@@ -500,7 +500,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<m>(-\infty,-4)\cup (-4,2)\cup (2,\infty)</m>
 							</li>
@@ -565,7 +565,7 @@
 								f(x) = |x| = \begin{cases}-x \amp x \lt 0 \\x \amp x \geq 0  \end{cases}
 							</me>
 							
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								What is <m>f(-5)?</m>  What about <m>f(1)</m>?
 							</li>
@@ -580,7 +580,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<m>f(-5) = 5, f(1) = 1</m>
 							</li>
@@ -623,7 +623,7 @@
 					
 					<example><statement>
 						A function <m>h</m> is defined by <m>h(x) = \begin{cases}3-x \amp x \lt 2\\ x^2+x \amp x \geq 2 \end{cases}</m>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								Evaluate <m>h(-2)</m>, <m>h(3)</m>, and <m>h(2)</m>.
 							</li>	
@@ -634,7 +634,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<m>h(-2) = 5, h(3) = 12, h(2) = 6</m>
 							</li>	
@@ -697,7 +697,7 @@
 					
 					<example><statement>
 						Determine if the following functions are even, odd, or neither.
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<m>f(x) = x^7 + x^5 - x</m>
 							</li>
@@ -712,7 +712,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								Odd
 							</li>

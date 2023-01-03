@@ -51,7 +51,7 @@
 					
 					<example><statement>
 						Let <m>f(x) = (x-5)^2 + 1</m>.
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								Sketch the graph of <m>f</m>, and visually determine where the function is increasing and decreasing.
 							</li>
@@ -62,7 +62,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<image>
 									<description>
@@ -241,7 +241,7 @@
 				
 				<example><statement>
 					Let <m>f(x) = x^3 - 3x</m>.  
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							Find the intervals where <m>f(x)</m> is increasing and decreasing.
 						</li>
@@ -260,7 +260,7 @@
 					</ol>
 				</statement>
 				<solution>
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							<m>f(x)</m> is increasing on <m>(-\infty,-1)\cup (1,\infty)</m> and decreasing on <m>(-1,1)</m>
 						</li>
@@ -282,7 +282,7 @@
 					
 				<example><statement>
 					Sketch a possible graph for a function <m>f</m> that satisfies the conditions:
-						<ol label="i">
+						<ol marker="i">
 							<li>
 								<m>f(0) = 0</m>, <m>f(2) = 3</m>, <m>f(4) = 6</m>, <m>f'(0) = f'(4) = 0</m>
 							</li>
@@ -447,7 +447,7 @@
 					
 				<example><statement>
 					Sketch the graph of a function that satisfies the criteria outlined below:
-						<ol label="i">
+						<ol marker="i">
 							<li>
 								Vertical asymptote at <m>x = 0</m>.
 							</li>
@@ -466,7 +466,7 @@
 
 				<example><statement>
 					Sketch the graph of a function that satisfies the criteria outlined below:
-						<ol label="i">
+						<ol marker="i">
 							<li>
 								<m>f'(5) = 0</m>, <m>f'(x) \lt 0</m> when <m>x \lt 5</m>, <m>f'(x) \gt 0</m> when <m>x \gt 5</m>
 							</li>
@@ -503,7 +503,7 @@
 					A graph is given below. 
 					<image source="33fig3.svg" />
 					State and justify the <m>x-</m>coordinates of the inflection points of <m>f</m>, if
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							The curve is the graph of <m>f</m>
 						</li>
@@ -518,7 +518,7 @@
 					</ol>					
 				</statement>
 				<solution>
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							<m>x=3,5</m>
 						</li>

@@ -195,7 +195,7 @@
 				<example>
 					<statement>
 						Compute the following:
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<m>\ds \int \lrpar{\cos x + \dfrac{1}{3}x}\, dx</m>
 							</li>
@@ -208,7 +208,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<m>\sin x + \dfrac{1}{6}x^2 + C</m>
 							</li>
@@ -229,7 +229,7 @@
 					
 					<question>
 						<statement>
-							<ol label="a">
+							<ol marker="a">
 								<li>
 									In Section 4.1, how did we find the accumulated change of a function?  Give an real-world example of how those techniques would be used.
 								</li>
@@ -240,7 +240,7 @@
 						</statement>
 						<solution>
 							<p>
-								<ol label="a">
+								<ol marker="a">
 								<li>
 									Answers vary
 								</li>
@@ -280,7 +280,7 @@
 					<example>
 						<statement>
 							A particle moves along a line so that its velocity at time <m>t</m> is <m>v(t) = t^2-t-6</m> m/s.
-							<ol label="a">
+							<ol marker="a">
 								<li>
 									Find the displacement of the particle during the time period <m>1\leq t\leq 4</m>
 								</li>
@@ -291,7 +291,7 @@
 						</statement>
 						<solution>
 							<p>
-								<ol label="a">
+								<ol marker="a">
 								<li>
 									<m>-\dfrac{9}{2}</m> m
 								</li>

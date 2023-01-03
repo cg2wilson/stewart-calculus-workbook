@@ -28,7 +28,7 @@
 					
 					<example><statement>
 						Consider the equation <m>x^2 + y^2 = 1</m>.
-						<ol label="a">
+						<ol marker="a">
 							<li> 
 								<m>x^2 + y^2 = 1</m> is called an <em>implicit equation</em>.  Why is this considered implicit and not <em>explicit</em>?
 							</li>
@@ -39,7 +39,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li> 
 								<m>y</m> can't be written in terms of a single equation, i.e. it's not a function of <m>x</m>
 							</li>
@@ -52,7 +52,7 @@
 					</example>
 					<example><statement>
 						Consider the circle of radius 4, centered at the origin, given by the implicit equation <m>x^2 + y^2 = 16</m>.
-						<ol label="a">
+						<ol marker="a">
 							<li> 
 								Rewrite the equation using that <m>y = y(x)</m> (that is, <m>y</m> is a function of <m>x</m>)
 							</li>
@@ -71,7 +71,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li> 
 								<m>x^2 + (y(x))^2 = 4</m>
 							</li>
@@ -113,7 +113,7 @@
 				</example>
 					
 				<example><statement>
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							Find <m>\dfrac{dy}{dx}</m> for the expression <m>\sqrt{x} + \sqrt{y} = 1</m>, and find the slope of the tangent line at the point <m>(0,1)</m>
 						</li>
@@ -124,7 +124,7 @@
 					</ol>
 				</statement>
 				<solution>
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							<m>\dfrac{dy}{dx} = -\dfrac{\sqrt{y}}{\sqrt{x}}</m>, so <m>\dfrac{dy}{dx}\bigg\rvert_{x=2,y=2} = -1</m>
 						</li>
@@ -141,7 +141,7 @@
 				<title>In Class</title>
 				
 				<example><statement>
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							Find the derivative of <m>x^2+2y^2=9</m> at the point <m>(1,2)</m>
 						</li>
@@ -151,7 +151,7 @@
 					</ol>
 				</statement>
 				<solution>
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							<m>\dfrac{dy}{dx} = -\dfrac{x}{2y}</m>, so <m>\dfrac{dy}{dx}\bigg\rvert_{x=1,y=2} = -\dfrac{1}{4}</m>
 						</li>

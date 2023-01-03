@@ -134,7 +134,7 @@
 								]]>
 							</latex-image>
 						</image>
-						<ol label="a">
+						<ol marker="a">
 							<li> 
 								<m>\ds \lim_{x\to 1} [f(x)]</m>
 							</li>
@@ -157,7 +157,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li> 
 								<m>\ds \lim_{x\to 1} [f(x)]  \text{ DNE}</m>
 							</li>
@@ -191,7 +191,7 @@
 					
 					<example><statement>
 						Calculate the following limits.  Justify each answer with one (or more) of the limit laws.
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<m>\ds \lim_{x\to -1} 3x^3+5x^2-7</m>
 							</li>
@@ -207,7 +207,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<m>\ds \lim_{x\to -1} 3x^3+5x^2-7 = -9</m>.  Since this is a polynomial, you can use the direct substitution property.
 							</li>
@@ -226,7 +226,7 @@
 					
 					<question><statement>
 						Let <m>k(x)=\dfrac{x+1}{x^2-1}</m>.
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								The Direct Substitution Property <em>cannot</em> be applied to the function at <m>x = -1</m>.  Why not?
 							</li>
@@ -236,7 +236,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<m>-1</m> is not in the domain
 							</li>
@@ -253,7 +253,7 @@
 				
 				<example><statement>
 						Assume that <m>\ds \lim_{x\to 3} f(x) = -1</m>, <m>\ds \lim_{x\to 3} g(x) = 2</m>, and <m>\ds \lim_{x\to 3} h(x) = 0</m>.  Find the following limits, if they exist.  If they don't, explain why.  Justify each answer with the appropriate limit law(s).
-						<ol label="a">
+						<ol marker="a">
 							<li> 
 								<m>\ds \lim_{x\to 3} [f(x) + 5g(x)]</m>
 							</li>
@@ -275,7 +275,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li> 
 								<m>\ds \lim_{x\to 3} [f(x) + 5g(x)] = 9</m>.  Use the sum/difference law to split the limit, then use the constant multiple rule to multiply <m>\ds \lim_{x\to 3} g(x)</m> by 5.
 							</li>
@@ -303,7 +303,7 @@
 				
 				<example><statement>
 					Compute the following limits:
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							<m>\ds \lim_{t\to -5} g(t)</m>, where <m>g(t) = \begin{cases}t^2 -1 \amp t\neq -5\\ \pi+1 \amp t = -5 \end{cases}</m>
 						</li>
@@ -318,7 +318,7 @@
 					</ol>
 				</statement>
 				<solution>
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							<m>\ds \lim_{t\to -5} g(t) = 24</m>
 						</li>
@@ -357,7 +357,7 @@
 				
 				<example><statement>
 					Find <m>[\![x]\!]</m> for the following values of <m>x</m>.
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							<m>x = 2</m>
 						</li>
@@ -381,7 +381,7 @@
 					</ol>
 				</statement>
 				<solution>
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							<m>2</m>
 						</li>
@@ -408,7 +408,7 @@
 				
 				<example><statement>
 					Find the limits.
-					<ol labe="a">
+					<ol marker="a">
 						<li>
 							<m>\ds\lim_{x\to 0.5} [\![x]\!]</m>
 						</li>
@@ -427,7 +427,7 @@
 					</ol>
 				</statement>
 				<solution>
-					<ol labe="a">
+					<ol marker="a">
 						<li>
 							<m>\ds\lim_{x\to 0.5} [\![x]\!] = 0</m>
 						</li>
@@ -489,14 +489,14 @@
 						<me>
 							\text{sgn}(x) = \begin{cases}-1 \amp x \lt 0\\ 0 \amp x = 0\\ 1 \amp x > 0 \end{cases}
 						</me>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								Sketch the graph of <m>\text{sgn}(x)</m>.
 							</li>
 								
 							<li><p>
 								Find the limits, or explain why they don't exist:
-								<ol label="i">
+								<ol marker="i">
 									<li>
 										<m>\ds \lim_{x\to 0} \text{sgn}(x)</m>
 									</li>
@@ -508,7 +508,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<image>
 									<description>
@@ -548,7 +548,7 @@
 								
 							<li><p>
 								Find the limits, or explain why they don't exist:
-								<ol label="i">
+								<ol marker="i">
 									<li>
 										<m>\ds \lim_{x\to 0} \text{sgn}(x) \text{ DNE}</m>.  This is because the left and right hand limits disagree.
 									</li>
@@ -563,7 +563,7 @@
 						
 					<example><statement>
 						Find the limit: 
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<m>\ds \lim_{x\to -4} \dfrac{3x + 12}{|x + 4|}</m>
 							</li>
@@ -579,7 +579,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<m>\ds \lim_{x\to -4} \dfrac{3x + 12}{|x + 4|} \text{ DNE}</m>
 							</li>

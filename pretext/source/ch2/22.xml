@@ -43,7 +43,7 @@
 					<title>The Derivative as a Function</title>
 					
 					<example><statement>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								Use either method of the previous section to find the derivative of <m>f(x) = x^2 + 1</m> at <m>(1,2)</m>.
 							</li>
@@ -54,7 +54,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<m>f'(1) = 2</m>
 							</li>
@@ -78,7 +78,7 @@
 					</definition>
 					
 					<example><statement>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								Use the previous definition to compute <m>f'(x)</m>, if <m>f(x) = x^2 + 1</m>.  
 							</li>
@@ -88,7 +88,7 @@
 						</ol>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								<m>f'(x) = 2x</m>  
 							</li>
@@ -209,7 +209,7 @@
 				
 				<example><statement>
 					Let <m>P</m> represent the percentage of a city's electrical power that is produced by solar panels, <m>t</m> years after January 1, 2015.
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							What does <m>\dfrac{dP}{dt}</m> represent in this context?  Include the units.
 						</li>
@@ -225,7 +225,7 @@
 					</ol>
 				</statement>
 				<solution>
-					<ol label="a">
+					<ol marker="a">
 						<li>
 							The rate of change of percentage of electrical power produced by solar panels, in percent per year
 						</li>
@@ -471,7 +471,7 @@
 						</sidebyside>
 					</statement>
 					<solution>
-						<ol label="a">
+						<ol marker="a">
 							<li>
 								II
 							</li>
