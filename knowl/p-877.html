@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<h6 class="heading"><span class="type">Paragraph</span></h6>
+<div class="para logical">
+<div class="para">Set <span class="process-math">\(x = a\sin\theta\text{.}\)</span> Then, <span class="process-math">\(dx = a\cos\theta\text{.}\)</span> Making our substitutions, we get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ds \int_0^a a^2\sin^2\theta \sqrt{a^2-a^2\sin\theta}\, (a\cos\theta)\, d\theta
+\end{equation*}
+</div>
+<div class="para">After some simplification, we get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ds \int_0^a a^4\sin^2\theta\cos^2\theta\, d\theta
+\end{equation*}
+</div>
+<div class="para">Using the double angle identity for sine, we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ds \int_0^a a^4 \lrpar{\dfrac{1}{2}\sin 2\theta}^2\, d\theta = \dfrac{a^4}{4}\int \sin^2 2\theta\, d\theta
+\end{equation*}
+</div>
+<div class="para">Now use a power reducing identity:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ds \dfrac{a^4}{4}\int_0^a \dfrac{1}{2} (1-\cos 4\theta)\, d\theta
+\end{equation*}
+</div>
+<div class="para">More simplification gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ds \dfrac{a^4}{8} \int_0^a 1-\cos 4\theta\, d\theta
+\end{equation*}
+</div>
+<div class="para">Integrating and using double angle identities gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\dfrac{a^4}{8}\lrpar{\theta - \dfrac{1}{4}\sin 4\theta}\bigg \rvert_{x = 0}^{x = a}
+\end{equation*}
+</div>
+<div class="para">After reduction, it becomes clear that the sine term is zero at the endpoints, so the integral becomes</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\dfrac{a^4}{8}\lrpar{\inv{\sin}\lrpar{\dfrac{x}{a}}}\bigg\rvert_0^a
+\end{equation*}
+</div>
+<div class="para">Evaluating gives our answer.</div>
+</div>
+<span class="incontext"><a href="section-73.html#p-877" class="internal">in-context</a></span>
+</body>
+</html>

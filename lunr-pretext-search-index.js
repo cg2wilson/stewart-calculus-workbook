@@ -8368,7 +8368,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.1",
   "title": "Integration by Parts",
-  "body": " Integration by Parts    State and apply the formula for integration by parts in order to evaluate definite and indefinite integrals involving one or multiple applications of integration by parts and possibly other integration techniques     Before Class   Pre-Class Video 1     The Formula      Let and be differentiable functions. Use the product rule to find   Integrate both sides of the equation, and rewrite to get the formula for integration by parts.                   Integration by Parts Formula   or      Evaluate            What would happen if we switched our choices of and in the previous example?    We would have which means the problem gets harder      Compute            Find the most general antiderivative of            Evaluate            Evaluate             Pre-Class Activities    What questions\/concerns do you have from the videos?    Answers vary      The following problems require integration by parts to solve. For each, answer why integration by parts is necessary, and then compute the integral.                       The integrand is a product function, and we don't have a derivaive rule to take care of that type of integrand.       The integrand is a product function, and we don't have a derivaive rule to take care of that type of integrand.       The integrand is a product function, and we don't have a derivaive rule to take care of that type of integrand.         In Class   Examples    Show that     Set and . Then, and and we have For the integral, use a substitution: , so . Changing the bounds, we see that and ; then,       Prove that     Write the integrand as . Now we have an integral patterned to use integration by parts; set and . Then, and . So, we have Combining like terms and dividing, we have       Compute the integrals:                                                    Evaluate            Find             After Class Activities    Evaluate            Evaluate     Evaluate       Find            Evaluate            Prove the reduction formula:     Let and . Then, and . Using integration by parts, we have      "
+  "body": " Integration by Parts    State and apply the formula for integration by parts in order to evaluate definite and indefinite integrals involving one or multiple applications of integration by parts and possibly other integration techniques     Before Class   Pre-Class Video 1     The Formula      Let and be differentiable functions. Use the product rule to find   Integrate both sides of the equation, and rewrite to get the formula for integration by parts.                   Integration by Parts Formula   or      Evaluate            What would happen if we switched our choices of and in the previous example?    We would have which means the problem gets harder      Compute            Find the most general antiderivative of            Evaluate            Evaluate             Pre-Class Activities    What questions\/concerns do you have from the videos?    Answers vary      The following problems require integration by parts to solve. For each, answer why integration by parts is necessary, and then compute the integral.                       The integrand is a product function, and we don't have a derivative rule to take care of that type of integrand.       The integrand is a product function, and we don't have a derivative rule to take care of that type of integrand.       The integrand is a product function, and we don't have a derivative rule to take care of that type of integrand.         In Class   Examples    Show that     Set and . Then, and and we have For the integral, use a substitution: , so . Changing the bounds, we see that and ; then,       Prove that     Write the integrand as . Now we have an integral patterned to use integration by parts; set and . Then, and . So, we have Combining like terms and dividing, we have       Compute the integrals:                                                    Evaluate            Find             After Class Activities    Evaluate            Evaluate     Evaluate       Find            Evaluate            Prove the reduction formula:     Let and . Then, and . Using integration by parts, we have      "
 },
 {
   "id": "objectives-35",
@@ -8467,7 +8467,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "7.1.9",
   "title": "",
-  "body": "  The following problems require integration by parts to solve. For each, answer why integration by parts is necessary, and then compute the integral.                       The integrand is a product function, and we don't have a derivaive rule to take care of that type of integrand.       The integrand is a product function, and we don't have a derivaive rule to take care of that type of integrand.       The integrand is a product function, and we don't have a derivaive rule to take care of that type of integrand.      "
+  "body": "  The following problems require integration by parts to solve. For each, answer why integration by parts is necessary, and then compute the integral.                       The integrand is a product function, and we don't have a derivative rule to take care of that type of integrand.       The integrand is a product function, and we don't have a derivative rule to take care of that type of integrand.       The integrand is a product function, and we don't have a derivative rule to take care of that type of integrand.      "
 },
 {
   "id": "example-688",
@@ -8565,8 +8565,8 @@ var ptx_lunr_docs = [
   "url": "section-72.html",
   "type": "Section",
   "number": "7.2",
-  "title": "Inverse Functions",
-  "body": " Inverse Functions         Before Class   Pre-Class Video 1     Inverse Functions & Properties     Pre-Class Activities    In Class   Calculus of Inverse Functions     After Class Activities   "
+  "title": "Trigonometric Integrals",
+  "body": " Trigonometric Integrals     Apply strategies for evaluating integrals of the forms for integers , potentially using trigonometric identities:              Before Class   Pre-Class Video 1     Trigonometric Identities  Here are some identities from trigonometry which will be helpful as we move through this section:                                              Occasionally, you'll want to rearrange some of these identities to arrive at new ones:                     Trigonometric Integrals    Compute            Compute            Find the area under the curve of from to            Compute             Pre-Class Activities    Use this space to write any questions you might have from the videos.    Answers vary      Evaluate            Evaluate in four ways: (1) using the substitution ; (2) using the substitution ; (3) using the double-angle identity for sine; (4) using integration by parts. Compare your work between the four methods.      Using the cosine substitution, we get   Using the sine substitution, we get   Using the double-angle identity, we get   If we set and , we get However, if we set and , we get     It seems as though we should get the same answer for all four integrals, but we don't. However, each of these answers can be transformed into the other by using the trigonometric identities listed in the identity table earlier.      In Class   Strategies for Trig Integrals   Evaluating    If the power of cosine is odd: Now set , simplify, and integrate.  If the power of sine is odd: Now set , simplify, and integrate.  If the powers of sine and cosine are even: use the power reducing identities or        Evaluate            Evaluate           Evaluating    If the power of secant is even: Now set , simplify, and integrate.  If the power of tangent is odd: Now let , simplify, and integrate.       Evaluate            Show that     Multiply the integrand by a form of one: So that we have Let . So, . Rewriting gives Replacing gives       Evaluate            Find            Evaluate            Evaluate            Evaluate            Find            Evaluate             After Class Activities    Explain why for any positive integers and . There are several ways of coming to this answer!    Answers vary      Evaluate            Evaluate            Find            Evaluate            Evaluate           "
 },
 {
   "id": "objectives-36",
@@ -8575,7 +8575,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "7.2",
   "title": "",
-  "body": "     "
+  "body": "   Apply strategies for evaluating integrals of the forms for integers , potentially using trigonometric identities:            "
 },
 {
   "id": "figure-56",
@@ -8587,13 +8587,229 @@ var ptx_lunr_docs = [
   "body": " Pre-Class Video 1   "
 },
 {
+  "id": "example-698",
+  "level": "2",
+  "url": "section-72.html#example-698",
+  "type": "Example",
+  "number": "7.2.1",
+  "title": "",
+  "body": "  Compute         "
+},
+{
+  "id": "example-699",
+  "level": "2",
+  "url": "section-72.html#example-699",
+  "type": "Example",
+  "number": "7.2.2",
+  "title": "",
+  "body": "  Compute         "
+},
+{
+  "id": "example-700",
+  "level": "2",
+  "url": "section-72.html#example-700",
+  "type": "Example",
+  "number": "7.2.3",
+  "title": "",
+  "body": "  Find the area under the curve of from to         "
+},
+{
+  "id": "example-701",
+  "level": "2",
+  "url": "section-72.html#example-701",
+  "type": "Example",
+  "number": "7.2.4",
+  "title": "",
+  "body": "  Compute         "
+},
+{
+  "id": "example-702",
+  "level": "2",
+  "url": "section-72.html#example-702",
+  "type": "Example",
+  "number": "7.2.5",
+  "title": "",
+  "body": "  Use this space to write any questions you might have from the videos.    Answers vary   "
+},
+{
+  "id": "example-703",
+  "level": "2",
+  "url": "section-72.html#example-703",
+  "type": "Example",
+  "number": "7.2.6",
+  "title": "",
+  "body": "  Evaluate         "
+},
+{
+  "id": "example-704",
+  "level": "2",
+  "url": "section-72.html#example-704",
+  "type": "Example",
+  "number": "7.2.7",
+  "title": "",
+  "body": "  Evaluate in four ways: (1) using the substitution ; (2) using the substitution ; (3) using the double-angle identity for sine; (4) using integration by parts. Compare your work between the four methods.      Using the cosine substitution, we get   Using the sine substitution, we get   Using the double-angle identity, we get   If we set and , we get However, if we set and , we get     It seems as though we should get the same answer for all four integrals, but we don't. However, each of these answers can be transformed into the other by using the trigonometric identities listed in the identity table earlier.   "
+},
+{
+  "id": "example-705",
+  "level": "2",
+  "url": "section-72.html#example-705",
+  "type": "Example",
+  "number": "7.2.8",
+  "title": "",
+  "body": "  Evaluate         "
+},
+{
+  "id": "example-706",
+  "level": "2",
+  "url": "section-72.html#example-706",
+  "type": "Example",
+  "number": "7.2.9",
+  "title": "",
+  "body": "  Evaluate         "
+},
+{
+  "id": "example-707",
+  "level": "2",
+  "url": "section-72.html#example-707",
+  "type": "Example",
+  "number": "7.2.10",
+  "title": "",
+  "body": "  Evaluate         "
+},
+{
+  "id": "example-708",
+  "level": "2",
+  "url": "section-72.html#example-708",
+  "type": "Example",
+  "number": "7.2.11",
+  "title": "",
+  "body": "  Show that     Multiply the integrand by a form of one: So that we have Let . So, . Rewriting gives Replacing gives    "
+},
+{
+  "id": "example-709",
+  "level": "2",
+  "url": "section-72.html#example-709",
+  "type": "Example",
+  "number": "7.2.12",
+  "title": "",
+  "body": "  Evaluate         "
+},
+{
+  "id": "example-710",
+  "level": "2",
+  "url": "section-72.html#example-710",
+  "type": "Example",
+  "number": "7.2.13",
+  "title": "",
+  "body": "  Find         "
+},
+{
+  "id": "example-711",
+  "level": "2",
+  "url": "section-72.html#example-711",
+  "type": "Example",
+  "number": "7.2.14",
+  "title": "",
+  "body": "  Evaluate         "
+},
+{
+  "id": "example-712",
+  "level": "2",
+  "url": "section-72.html#example-712",
+  "type": "Example",
+  "number": "7.2.15",
+  "title": "",
+  "body": "  Evaluate         "
+},
+{
+  "id": "example-713",
+  "level": "2",
+  "url": "section-72.html#example-713",
+  "type": "Example",
+  "number": "7.2.16",
+  "title": "",
+  "body": "  Evaluate         "
+},
+{
+  "id": "example-714",
+  "level": "2",
+  "url": "section-72.html#example-714",
+  "type": "Example",
+  "number": "7.2.17",
+  "title": "",
+  "body": "  Find         "
+},
+{
+  "id": "example-715",
+  "level": "2",
+  "url": "section-72.html#example-715",
+  "type": "Example",
+  "number": "7.2.18",
+  "title": "",
+  "body": "  Evaluate         "
+},
+{
+  "id": "example-716",
+  "level": "2",
+  "url": "section-72.html#example-716",
+  "type": "Example",
+  "number": "7.2.19",
+  "title": "",
+  "body": "  Explain why for any positive integers and . There are several ways of coming to this answer!    Answers vary   "
+},
+{
+  "id": "example-717",
+  "level": "2",
+  "url": "section-72.html#example-717",
+  "type": "Example",
+  "number": "7.2.20",
+  "title": "",
+  "body": "  Evaluate         "
+},
+{
+  "id": "example-718",
+  "level": "2",
+  "url": "section-72.html#example-718",
+  "type": "Example",
+  "number": "7.2.21",
+  "title": "",
+  "body": "  Evaluate         "
+},
+{
+  "id": "example-719",
+  "level": "2",
+  "url": "section-72.html#example-719",
+  "type": "Example",
+  "number": "7.2.22",
+  "title": "",
+  "body": "  Find         "
+},
+{
+  "id": "example-720",
+  "level": "2",
+  "url": "section-72.html#example-720",
+  "type": "Example",
+  "number": "7.2.23",
+  "title": "",
+  "body": "  Evaluate         "
+},
+{
+  "id": "example-721",
+  "level": "2",
+  "url": "section-72.html#example-721",
+  "type": "Example",
+  "number": "7.2.24",
+  "title": "",
+  "body": "  Evaluate         "
+},
+{
   "id": "section-73",
   "level": "1",
   "url": "section-73.html",
   "type": "Section",
   "number": "7.3",
-  "title": "Inverse Functions",
-  "body": " Inverse Functions         Before Class   Pre-Class Video 1     Inverse Functions & Properties     Pre-Class Activities    In Class   Calculus of Inverse Functions     After Class Activities   "
+  "title": "Trigonometric Substitution",
+  "body": " Trigonometric Substitution    Use the basic trigonometric substitutions to evaluate definite and indefinite integrals, and use trigonometric identities to write solutions without using inverse trigonometric functions (when possible)     Before Class   Pre-Class Video 1     The Substitutions    Use trigonometry to complete the following reference triangles:     Three triangles used to define the trigonometric substitutions. On the left, the triangle for the tangent substitution; in the middle, the triangle for the sine substitution; on the right, the triangle for the secant substitution.           Three triangles used to define the trigonometric substitutions. On the left, the triangle for the tangent substitution; in the middle, the triangle for the sine substitution; on the right, the triangle for the secant substitution.          Let     Consider . Why do none of our previous integration techniques work here?  Refer to the example at the top of the page. Which triangle has an expression similar to the radicand in ? Write the substitution below.  Treat the substitution you chose in part (b) like a substitution. Make the appropriate substitutions into the integral , and complete the integration.        Answers vary, but the idea is that we don't have an appropriate rule for the pattern      If , then . Anywhere we see , we will replace with .  Now, we have Simplifying, we have Using identities, we arrive at Integrating gives However, our original variable was , not ; since we declared , we rearrange to get . So, our answer becomes          Compute            Evaluate             Pre-Class Activities    Use this space to write any questions you have from the videos.    Answers vary      Compute            Compute . Is a trigonometric substitution necessary here? Why or why not?     . A trig substitution isn't necessary here, as we can use a u-substitution.      Compute using the substitution            Using the previous examples as guideposts, fill out the following table:     If you see an integrand involving  Try a substitution using          If you see an integrand involving  Try a substitution using                                 In Class   Examples    Compute            Evaluate            Compute            Find            Evaluate            Show that     Set . Then, . Making our substitutions, we get After some simplification, we get Using the double angle identity for sine, we have Now use a power reducing identity: More simplification gives Integrating and using double angle identities gives After reduction, it becomes clear that the sine term is zero at the endpoints, so the integral becomes Evaluating gives our answer.      Evaluate            Compute             After Class Activities    Use trig substitution to prove that the area of the ellipse is , where is the length of the major axis and is the length of the minor axis.    Write the ellipse in terms of alone first; this gives . We can take the positive root, integrate a quarter of the ellipse, and multiply the resulting area by 4.  Now, the area will be given by . Use the substitution ; then, . Then Multiplying by 4 gives the area,       Evaluate            Compute           "
 },
 {
   "id": "objectives-37",
@@ -8602,7 +8818,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "7.3",
   "title": "",
-  "body": "     "
+  "body": "  Use the basic trigonometric substitutions to evaluate definite and indefinite integrals, and use trigonometric identities to write solutions without using inverse trigonometric functions (when possible)   "
 },
 {
   "id": "figure-57",
@@ -8614,13 +8830,193 @@ var ptx_lunr_docs = [
   "body": " Pre-Class Video 1   "
 },
 {
+  "id": "example-722",
+  "level": "2",
+  "url": "section-73.html#example-722",
+  "type": "Example",
+  "number": "7.3.1",
+  "title": "",
+  "body": "  Use trigonometry to complete the following reference triangles:     Three triangles used to define the trigonometric substitutions. On the left, the triangle for the tangent substitution; in the middle, the triangle for the sine substitution; on the right, the triangle for the secant substitution.           Three triangles used to define the trigonometric substitutions. On the left, the triangle for the tangent substitution; in the middle, the triangle for the sine substitution; on the right, the triangle for the secant substitution.       "
+},
+{
+  "id": "example-723",
+  "level": "2",
+  "url": "section-73.html#example-723",
+  "type": "Example",
+  "number": "7.3.2",
+  "title": "",
+  "body": "  Let     Consider . Why do none of our previous integration techniques work here?  Refer to the example at the top of the page. Which triangle has an expression similar to the radicand in ? Write the substitution below.  Treat the substitution you chose in part (b) like a substitution. Make the appropriate substitutions into the integral , and complete the integration.        Answers vary, but the idea is that we don't have an appropriate rule for the pattern      If , then . Anywhere we see , we will replace with .  Now, we have Simplifying, we have Using identities, we arrive at Integrating gives However, our original variable was , not ; since we declared , we rearrange to get . So, our answer becomes       "
+},
+{
+  "id": "example-724",
+  "level": "2",
+  "url": "section-73.html#example-724",
+  "type": "Example",
+  "number": "7.3.3",
+  "title": "",
+  "body": "  Compute         "
+},
+{
+  "id": "example-725",
+  "level": "2",
+  "url": "section-73.html#example-725",
+  "type": "Example",
+  "number": "7.3.4",
+  "title": "",
+  "body": "  Evaluate         "
+},
+{
+  "id": "example-726",
+  "level": "2",
+  "url": "section-73.html#example-726",
+  "type": "Example",
+  "number": "7.3.5",
+  "title": "",
+  "body": "  Use this space to write any questions you have from the videos.    Answers vary   "
+},
+{
+  "id": "example-727",
+  "level": "2",
+  "url": "section-73.html#example-727",
+  "type": "Example",
+  "number": "7.3.6",
+  "title": "",
+  "body": "  Compute         "
+},
+{
+  "id": "example-728",
+  "level": "2",
+  "url": "section-73.html#example-728",
+  "type": "Example",
+  "number": "7.3.7",
+  "title": "",
+  "body": "  Compute . Is a trigonometric substitution necessary here? Why or why not?     . A trig substitution isn't necessary here, as we can use a u-substitution.   "
+},
+{
+  "id": "example-729",
+  "level": "2",
+  "url": "section-73.html#example-729",
+  "type": "Example",
+  "number": "7.3.8",
+  "title": "",
+  "body": "  Compute using the substitution         "
+},
+{
+  "id": "question-37",
+  "level": "2",
+  "url": "section-73.html#question-37",
+  "type": "Question",
+  "number": "7.3.9",
+  "title": "",
+  "body": "  Using the previous examples as guideposts, fill out the following table:     If you see an integrand involving  Try a substitution using          If you see an integrand involving  Try a substitution using                              "
+},
+{
+  "id": "example-730",
+  "level": "2",
+  "url": "section-73.html#example-730",
+  "type": "Example",
+  "number": "7.3.10",
+  "title": "",
+  "body": "  Compute         "
+},
+{
+  "id": "example-731",
+  "level": "2",
+  "url": "section-73.html#example-731",
+  "type": "Example",
+  "number": "7.3.11",
+  "title": "",
+  "body": "  Evaluate         "
+},
+{
+  "id": "example-732",
+  "level": "2",
+  "url": "section-73.html#example-732",
+  "type": "Example",
+  "number": "7.3.12",
+  "title": "",
+  "body": "  Compute         "
+},
+{
+  "id": "example-733",
+  "level": "2",
+  "url": "section-73.html#example-733",
+  "type": "Example",
+  "number": "7.3.13",
+  "title": "",
+  "body": "  Find         "
+},
+{
+  "id": "example-734",
+  "level": "2",
+  "url": "section-73.html#example-734",
+  "type": "Example",
+  "number": "7.3.14",
+  "title": "",
+  "body": "  Evaluate         "
+},
+{
+  "id": "example-735",
+  "level": "2",
+  "url": "section-73.html#example-735",
+  "type": "Example",
+  "number": "7.3.15",
+  "title": "",
+  "body": "  Show that     Set . Then, . Making our substitutions, we get After some simplification, we get Using the double angle identity for sine, we have Now use a power reducing identity: More simplification gives Integrating and using double angle identities gives After reduction, it becomes clear that the sine term is zero at the endpoints, so the integral becomes Evaluating gives our answer.   "
+},
+{
+  "id": "example-736",
+  "level": "2",
+  "url": "section-73.html#example-736",
+  "type": "Example",
+  "number": "7.3.16",
+  "title": "",
+  "body": "  Evaluate         "
+},
+{
+  "id": "example-737",
+  "level": "2",
+  "url": "section-73.html#example-737",
+  "type": "Example",
+  "number": "7.3.17",
+  "title": "",
+  "body": "  Compute         "
+},
+{
+  "id": "example-738",
+  "level": "2",
+  "url": "section-73.html#example-738",
+  "type": "Example",
+  "number": "7.3.18",
+  "title": "",
+  "body": "  Use trig substitution to prove that the area of the ellipse is , where is the length of the major axis and is the length of the minor axis.    Write the ellipse in terms of alone first; this gives . We can take the positive root, integrate a quarter of the ellipse, and multiply the resulting area by 4.  Now, the area will be given by . Use the substitution ; then, . Then Multiplying by 4 gives the area,    "
+},
+{
+  "id": "example-739",
+  "level": "2",
+  "url": "section-73.html#example-739",
+  "type": "Example",
+  "number": "7.3.19",
+  "title": "",
+  "body": "  Evaluate         "
+},
+{
+  "id": "example-740",
+  "level": "2",
+  "url": "section-73.html#example-740",
+  "type": "Example",
+  "number": "7.3.20",
+  "title": "",
+  "body": "  Compute         "
+},
+{
   "id": "section-74",
   "level": "1",
   "url": "section-74.html",
   "type": "Section",
   "number": "7.4",
-  "title": "Inverse Functions",
-  "body": " Inverse Functions         Before Class   Pre-Class Video 1     Inverse Functions & Properties     Pre-Class Activities    In Class   Calculus of Inverse Functions     After Class Activities   "
+  "title": "Integration of Rational Functions by Partial Fractions",
+  "body": " Integration of Rational Functions by Partial Fractions    Use polynomial long division to write improper rational functions as sums of proper rational functions  Decompose a proper rational function as a sum of partial fractions  Use partial fraction decomposition to compute integrals of rational functions whose denominators are composed of factors of the following forms: distinct linear, repreated, linear, distinct irreducible quadratic, repeated irreducible quadratic     Before Class   Pre-Class Video 1     Inverse Functions & Properties     Pre-Class Activities    In Class   Calculus of Inverse Functions     After Class Activities   "
 },
 {
   "id": "objectives-38",
@@ -8629,7 +9025,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "7.4",
   "title": "",
-  "body": "     "
+  "body": "  Use polynomial long division to write improper rational functions as sums of proper rational functions  Decompose a proper rational function as a sum of partial fractions  Use partial fraction decomposition to compute integrals of rational functions whose denominators are composed of factors of the following forms: distinct linear, repreated, linear, distinct irreducible quadratic, repeated irreducible quadratic   "
 },
 {
   "id": "figure-58",
@@ -8646,8 +9042,8 @@ var ptx_lunr_docs = [
   "url": "section-75.html",
   "type": "Section",
   "number": "7.5",
-  "title": "Inverse Functions",
-  "body": " Inverse Functions         Before Class   Pre-Class Video 1     Inverse Functions & Properties     Pre-Class Activities    In Class   Calculus of Inverse Functions     After Class Activities   "
+  "title": "Strategy for Integration",
+  "body": " Strategy for Integration    Apply the various techniques of integration to different integrals     Before Class   Pre-Class Video 1     Inverse Functions & Properties     Pre-Class Activities    In Class   Calculus of Inverse Functions     After Class Activities   "
 },
 {
   "id": "objectives-39",
@@ -8656,7 +9052,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "7.5",
   "title": "",
-  "body": "     "
+  "body": "  Apply the various techniques of integration to different integrals   "
 },
 {
   "id": "figure-59",
@@ -8691,8 +9087,8 @@ var ptx_lunr_docs = [
   "url": "section-78.html",
   "type": "Section",
   "number": "7.8",
-  "title": "Inverse Functions",
-  "body": " Inverse Functions         Before Class   Pre-Class Video 1     Inverse Functions & Properties     Pre-Class Activities    In Class   Calculus of Inverse Functions     After Class Activities   "
+  "title": "Improper Integrals",
+  "body": " Improper Integrals    Distinguish between proper and improper integrals, and apply the appropriate technique in order to determine if the improper integral converges or diverges     Before Class   Pre-Class Video 1     Inverse Functions & Properties     Pre-Class Activities    In Class   Calculus of Inverse Functions     After Class Activities   "
 },
 {
   "id": "objectives-40",
@@ -8701,7 +9097,7 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "7.8",
   "title": "",
-  "body": "     "
+  "body": "  Distinguish between proper and improper integrals, and apply the appropriate technique in order to determine if the improper integral converges or diverges   "
 },
 {
   "id": "figure-60",
