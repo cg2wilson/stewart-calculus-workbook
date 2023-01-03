@@ -1,11 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <section xml:id="section-74">
-	<title>Inverse Functions</title>
+	<title>Integration of Rational Functions by Partial Fractions</title>
 	<objectives>
 		<ul>
 			<li>
-				
+				Use polynomial long division to write improper rational functions as sums of proper rational functions
+			</li>
+			<li>
+				Decompose a proper rational function as a sum of partial fractions
+			</li>
+			<li>
+				Use partial fraction decomposition to compute integrals of rational functions whose denominators are composed of factors of the following forms: distinct linear, repreated, linear, distinct irreducible quadratic, repeated irreducible quadratic
 			</li>
 		</ul>
 	</objectives>

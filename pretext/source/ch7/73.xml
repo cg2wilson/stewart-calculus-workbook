@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <section xml:id="section-73">
-	<title>Inverse Functions</title>
+	<title>Trigonometric Substitution</title>
 	<objectives>
 		<ul>
 			<li>
-				
+				Use the basic trigonometric substitutions to evaluate definite and indefinite integrals, and use trigonometric identities to write solutions without using inverse trigonometric functions (when possible)
 			</li>
 		</ul>
 	</objectives>
@@ -20,29 +20,497 @@
 		</figure>
 
 		<subsubsection xml:id="section-73-inverses-properties">
-			<title>Inverse Functions &amp; Properties</title>
+			<title>The Substitutions</title>
 
-		
+			<example>
+				<statement>
+					<p>
+						Use trigonometry to complete the following reference triangles:
+					</p>
+					<p>
+						<sidebyside width="80%">
+							<image>
+								<description>
+									Three triangles used to define the trigonometric substitutions. On the left, the triangle for the tangent substitution; in the middle, the triangle for the sine substitution; on the right, the triangle for the secant substitution.
+								</description>
+								<latex-image>
+									<![CDATA[
+										\begin{tikzpicture}
+											\draw (0,0)--(4,3)--(4,0)--(0,0);
+											\draw (.75,0) arc (0:30:1);
+											\draw (.75,.25) node[right] {$\theta$};
+											\draw (3.5,.5) rectangle (4,0);
+											\node at (2,-.75) {$x = a\tan\theta$};
+										\end{tikzpicture}
+										\begin{tikzpicture}
+											\draw (0,0)--(4,3)--(4,0)--(0,0);
+											\draw (.75,0) arc (0:30:1);
+											\draw (.75,.25) node[right] {$\theta$};
+											\draw (3.5,.5) rectangle (4,0);
+											\node at (2,-.75) {$x = a\sin\theta$};
+										\end{tikzpicture}
+										\begin{tikzpicture}
+											\draw (0,0)--(4,3)--(4,0)--(0,0);
+											\draw (.75,0) arc (0:30:1);
+											\draw (.75,.25) node[right] {$\theta$};
+											\draw (3.5,.5) rectangle (4,0);
+											\node at (2,-.75) {$x = a\sec\theta$};
+										\end{tikzpicture}
+									]]>
+								</latex-image>
+							</image>
+						</sidebyside>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<sidebyside width="80%">
+							<image>
+								<description>
+									Three triangles used to define the trigonometric substitutions. On the left, the triangle for the tangent substitution; in the middle, the triangle for the sine substitution; on the right, the triangle for the secant substitution.
+								</description>
+								<latex-image>
+									<![CDATA[
+										\begin{tikzpicture}
+											\draw (0,0)--(4,3)--(4,0)--(0,0);
+											\draw (.75,0) arc (0:30:1);
+											\draw (.75,.25) node[right] {$\theta$};
+											\draw (3.5,.5) rectangle (4,0);
+											\node at (1.5,2) {$\sqrt{x^2 + a^2}$};
+											\node at (2,-.25) {$a$};
+											\node at (4.25, 1.5) {$x$};
+										\end{tikzpicture}
+										\begin{tikzpicture}
+											\draw (0,0)--(4,3)--(4,0)--(0,0);
+											\draw (.75,0) arc (0:30:1);
+											\draw (.75,.25) node[right] {$\theta$};
+											\draw (3.5,.5) rectangle (4,0);
+											\node at (1.75,2) {$a$};
+											\node at (4.25,1.5) {$x$};
+											\node at (2,-.5) {$\sqrt{a^2-x^2}$};
+										\end{tikzpicture}
+										\begin{tikzpicture}
+											\draw (0,0)--(4,3)--(4,0)--(0,0);
+											\draw (.75,0) arc (0:30:1);
+											\draw (.75,.25) node[right] {$\theta$};
+											\draw (3.5,.5) rectangle (4,0);
+											\node at (1.75,2) {$x$};
+											\node at (2,-.25) {$a$};
+											\node at (5,1.75) {$\sqrt{x^2-a^2}$};
+										\end{tikzpicture}
+									]]>
+								</latex-image>
+							</image>
+						</sidebyside>
+					</p>
+				</solution>
+			</example>
 
-		
+			<example>
+				<statement>
+					<p>
+						Let <m>f(x) = \dfrac{1}{16+x^2}</m>
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								Consider <m>\ds \int f(x)\, dx</m>.  Why do none of our previous integration techniques work here?
+							</li>
+							<li>
+								Refer to the example at the top of the page.  Which triangle has an expression similar to the radicand in <m>f(x)</m>?  Write the substitution below.
+							</li>
+							<li>
+								Treat the substitution you chose in part (b) like a <m>u-</m>substitution.  Make the appropriate substitutions into the integral <m>\ds \int \dfrac{1}{16+x^2}\, dx</m>, and complete the integration.
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								Answers vary, but the idea is that we don't have an appropriate rule for the pattern
+							</li>
+							<li>
+								<m>x = a\tan \theta</m>
+							</li>
+							<li>
+								<p>
+									If <m>x = 4\tan \theta</m>, then <m>dx = 4\sec^2\theta\, d\theta</m>. Anywhere we see <m>x</m>, we will replace with <m>4\tan\theta</m>.
+								</p>
+								<p>
+									Now, we have 
+									<me>
+										\ds \int \dfrac{1}{16 + (4\tan\theta)^2}\, (4\sec^2\theta\, d\theta)
+									</me>
+									Simplifying, we have
+									<me>
+										\ds \int \dfrac{4\sec^2\theta}{16(1+\tan^2\theta)}\, d\theta
+									</me>
+									Using identities, we arrive at 
+									<me>
+										\ds \dfrac{1}{4}\int \dfrac{\sec^2\theta}{\sec^2\theta}\, d\theta = \dfrac{1}{4}\int d\theta
+									</me>
+									Integrating gives 
+									<me>
+										\ds \dfrac{1}{4}\int d\theta = \dfrac{1}{4}\theta + C
+									</me>
+									However, our original variable was <m>x</m>, not <m>\theta</m>; since we declared <m>x = 4\tan \theta</m>, we rearrange to get <m>\theta = \inv{\tan}\lrpar{\dfrac{x}{4}}</m>. So, our answer becomes
+									<me>
+										\dfrac{1}{4}\inv{\tan}\lrpar{\dfrac{x}{4}} + C
+									</me>
+								</p>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Compute <m>\ds \int \dfrac{\sqrt{9-x^2}}{x^2}\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int \dfrac{\sqrt{9-x^2}}{x^2}\, dx = -\dfrac{\sqrt{9-x^2}}{x} - \inv{\sin}\lrpar{\dfrac{x}{3}} + C</m>
+					</p>
+				</solution>
+			</example>
+			
+			<example>
+				<statement>
+					<p>
+						Evaluate <m>\ds \int \dfrac{\sqrt{x^2-9}}{x}\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int \dfrac{\sqrt{x^2-9}}{x}\, dx = \sqrt{x^2-9} - 3\inv{\sec}\lrpar{\dfrac{x}{3}} + C</m>
+					</p>
+				</solution>
+			</example>
 		</subsubsection>
 	</subsection>
 
 	<subsection xml:id="section-73-preclass">
 		<title>Pre-Class Activities</title>
 
+		<example>
+			<statement>
+				<p>
+					Use this space to write any questions you have from the videos.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Answers vary
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Compute <m>\ds \int_0^1 \dfrac{3}{x^2 + 4}\, dx</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>\ds \int_0^1 \dfrac{3}{x^2 + 4}\, dx = \dfrac{3}{2}\inv{\tan}\lrpar{\dfrac{1}{2}}</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Compute <m>\ds \int \dfrac{x}{x^2 - 4}\, dx</m>.  Is a trigonometric substitution necessary here?  Why or why not?
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>\ds \int \dfrac{x}{x^2 - 4}\, dx = \dfrac{1}{2}\ln |x^2-4| + C</m>. A trig substitution isn't necessary here, as we can use a u-substitution.
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Compute <m>\ds \int \dfrac{1}{x^2\sqrt{4-x^2}}\, dx</m> using the substitution <m>x = 2\sin \theta</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>\ds \int \dfrac{1}{x^2\sqrt{4-x^2}}\, dx = -\dfrac{\sqrt{4-x^2}}{4x} + C</m>
+				</p>
+			</solution>
+		</example>
+		
+		<question>
+			<statement>
+				<p>
+					Using the previous examples as guideposts, fill out the following table:
+				</p>
+				<p>
+					<tabular top="medium" right="medium" left="medium">
+						<row bottom="medium">
+							<cell halign="center">
+								If you see an integrand involving
+							</cell>
+							<cell halign="center">
+								Try a substitution using
+							</cell>
+						</row>
+					</tabular>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<tabular top="medium" right="medium" left="medium">
+						<row bottom="medium">
+							<cell halign="center">
+								If you see an integrand involving
+							</cell>
+							<cell halign="center">
+								Try a substitution using
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center">
+								<m>x^2 + a^2</m>
+							</cell>
+							<cell halign="center">
+								<m>x = a\tan\theta</m>
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center">
+								<m>a^2-x^2</m>
+							</cell>
+							<cell halign="center">
+								<m>x = a\sin\theta</m>
+							</cell>
+						</row>
+						<row bottom="medium">
+							<cell halign="center">
+								<m>x^2-a^2</m>
+							</cell>
+							<cell halign="center">
+								<m>x = a\sec\theta</m>
+							</cell>
+						</row>
+					</tabular>
+				</p>
+			</solution>
+		</question>
 	</subsection>
 
 	<subsection xml:id="section-73-inclass">
 		<title>In Class</title>
-		<subsubsection xml:id="section-73-inverses-calculus">
-			<title>Calculus of Inverse Functions</title>
+		<subsubsection xml:id="section-73-examples">
+			<title>Examples</title>
 
+			<example>
+				<statement>
+					<p>
+						Compute <m>\ds \int \dfrac{dx}{x^2\sqrt{x^2 + 9}}</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int \dfrac{dx}{x^2\sqrt{x^2 + 9}} = -\dfrac{1}{9}\lrpar{\dfrac{\sqrt{x^2+9}}{x}} + C</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Evaluate <m>\ds \int \dfrac{16x^3}{(4x^2+9)^{3/2}}\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int \dfrac{16x^3}{(4x^2+9)^{3/2}}\, dx = \sqrt{4x^2+9} + \dfrac{9}{\sqrt{4x^2+9}} + C</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Compute <m>\ds \int \dfrac{\sqrt{x^2-1}}{x^4}\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int \dfrac{\sqrt{x^2-1}}{x^4}\, dx = \dfrac{1}{3}\lrpar{\dfrac{\sqrt{x^2-1}}{x}}^3 + C</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find <m>\ds \int \dfrac{x}{\sqrt{3-2x-x^2}}\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int \dfrac{x}{\sqrt{3-2x-x^2}}\, dx = -\sqrt{4-(x+1)^2} - \inv{\sin}\lrpar{\dfrac{x+1}{2}}+C</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Evaluate <m>\ds \int \dfrac{dx}{(x^2-1)^{3/2}}</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int \dfrac{dx}{(x^2-1)^{3/2}} = -\dfrac{x}{\sqrt{x^2-1}} + C</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Show that <m>\ds \int_0^a x^2\sqrt{a^2-x^2}\, dx = \dfrac{\pi}{16}a^4</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						Set <m>x = a\sin\theta</m>. Then, <m>dx = a\cos\theta</m>. Making our substitutions, we get 
+						<me>
+							\ds \int_0^a a^2\sin^2\theta \sqrt{a^2-a^2\sin\theta}\, (a\cos\theta)\, d\theta
+						</me>
+						After some simplification, we get
+						<me>
+							\ds \int_0^a a^4\sin^2\theta\cos^2\theta\, d\theta
+						</me>
+						Using the double angle identity for sine, we have
+						<me>
+							\ds \int_0^a a^4 \lrpar{\dfrac{1}{2}\sin 2\theta}^2\, d\theta = \dfrac{a^4}{4}\int \sin^2 2\theta\, d\theta
+						</me>
+						Now use a power reducing identity:
+						<me>
+							\ds \dfrac{a^4}{4}\int_0^a \dfrac{1}{2} (1-\cos 4\theta)\, d\theta
+						</me>
+						More simplification gives
+						<me>
+							\ds \dfrac{a^4}{8} \int_0^a 1-\cos 4\theta\, d\theta
+						</me>
+						Integrating and using double angle identities gives
+						<me>
+							\dfrac{a^4}{8}\lrpar{\theta - \dfrac{1}{4}\sin 4\theta}\bigg \rvert_{x = 0}^{x = a}
+						</me>
+						After reduction, it becomes clear that the sine term is zero at the endpoints, so the integral becomes
+						<me>
+							\dfrac{a^4}{8}\lrpar{\inv{\sin}\lrpar{\dfrac{x}{a}}}\bigg\rvert_0^a
+						</me>
+						Evaluating gives our answer.
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Evaluate <m>\ds \int \sqrt{x^2 + 2x}\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int \dfrac{x}{\sqrt{x^2 + 1}}\, dx = \dfrac{1}{2}(x+1)\sqrt{(x+1)^2-1} - \dfrac{3}{2}\ln |x+1 + \sqrt{(x+1)^2-1}| + C</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Compute <m>\ds \int \dfrac{x}{\sqrt{x^2 + 1}}\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int \dfrac{x}{\sqrt{x^2 + 1}}\, dx = \sqrt{x^2+1} + C</m>
+					</p>
+				</solution>
+			</example>
 		</subsubsection>
 	</subsection>
 
 	<subsection xml:id="section-73-afterclass">
 		<title>After Class Activities</title>
 
+		<example>
+			<statement>
+				<p>
+					Use trig substitution to prove that the area of the ellipse <m>\dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} = 1</m> is <m>\pi ab</m>, where <m>a</m> is the length of the major axis and <m>b</m> is the length of the minor axis. 
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Write the ellipse in terms of <m>y</m> alone first; this gives <m>y = \pm \dfrac{b}{a}\sqrt{a^2-x^2}</m>. We can take the positive root, integrate a quarter of the ellipse, and multiply the resulting area by 4.
+				</p>
+				<p>
+					Now, the area will be given by <m>\ds \int_0^a \dfrac{b}{a}\sqrt{a^2-x^2}\, dx</m>. Use the substitution <m>x = a\sin\theta</m>; then, <m>dx = a\cos\theta\, d\theta</m>. Then
+					<md>
+						<mrow>
+							\ds \int_0^a \dfrac{b}{a}\sqrt{a^2-x^2}\, dx \amp = \dfrac{b}{a}\int_0^a \sqrt{a^2-a^2\sin^2\theta} (a\cos\theta)\, d\theta
+						</mrow>
+						<mrow>
+							\amp = \ds ab\int_0^a \cos^2\theta\, d\theta
+						</mrow>
+						<mrow>
+							\amp = \ds \dfrac{ab}{2}\int_0^a 1 + \cos 2\theta\, d\theta
+						</mrow>
+						<mrow>
+							\amp = \dfrac{ab}{2}\lrpar{\theta + \dfrac{1}{2}\sin 2\theta}\bigg\rvert_0^a
+						</mrow>
+						<mrow>
+							\amp = \dfrac{ab}{2}\lrpar{\inv{\sin}\lrpar{\dfrac{x}{a} + \dfrac{x\sqrt{a^2-x^2}}{a^2}}}\bigg\rvert_0^a
+						</mrow>
+						<mrow>
+							\amp = \dfrac{\pi ab}{4}
+						</mrow>
+					</md>
+					Multiplying by 4 gives the area, <m>\pi ab</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Evaluate <m>\ds \int_{\sqrt{2}/3}^{2/3} \dfrac{dx}{x^5\sqrt{9x^2-1}}</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>\ds \int_{\sqrt{2}/3}^{2/3} \dfrac{dx}{x^5\sqrt{9x^2-1}} = \dfrac{81}{64}(7\sqrt{3}-16 + 2\pi)</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Compute <m>\ds \int_0^1 \sqrt{x-x^2}\, dx</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>\ds \int_0^1 \sqrt{x-x^2}\, dx = \dfrac{\pi}{8} </m>
+				</p>
+			</solution>
+		</example>
 	</subsection>
 </section>
