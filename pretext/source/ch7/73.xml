@@ -14,9 +14,11 @@
 		<title>Before Class</title>
 		<figure>
 			<caption>Pre-Class Video 1</caption>
-			<!--
-			<url href = ""/>
-			-->
+				<url href = "https://mymedia.ou.edu/media/7.3-1/1_ymu3wt20"/>
+		</figure>
+		<figure>
+			<caption>Pre-Class Video 2</caption>
+				<url href = "https://mymedia.ou.edu/media/7.3-2/1_j9pld8uq"/>
 		</figure>
 
 		<subsubsection xml:id="section-73-inverses-properties">

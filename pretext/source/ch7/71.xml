@@ -14,9 +14,11 @@
 		<title>Before Class</title>
 		<figure>
 			<caption>Pre-Class Video 1</caption>
-			<!--
-			<url href = ""/>
-			-->
+				<url href = "https://mymedia.ou.edu/media/7.1-1/1_gajh0bal"/>
+		</figure>
+		<figure>
+			<caption>Pre-Class Video 2</caption>
+				<url href = "https://mymedia.ou.edu/media/7.1-2/1_945hl3e9"/>
 		</figure>
 
 		<subsubsection xml:id="section-71-formula">

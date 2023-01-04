@@ -23,9 +23,11 @@
 		<title>Before Class</title>
 		<figure>
 			<caption>Pre-Class Video 1</caption>
-			<!--
-			<url href = ""/>
-			-->
+				<url href = "https://mymedia.ou.edu/media/6.6-1/1_bv2ywri0"/>
+		</figure>
+		<figure>
+			<caption>Pre-Class Video 2</caption>
+				<url href = "https://mymedia.ou.edu/media/6.6-2/1_8spfkiyw"/>
 		</figure>
 
 		<subsubsection xml:id="section-66-building-inverse-trig">
