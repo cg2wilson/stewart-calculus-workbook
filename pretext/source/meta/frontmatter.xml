@@ -21,18 +21,13 @@
     <xi:include href="./copyright.xml" />
 
       <p>
-This work includes materials used under license from the following works:
-      </p>
-      <ul>
+        This work includes materials used under license from the following works:
+        <ul>
           <li>
-              <p><pubtitle>Calculus 8/e</pubtitle></p>
-              <ul>
-                  <li>
-                      <p>CC status unknown</p>
-                  </li>
-              </ul>
+              <p><pubtitle>Calculus 8/e</pubtitle> by Stewart</p>
           </li>
-      </ul>
+        </ul>
+      </p>
 
 
   </colophon>

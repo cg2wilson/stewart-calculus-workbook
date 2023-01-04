@@ -19,30 +19,528 @@
 			-->
 		</figure>
 
-		<subsubsection xml:id="section-75-inverses-properties">
-			<title>Inverse Functions &amp; Properties</title>
+		<subsubsection xml:id="section-75-integrals">
+			<title>Integrals We Know</title>
+			
+			<p>
+				Collected below are all of the integrals that we have learned:
+			</p>
+			<p>
+				<tabular top="medium" right="medium" left="medium">
+					<row bottom="medium">
+						<cell halign="center">
+							Function
+						</cell>
+						<cell halign="center">
+							Antiderivative
+						</cell>
+						<cell halign="center">
+							Function
+						</cell>
+						<cell halign="center">
+							Antiderivative
+						</cell>
+					</row>
+					<row bottom="medium">
+						<cell halign="center">
+							<m>x^n</m>
+						</cell>
+						<cell halign="center">
+							<m>\dfrac{1}{n+1} x^{n+1} + C</m> for <m>x\neq -1</m>
+						</cell>
+						<cell halign="center">
+							<m>\dfrac{1}{x}</m>
+						</cell>
+						<cell halign="center">
+							<m>\ln |x| + C</m>
+						</cell>
+					</row>
+					<row bottom="medium">
+						<cell halign="center">
+							<m>e^x</m>
+						</cell>
+						<cell halign="center">
+							<m>e^x + C</m>
+						</cell>
+						<cell halign="center">
+							<m>b^x</m>
+						</cell>
+						<cell halign="center">
+							<m>\dfrac{1}{\ln b} b^x + C</m>
+						</cell>
+					</row>
+					<row bottom="medium">
+						<cell halign="center">
+							<m>\sin x</m>
+						</cell>
+						<cell halign="center">
+							<m>-\cos x + C</m>
+						</cell>
+						<cell halign="center">
+							<m>\cos x</m>
+						</cell>
+						<cell halign="center">
+							<m>\sin x + C</m>
+						</cell>
+					</row>
+					<row bottom="medium">
+						<cell halign="center">
+							<m>\sec^2 x</m>
+						</cell>
+						<cell halign="center">
+							<m>\tan x + C</m>
+						</cell>
+						<cell halign="center">
+							<m>\csc^2 x</m>
+						</cell>
+						<cell halign="center">
+							<m>-\cot x + C</m>
+						</cell>
+					</row>
+					<row bottom="medium">
+						<cell halign="center">
+							<m>\sec x \tan x</m>
+						</cell>
+						<cell halign="center">
+							<m>\sec x + C</m>
+						</cell>
+						<cell halign="center">
+							<m>\csc x \cot x</m>
+						</cell>
+						<cell halign="center">
+							<m>-\csc x</m>
+						</cell>
+					</row>
+					<row bottom="medium">
+						<cell halign="center">
+							<m>\sec x</m>
+						</cell>
+						<cell halign="center">
+							<m>\ln |\sec x + \tan x| + C</m>
+						</cell>
+						<cell halign="center">
+							<m>\csc x</m>
+						</cell>
+						<cell halign="center">
+							<m>\ln |\csc x - \cot x| + C</m>
+						</cell>
+					</row>
+					<row bottom="medium">
+						<cell halign="center">
+							<m>\tan x</m>
+						</cell>
+						<cell halign="center">
+							<m>\ln |\sec x| +C </m>
+						</cell>
+						<cell halign="center">
+							<m>\cot x</m>
+						</cell>
+						<cell halign="center">
+							<m>\ln |\sin x | + C</m>
+						</cell>
+					</row>
+					<row bottom="medium">
+						<cell halign="center">
+							<m>\dfrac{1}{x^2 + a^2}</m>
+						</cell>
+						<cell halign="center">
+							<m>\dfrac{1}{a}\inv{\tan}\lrpar{\dfrac{x}{a}} + C</m>
+						</cell>
+						<cell halign="center">
+							<m>\dfrac{1}{\sqrt{a^2-x^2}}</m>
+						</cell>
+						<cell halign="center">
+							<m>\inv{\sin}\lrpar{\dfrac{x}{a}}</m>
+						</cell>
+					</row>
+				</tabular>
+			</p>		
+		</subsubsection>
 
-		
+		<subsubsection xml:id="section-75-strategies">
+			<title>Strategies</title>
 
-		
+			<p>
+				When faced with an integral, it can be difficult to determine which method is the best to use.  This flowchart may provide some help:
+			</p>
+			<p>
+				<ol marker="1">
+					<li>
+						Simplify the integrand: try algebraic simplifications and/or use trig identities
+					</li>
+					<li>
+						Try u-substitution: look for "obvious" choices
+					</li>
+					<li>
+						Classify the integral: 1) Trig functions, 2) Rational functions, 3) Integration by Parts, 4) A radical
+					</li>
+					<li>
+						<p>
+							Try again:
+						</p>
+						<p>
+							<ul>
+								<li>
+									Be creative with u-substitution
+								</li>
+								<li>
+									Integration by parts
+								</li>
+								<li>
+									Less obvious algebraic manipulations, like multiplying by a form of 1
+								</li>
+								<li>
+									Try to relate the integral to one you've done before
+								</li>
+								<li>
+									Try multiple methods
+								</li>
+							</ul>
+						</p>
+					</li>
+				</ol>
+			</p>
+
+			<example>
+				<statement>
+					<p>
+						Find <m>\ds \int \dfrac{1}{1+\cos x}\, dx </m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int \dfrac{1}{1+\cos x}\, dx =-\cot x + \csc x + C</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Compute <m>\ds \int e^{\sqrt{x}}\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int e^{\sqrt{x}}\, dx = 2\sqrt{x}e^{\sqrt{x}} - 2e^{\sqrt{x}} + C</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Compute <m>\ds \int \sqrt{\dfrac{1+x}{1-x}}\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int \sqrt{\dfrac{1+x}{1-x}}\, dx = \inv{\sin}(x) + \sqrt{1-x^2} + C</m>
+					</p>
+				</solution>
+			</example>
 		</subsubsection>
 	</subsection>
 
 	<subsection xml:id="section-75-preclass">
 		<title>Pre-Class Activities</title>
 
+		<example>
+			<statement>
+				<p>
+					Write any questions you have from the videos in this space.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Answers vary
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Analyze the following integrals using the flow chart from above, determine what you think the best approach is, and briefly write why.  Do not compute these integrals!  This exercise is here to help you practice analyzing situations.  We'll do these problems in class.
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<m>\ds \int \dfrac{\cos x}{1-\sin x}\, dx</m>
+						</li>
+						<li>
+							<m>\ds \int \dfrac{\sin^3 x}{\cos x}\, dx</m>
+						</li>
+						<li>
+							<m>\ds \int \dfrac{t}{t^4 + 2}\, dt</m>
+						</li>
+						<li>
+							<m>\ds \int_2^4 \dfrac{x+2}{x^2 + 3x - 4}\, dx</m>
+						</li>
+						<li>
+							<m>\ds \int x\sec x\tan x\, dx</m>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Answers vary for all integrals; the important part here is to think about techniques
+				</p>
+			</solution>
+		</example>
 	</subsection>
 
 	<subsection xml:id="section-75-inclass">
 		<title>In Class</title>
-		<subsubsection xml:id="section-75-inverses-calculus">
-			<title>Calculus of Inverse Functions</title>
+		<subsubsection xml:id="section-75-examples">
+			<title>Examples</title>
 
+			<example>
+				<statement>
+					<p>
+						<m>\ds \int \dfrac{\cos x}{1-\sin x}\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int \dfrac{\cos x}{1-\sin x}\, dx = \ln |\sec x+ \tan x| + \ln |\sec x| + C</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						<m>\ds \int \dfrac{\sin^3 x}{\cos x}\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int \dfrac{\sin^3 x}{\cos x}\, dx = \ln |\sec x| + \dfrac{1}{4}\cos 2x + C</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						<m>\ds \int \dfrac{t}{t^4 + 2}\, dt</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int \dfrac{t}{t^4 + 2}\, dt = \dfrac{\sqrt{2}}{4}\inv{\tan}\lrpar{\dfrac{t^2}{\sqrt{2}}}+ C</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						<m>\ds \int_2^4 \dfrac{x+2}{x^2 + 3x - 4}\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int_2^4 \dfrac{x+2}{x^2 + 3x - 4}\, dx = \dfrac{2}{5}\ln 8 + \dfrac{3}{5}\ln 3 - \dfrac{2}{5}\ln 6</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						<m>\ds \int x\sec x\tan x\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int x\sec x\tan x\, dx = x\sec x - \ln \sec x + \tan x| + C</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						<m>\ds \int_0^1 \dfrac{x}{(2x+1)^3}\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int_0^1 \dfrac{x}{(2x+1)^3}\, dx = -\dfrac{4x+1}{8(2x+1)^2} + C</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						<m>\ds \int \ln(1+x^2)\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int \ln(1+x^2)\, dx = x\ln (x^2 + 1) - 2x + 2\arctan x + C</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						<m>\ds \int \dfrac{\ln x}{x\sqrt{1+(\ln x)^2}}\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int \dfrac{\ln x}{x\sqrt{1+(\ln x)^2}}\, dx = \sqrt{(\ln x)^2 + 1} + C</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						<m>\ds \int (1+\tan x)^2\sec x\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int (1+\tan x)^2\sec x\, dx = \dfrac{1}{2}\ln |\sec x + \tan x| + \dfrac{1}{2}\sec x\tan x + 2 + C</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						<m>\ds \int \sqrt{3-2x-x^2}\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int \sqrt{3-2x-x^2}\, dx = 2\inv{\sin}\lrpar{\dfrac{x+1}{2}} + \dfrac{(x+1)}{2}\sqrt{4-(x+1)^2} + C</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						<m>\ds \int \dfrac{\inv{\tan}(x)}{x^2}\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int \dfrac{\inv{\tan}(x)}{x^2}\, dx = -\dfrac{\inv{\tan}(x)}{x} - \dfrac{1}{2}\ln\lrpar{\dfrac{x^2+1}{x^2}} + C</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						<m>\ds \int_0^{\pi/4} \tan^3\theta\sec^2\theta\, d\theta</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int_0^{\pi/4} \tan^3\theta\sec^2\theta\, d\theta = \dfrac{1}{4}</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						<m>\ds \int \dfrac{x + \arcsin x}{\sqrt{1-x^2}}\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int \dfrac{x + \arcsin x}{\sqrt{1-x^2}}\, dx = \dfrac{1}{2}\arcsin^2(x) - \sqrt{1-x^2} + C</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						<m>\ds \int \dfrac{4^x + 10^x}{2^x}\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int \dfrac{4^x + 10^x}{2^x}\, dx = \dfrac{1}{\ln 2}2^x + \dfrac{1}{\ln 5}5^x + C</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						<m>\ds \int e^2\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int e^2\, dx = e^2x + C</m>
+					</p>
+				</solution>
+			</example>
 		</subsubsection>
 	</subsection>
 
 	<subsection xml:id="section-75-afterclass">
 		<title>After Class Activities</title>
 
+		<example>
+			<statement>
+				<p>
+					Look back at the examples we did in class.  Make sure that you can follow the thought process that led us to use that particular integration technique.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Answers vary
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Refer back to the strategy list.  Try to give an example of an integral which fits with each step.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Answers vary
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Which technique do you feel like you need the most practice with?  Why?
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Answers vary
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					There are many practice problems available in the book, on page 548.  Work through as many as you can; the more practice you get, the more confident and capable you'll be!
+				</p>
+			</statement>
+		</example>
 	</subsection>
 </section>

@@ -19,11 +19,294 @@
 			-->
 		</figure>
 
-		<subsubsection xml:id="section-78-inverses-properties">
-			<title>Inverse Functions &amp; Properties</title>
+		<subsubsection xml:id="section-78-type1">
+			<title>Type 1 Integrals</title>
 
-		
+			<example>
+				<statement>
+					<p>
+						Fill out the following table of values for <m>\ds \int_0^a e^{-x}\, dx</m>:
+					</p>
+					<p>
+						<tabular top="medium" right="medium" left="medium">
+							<row bottom="medium">
+								<cell halign="center">
+									a
+								</cell>
+								<cell halign="center">
+									Exact Value
+								</cell>
+								<cell halign="center">
+									Approximate Value
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									1
+								</cell>
+								<cell halign="center">
+								</cell>
+								<cell halign="center">
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									100
+								</cell>
+								<cell halign="center">
+								</cell>
+								<cell halign="center">
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									1000
+								</cell>
+								<cell halign="center">
+								</cell>
+								<cell halign="center">
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									10000
+								</cell>
+								<cell halign="center">
+								</cell>
+								<cell halign="center">
+								</cell>
+							</row>
+						</tabular>
+					</p>
+					<p>
+						Based on the table, do you expect the integral to settle on a specific value?  If so, what is the value (to 3 decimal places)?
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<tabular top="medium" right="medium" left="medium">
+							<row bottom="medium">
+								<cell halign="center">
+									a
+								</cell>
+								<cell halign="center">
+									Exact Value
+								</cell>
+								<cell halign="center">
+									Approximate Value
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									1
+								</cell>
+								<cell halign="center">
+									<m>1-\dfrac{1}{e}</m>
+								</cell>
+								<cell halign="center">
+									<m>0.6321205588</m>
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									100
+								</cell>
+								<cell halign="center">
+									<m>1-\dfrac{1}{e^{100}}</m>
+								</cell>
+								<cell halign="center">
+									1
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									1000
+								</cell>
+								<cell halign="center">
+									<m>1-\dfrac{1}{e^{1000}}</m>
+								</cell>
+								<cell halign="center">
+									1
+								</cell>
+							</row>
+							<row bottom="medium">
+								<cell halign="center">
+									10000
+								</cell>
+								<cell halign="center">
+									<m>1-\dfrac{1}{e^{10000}}</m>
+								</cell>
+								<cell halign="center">
+									1
+								</cell>
+							</row>
+						</tabular>
+					</p>
+					<p>
+						1
+					</p>
+				</solution>
+			</example>
 
+			<example>
+				<statement>
+					<p>
+						<ol marker="a">
+							<li>
+								Compute <m>\ds \int_0^a e^{-x}\, dx</m> in general
+							</li>
+							<li>
+								Take the limit as <m>a\to \infty</m>; what is the interpretation of your answer?
+							</li>
+
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								<m>\ds \int_0^a e^{-x}\, dx = 1-e^{-a}</m>
+							</li>
+							<li>
+								<p>
+									<m>\ds \lim_{a\to \infty} (1-e^{-a}) = 1</m>
+								</p>
+								<p>
+									As the upper bound goes to <m>\infty</m>, the area under <m>e^{-x}</m> from 0 to a goes to 1.
+								</p>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
+
+			<definition>
+				<title>Improper Integral (Type 1)</title>
+				<idx>Improper Integral (Type 1)</idx>				
+				<statement>
+					<p>
+						An <term>improper integral of type 1</term> is an integral of the form
+						<me>
+							\ds \int_a^\infty f(x)\, dx \qquad \int_{-\infty}^a f(x)\, dx \qquad \int_{-\infty}^\infty f(x)\, dx
+						</me>
+						provided that <m>f(x)</m> is continuous on the domain of integration.						
+					</p>
+				</statement>
+			</definition>
+
+			<definition>
+				<title>Convergence/Divergence (Type 1)</title>
+				<idx>Convergence/Divergence</idx>				
+				<statement>
+					<p>
+						An improper integral of type 1 is said to <term>converge</term> if the limits below exist:
+						<me>
+							\ds \lim_{t\to\infty} \int_a^t f(x)\, dx \qquad \lim_{t\to -\infty} \int_t^a f(x)\, dx
+						</me>
+						If the limit does not exist or is infinite, then we say the integral is <term>divergent</term>						
+					</p>
+				</statement>
+			</definition>
+
+			<example>
+				<statement>
+					<p>
+						Determine if <m>\ds \int_1^\infty \dfrac{1}{x^2}\, dx</m> converges or diverges.  If it converges, give its exact value.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						The integral converges to 1
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Determine if <m>\ds \int_1^\infty \dfrac{1}{x^3}\, dx</m> converges or diverges.  If it converges, give its exact value.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						The integral converges to <m>\dfrac{1}{2}</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Evaluate <m>\ds \int_{\infty}^0 xe^x\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int_{-\infty}^0 xe^x\, dx = -1</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Show that <m>\ds \int_{-\infty}^{\infty} \dfrac{1}{1+x^2}\, dx = \pi</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						Split the integral into two pieces:
+						<me>
+							\ds \int_{-\infty}^\infty \dfrac{1}{1+x^2}\, dx = \int_{-\infty}^0 \dfrac{1}{1+x^2}\, dx + \int_0^\infty \dfrac{1}{1+x^2}\, dx
+						</me>
+						For the first piece, we compute:
+						<md>
+							<mrow>
+								\ds \int_{-\infty}^0 \dfrac{1}{1+x^2}\, dx \amp = \lim_{t\to-\infty} \int_t^0 \dfrac{1}{1+x^2}\, dx
+							</mrow>
+							<mrow> 
+								\ds \lim_{t\to-\infty} \int_t^0 \dfrac{1}{1+x^2}\, dx \amp = \lim_{t\to -\infty} \lrpar{\inv{\tan}(x)}\bigg\rvert_t^0
+							</mrow>
+							<mrow>
+								\ds \lim_{t\to -\infty} \lrpar{\inv{\tan}(x)}\bigg\rvert_t^0 \amp = \lim_{t\to -\infty} \lrpar{\inv{\tan}(0)-\inv{\tan}(t)}
+							</mrow>
+							<mrow>
+								\amp = \dfrac{\pi}{2}
+							</mrow>
+						</md>
+						For the second piece, we have a similar computation:
+						<md>
+							<mrow>
+								\ds \int_0^\infty \dfrac{1}{1+x^2}\, dx \amp = \lim_{t\to\infty} \int_0^t \dfrac{1}{1+x^2}\, dx
+							</mrow>
+							<mrow> 
+								\ds \lim_{t\to\infty} \int_0^t \dfrac{1}{1+x^2}\, dx \amp = \lim_{t\to \infty} \lrpar{\inv{\tan}(x)}\bigg\rvert_0^t
+							</mrow>
+							<mrow>
+								\ds \lim_{t\to \infty} \lrpar{\inv{\tan}(x)}\bigg\rvert_0^t \amp = \lim_{t\to \infty} \lrpar{\inv{\tan}(t)-\inv{\tan}(0)}
+							</mrow>
+							<mrow>
+								\amp = \dfrac{\pi}{2}
+							</mrow>
+						</md>
+						Summing the two pieces gives the answer of <m>\pi</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Does <m>\ds \int_{-\infty}^0 \dfrac{1}{2-4x}\, dx</m> converge or diverge?  Why?
+					</p>
+				</statement>
+				<solution>
+					<p>
+						The intgral diverges since the antiderivative involves a logarithm. The end behavior of the log function is unbounded, so the integral diverges.
+					</p>
+				</solution>
+			</example>
 		
 		</subsubsection>
 	</subsection>
@@ -31,18 +314,303 @@
 	<subsection xml:id="section-78-preclass">
 		<title>Pre-Class Activities</title>
 
+		<example>
+			<statement>
+				<p>
+					Use this space to write any questions you might have from the videos.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Answers vary
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Evaluate <m>\ds \int_2^\infty e^{-5p}\, dp</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>\ds \int_2^\infty e^{-5p}\, dp = \dfrac{1}{5}e^{-10}</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Determine if <m>\ds \int_{-\infty}^{\infty} xe^{-x^2}\, dx</m> converges or diverges
+				</p>
+			</statement>
+			<solution>
+				<p>
+					The integral converges to 0
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Determine if <m>\ds \int_{-\infty}^0 \dfrac{z}{z^4 + 4}\, dz</m> converges or diverges.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					The integral converges to <m>-\dfrac{\pi}{8}</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Evaluate <m>\ds \int_e^\infty \dfrac{1}{x(\ln x)^2}\, dx</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>\ds \int_e^\infty \dfrac{1}{x(\ln x)^2}\, dx = 1</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					The integral <m>\ds \int_0^\infty \sin^2\alpha\, d\alpha</m> diverges.  Compute the integral to see why.  How could we come to the same conclusion without any computation?
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>\ds \int \sin^2\alpha\, d\alpha = -\dfrac{1}{4}\sin 2\alpha + \dfrac{1}{2}\alpha</m>, so when we take the limit of the linear term, we will always get <m>\infty</m> and a divergent integral (even though the limit of the trig term doesn't exist).
+				</p>
+				<p>
+					Without integrating, we could also see that the integral would diverge because <m>\sin^2\alpha \geq 0 </m> so the area is always positive and only accumulates positive values.
+				</p>
+			</solution>
+		</example>
 	</subsection>
 
 	<subsection xml:id="section-78-inclass">
 		<title>In Class</title>
-		<subsubsection xml:id="section-78-inverses-calculus">
-			<title>Calculus of Inverse Functions</title>
 
+		<example>
+			<statement>
+				<p>
+					For what values of <m>p</m> does <m>\ds \int_1^\infty \dfrac{1}{x^p}\, dx</m> converge?
+				</p>
+			</statement>
+			<solution>
+				<p>
+					It converges to <m>\dfrac{1}{p-1}</m> for <m>p \gt 1</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Evaluate <m>\ds \int_0^\infty \dfrac{x^2}{\sqrt{1+x^3}}\, dx</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					The integral diverges
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Compute <m>\ds \int_{-\infty}^0 2^r\, dr</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>\ds \int_{-\infty}^0 2^r\, dr = \dfrac{1}{\ln 2}</m>
+				</p>
+			</solution>
+		</example>
+
+		<subsubsection xml:id="section-78-type2">
+			<title>Type 2 Integrals</title>
+
+			<definition>
+				<title>Improper Integral (Type 2)</title>
+				<idx>Improper Integral</idx>
+				
+				<statement>
+					<p>
+						An <term>improper integral of type 2</term> is an integral of the form
+						<me>
+							\ds \int_a^b f(x)\, dx
+						</me>
+						where <m>f(x)</m> has a discontinuity at either <m>a</m> or <m>b</m> or in <m>[a,b]</m>.
+					</p>
+				</statement>
+			</definition>
+
+			<definition>
+				<title>Convergence/Divergence (Type 2)</title>
+				<idx>Convergence/Divergence</idx>				
+				<statement>
+					<p>
+						An improper integral of type 2 is said to <term>converge</term> if the limits below exist:
+						<me>
+							\ds \lim_{t\to a^+} \int_t^b f(x)\, dx \qquad \lim_{t\to b^-} \int_a^t f(x)\, dx
+						</me>
+						If the limit does not exist or is infinite, then we say the integral is <term>divergent</term>.
+					</p>
+				</statement>
+			</definition>
+
+			<example>
+				<statement>
+					<p>
+						Find <m>\ds \int_1^4 \dfrac{1}{\sqrt{x-1}}\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int_1^4 \dfrac{1}{\sqrt{x-1}}\, dx = 2\sqrt{3}</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Determine if <m>\ds \int_0^{\pi/2} \csc \theta \, d\theta</m> converges or diverges.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						The integral diverges
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						A classmate claims that <m>\ds \int_0^5 \dfrac{1}{x-3}\, dx = \ln 2 - \ln 3</m>.  Are they correct or incorrect?  Why?
+					</p>
+				</statement>
+				<solution>
+					<p>
+						They are incorrect. If the integral is computed using FTC 2 (disregarding the discontinuity), then one would get this value. However, accounting for the discontinuity shows that the integral diverges.
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Compute <m>\ds \int_0^1 \ln x\, dx</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						The integral diverges
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						If <m>f(t)</m> is continuous on <m>(0,\infty)</m>, we define the <term>Laplace transform</term> <m>\mathcal{L}</m> of <m>f</m> to be the function <m>F</m> defined as 
+						<me>
+							\mathcal{L}[f(t)] = F(s) = \int_0^\infty f(t)e^{-st}\, dt
+						</me>
+						Compute <m>\mathcal{L}[1]</m> and <m>\mathcal{L}[t]</m>.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\mathcal{L}[1] = \dfrac{1}{s}</m> and <m>\mathcal{L}[t]=\dfrac{1}{s^2}</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Evaluate <m>\ds \int_0^1 \dfrac{dx}{\sqrt{1-x^2}}</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int_0^1 \dfrac{dx}{\sqrt{1-x^2}} = \dfrac{\pi}{2}</m>
+					</p>
+				</solution>
+			</example>
 		</subsubsection>
 	</subsection>
 
 	<subsection xml:id="section-78-afterclass">
 		<title>After Class Activities</title>
 
+		<example>
+			<statement>
+				<p>
+					Determine if the following converge or diverge:
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<m>\ds \int_0^\infty \dfrac{1}{x^2 + x}\, dx</m>
+						</li>
+						<li>
+							 <m>\ds \int_1^\infty \dfrac{\ln x}{x^2}\, dx</m>
+						</li>
+						<li>
+							<m>\ds \int_2^\infty \dfrac{dv}{v^2 + 2v-3}</m>
+						</li>
+						<li>
+							<m>\ds \int_{-1}^2 \dfrac{x}{(x+1)^2}\, dx</m>
+						</li>
+						<li>
+							<m>\ds \int_{-2}^3 \dfrac{1}{x^4}\, dx</m>
+						</li>
+						<li>
+							<m>\ds \int_0^4 \dfrac{1}{x^2-x-2}\, dx</m>
+						</li>
+
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a">
+						<li>
+							<m>\ds \int_0^\infty \dfrac{1}{x^2 + x}\, dx</m> diverges
+						</li>
+						<li>
+							 <m>\ds \int_1^\infty \dfrac{\ln x}{x^2}\, dx=1</m>
+						</li>
+						<li>
+							<m>\ds \int_2^\infty \dfrac{dv}{v^2 + 2v-3} = \dfrac{1}{4}\ln 5</m>
+						</li>
+						<li>
+							<m>\ds \int_{-1}^2 \dfrac{x}{(x+1)^2}\, dx</m> diverges
+						</li>
+						<li>
+							<m>\ds \int_{-2}^3 \dfrac{1}{x^4}\, dx</m> diverges
+						</li>
+						<li>
+							<m>\ds \int_0^4 \dfrac{1}{x^2-x-2}\, dx =</m> diverges
+						</li>
+
+					</ol>
+				</p>
+			</solution>
+		</example>		
 	</subsection>
 </section>
