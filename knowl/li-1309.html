@@ -13,12 +13,12 @@
 <body class="ignore-math">
 <article class="li"><h5 class="heading">
 <span class="type">Item</span><span class="period">.</span>
-</h5>If the power of secant is even:<div class="displaymath process-math">
+</h5>If the power of tangent is odd:<div class="displaymath process-math">
 \begin{align*}
-\ds \int \tan^mx\sec^{2k}x\, dx \amp = \int \tan^m x\sec^{2k-2}\cdot \sec^2x\, dx\\
-\amp = \ds \int \tan^m x (\sec^2x)^{k-1}\cdot \sec^2 x\, dx\\
-\amp = \ds \int \tan^m x (1+\tan^2x)^{k-1}\cdot \sec^2 x\, dx
+\ds \int \tan^{2k+1}x \sec^n x\, dx \amp = \int \tan^{2k} x\cdot \tan x \cdot \sec^{n-1} x\cdot \sec x\, dx\\
+\amp = \ds \int (\tan^2x)^k\cdot\sec^{n-1}x\cdot \sec x\tan x\, dx\\
+\amp = \ds \int (\sec^2x-1)^k\cdot \sec^{n-1}x\cdot \sec x\tan x\, dx
 \end{align*}
-</div>Now set <span class="process-math">\(u = \tan x\text{,}\)</span> simplify, and integrate.</article><span class="incontext"><a href="section-72.html#li-1309" class="internal">in-context</a></span>
+</div>Now let <span class="process-math">\(u = \sec x\text{,}\)</span> simplify, and integrate.</article><span class="incontext"><a href="section-72.html#li-1309" class="internal">in-context</a></span>
 </body>
 </html>

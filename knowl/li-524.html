@@ -12,7 +12,32 @@
 </head>
 <body class="ignore-math">
 <article class="li"><h5 class="heading">
-<span class="type">Item</span><span class="space"> </span><span class="codenumber">b</span><span class="period">.</span>
-</h5>Find the equation of the tangent line to <span class="process-math">\(f(x)\)</span> at the point <span class="process-math">\(x = 1\text{.}\)</span></article><span class="incontext"><a href="section-21.html#li-524" class="internal">in-context</a></span>
+<span class="type">Item</span><span class="space"> </span><span class="codenumber">a</span><span class="period">.</span>
+</h5>
+<div class="para logical">
+<div class="para">Using the first definition of the slope of the tangent line, we have</div>
+<div class="displaymath process-math">
+\begin{align*}
+f'(1) &amp;= \ds \lim_{x\to 1} \dfrac{f(x)-f(1)}{x-1}\\
+&amp;= \ds \lim_{x\to 1} \dfrac{x^3-1}{x-1}\\
+&amp;= \ds \lim_{x\to 1} \dfrac{(x-1)(x^2+x+1)}{x-1}\\
+&amp;= \ds \lim_{x\to 1} x^2+x+1\\
+&amp;= 3
+\end{align*}
+</div>
+</div>
+<div class="para logical">
+<div class="para">Using the second definition of the slope of the tangent line, we have</div>
+<div class="displaymath process-math">
+\begin{align*}
+f'(1) &amp;=\ds \lim_{h\to 0} \dfrac{f(1+h)-f(1)}{h}\\
+&amp;= \ds \lim_{h\to 0} \dfrac{(1+h)^3-1}{h}\\
+&amp;= \ds \lim_{h\to 0} \dfrac{1+3h+3h^2+h^3-1}{h}\\
+&amp;= \ds \lim_{h\to 0} \dfrac{3h+3h^2+h^3}{h}\\
+&amp;= \ds \lim_{h\to 0} 3+3h+h^2\\
+&amp;= 3
+\end{align*}
+</div>
+</div></article><span class="incontext"><a href="section-21.html#li-524" class="internal">in-context</a></span>
 </body>
 </html>

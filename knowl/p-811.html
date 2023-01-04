@@ -11,8 +11,23 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h6 class="heading"><span class="type">Paragraph</span></h6>
-<div class="para"><span class="process-math">\(\ds \int \tan x \sec x\, dx = \sec x + C\)</span></div>
+<h5 class="heading"><span class="type">Paragraph</span></h5>
+<div class="para logical"><ul class="disc">
+<li><div class="para">If the power of secant is even:<div class="displaymath process-math">
+\begin{align*}
+\ds \int \tan^mx\sec^{2k}x\, dx \amp = \int \tan^m x\sec^{2k-2}\cdot \sec^2x\, dx\\
+\amp = \ds \int \tan^m x (\sec^2x)^{k-1}\cdot \sec^2 x\, dx\\
+\amp = \ds \int \tan^m x (1+\tan^2x)^{k-1}\cdot \sec^2 x\, dx
+\end{align*}
+</div>Now set <span class="process-math">\(u = \tan x\text{,}\)</span> simplify, and integrate.</div></li>
+<li><div class="para">If the power of tangent is odd:<div class="displaymath process-math">
+\begin{align*}
+\ds \int \tan^{2k+1}x \sec^n x\, dx \amp = \int \tan^{2k} x\cdot \tan x \cdot \sec^{n-1} x\cdot \sec x\, dx\\
+\amp = \ds \int (\tan^2x)^k\cdot\sec^{n-1}x\cdot \sec x\tan x\, dx\\
+\amp = \ds \int (\sec^2x-1)^k\cdot \sec^{n-1}x\cdot \sec x\tan x\, dx
+\end{align*}
+</div>Now let <span class="process-math">\(u = \sec x\text{,}\)</span> simplify, and integrate.</div></li>
+</ul></div>
 <span class="incontext"><a href="section-72.html#p-811" class="internal">in-context</a></span>
 </body>
 </html>

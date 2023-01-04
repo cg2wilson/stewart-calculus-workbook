@@ -13,6 +13,12 @@
 <body class="ignore-math">
 <article class="li"><h5 class="heading">
 <span class="type">Item</span><span class="period">.</span>
-</h5>If the powers of sine and cosine are even: use the power reducing identities <span class="process-math">\(\sin^2x = \dfrac{1}{2}(1-\cos 2x)\)</span> or <span class="process-math">\(\cos^2x = \dfrac{1}{2}(1+\cos 2x)\)</span></article><span class="incontext"><a href="section-72.html#li-1308" class="internal">in-context</a></span>
+</h5>If the power of secant is even:<div class="displaymath process-math">
+\begin{align*}
+\ds \int \tan^mx\sec^{2k}x\, dx \amp = \int \tan^m x\sec^{2k-2}\cdot \sec^2x\, dx\\
+\amp = \ds \int \tan^m x (\sec^2x)^{k-1}\cdot \sec^2 x\, dx\\
+\amp = \ds \int \tan^m x (1+\tan^2x)^{k-1}\cdot \sec^2 x\, dx
+\end{align*}
+</div>Now set <span class="process-math">\(u = \tan x\text{,}\)</span> simplify, and integrate.</article><span class="incontext"><a href="section-72.html#li-1308" class="internal">in-context</a></span>
 </body>
 </html>

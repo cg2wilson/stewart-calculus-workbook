@@ -12,24 +12,7 @@
 </head>
 <body class="ignore-math">
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<div class="para logical">
-<div class="para">Write the integrand as <span class="process-math">\(\sin^nx = \sin x\cdot \sin^{n-1}x\text{.}\)</span> Now we have an integral patterned to use integration by parts; set <span class="process-math">\(u = \sin^{n-1}x\)</span> and <span class="process-math">\(dv = \sin x\, dx\text{.}\)</span> Then, <span class="process-math">\(du = (n-1)\cos^{n-2}x\, dx\)</span> and <span class="process-math">\(v = -\cos x\text{.}\)</span> So, we have</div>
-<div class="displaymath process-math">
-\begin{align*}
-\ds \int \sin^nx\, dx \amp = \int \sin x\cdot \sin^{n-1}x\, dx\\
-\amp = \ds -\sin^{n-1}x\cos x + \int (n-1)\sin^{n-2}x\cos^2 x\, dx \\
-\amp = \ds -\sin^{n-1}x\cos x + (n-1)\int \sin^{n-2}x(1-\sin^2 x)\,dx\\
-\amp = \ds -\sin^{n-1}x\cos x + (n-1)\int \sin^{n-2}x\, dx - (n-1)\int \sin^nx\, dx
-\end{align*}
-</div>
-<div class="para">Combining like terms and dividing, we have</div>
-<div class="displaymath process-math">
-\begin{align*}
-\ds n\int \sin^nx\, dx \amp = -\sin^{n-1}x\cos x + (n-1)\int \sin^{n-2}x\, dx\\
-\ds \int \sin^nx\, dx \amp = -\dfrac{1}{n}\cos x\sin^{n-1}x + \dfrac{n-1}{n}\int \sin^{n-2}x\, dx
-\end{align*}
-</div>
-</div>
+<div class="para">Compute the integrals:</div>
 <span class="incontext"><a href="section-71.html#p-769" class="internal">in-context</a></span>
 </body>
 </html>

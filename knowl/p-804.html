@@ -12,7 +12,24 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<div class="para">Evaluate <span class="process-math">\(\ds \int \sin x\cos x\, dx\)</span> in four ways: (1) using the substitution <span class="process-math">\(u = \cos x\text{;}\)</span> (2) using the substitution <span class="process-math">\(u = \sin x\text{;}\)</span> (3) using the double-angle identity for sine; (4) using integration by parts.  Compare your work between the four methods.</div>
+<div class="para logical"><ol class="decimal">
+<li><div class="para">Using the cosine substitution, we get <span class="process-math">\(-\dfrac{1}{2}\cos^2x+C\)</span>
+</div></li>
+<li><div class="para">Using the sine substitution, we get <span class="process-math">\(\dfrac{1}{2}\sin^2x + C\)</span>
+</div></li>
+<li><div class="para">Using the double-angle identity, we get <span class="process-math">\(-\dfrac{1}{4}\cos 2x + C\)</span>
+</div></li>
+<li><div class="para">If we set <span class="process-math">\(u=\sin x\)</span> and <span class="process-math">\(dv = \cos x\, dx\text{,}\)</span> we get<div class="displaymath process-math">
+\begin{equation*}
+\ds \int \sin x\cos x\, dx = \dfrac{1}{2}\sin^2x + C 
+\end{equation*}
+</div>However, if we set <span class="process-math">\(u=\cos x\)</span> and <span class="process-math">\(dv = \sin x\, dx\text{,}\)</span> we get<div class="displaymath process-math">
+\begin{equation*}
+\ds \int \sin x\cos x\, dx = -\dfrac{1}{2}\cos^2x + C
+\end{equation*}
+</div>
+</div></li>
+</ol></div>
 <span class="incontext"><a href="section-72.html#p-804" class="internal">in-context</a></span>
 </body>
 </html>

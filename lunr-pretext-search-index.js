@@ -7,7 +7,7 @@ var ptx_lunr_docs = [
   "type": "Colophon",
   "number": "",
   "title": "Colophon",
-  "body": " copyright  This work includes materials used under license from the following works:    Calculus 8\/e    CC status unknown      "
+  "body": " copyright  This work includes materials used under license from the following works:   Calculus 8\/e by Stewart     "
 },
 {
   "id": "section-11",
@@ -46,9 +46,9 @@ var ptx_lunr_docs = [
   "body": " Pre-Class Video 2   "
 },
 {
-  "id": "p-6",
+  "id": "p-5",
   "level": "2",
-  "url": "section-11.html#p-6",
+  "url": "section-11.html#p-5",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -595,9 +595,9 @@ var ptx_lunr_docs = [
   "body": "Sketch the graphs of the given functions by using transformations to a base graph:                 The graph of on        The graph of on        The graph of on        "
 },
 {
-  "id": "p-42",
+  "id": "p-41",
   "level": "2",
-  "url": "section-13.html#p-42",
+  "url": "section-13.html#p-41",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1531,9 +1531,9 @@ var ptx_lunr_docs = [
   "body": "In Section 1.4, we discussed how to compute average velocity; what was the formula? How could we find instantaneous velocity from average velocity?     "
 },
 {
-  "id": "p-108",
+  "id": "p-107",
   "level": "2",
-  "url": "section-21.html#p-108",
+  "url": "section-21.html#p-107",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1945,9 +1945,9 @@ var ptx_lunr_docs = [
   "body": "Consider the function . Find and    and  "
 },
 {
-  "id": "p-130",
+  "id": "p-129",
   "level": "2",
-  "url": "section-22.html#p-130",
+  "url": "section-22.html#p-129",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4744,9 +4744,9 @@ var ptx_lunr_docs = [
   "body": "Find the most general antiderivative of the following functions; check your answer by differentiation.                                            "
 },
 {
-  "id": "p-176",
+  "id": "p-175",
   "level": "2",
-  "url": "section-39.html#p-176",
+  "url": "section-39.html#p-175",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4933,9 +4933,9 @@ var ptx_lunr_docs = [
   "body": "  If the interval we are concerned about is , and we are using rectangles to approximate the area, how could we write the base length of each individual rectangle? Denote the length by   Let . How could we express ? How about ? What about a generic , where ?  Let be the function value at . Using the previous two exercises, write an expression for , the sum of areas of our approximating rectangles.                 "
 },
 {
-  "id": "p-182",
+  "id": "p-181",
   "level": "2",
-  "url": "section-41.html#p-182",
+  "url": "section-41.html#p-181",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -5707,9 +5707,9 @@ var ptx_lunr_docs = [
   "body": " What relationship(s) do you see between the Net Change Theorem and FTC 2?   We get the same result, but we are using different functions.   "
 },
 {
-  "id": "p-233",
+  "id": "p-232",
   "level": "2",
-  "url": "section-44.html#p-233",
+  "url": "section-44.html#p-232",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -9016,7 +9016,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.4",
   "title": "Integration of Rational Functions by Partial Fractions",
-  "body": " Integration of Rational Functions by Partial Fractions    Use polynomial long division to write improper rational functions as sums of proper rational functions  Decompose a proper rational function as a sum of partial fractions  Use partial fraction decomposition to compute integrals of rational functions whose denominators are composed of factors of the following forms: distinct linear, repreated, linear, distinct irreducible quadratic, repeated irreducible quadratic     Before Class   Pre-Class Video 1     Inverse Functions & Properties     Pre-Class Activities    In Class   Calculus of Inverse Functions     After Class Activities   "
+  "body": " Integration of Rational Functions by Partial Fractions    Use polynomial long division to write improper rational functions as sums of proper rational functions  Decompose a proper rational function as a sum of partial fractions  Use partial fraction decomposition to compute integrals of rational functions whose denominators are composed of factors of the following forms: distinct linear, repreated, linear, distinct irreducible quadratic, repeated irreducible quadratic     Before Class   Pre-Class Video 1     Distinct Linear Factors    Find     Why can we not use any of our previous methods on this problem?  Before we can solve this, think about adding the fractions . What do you have to do in order to add these two fractions?  How could you decompose the answer from above into two fractions? Think about part (b)...  Use your thought process in part (c) to decompose into two fractions.  Integrate the resulting decomposition.        No appropriate pattern  You need to get a common denominator:   Write   Write . This gives the setup Combining fractions we get After simplifying and matching coefficients, we have the system Solving the system gives and , so that our decomposition is          The previous example gives us a process for integrating particular types of rational functions:   Functions With Two Distinct Linear Factors  Let , where . If can be written as , then      Integrate            Integrate using the method of partial fractions.           Integrate          The previous example allows us to generalize our boxed comment from earlier:   Functions With Distinct Linear Factors  Let , where . If can be written as where each is distinct, then       Pre-Class Activities    Write any questions you have from the videos in this space.    Answers vary      Find the general antiderivative of the function            Integrate            Integrate            In Class   Repeated Linear Factors    Find           Functions with Repeated Linear Factors  Let , where . If can be written as where each is distinct, then      Evaluate            Find            Evaluate            Irreducible Quadratic Factors   Irreducible Quadratic  Irreducible   The polynomial is said to be irreducible if      Functions with An Irreducible Quadratic Factor  Let , where . If has an irreducible quadratic factor, then the decomposition of will have a term of the form      Evaluate            Evaluate            Functions with Repeated Irreducible Quadratic Factors    Let , where . If has an irreducible quadratic factor of the form , then the decomposition of will have a term of the form      Write the partial fraction decomposition for the function            Compute            Compute            Compute            Use substitution to evaluate            Use substitution to evaluate            Compute             After Class Activities    Evaluate the following integrals:                                       "
 },
 {
   "id": "objectives-38",
@@ -9037,13 +9037,220 @@ var ptx_lunr_docs = [
   "body": " Pre-Class Video 1   "
 },
 {
+  "id": "example-741",
+  "level": "2",
+  "url": "section-74.html#example-741",
+  "type": "Example",
+  "number": "7.4.1",
+  "title": "",
+  "body": "  Find     Why can we not use any of our previous methods on this problem?  Before we can solve this, think about adding the fractions . What do you have to do in order to add these two fractions?  How could you decompose the answer from above into two fractions? Think about part (b)...  Use your thought process in part (c) to decompose into two fractions.  Integrate the resulting decomposition.        No appropriate pattern  You need to get a common denominator:   Write   Write . This gives the setup Combining fractions we get After simplifying and matching coefficients, we have the system Solving the system gives and , so that our decomposition is         "
+},
+{
+  "id": "example-742",
+  "level": "2",
+  "url": "section-74.html#example-742",
+  "type": "Example",
+  "number": "7.4.2",
+  "title": "",
+  "body": "  Integrate         "
+},
+{
+  "id": "example-743",
+  "level": "2",
+  "url": "section-74.html#example-743",
+  "type": "Example",
+  "number": "7.4.3",
+  "title": "",
+  "body": "  Integrate using the method of partial fractions.        "
+},
+{
+  "id": "example-744",
+  "level": "2",
+  "url": "section-74.html#example-744",
+  "type": "Example",
+  "number": "7.4.4",
+  "title": "",
+  "body": "  Integrate         "
+},
+{
+  "id": "example-745",
+  "level": "2",
+  "url": "section-74.html#example-745",
+  "type": "Example",
+  "number": "7.4.5",
+  "title": "",
+  "body": "  Write any questions you have from the videos in this space.    Answers vary   "
+},
+{
+  "id": "example-746",
+  "level": "2",
+  "url": "section-74.html#example-746",
+  "type": "Example",
+  "number": "7.4.6",
+  "title": "",
+  "body": "  Find the general antiderivative of the function         "
+},
+{
+  "id": "example-747",
+  "level": "2",
+  "url": "section-74.html#example-747",
+  "type": "Example",
+  "number": "7.4.7",
+  "title": "",
+  "body": "  Integrate         "
+},
+{
+  "id": "example-748",
+  "level": "2",
+  "url": "section-74.html#example-748",
+  "type": "Example",
+  "number": "7.4.8",
+  "title": "",
+  "body": "  Integrate         "
+},
+{
+  "id": "example-749",
+  "level": "2",
+  "url": "section-74.html#example-749",
+  "type": "Example",
+  "number": "7.4.9",
+  "title": "",
+  "body": "  Find         "
+},
+{
+  "id": "example-750",
+  "level": "2",
+  "url": "section-74.html#example-750",
+  "type": "Example",
+  "number": "7.4.10",
+  "title": "",
+  "body": "  Evaluate         "
+},
+{
+  "id": "example-751",
+  "level": "2",
+  "url": "section-74.html#example-751",
+  "type": "Example",
+  "number": "7.4.11",
+  "title": "",
+  "body": "  Find         "
+},
+{
+  "id": "example-752",
+  "level": "2",
+  "url": "section-74.html#example-752",
+  "type": "Example",
+  "number": "7.4.12",
+  "title": "",
+  "body": "  Evaluate         "
+},
+{
+  "id": "definition-47",
+  "level": "2",
+  "url": "section-74.html#definition-47",
+  "type": "Definition",
+  "number": "7.4.13",
+  "title": "Irreducible Quadratic.",
+  "body": " Irreducible Quadratic  Irreducible   The polynomial is said to be irreducible if    "
+},
+{
+  "id": "example-753",
+  "level": "2",
+  "url": "section-74.html#example-753",
+  "type": "Example",
+  "number": "7.4.14",
+  "title": "",
+  "body": "  Evaluate         "
+},
+{
+  "id": "example-754",
+  "level": "2",
+  "url": "section-74.html#example-754",
+  "type": "Example",
+  "number": "7.4.15",
+  "title": "",
+  "body": "  Evaluate         "
+},
+{
+  "id": "example-755",
+  "level": "2",
+  "url": "section-74.html#example-755",
+  "type": "Example",
+  "number": "7.4.16",
+  "title": "",
+  "body": "  Write the partial fraction decomposition for the function         "
+},
+{
+  "id": "example-756",
+  "level": "2",
+  "url": "section-74.html#example-756",
+  "type": "Example",
+  "number": "7.4.17",
+  "title": "",
+  "body": "  Compute         "
+},
+{
+  "id": "example-757",
+  "level": "2",
+  "url": "section-74.html#example-757",
+  "type": "Example",
+  "number": "7.4.18",
+  "title": "",
+  "body": "  Compute         "
+},
+{
+  "id": "example-758",
+  "level": "2",
+  "url": "section-74.html#example-758",
+  "type": "Example",
+  "number": "7.4.19",
+  "title": "",
+  "body": "  Compute         "
+},
+{
+  "id": "example-759",
+  "level": "2",
+  "url": "section-74.html#example-759",
+  "type": "Example",
+  "number": "7.4.20",
+  "title": "",
+  "body": "  Use substitution to evaluate         "
+},
+{
+  "id": "example-760",
+  "level": "2",
+  "url": "section-74.html#example-760",
+  "type": "Example",
+  "number": "7.4.21",
+  "title": "",
+  "body": "  Use substitution to evaluate         "
+},
+{
+  "id": "example-761",
+  "level": "2",
+  "url": "section-74.html#example-761",
+  "type": "Example",
+  "number": "7.4.22",
+  "title": "",
+  "body": "  Compute         "
+},
+{
+  "id": "example-762",
+  "level": "2",
+  "url": "section-74.html#example-762",
+  "type": "Example",
+  "number": "7.4.23",
+  "title": "",
+  "body": "  Evaluate the following integrals:                                     "
+},
+{
   "id": "section-75",
   "level": "1",
   "url": "section-75.html",
   "type": "Section",
   "number": "7.5",
   "title": "Strategy for Integration",
-  "body": " Strategy for Integration    Apply the various techniques of integration to different integrals     Before Class   Pre-Class Video 1     Inverse Functions & Properties     Pre-Class Activities    In Class   Calculus of Inverse Functions     After Class Activities   "
+  "body": " Strategy for Integration    Apply the various techniques of integration to different integrals     Before Class   Pre-Class Video 1     Integrals We Know  Collected below are all of the integrals that we have learned:     Function  Antiderivative  Function  Antiderivative        for                                                                                                                Strategies  When faced with an integral, it can be difficult to determine which method is the best to use. This flowchart may provide some help:    Simplify the integrand: try algebraic simplifications and\/or use trig identities  Try u-substitution: look for \"obvious\" choices  Classify the integral: 1) Trig functions, 2) Rational functions, 3) Integration by Parts, 4) A radical   Try again:    Be creative with u-substitution  Integration by parts  Less obvious algebraic manipulations, like multiplying by a form of 1  Try to relate the integral to one you've done before  Try multiple methods         Find            Compute            Compute             Pre-Class Activities    Write any questions you have from the videos in this space.    Answers vary      Analyze the following integrals using the flow chart from above, determine what you think the best approach is, and briefly write why. Do not compute these integrals! This exercise is here to help you practice analyzing situations. We'll do these problems in class.                       Answers vary for all integrals; the important part here is to think about techniques      In Class   Examples                                                                                                                                                                                         After Class Activities    Look back at the examples we did in class. Make sure that you can follow the thought process that led us to use that particular integration technique.    Answers vary      Refer back to the strategy list. Try to give an example of an integral which fits with each step.    Answers vary      Which technique do you feel like you need the most practice with? Why?    Answers vary      There are many practice problems available in the book, on page 548. Work through as many as you can; the more practice you get, the more confident and capable you'll be!     "
 },
 {
   "id": "objectives-39",
@@ -9062,6 +9269,222 @@ var ptx_lunr_docs = [
   "number": "59",
   "title": "",
   "body": " Pre-Class Video 1   "
+},
+{
+  "id": "example-763",
+  "level": "2",
+  "url": "section-75.html#example-763",
+  "type": "Example",
+  "number": "7.5.1",
+  "title": "",
+  "body": "  Find         "
+},
+{
+  "id": "example-764",
+  "level": "2",
+  "url": "section-75.html#example-764",
+  "type": "Example",
+  "number": "7.5.2",
+  "title": "",
+  "body": "  Compute         "
+},
+{
+  "id": "example-765",
+  "level": "2",
+  "url": "section-75.html#example-765",
+  "type": "Example",
+  "number": "7.5.3",
+  "title": "",
+  "body": "  Compute         "
+},
+{
+  "id": "example-766",
+  "level": "2",
+  "url": "section-75.html#example-766",
+  "type": "Example",
+  "number": "7.5.4",
+  "title": "",
+  "body": "  Write any questions you have from the videos in this space.    Answers vary   "
+},
+{
+  "id": "example-767",
+  "level": "2",
+  "url": "section-75.html#example-767",
+  "type": "Example",
+  "number": "7.5.5",
+  "title": "",
+  "body": "  Analyze the following integrals using the flow chart from above, determine what you think the best approach is, and briefly write why. Do not compute these integrals! This exercise is here to help you practice analyzing situations. We'll do these problems in class.                       Answers vary for all integrals; the important part here is to think about techniques   "
+},
+{
+  "id": "example-768",
+  "level": "2",
+  "url": "section-75.html#example-768",
+  "type": "Example",
+  "number": "7.5.6",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "example-769",
+  "level": "2",
+  "url": "section-75.html#example-769",
+  "type": "Example",
+  "number": "7.5.7",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "example-770",
+  "level": "2",
+  "url": "section-75.html#example-770",
+  "type": "Example",
+  "number": "7.5.8",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "example-771",
+  "level": "2",
+  "url": "section-75.html#example-771",
+  "type": "Example",
+  "number": "7.5.9",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "example-772",
+  "level": "2",
+  "url": "section-75.html#example-772",
+  "type": "Example",
+  "number": "7.5.10",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "example-773",
+  "level": "2",
+  "url": "section-75.html#example-773",
+  "type": "Example",
+  "number": "7.5.11",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "example-774",
+  "level": "2",
+  "url": "section-75.html#example-774",
+  "type": "Example",
+  "number": "7.5.12",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "example-775",
+  "level": "2",
+  "url": "section-75.html#example-775",
+  "type": "Example",
+  "number": "7.5.13",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "example-776",
+  "level": "2",
+  "url": "section-75.html#example-776",
+  "type": "Example",
+  "number": "7.5.14",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "example-777",
+  "level": "2",
+  "url": "section-75.html#example-777",
+  "type": "Example",
+  "number": "7.5.15",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "example-778",
+  "level": "2",
+  "url": "section-75.html#example-778",
+  "type": "Example",
+  "number": "7.5.16",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "example-779",
+  "level": "2",
+  "url": "section-75.html#example-779",
+  "type": "Example",
+  "number": "7.5.17",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "example-780",
+  "level": "2",
+  "url": "section-75.html#example-780",
+  "type": "Example",
+  "number": "7.5.18",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "example-781",
+  "level": "2",
+  "url": "section-75.html#example-781",
+  "type": "Example",
+  "number": "7.5.19",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "example-782",
+  "level": "2",
+  "url": "section-75.html#example-782",
+  "type": "Example",
+  "number": "7.5.20",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "example-783",
+  "level": "2",
+  "url": "section-75.html#example-783",
+  "type": "Example",
+  "number": "7.5.21",
+  "title": "",
+  "body": "  Look back at the examples we did in class. Make sure that you can follow the thought process that led us to use that particular integration technique.    Answers vary   "
+},
+{
+  "id": "example-784",
+  "level": "2",
+  "url": "section-75.html#example-784",
+  "type": "Example",
+  "number": "7.5.22",
+  "title": "",
+  "body": "  Refer back to the strategy list. Try to give an example of an integral which fits with each step.    Answers vary   "
+},
+{
+  "id": "example-785",
+  "level": "2",
+  "url": "section-75.html#example-785",
+  "type": "Example",
+  "number": "7.5.23",
+  "title": "",
+  "body": "  Which technique do you feel like you need the most practice with? Why?    Answers vary   "
+},
+{
+  "id": "example-786",
+  "level": "2",
+  "url": "section-75.html#example-786",
+  "type": "Example",
+  "number": "7.5.24",
+  "title": "",
+  "body": "  There are many practice problems available in the book, on page 548. Work through as many as you can; the more practice you get, the more confident and capable you'll be!   "
 },
 {
   "id": "section-76",
@@ -9088,7 +9511,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.8",
   "title": "Improper Integrals",
-  "body": " Improper Integrals    Distinguish between proper and improper integrals, and apply the appropriate technique in order to determine if the improper integral converges or diverges     Before Class   Pre-Class Video 1     Inverse Functions & Properties     Pre-Class Activities    In Class   Calculus of Inverse Functions     After Class Activities   "
+  "body": " Improper Integrals    Distinguish between proper and improper integrals, and apply the appropriate technique in order to determine if the improper integral converges or diverges     Before Class   Pre-Class Video 1     Type 1 Integrals    Fill out the following table of values for :     a  Exact Value  Approximate Value    1        100        1000        10000         Based on the table, do you expect the integral to settle on a specific value? If so, what is the value (to 3 decimal places)?       a  Exact Value  Approximate Value    1          100     1    1000     1    10000     1     1        Compute in general  Take the limit as ; what is the interpretation of your answer?               As the upper bound goes to , the area under from 0 to a goes to 1.        Improper Integral (Type 1)  Improper Integral (Type 1)   An improper integral of type 1 is an integral of the form provided that is continuous on the domain of integration.     Convergence\/Divergence (Type 1)  Convergence\/Divergence   An improper integral of type 1 is said to converge if the limits below exist: If the limit does not exist or is infinite, then we say the integral is divergent       Determine if converges or diverges. If it converges, give its exact value.    The integral converges to 1      Determine if converges or diverges. If it converges, give its exact value.    The integral converges to       Evaluate            Show that     Split the integral into two pieces: For the first piece, we compute: For the second piece, we have a similar computation: Summing the two pieces gives the answer of       Does converge or diverge? Why?    The intgral diverges since the antiderivative involves a logarithm. The end behavior of the log function is unbounded, so the integral diverges.       Pre-Class Activities    Use this space to write any questions you might have from the videos.    Answers vary      Evaluate            Determine if converges or diverges    The integral converges to 0      Determine if converges or diverges.    The integral converges to       Evaluate            The integral diverges. Compute the integral to see why. How could we come to the same conclusion without any computation?     , so when we take the limit of the linear term, we will always get and a divergent integral (even though the limit of the trig term doesn't exist).  Without integrating, we could also see that the integral would diverge because so the area is always positive and only accumulates positive values.      In Class    For what values of does converge?    It converges to for       Evaluate     The integral diverges      Compute           Type 2 Integrals   Improper Integral (Type 2)  Improper Integral   An improper integral of type 2 is an integral of the form where has a discontinuity at either or or in .     Convergence\/Divergence (Type 2)  Convergence\/Divergence   An improper integral of type 2 is said to converge if the limits below exist: If the limit does not exist or is infinite, then we say the integral is divergent .      Find            Determine if converges or diverges.    The integral diverges      A classmate claims that . Are they correct or incorrect? Why?    They are incorrect. If the integral is computed using FTC 2 (disregarding the discontinuity), then one would get this value. However, accounting for the discontinuity shows that the integral diverges.      Compute     The integral diverges      If is continuous on , we define the Laplace transform  of to be the function defined as Compute and .     and       Evaluate             After Class Activities    Determine if the following converge or diverge:                             diverges         diverges   diverges   diverges       "
 },
 {
   "id": "objectives-40",
@@ -9107,6 +9530,249 @@ var ptx_lunr_docs = [
   "number": "60",
   "title": "",
   "body": " Pre-Class Video 1   "
+},
+{
+  "id": "example-787",
+  "level": "2",
+  "url": "section-78.html#example-787",
+  "type": "Example",
+  "number": "7.8.1",
+  "title": "",
+  "body": "  Fill out the following table of values for :     a  Exact Value  Approximate Value    1        100        1000        10000         Based on the table, do you expect the integral to settle on a specific value? If so, what is the value (to 3 decimal places)?       a  Exact Value  Approximate Value    1          100     1    1000     1    10000     1     1   "
+},
+{
+  "id": "example-788",
+  "level": "2",
+  "url": "section-78.html#example-788",
+  "type": "Example",
+  "number": "7.8.2",
+  "title": "",
+  "body": "    Compute in general  Take the limit as ; what is the interpretation of your answer?               As the upper bound goes to , the area under from 0 to a goes to 1.      "
+},
+{
+  "id": "definition-48",
+  "level": "2",
+  "url": "section-78.html#definition-48",
+  "type": "Definition",
+  "number": "7.8.3",
+  "title": "Improper Integral (Type 1).",
+  "body": " Improper Integral (Type 1)  Improper Integral (Type 1)   An improper integral of type 1 is an integral of the form provided that is continuous on the domain of integration.   "
+},
+{
+  "id": "definition-49",
+  "level": "2",
+  "url": "section-78.html#definition-49",
+  "type": "Definition",
+  "number": "7.8.4",
+  "title": "Convergence\/Divergence (Type 1).",
+  "body": " Convergence\/Divergence (Type 1)  Convergence\/Divergence   An improper integral of type 1 is said to converge if the limits below exist: If the limit does not exist or is infinite, then we say the integral is divergent    "
+},
+{
+  "id": "example-789",
+  "level": "2",
+  "url": "section-78.html#example-789",
+  "type": "Example",
+  "number": "7.8.5",
+  "title": "",
+  "body": "  Determine if converges or diverges. If it converges, give its exact value.    The integral converges to 1   "
+},
+{
+  "id": "example-790",
+  "level": "2",
+  "url": "section-78.html#example-790",
+  "type": "Example",
+  "number": "7.8.6",
+  "title": "",
+  "body": "  Determine if converges or diverges. If it converges, give its exact value.    The integral converges to    "
+},
+{
+  "id": "example-791",
+  "level": "2",
+  "url": "section-78.html#example-791",
+  "type": "Example",
+  "number": "7.8.7",
+  "title": "",
+  "body": "  Evaluate         "
+},
+{
+  "id": "example-792",
+  "level": "2",
+  "url": "section-78.html#example-792",
+  "type": "Example",
+  "number": "7.8.8",
+  "title": "",
+  "body": "  Show that     Split the integral into two pieces: For the first piece, we compute: For the second piece, we have a similar computation: Summing the two pieces gives the answer of    "
+},
+{
+  "id": "example-793",
+  "level": "2",
+  "url": "section-78.html#example-793",
+  "type": "Example",
+  "number": "7.8.9",
+  "title": "",
+  "body": "  Does converge or diverge? Why?    The intgral diverges since the antiderivative involves a logarithm. The end behavior of the log function is unbounded, so the integral diverges.   "
+},
+{
+  "id": "example-794",
+  "level": "2",
+  "url": "section-78.html#example-794",
+  "type": "Example",
+  "number": "7.8.10",
+  "title": "",
+  "body": "  Use this space to write any questions you might have from the videos.    Answers vary   "
+},
+{
+  "id": "example-795",
+  "level": "2",
+  "url": "section-78.html#example-795",
+  "type": "Example",
+  "number": "7.8.11",
+  "title": "",
+  "body": "  Evaluate         "
+},
+{
+  "id": "example-796",
+  "level": "2",
+  "url": "section-78.html#example-796",
+  "type": "Example",
+  "number": "7.8.12",
+  "title": "",
+  "body": "  Determine if converges or diverges    The integral converges to 0   "
+},
+{
+  "id": "example-797",
+  "level": "2",
+  "url": "section-78.html#example-797",
+  "type": "Example",
+  "number": "7.8.13",
+  "title": "",
+  "body": "  Determine if converges or diverges.    The integral converges to    "
+},
+{
+  "id": "example-798",
+  "level": "2",
+  "url": "section-78.html#example-798",
+  "type": "Example",
+  "number": "7.8.14",
+  "title": "",
+  "body": "  Evaluate         "
+},
+{
+  "id": "example-799",
+  "level": "2",
+  "url": "section-78.html#example-799",
+  "type": "Example",
+  "number": "7.8.15",
+  "title": "",
+  "body": "  The integral diverges. Compute the integral to see why. How could we come to the same conclusion without any computation?     , so when we take the limit of the linear term, we will always get and a divergent integral (even though the limit of the trig term doesn't exist).  Without integrating, we could also see that the integral would diverge because so the area is always positive and only accumulates positive values.   "
+},
+{
+  "id": "example-800",
+  "level": "2",
+  "url": "section-78.html#example-800",
+  "type": "Example",
+  "number": "7.8.16",
+  "title": "",
+  "body": "  For what values of does converge?    It converges to for    "
+},
+{
+  "id": "example-801",
+  "level": "2",
+  "url": "section-78.html#example-801",
+  "type": "Example",
+  "number": "7.8.17",
+  "title": "",
+  "body": "  Evaluate     The integral diverges   "
+},
+{
+  "id": "example-802",
+  "level": "2",
+  "url": "section-78.html#example-802",
+  "type": "Example",
+  "number": "7.8.18",
+  "title": "",
+  "body": "  Compute         "
+},
+{
+  "id": "definition-50",
+  "level": "2",
+  "url": "section-78.html#definition-50",
+  "type": "Definition",
+  "number": "7.8.19",
+  "title": "Improper Integral (Type 2).",
+  "body": " Improper Integral (Type 2)  Improper Integral   An improper integral of type 2 is an integral of the form where has a discontinuity at either or or in .   "
+},
+{
+  "id": "definition-51",
+  "level": "2",
+  "url": "section-78.html#definition-51",
+  "type": "Definition",
+  "number": "7.8.20",
+  "title": "Convergence\/Divergence (Type 2).",
+  "body": " Convergence\/Divergence (Type 2)  Convergence\/Divergence   An improper integral of type 2 is said to converge if the limits below exist: If the limit does not exist or is infinite, then we say the integral is divergent .   "
+},
+{
+  "id": "example-803",
+  "level": "2",
+  "url": "section-78.html#example-803",
+  "type": "Example",
+  "number": "7.8.21",
+  "title": "",
+  "body": "  Find         "
+},
+{
+  "id": "example-804",
+  "level": "2",
+  "url": "section-78.html#example-804",
+  "type": "Example",
+  "number": "7.8.22",
+  "title": "",
+  "body": "  Determine if converges or diverges.    The integral diverges   "
+},
+{
+  "id": "example-805",
+  "level": "2",
+  "url": "section-78.html#example-805",
+  "type": "Example",
+  "number": "7.8.23",
+  "title": "",
+  "body": "  A classmate claims that . Are they correct or incorrect? Why?    They are incorrect. If the integral is computed using FTC 2 (disregarding the discontinuity), then one would get this value. However, accounting for the discontinuity shows that the integral diverges.   "
+},
+{
+  "id": "example-806",
+  "level": "2",
+  "url": "section-78.html#example-806",
+  "type": "Example",
+  "number": "7.8.24",
+  "title": "",
+  "body": "  Compute     The integral diverges   "
+},
+{
+  "id": "example-807",
+  "level": "2",
+  "url": "section-78.html#example-807",
+  "type": "Example",
+  "number": "7.8.25",
+  "title": "",
+  "body": "  If is continuous on , we define the Laplace transform  of to be the function defined as Compute and .     and    "
+},
+{
+  "id": "example-808",
+  "level": "2",
+  "url": "section-78.html#example-808",
+  "type": "Example",
+  "number": "7.8.26",
+  "title": "",
+  "body": "  Evaluate         "
+},
+{
+  "id": "example-809",
+  "level": "2",
+  "url": "section-78.html#example-809",
+  "type": "Example",
+  "number": "7.8.27",
+  "title": "",
+  "body": "  Determine if the following converge or diverge:                             diverges         diverges   diverges   diverges     "
 }
 ]
 
