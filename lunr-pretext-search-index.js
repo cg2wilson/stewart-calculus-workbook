@@ -6811,7 +6811,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.1",
   "title": "Inverse Functions",
-  "body": " Inverse Functions    Determine if a function is one-to-one given a verbal, numerical, graphical, or algebraic representation of the function and explain why a function must be one-to-one in order to have an inverse function  Identify the definition of the inverse function for one-to-one function and describe the relationship between the domain\/range of and the domain\/range of   Apply the cancellation properties of inverse functions  Find the inverse of a one-to-one function given a numerical, algebraic, or graphical representation  Apply the formula for the derivative of inverse functions     Before Class   Pre-Class Video 1     Inverse Functions & Properties   The table below gives the population of a bacterial culture, hours after it is introduced to an agar-filled petri dish.    hours  0  1  2  3  4  5  6  7  8     bacteria  150  165  182  200  220  243  267  294  324   The inverse function  , gives the time elapsed since a bacterial culture was introduced to an agar-filled petri dish, when the population is bacteria. Use this information to fill out the table below.    bacteria                       hours                           bacteria  150  165  182  200  220  243  267  294  324     hours  0  1  2  3  4  5  6  7  8       One-to-one Function  One-to-one Function   A function is said to be one-to-one if it never takes on the same value twice, or in notation, when .     Horizontal Line Test   A function is one-to-one if and only if no horizontal line intersects its graph more than once.     Is one-to-one? Why or why not?   Yes: if , then and , which are distinct.     Is one-to-one? Why or why not?   No: , so two inputs produce the same output.      Let , where is an even number. Using the previous exercise, do you think this function is one-to-one? Why or why not?    Any even power function (in fact, any even function) is not one-to-one, as for any in the domain of .     Inverse Function  Inverse Function   Let be a one-to-one function with domain and range . The inverse function is notated , with domain and range . The inverse function is defined by the equation for any .     Domain and Range of Inverse Functions    The domain of is the range of   The range of is the domain of       Notation Alert!   is a special notation to indicate the function inverse ; you should not confuse this with the notation for the multiplicative inverse (reciprocal), such as . That is,     denotes the inverse of a function   denotes the multiplicative inverse of a variable, i.e.        Use the table below to answer the questions. If the answer does not exist, write DNE.                                                                                                         DNE (two inputs create the output of 5)             Cancellation Property  Let be a function with domain and range , and let be its inverse function. Then, we have the following properties:     for all    for all        If , what is ? Use the cancellation properties to check your answer.     ; we can check this using the cancellation properties:            Find the inverse function of          There is a graphical interpretation of algebraically finding an inverse:  There is a picture drawn in the pre-class video that I can't replicate right now.  The idea is that when algebraically finding an inverse function, you are finding the equation of the function that results when you reflect across the line      Pre-Class Activities   If , find and .    and      Find the inverse formula for the function          Find the inverse formula for the function           In Class   Calculus of Inverse Functions   Continuity of Inverses  If is a one-to-one continuous function defined on the interval , then is also continuous on .     If a one-to-one function is differentiable on the interval , is it necessarily true that is also differentiable?    No; if , then its inverse is , which is not differentiable at .     Derivative of Inverses (at a Point)  If is a one-to-one, differentiable function at with inverse function and , then the inverse function is differentiable at and    If we replace in the above formula with , we get another formula for the derivative of the inverse:   Derivative of Inverses (as a Function)       Let . Find .          Let and .    Show that is one-to-one.  Find using the formula above.  Find , and give its domain and range.         is increasing: , which is always positive because       . The domain is and the range is         Let .     is not one-to-one. Sketch it and determine an interval on which it can be made one-to-one. This is called the restricted domain .  Complete the square on and use it to find the inverse function on your restricted domain.  Find using your answer in (b).  Find using formulas from this section. Compare the two answers.         Here is the graph of :    A graph of the function on the interval      We can choose two restricted domains: either or . Generally, we'll choose the positive portion of the domain for the restricted domain, so choose .    on      Same as above.        Find for the given functions:     ,    ,                     Suppose is the inverse function of a differentiable function with and . Find .            After Class Activities    Find for            Suppose is the inverse function of a differentiable function , and let . If and , find .           If , find .          "
+  "body": " Inverse Functions    Determine if a function is one-to-one given a verbal, numerical, graphical, or algebraic representation of the function and explain why a function must be one-to-one in order to have an inverse function  Identify the definition of the inverse function for one-to-one function and describe the relationship between the domain\/range of and the domain\/range of   Apply the cancellation properties of inverse functions  Find the inverse of a one-to-one function given a numerical, algebraic, or graphical representation  Apply the formula for the derivative of inverse functions     Before Class   Pre-Class Video 1     Pre-Class Video 2     Inverse Functions & Properties   The table below gives the population of a bacterial culture, hours after it is introduced to an agar-filled petri dish.    hours  0  1  2  3  4  5  6  7  8     bacteria  150  165  182  200  220  243  267  294  324   The inverse function  , gives the time elapsed since a bacterial culture was introduced to an agar-filled petri dish, when the population is bacteria. Use this information to fill out the table below.    bacteria                       hours                           bacteria  150  165  182  200  220  243  267  294  324     hours  0  1  2  3  4  5  6  7  8       One-to-one Function  One-to-one Function   A function is said to be one-to-one if it never takes on the same value twice, or in notation, when .     Horizontal Line Test   A function is one-to-one if and only if no horizontal line intersects its graph more than once.     Is one-to-one? Why or why not?   Yes: if , then and , which are distinct.     Is one-to-one? Why or why not?   No: , so two inputs produce the same output.      Let , where is an even number. Using the previous exercise, do you think this function is one-to-one? Why or why not?    Any even power function (in fact, any even function) is not one-to-one, as for any in the domain of .     Inverse Function  Inverse Function   Let be a one-to-one function with domain and range . The inverse function is notated , with domain and range . The inverse function is defined by the equation for any .     Domain and Range of Inverse Functions    The domain of is the range of   The range of is the domain of       Notation Alert!   is a special notation to indicate the function inverse ; you should not confuse this with the notation for the multiplicative inverse (reciprocal), such as . That is,     denotes the inverse of a function   denotes the multiplicative inverse of a variable, i.e.        Use the table below to answer the questions. If the answer does not exist, write DNE.                                                                                                         DNE (two inputs create the output of 5)             Cancellation Property  Let be a function with domain and range , and let be its inverse function. Then, we have the following properties:     for all    for all        If , what is ? Use the cancellation properties to check your answer.     ; we can check this using the cancellation properties:            Find the inverse function of          There is a graphical interpretation of algebraically finding an inverse:  There is a picture drawn in the pre-class video that I can't replicate right now.  The idea is that when algebraically finding an inverse function, you are finding the equation of the function that results when you reflect across the line      Pre-Class Activities   If , find and .    and      Find the inverse formula for the function          Find the inverse formula for the function           In Class   Calculus of Inverse Functions   Continuity of Inverses  If is a one-to-one continuous function defined on the interval , then is also continuous on .     If a one-to-one function is differentiable on the interval , is it necessarily true that is also differentiable?    No; if , then its inverse is , which is not differentiable at .     Derivative of Inverses (at a Point)  If is a one-to-one, differentiable function at with inverse function and , then the inverse function is differentiable at and    If we replace in the above formula with , we get another formula for the derivative of the inverse:   Derivative of Inverses (as a Function)       Let . Find .          Let and .    Show that is one-to-one.  Find using the formula above.  Find , and give its domain and range.         is increasing: , which is always positive because       . The domain is and the range is         Let .     is not one-to-one. Sketch it and determine an interval on which it can be made one-to-one. This is called the restricted domain .  Complete the square on and use it to find the inverse function on your restricted domain.  Find using your answer in (b).  Find using formulas from this section. Compare the two answers.         Here is the graph of :    A graph of the function on the interval      We can choose two restricted domains: either or . Generally, we'll choose the positive portion of the domain for the restricted domain, so choose .    on      Same as above.        Find for the given functions:     ,    ,                     Suppose is the inverse function of a differentiable function with and . Find .            After Class Activities    Find for            Suppose is the inverse function of a differentiable function , and let . If and , find .           If , find .          "
 },
 {
   "id": "objectives-29",
@@ -6830,6 +6830,15 @@ var ptx_lunr_docs = [
   "number": "49",
   "title": "",
   "body": " Pre-Class Video 1   "
+},
+{
+  "id": "figure-50",
+  "level": "2",
+  "url": "section-61.html#figure-50",
+  "type": "Figure",
+  "number": "50",
+  "title": "",
+  "body": " Pre-Class Video 2   "
 },
 {
   "id": "example-549",
@@ -7048,11 +7057,11 @@ var ptx_lunr_docs = [
   "body": "  Identify the general exponential function for any base and its basic properties (domain, range, graphical behavior depending on value of ), and apply rules of exponents to exponential functions  Evaluate limits of functions involving exponential expressions and analyze the end behavior of those functions  Sketch and identify transformations of exponential functions, especially as examples of exponential growth\/decay in real-world contexts  Recognize and interpret the number in terms of limits, derivatives, and geometry  Compute derivatives and antiderivatives of functions involving natural exponential expressions and use qualitative techniques to analyze key behavior of those functions (extrema, concavity, etc.)   "
 },
 {
-  "id": "figure-50",
+  "id": "figure-51",
   "level": "2",
-  "url": "section-62.html#figure-50",
+  "url": "section-62.html#figure-51",
   "type": "Figure",
-  "number": "50",
+  "number": "51",
   "title": "",
   "body": " Pre-Class Video 1   "
 },
@@ -7309,11 +7318,11 @@ var ptx_lunr_docs = [
   "body": "  Identify logarithmic functions for any base and its basic properties (domain, range, graphical behavior depending on value of ), and relate logarithms to exponentials using inverse relationships  Apply properties and rules of logarithms as well as algebra to: simplify logarithmic expressions, solve equations\/inequalities involving exponentials\/logarithms, find inverses of exponential\/logarithmic functions  Describe the end behavior of logarithmic expressions using limits   "
 },
 {
-  "id": "figure-51",
+  "id": "figure-52",
   "level": "2",
-  "url": "section-63.html#figure-51",
+  "url": "section-63.html#figure-52",
   "type": "Figure",
-  "number": "51",
+  "number": "52",
   "title": "",
   "body": " Pre-Class Video 1   "
 },
@@ -7567,7 +7576,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.4",
   "title": "Derivatives of Logarithmic Functions",
-  "body": " Derivatives of Logarithmic Functions    Apply differentiation and antidifferentiation rules, potentially using algebra or properties of logarithms, to compute derivatives and antiderivatives of the logarithms of any base and exponentials of any base.  Use derivatives to analyze qualitative behaviors of logarithmic expressions, including: intervals of increase\/decrease, concavity, local extrema, etc.     Before Class   Pre-Class Video 1     The Natural Logarithm   The Natural Logarithm      Let . From inverse relationships, we know that . Implicitly differentiating, we have So that . Since , we have     Find the derivative of            Find the derivative of            Find the derivative of     The (simplified) derivative is       Argue why     Note first that Then, we have two cases: When we take the derivative, we have In the first branch, since , . So, The second branch agrees, namely that So for any value of , the statement holds:      Antiderivative of        Evaluate            Compute            Find             Pre-Class Activities    Find the derivative:                                        Find the integral:                    or               Use this space to write any questions\/concerns you have from the pre-class videos.    Answers vary      In Class   General Logs and Exponentials    Show that     Note that . Then, we may rewrite the integral as Set , so that . Making the substitutions, we have so Using log rules, we can rewrite:       Find the absolute minimum of the function     The absolute minimum occurs at      Derivative of General Logarithms      Using the Change of Base formula (see Section 6.3), we have  is a constant, so we have     Find            Find the derivative of            Find the derivative of           Derivative of Exponential Functions      Let . Then, using inverse properties. Implicitly differentiating, we have Rearranging, we have but since , we can write as     Find            Find the absolute maximum and absolute minimum values of the function on the interval     The absolute max occurs in two places, at and ; the absolute minimum occurs in two places as well, at and       Logarithmic Differentiation   Antiderivative of Exponential Functions        Compute            Find the derivative of the function           Logarithmic Differentiation    Set and take the natural log of both sides  Use log rules to simplify the right hand side  Take the implict derivative, solve for , and replace with        Briefly explain why logarithmic differentiation is ideal for differentiating , then compute the derivative.    The answers will vary for why it's ideal, but should center around the complexity of the expression.         Use logarithmic differentiation to find the derivative of           Alternate Definition of  The number is defined as the limit    First note that if , then . Writing this using the definition of the derivative (at a point), we have Since , the limit above is exactly 1. Using properties of continuous functions, we can raise both sides of the expression above as powers of : If we set , the limit becomes      After Class Activities    Compute the derivative for the function:                                  Find the equation of the tangent line to the curve at the point            Let . For what value of is ?           Compute            Show that     Rewrite as . Set , so that . Then, we have       Find            Evaluate           "
+  "body": " Derivatives of Logarithmic Functions    Apply differentiation and antidifferentiation rules, potentially using algebra or properties of logarithms, to compute derivatives and antiderivatives of the logarithms of any base and exponentials of any base.  Use derivatives to analyze qualitative behaviors of logarithmic expressions, including: intervals of increase\/decrease, concavity, local extrema, etc.     Before Class   Pre-Class Video 1     Pre-Class Video 2     The Natural Logarithm   The Natural Logarithm      Let . From inverse relationships, we know that . Implicitly differentiating, we have So that . Since , we have     Find the derivative of            Find the derivative of            Find the derivative of     The (simplified) derivative is       Argue why     Note first that Then, we have two cases: When we take the derivative, we have In the first branch, since , . So, The second branch agrees, namely that So for any value of , the statement holds:      Antiderivative of        Evaluate            Compute            Find             Pre-Class Activities    Find the derivative:                                        Find the integral:                    or               Use this space to write any questions\/concerns you have from the pre-class videos.    Answers vary      In Class   General Logs and Exponentials    Show that     Note that . Then, we may rewrite the integral as Set , so that . Making the substitutions, we have so Using log rules, we can rewrite:       Find the absolute minimum of the function     The absolute minimum occurs at      Derivative of General Logarithms      Using the Change of Base formula (see Section 6.3), we have  is a constant, so we have     Find            Find the derivative of            Find the derivative of           Derivative of Exponential Functions      Let . Then, using inverse properties. Implicitly differentiating, we have Rearranging, we have but since , we can write as     Find            Find the absolute maximum and absolute minimum values of the function on the interval     The absolute max occurs in two places, at and ; the absolute minimum occurs in two places as well, at and       Logarithmic Differentiation   Antiderivative of Exponential Functions        Compute            Find the derivative of the function           Logarithmic Differentiation    Set and take the natural log of both sides  Use log rules to simplify the right hand side  Take the implict derivative, solve for , and replace with        Briefly explain why logarithmic differentiation is ideal for differentiating , then compute the derivative.    The answers will vary for why it's ideal, but should center around the complexity of the expression.         Use logarithmic differentiation to find the derivative of           Alternate Definition of  The number is defined as the limit    First note that if , then . Writing this using the definition of the derivative (at a point), we have Since , the limit above is exactly 1. Using properties of continuous functions, we can raise both sides of the expression above as powers of : If we set , the limit becomes      After Class Activities    Compute the derivative for the function:                                  Find the equation of the tangent line to the curve at the point            Let . For what value of is ?           Compute            Show that     Rewrite as . Set , so that . Then, we have       Find            Evaluate           "
 },
 {
   "id": "objectives-32",
@@ -7579,13 +7588,22 @@ var ptx_lunr_docs = [
   "body": "  Apply differentiation and antidifferentiation rules, potentially using algebra or properties of logarithms, to compute derivatives and antiderivatives of the logarithms of any base and exponentials of any base.  Use derivatives to analyze qualitative behaviors of logarithmic expressions, including: intervals of increase\/decrease, concavity, local extrema, etc.   "
 },
 {
-  "id": "figure-52",
+  "id": "figure-53",
   "level": "2",
-  "url": "section-64.html#figure-52",
+  "url": "section-64.html#figure-53",
   "type": "Figure",
-  "number": "52",
+  "number": "53",
   "title": "",
   "body": " Pre-Class Video 1   "
+},
+{
+  "id": "figure-54",
+  "level": "2",
+  "url": "section-64.html#figure-54",
+  "type": "Figure",
+  "number": "54",
+  "title": "",
+  "body": " Pre-Class Video 2   "
 },
 {
   "id": "proof-5",
@@ -7891,7 +7909,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.6",
   "title": "Inverse Trigonometric Functions",
-  "body": " Inverse Trigonometric Functions    Communicate (via words and graphs) how and why the domains of each trig function may be restricted in order to define the corresponding inverse function  Apply basic properties of inverse trig functions (cancellation, domain, range, etc.) and sketch their graphs  Derive the derivative formulas for the six inverse trig functions, and use the formulas to compute derivatives of inverse trig expressions and analyze qualitative behavior of those expressions  Evaluate indefinite integrals involving inverse trig functions     Before Class   Pre-Class Video 1     Building Inverse Trig Functions    Refer back to Section 6.1-how can we determine if a function has an inverse?    The function must be one-to-one on the interval in question.      Let     Graph on the interval   Identify an interval on which could possess an inverse  Sketch the graph of the inverse function          The graph of on the interval      Sine achieves all its potential values on the interval , so use this as our restricted domain.    The graph of           Inverse Sine (Arcsine)  The function has the inverse (also written ). The domain of is and the range is      Evaluate            Evaluate            Let     Graph on the interval   Identify an interval on which could possess an inverse  Sketch the graph of the inverse function          The graph of on the interval      Cosine achieves all its potential values on the interval , so use this as our restricted domain.    The graph of           Inverse Cosine (Arccosine)  The function has the inverse (also written ). The domain of is and the range is      Repeat the process we used for sine and cosine to find an inverse function for tangent. Sketch the graph of the inverse function.    The graph of tangent is below:    The graph of on the interval      From the graph, we can identify a potential restricted domain as   The graph of this inverse is given below:    The graph of on         Inverse Tangent (Arctangent)  The function has the inverse (also written ). The domain of is and the range is      Simplify the expression            Using the sketch of arctangent from above, compute and             Pre-Class Activities    Evaluate the following:                                        Simplify the expressions:                                  In Class   Derivatives of Inverse Trig Functions    Function  Domain  Range                                                                        Use implicit differentiation to show that     Let . Then, . Taking the implicit derivative, we have From the Pythagorean Theorem, we know that . But , so . Then, we can say that .  From the restricted domain for , we know that , so that is always positive (the angle is in quadrants 1 and 4). This allows us to say that .  Solving for , we have       Use the same process to find the derivative of     Let . Then, . Taking the implicit derivative, we have From the Pythagorean Theorem, we know that . But , so . Then, we can say that .  From the restricted domain for , we know that , so that is always positive (the angle is in quadrants 1 and 2). This allows us to say that .  Solving for , we have So       Again, use the same process to find the derivative of     Let . Then, . Taking the implicit derivative, we have From the Pythagorean Theorem, we know that . Since , we conclude that   Solving for , we have So     The table below collects the derivatives of the six inverse trig functions:     Function  Derivative  Function  Derivative                                                 Find the domain of the function . Then, find its derivative, and the domain of the derivative.    The domain is   The derivative is   The domain of the derivative is       Find the derivative of            Write the derivative of            Find the derivatives:                            If , find .           Find an equation of the tangent line to the curve at the point .           Find if            Integrals of Inverse Trig Functions  The derivatives for the inverse trig functions give way to corresponding antiderivatives. There are two important ones:     Function  Derivative  Function  Derivative                     Compute            For any real number , find             After Class Activities    Compute the derivatives of the functions below:                       Explain why           Compute the integrals:                                 "
+  "body": " Inverse Trigonometric Functions    Communicate (via words and graphs) how and why the domains of each trig function may be restricted in order to define the corresponding inverse function  Apply basic properties of inverse trig functions (cancellation, domain, range, etc.) and sketch their graphs  Derive the derivative formulas for the six inverse trig functions, and use the formulas to compute derivatives of inverse trig expressions and analyze qualitative behavior of those expressions  Evaluate indefinite integrals involving inverse trig functions     Before Class   Pre-Class Video 1     Pre-Class Video 2     Building Inverse Trig Functions    Refer back to Section 6.1-how can we determine if a function has an inverse?    The function must be one-to-one on the interval in question.      Let     Graph on the interval   Identify an interval on which could possess an inverse  Sketch the graph of the inverse function          The graph of on the interval      Sine achieves all its potential values on the interval , so use this as our restricted domain.    The graph of           Inverse Sine (Arcsine)  The function has the inverse (also written ). The domain of is and the range is      Evaluate            Evaluate            Let     Graph on the interval   Identify an interval on which could possess an inverse  Sketch the graph of the inverse function          The graph of on the interval      Cosine achieves all its potential values on the interval , so use this as our restricted domain.    The graph of           Inverse Cosine (Arccosine)  The function has the inverse (also written ). The domain of is and the range is      Repeat the process we used for sine and cosine to find an inverse function for tangent. Sketch the graph of the inverse function.    The graph of tangent is below:    The graph of on the interval      From the graph, we can identify a potential restricted domain as   The graph of this inverse is given below:    The graph of on         Inverse Tangent (Arctangent)  The function has the inverse (also written ). The domain of is and the range is      Simplify the expression            Using the sketch of arctangent from above, compute and             Pre-Class Activities    Evaluate the following:                                        Simplify the expressions:                                  In Class   Derivatives of Inverse Trig Functions    Function  Domain  Range                                                                        Use implicit differentiation to show that     Let . Then, . Taking the implicit derivative, we have From the Pythagorean Theorem, we know that . But , so . Then, we can say that .  From the restricted domain for , we know that , so that is always positive (the angle is in quadrants 1 and 4). This allows us to say that .  Solving for , we have       Use the same process to find the derivative of     Let . Then, . Taking the implicit derivative, we have From the Pythagorean Theorem, we know that . But , so . Then, we can say that .  From the restricted domain for , we know that , so that is always positive (the angle is in quadrants 1 and 2). This allows us to say that .  Solving for , we have So       Again, use the same process to find the derivative of     Let . Then, . Taking the implicit derivative, we have From the Pythagorean Theorem, we know that . Since , we conclude that   Solving for , we have So     The table below collects the derivatives of the six inverse trig functions:     Function  Derivative  Function  Derivative                                                 Find the domain of the function . Then, find its derivative, and the domain of the derivative.    The domain is   The derivative is   The domain of the derivative is       Find the derivative of            Write the derivative of            Find the derivatives:                            If , find .           Find an equation of the tangent line to the curve at the point .           Find if            Integrals of Inverse Trig Functions  The derivatives for the inverse trig functions give way to corresponding antiderivatives. There are two important ones:     Function  Derivative  Function  Derivative                     Compute            For any real number , find             After Class Activities    Compute the derivatives of the functions below:                       Explain why           Compute the integrals:                                 "
 },
 {
   "id": "objectives-33",
@@ -7903,13 +7921,22 @@ var ptx_lunr_docs = [
   "body": "  Communicate (via words and graphs) how and why the domains of each trig function may be restricted in order to define the corresponding inverse function  Apply basic properties of inverse trig functions (cancellation, domain, range, etc.) and sketch their graphs  Derive the derivative formulas for the six inverse trig functions, and use the formulas to compute derivatives of inverse trig expressions and analyze qualitative behavior of those expressions  Evaluate indefinite integrals involving inverse trig functions   "
 },
 {
-  "id": "figure-53",
+  "id": "figure-55",
   "level": "2",
-  "url": "section-66.html#figure-53",
+  "url": "section-66.html#figure-55",
   "type": "Figure",
-  "number": "53",
+  "number": "55",
   "title": "",
   "body": " Pre-Class Video 1   "
+},
+{
+  "id": "figure-56",
+  "level": "2",
+  "url": "section-66.html#figure-56",
+  "type": "Figure",
+  "number": "56",
+  "title": "",
+  "body": " Pre-Class Video 2   "
 },
 {
   "id": "question-34",
@@ -8164,11 +8191,11 @@ var ptx_lunr_docs = [
   "body": "  Identify and distinguish between the following indeterminate forms: and explain why certain limits are of these forms  State l'Hospital's Rule and determine when it is appropriate to apply it and\/or appropriate strategies to limits of indeterminate forms   "
 },
 {
-  "id": "figure-54",
+  "id": "figure-57",
   "level": "2",
-  "url": "section-68.html#figure-54",
+  "url": "section-68.html#figure-57",
   "type": "Figure",
-  "number": "54",
+  "number": "57",
   "title": "",
   "body": " Pre-Class Video 1   "
 },
@@ -8368,7 +8395,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.1",
   "title": "Integration by Parts",
-  "body": " Integration by Parts    State and apply the formula for integration by parts in order to evaluate definite and indefinite integrals involving one or multiple applications of integration by parts and possibly other integration techniques     Before Class   Pre-Class Video 1     The Formula      Let and be differentiable functions. Use the product rule to find   Integrate both sides of the equation, and rewrite to get the formula for integration by parts.                   Integration by Parts Formula   or      Evaluate            What would happen if we switched our choices of and in the previous example?    We would have which means the problem gets harder      Compute            Find the most general antiderivative of            Evaluate            Evaluate             Pre-Class Activities    What questions\/concerns do you have from the videos?    Answers vary      The following problems require integration by parts to solve. For each, answer why integration by parts is necessary, and then compute the integral.                       The integrand is a product function, and we don't have a derivative rule to take care of that type of integrand.       The integrand is a product function, and we don't have a derivative rule to take care of that type of integrand.       The integrand is a product function, and we don't have a derivative rule to take care of that type of integrand.         In Class   Examples    Show that     Set and . Then, and and we have For the integral, use a substitution: , so . Changing the bounds, we see that and ; then,       Prove that     Write the integrand as . Now we have an integral patterned to use integration by parts; set and . Then, and . So, we have Combining like terms and dividing, we have       Compute the integrals:                                                    Evaluate            Find             After Class Activities    Evaluate            Evaluate     Evaluate       Find            Evaluate            Prove the reduction formula:     Let and . Then, and . Using integration by parts, we have      "
+  "body": " Integration by Parts    State and apply the formula for integration by parts in order to evaluate definite and indefinite integrals involving one or multiple applications of integration by parts and possibly other integration techniques     Before Class   Pre-Class Video 1     Pre-Class Video 2     The Formula      Let and be differentiable functions. Use the product rule to find   Integrate both sides of the equation, and rewrite to get the formula for integration by parts.                   Integration by Parts Formula   or      Evaluate            What would happen if we switched our choices of and in the previous example?    We would have which means the problem gets harder      Compute            Find the most general antiderivative of            Evaluate            Evaluate             Pre-Class Activities    What questions\/concerns do you have from the videos?    Answers vary      The following problems require integration by parts to solve. For each, answer why integration by parts is necessary, and then compute the integral.                       The integrand is a product function, and we don't have a derivative rule to take care of that type of integrand.       The integrand is a product function, and we don't have a derivative rule to take care of that type of integrand.       The integrand is a product function, and we don't have a derivative rule to take care of that type of integrand.         In Class   Examples    Show that     Set and . Then, and and we have For the integral, use a substitution: , so . Changing the bounds, we see that and ; then,       Prove that     Write the integrand as . Now we have an integral patterned to use integration by parts; set and . Then, and . So, we have Combining like terms and dividing, we have       Compute the integrals:                                                    Evaluate            Find             After Class Activities    Evaluate            Evaluate     Evaluate       Find            Evaluate            Prove the reduction formula:     Let and . Then, and . Using integration by parts, we have      "
 },
 {
   "id": "objectives-35",
@@ -8380,13 +8407,22 @@ var ptx_lunr_docs = [
   "body": "  State and apply the formula for integration by parts in order to evaluate definite and indefinite integrals involving one or multiple applications of integration by parts and possibly other integration techniques   "
 },
 {
-  "id": "figure-55",
+  "id": "figure-58",
   "level": "2",
-  "url": "section-71.html#figure-55",
+  "url": "section-71.html#figure-58",
   "type": "Figure",
-  "number": "55",
+  "number": "58",
   "title": "",
   "body": " Pre-Class Video 1   "
+},
+{
+  "id": "figure-59",
+  "level": "2",
+  "url": "section-71.html#figure-59",
+  "type": "Figure",
+  "number": "59",
+  "title": "",
+  "body": " Pre-Class Video 2   "
 },
 {
   "id": "example-680",
@@ -8578,11 +8614,11 @@ var ptx_lunr_docs = [
   "body": "   Apply strategies for evaluating integrals of the forms for integers , potentially using trigonometric identities:            "
 },
 {
-  "id": "figure-56",
+  "id": "figure-60",
   "level": "2",
-  "url": "section-72.html#figure-56",
+  "url": "section-72.html#figure-60",
   "type": "Figure",
-  "number": "56",
+  "number": "60",
   "title": "",
   "body": " Pre-Class Video 1   "
 },
@@ -8809,7 +8845,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.3",
   "title": "Trigonometric Substitution",
-  "body": " Trigonometric Substitution    Use the basic trigonometric substitutions to evaluate definite and indefinite integrals, and use trigonometric identities to write solutions without using inverse trigonometric functions (when possible)     Before Class   Pre-Class Video 1     The Substitutions    Use trigonometry to complete the following reference triangles:     Three triangles used to define the trigonometric substitutions. On the left, the triangle for the tangent substitution; in the middle, the triangle for the sine substitution; on the right, the triangle for the secant substitution.           Three triangles used to define the trigonometric substitutions. On the left, the triangle for the tangent substitution; in the middle, the triangle for the sine substitution; on the right, the triangle for the secant substitution.          Let     Consider . Why do none of our previous integration techniques work here?  Refer to the example at the top of the page. Which triangle has an expression similar to the radicand in ? Write the substitution below.  Treat the substitution you chose in part (b) like a substitution. Make the appropriate substitutions into the integral , and complete the integration.        Answers vary, but the idea is that we don't have an appropriate rule for the pattern      If , then . Anywhere we see , we will replace with .  Now, we have Simplifying, we have Using identities, we arrive at Integrating gives However, our original variable was , not ; since we declared , we rearrange to get . So, our answer becomes          Compute            Evaluate             Pre-Class Activities    Use this space to write any questions you have from the videos.    Answers vary      Compute            Compute . Is a trigonometric substitution necessary here? Why or why not?     . A trig substitution isn't necessary here, as we can use a u-substitution.      Compute using the substitution            Using the previous examples as guideposts, fill out the following table:     If you see an integrand involving  Try a substitution using          If you see an integrand involving  Try a substitution using                                 In Class   Examples    Compute            Evaluate            Compute            Find            Evaluate            Show that     Set . Then, . Making our substitutions, we get After some simplification, we get Using the double angle identity for sine, we have Now use a power reducing identity: More simplification gives Integrating and using double angle identities gives After reduction, it becomes clear that the sine term is zero at the endpoints, so the integral becomes Evaluating gives our answer.      Evaluate            Compute             After Class Activities    Use trig substitution to prove that the area of the ellipse is , where is the length of the major axis and is the length of the minor axis.    Write the ellipse in terms of alone first; this gives . We can take the positive root, integrate a quarter of the ellipse, and multiply the resulting area by 4.  Now, the area will be given by . Use the substitution ; then, . Then Multiplying by 4 gives the area,       Evaluate            Compute           "
+  "body": " Trigonometric Substitution    Use the basic trigonometric substitutions to evaluate definite and indefinite integrals, and use trigonometric identities to write solutions without using inverse trigonometric functions (when possible)     Before Class   Pre-Class Video 1     Pre-Class Video 2     The Substitutions    Use trigonometry to complete the following reference triangles:     Three triangles used to define the trigonometric substitutions. On the left, the triangle for the tangent substitution; in the middle, the triangle for the sine substitution; on the right, the triangle for the secant substitution.           Three triangles used to define the trigonometric substitutions. On the left, the triangle for the tangent substitution; in the middle, the triangle for the sine substitution; on the right, the triangle for the secant substitution.          Let     Consider . Why do none of our previous integration techniques work here?  Refer to the example at the top of the page. Which triangle has an expression similar to the radicand in ? Write the substitution below.  Treat the substitution you chose in part (b) like a substitution. Make the appropriate substitutions into the integral , and complete the integration.        Answers vary, but the idea is that we don't have an appropriate rule for the pattern      If , then . Anywhere we see , we will replace with .  Now, we have Simplifying, we have Using identities, we arrive at Integrating gives However, our original variable was , not ; since we declared , we rearrange to get . So, our answer becomes          Compute            Evaluate             Pre-Class Activities    Use this space to write any questions you have from the videos.    Answers vary      Compute            Compute . Is a trigonometric substitution necessary here? Why or why not?     . A trig substitution isn't necessary here, as we can use a u-substitution.      Compute using the substitution            Using the previous examples as guideposts, fill out the following table:     If you see an integrand involving  Try a substitution using          If you see an integrand involving  Try a substitution using                                 In Class   Examples    Compute            Evaluate            Compute            Find            Evaluate            Show that     Set . Then, . Making our substitutions, we get After some simplification, we get Using the double angle identity for sine, we have Now use a power reducing identity: More simplification gives Integrating and using double angle identities gives After reduction, it becomes clear that the sine term is zero at the endpoints, so the integral becomes Evaluating gives our answer.      Evaluate            Compute             After Class Activities    Use trig substitution to prove that the area of the ellipse is , where is the length of the major axis and is the length of the minor axis.    Write the ellipse in terms of alone first; this gives . We can take the positive root, integrate a quarter of the ellipse, and multiply the resulting area by 4.  Now, the area will be given by . Use the substitution ; then, . Then Multiplying by 4 gives the area,       Evaluate            Compute           "
 },
 {
   "id": "objectives-37",
@@ -8821,13 +8857,22 @@ var ptx_lunr_docs = [
   "body": "  Use the basic trigonometric substitutions to evaluate definite and indefinite integrals, and use trigonometric identities to write solutions without using inverse trigonometric functions (when possible)   "
 },
 {
-  "id": "figure-57",
+  "id": "figure-61",
   "level": "2",
-  "url": "section-73.html#figure-57",
+  "url": "section-73.html#figure-61",
   "type": "Figure",
-  "number": "57",
+  "number": "61",
   "title": "",
   "body": " Pre-Class Video 1   "
+},
+{
+  "id": "figure-62",
+  "level": "2",
+  "url": "section-73.html#figure-62",
+  "type": "Figure",
+  "number": "62",
+  "title": "",
+  "body": " Pre-Class Video 2   "
 },
 {
   "id": "example-722",
@@ -9016,7 +9061,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.4",
   "title": "Integration of Rational Functions by Partial Fractions",
-  "body": " Integration of Rational Functions by Partial Fractions    Use polynomial long division to write improper rational functions as sums of proper rational functions  Decompose a proper rational function as a sum of partial fractions  Use partial fraction decomposition to compute integrals of rational functions whose denominators are composed of factors of the following forms: distinct linear, repreated, linear, distinct irreducible quadratic, repeated irreducible quadratic     Before Class   Pre-Class Video 1     Distinct Linear Factors    Find     Why can we not use any of our previous methods on this problem?  Before we can solve this, think about adding the fractions . What do you have to do in order to add these two fractions?  How could you decompose the answer from above into two fractions? Think about part (b)...  Use your thought process in part (c) to decompose into two fractions.  Integrate the resulting decomposition.        No appropriate pattern  You need to get a common denominator:   Write   Write . This gives the setup Combining fractions we get After simplifying and matching coefficients, we have the system Solving the system gives and , so that our decomposition is          The previous example gives us a process for integrating particular types of rational functions:   Functions With Two Distinct Linear Factors  Let , where . If can be written as , then      Integrate            Integrate using the method of partial fractions.           Integrate          The previous example allows us to generalize our boxed comment from earlier:   Functions With Distinct Linear Factors  Let , where . If can be written as where each is distinct, then       Pre-Class Activities    Write any questions you have from the videos in this space.    Answers vary      Find the general antiderivative of the function            Integrate            Integrate            In Class   Repeated Linear Factors    Find           Functions with Repeated Linear Factors  Let , where . If can be written as where each is distinct, then      Evaluate            Find            Evaluate            Irreducible Quadratic Factors   Irreducible Quadratic  Irreducible   The polynomial is said to be irreducible if      Functions with An Irreducible Quadratic Factor  Let , where . If has an irreducible quadratic factor, then the decomposition of will have a term of the form      Evaluate            Evaluate            Functions with Repeated Irreducible Quadratic Factors    Let , where . If has an irreducible quadratic factor of the form , then the decomposition of will have a term of the form      Write the partial fraction decomposition for the function            Compute            Compute            Compute            Use substitution to evaluate            Use substitution to evaluate            Compute             After Class Activities    Evaluate the following integrals:                                       "
+  "body": " Integration of Rational Functions by Partial Fractions    Use polynomial long division to write improper rational functions as sums of proper rational functions  Decompose a proper rational function as a sum of partial fractions  Use partial fraction decomposition to compute integrals of rational functions whose denominators are composed of factors of the following forms: distinct linear, repreated, linear, distinct irreducible quadratic, repeated irreducible quadratic     Before Class   Pre-Class Video 1     Pre-Class Video 2     Distinct Linear Factors    Find     Why can we not use any of our previous methods on this problem?  Before we can solve this, think about adding the fractions . What do you have to do in order to add these two fractions?  How could you decompose the answer from above into two fractions? Think about part (b)...  Use your thought process in part (c) to decompose into two fractions.  Integrate the resulting decomposition.        No appropriate pattern  You need to get a common denominator:   Write   Write . This gives the setup Combining fractions we get After simplifying and matching coefficients, we have the system Solving the system gives and , so that our decomposition is          The previous example gives us a process for integrating particular types of rational functions:   Functions With Two Distinct Linear Factors  Let , where . If can be written as , then      Integrate            Integrate using the method of partial fractions.           Integrate          The previous example allows us to generalize our boxed comment from earlier:   Functions With Distinct Linear Factors  Let , where . If can be written as where each is distinct, then       Pre-Class Activities    Write any questions you have from the videos in this space.    Answers vary      Find the general antiderivative of the function            Integrate            Integrate            In Class   Repeated Linear Factors    Find           Functions with Repeated Linear Factors  Let , where . If can be written as where each is distinct, then      Evaluate            Find            Evaluate            Irreducible Quadratic Factors   Irreducible Quadratic  Irreducible   The polynomial is said to be irreducible if      Functions with An Irreducible Quadratic Factor  Let , where . If has an irreducible quadratic factor, then the decomposition of will have a term of the form      Evaluate            Evaluate            Functions with Repeated Irreducible Quadratic Factors    Let , where . If has an irreducible quadratic factor of the form , then the decomposition of will have a term of the form      Write the partial fraction decomposition for the function            Compute            Compute            Compute            Use substitution to evaluate            Use substitution to evaluate            Compute             After Class Activities    Evaluate the following integrals:                                       "
 },
 {
   "id": "objectives-38",
@@ -9028,13 +9073,22 @@ var ptx_lunr_docs = [
   "body": "  Use polynomial long division to write improper rational functions as sums of proper rational functions  Decompose a proper rational function as a sum of partial fractions  Use partial fraction decomposition to compute integrals of rational functions whose denominators are composed of factors of the following forms: distinct linear, repreated, linear, distinct irreducible quadratic, repeated irreducible quadratic   "
 },
 {
-  "id": "figure-58",
+  "id": "figure-63",
   "level": "2",
-  "url": "section-74.html#figure-58",
+  "url": "section-74.html#figure-63",
   "type": "Figure",
-  "number": "58",
+  "number": "63",
   "title": "",
   "body": " Pre-Class Video 1   "
+},
+{
+  "id": "figure-64",
+  "level": "2",
+  "url": "section-74.html#figure-64",
+  "type": "Figure",
+  "number": "64",
+  "title": "",
+  "body": " Pre-Class Video 2   "
 },
 {
   "id": "example-741",
@@ -9262,11 +9316,11 @@ var ptx_lunr_docs = [
   "body": "  Apply the various techniques of integration to different integrals   "
 },
 {
-  "id": "figure-59",
+  "id": "figure-65",
   "level": "2",
-  "url": "section-75.html#figure-59",
+  "url": "section-75.html#figure-65",
   "type": "Figure",
-  "number": "59",
+  "number": "65",
   "title": "",
   "body": " Pre-Class Video 1   "
 },
@@ -9511,7 +9565,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.8",
   "title": "Improper Integrals",
-  "body": " Improper Integrals    Distinguish between proper and improper integrals, and apply the appropriate technique in order to determine if the improper integral converges or diverges     Before Class   Pre-Class Video 1     Type 1 Integrals    Fill out the following table of values for :     a  Exact Value  Approximate Value    1        100        1000        10000         Based on the table, do you expect the integral to settle on a specific value? If so, what is the value (to 3 decimal places)?       a  Exact Value  Approximate Value    1          100     1    1000     1    10000     1     1        Compute in general  Take the limit as ; what is the interpretation of your answer?               As the upper bound goes to , the area under from 0 to a goes to 1.        Improper Integral (Type 1)  Improper Integral (Type 1)   An improper integral of type 1 is an integral of the form provided that is continuous on the domain of integration.     Convergence\/Divergence (Type 1)  Convergence\/Divergence   An improper integral of type 1 is said to converge if the limits below exist: If the limit does not exist or is infinite, then we say the integral is divergent       Determine if converges or diverges. If it converges, give its exact value.    The integral converges to 1      Determine if converges or diverges. If it converges, give its exact value.    The integral converges to       Evaluate            Show that     Split the integral into two pieces: For the first piece, we compute: For the second piece, we have a similar computation: Summing the two pieces gives the answer of       Does converge or diverge? Why?    The intgral diverges since the antiderivative involves a logarithm. The end behavior of the log function is unbounded, so the integral diverges.       Pre-Class Activities    Use this space to write any questions you might have from the videos.    Answers vary      Evaluate            Determine if converges or diverges    The integral converges to 0      Determine if converges or diverges.    The integral converges to       Evaluate            The integral diverges. Compute the integral to see why. How could we come to the same conclusion without any computation?     , so when we take the limit of the linear term, we will always get and a divergent integral (even though the limit of the trig term doesn't exist).  Without integrating, we could also see that the integral would diverge because so the area is always positive and only accumulates positive values.      In Class    For what values of does converge?    It converges to for       Evaluate     The integral diverges      Compute           Type 2 Integrals   Improper Integral (Type 2)  Improper Integral   An improper integral of type 2 is an integral of the form where has a discontinuity at either or or in .     Convergence\/Divergence (Type 2)  Convergence\/Divergence   An improper integral of type 2 is said to converge if the limits below exist: If the limit does not exist or is infinite, then we say the integral is divergent .      Find            Determine if converges or diverges.    The integral diverges      A classmate claims that . Are they correct or incorrect? Why?    They are incorrect. If the integral is computed using FTC 2 (disregarding the discontinuity), then one would get this value. However, accounting for the discontinuity shows that the integral diverges.      Compute     The integral diverges      If is continuous on , we define the Laplace transform  of to be the function defined as Compute and .     and       Evaluate             After Class Activities    Determine if the following converge or diverge:                             diverges         diverges   diverges   diverges       "
+  "body": " Improper Integrals    Distinguish between proper and improper integrals, and apply the appropriate technique in order to determine if the improper integral converges or diverges     Before Class   Pre-Class Video 1     Pre-Class Video 2     Type 1 Integrals    Fill out the following table of values for :     a  Exact Value  Approximate Value    1        100        1000        10000         Based on the table, do you expect the integral to settle on a specific value? If so, what is the value (to 3 decimal places)?       a  Exact Value  Approximate Value    1          100     1    1000     1    10000     1     1        Compute in general  Take the limit as ; what is the interpretation of your answer?               As the upper bound goes to , the area under from 0 to a goes to 1.        Improper Integral (Type 1)  Improper Integral (Type 1)   An improper integral of type 1 is an integral of the form provided that is continuous on the domain of integration.     Convergence\/Divergence (Type 1)  Convergence\/Divergence   An improper integral of type 1 is said to converge if the limits below exist: If the limit does not exist or is infinite, then we say the integral is divergent       Determine if converges or diverges. If it converges, give its exact value.    The integral converges to 1      Determine if converges or diverges. If it converges, give its exact value.    The integral converges to       Evaluate            Show that     Split the integral into two pieces: For the first piece, we compute: For the second piece, we have a similar computation: Summing the two pieces gives the answer of       Does converge or diverge? Why?    The intgral diverges since the antiderivative involves a logarithm. The end behavior of the log function is unbounded, so the integral diverges.       Pre-Class Activities    Use this space to write any questions you might have from the videos.    Answers vary      Evaluate            Determine if converges or diverges    The integral converges to 0      Determine if converges or diverges.    The integral converges to       Evaluate            The integral diverges. Compute the integral to see why. How could we come to the same conclusion without any computation?     , so when we take the limit of the linear term, we will always get and a divergent integral (even though the limit of the trig term doesn't exist).  Without integrating, we could also see that the integral would diverge because so the area is always positive and only accumulates positive values.      In Class    For what values of does converge?    It converges to for       Evaluate     The integral diverges      Compute           Type 2 Integrals   Improper Integral (Type 2)  Improper Integral   An improper integral of type 2 is an integral of the form where has a discontinuity at either or or in .     Convergence\/Divergence (Type 2)  Convergence\/Divergence   An improper integral of type 2 is said to converge if the limits below exist: If the limit does not exist or is infinite, then we say the integral is divergent .      Find            Determine if converges or diverges.    The integral diverges      A classmate claims that . Are they correct or incorrect? Why?    They are incorrect. If the integral is computed using FTC 2 (disregarding the discontinuity), then one would get this value. However, accounting for the discontinuity shows that the integral diverges.      Compute     The integral diverges      If is continuous on , we define the Laplace transform  of to be the function defined as Compute and .     and       Evaluate             After Class Activities    Determine if the following converge or diverge:                             diverges         diverges   diverges   diverges       "
 },
 {
   "id": "objectives-40",
@@ -9523,13 +9577,22 @@ var ptx_lunr_docs = [
   "body": "  Distinguish between proper and improper integrals, and apply the appropriate technique in order to determine if the improper integral converges or diverges   "
 },
 {
-  "id": "figure-60",
+  "id": "figure-66",
   "level": "2",
-  "url": "section-78.html#figure-60",
+  "url": "section-78.html#figure-66",
   "type": "Figure",
-  "number": "60",
+  "number": "66",
   "title": "",
   "body": " Pre-Class Video 1   "
+},
+{
+  "id": "figure-67",
+  "level": "2",
+  "url": "section-78.html#figure-67",
+  "type": "Figure",
+  "number": "67",
+  "title": "",
+  "body": " Pre-Class Video 2   "
 },
 {
   "id": "example-787",
