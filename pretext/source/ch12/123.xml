@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-123">
+	<title>The Dot Product</title>
+	<objectives>
+		<ul>
+			<li>
+				To come
+			</li>
+		</ul>
+	</objectives>
+
+	<subsection xml:id="section-123-beforeclass">
+		<title>Before Class</title>
+		<figure>
+			<caption>Pre-Class Video 1</caption>
+				url goes here
+		</figure>
+		<figure>
+			<caption>Pre-Class Video 2</caption>
+			url goes here
+		</figure>
+
+		<subsubsection xml:id="section-123-dot-product">
+			<title>The Dot Product</title>
+
+		</subsubsection>
+
+        <subsubsection xml:id="section-123-properties">
+			<title>Properties of the Dot Product</title>
+
+		</subsubsection>
+	</subsection>
+
+	<subsection xml:id="section-123-preclass">
+		<title>Pre-Class Activities</title>
+
+	</subsection>
+
+	<subsection xml:id="section-123-inclass">
+		<title>In Class</title>
+
+		<subsubsection xml:id="section-123-geometric">
+			<title>Geometric Definition of the Dot Product</title>
+
+		</subsubsection>
+
+        <subsubsection xml:id="section-123-angles-cosines">
+			<title>Direction Angles &amp; Direction Cosines</title>
+
+		</subsubsection>
+
+        <subsubsection xml:id="section-123-projections">
+			<title>Projections</title>
+
+		</subsubsection>
+	</subsection>
+
+	<subsection xml:id="section-123-afterclass">
+		<title>After Class Activities</title>
+
+	</subsection>
+</section>

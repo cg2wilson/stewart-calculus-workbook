@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-1110">
+	<title>Taylor and Maclaurin Series</title>
+	<objectives>
+		<ul>
+			<li>
+				To come
+			</li>
+		</ul>
+	</objectives>
+
+	<subsection xml:id="section-1110-beforeclass">
+		<title>Before Class</title>
+		<figure>
+			<caption>Pre-Class Video 1</caption>
+				url goes here
+		</figure>
+		<figure>
+			<caption>Pre-Class Video 2</caption>
+			url goes here
+		</figure>
+
+		<subsubsection xml:id="section-1110-idea">
+			<title>The Idea</title>
+
+		</subsubsection>
+
+	</subsection>
+
+	<subsection xml:id="section-1110-preclass">
+		<title>Pre-Class Activities</title>
+
+	</subsection>
+
+	<subsection xml:id="section-1110-inclass">
+		<title>In Class</title>
+
+		<subsubsection xml:id="section-1110-polynomials">
+			<title>Taylor Polynomials</title>
+
+		</subsubsection>
+
+        <subsubsection xml:id="section-1110-useful">
+			<title>Useful Maclaurin Series</title>
+
+		</subsubsection>
+
+        <subsubsection xml:id="section-1110-operations">
+			<title>Multiplication/Division of Power Series</title>
+
+		</subsubsection>
+
+	</subsection>
+
+	<subsection xml:id="section-1110-afterclass">
+		<title>After Class Activities</title>
+
+	</subsection>
+</section>

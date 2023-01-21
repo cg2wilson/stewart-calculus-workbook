@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-124">
+	<title>The Cross Product</title>
+	<objectives>
+		<ul>
+			<li>
+				To come
+			</li>
+		</ul>
+	</objectives>
+
+	<subsection xml:id="section-124-beforeclass">
+		<title>Before Class</title>
+		<figure>
+			<caption>Pre-Class Video 1</caption>
+				url goes here
+		</figure>
+		<figure>
+			<caption>Pre-Class Video 2</caption>
+			url goes here
+		</figure>
+
+		<subsubsection xml:id="section-124-cross-product">
+			<title>The Cross Product</title>
+
+		</subsubsection>
+
+	</subsection>
+
+	<subsection xml:id="section-124-preclass">
+		<title>Pre-Class Activities</title>
+
+	</subsection>
+
+	<subsection xml:id="section-124-inclass">
+		<title>In Class</title>
+
+		<subsubsection xml:id="section-124-examples">
+			<title>Some Examples</title>
+
+		</subsubsection>
+
+        <subsubsection xml:id="section-124-properties">
+			<title>Product of the Cross Product</title>
+
+		</subsubsection>
+
+        <subsubsection xml:id="section-124-applications">
+			<title>Applications of the Cross Product</title>
+
+		</subsubsection>
+	</subsection>
+
+	<subsection xml:id="section-124-afterclass">
+		<title>After Class Activities</title>
+
+	</subsection>
+</section>

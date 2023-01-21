@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-122">
+	<title>Vectors</title>
+	<objectives>
+		<ul>
+			<li>
+				To come
+			</li>
+		</ul>
+	</objectives>
+
+	<subsection xml:id="section-122-beforeclass">
+		<title>Before Class</title>
+		<figure>
+			<caption>Pre-Class Video 1</caption>
+				url goes here
+		</figure>
+		<figure>
+			<caption>Pre-Class Video 2</caption>
+			url goes here
+		</figure>
+
+		<subsubsection xml:id="section-122-vectors-operations">
+			<title>Vectors &amp; Operations</title>
+
+		</subsubsection>
+
+        <subsubsection xml:id="section-122-components">
+			<title>Components</title>
+
+		</subsubsection>
+	</subsection>
+
+	<subsection xml:id="section-122-preclass">
+		<title>Pre-Class Activities</title>
+
+	</subsection>
+
+	<subsection xml:id="section-122-inclass">
+		<title>In Class</title>
+
+		<subsubsection xml:id="section-122-properties">
+			<title>Properties of Vectors</title>
+
+		</subsubsection>
+
+        <subsubsection xml:id="section-122-unit">
+			<title>Unit Vectors</title>
+
+		</subsubsection>
+
+        <subsubsection xml:id="section-122-applications">
+			<title>Applications of Vectors</title>
+
+		</subsubsection>
+	</subsection>
+
+	<subsection xml:id="section-122-afterclass">
+		<title>After Class Activities</title>
+
+	</subsection>
+</section>

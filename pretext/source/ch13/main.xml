@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<chapter xml:id="ch13" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Vector Functions</title>
+<!--    <xi:include href="outcomes/main.xml"/>
+    <xi:include href="./readiness.xml"/>
+	-->
+	
+	<introduction>
+        <p>
+            Some stuff will go here
+        </p>
+	</introduction>
+    <xi:include href="./131.xml"/>   
+	<xi:include href="./132.xml"/>
+    <xi:include href="./133.xml"/>
+	<xi:include href="./134.xml"/>
+
+</chapter>

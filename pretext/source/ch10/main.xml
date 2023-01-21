@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<chapter xml:id="ch10" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Parametric Equations and Polar Coordinates</title>
+<!--    <xi:include href="outcomes/main.xml"/>
+    <xi:include href="./readiness.xml"/>
+	-->
+	
+	<introduction>
+        <p>
+            Some stuff will go here
+        </p>
+	</introduction>
+    <xi:include href="./101.xml"/>   
+	<xi:include href="./102.xml"/>
+    <xi:include href="./103.xml"/>
+	<xi:include href="./104.xml"/>
+    <xi:include href="./105.xml"/>
+    <xi:include href="./106.xml"/>
+
+</chapter>

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<chapter xml:id="ch11" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Sequences, Series, and Power Series</title>
+<!--    <xi:include href="outcomes/main.xml"/>
+    <xi:include href="./readiness.xml"/>
+	-->
+	
+	<introduction>
+        <p>
+            Some stuff will go here
+        </p>
+	</introduction>
+    <xi:include href="./111.xml"/>   
+	<xi:include href="./112.xml"/>
+    <xi:include href="./113.xml"/>
+	<xi:include href="./114.xml"/>
+    <xi:include href="./115.xml"/>
+    <xi:include href="./116.xml"/>
+    <xi:include href="./117.xml"/>   
+	<xi:include href="./118.xml"/>
+    <xi:include href="./119.xml"/>
+	<xi:include href="./1110.xml"/>
+    <xi:include href="./1111.xml"/>
+</chapter>

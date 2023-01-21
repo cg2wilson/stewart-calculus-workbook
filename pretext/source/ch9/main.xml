@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<chapter xml:id="ch9" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Differential Equations</title>
+<!--    <xi:include href="outcomes/main.xml"/>
+    <xi:include href="./readiness.xml"/>
+	-->
+	
+	<introduction>
+		The material in this chapter isn't covered at OU; but can serve as a nice introduction to material in Math 3333, Ordinary Differential Equations
+	</introduction>
+    <xi:include href="./91.xml"/>   
+	<xi:include href="./92.xml"/>
+    <xi:include href="./93.xml"/>
+	<xi:include href="./94.xml"/>
+    <xi:include href="./95.xml"/>
+    <xi:include href="./96.xml"/>
+
+</chapter>

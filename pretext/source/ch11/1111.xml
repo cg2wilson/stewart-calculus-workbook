@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-1111">
+	<title>Applications of Taylor Polynomials</title>
+	<objectives>
+		<ul>
+			<li>
+				To come
+			</li>
+		</ul>
+	</objectives>
+
+	<subsection xml:id="section-1111-beforeclass">
+		<title>Before Class</title>
+		<figure>
+			<caption>Pre-Class Video 1</caption>
+				url goes here
+		</figure>
+		<figure>
+			<caption>Pre-Class Video 2</caption>
+			url goes here
+		</figure>
+
+		<subsubsection xml:id="section-1111-approximating">
+			<title>Approximating Functions by Polynomials</title>
+
+		</subsubsection>
+
+	</subsection>
+
+	<subsection xml:id="section-1111-preclass">
+		<title>Pre-Class Activities</title>
+
+	</subsection>
+
+	<subsection xml:id="section-1111-inclass">
+		<title>In Class</title>
+
+		<subsubsection xml:id="section-1111-examples-applications">
+			<title>Examples and Applications</title>
+
+		</subsubsection>
+
+	</subsection>
+
+	<subsection xml:id="section-1111-afterclass">
+		<title>After Class Activities</title>
+
+	</subsection>
+</section>

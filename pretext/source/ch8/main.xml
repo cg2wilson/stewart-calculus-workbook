@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<chapter xml:id="ch8" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Further Applications of Integration</title>
+<!--    <xi:include href="outcomes/main.xml"/>
+    <xi:include href="./readiness.xml"/>
+	-->
+	
+	<introduction>
+		The material in this chapter isn't really covered at OU; Section 8.1 is optional material for Math 2423 and Math 2924, but is useful for material discussed in Math 2433/2443 and Math 2934.
+	</introduction>
+    <xi:include href="./81.xml"/>   
+	<xi:include href="./82.xml"/>
+    <xi:include href="./83.xml"/>
+	<xi:include href="./84.xml"/>
+	<xi:include href="./85.xml"/>
+
+</chapter>

@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-131">
+	<title>Vector Functions and Space Curves</title>
+	<objectives>
+		<ul>
+			<li>
+				To come
+			</li>
+		</ul>
+	</objectives>
+
+	<subsection xml:id="section-131-beforeclass">
+		<title>Before Class</title>
+		<figure>
+			<caption>Pre-Class Video 1</caption>
+				url goes here
+		</figure>
+		<figure>
+			<caption>Pre-Class Video 2</caption>
+			url goes here
+		</figure>
+
+		<subsubsection xml:id="section-131-vector-valued-functions">
+			<title>Vector-Valued Functions</title>
+
+		</subsubsection>
+
+	</subsection>
+
+	<subsection xml:id="section-131-preclass">
+		<title>Pre-Class Activities</title>
+
+	</subsection>
+
+	<subsection xml:id="section-131-inclass">
+		<title>In Class</title>
+
+		<subsubsection xml:id="section-131-limits-continuity">
+			<title>Limits &amp; Continuity</title>
+
+		</subsubsection>
+
+        <subsubsection xml:id="section-131-curves">
+			<title>Space Curves</title>
+
+		</subsubsection>
+
+	</subsection>
+
+	<subsection xml:id="section-131-afterclass">
+		<title>After Class Activities</title>
+
+	</subsection>
+</section>

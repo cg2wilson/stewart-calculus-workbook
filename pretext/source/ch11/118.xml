@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="section-118">
+	<title>Power Series</title>
+	<objectives>
+		<ul>
+			<li>
+				To come
+			</li>
+		</ul>
+	</objectives>
+
+	<subsection xml:id="section-118-beforeclass">
+		<title>Before Class</title>
+		<figure>
+			<caption>Pre-Class Video 1</caption>
+				url goes here
+		</figure>
+		<figure>
+			<caption>Pre-Class Video 2</caption>
+			url goes here
+		</figure>
+
+		<subsubsection xml:id="section-118-powerseries">
+			<title>Power Series</title>
+
+		</subsubsection>
+
+	</subsection>
+
+	<subsection xml:id="section-118-preclass">
+		<title>Pre-Class Activities</title>
+
+	</subsection>
+
+	<subsection xml:id="section-118-inclass">
+		<title>In Class</title>
+
+		<subsubsection xml:id="section-118-radiusinterval-convergence">
+			<title>Radius &amp; Interval of Convergence</title>
+
+		</subsubsection>
+
+	</subsection>
+
+	<subsection xml:id="section-118-afterclass">
+		<title>After Class Activities</title>
+
+	</subsection>
+</section>
