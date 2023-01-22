@@ -9836,6 +9836,1932 @@ var ptx_lunr_docs = [
   "number": "7.8.27",
   "title": "",
   "body": "  Determine if the following converge or diverge:                             diverges         diverges   diverges   diverges     "
+},
+{
+  "id": "section-81",
+  "level": "1",
+  "url": "section-81.html",
+  "type": "Section",
+  "number": "8.1",
+  "title": "Arc Length",
+  "body": " Arc Length    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   The Formula     Pre-Class Activities    In Class   Some Examples     After Class Activities   "
+},
+{
+  "id": "objectives-41",
+  "level": "2",
+  "url": "section-81.html#objectives-41",
+  "type": "Objectives",
+  "number": "8.1",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-68",
+  "level": "2",
+  "url": "section-81.html#figure-68",
+  "type": "Figure",
+  "number": "68",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-69",
+  "level": "2",
+  "url": "section-81.html#figure-69",
+  "type": "Figure",
+  "number": "69",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-82",
+  "level": "1",
+  "url": "section-82.html",
+  "type": "Section",
+  "number": "8.2",
+  "title": "(X) Area of a Surface of Revolution",
+  "body": " (X) Area of a Surface of Revolution  We don't cover this section, but feel free to read it!  "
+},
+{
+  "id": "section-83",
+  "level": "1",
+  "url": "section-83.html",
+  "type": "Section",
+  "number": "8.3",
+  "title": "(X) Applications to Physics and Engineering",
+  "body": " (X) Applications to Physics and Engineering  We don't cover this section, but feel free to read it!  "
+},
+{
+  "id": "section-84",
+  "level": "1",
+  "url": "section-84.html",
+  "type": "Section",
+  "number": "8.4",
+  "title": "(X) Applications to Economics and Biology",
+  "body": " (X) Applications to Economics and Biology  We don't cover this section, but feel free to read it!  "
+},
+{
+  "id": "section-85",
+  "level": "1",
+  "url": "section-85.html",
+  "type": "Section",
+  "number": "8.5",
+  "title": "(X) Probability",
+  "body": " (X) Probability  We don't cover this section, but feel free to read it!  "
+},
+{
+  "id": "section-91",
+  "level": "1",
+  "url": "section-91.html",
+  "type": "Section",
+  "number": "9.1",
+  "title": "(X) Modeling with Differential Equations",
+  "body": " (X) Modeling with Differential Equations  We don't cover this section, but feel free to read it!  "
+},
+{
+  "id": "section-92",
+  "level": "1",
+  "url": "section-92.html",
+  "type": "Section",
+  "number": "9.2",
+  "title": "(X) Direction Fields and Euler's Method",
+  "body": " (X) Direction Fields and Euler's Method  We don't cover this section, but feel free to read it!  "
+},
+{
+  "id": "section-93",
+  "level": "1",
+  "url": "section-93.html",
+  "type": "Section",
+  "number": "9.3",
+  "title": "(X) Separable Equations",
+  "body": " (X) Separable Equations  We don't cover this section, but feel free to read it!  "
+},
+{
+  "id": "section-94",
+  "level": "1",
+  "url": "section-94.html",
+  "type": "Section",
+  "number": "9.4",
+  "title": "(X) Models for Population Growth",
+  "body": " (X) Models for Population Growth  We don't cover this section, but feel free to read it!  "
+},
+{
+  "id": "section-95",
+  "level": "1",
+  "url": "section-95.html",
+  "type": "Section",
+  "number": "9.5",
+  "title": "(X) Linear Equations",
+  "body": " (X) Linear Equations  We don't cover this section, but feel free to read it!  "
+},
+{
+  "id": "section-96",
+  "level": "1",
+  "url": "section-96.html",
+  "type": "Section",
+  "number": "9.6",
+  "title": "(X) Predator-Prey Systems",
+  "body": " (X) Predator-Prey Systems  We don't cover this section, but feel free to read it!  "
+},
+{
+  "id": "section-101",
+  "level": "1",
+  "url": "section-101.html",
+  "type": "Section",
+  "number": "10.1",
+  "title": "Curves Defined by Parametric Equations",
+  "body": " Curves Defined by Parametric Equations    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Parametric Equations     Pre-Class Activities    In Class   Examples     After Class Activities   "
+},
+{
+  "id": "objectives-42",
+  "level": "2",
+  "url": "section-101.html#objectives-42",
+  "type": "Objectives",
+  "number": "10.1",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-70",
+  "level": "2",
+  "url": "section-101.html#figure-70",
+  "type": "Figure",
+  "number": "70",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-71",
+  "level": "2",
+  "url": "section-101.html#figure-71",
+  "type": "Figure",
+  "number": "71",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-102",
+  "level": "1",
+  "url": "section-102.html",
+  "type": "Section",
+  "number": "10.2",
+  "title": "Calculus with Parametric Curves",
+  "body": " Calculus with Parametric Curves    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Tangents     Pre-Class Activities    In Class   Areas    Arc Length     After Class Activities   "
+},
+{
+  "id": "objectives-43",
+  "level": "2",
+  "url": "section-102.html#objectives-43",
+  "type": "Objectives",
+  "number": "10.2",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-72",
+  "level": "2",
+  "url": "section-102.html#figure-72",
+  "type": "Figure",
+  "number": "72",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-73",
+  "level": "2",
+  "url": "section-102.html#figure-73",
+  "type": "Figure",
+  "number": "73",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-103",
+  "level": "1",
+  "url": "section-103.html",
+  "type": "Section",
+  "number": "10.3",
+  "title": "Polar Coordinates",
+  "body": " Polar Coordinates    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   The Polar Coordinate System     Pre-Class Activities    In Class   Polar Curves     After Class Activities   "
+},
+{
+  "id": "objectives-44",
+  "level": "2",
+  "url": "section-103.html#objectives-44",
+  "type": "Objectives",
+  "number": "10.3",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-74",
+  "level": "2",
+  "url": "section-103.html#figure-74",
+  "type": "Figure",
+  "number": "74",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-75",
+  "level": "2",
+  "url": "section-103.html#figure-75",
+  "type": "Figure",
+  "number": "75",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-104",
+  "level": "1",
+  "url": "section-104.html",
+  "type": "Section",
+  "number": "10.4",
+  "title": "Calculus in Polar Coordinates",
+  "body": " Calculus in Polar Coordinates    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Area     Pre-Class Activities    In Class   Arc Length    Tangents     After Class Activities   "
+},
+{
+  "id": "objectives-45",
+  "level": "2",
+  "url": "section-104.html#objectives-45",
+  "type": "Objectives",
+  "number": "10.4",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-76",
+  "level": "2",
+  "url": "section-104.html#figure-76",
+  "type": "Figure",
+  "number": "76",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-77",
+  "level": "2",
+  "url": "section-104.html#figure-77",
+  "type": "Figure",
+  "number": "77",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-105",
+  "level": "1",
+  "url": "section-105.html",
+  "type": "Section",
+  "number": "10.5",
+  "title": "(X) Conic Sections",
+  "body": " (X) Conic Sections  We don't cover this section, but feel free to read it!  "
+},
+{
+  "id": "section-106",
+  "level": "1",
+  "url": "section-106.html",
+  "type": "Section",
+  "number": "10.6",
+  "title": "(X) Conic Sections in Polar Coordinates",
+  "body": " (X) Conic Sections in Polar Coordinates  We don't cover this section, but feel free to read it!  "
+},
+{
+  "id": "section-111",
+  "level": "1",
+  "url": "section-111.html",
+  "type": "Section",
+  "number": "11.1",
+  "title": "Sequences",
+  "body": " Sequences    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Sequences     Pre-Class Activities    In Class   Working with Sequences     After Class Activities   "
+},
+{
+  "id": "objectives-46",
+  "level": "2",
+  "url": "section-111.html#objectives-46",
+  "type": "Objectives",
+  "number": "11.1",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-78",
+  "level": "2",
+  "url": "section-111.html#figure-78",
+  "type": "Figure",
+  "number": "78",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-79",
+  "level": "2",
+  "url": "section-111.html#figure-79",
+  "type": "Figure",
+  "number": "79",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-112",
+  "level": "1",
+  "url": "section-112.html",
+  "type": "Section",
+  "number": "11.2",
+  "title": "Series",
+  "body": " Series    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Finite & Infinite Series    Geometric Series     Pre-Class Activities    In Class   Some Examples    Working with Infinite Series     After Class Activities   "
+},
+{
+  "id": "objectives-47",
+  "level": "2",
+  "url": "section-112.html#objectives-47",
+  "type": "Objectives",
+  "number": "11.2",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-80",
+  "level": "2",
+  "url": "section-112.html#figure-80",
+  "type": "Figure",
+  "number": "80",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-81",
+  "level": "2",
+  "url": "section-112.html#figure-81",
+  "type": "Figure",
+  "number": "81",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-113",
+  "level": "1",
+  "url": "section-113.html",
+  "type": "Section",
+  "number": "11.3",
+  "title": "The Integral Test and Estimates of Sums",
+  "body": " The Integral Test and Estimates of Sums    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   The Integral Test     Pre-Class Activities    In Class   Some Examples    Estimating the Sum of a Series     After Class Activities   "
+},
+{
+  "id": "objectives-48",
+  "level": "2",
+  "url": "section-113.html#objectives-48",
+  "type": "Objectives",
+  "number": "11.3",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-82",
+  "level": "2",
+  "url": "section-113.html#figure-82",
+  "type": "Figure",
+  "number": "82",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-83",
+  "level": "2",
+  "url": "section-113.html#figure-83",
+  "type": "Figure",
+  "number": "83",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-114",
+  "level": "1",
+  "url": "section-114.html",
+  "type": "Section",
+  "number": "11.4",
+  "title": "The Comparison Tests",
+  "body": " The Comparison Tests    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   The Direct Comparison Test     Pre-Class Activities    In Class   Some Examples    The Limit Comparison Test     After Class Activities   "
+},
+{
+  "id": "objectives-49",
+  "level": "2",
+  "url": "section-114.html#objectives-49",
+  "type": "Objectives",
+  "number": "11.4",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-84",
+  "level": "2",
+  "url": "section-114.html#figure-84",
+  "type": "Figure",
+  "number": "84",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-85",
+  "level": "2",
+  "url": "section-114.html#figure-85",
+  "type": "Figure",
+  "number": "85",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-115",
+  "level": "1",
+  "url": "section-115.html",
+  "type": "Section",
+  "number": "11.5",
+  "title": "Alternating Series and Absolute Convergence",
+  "body": " Alternating Series and Absolute Convergence    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   The Alternating Series Test     Pre-Class Activities    In Class   Some Examples    Absolute & Conditional Convergence     After Class Activities   "
+},
+{
+  "id": "objectives-50",
+  "level": "2",
+  "url": "section-115.html#objectives-50",
+  "type": "Objectives",
+  "number": "11.5",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-86",
+  "level": "2",
+  "url": "section-115.html#figure-86",
+  "type": "Figure",
+  "number": "86",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-87",
+  "level": "2",
+  "url": "section-115.html#figure-87",
+  "type": "Figure",
+  "number": "87",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-116",
+  "level": "1",
+  "url": "section-116.html",
+  "type": "Section",
+  "number": "11.6",
+  "title": "The Ratio and Root Tests",
+  "body": " The Ratio and Root Tests    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   The Ratio Test     Pre-Class Activities    In Class   Some Examples    Absolute & Conditional Convergence     After Class Activities   "
+},
+{
+  "id": "objectives-51",
+  "level": "2",
+  "url": "section-116.html#objectives-51",
+  "type": "Objectives",
+  "number": "11.6",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-88",
+  "level": "2",
+  "url": "section-116.html#figure-88",
+  "type": "Figure",
+  "number": "88",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-89",
+  "level": "2",
+  "url": "section-116.html#figure-89",
+  "type": "Figure",
+  "number": "89",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-117",
+  "level": "1",
+  "url": "section-117.html",
+  "type": "Section",
+  "number": "11.7",
+  "title": "Strategy for Testing Series",
+  "body": " Strategy for Testing Series    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Convergence Tests    Strategies     Pre-Class Activities    In Class   Some Examples     After Class Activities   "
+},
+{
+  "id": "objectives-52",
+  "level": "2",
+  "url": "section-117.html#objectives-52",
+  "type": "Objectives",
+  "number": "11.7",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-90",
+  "level": "2",
+  "url": "section-117.html#figure-90",
+  "type": "Figure",
+  "number": "90",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-91",
+  "level": "2",
+  "url": "section-117.html#figure-91",
+  "type": "Figure",
+  "number": "91",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-118",
+  "level": "1",
+  "url": "section-118.html",
+  "type": "Section",
+  "number": "11.8",
+  "title": "Power Series",
+  "body": " Power Series    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Power Series     Pre-Class Activities    In Class   Radius & Interval of Convergence     After Class Activities   "
+},
+{
+  "id": "objectives-53",
+  "level": "2",
+  "url": "section-118.html#objectives-53",
+  "type": "Objectives",
+  "number": "11.8",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-92",
+  "level": "2",
+  "url": "section-118.html#figure-92",
+  "type": "Figure",
+  "number": "92",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-93",
+  "level": "2",
+  "url": "section-118.html#figure-93",
+  "type": "Figure",
+  "number": "93",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-119",
+  "level": "1",
+  "url": "section-119.html",
+  "type": "Section",
+  "number": "11.9",
+  "title": "Representations of Functions as Power Series",
+  "body": " Representations of Functions as Power Series    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Functions as Power Series     Pre-Class Activities    In Class   Some Examples    Calculus & Power Series     After Class Activities   "
+},
+{
+  "id": "objectives-54",
+  "level": "2",
+  "url": "section-119.html#objectives-54",
+  "type": "Objectives",
+  "number": "11.9",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-94",
+  "level": "2",
+  "url": "section-119.html#figure-94",
+  "type": "Figure",
+  "number": "94",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-95",
+  "level": "2",
+  "url": "section-119.html#figure-95",
+  "type": "Figure",
+  "number": "95",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-1110",
+  "level": "1",
+  "url": "section-1110.html",
+  "type": "Section",
+  "number": "11.10",
+  "title": "Taylor and Maclaurin Series",
+  "body": " Taylor and Maclaurin Series    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   The Idea     Pre-Class Activities    In Class   Taylor Polynomials    Useful Maclaurin Series    Multiplication\/Division of Power Series     After Class Activities   "
+},
+{
+  "id": "objectives-55",
+  "level": "2",
+  "url": "section-1110.html#objectives-55",
+  "type": "Objectives",
+  "number": "11.10",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-96",
+  "level": "2",
+  "url": "section-1110.html#figure-96",
+  "type": "Figure",
+  "number": "96",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-97",
+  "level": "2",
+  "url": "section-1110.html#figure-97",
+  "type": "Figure",
+  "number": "97",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-1111",
+  "level": "1",
+  "url": "section-1111.html",
+  "type": "Section",
+  "number": "11.11",
+  "title": "Applications of Taylor Polynomials",
+  "body": " Applications of Taylor Polynomials    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Approximating Functions by Polynomials     Pre-Class Activities    In Class   Examples and Applications     After Class Activities   "
+},
+{
+  "id": "objectives-56",
+  "level": "2",
+  "url": "section-1111.html#objectives-56",
+  "type": "Objectives",
+  "number": "11.11",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-98",
+  "level": "2",
+  "url": "section-1111.html#figure-98",
+  "type": "Figure",
+  "number": "98",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-99",
+  "level": "2",
+  "url": "section-1111.html#figure-99",
+  "type": "Figure",
+  "number": "99",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-121",
+  "level": "1",
+  "url": "section-121.html",
+  "type": "Section",
+  "number": "12.1",
+  "title": "Three-Dimensional Coordinate Systems",
+  "body": " Three-Dimensional Coordinate Systems    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   3D Space    Surfaces     Pre-Class Activities    In Class   Distances and Spheres     After Class Activities   "
+},
+{
+  "id": "objectives-57",
+  "level": "2",
+  "url": "section-121.html#objectives-57",
+  "type": "Objectives",
+  "number": "12.1",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-100",
+  "level": "2",
+  "url": "section-121.html#figure-100",
+  "type": "Figure",
+  "number": "100",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-101",
+  "level": "2",
+  "url": "section-121.html#figure-101",
+  "type": "Figure",
+  "number": "101",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-122",
+  "level": "1",
+  "url": "section-122.html",
+  "type": "Section",
+  "number": "12.2",
+  "title": "Vectors",
+  "body": " Vectors    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Vectors & Operations    Components     Pre-Class Activities    In Class   Properties of Vectors    Unit Vectors    Applications of Vectors     After Class Activities   "
+},
+{
+  "id": "objectives-58",
+  "level": "2",
+  "url": "section-122.html#objectives-58",
+  "type": "Objectives",
+  "number": "12.2",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-102",
+  "level": "2",
+  "url": "section-122.html#figure-102",
+  "type": "Figure",
+  "number": "102",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-103",
+  "level": "2",
+  "url": "section-122.html#figure-103",
+  "type": "Figure",
+  "number": "103",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-123",
+  "level": "1",
+  "url": "section-123.html",
+  "type": "Section",
+  "number": "12.3",
+  "title": "The Dot Product",
+  "body": " The Dot Product    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   The Dot Product    Properties of the Dot Product     Pre-Class Activities    In Class   Geometric Definition of the Dot Product    Direction Angles & Direction Cosines    Projections     After Class Activities   "
+},
+{
+  "id": "objectives-59",
+  "level": "2",
+  "url": "section-123.html#objectives-59",
+  "type": "Objectives",
+  "number": "12.3",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-104",
+  "level": "2",
+  "url": "section-123.html#figure-104",
+  "type": "Figure",
+  "number": "104",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-105",
+  "level": "2",
+  "url": "section-123.html#figure-105",
+  "type": "Figure",
+  "number": "105",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-124",
+  "level": "1",
+  "url": "section-124.html",
+  "type": "Section",
+  "number": "12.4",
+  "title": "The Cross Product",
+  "body": " The Cross Product    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   The Cross Product     Pre-Class Activities    In Class   Some Examples    Product of the Cross Product    Applications of the Cross Product     After Class Activities   "
+},
+{
+  "id": "objectives-60",
+  "level": "2",
+  "url": "section-124.html#objectives-60",
+  "type": "Objectives",
+  "number": "12.4",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-106",
+  "level": "2",
+  "url": "section-124.html#figure-106",
+  "type": "Figure",
+  "number": "106",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-107",
+  "level": "2",
+  "url": "section-124.html#figure-107",
+  "type": "Figure",
+  "number": "107",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-125",
+  "level": "1",
+  "url": "section-125.html",
+  "type": "Section",
+  "number": "12.5",
+  "title": "Equations of Lines and Planes",
+  "body": " Equations of Lines and Planes    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Lines     Pre-Class Activities    In Class   Planes    Distances     After Class Activities   "
+},
+{
+  "id": "objectives-61",
+  "level": "2",
+  "url": "section-125.html#objectives-61",
+  "type": "Objectives",
+  "number": "12.5",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-108",
+  "level": "2",
+  "url": "section-125.html#figure-108",
+  "type": "Figure",
+  "number": "108",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-109",
+  "level": "2",
+  "url": "section-125.html#figure-109",
+  "type": "Figure",
+  "number": "109",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-126",
+  "level": "1",
+  "url": "section-126.html",
+  "type": "Section",
+  "number": "12.6",
+  "title": "(X) Cylinders and Quadric Surfaces",
+  "body": " (X) Cylinders and Quadric Surfaces  We don't cover this section, but feel free to read it!  "
+},
+{
+  "id": "section-131",
+  "level": "1",
+  "url": "section-131.html",
+  "type": "Section",
+  "number": "13.1",
+  "title": "Vector Functions and Space Curves",
+  "body": " Vector Functions and Space Curves    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Vector-Valued Functions     Pre-Class Activities    In Class   Limits & Continuity    Space Curves     After Class Activities   "
+},
+{
+  "id": "objectives-62",
+  "level": "2",
+  "url": "section-131.html#objectives-62",
+  "type": "Objectives",
+  "number": "13.1",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-110",
+  "level": "2",
+  "url": "section-131.html#figure-110",
+  "type": "Figure",
+  "number": "110",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-111",
+  "level": "2",
+  "url": "section-131.html#figure-111",
+  "type": "Figure",
+  "number": "111",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-132",
+  "level": "1",
+  "url": "section-132.html",
+  "type": "Section",
+  "number": "13.2",
+  "title": "Derivatives and Integrals of Vector Functions",
+  "body": " Derivatives and Integrals of Vector Functions    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Derivatives    Integrals     Pre-Class Activities    In Class   Examples     After Class Activities   "
+},
+{
+  "id": "objectives-63",
+  "level": "2",
+  "url": "section-132.html#objectives-63",
+  "type": "Objectives",
+  "number": "13.2",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-112",
+  "level": "2",
+  "url": "section-132.html#figure-112",
+  "type": "Figure",
+  "number": "112",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-113",
+  "level": "2",
+  "url": "section-132.html#figure-113",
+  "type": "Figure",
+  "number": "113",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-133",
+  "level": "1",
+  "url": "section-133.html",
+  "type": "Section",
+  "number": "13.3",
+  "title": "Arc Length and Curvature",
+  "body": " Arc Length and Curvature    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Arc Length     Pre-Class Activities    In Class   Arc Length Function    Curvature    Normal and Binormal Vectors    Torsion     After Class Activities   "
+},
+{
+  "id": "objectives-64",
+  "level": "2",
+  "url": "section-133.html#objectives-64",
+  "type": "Objectives",
+  "number": "13.3",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-114",
+  "level": "2",
+  "url": "section-133.html#figure-114",
+  "type": "Figure",
+  "number": "114",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-115",
+  "level": "2",
+  "url": "section-133.html#figure-115",
+  "type": "Figure",
+  "number": "115",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-134",
+  "level": "1",
+  "url": "section-134.html",
+  "type": "Section",
+  "number": "13.4",
+  "title": "Motion in Space: Velocity and Acceleration",
+  "body": " Motion in Space: Velocity and Acceleration    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Velocity, Speed, Acceleration     Pre-Class Activities    In Class   Some Examples    Tangential and Normal Components of Acceleration     After Class Activities   "
+},
+{
+  "id": "objectives-65",
+  "level": "2",
+  "url": "section-134.html#objectives-65",
+  "type": "Objectives",
+  "number": "13.4",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-116",
+  "level": "2",
+  "url": "section-134.html#figure-116",
+  "type": "Figure",
+  "number": "116",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-117",
+  "level": "2",
+  "url": "section-134.html#figure-117",
+  "type": "Figure",
+  "number": "117",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-141",
+  "level": "1",
+  "url": "section-141.html",
+  "type": "Section",
+  "number": "14.1",
+  "title": "Functions of Several Variables",
+  "body": " Functions of Several Variables    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Functions of Two Variables    Functions of Multiple Variables     Pre-Class Activities    In Class   Graphs    Level Curves and Contour Maps     After Class Activities   "
+},
+{
+  "id": "objectives-66",
+  "level": "2",
+  "url": "section-141.html#objectives-66",
+  "type": "Objectives",
+  "number": "14.1",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-118",
+  "level": "2",
+  "url": "section-141.html#figure-118",
+  "type": "Figure",
+  "number": "118",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-119",
+  "level": "2",
+  "url": "section-141.html#figure-119",
+  "type": "Figure",
+  "number": "119",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-142",
+  "level": "1",
+  "url": "section-142.html",
+  "type": "Section",
+  "number": "14.2",
+  "title": "Limits and Continuity",
+  "body": " Limits and Continuity    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Limits of Functions of Two Variables    Limits of Functions of Multiple Variables     Pre-Class Activities    In Class   Some Examples    Properties of Limits    Continuity     After Class Activities   "
+},
+{
+  "id": "objectives-67",
+  "level": "2",
+  "url": "section-142.html#objectives-67",
+  "type": "Objectives",
+  "number": "14.2",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-120",
+  "level": "2",
+  "url": "section-142.html#figure-120",
+  "type": "Figure",
+  "number": "120",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-121",
+  "level": "2",
+  "url": "section-142.html#figure-121",
+  "type": "Figure",
+  "number": "121",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-143",
+  "level": "1",
+  "url": "section-143.html",
+  "type": "Section",
+  "number": "14.3",
+  "title": "Partial Derivatives",
+  "body": " Partial Derivatives    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Partial Derivatives of Functions of Two Variables     Pre-Class Activities    In Class   Some Examples    Interpretations of Partial Derivatives    Higher-Order Partial Derivatives     After Class Activities   "
+},
+{
+  "id": "objectives-68",
+  "level": "2",
+  "url": "section-143.html#objectives-68",
+  "type": "Objectives",
+  "number": "14.3",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-122",
+  "level": "2",
+  "url": "section-143.html#figure-122",
+  "type": "Figure",
+  "number": "122",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-123",
+  "level": "2",
+  "url": "section-143.html#figure-123",
+  "type": "Figure",
+  "number": "123",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-144",
+  "level": "1",
+  "url": "section-144.html",
+  "type": "Section",
+  "number": "14.4",
+  "title": "Tangent Planes and Linear Approximations",
+  "body": " Tangent Planes and Linear Approximations    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Tangent Planes     Pre-Class Activities    In Class   Linear Approximations     After Class Activities   "
+},
+{
+  "id": "objectives-69",
+  "level": "2",
+  "url": "section-144.html#objectives-69",
+  "type": "Objectives",
+  "number": "14.4",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-124",
+  "level": "2",
+  "url": "section-144.html#figure-124",
+  "type": "Figure",
+  "number": "124",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-125",
+  "level": "2",
+  "url": "section-144.html#figure-125",
+  "type": "Figure",
+  "number": "125",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-145",
+  "level": "1",
+  "url": "section-145.html",
+  "type": "Section",
+  "number": "14.5",
+  "title": "The Chain Rule",
+  "body": " The Chain Rule    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Review: The Chain Rule    The Multivariate Chain Rule     Pre-Class Activities    In Class   Some Examples    The Multivariate Chain Rule: General Version     After Class Activities   "
+},
+{
+  "id": "objectives-70",
+  "level": "2",
+  "url": "section-145.html#objectives-70",
+  "type": "Objectives",
+  "number": "14.5",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-126",
+  "level": "2",
+  "url": "section-145.html#figure-126",
+  "type": "Figure",
+  "number": "126",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-127",
+  "level": "2",
+  "url": "section-145.html#figure-127",
+  "type": "Figure",
+  "number": "127",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-146",
+  "level": "1",
+  "url": "section-146.html",
+  "type": "Section",
+  "number": "14.6",
+  "title": "Directional Derivatives and the Gradient Vector",
+  "body": " Directional Derivatives and the Gradient Vector    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Directional Derivatives     Pre-Class Activities    In Class   The Gradient Vector     After Class Activities   "
+},
+{
+  "id": "objectives-71",
+  "level": "2",
+  "url": "section-146.html#objectives-71",
+  "type": "Objectives",
+  "number": "14.6",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-128",
+  "level": "2",
+  "url": "section-146.html#figure-128",
+  "type": "Figure",
+  "number": "128",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-129",
+  "level": "2",
+  "url": "section-146.html#figure-129",
+  "type": "Figure",
+  "number": "129",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-147",
+  "level": "1",
+  "url": "section-147.html",
+  "type": "Section",
+  "number": "14.7",
+  "title": "Maximum and Minimum Values",
+  "body": " Maximum and Minimum Values    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Review: Maximum\/Minimum Values    Local Maximum\/Minimum Values     Pre-Class Activities    In Class   Some Examples    Absolute Maximum\/Minimum Values     After Class Activities   "
+},
+{
+  "id": "objectives-72",
+  "level": "2",
+  "url": "section-147.html#objectives-72",
+  "type": "Objectives",
+  "number": "14.7",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-130",
+  "level": "2",
+  "url": "section-147.html#figure-130",
+  "type": "Figure",
+  "number": "130",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-131",
+  "level": "2",
+  "url": "section-147.html#figure-131",
+  "type": "Figure",
+  "number": "131",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-148",
+  "level": "1",
+  "url": "section-148.html",
+  "type": "Section",
+  "number": "14.8",
+  "title": "Lagrange Multipliers",
+  "body": " Lagrange Multipliers    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   The Idea    One-Constraint Lagrange Multipliers     Pre-Class Activities    In Class   Some Examples    Two-Constraint Lagrange Multipliers     After Class Activities   "
+},
+{
+  "id": "objectives-73",
+  "level": "2",
+  "url": "section-148.html#objectives-73",
+  "type": "Objectives",
+  "number": "14.8",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-132",
+  "level": "2",
+  "url": "section-148.html#figure-132",
+  "type": "Figure",
+  "number": "132",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-133",
+  "level": "2",
+  "url": "section-148.html#figure-133",
+  "type": "Figure",
+  "number": "133",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-151",
+  "level": "1",
+  "url": "section-151.html",
+  "type": "Section",
+  "number": "15.1",
+  "title": "Double Integrals over Rectangles",
+  "body": " Double Integrals over Rectangles    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Review: The Definite Integral    The Double Integral     Pre-Class Activities    In Class   Some Examples    Iterated Integrals     After Class Activities   "
+},
+{
+  "id": "objectives-74",
+  "level": "2",
+  "url": "section-151.html#objectives-74",
+  "type": "Objectives",
+  "number": "15.1",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-134",
+  "level": "2",
+  "url": "section-151.html#figure-134",
+  "type": "Figure",
+  "number": "134",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-135",
+  "level": "2",
+  "url": "section-151.html#figure-135",
+  "type": "Figure",
+  "number": "135",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-152",
+  "level": "1",
+  "url": "section-152.html",
+  "type": "Section",
+  "number": "15.2",
+  "title": "Double Integrals over General Regions",
+  "body": " Double Integrals over General Regions    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   General Regions    Properties of Double Integrals     Pre-Class Activities    In Class   Some Examples    Changing the Order of Integration     After Class Activities   "
+},
+{
+  "id": "objectives-75",
+  "level": "2",
+  "url": "section-152.html#objectives-75",
+  "type": "Objectives",
+  "number": "15.2",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-136",
+  "level": "2",
+  "url": "section-152.html#figure-136",
+  "type": "Figure",
+  "number": "136",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-137",
+  "level": "2",
+  "url": "section-152.html#figure-137",
+  "type": "Figure",
+  "number": "137",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-153",
+  "level": "1",
+  "url": "section-153.html",
+  "type": "Section",
+  "number": "15.3",
+  "title": "Double Integrals in Polar Coordinates",
+  "body": " Double Integrals in Polar Coordinates    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Review: Polar Coordinates    Double Integrals in Polar Coordinates     Pre-Class Activities    In Class   Some Examples     After Class Activities   "
+},
+{
+  "id": "objectives-76",
+  "level": "2",
+  "url": "section-153.html#objectives-76",
+  "type": "Objectives",
+  "number": "15.3",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-138",
+  "level": "2",
+  "url": "section-153.html#figure-138",
+  "type": "Figure",
+  "number": "138",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-139",
+  "level": "2",
+  "url": "section-153.html#figure-139",
+  "type": "Figure",
+  "number": "139",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-154",
+  "level": "1",
+  "url": "section-154.html",
+  "type": "Section",
+  "number": "15.4",
+  "title": "(X) Applications of Double Integrals",
+  "body": " (X) Applications of Double Integrals  We don't cover this section, but feel free to read it!  "
+},
+{
+  "id": "section-155",
+  "level": "1",
+  "url": "section-155.html",
+  "type": "Section",
+  "number": "15.5",
+  "title": "Surface Area",
+  "body": " Surface Area    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Review: Surface Area    Surface Area     Pre-Class Activities    In Class   Some Examples     After Class Activities   "
+},
+{
+  "id": "objectives-77",
+  "level": "2",
+  "url": "section-155.html#objectives-77",
+  "type": "Objectives",
+  "number": "15.5",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-140",
+  "level": "2",
+  "url": "section-155.html#figure-140",
+  "type": "Figure",
+  "number": "140",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-141",
+  "level": "2",
+  "url": "section-155.html#figure-141",
+  "type": "Figure",
+  "number": "141",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-156",
+  "level": "1",
+  "url": "section-156.html",
+  "type": "Section",
+  "number": "15.6",
+  "title": "Triple Integrals",
+  "body": " Triple Integrals    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Triple Integrals     Pre-Class Activities    In Class   Some Examples    Triple Integrals over General Regions    Changing the Order of Integration    Applications of Triple Integrals     After Class Activities   "
+},
+{
+  "id": "objectives-78",
+  "level": "2",
+  "url": "section-156.html#objectives-78",
+  "type": "Objectives",
+  "number": "15.6",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-142",
+  "level": "2",
+  "url": "section-156.html#figure-142",
+  "type": "Figure",
+  "number": "142",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-143",
+  "level": "2",
+  "url": "section-156.html#figure-143",
+  "type": "Figure",
+  "number": "143",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-157",
+  "level": "1",
+  "url": "section-157.html",
+  "type": "Section",
+  "number": "15.7",
+  "title": "Triple Integrals in Cylindrical Coordinates",
+  "body": " Triple Integrals in Cylindrical Coordinates    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Cylindrical Coordinates    Triple Integrals in Cylindrical Coordinates     Pre-Class Activities    In Class   Examples     After Class Activities   "
+},
+{
+  "id": "objectives-79",
+  "level": "2",
+  "url": "section-157.html#objectives-79",
+  "type": "Objectives",
+  "number": "15.7",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-144",
+  "level": "2",
+  "url": "section-157.html#figure-144",
+  "type": "Figure",
+  "number": "144",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-145",
+  "level": "2",
+  "url": "section-157.html#figure-145",
+  "type": "Figure",
+  "number": "145",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-158",
+  "level": "1",
+  "url": "section-158.html",
+  "type": "Section",
+  "number": "15.8",
+  "title": "Triple Integrals in Spherical Coordinates",
+  "body": " Triple Integrals in Spherical Coordinates    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Spherical Coordinates    Triple Integrals in Spherical Coordinates     Pre-Class Activities    In Class   Examples     After Class Activities   "
+},
+{
+  "id": "objectives-80",
+  "level": "2",
+  "url": "section-158.html#objectives-80",
+  "type": "Objectives",
+  "number": "15.8",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-146",
+  "level": "2",
+  "url": "section-158.html#figure-146",
+  "type": "Figure",
+  "number": "146",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-147",
+  "level": "2",
+  "url": "section-158.html#figure-147",
+  "type": "Figure",
+  "number": "147",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-159",
+  "level": "1",
+  "url": "section-159.html",
+  "type": "Section",
+  "number": "15.9",
+  "title": "Change of Variables in Multiple Integrals",
+  "body": " Change of Variables in Multiple Integrals    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   The Idea    Change of Variables in Double Integrals     Pre-Class Activities    In Class   Some Examples    Change of Variables in Triple Integrals     After Class Activities   "
+},
+{
+  "id": "objectives-81",
+  "level": "2",
+  "url": "section-159.html#objectives-81",
+  "type": "Objectives",
+  "number": "15.9",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-148",
+  "level": "2",
+  "url": "section-159.html#figure-148",
+  "type": "Figure",
+  "number": "148",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-149",
+  "level": "2",
+  "url": "section-159.html#figure-149",
+  "type": "Figure",
+  "number": "149",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-161",
+  "level": "1",
+  "url": "section-161.html",
+  "type": "Section",
+  "number": "16.1",
+  "title": "Vector Fields",
+  "body": " Vector Fields    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Vector Fields in and     Pre-Class Activities    In Class   Some Examples    Gradient Fields     After Class Activities   "
+},
+{
+  "id": "objectives-82",
+  "level": "2",
+  "url": "section-161.html#objectives-82",
+  "type": "Objectives",
+  "number": "16.1",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-150",
+  "level": "2",
+  "url": "section-161.html#figure-150",
+  "type": "Figure",
+  "number": "150",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-151",
+  "level": "2",
+  "url": "section-161.html#figure-151",
+  "type": "Figure",
+  "number": "151",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-162",
+  "level": "1",
+  "url": "section-162.html",
+  "type": "Section",
+  "number": "16.2",
+  "title": "Line Integrals",
+  "body": " Line Integrals    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   The Idea    Line Integrals in the Plane     Pre-Class Activities    In Class   Some Examples    Line Integrals in Space    Line Integrals of Vector Fields     After Class Activities   "
+},
+{
+  "id": "objectives-83",
+  "level": "2",
+  "url": "section-162.html#objectives-83",
+  "type": "Objectives",
+  "number": "16.2",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-152",
+  "level": "2",
+  "url": "section-162.html#figure-152",
+  "type": "Figure",
+  "number": "152",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-153",
+  "level": "2",
+  "url": "section-162.html#figure-153",
+  "type": "Figure",
+  "number": "153",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-163",
+  "level": "1",
+  "url": "section-163.html",
+  "type": "Section",
+  "number": "16.3",
+  "title": "The Fundamental Theorem for Line Integrals",
+  "body": " The Fundamental Theorem for Line Integrals    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   The Fundamental Theorem for Line Integrals     Pre-Class Activities    In Class   Some Examples    Conservative Vector Fields and Potential Functions     After Class Activities   "
+},
+{
+  "id": "objectives-84",
+  "level": "2",
+  "url": "section-163.html#objectives-84",
+  "type": "Objectives",
+  "number": "16.3",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-154",
+  "level": "2",
+  "url": "section-163.html#figure-154",
+  "type": "Figure",
+  "number": "154",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-155",
+  "level": "2",
+  "url": "section-163.html#figure-155",
+  "type": "Figure",
+  "number": "155",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-164",
+  "level": "1",
+  "url": "section-164.html",
+  "type": "Section",
+  "number": "16.4",
+  "title": "Green's Theorem",
+  "body": " Green's Theorem    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Green's Theorem     Pre-Class Activities    In Class   Examples     After Class Activities   "
+},
+{
+  "id": "objectives-85",
+  "level": "2",
+  "url": "section-164.html#objectives-85",
+  "type": "Objectives",
+  "number": "16.4",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-156",
+  "level": "2",
+  "url": "section-164.html#figure-156",
+  "type": "Figure",
+  "number": "156",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-157",
+  "level": "2",
+  "url": "section-164.html#figure-157",
+  "type": "Figure",
+  "number": "157",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-165",
+  "level": "1",
+  "url": "section-165.html",
+  "type": "Section",
+  "number": "16.5",
+  "title": "Curl and Divergence",
+  "body": " Curl and Divergence    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Curl    Divergence     Pre-Class Activities    In Class   Examples    Vector Forms of Green's Theorem     After Class Activities   "
+},
+{
+  "id": "objectives-86",
+  "level": "2",
+  "url": "section-165.html#objectives-86",
+  "type": "Objectives",
+  "number": "16.5",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-158",
+  "level": "2",
+  "url": "section-165.html#figure-158",
+  "type": "Figure",
+  "number": "158",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-159",
+  "level": "2",
+  "url": "section-165.html#figure-159",
+  "type": "Figure",
+  "number": "159",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-166",
+  "level": "1",
+  "url": "section-166.html",
+  "type": "Section",
+  "number": "16.6",
+  "title": "Parametric Surfaces and Their Areas",
+  "body": " Parametric Surfaces and Their Areas    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Review: Parametric Equations    Parametric Surfaces     Pre-Class Activities    In Class   Some Examples    Surfaces of Revolution    Tangent Planes    Surface Area     After Class Activities   "
+},
+{
+  "id": "objectives-87",
+  "level": "2",
+  "url": "section-166.html#objectives-87",
+  "type": "Objectives",
+  "number": "16.6",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-160",
+  "level": "2",
+  "url": "section-166.html#figure-160",
+  "type": "Figure",
+  "number": "160",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-161",
+  "level": "2",
+  "url": "section-166.html#figure-161",
+  "type": "Figure",
+  "number": "161",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-167",
+  "level": "1",
+  "url": "section-167.html",
+  "type": "Section",
+  "number": "16.7",
+  "title": "Surface Integrals",
+  "body": " Surface Integrals    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Parametric Surfaces    Graphs of Functions     Pre-Class Activities    In Class   Some Examples    Oriented Surfaces    Surface Integrals of Vector Fields & Flux     After Class Activities   "
+},
+{
+  "id": "objectives-88",
+  "level": "2",
+  "url": "section-167.html#objectives-88",
+  "type": "Objectives",
+  "number": "16.7",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-162",
+  "level": "2",
+  "url": "section-167.html#figure-162",
+  "type": "Figure",
+  "number": "162",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-163",
+  "level": "2",
+  "url": "section-167.html#figure-163",
+  "type": "Figure",
+  "number": "163",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-168",
+  "level": "1",
+  "url": "section-168.html",
+  "type": "Section",
+  "number": "16.8",
+  "title": "Stoke's Theorem",
+  "body": " Stoke's Theorem    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   The Idea    Stoke's Theorem     Pre-Class Activities    In Class   Examples     After Class Activities   "
+},
+{
+  "id": "objectives-89",
+  "level": "2",
+  "url": "section-168.html#objectives-89",
+  "type": "Objectives",
+  "number": "16.8",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-164",
+  "level": "2",
+  "url": "section-168.html#figure-164",
+  "type": "Figure",
+  "number": "164",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-165",
+  "level": "2",
+  "url": "section-168.html#figure-165",
+  "type": "Figure",
+  "number": "165",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "section-169",
+  "level": "1",
+  "url": "section-169.html",
+  "type": "Section",
+  "number": "16.9",
+  "title": "The Divergence Theorem",
+  "body": " The Divergence Theorem    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   The Idea    The Divergence Theorem     Pre-Class Activities    In Class   Examples     After Class Activities   "
+},
+{
+  "id": "objectives-90",
+  "level": "2",
+  "url": "section-169.html#objectives-90",
+  "type": "Objectives",
+  "number": "16.9",
+  "title": "",
+  "body": "  To come   "
+},
+{
+  "id": "figure-166",
+  "level": "2",
+  "url": "section-169.html#figure-166",
+  "type": "Figure",
+  "number": "166",
+  "title": "",
+  "body": " Pre-Class Video 1 url goes here "
+},
+{
+  "id": "figure-167",
+  "level": "2",
+  "url": "section-169.html#figure-167",
+  "type": "Figure",
+  "number": "167",
+  "title": "",
+  "body": " Pre-Class Video 2 url goes here "
 }
 ]
 
