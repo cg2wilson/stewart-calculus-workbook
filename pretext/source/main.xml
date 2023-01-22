@@ -22,6 +22,24 @@
 
     <xi:include href="ch7/main.xml" />
 
+    <xi:include href="ch8/main.xml" />
+
+    <xi:include href="ch9/main.xml" />
+
+    <xi:include href="ch10/main.xml" />
+
+    <xi:include href="ch11/main.xml" />
+
+    <xi:include href="ch12/main.xml" />
+
+    <xi:include href="ch13/main.xml" />
+
+    <xi:include href="ch14/main.xml" />
+
+    <xi:include href="ch15/main.xml" />
+
+    <xi:include href="ch16/main.xml" />
+
 <!--
     <xi:include href="meta/backmatter.ptx" />
 -->
