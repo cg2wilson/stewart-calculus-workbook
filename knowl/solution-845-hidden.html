@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><div class="solution solution-like"><div class="para logical"><ol class="lower-alpha">
+<li>
+<div class="para logical">
+<div class="para">We can use rectangular prisms to approximate volume. We need to create a similar expression to this one:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(x_i)\Delta x
+\end{equation*}
+</div>
+</div>
+<div class="para">Subdivide <span class="process-math">\(R\)</span> into rectangles; in the <span class="process-math">\(x-\)</span>direction, make the length <span class="process-math">\(\Delta x = \dfrac{b-a}{m}\text{,}\)</span> where <span class="process-math">\(m\)</span> is the number of subintervals in the <span class="process-math">\(x-\)</span>direction. In the <span class="process-math">\(y-\)</span>direction, make the length <span class="process-math">\(\Delta y = \dfrac{d-c}{n}\text{,}\)</span> where <span class="process-math">\(n\)</span> is the number of subintervals in the <span class="process-math">\(y-\)</span>direction.</div>
+<div class="para">Let <span class="process-math">\((x_{ij},y_{ij})\)</span> be the midpoint of the rectangle <span class="process-math">\(R_{ij}\)</span> (that is, the rectangle <span class="process-math">\(i\)</span> steps horizontally and <span class="process-math">\(j\)</span> steps vertically). The value <span class="process-math">\(f(x_{ij},y_{ij})\)</span> gives the output on the surface <span class="process-math">\(S\)</span> which is precisely the height of the prism.</div>
+<div class="para logical">
+<div class="para">So, the volume of an individual prism is given by the product of length (<span class="process-math">\(\Delta x\)</span>), width (<span class="process-math">\(\Delta y\)</span>), and height (<span class="process-math">\(f(x_{ij},y_{ij})\)</span>). This gives the approximation</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{prism volume} = f(x_{ij},y_{ij})\Delta x\Delta y
+\end{equation*}
+</div>
+</div>
+<div class="para logical">
+<div class="para">To find the volume of the entire region, we need to add up the volume of each rectangle <span class="process-math">\(R_{ij}\text{.}\)</span> Since there are two indices, we have to have two summations. This gives us the expression</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{volume under } S \approx \sum_{j=1}^n\sum_{i=1}^m f(x_{ij},y_{ij})\Delta x\Delta y
+\end{equation*}
+</div>
+</div>
+</li>
+<li><div class="para">We can improve the approximation by using more and more rectangles, and creating more and more subdivisions by increasing <span class="process-math">\(m\)</span> and <span class="process-math">\(n\text{.}\)</span>
+</div></li>
+<li><div class="para">Yes; take the limit as <span class="process-math">\(m\to\infty\)</span> and as <span class="process-math">\(n\to \infty\text{.}\)</span>
+</div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle \int_c^d\int_a^b f(x,y)\, dx\, dy = \lim_{n\to\infty}\lim_{m\to\infty} \sum_{i=1}^m\sum_{j=1}^n f(x_{ij},y_{ij})\Delta x\Delta y\)</span></div></li>
+</ol></div></div></body>
+</html>

@@ -9844,7 +9844,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.1",
   "title": "Arc Length",
-  "body": " Arc Length    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   The Formula     Pre-Class Activities    In Class   Some Examples     After Class Activities   "
+  "body": " Arc Length    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   The Formula       Find the distance between the points and .    Now, find the length of the curve on the interval .          The distance is     The length is as well.         Consider .      What difficulties does one have in finding the length of the curve between and ?    Approximate this length.    How could we get a better approximation of the length?            Since the curve isn't straight, it's hard to get precise measurements    Answers vary    Use more line segments         Arc Length Formula  If is continuous on , then the length of the curve on is given by     Let be a curve on the interval with the property that is continuous on as well.  Subdivide into smaller intervals of length . Then, the length of each subdivision, , can be approximated by the straight-line distance between the points and : Since , we can rewrite as where represents .  From the Mean Value Theorem (see ), we know that which can be rearranged to say Since because it precisely measures the change in the output values and , we can rewrite the Mean Value Theorem expression as Replacing this in the expression for , we have   Now we may simplify:   The approximation for the total length of the curve is given by Taking the limit will gives an expression for the precise length of the curve:      Find the length of the arc of the curve between and .           Find the length of the curve between and .            Pre-Class Activities    Use this space to write any questions you might have from the videos.    Answers vary      Set up (but do not evaluate!) a definite integral that would find the length of the curve between and .           Find the exact length of the curve on the interval .           In Class   Some Examples    Find the length of the curve between and .           If , find the length of between and .           Find the length of the arc of the parabola from to            Find the length of the curve for .           Determine the length of the arc of the curve between and            Arc Length Function   Arc Length Function  If is a smooth curve with equation on the interval , then the function gives the length of between the starting point and the endpoint .     Find the arc length function for the curve , starting at the point .           Find the arc length function for the curve , starting at .           Let . Show that on any interval , the arc length of is exactly the area under the curve.    First compute the arc length of on . , so that . When we add 1, we have , which can be simplified to .  Taking the root, we get the following expression for arc length: which is exactly the area under the curve on the same interval.       After Class Activities    Find the length of the curve on the interval            Find the length of the curve on            Find the length of the curve on the interval .           Find the arc length function for the following curves:      , starting at .     (on ), with the starting point of .           .     .        "
 },
 {
   "id": "objectives-41",
@@ -9872,6 +9872,186 @@ var ptx_lunr_docs = [
   "number": "69",
   "title": "",
   "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "example-810",
+  "level": "2",
+  "url": "section-81.html#example-810",
+  "type": "Example",
+  "number": "8.1.1",
+  "title": "",
+  "body": "     Find the distance between the points and .    Now, find the length of the curve on the interval .          The distance is     The length is as well.      "
+},
+{
+  "id": "example-811",
+  "level": "2",
+  "url": "section-81.html#example-811",
+  "type": "Example",
+  "number": "8.1.2",
+  "title": "",
+  "body": "  Consider .      What difficulties does one have in finding the length of the curve between and ?    Approximate this length.    How could we get a better approximation of the length?            Since the curve isn't straight, it's hard to get precise measurements    Answers vary    Use more line segments       "
+},
+{
+  "id": "proof-9",
+  "level": "2",
+  "url": "section-81.html#proof-9",
+  "type": "Proof",
+  "number": "8.1.1.1.1",
+  "title": "",
+  "body": " Let be a curve on the interval with the property that is continuous on as well.  Subdivide into smaller intervals of length . Then, the length of each subdivision, , can be approximated by the straight-line distance between the points and : Since , we can rewrite as where represents .  From the Mean Value Theorem (see ), we know that which can be rearranged to say Since because it precisely measures the change in the output values and , we can rewrite the Mean Value Theorem expression as Replacing this in the expression for , we have   Now we may simplify:   The approximation for the total length of the curve is given by Taking the limit will gives an expression for the precise length of the curve:   "
+},
+{
+  "id": "example-812",
+  "level": "2",
+  "url": "section-81.html#example-812",
+  "type": "Example",
+  "number": "8.1.3",
+  "title": "",
+  "body": "  Find the length of the arc of the curve between and .        "
+},
+{
+  "id": "example-813",
+  "level": "2",
+  "url": "section-81.html#example-813",
+  "type": "Example",
+  "number": "8.1.4",
+  "title": "",
+  "body": "  Find the length of the curve between and .        "
+},
+{
+  "id": "example-814",
+  "level": "2",
+  "url": "section-81.html#example-814",
+  "type": "Example",
+  "number": "8.1.5",
+  "title": "",
+  "body": "  Use this space to write any questions you might have from the videos.    Answers vary   "
+},
+{
+  "id": "example-815",
+  "level": "2",
+  "url": "section-81.html#example-815",
+  "type": "Example",
+  "number": "8.1.6",
+  "title": "",
+  "body": "  Set up (but do not evaluate!) a definite integral that would find the length of the curve between and .        "
+},
+{
+  "id": "example-816",
+  "level": "2",
+  "url": "section-81.html#example-816",
+  "type": "Example",
+  "number": "8.1.7",
+  "title": "",
+  "body": "  Find the exact length of the curve on the interval .        "
+},
+{
+  "id": "example-817",
+  "level": "2",
+  "url": "section-81.html#example-817",
+  "type": "Example",
+  "number": "8.1.8",
+  "title": "",
+  "body": "  Find the length of the curve between and .        "
+},
+{
+  "id": "example-818",
+  "level": "2",
+  "url": "section-81.html#example-818",
+  "type": "Example",
+  "number": "8.1.9",
+  "title": "",
+  "body": "  If , find the length of between and .        "
+},
+{
+  "id": "example-819",
+  "level": "2",
+  "url": "section-81.html#example-819",
+  "type": "Example",
+  "number": "8.1.10",
+  "title": "",
+  "body": "  Find the length of the arc of the parabola from to         "
+},
+{
+  "id": "example-820",
+  "level": "2",
+  "url": "section-81.html#example-820",
+  "type": "Example",
+  "number": "8.1.11",
+  "title": "",
+  "body": "  Find the length of the curve for .        "
+},
+{
+  "id": "example-821",
+  "level": "2",
+  "url": "section-81.html#example-821",
+  "type": "Example",
+  "number": "8.1.12",
+  "title": "",
+  "body": "  Determine the length of the arc of the curve between and         "
+},
+{
+  "id": "example-822",
+  "level": "2",
+  "url": "section-81.html#example-822",
+  "type": "Example",
+  "number": "8.1.13",
+  "title": "",
+  "body": "  Find the arc length function for the curve , starting at the point .        "
+},
+{
+  "id": "example-823",
+  "level": "2",
+  "url": "section-81.html#example-823",
+  "type": "Example",
+  "number": "8.1.14",
+  "title": "",
+  "body": "  Find the arc length function for the curve , starting at .        "
+},
+{
+  "id": "example-824",
+  "level": "2",
+  "url": "section-81.html#example-824",
+  "type": "Example",
+  "number": "8.1.15",
+  "title": "",
+  "body": "  Let . Show that on any interval , the arc length of is exactly the area under the curve.    First compute the arc length of on . , so that . When we add 1, we have , which can be simplified to .  Taking the root, we get the following expression for arc length: which is exactly the area under the curve on the same interval.   "
+},
+{
+  "id": "example-825",
+  "level": "2",
+  "url": "section-81.html#example-825",
+  "type": "Example",
+  "number": "8.1.16",
+  "title": "",
+  "body": "  Find the length of the curve on the interval         "
+},
+{
+  "id": "example-826",
+  "level": "2",
+  "url": "section-81.html#example-826",
+  "type": "Example",
+  "number": "8.1.17",
+  "title": "",
+  "body": "  Find the length of the curve on         "
+},
+{
+  "id": "example-827",
+  "level": "2",
+  "url": "section-81.html#example-827",
+  "type": "Example",
+  "number": "8.1.18",
+  "title": "",
+  "body": "  Find the length of the curve on the interval .        "
+},
+{
+  "id": "example-828",
+  "level": "2",
+  "url": "section-81.html#example-828",
+  "type": "Example",
+  "number": "8.1.19",
+  "title": "",
+  "body": "  Find the arc length function for the following curves:      , starting at .     (on ), with the starting point of .           .     .      "
 },
 {
   "id": "section-82",
@@ -11149,7 +11329,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "15.1",
   "title": "Double Integrals over Rectangles",
-  "body": " Double Integrals over Rectangles    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Review: The Definite Integral    The Double Integral     Pre-Class Activities    In Class   Some Examples    Iterated Integrals     After Class Activities   "
+  "body": " Double Integrals over Rectangles    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Review: The Definite Integral    Let be a function defined on the interval .     Describe what the definite integral means.    Write the process used to define the definite integral.    Geometrically, what are we using to find the integral?          We interpret the definite integral to give the net area under the curve on the interval .    The definite integral is built out of an approximation of the area under the curve. The simplest shape to use as an approximator is a rectangle; so, each approximation needs a base length and a height.  In order to make the computation easier, we want to make the base lengths consisent- so, we'll evenly divide the interval by the number of rectangles. So, .  For any input , we can express it arbitrarily as , where is an indexing term. This means that the function height can be given by .  So, any given approximating rectangle has an area given by (respectively the height and base of the rectangle). In order to approximate the entire area under the curve, we need to add all the rectangles. This gives the expression   In order to move from approximation to exact answer, we need to analyze what happens as the number of rectangles increases without bound; the limit accomplishes this. So we arrive at the definition of the definite integral:     We're using a rectangle because it's the simplest shape we can use to find area.         The Double Integral    Now let be a function defined on the rectangle . How could we extend the definition of the definite integral to a function of two variables?    Since we are operating in three dimensions now, we can take the same idea and instead of using rectangles, we can use rectangular prisms to approximate.  However, since we're in three dimensions, we're not approximating area anymore; we're approximating volume.      This example will develop the definition of the definite integral for a function . Let be defined on the region given by and let be the solid that lies above and under the graph of :      What kind of object can we use to approximate the volume of ? What sort of expression do we need to approximate the volume?    Can we improve the approximation? How?    Is there a way of converting from an approximation to an exact answer? How?    The definition of the double integral is then:          We can use rectangular prisms to approximate volume. We need to create a similar expression to this one:   Subdivide into rectangles; in the direction, make the length , where is the number of subintervals in the direction. In the direction, make the length , where is the number of subintervals in the direction.  Let be the midpoint of the rectangle (that is, the rectangle steps horizontally and steps vertically). The value gives the output on the surface which is precisely the height of the prism.  So, the volume of an individual prism is given by the product of length ( ), width ( ), and height ( ). This gives the approximation   To find the volume of the entire region, we need to add up the volume of each rectangle . Since there are two indices, we have to have two summations. This gives us the expression     We can improve the approximation by using more and more rectangles, and creating more and more subdivisions by increasing and .    Yes; take the limit as and as .              Approximate the volume of the solid that lies above the square and below the surface .  Divide into three equal squares and choose the sample point to be the upper right corner of each square .    First determine what the region will look like. This is shown in the image below.   The partition of with ; this creates 9 squares. The sample points are noted at the corners, and each square is labeled     We know that the volume is given by the approximation which can be rewritten (without sigma notation) as since and , . This means the computation simplifies to Computing the values at the given points and substituting gives so that we have       If , then evaluate the integral by interpreting it as a volume.    Drawing the surface gives half of a cylinder, along the axis. The volume of the cylinder is ; in this case, and . Since we're dealing with half of the cylinder, our volume is given by        Pre-Class Activities    In Class   Midpoint Rule   Midpoint Rule (Double Integrals)  Midpoint Rule (Double Integrals)   If is the midpoint of the interval and is the midpoint of the interval , then we can approximate the double integral of over the region by where       Approximate , where and , using midpoints.    Since , we take and . This means , , , and .  Since we want midpoints, we have , , , and as our points.  Then, So our conclusion is that       Iterated Integrals  Now let's see how to evaluate double integrals.    Consider the function , defined and integrable on the rectangle .     How can we make sense of the integral ? Is it a necessarily a number?    If we set , then what does do?    Put it all together. Interpret the expressions           Since we're integrating with respect to , any and all terms are considered constant; so while the is treated as a number for the integration, the answer isn't necessarily a number- it could be a function of .    This computes the integral of a single-variable function- something like what we're used to. Now, this integral returns a strictly numerical value.    In the first integral, we're integrating first with respect to in order to get a function of , then integrating with respect to in order to get a numerical value.  In the second integral, we're integrating first with respect to in order to get a function of , then integrating with respect to in order to get an numerical value.         Let , defined on the rectangle . Evaluate the following:                                    Let , defined on the rectangle . Evaluate the following:                                    In the previous two examples, you should see some similarities between both parts. What are those similarities?    The answer is same when the order of integration is changed     Fubini's Theorem   If is continuous on the rectangle then       Evaluate the double integral , where            Let      Evaluate the double integral . What do you notice?    Evaluate the double integral . What do you notice?           . This is a very difficult integral, requiring multiple uses of integration by parts.     . This order was much simpler than the previous one.         Find the volume of the solid bounded by the elliptic paraboloid , the planes and , and the three coordinate planes.            After Class Activities    Evaluate , where           Evaluate , where           Evaluate           Evaluate          "
 },
 {
   "id": "objectives-74",
@@ -11177,6 +11357,177 @@ var ptx_lunr_docs = [
   "number": "135",
   "title": "",
   "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "question-38",
+  "level": "2",
+  "url": "section-151.html#question-38",
+  "type": "Question",
+  "number": "15.1.1",
+  "title": "",
+  "body": "  Let be a function defined on the interval .     Describe what the definite integral means.    Write the process used to define the definite integral.    Geometrically, what are we using to find the integral?          We interpret the definite integral to give the net area under the curve on the interval .    The definite integral is built out of an approximation of the area under the curve. The simplest shape to use as an approximator is a rectangle; so, each approximation needs a base length and a height.  In order to make the computation easier, we want to make the base lengths consisent- so, we'll evenly divide the interval by the number of rectangles. So, .  For any input , we can express it arbitrarily as , where is an indexing term. This means that the function height can be given by .  So, any given approximating rectangle has an area given by (respectively the height and base of the rectangle). In order to approximate the entire area under the curve, we need to add all the rectangles. This gives the expression   In order to move from approximation to exact answer, we need to analyze what happens as the number of rectangles increases without bound; the limit accomplishes this. So we arrive at the definition of the definite integral:     We're using a rectangle because it's the simplest shape we can use to find area.      "
+},
+{
+  "id": "question-39",
+  "level": "2",
+  "url": "section-151.html#question-39",
+  "type": "Question",
+  "number": "15.1.2",
+  "title": "",
+  "body": "  Now let be a function defined on the rectangle . How could we extend the definition of the definite integral to a function of two variables?    Since we are operating in three dimensions now, we can take the same idea and instead of using rectangles, we can use rectangular prisms to approximate.  However, since we're in three dimensions, we're not approximating area anymore; we're approximating volume.   "
+},
+{
+  "id": "example-829",
+  "level": "2",
+  "url": "section-151.html#example-829",
+  "type": "Example",
+  "number": "15.1.3",
+  "title": "",
+  "body": "  This example will develop the definition of the definite integral for a function . Let be defined on the region given by and let be the solid that lies above and under the graph of :      What kind of object can we use to approximate the volume of ? What sort of expression do we need to approximate the volume?    Can we improve the approximation? How?    Is there a way of converting from an approximation to an exact answer? How?    The definition of the double integral is then:          We can use rectangular prisms to approximate volume. We need to create a similar expression to this one:   Subdivide into rectangles; in the direction, make the length , where is the number of subintervals in the direction. In the direction, make the length , where is the number of subintervals in the direction.  Let be the midpoint of the rectangle (that is, the rectangle steps horizontally and steps vertically). The value gives the output on the surface which is precisely the height of the prism.  So, the volume of an individual prism is given by the product of length ( ), width ( ), and height ( ). This gives the approximation   To find the volume of the entire region, we need to add up the volume of each rectangle . Since there are two indices, we have to have two summations. This gives us the expression     We can improve the approximation by using more and more rectangles, and creating more and more subdivisions by increasing and .    Yes; take the limit as and as .           "
+},
+{
+  "id": "example-830",
+  "level": "2",
+  "url": "section-151.html#example-830",
+  "type": "Example",
+  "number": "15.1.4",
+  "title": "",
+  "body": "  Approximate the volume of the solid that lies above the square and below the surface .  Divide into three equal squares and choose the sample point to be the upper right corner of each square .    First determine what the region will look like. This is shown in the image below.   The partition of with ; this creates 9 squares. The sample points are noted at the corners, and each square is labeled     We know that the volume is given by the approximation which can be rewritten (without sigma notation) as since and , . This means the computation simplifies to Computing the values at the given points and substituting gives so that we have    "
+},
+{
+  "id": "example-831",
+  "level": "2",
+  "url": "section-151.html#example-831",
+  "type": "Example",
+  "number": "15.1.5",
+  "title": "",
+  "body": "  If , then evaluate the integral by interpreting it as a volume.    Drawing the surface gives half of a cylinder, along the axis. The volume of the cylinder is ; in this case, and . Since we're dealing with half of the cylinder, our volume is given by    "
+},
+{
+  "id": "definition-52",
+  "level": "2",
+  "url": "section-151.html#definition-52",
+  "type": "Definition",
+  "number": "15.1.6",
+  "title": "Midpoint Rule (Double Integrals).",
+  "body": " Midpoint Rule (Double Integrals)  Midpoint Rule (Double Integrals)   If is the midpoint of the interval and is the midpoint of the interval , then we can approximate the double integral of over the region by where    "
+},
+{
+  "id": "example-832",
+  "level": "2",
+  "url": "section-151.html#example-832",
+  "type": "Example",
+  "number": "15.1.7",
+  "title": "",
+  "body": "  Approximate , where and , using midpoints.    Since , we take and . This means , , , and .  Since we want midpoints, we have , , , and as our points.  Then, So our conclusion is that    "
+},
+{
+  "id": "example-833",
+  "level": "2",
+  "url": "section-151.html#example-833",
+  "type": "Example",
+  "number": "15.1.8",
+  "title": "",
+  "body": "  Consider the function , defined and integrable on the rectangle .     How can we make sense of the integral ? Is it a necessarily a number?    If we set , then what does do?    Put it all together. Interpret the expressions           Since we're integrating with respect to , any and all terms are considered constant; so while the is treated as a number for the integration, the answer isn't necessarily a number- it could be a function of .    This computes the integral of a single-variable function- something like what we're used to. Now, this integral returns a strictly numerical value.    In the first integral, we're integrating first with respect to in order to get a function of , then integrating with respect to in order to get a numerical value.  In the second integral, we're integrating first with respect to in order to get a function of , then integrating with respect to in order to get an numerical value.      "
+},
+{
+  "id": "example-834",
+  "level": "2",
+  "url": "section-151.html#example-834",
+  "type": "Example",
+  "number": "15.1.9",
+  "title": "",
+  "body": "  Let , defined on the rectangle . Evaluate the following:                                 "
+},
+{
+  "id": "example-835",
+  "level": "2",
+  "url": "section-151.html#example-835",
+  "type": "Example",
+  "number": "15.1.10",
+  "title": "",
+  "body": "  Let , defined on the rectangle . Evaluate the following:                                 "
+},
+{
+  "id": "question-40",
+  "level": "2",
+  "url": "section-151.html#question-40",
+  "type": "Question",
+  "number": "15.1.11",
+  "title": "",
+  "body": "  In the previous two examples, you should see some similarities between both parts. What are those similarities?    The answer is same when the order of integration is changed   "
+},
+{
+  "id": "theorem-31",
+  "level": "2",
+  "url": "section-151.html#theorem-31",
+  "type": "Theorem",
+  "number": "15.1.12",
+  "title": "Fubini's Theorem.",
+  "body": " Fubini's Theorem   If is continuous on the rectangle then    "
+},
+{
+  "id": "example-836",
+  "level": "2",
+  "url": "section-151.html#example-836",
+  "type": "Example",
+  "number": "15.1.13",
+  "title": "",
+  "body": "  Evaluate the double integral , where         "
+},
+{
+  "id": "example-837",
+  "level": "2",
+  "url": "section-151.html#example-837",
+  "type": "Example",
+  "number": "15.1.14",
+  "title": "",
+  "body": "  Let      Evaluate the double integral . What do you notice?    Evaluate the double integral . What do you notice?           . This is a very difficult integral, requiring multiple uses of integration by parts.     . This order was much simpler than the previous one.      "
+},
+{
+  "id": "example-838",
+  "level": "2",
+  "url": "section-151.html#example-838",
+  "type": "Example",
+  "number": "15.1.15",
+  "title": "",
+  "body": "  Find the volume of the solid bounded by the elliptic paraboloid , the planes and , and the three coordinate planes.        "
+},
+{
+  "id": "example-839",
+  "level": "2",
+  "url": "section-151.html#example-839",
+  "type": "Example",
+  "number": "15.1.16",
+  "title": "",
+  "body": "  Evaluate , where        "
+},
+{
+  "id": "example-840",
+  "level": "2",
+  "url": "section-151.html#example-840",
+  "type": "Example",
+  "number": "15.1.17",
+  "title": "",
+  "body": "  Evaluate , where        "
+},
+{
+  "id": "example-841",
+  "level": "2",
+  "url": "section-151.html#example-841",
+  "type": "Example",
+  "number": "15.1.18",
+  "title": "",
+  "body": "  Evaluate        "
+},
+{
+  "id": "example-842",
+  "level": "2",
+  "url": "section-151.html#example-842",
+  "type": "Example",
+  "number": "15.1.19",
+  "title": "",
+  "body": "  Evaluate        "
 },
 {
   "id": "section-152",
