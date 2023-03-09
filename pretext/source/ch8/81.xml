@@ -23,13 +23,227 @@
 
 		<subsubsection xml:id="section-81-formula">
 			<title>The Formula</title>
+			
+			<example>
+				<statement>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									Find the distance between the points <m>(0,-2)</m> and <m>(5,0)</m>.
+								</p>
+							</li>
+							<li>
+								<p>
+									Now, find the length of the curve <m>y = \dfrac{2}{5}x - 2</m> on the interval <m>[0,5]</m>.
+								</p>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									The distance is <m>\sqrt{29}</m>
+								</p>
+							</li>
+							<li>
+								<p>
+									The length is <m>\sqrt{29}</m> as well.
+								</p>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
 
+			<example>
+				<statement>
+					<p>
+						Consider <m>f(x) = x-x^2</m>.
+					</p>
+					<p>
+						<ol marker="a">
+							<p>
+								<li>
+									<p>
+										What difficulties does one have in finding the length of the curve between <m>x = 0</m> and <m>x = 1</m>?
+									</p>
+								</li>
+								<li>
+									<p>
+										Approximate this length.
+									</p>
+								</li>
+								<li>
+									<p>
+										How could we get a better approximation of the length?
+									</p>
+								</li>
+							</p>	
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<p>
+								<li>
+									<p>
+										Since the curve isn't straight, it's hard to get precise measurements
+									</p>
+								</li>
+								<li>
+									<p>
+										Answers vary
+									</p>
+								</li>
+								<li>
+									<p>
+										Use more line segments
+									</p>
+								</li>
+							</p>	
+						</ol>
+					</p>
+				</solution>
+			</example>
+
+			<assemblage>
+				<title>Arc Length Formula</title>
+				<p>
+					If <m>f'</m> is continuous on <m>[a,b]</m>, then the length of the curve <m>y = f(x)</m> on <m>[a,b]</m> is given by
+					<me>
+						L = \int_a^b \sqrt{1 + [f'(x)]^2}\, dx
+					</me>
+				</p>
+			</assemblage>
+			<proof>
+				<p>
+					Let <m>f</m> be a curve on the interval <m>[a,b]</m> with the property that <m>f'</m> is continuous on <m>[a,b]</m> as well.
+				</p>
+				<p>
+					Subdivide <m>[a,b]</m> into smaller intervals of length <m>\Delta x</m>. Then, the length of each subdivision, <m>L_i</m>, can be approximated by the straight-line distance between the points <m>f(x_{i-1})</m> and <m>f(x_i)</m>:
+					<me>
+						L_i = \sqrt{(x_i-x_{i-1})^2 + (y_i-y_{i-1})^2}
+					</me>
+					Since <m>x_i-x_{i-1} = \Delta x</m>, we can rewrite <m>L_i</m> as 
+					<me>
+						L_i = \sqrt{(\Delta x)^2 + (\Delta y_i)^2}
+					</me>
+					where <m>\Delta y_i</m> represents <m>y_i-y_{i-1}</m>.										
+				</p>
+				<p>
+					From the Mean Value Theorem (see <xref ref="section-32"/>), we know that 
+					<me>
+						f'(x_i) = \dfrac{f(x_i)-f(x_{i-1})}{x_i-x_{i-1}}
+					</me>
+					which can be rearranged to say
+					<me>
+						f(x_i) - f(x_{i-1}) = f'(x_i)\cdot (x_i-x_{i-1})
+					</me>
+					Since <m>f(x_i) - f(x_{i-1}) = \Delta y_i</m> because it  precisely measures the change in the output values and <m>x_i-x_{i-1} = \Delta x</m>, we can rewrite the Mean Value Theorem expression as
+					<me>
+						\Delta y_i = f'(x_i)\cdot \Delta x
+					</me>
+					Replacing this in the expression for <m>L_i</m>, we have
+					<me>
+						L_i = \sqrt{(\Delta x)^2 + (f'(x_i)\Delta x)^2}
+					</me>
+				</p>
+				<p>
+					Now we may simplify:
+					<md>
+						<mrow>L_i \amp =  \sqrt{(\Delta x)^2 + (f'(x_i)\Delta x)^2}</mrow>
+						<mrow> \amp = \sqrt{(\Delta x)^2[1 + (f(x_i))^2]} </mrow>
+						<mrow> \amp = \sqrt{1 + (f(x_i))^2)}\cdot \Delta x </mrow>
+					</md>
+				</p>
+				<p>
+					The approximation for the total length of the curve is given by 
+					<md>
+						<mrow> L \amp \approx \sum_{i=1}^n L_i</mrow>
+						<mrow> \amp \approx \sum_{i=1}^n \sqrt{1 + (f(x_i))^2)}\cdot \Delta x</mrow>
+					</md>
+					Taking the limit will gives an expression for the precise length of the curve:
+					<md>
+						<mrow>L \amp = \lim_{n\to\infty}\sum_{i=1}^n \sqrt{1 + (f(x_i))^2)}\cdot \Delta x</mrow>
+						<mrow> \amp = \int_a^b \sqrt{1 + (f'(x))^2}\, dx </mrow>
+					</md>
+				</p>
+			</proof>
+
+			<example>
+				<statement>
+					<p>
+						Find the length of the arc of the curve <m>y^2 = x^3</m> between <m>(1,1)</m> and <m>(4,8)</m>.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\dfrac{1}{27}(80\sqrt{10}-13\sqrt{13})</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find the length of the curve <m>y = \dfrac{1}{2}x^2</m> between <m>x = -1</m> and <m> x = 1</m>.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\sqrt{2} + \ln(1+\sqrt{2})</m>
+					</p>
+				</solution>
+			</example>
 		</subsubsection>
 	</subsection>
 
 	<subsection xml:id="section-81-preclass">
 		<title>Pre-Class Activities</title>
 
+		<example>
+			<statement>
+				<p>
+					Use this space to write any questions you might have from the videos.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Answers vary
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Set up (but do not evaluate!) a definite integral that would find the length of the curve <m>f(x) = x-x^2</m> between <m>x = 0</m> and <m>x = 1</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>L = \ds\int_0^1 \sqrt{1 + (1-2x)^2}\, dx</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Find the exact length of the curve <m>f(x) = 1 + 6x^{3/2}</m> on the interval <m>0\leq x \leq 1</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>\dfrac{2}{243}(82\sqrt{82}-1)</m>
+				</p>
+			</solution>
+		</example>
 	</subsection>
 
 	<subsection xml:id="section-81-inclass">
@@ -37,11 +251,213 @@
 		<subsubsection xml:id="section-81-examples">
 			<title>Some Examples</title>
 
+			<example>
+				<statement>
+					<p>
+						Find the length of the curve <m>f(x) =x-x^2</m> between <m>x = 0</m> and <m>x =1</m>.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\dfrac{1}{\sqrt{2}} + \dfrac{1}{2}\ln (1+\sqrt{2})</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						If <m>g(x) = \ln |\sec x|</m>, find the length of <m>g(x)</m> between <m>x = \pi/6</m> and <m>x = \pi/4</m>.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ln (\sqrt{2}+1)-\ln \lrpar{\dfrac{3}{\sqrt{3}}}</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find the length of the arc of the parabola <m>x = y^2</m> from <m>(1,1)</m> to <m>(4,2)</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\sqrt{17} + \dfrac{1}{4}\ln (\sqrt{17}+4) - \dfrac{\sqrt{5}}{2}-\ln(\sqrt{5} + 2)</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find the length of the curve <m>x = \dfrac{1}{8}y^4 + \dfrac{1}{4y^2}</m> for <m>1\leq y \leq 2</m>.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\dfrac{49}{16}</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Determine the length of the arc of the curve <m>x^2 = (y-4)^3</m> between <m>y = 5</m> and <m>y = 8</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\dfrac{1}{27}(80\sqrt{10}-13\sqrt{13})</m>
+					</p>
+				</solution>
+			</example>
+		</subsubsection>
+
+		<subsubsection xml:id="section-81-arc-length-function">
+			<title>Arc Length Function</title>
+			
+			<assemblage>
+				<title>Arc Length Function</title>
+				<p>
+					If <m>C</m> is a smooth curve with equation <m>y = f(x)</m> on the interval <m>[a,b]</m>, then the function
+					<me>
+						s(x) = \int_a^x \sqrt{1 + (f'(t))^2}\, dt
+					</me>
+					gives the length of <m>f(x)</m> between the starting point <m>(a,f(a))</m> and the endpoint <m>(x,f(x))</m>.
+				</p>
+			</assemblage>
+
+			<example>
+				<statement>
+					<p>
+						Find the arc length function for the curve <m>y = x^2 - \dfrac{1}{8}\ln x</m>, starting at the point <m>(1,1)</m>.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>s(x) = x^2 + \dfrac{1}{8}\ln x - 1</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find the arc length function for the curve <m>y = \inv{\sin}(x) + \sqrt{1-x^2}</m>, starting at <m>x = 0</m>.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>s(x) = 2\sqrt{2} x</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Let <m>f(x) = \dfrac{1}{4}e^x + e^{-x}</m>.  Show that on any interval <m>[a,b]</m>, the arc length of <m>f(x)</m> is exactly the area under the curve.	
+					</p>
+				</statement>
+				<solution>
+					<p>
+						First compute the arc length of <m>f(x)</m> on <m>[a,b]</m>. <m>f'(x) = \dfrac{1}{4}e^x - e^{-x}</m>, so that <m>(f'(x))^2 = \dfrac{1}{16}e^{2x} - \dfrac{1}{2} + e^{-2x}</m>. When we add 1, we have <m>1 + (f'(x))^2 = \dfrac{1}{16}e^{2x} + \dfrac{1}{2} + e^{-2x}</m>, which can be simplified to <m>\dfrac{1}{4}\lrpar{\dfrac{1}{2}e^x + 2e^{-x}}^2</m>.
+					</p>
+					<p>
+						Taking the root, we get the following expression for arc length:
+						<me>
+							L = \int_a^b \dfrac{1}{4}e^x + e^{-x}\, dx
+						</me>
+						which is exactly the area under the curve on the same interval.
+					</p>
+				</solution>
+			</example>
+
 		</subsubsection>
 	</subsection>
 
 	<subsection xml:id="section-81-afterclass">
 		<title>After Class Activities</title>
 
+		<example>
+			<statement>
+				<p>
+					Find the length of the curve <m>y = \dfrac{1}{3}x^3 + \dfrac{1}{4x}</m> on the interval <m>[1,2]</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>\dfrac{59}{24}</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Find the length of the curve <m>y = \ln(\cos x)</m> on <m>0\leq x\leq \pi/3</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>ln\lrpar{1+\dfrac{1}{\sqrt{3}}} - ln\lrpar{1-\dfrac{1}{\sqrt{3}}}</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Find the length of the curve <m>y = \dfrac{1}{4}x^2 -\dfrac{1}{2}\ln x</m> on the interval <m>[1,2]</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>\dfrac{3}{4} + \dfrac{1}{4}\ln 4</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Find the arc length function for the following curves:
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								<m>y = 2x^{3/2}</m>, starting at <m>(1,2)</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>y = \ln (\sin x)</m> (on <m>(0,\pi)</m>), with the starting point of <m>(\pi/2,0)</m>.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								<m>s(x) = \dfrac{2}{27}\lrpar{(1+9x)^{3/2}-1}</m>.
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>s(x) = \ln (\csc x - \cot x)</m>.
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</example>
 	</subsection>
 </section>

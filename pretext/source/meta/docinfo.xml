@@ -3,7 +3,8 @@
 <!-- The docinfo block is the analogue to the latex preamble -->
 <!-- This is where you can define macros and other book-wide -->
 <!--  settings.                                              -->
-<docinfo xmlns:xi="http://www.w3.org/2001/XInclude">
+<docinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="docinfo.xsd" xmlns:xi="http://www.w3.org/2001/XInclude">
 
   <initialism>Calculus Workbook: </initialism>
 

@@ -23,12 +23,306 @@
 
 		<subsubsection xml:id="section-151-review">
 			<title>Review: The Definite Integral</title>
-
+				
+			<question>
+				<statement>
+					<p>
+						Let <m>f(x)</m> be a function defined on the interval <m>[a,b]</m>.
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									Describe what the definite integral <m>\ds \int_a^b f(x)\, dx</m> means.
+								</p>
+							</li>
+							<li>
+								<p>
+									Write the process used to define the definite integral.
+								</p>
+							</li>
+							<li>
+								<p>
+									Geometrically, what are we using to find the integral?
+								</p>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									We interpret the definite integral to give the net area under the curve on the interval <m>[a,b]</m>.
+								</p>
+							</li>
+							<li>
+								<p>
+									The definite integral is built out of an approximation of the area under the curve. The simplest shape to use as an approximator is a rectangle; so, each approximation needs a base length and a height.
+								</p>
+								<p>
+									In order to make the computation easier, we want to make the base lengths consisent- so, we'll evenly divide the interval by the number of rectangles. So, <m>\Delta x = \dfrac{b-a}{n}</m>. 
+								</p>
+								<p>
+									For any input <m>x_i</m>, we can express it arbitrarily as <m>x_i = a + i\Delta x</m>, where <m>i</m> is an indexing term. This means that the function height can be given by <m>f(x_i)</m>.
+								</p>
+								<p>
+									So, any given approximating rectangle has an area given by <m>f(x_i)\Delta x</m> (respectively the height and base of the rectangle). In order to approximate the entire area under the curve, we need to add all the rectangles. This gives the expression
+									<me>
+										\text{Area }\approx \sum_{i=1}^n f(x_i)\Delta x
+									</me>
+								</p>
+								<p>
+									In order to move from approximation to exact answer, we need to analyze what happens as the number of rectangles increases without bound; the limit accomplishes this. So we arrive at the definition of the definite integral:
+									<me>
+										\ds \int_a^b f(x)\, dx = \lim_{n\to\infty} \sum_{i=1}^n f(x_i)\Delta x
+									</me>
+									
+								</p>
+							</li>
+							<li>
+								<p>
+									We're using a rectangle because it's the simplest shape we can use to find area.
+								</p>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</question>
         </subsubsection>
 
         <subsubsection xml:id="section-151-double">
 			<title>The Double Integral</title>
+			
+			<question>
+				<statement>
+					<p>
+						Now let <m>f(x,y)</m> be a function defined on the rectangle <m>[a,b]\times [c,d]</m>.  How could we extend the definition of the definite integral to a function of two variables?
+					</p>
+				</statement>
+				<solution>
+					<p>
+						Since we are operating in three dimensions now, we can take the same idea and instead of using rectangles, we can use rectangular prisms to approximate. 
+					</p>
+					<p>
+						However, since we're in three dimensions, we're not approximating area anymore; we're approximating volume.
+					</p>
+				</solution>
+			</question>
 
+			<example>
+				<statement>
+					<p>
+						This example will develop the definition of the definite integral for a function <m>f(x,y)</m>.  Let <m>f(x,y)</m> be defined on the region <m>R</m> given by
+						<me>
+							R = [a,b]\times [c,d] = \lrbrace{(x,y)\in\R^2\mid a\leq x\leq b, c\leq y\leq d}
+						</me>
+						and let <m>S</m> be the solid that lies above <m>R</m> and under the graph of <m>f</m>:
+						<me>
+							S = \lrbrace{(x,y,z)\in\R^3\mid 0\leq z\leq f(x,y), (x,y)\in R}
+						</me>
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									What kind of object can we use to approximate the volume of <m>S</m>?  What sort of expression do we need to approximate the volume?
+								</p>
+							</li>
+							<li>
+								<p>
+									Can we improve the approximation?  How?
+								</p>
+							</li>
+							<li>
+								<p>
+									Is there a way of converting from an approximation to an exact answer?  How?
+								</p>
+							</li>
+							<li>
+								<p>
+									The definition of the double integral is then:
+								</p>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									We can use rectangular prisms to approximate volume. We need to create a similar expression to this one:
+									<me>
+										f(x_i)\Delta x
+									</me>
+								</p>
+								<p>
+									Subdivide <m>R</m> into rectangles; in the <m>x-</m>direction, make the length <m>\Delta x = \dfrac{b-a}{m}</m>, where <m>m</m> is the number of subintervals in the <m>x-</m>direction. In the <m>y-</m>direction, make the length <m>\Delta y = \dfrac{d-c}{n}</m>, where <m>n</m> is the number of subintervals in the <m>y-</m>direction.
+								</p>
+								<p>
+									Let <m>(x_{ij},y_{ij})</m> be the midpoint of the rectangle <m>R_{ij}</m> (that is, the rectangle <m>i</m> steps horizontally and <m>j</m> steps vertically). The value <m>f(x_{ij},y_{ij})</m> gives the output on the surface <m>S</m> which is precisely the height of the prism.
+								</p>
+								<p>
+									So, the volume of an individual prism is given by the product of length (<m>\Delta x</m>), width (<m>\Delta y</m>), and height (<m>f(x_{ij},y_{ij})</m>). This gives the approximation
+									<me>
+										\text{prism volume} = f(x_{ij},y_{ij})\Delta x\Delta y
+									</me>
+								</p>
+								<p>
+									To find the volume of the entire region, we need to add up the volume of each rectangle <m>R_{ij}</m>. Since there are two indices, we have to have two summations. This gives us the expression
+									<me>
+										\text{volume under } S \approx \sum_{j=1}^n\sum_{i=1}^m f(x_{ij},y_{ij})\Delta x\Delta y
+									</me>
+									
+								</p>
+							</li>
+							<li>
+								<p>
+									We can improve the approximation by using more and more rectangles, and creating more and more subdivisions by increasing <m>m</m> and <m>n</m>. 
+								</p>
+							</li>
+							<li>
+								<p>
+									Yes; take the limit as <m>m\to\infty</m> and as <m>n\to \infty</m>.
+								</p>
+							</li>
+							<li>
+								<p>
+									<m>\int_c^d\int_a^b f(x,y)\, dx\, dy = \lim_{n\to\infty}\lim_{m\to\infty} \sum_{i=1}^m\sum_{j=1}^n f(x_{ij},y_{ij})\Delta x\Delta y</m>
+								</p>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Approximate the volume of the solid that lies above the square <m>R = [0,3]\times[0,3]</m> and below the surface <m>z = x^2 + y^2</m>. 
+					</p>
+					<p>
+						Divide <m>R</m> into three equal squares and choose the sample point to be the upper right corner of each square <m>R_{ij}</m>.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						First determine what the region will look like. This is shown in the image below.
+					</p>
+					<image>
+						<description>
+							The partition of <m>[0,3]\times[0,3]</m> with <m>n=m=3</m>; this creates 9 squares. The sample points are noted at the corners, and each square is labeled <m>R_{ij}</m>
+						</description>
+						<latex-image>
+							<![CDATA[
+							\begin{tikzpicture}
+								\begin{axis}[
+									scale = 1.5,
+									every tick label/.append style={font=\small},
+									axis x line = middle,
+									axis y line = middle,
+										every axis y label/.style={at={(ticklabel cs:1.15)}},
+										ytick = {0,1,2,3,4},
+										y label style={at={(axis description cs:0,1.1)},anchor=north},
+										ylabel = {$y$},
+										ymin = 0, ymax = 3.5,
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+										xtick = {0,1,2,3,4},
+											x label style={at={(axis description cs:1.1,0)},anchor=east},
+										xlabel = {$x$},
+										xmin = 0, xmax = 3.5
+								]
+									\coordinate (zerozero) at (0,0);
+									\coordinate (zerothree) at (0,3);
+									\coordinate (threezero) at (3,0);
+									\coordinate (zeroone) at (0,1);
+									\coordinate (zerotwo) at (0,2);
+									\coordinate (onezero) at (1,0);
+									\coordinate (twozero) at (2,0);
+									\coordinate (oneone) at (1,1);
+									\coordinate (onetwo) at (1,2);
+									\coordinate (onethree) at (1,3);
+									\coordinate (twoone) at (2,1);
+									\coordinate (twotwo) at (2,2);
+									\coordinate (twothree) at (2,3);
+									\coordinate (threeone) at (3,1);
+									\coordinate (threetwo) at (3,2);
+									\coordinate (threethree) at (3,3);
+									\coordinate (r11) at (.5,.5);
+									\coordinate (r12) at (.5,1.5);
+									\coordinate (r13) at (.5,2.5);
+									\coordinate (r21) at (1.5,.5);
+									\coordinate (r22) at (1.5,1.5);
+									\coordinate (r23) at (1.5,2.5);
+									\coordinate (r31) at (2.5,.5);
+									\coordinate (r32) at (2.5,1.5);
+									\coordinate (r33) at (2.5,2.5);
+								\end{axis}
+									\draw (zerothree)--(threethree);
+									\draw (threethree)--(threezero);
+									\draw (zeroone)--(threeone);
+									\draw (zerotwo)--(threetwo);
+									\draw (onethree)--(onezero);
+									\draw (twothree)--(twozero);
+									\fill (oneone) circle (0.1);
+									\fill (onetwo) circle (0.1);
+									\fill (onethree) circle (0.1);
+									\fill (twoone) circle (0.1);
+									\fill (twotwo) circle (0.1);
+									\fill (twothree) circle (0.1);
+									\fill (threeone) circle (0.1);
+									\fill (threetwo) circle (0.1);
+									\fill (threethree) circle (0.1);
+									\node at (r11) {$R_{11}$};
+									\node at (r12) {$R_{12}$};
+									\node at (r13) {$R_{13}$};
+									\node at (r21) {$R_{21}$};
+									\node at (r22) {$R_{22}$};
+									\node at (r23) {$R_{23}$};
+									\node at (r31) {$R_{31}$};
+									\node at (r32) {$R_{32}$};
+									\node at (r33) {$R_{33}$};
+							\end{tikzpicture}
+							]]>
+						</latex-image>
+					</image>
+					<p>
+						We know that the volume is given by the approximation
+						<me>
+							V\approx \sum_{i=1}^3\sum_{j=1}^3 f(x_{ij},y_{ij})\Delta x\Delta y
+						</me>
+						which can be rewritten (without sigma notation) as 
+						<me>
+							V\approx f(1,1)\Delta x\Delta y + f(1,2)\Delta x\Delta y + f(1,3)\Delta x\Delta y + f(2,1)\Delta x\Delta y + f(2,2)\Delta x\Delta y + f(2,3)\Delta x\Delta y + f(3,1)\Delta x\Delta y + f(3,2)\Delta x\Delta y + f(3,3)\Delta x\Delta y
+						</me>
+						since <m>\Delta x = \dfrac{3-0}{3} = 1</m> and <m>\Delta y = \dfrac{3-0}{3} = 1</m>, <m>\Delta x\Delta y = (1)(1) = 1</m>. This means the computation simplifies to
+						<me>
+							V\approx f(1,1)(1) + f(1,2)(1) + f(1,3)(1) + f(2,1)(1) + f(2,2)(1) + f(2,3)(1) + f(3,1)(1) + f(3,2)(1) + f(3,3)(1)
+						</me>
+						Computing the values at the given points and substituting gives
+						<me>
+							V\approx (1)(1) + (5)(1) + (10)(1) + (5)(1) + (8)(1) + (13)(1) + (10)(1) + (13)(1) + (18)(1)
+						</me>
+						so that we have
+						<m>V\approx 84</m>						
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						If <m>R = \lrbrace{(x,y)\mid -3\leq x\leq 3, -2\leq y\leq 2}</m>, then evaluate the integral <m>\ds \iint_R \sqrt{9-x^2}\,dA</m> by interpreting it as a volume.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						Drawing the surface gives half of a cylinder, along the <m>y-</m>axis. The volume of the cylinder is <m>\pi r^2 h</m>; in this case, <m>r = 3</m> and <m>h = 2-(-2) = 4</m>. Since we're dealing with half of the cylinder, our volume is given by <m>\dfrac{1}{2}\pi r^2 h = \dfrac{1}{2}\cdot (3)^2\cdot 4 = 18</m>
+					</p>
+				</solution>
+			</example>
         </subsubsection>
 
 	</subsection>
@@ -41,20 +335,344 @@
 	<subsection xml:id="section-151-inclass">
 		<title>In Class</title>
 
-		<subsubsection xml:id="section-151-examples">
-			<title>Some Examples</title>
+		<subsubsection xml:id="section-151-midpoint">
+			<title>Midpoint Rule</title>
 
+			<definition>
+				<title>Midpoint Rule (Double Integrals)</title>
+				<idx><h>Midpoint Rule (Double Integrals)</h></idx>
+				<statement>
+					<p>
+						If <m>\bar{x_i}</m> is the midpoint of the interval <m>[x_{i-1},x_i]</m> and <m>\bar{y_j}</m> is the midpoint of the interval <m>[y_{j-1},y_j]</m>, then we can approximate the double integral of <m>f(x,y)</m> over the region <m>R</m> by
+						<me>
+							\iint_R f(x,y)\, dA \approx \sum_{i=1}^m\sum_{j=1}^n f(\bar{x_i},\bar{y_j})\Delta A
+						</me>
+						where <m>\Delta A = \Delta x\,\Delta y</m>
+					</p>
+				</statement>
+			</definition>
+
+			<example>
+				<statement>
+					<p>
+						Approximate <m>\ds \iint_R (x-3y^2)\, dA</m>, where <m>R = \lrbrace{(x,y)\mid 0\leq x\leq 2,1\leq y\leq 2}</m> and <m>m=n=2</m>, using midpoints.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						Since <m>m = 2</m>, we take <m>\Delta x = \dfrac{2-0}{2} = 1</m>  and <m>\Delta y = \dfrac{2-1}{2} = \dfrac{1}{2}</m>. This means <m>x_1 = 1</m>, <m>x_2 = 2</m>, <m>y_1 = \dfrac{3}{2}</m>, and <m>y_2 = 2</m>.
+					</p>
+					<p>
+						Since we want midpoints, we have <m>\bar{x_1} = \dfrac{1}{2}</m>, <m>\bar{x_2} = \dfrac{3}{2}</m>, <m>y_1 = \dfrac{5}{4}</m>, and <m>\bar{y_2} = \dfrac{7}{4}</m> as our points.
+					</p>
+					<p>
+						Then, 
+						<md>
+							<mrow>\ds \iint (x-3y^2\, dA \amp\approx \sum_{i=1}^2\sum_{j=1}^2 f(\bar{x_i},\bar{y_j})\, \Delta A </mrow>
+							<mrow> \amp = f(\bar{x_1},\bar{y_1})\Delta A + f(\bar{x_2},\bar{y_1})\Delta A + f(\bar{x_1},\bar{y_2})\Delta A + f(\bar{x_2},\bar{y_2})\Delta A </mrow>
+							<mrow> \amp = f\lrpar{\dfrac{1}{2},\dfrac{5}{4}}\Delta A + f\lrpar{\dfrac{1}{2},\dfrac{7}{4}}\Delta A + f\lrpar{\dfrac{3}{2},\dfrac{5}{4}}\Delta A + f\lrpar{\dfrac{3}{2},\dfrac{7}{4}}\Delta A</mrow>
+							<mrow> \amp = \lrpar{-\dfrac{67}{16}}\lrpar{\dfrac{1}{2}} + \lrpar{-\dfrac{139}{16}}\lrpar{\dfrac{1}{2}} + \lrpar{-\dfrac{51}{16}}\lrpar{\dfrac{1}{2}} + \lrpar{-\dfrac{123}{16}}\lrpar{\dfrac{1}{2}} </mrow>
+							<mrow> \amp = -\dfrac{95}{8} </mrow>
+						</md>
+						So our conclusion is that
+						<me>
+							\iint_R (x-3y^2)\, dA \approx -\dfrac{95}{8} = -11.875
+						</me>
+						
+					</p>
+				</solution>
+			</example>
 		</subsubsection>
 
         <subsubsection xml:id="section-151-iterated">
 			<title>Iterated Integrals</title>
 
+			<p>
+				Now let's see how to evaluate double integrals.
+			</p>
+
+			<example>
+				<statement>
+					<p>
+						Consider the function <m>f(x,y)</m>, defined and integrable on the rectangle <m>R = [a,b]\times[c,d]</m>.
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									How can we make sense of the integral <m>\ds\int_c^d f(x,y)\, dy</m>?  Is it a necessarily a number?
+								</p>
+							</li>
+							<li>
+								<p>
+									If we set <m>A(x) = \ds\int_c^d f(x,y)\, dy</m>, then what does <m>\ds \int_a^b A(x)\, dx</m> do?
+								</p>
+							</li>
+							<li>
+								<p>
+									Put it all together.  Interpret the expressions
+									<me>
+										\ds \int_a^b\int_c^d f(x,y)\, dx\,dy \quad \ds \int_c^d\int_a^b f(x,y)\, dy\,dx
+									</me>
+								</p>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									Since we're integrating with respect to <m>y</m>, any and all <m>x</m> terms are considered constant; so while the <m>x</m> is treated as a number for the integration, the answer isn't necessarily a number- it could be a function of <m>x</m>.
+								</p>
+							</li>
+							<li>
+								<p>
+									This computes the integral of a single-variable function- something like what we're used to. Now, this integral returns a strictly numerical value.
+								</p>
+							</li>
+							<li>
+								<p>
+									In the first integral, we're integrating first with respect to <m>x</m> in order to get a function of <m>y</m>, then integrating with respect to <m>y</m> in order to get a numerical value.
+								</p>
+								<p>
+									In the second integral, we're integrating first with respect to <m>y</m> in order to get a function of <m>x</m>, then integrating with respect to <m>x</m> in order to get an numerical value.
+								</p>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Let <m>f(x,y) = x^2y^3</m>, defined on the rectangle <m>R = \lrbrace{(x,y)\mid 0\leq x\leq 3,1\leq y\leq 2}</m>. Evaluate the following:
+					</p>
+					<p>
+						<ol>
+							<li>
+								<p>
+									<m>\ds \int_0^3 \int_1^2 f(x,y)\,dy\,dx</m>
+								</p>
+							</li>
+							<li>
+								<p>
+									<m>\ds \int_1^2\int_0^3 f(x,y)\,dx\,dy</m>
+								</p>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol>
+							<li>
+								<p>
+									<m>\ds \int_0^3 \int_1^2 f(x,y)\,dy\,dx = \dfrac{135}{4}</m>
+								</p>
+							</li>
+							<li>
+								<p>
+									<m>\ds \int_1^2\int_0^3 f(x,y)\,dx\,dy = \dfrac{135}{4}</m>
+								</p>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
+			
+			<example>
+				<statement>
+					<p>
+						Let <m>g(x,y) = xe^y</m>, defined on the rectangle <m>[0,1]\times[-1,1]</m>.  Evaluate the following:
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									<m>\ds \iint_R g(x,y)\,dx\,dy</m>
+								</p>
+							</li>
+							<li>
+								<p>
+									<m>\ds \iint_R g(x,y)\,dy\,dx</m>
+								</p>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									<m>\ds \iint_R g(x,y)\,dx\,dy = \dfrac{e-e^{-1}}{2}</m>
+								</p>
+							</li>
+							<li>
+								<p>
+									<m>\ds \iint_R g(x,y)\,dy\,dx = \dfrac{e-e^{-1}}{2}</m>
+								</p>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
+			
+			<question>
+				<statement>
+					<p>
+						In the previous two examples, you should see some similarities between both parts.  What are those similarities?
+					</p>
+				</statement>
+				<solution>
+					<p>
+						The answer is same when the order of integration is changed
+					</p>
+				</solution>
+			</question>
+
+			<theorem>
+				<title>Fubini's Theorem</title>
+				<statement>
+					<p>
+						If <m>f</m> is continuous on the rectangle
+						<me>
+							R = \lrbrace{(x,y)\mid a\leq x\leq b, c\leq y\leq d}
+						</me>
+						then
+						<me>
+							\int_a^b\int_c^d f(x,y)\, dy\, dx = \int_c^d\int_a^b f(x,y)\, dx\, dy
+						</me>
+						
+					</p>
+				</statement>
+			</theorem>
+
+			<example>
+				<statement>
+					<p>
+						Evaluate the double integral <m>\ds \iint_R (y-3xy)\, dA</m>, where <m>R = \lrbrace{(x,y)\mid -1\leq x\leq 5,0\leq y\leq 1}</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \iint_R (y-3xy)\, dA = -15</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Let <m>f(x,y) =y\cos (xy)</m>
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									Evaluate the double integral <m>\ds \int_0^{\pi/4}\int_0^{\pi/2} f(x,y)\, dy\,dx</m>.  What do you notice?
+								</p>
+							</li>
+							<li>
+								<p>
+									Evaluate the double integral <m>\ds \int_0^{\pi/2}\int_0^{\pi/4} f(x,y)\, dx\, dy</m>.  What do you notice?
+								</p>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									<m>\ds \int_0^{\pi/4}\int_0^{\pi/2} f(x,y)\, dy\,dx = -\dfrac{4}{\pi}\cos\lrpar{\dfrac{\pi^2}{8}}</m>. This is a very difficult integral, requiring multiple uses of integration by parts.
+								</p>
+							</li>
+							<li>
+								<p>
+									<m>\ds \int_0^{\pi/2}\int_0^{\pi/4} f(x,y)\, dx\, dy = -\dfrac{4}{\pi}\cos\lrpar{\dfrac{\pi^2}{8}}</m>.  This order was much simpler than the previous one.
+								</p>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find the volume of the solid bounded by the elliptic paraboloid <m>x^2 + 4y^2 + z = 16</m>, the planes <m>x = 2</m> and <m>y = 2</m>, and the three coordinate planes.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int_0^2\int_0^2 (16-x^2-4y^2)\, dx\, dy = 36</m>
+					</p>
+				</solution>
+			</example>
+			
 		</subsubsection>
 
 	</subsection>
 
 	<subsection xml:id="section-151-afterclass">
 		<title>After Class Activities</title>
+			
+		<example>
+			<statement>
+				<p>
+					Evaluate <m>\ds \iint_R \sqrt{5}\, dA</m>, where <m>R = \lrbrace{(x,y)\mid 2\leq x\leq 5,-1\leq y\leq 2}</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Evaluate <m>\ds \iint_R (13-6x)\, dA</m>, where <m>R = \lrbrace{(x,y)\mid -1\leq x\leq 1, -2\leq y\leq 2}</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Evaluate <m>\ds \int_1^4\int_0^2 (3xy^2 -3y)\, dy\, dx</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Evaluate <m>\ds \int_0^2\int_0^1 (2x+2y)^2\, dx\, dy</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					
+				</p>
+			</solution>
+		</example>
 
 	</subsection>
 </section>
