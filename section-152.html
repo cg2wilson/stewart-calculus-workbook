@@ -1952,20 +1952,512 @@ window.MathJax = {
 </h3>
 <figure class="figure figure-like" id="figure-136"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">136<span class="period">.</span></span><span class="space"> </span>Pre-Class Video 1</figcaption></figure><figure class="figure figure-like" id="figure-137"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">137<span class="period">.</span></span><span class="space"> </span>Pre-Class Video 2</figcaption></figure><section class="subsubsection" id="section-152-general"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span> <span class="codenumber">15.2.1.1</span> <span class="title">General Regions</span>
-</h4></section><section class="subsubsection" id="section-152-properties"><h4 class="heading hide-type">
+</h4>
+<div class="para" id="p-1227">In general, the regions we deal with aren't perfect rectangles- so, integration over any plane region needs to be cast in a different light.</div>
+<article class="definition definition-like" id="definition-53"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">15.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Type I Region.</span>
+</h5>  <div class="para logical" id="p-1228">
+<div class="para">We say that a plane region <span class="process-math">\(D\)</span> is <dfn class="terminology">type I</dfn> if it lies between the graphs of two continuous functions of <span class="process-math">\(x\text{,}\)</span> i.e.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+D = \lrbrace{(x,y)\mid a\leq x\leq b, g_1(x)\leq y\leq g_2(x)}
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(g_1\)</span> and <span class="process-math">\(g_2\)</span> are continuous on <span class="process-math">\([a,b]\text{.}\)</span>
+</div>
+</div></article><article class="definition definition-like" id="definition-54"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">15.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Type II Region.</span>
+</h5>  <div class="para logical" id="p-1229">
+<div class="para">We say that a plane region <span class="process-math">\(D\)</span> is <dfn class="terminology">type II</dfn> if it lies between the graphs of two continuous functions of <span class="process-math">\(y\text{,}\)</span> i.e.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+D = \lrbrace{(x,y)\mid c\leq y\leq d, h_1(y)\leq x\leq h_2(y)}
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(h_1\)</span> and <span class="process-math">\(h_2\)</span> are continuous on <span class="process-math">\([c,d]\text{.}\)</span>
+</div>
+</div></article><article class="example example-like" id="example-843"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">15.2.3</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-1230">This example will develop a usable formula for Type I and Type II integrals. Let the region <span class="process-math">\(R\)</span> be defined by <span class="process-math">\(R = \lrbrace{(x,y)\mid 1\leq x \leq 2, 2\leq y \leq 4}\text{.}\)</span>
+</div> <div class="para logical" id="p-1231"><ol class="lower-alpha">
+<li id="li-1451"><div class="para" id="p-1232">Sketch the region <span class="process-math">\(R\text{.}\)</span>
+</div></li>
+<li id="li-1452"><div class="para" id="p-1233">Consider some function <span class="process-math">\(f(x,y)\)</span> which is defined on <span class="process-math">\(R\text{.}\)</span> In the expression <span class="process-math">\(\ds \int_1^2\int_3^4 f(x,y)\, dy\, dx\text{,}\)</span> what are the bounds communicating to you, in terms of <span class="process-math">\(R\text{?}\)</span> Rewrite the integral expression and <span class="process-math">\(R\)</span> to reflect your answer.</div></li>
+<li id="li-1453"><div class="para" id="p-1234">Now sketch what would happen to <span class="process-math">\(R\)</span> if we replace 3 with the function <span class="process-math">\(g_1(x) = x^2\text{.}\)</span> What must change in the integral expression? Call the new region <span class="process-math">\(R_1\text{.}\)</span>
+</div></li>
+<li id="li-1454"><div class="para" id="p-1235">If we replace 4 with the function <span class="process-math">\(g_2(x) = -x^2+3x+2\text{,}\)</span> what changes about <span class="process-math">\(R_1\text{?}\)</span> What about the integral?</div></li>
+<li id="li-1455"><div class="para" id="p-1236">In (c), what would have happened to <span class="process-math">\(R\)</span> if we replaced 1 with <span class="process-math">\(h_1(y) = 4-y\)</span> instead? Draw the new region, and call it <span class="process-math">\(R_2\text{.}\)</span> What change would you see on the integral from part (b)?</div></li>
+<li id="li-1456"><div class="para" id="p-1237">Now what would happen to <span class="process-math">\(R_2\)</span> if we replace 2 with <span class="process-math">\(h_2(y) = y^2-4y+4\text{?}\)</span> Sketch the new <span class="process-math">\(R_2\text{.}\)</span> What change would you see on the integral in part (e)?</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-860" id="solution-860"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-860"><div class="solution solution-like"><div class="para logical" id="p-1238"><ol class="lower-alpha">
+<li id="li-1457"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-178.svg" role="img" class="contained" alt="A sketch of the region \(R\) described in the problem"></div></li>
+<li id="li-1458">
+<div class="para" id="p-1239">The bounds are communicating <em class="alert">functions which define the region</em>.</div>
+<div class="para" id="p-1240">Specifically, we can think of the bounds 1 and 2 as the functions <span class="process-math">\(a_1(y) = x=1\)</span> and <span class="process-math">\(a_2(y) = x=2\)</span> (which are functions of <span class="process-math">\(y\text{,}\)</span> so integrating with respect to <span class="process-math">\(y\)</span> makes sense). We can also think of 3 and 4 as the functions <span class="process-math">\(b_1(x) = y=3\)</span> and <span class="process-math">\(b_2(x) = y = 4\)</span> (which are functions of <span class="process-math">\(x\text{,}\)</span> so integrating with respect to <span class="process-math">\(x\)</span> makes sense).</div>
+<div class="para logical" id="p-1241">
+<div class="para">This means we can rewrite the integral like this:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_1^2\int_3^4 f(x,y)\, dy\, dx = \int_{x=1}^{x=2}\int_{y=3}^{y=4}f(x,y)\, dy\, dx 
+\end{equation*}
+</div>
+</div>
+</li>
+<li id="li-1459">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-179.svg" role="img" class="contained" alt="A sketch of the region \(R_1\) as described in the problem"></div>
+<div class="para logical" id="p-1242">
+<div class="para">Since the bound (function) <span class="process-math">\(y = 3\)</span> is getting replaced by the bound (function) <span class="process-math">\(g_1(x) = x^2\text{,}\)</span> the integral must change to reflect the new lower bound:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{x=1}^{x=2} \int_{g_1(x) = x^2}^{y = 4} f(x,y)\, dx\, dy = \int_1^2\int_{x^2}^4 f(x,y)\, dx\, dy
+\end{equation*}
+</div>
+</div>
+</li>
+<li id="li-1460">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-180.svg" role="img" class="contained" alt="A sketch of the region \(R_1\) as described in the problem"></div>
+<div class="para logical" id="p-1243">
+<div class="para">Since the bound (function) <span class="process-math">\(y = 4\)</span> is getting replaced by the bound (function) <span class="process-math">\(g_2(x) = -x^2+3x+2\text{,}\)</span> the integral must change to reflect the new upper bound:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{x=1}^{x=2} \int_{g_1(x) = x^2}^{g_2(x) = -x^2+3x+2} f(x,y)\, dx\, dy = \int_1^2\int_{x^2}^{-x^2+3x+2} f(x,y)\, dx\, dy
+\end{equation*}
+</div>
+</div>
+</li>
+<li id="li-1461">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-181.svg" role="img" class="contained" alt="A sketch of the region \(R_2\) as described in the problem"></div>
+<div class="para logical" id="p-1244">
+<div class="para">Since the bound (function) <span class="process-math">\(x=1\)</span> is getting replaced by the bound (function) <span class="process-math">\(h_1(y) = 4-y\text{,}\)</span> the integral must change to reflect the new lower bound:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{h_1(y) = 4-y}^{x=2}\int_{y=3}^{y=4} f(x,y)\, dx \, dy = \int_{4-y}^{2}\int_3^4 f(x,y)\, dx\, dy
+\end{equation*}
+</div>
+</div>
+</li>
+<li id="li-1462">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-182.svg" role="img" class="contained" alt="A sketch of the region \(R_2\) as described in the problem"></div>
+<div class="para logical" id="p-1245">
+<div class="para">Since the bound (function) <span class="process-math">\(x=2\)</span> is getting replaced by the bound (function) <span class="process-math">\(h_2(y) = y^2-4y+4\text{,}\)</span> the integral must change to reflect the new upper bound:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{h_1(y) = y+1}^{h_2(y) = y^2-4y+4}\int_{y=1}^{y=2} f(x,y)\, dx \, dy = \int_{4-y}^{y^2-4y+4}\int_3^4 f(x,y)\, dx\, dy
+\end{equation*}
+</div>
+</div>
+</li>
+</ol></div></div></div>
+</div></article><article class="assemblage assemblage-like" id="assemblage-76"><h5 class="heading"><span class="title">Integrals of Type I and Type II Regions.</span></h5>
+<div class="para logical" id="p-1246">
+<div class="para">If <span class="process-math">\(f\)</span> is continuous on a Type I region <span class="process-math">\(D\)</span> described by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+D = \lrbrace{((x,y) \mid a\leq x\leq b, g_1(x)\leq y \leq g_2(x)}
+\end{equation*}
+</div>
+<div class="para">then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\iint_D f(x,y)\, dA = \int_a^b \int_{g_1(x)}^{g_2(x)} f(x,y)\, dy\, dx
+\end{equation*}
+</div>
+</div>
+<div class="para logical" id="p-1247">
+<div class="para">If <span class="process-math">\(f\)</span> is continuous on a Type II region <span class="process-math">\(E\)</span> described by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+E = \lrbrace{(x,y)\mid h_1(y)\leq x\leq h_2(y), c\leq y\leq d}
+\end{equation*}
+</div>
+<div class="para">then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\iint_E f(x,y)\, dA = \int_c^d \int_{h_1(y)}^{h_2(y)} f(x,y)\, dx\, dy
+\end{equation*}
+</div>
+</div></article><article class="example example-like" id="example-844"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">15.2.4</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-1248">Let <span class="process-math">\(D\)</span> be the region bounded by the curves <span class="process-math">\(y = 3x^2\)</span> and <span class="process-math">\(y =1+2x^2\)</span>
+</div> <div class="para logical" id="p-1249"><ol class="lower-alpha">
+<li id="li-1463"><div class="para" id="p-1250">Sketch and label the curves, and indicate where the region <span class="process-math">\(D\)</span> is.</div></li>
+<li id="li-1464"><div class="para" id="p-1251">Write the region using the definition of a Type I region.</div></li>
+<li id="li-1465"><div class="para" id="p-1252">Now compute the integral <span class="process-math">\(\ds \iint_D (x+3y)\, dA\text{.}\)</span>
+</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-861" id="solution-861"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-861"><div class="solution solution-like"><div class="para logical" id="p-1253"><ol class="lower-alpha">
+<li id="li-1466"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-183.svg" role="img" class="contained" alt="A sketch of the region \(D\) given in the problem, on the interval \([-2,2]\text{.}\)"></div></li>
+<li id="li-1467"><div class="para logical" id="p-1254">
+<div class="para">Formally, we can write the region using set-builder notation as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+D = \lrbrace{(x,y)\mid -1\leq x\leq 1, 3x^2\leq y \leq 1+2x^2}
+\end{equation*}
+</div>
+</div></li>
+<li id="li-1468">
+<div class="para logical" id="p-1255">
+<div class="para">From part b, we know that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+D = \lrbrace{(x,y)\mid -1\leq x\leq 1, 3x^2\leq y \leq 1+2x^2}
+\end{equation*}
+</div>
+<div class="para">This means we can write the integral as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{-1}^1 \int_{3x^2}^{1+2x^2} (x+3y)\, dy\, dx
+\end{equation*}
+</div>
+</div>
+<div class="para logical" id="p-1256">
+<div class="para">Evaluate from inside out. This means we're first computing</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{3x^2}^{1+2x^2} (x+3y)\, dy
+\end{equation*}
+</div>
+<div class="para">So we have</div>
+<div class="displaymath process-math" id="md-39">
+\begin{align*}
+\int_{3x^2}^{1+2x^2} (x+3y)\, dy \amp = \lrpar{xy + \dfrac{3}{2}y^2}\bigg\rvert_{y=3x^2}^{y=1+2x^2} \\
+\amp = \lrpar{x(1+2x^2) + \dfrac{3}{2}(1+2x^2)} - \lrpar{x(3x^2) + \dfrac{3}{2}(3x^2)}  \\
+\amp = -\dfrac{15}{2}x^4 -x^3 + 6x^2 + x + \dfrac{3}{2}
+\end{align*}
+</div>
+</div>
+<div class="para logical" id="p-1257">
+<div class="para">Since the first integral evaluates as <span class="process-math">\(-\dfrac{15}{2}x^4 -x^3 + 6x^2 + x + \dfrac{3}{2}\text{,}\)</span> we can rewrite the integral as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{-1}^1 \int_{3x^2}^{1+2x^2} (x+3y)\, dy\, dx = \int_{-1}^1 \lrpar{-\dfrac{15}{2}x^4 -x^3 + 6x^2 + x + \dfrac{3}{2}}\, dx
+\end{equation*}
+</div>
+<div class="para">which evaluates to 45.</div>
+</div>
+</li>
+</ol></div></div></div>
+</div></article><article class="example example-like" id="example-845"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">15.2.5</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-1258">Find the volume of the solid that lies under the paraboloid <span class="process-math">\(z = x^2 +2y^2\text{,}\)</span> and above the region <span class="process-math">\(R\)</span> in the <span class="process-math">\(xy-\)</span>plane bounded by the curves <span class="process-math">\(y = x^3\)</span> and <span class="process-math">\(y = x\text{.}\)</span> Treat <span class="process-math">\(R\)</span> as a Type I region.</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-862" id="solution-862"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-862"><div class="solution solution-like">
+<div class="para" id="p-1259">Here is a sketch of <span class="process-math">\(R\text{:}\)</span>
+</div> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-184.svg" role="img" class="contained" alt="A sketch of the region \(R\) as described in the problem."></div> <div class="para logical" id="p-1260">
+<div class="para">Since we're treating <span class="process-math">\(R\)</span> as a Type I region, we need to find a description of the form</div>
+<div class="displaymath process-math">
+\begin{equation*}
+R = \lrbrace{(x,y)\mid a\leq x\leq b, g_1(x)\leq y\leq g_2(x)}
+\end{equation*}
+</div>
+<div class="para">Based on the region, we can say that <span class="process-math">\(g_1(x) = x^3\)</span> and <span class="process-math">\(g_2(x) = x\text{.}\)</span> The <span class="process-math">\(x-\)</span>values must be <span class="process-math">\(x=0\)</span> and <span class="process-math">\(x = 1\)</span> since the curves intersect at those locations. This means our integral is set up as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_0^1 \int_{x^3}^x (x^2 + 2y^2)\, dy\, dx
+\end{equation*}
+</div>
+</div> <div class="para logical" id="p-1261">
+<div class="para">So we compute:</div>
+<div class="displaymath process-math" id="md-40">
+\begin{align*}
+\int_0^1 \int_{x^3}^x (x^2 + 2y^2)\, dy\, dx \amp = \int_0^1 \lrpar{x^2y + \dfrac{2}{3}y^3}\bigg\rvert_{x^3}^x\\
+\amp = \int_0^1 \lrpar{-\dfrac{2}{3}x^9 -x^5 +\dfrac{5}{3}x^3}\, dx\\
+\amp = \dfrac{11}{60}
+\end{align*}
+</div>
+</div>
+</div></div>
+</div></article><article class="example example-like" id="example-846"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">15.2.6</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-1262">Again let <span class="process-math">\(R\)</span> to be the region in the <span class="process-math">\(xy-\)</span>plane bounded by the curves <span class="process-math">\(y = x^3\)</span> and <span class="process-math">\(y = x\text{.}\)</span>
+</div> <div class="para logical" id="p-1263"><ol class="lower-alpha">
+<li id="li-1469"><div class="para" id="p-1264">Write <span class="process-math">\(R\)</span> as a Type II region.</div></li>
+<li id="li-1470"><div class="para" id="p-1265">Compute <span class="process-math">\(\ds \iint_R (x^2 + 2y^2)\, dA\text{.}\)</span> How does your work and answer compare to the previous example?</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-863" id="solution-863"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-863"><div class="solution solution-like"><div class="para logical" id="p-1266"><ol class="lower-alpha">
+<li id="li-1471">
+<div class="para" id="p-1267">For convenience, here is the sketch of <span class="process-math">\(R\)</span> again:</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-185.svg" role="img" class="contained" alt="A sketch of the region \(R\) as described in the problem."></div>
+<div class="para logical" id="p-1268">
+<div class="para">As a Type II region, we need to express <span class="process-math">\(R\)</span> in the form</div>
+<div class="displaymath process-math">
+\begin{equation*}
+R = \lrbrace{(x,y)\mid c\leq y\leq d, h_1(y)\leq y\leq h_2(y)}
+\end{equation*}
+</div>
+</div>
+<div class="para" id="p-1269">Rewriting as functions of <span class="process-math">\(y\text{,}\)</span> <span class="process-math">\(y = x^3\)</span> becomes <span class="process-math">\(x = \sqrt[3]{y}\)</span> and <span class="process-math">\(y = x\)</span> stays <span class="process-math">\(x = y\text{.}\)</span> Our upper function will be <span class="process-math">\(h_2(y) = \sqrt[3]{y}\)</span> and our lower function will be <span class="process-math">\(h_1(y) = y\text{.}\)</span>
+</div>
+<div class="para" id="p-1270">For our <span class="process-math">\(y-\)</span>coordinate bounds, we still look at the intersection. There, the <span class="process-math">\(y-\)</span>coordinates are <span class="process-math">\(y = 0\)</span> and <span class="process-math">\(y = 1\text{.}\)</span>
+</div>
+</li>
+<li id="li-1472">
+<div class="para logical" id="p-1271"><div class="displaymath process-math" id="md-41">
+\begin{align*}
+\iint_R (x^2 + 2y^2)\, dA \amp = \int_0^1 \int_{y}^{y^{1/3}} (x^2 + 2y^2)\, dx\, dy\\
+\amp = \int_0^1 \lrpar{\dfrac{1}{3}y + \dfrac{2}{3}y^{7/3} - y^3}\, dy\\
+\amp = \lrpar{\dfrac{1}{6}y^2 + \dfrac{1}{5}y^{10/3} - \dfrac{1}{4}y^4}\bigg\rvert_0^1\\
+\amp = \dfrac{11}{60}
+\end{align*}
+</div></div>
+<div class="para" id="p-1272">The work is similar but distinct. Since our bounds changed, the integral itself looks substantially different after the first integral. However, the answer is the same- which we would expect (and hope) since the region and function are the same.</div>
+</li>
+</ol></div></div></div>
+</div></article></section><section class="subsubsection" id="section-152-properties"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span> <span class="codenumber">15.2.1.2</span> <span class="title">Properties of Double Integrals</span>
-</h4></section></section><section class="subsection" id="section-152-preclass"><h3 class="heading hide-type">
+</h4>
+<div class="para logical" id="p-1273">
+<div class="para">Double integrals, because they are integrals, share most of the properties of single integrals. We'll isolate a few which can be helpful (without proof):</div>
+<ol class="decimal">
+<li id="li-1473"><div class="para" id="p-1274"><span class="process-math">\(\displaystyle \ds \iint_D [f(x,y) \pm g(x,y)]\, dA = \iint f(x,y)\, dA \pm \iint_D g(x,y)\, dA\)</span></div></li>
+<li id="li-1474"><div class="para" id="p-1275"><span class="process-math">\(\displaystyle \ds \iint_D c\cdot f(x,y)\, dA = c\cdot \iint_D f(x,y)\, dA\)</span></div></li>
+<li id="li-1475"><div class="para logical" id="p-1276">
+<div class="para">If <span class="process-math">\(f(x,y) \leq g(x,y)\)</span> for all <span class="process-math">\((x,y)\)</span> in <span class="process-math">\(D\text{,}\)</span> then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\iint_D f(x,y)\, dA \leq \iint_D g(x,y)\, dA
+\end{equation*}
+</div>
+</div></li>
+<li id="li-1476"><div class="para logical" id="p-1277">
+<div class="para">Let <span class="process-math">\(D_1\)</span> and <span class="process-math">\(D_2\)</span> be two non-overlapping regions (except potentially on their common boundary). Then, <span class="process-math">\(D = D_1\cup D_2\)</span> and</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\iint_D f(x,y)\, dA = \iint_{D_1} f(x,y)\, dA + \iint_{D_2} f(x,y)\, dA
+\end{equation*}
+</div>
+</div></li>
+<li id="li-1477"><div class="para" id="p-1278"><span class="process-math">\(\displaystyle \ds \iint_D 1\, dA = \text{Area}(D)\)</span></div></li>
+</ol>
+</div></section></section><section class="subsection" id="section-152-preclass"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">15.2.2</span> <span class="title">Pre-Class Activities</span>
 </h3></section><section class="subsection" id="section-152-inclass"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">15.2.3</span> <span class="title">In Class</span>
 </h3>
 <section class="subsubsection" id="section-152-examples"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span> <span class="codenumber">15.2.3.1</span> <span class="title">Some Examples</span>
-</h4></section><section class="subsubsection" id="section-152-order"><h4 class="heading hide-type">
+</h4>
+<article class="example example-like" id="example-847"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">15.2.7</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-1279">Evaluate <span class="process-math">\(\ds \iint_D x^2y^2\, dA\text{,}\)</span> where <span class="process-math">\(D\)</span> is the region bounded by the curves <span class="process-math">\(y = x\)</span> and <span class="process-math">\(y^2 = x+6\text{.}\)</span>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-864" id="solution-864"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-864"><div class="solution solution-like">
+<div class="para" id="p-1280">The region <span class="process-math">\(D\)</span> is shown below:</div> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-186.svg" role="img" class="contained" alt="A sketch of the region \(D\) given in the problem."></div> <div class="para logical" id="p-1281">
+<div class="para">If we try to treat this as a Type I region, we'll need to split into two integrals (corresponding to the two different lower bounds). So, instead treat <span class="process-math">\(D\)</span> as a Type II region:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+D = \lrbrace{(x,y)\mid -2\leq y\leq 3, y^2-6\leq x \leq y}
+\end{equation*}
+</div>
+<div class="para">This gives the integral</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{-2}^3\int_{y^2-6}^{y} x^2y^2\, dx\, dy
+\end{equation*}
+</div>
+<div class="para">which evaluates to <span class="process-math">\(\dfrac{50375}{378}\)</span>
+</div>
+</div>
+</div></div>
+</div></article><article class="example example-like" id="example-848"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">15.2.8</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-1282">Find the volume of the first-octant tetrahedron bounded by the plane <span class="process-math">\(x + 2y + z = 2\text{.}\)</span>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-865" id="solution-865"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-865"><div class="solution solution-like">
+<div class="para" id="p-1283">To determine the region of integration, sketch the problem in three-dimensional space (I don't know how to do this right now, so I'll have to come back and add the image later). Doing this gives <span class="process-math">\(f(x,y) = 2-x-2y\)</span> and <span class="process-math">\(R = \lrbrace{(x,y)\mid 0\leq x\leq 2, 0\leq y\leq -\dfrac{1}{2}x+1}\)</span> (as a Type I region) or <span class="process-math">\(R = \lrbrace{(x,y)\mid 0\leq y\leq 1, 0\leq x\leq 2-2y}\)</span> (as a Type II region).</div> <div class="para logical" id="p-1284">
+<div class="para">The Type I integral setup is given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_0^2\int_0^{-x/2 + 1} (2-x-2y)\, dy\, dx
+\end{equation*}
+</div>
+<div class="para">and the Type II integral setup is given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_0^1\int_0^{2-2y} (2-x-2y)\, dx\, dy
+\end{equation*}
+</div>
+<div class="para">In either event, the integral has a value of <span class="process-math">\(\dfrac{2}{3}\)</span>
+</div>
+</div>
+</div></div>
+</div></article><article class="example example-like" id="example-849"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">15.2.9</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-1285">Find the volume of the solid created by the function <span class="process-math">\(f(x,y) = \dfrac{y}{x^2+1}\)</span> over the region <span class="process-math">\(R\)</span> bounded by the curves <span class="process-math">\(y = \sqrt{x}\text{,}\)</span> <span class="process-math">\(y = 0\text{,}\)</span> and <span class="process-math">\(x = 4\text{.}\)</span>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-866" id="solution-866"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-866"><div class="solution solution-like"><div class="para logical" id="p-1286">
+<div class="para">The Type I integral looks like</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_0^4\int_0^{\sqrt{x}} \dfrac{y}{x^2+1}\, dy\, dx
+\end{equation*}
+</div>
+<div class="para">and the Type II integral takes the form</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_0^2\int_{y^2}^{4} \dfrac{y}{x^2+1}\, dx\, dy
+\end{equation*}
+</div>
+<div class="para">and the value is <span class="process-math">\(\dfrac{1}{4}\ln 17\)</span>
+</div>
+</div></div></div>
+</div></article><article class="example example-like" id="example-850"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">15.2.10</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-1287">Consider the integral <span class="process-math">\(\ds \int_0^2 \int_0^{y^2} x^2y\, dx\, dy\)</span>
+</div> <div class="para logical" id="p-1288"><ol class="lower-alpha">
+<li id="li-1478"><div class="para" id="p-1289">Sketch and label the region described in the integral.</div></li>
+<li id="li-1479"><div class="para" id="p-1290">Evaluate the integral.</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-867" id="solution-867"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-867"><div class="solution solution-like">
+<div class="para" id="p-1291">Consider the integral <span class="process-math">\(\ds \int_0^2 \int_0^{y^2} x^2y\, dx\, dy\)</span>
+</div> <div class="para logical" id="p-1292"><ol class="lower-alpha">
+<li id="li-1480"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-187.svg" role="img" class="contained" alt="The region \(R\) defined by the integral in the problem. As a Type II region, the description is \(R = \lrbrace{(x,y)\mid 0\leq y\leq 2, 0\leq x\leq y^2}\text{.}\) As a Type I region, the description is \(R = \lrbrace{(x,y)\mid 0\leq x\leq 4, \sqrt{x}\leq y\leq 2}\)"></div></li>
+<li id="li-1481"><div class="para logical" id="p-1293">
+<div class="para">As a Type I integral, we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_0^4 \int_{\sqrt{x}}^2 (x^2y)\, dy\, dx
+\end{equation*}
+</div>
+<div class="para">and as a Type II integral we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_0^2 \int_0^{y^2}(x^2y)\, dx\, dy
+\end{equation*}
+</div>
+<div class="para">which evaluates to <span class="process-math">\(\dfrac{32}{3}\)</span>
+</div>
+</div></li>
+</ol></div>
+</div></div>
+</div></article></section><section class="subsubsection" id="section-152-order"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span> <span class="codenumber">15.2.3.2</span> <span class="title">Changing the Order of Integration</span>
-</h4></section></section><section class="subsection" id="section-152-afterclass"><h3 class="heading hide-type">
+</h4>
+<article class="example example-like" id="example-851"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">15.2.11</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-1294">Let <span class="process-math">\(f(x,y) = \sec^2(x^2)\)</span>
+</div> <div class="para logical" id="p-1295"><ol class="lower-alpha">
+<li id="li-1482"><div class="para" id="p-1296">Compute <span class="process-math">\(\ds \int_0^1\int_y^1 f(x,y)\, dx\, dy\text{.}\)</span>  You should run into some issues; what are they?</div></li>
+<li id="li-1483"><div class="para" id="p-1297">Draw and label the region described in part (a).</div></li>
+<li id="li-1484"><div class="para" id="p-1298">Use part (b) to rewrite the integral in part (a), then evaluate <span class="process-math">\(\ds \iint_D f(x,y)\, dA\)</span>
+</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-868" id="solution-868"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-868"><div class="solution solution-like"><div class="para logical" id="p-1299"><ol class="lower-alpha">
+<li id="li-1485"><div class="para" id="p-1300">The problem is immediately that we don't have a technique to integrate <span class="process-math">\(\sec^2(x^2)\text{.}\)</span>
+</div></li>
+<li id="li-1486"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-188.svg" role="img" class="contained" alt="The region \(R\) described in the problem is sketched. As a Type II integral, the region is given by \(R = \lrbrace{(x,y)\mid 0\leq y\leq 1, y\leq x \leq 1}\text{;}\) as a Type I region, it is \(R = \lrbrace{(x,y)\mid 0\leq x\leq 1,0\leq y\leq x}\)"></div></li>
+<li id="li-1487"><div class="para logical" id="p-1301">
+<div class="para">As written, the integral is Type II; as a Type I integral, the region is described by <span class="process-math">\(R = \lrbrace{(x,y)\mid 0\leq x\leq 1, 0\leq y\leq x}\text{.}\)</span> This means we can rewrite the integral as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_0^1 \int_0^x \sec^2(x^2)\, dy\, dx
+\end{equation*}
+</div>
+<div class="para">Evaluating the first integral now gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_0^1 x\sec^2(x^2)\, dx
+\end{equation*}
+</div>
+<div class="para">which can be evaluated using substitution. This gives a value of <span class="process-math">\(\dfrac{1}{2}\tan(1)\text{.}\)</span>
+</div>
+</div></li>
+</ol></div></div></div>
+</div></article><article class="example example-like" id="example-852"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">15.2.12</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-1302">Evaluate <span class="process-math">\(\ds \iint_D e^{-y^2}\, dA\text{,}\)</span> where <span class="process-math">\(D = \lrbrace{(x,y)\mid 0\leq x\leq 3, x\leq y \leq 3}\)</span>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-869" id="solution-869"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-869"><div class="solution solution-like"><div class="para logical" id="p-1303">
+<div class="para">The Type II region is not feasible because there is no antiderivative for <span class="process-math">\(e^{-y^2}\text{.}\)</span> But after drawing and rewriting as a Type I region, we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+
+\end{equation*}
+</div>
+<div class="para">So the integral becomes</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_0^3\int_0^y e^{-y^2}\, dx\, dy
+\end{equation*}
+</div>
+<div class="para">whose value is <span class="process-math">\(\dfrac{1-e^{-9}}{2}\)</span>
+</div>
+</div></div></div>
+</div></article><article class="example example-like" id="example-853"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">15.2.13</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-1304">Evaluate <span class="process-math">\(\ds \int_0^2\int_{y/2}^1 y\cos (x^3-1)\, dx\, dy\)</span>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-870" id="solution-870"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-870"><div class="solution solution-like"><div class="para logical" id="p-1305">
+<div class="para">Switching to a Type I integral, we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_0^1\int_0^{2x} y\cos(x^3-1)\, dy\, dx
+\end{equation*}
+</div>
+<div class="para">which evaluates to <span class="process-math">\(\dfrac{2}{3}\sin (1)\)</span>
+</div>
+</div></div></div>
+</div></article></section></section><section class="subsection" id="section-152-afterclass"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">15.2.4</span> <span class="title">After Class Activities</span>
-</h3></section></section></div>
+</h3>
+<article class="example example-like" id="example-854"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">15.2.14</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-1306">Evaluate the following integrals. Sketch and label the region of integration.</div> <div class="para logical" id="p-1307"><ol class="lower-alpha">
+<li id="li-1488"><div class="para" id="p-1308">
+<span class="process-math">\(\ds \iint_D (y-3x)\, dA\text{,}\)</span> where <span class="process-math">\(D = \lrbrace{(x,y)\mid 1\leq y\leq 2, -1\leq x\leq 1}\)</span>
+</div></li>
+<li id="li-1489"><div class="para" id="p-1309">
+<span class="process-math">\(\ds \iint y\sin x\, dA\text{,}\)</span> where <span class="process-math">\(D\)</span> is the region bounded by <span class="process-math">\(y = 0\text{,}\)</span>  <span class="process-math">\(y = x^2\text{,}\)</span> and <span class="process-math">\(x= 1\text{.}\)</span>
+</div></li>
+<li id="li-1490"><div class="para" id="p-1310">
+<span class="process-math">\(\ds \iint xy\, dA\text{,}\)</span> where <span class="process-math">\(D\)</span> is the region enclosed by the quarter-circle <span class="process-math">\(y = \sqrt{1-x^2}\text{,}\)</span> <span class="process-math">\(x\geq 0\text{,}\)</span> and the coordinate axes.</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-871" id="solution-871"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-871"><div class="solution solution-like"><div class="para logical" id="p-1311"><ol class="lower-alpha">
+<li id="li-1491"><div class="para" id="p-1312">
+<span class="process-math">\(\ds \iint_D (y-3x)\, dA\text{,}\)</span> where <span class="process-math">\(D = \lrbrace{(x,y)\mid 1\leq y\leq 2, -1\leq x\leq 1}\)</span>
+</div></li>
+<li id="li-1492"><div class="para" id="p-1313">
+<span class="process-math">\(\ds \iint y\sin x\, dA\text{,}\)</span> where <span class="process-math">\(D\)</span> is the region bounded by <span class="process-math">\(y = 0\text{,}\)</span>  <span class="process-math">\(y = x^2\text{,}\)</span> and <span class="process-math">\(x= 1\text{.}\)</span>
+</div></li>
+<li id="li-1493"><div class="para" id="p-1314">
+<span class="process-math">\(\ds \iint xy\, dA\text{,}\)</span> where <span class="process-math">\(D\)</span> is the region enclosed by the quarter-circle <span class="process-math">\(y = \sqrt{1-x^2}\text{,}\)</span> <span class="process-math">\(x\geq 0\text{,}\)</span> and the coordinate axes.</div></li>
+</ol></div></div></div>
+</div></article><article class="example example-like" id="example-855"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">15.2.15</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-1315">Evaluate the integral by reversing the order of integration. Sketch and label the region of integration.</div> <div class="para logical" id="p-1316"><ol class="lower-alpha">
+<li id="li-1494"><div class="para" id="p-1317"><span class="process-math">\(\displaystyle \ds \int_0^1\int_{3y}^3 e^{x^2}\, dx\, dy\)</span></div></li>
+<li id="li-1495"><div class="para" id="p-1318"><span class="process-math">\(\displaystyle \ds \int_0^8 \int_{\sqrt[3]{y}}^2 e^{x^4}\, dx\, dy\)</span></div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-872" id="solution-872"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-872"><div class="solution solution-like"><div class="para logical" id="p-1319"><ol class="lower-alpha">
+<li id="li-1496"><div class="para" id="p-1320"><span class="process-math">\(\displaystyle \ds \int_0^1\int_{3y}^3 e^{x^2}\, dx\, dy\)</span></div></li>
+<li id="li-1497"><div class="para" id="p-1321"><span class="process-math">\(\displaystyle \ds \int_0^8 \int_{\sqrt[3]{y}}^2 e^{x^4}\, dx\, dy\)</span></div></li>
+</ol></div></div></div>
+</div></article></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="section-151.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="section-153.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>

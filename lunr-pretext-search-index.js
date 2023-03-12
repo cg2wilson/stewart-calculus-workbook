@@ -11536,7 +11536,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "15.2",
   "title": "Double Integrals over General Regions",
-  "body": " Double Integrals over General Regions    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   General Regions    Properties of Double Integrals     Pre-Class Activities    In Class   Some Examples    Changing the Order of Integration     After Class Activities   "
+  "body": " Double Integrals over General Regions    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   General Regions  In general, the regions we deal with aren't perfect rectangles- so, integration over any plane region needs to be cast in a different light.   Type I Region  Type I Region   We say that a plane region is type I if it lies between the graphs of two continuous functions of , i.e. where and are continuous on .     Type II Region  Type II Region   We say that a plane region is type II if it lies between the graphs of two continuous functions of , i.e. where and are continuous on .      This example will develop a usable formula for Type I and Type II integrals. Let the region be defined by .     Sketch the region .    Consider some function which is defined on . In the expression , what are the bounds communicating to you, in terms of ? Rewrite the integral expression and to reflect your answer.    Now sketch what would happen to if we replace 3 with the function . What must change in the integral expression? Call the new region .    If we replace 4 with the function , what changes about ? What about the integral?    In (c), what would have happened to if we replaced 1 with instead? Draw the new region, and call it . What change would you see on the integral from part (b)?    Now what would happen to if we replace 2 with ? Sketch the new . What change would you see on the integral in part (e)?           A sketch of the region described in the problem      The bounds are communicating functions which define the region .  Specifically, we can think of the bounds 1 and 2 as the functions and (which are functions of , so integrating with respect to makes sense). We can also think of 3 and 4 as the functions and (which are functions of , so integrating with respect to makes sense).  This means we can rewrite the integral like this:      A sketch of the region as described in the problem    Since the bound (function) is getting replaced by the bound (function) , the integral must change to reflect the new lower bound:      A sketch of the region as described in the problem    Since the bound (function) is getting replaced by the bound (function) , the integral must change to reflect the new upper bound:      A sketch of the region as described in the problem    Since the bound (function) is getting replaced by the bound (function) , the integral must change to reflect the new lower bound:      A sketch of the region as described in the problem    Since the bound (function) is getting replaced by the bound (function) , the integral must change to reflect the new upper bound:         Integrals of Type I and Type II Regions  If is continuous on a Type I region described by then   If is continuous on a Type II region described by then      Let be the region bounded by the curves and      Sketch and label the curves, and indicate where the region is.    Write the region using the definition of a Type I region.    Now compute the integral .           A sketch of the region given in the problem, on the interval .      Formally, we can write the region using set-builder notation as     From part b, we know that This means we can write the integral as   Evaluate from inside out. This means we're first computing So we have   Since the first integral evaluates as , we can rewrite the integral as which evaluates to 45.         Find the volume of the solid that lies under the paraboloid , and above the region in the plane bounded by the curves and . Treat as a Type I region.    Here is a sketch of :   A sketch of the region as described in the problem.    Since we're treating as a Type I region, we need to find a description of the form Based on the region, we can say that and . The values must be and since the curves intersect at those locations. This means our integral is set up as   So we compute:       Again let to be the region in the plane bounded by the curves and .     Write as a Type II region.    Compute . How does your work and answer compare to the previous example?          For convenience, here is the sketch of again:   A sketch of the region as described in the problem.    As a Type II region, we need to express in the form   Rewriting as functions of , becomes and stays . Our upper function will be and our lower function will be .  For our coordinate bounds, we still look at the intersection. There, the coordinates are and .       The work is similar but distinct. Since our bounds changed, the integral itself looks substantially different after the first integral. However, the answer is the same- which we would expect (and hope) since the region and function are the same.         Properties of Double Integrals  Double integrals, because they are integrals, share most of the properties of single integrals. We'll isolate a few which can be helpful (without proof):             If for all in , then     Let and be two non-overlapping regions (except potentially on their common boundary). Then, and              Pre-Class Activities    In Class   Some Examples    Evaluate , where is the region bounded by the curves and .    The region is shown below:   A sketch of the region given in the problem.    If we try to treat this as a Type I region, we'll need to split into two integrals (corresponding to the two different lower bounds). So, instead treat as a Type II region: This gives the integral which evaluates to       Find the volume of the first-octant tetrahedron bounded by the plane .    To determine the region of integration, sketch the problem in three-dimensional space (I don't know how to do this right now, so I'll have to come back and add the image later). Doing this gives and (as a Type I region) or (as a Type II region).  The Type I integral setup is given by and the Type II integral setup is given by In either event, the integral has a value of       Find the volume of the solid created by the function over the region bounded by the curves , , and .    The Type I integral looks like and the Type II integral takes the form and the value is       Consider the integral      Sketch and label the region described in the integral.    Evaluate the integral.       Consider the integral       The region defined by the integral in the problem. As a Type II region, the description is . As a Type I region, the description is       As a Type I integral, we have and as a Type II integral we have which evaluates to          Changing the Order of Integration    Let      Compute . You should run into some issues; what are they?    Draw and label the region described in part (a).    Use part (b) to rewrite the integral in part (a), then evaluate           The problem is immediately that we don't have a technique to integrate .     The region described in the problem is sketched. As a Type II integral, the region is given by ; as a Type I region, it is       As written, the integral is Type II; as a Type I integral, the region is described by . This means we can rewrite the integral as Evaluating the first integral now gives which can be evaluated using substitution. This gives a value of .         Evaluate , where     The Type II region is not feasible because there is no antiderivative for . But after drawing and rewriting as a Type I region, we have So the integral becomes whose value is       Evaluate     Switching to a Type I integral, we have which evaluates to        After Class Activities    Evaluate the following integrals. Sketch and label the region of integration.      , where      , where is the region bounded by , , and .     , where is the region enclosed by the quarter-circle , , and the coordinate axes.           , where      , where is the region bounded by , , and .     , where is the region enclosed by the quarter-circle , , and the coordinate axes.         Evaluate the integral by reversing the order of integration. Sketch and label the region of integration.                                   "
 },
 {
   "id": "objectives-75",
@@ -11564,6 +11564,141 @@ var ptx_lunr_docs = [
   "number": "137",
   "title": "",
   "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "definition-53",
+  "level": "2",
+  "url": "section-152.html#definition-53",
+  "type": "Definition",
+  "number": "15.2.1",
+  "title": "Type I Region.",
+  "body": " Type I Region  Type I Region   We say that a plane region is type I if it lies between the graphs of two continuous functions of , i.e. where and are continuous on .   "
+},
+{
+  "id": "definition-54",
+  "level": "2",
+  "url": "section-152.html#definition-54",
+  "type": "Definition",
+  "number": "15.2.2",
+  "title": "Type II Region.",
+  "body": " Type II Region  Type II Region   We say that a plane region is type II if it lies between the graphs of two continuous functions of , i.e. where and are continuous on .   "
+},
+{
+  "id": "example-843",
+  "level": "2",
+  "url": "section-152.html#example-843",
+  "type": "Example",
+  "number": "15.2.3",
+  "title": "",
+  "body": "  This example will develop a usable formula for Type I and Type II integrals. Let the region be defined by .     Sketch the region .    Consider some function which is defined on . In the expression , what are the bounds communicating to you, in terms of ? Rewrite the integral expression and to reflect your answer.    Now sketch what would happen to if we replace 3 with the function . What must change in the integral expression? Call the new region .    If we replace 4 with the function , what changes about ? What about the integral?    In (c), what would have happened to if we replaced 1 with instead? Draw the new region, and call it . What change would you see on the integral from part (b)?    Now what would happen to if we replace 2 with ? Sketch the new . What change would you see on the integral in part (e)?           A sketch of the region described in the problem      The bounds are communicating functions which define the region .  Specifically, we can think of the bounds 1 and 2 as the functions and (which are functions of , so integrating with respect to makes sense). We can also think of 3 and 4 as the functions and (which are functions of , so integrating with respect to makes sense).  This means we can rewrite the integral like this:      A sketch of the region as described in the problem    Since the bound (function) is getting replaced by the bound (function) , the integral must change to reflect the new lower bound:      A sketch of the region as described in the problem    Since the bound (function) is getting replaced by the bound (function) , the integral must change to reflect the new upper bound:      A sketch of the region as described in the problem    Since the bound (function) is getting replaced by the bound (function) , the integral must change to reflect the new lower bound:      A sketch of the region as described in the problem    Since the bound (function) is getting replaced by the bound (function) , the integral must change to reflect the new upper bound:       "
+},
+{
+  "id": "example-844",
+  "level": "2",
+  "url": "section-152.html#example-844",
+  "type": "Example",
+  "number": "15.2.4",
+  "title": "",
+  "body": "  Let be the region bounded by the curves and      Sketch and label the curves, and indicate where the region is.    Write the region using the definition of a Type I region.    Now compute the integral .           A sketch of the region given in the problem, on the interval .      Formally, we can write the region using set-builder notation as     From part b, we know that This means we can write the integral as   Evaluate from inside out. This means we're first computing So we have   Since the first integral evaluates as , we can rewrite the integral as which evaluates to 45.      "
+},
+{
+  "id": "example-845",
+  "level": "2",
+  "url": "section-152.html#example-845",
+  "type": "Example",
+  "number": "15.2.5",
+  "title": "",
+  "body": "  Find the volume of the solid that lies under the paraboloid , and above the region in the plane bounded by the curves and . Treat as a Type I region.    Here is a sketch of :   A sketch of the region as described in the problem.    Since we're treating as a Type I region, we need to find a description of the form Based on the region, we can say that and . The values must be and since the curves intersect at those locations. This means our integral is set up as   So we compute:    "
+},
+{
+  "id": "example-846",
+  "level": "2",
+  "url": "section-152.html#example-846",
+  "type": "Example",
+  "number": "15.2.6",
+  "title": "",
+  "body": "  Again let to be the region in the plane bounded by the curves and .     Write as a Type II region.    Compute . How does your work and answer compare to the previous example?          For convenience, here is the sketch of again:   A sketch of the region as described in the problem.    As a Type II region, we need to express in the form   Rewriting as functions of , becomes and stays . Our upper function will be and our lower function will be .  For our coordinate bounds, we still look at the intersection. There, the coordinates are and .       The work is similar but distinct. Since our bounds changed, the integral itself looks substantially different after the first integral. However, the answer is the same- which we would expect (and hope) since the region and function are the same.      "
+},
+{
+  "id": "example-847",
+  "level": "2",
+  "url": "section-152.html#example-847",
+  "type": "Example",
+  "number": "15.2.7",
+  "title": "",
+  "body": "  Evaluate , where is the region bounded by the curves and .    The region is shown below:   A sketch of the region given in the problem.    If we try to treat this as a Type I region, we'll need to split into two integrals (corresponding to the two different lower bounds). So, instead treat as a Type II region: This gives the integral which evaluates to    "
+},
+{
+  "id": "example-848",
+  "level": "2",
+  "url": "section-152.html#example-848",
+  "type": "Example",
+  "number": "15.2.8",
+  "title": "",
+  "body": "  Find the volume of the first-octant tetrahedron bounded by the plane .    To determine the region of integration, sketch the problem in three-dimensional space (I don't know how to do this right now, so I'll have to come back and add the image later). Doing this gives and (as a Type I region) or (as a Type II region).  The Type I integral setup is given by and the Type II integral setup is given by In either event, the integral has a value of    "
+},
+{
+  "id": "example-849",
+  "level": "2",
+  "url": "section-152.html#example-849",
+  "type": "Example",
+  "number": "15.2.9",
+  "title": "",
+  "body": "  Find the volume of the solid created by the function over the region bounded by the curves , , and .    The Type I integral looks like and the Type II integral takes the form and the value is    "
+},
+{
+  "id": "example-850",
+  "level": "2",
+  "url": "section-152.html#example-850",
+  "type": "Example",
+  "number": "15.2.10",
+  "title": "",
+  "body": "  Consider the integral      Sketch and label the region described in the integral.    Evaluate the integral.       Consider the integral       The region defined by the integral in the problem. As a Type II region, the description is . As a Type I region, the description is       As a Type I integral, we have and as a Type II integral we have which evaluates to       "
+},
+{
+  "id": "example-851",
+  "level": "2",
+  "url": "section-152.html#example-851",
+  "type": "Example",
+  "number": "15.2.11",
+  "title": "",
+  "body": "  Let      Compute . You should run into some issues; what are they?    Draw and label the region described in part (a).    Use part (b) to rewrite the integral in part (a), then evaluate           The problem is immediately that we don't have a technique to integrate .     The region described in the problem is sketched. As a Type II integral, the region is given by ; as a Type I region, it is       As written, the integral is Type II; as a Type I integral, the region is described by . This means we can rewrite the integral as Evaluating the first integral now gives which can be evaluated using substitution. This gives a value of .      "
+},
+{
+  "id": "example-852",
+  "level": "2",
+  "url": "section-152.html#example-852",
+  "type": "Example",
+  "number": "15.2.12",
+  "title": "",
+  "body": "  Evaluate , where     The Type II region is not feasible because there is no antiderivative for . But after drawing and rewriting as a Type I region, we have So the integral becomes whose value is    "
+},
+{
+  "id": "example-853",
+  "level": "2",
+  "url": "section-152.html#example-853",
+  "type": "Example",
+  "number": "15.2.13",
+  "title": "",
+  "body": "  Evaluate     Switching to a Type I integral, we have which evaluates to    "
+},
+{
+  "id": "example-854",
+  "level": "2",
+  "url": "section-152.html#example-854",
+  "type": "Example",
+  "number": "15.2.14",
+  "title": "",
+  "body": "  Evaluate the following integrals. Sketch and label the region of integration.      , where      , where is the region bounded by , , and .     , where is the region enclosed by the quarter-circle , , and the coordinate axes.           , where      , where is the region bounded by , , and .     , where is the region enclosed by the quarter-circle , , and the coordinate axes.      "
+},
+{
+  "id": "example-855",
+  "level": "2",
+  "url": "section-152.html#example-855",
+  "type": "Example",
+  "number": "15.2.15",
+  "title": "",
+  "body": "  Evaluate the integral by reversing the order of integration. Sketch and label the region of integration.                                 "
 },
 {
   "id": "section-153",
