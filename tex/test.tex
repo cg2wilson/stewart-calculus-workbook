@@ -162,68 +162,28 @@
 			axis x line = middle,
 			axis y line = middle,
     			every axis y label/.style={at={(ticklabel cs:1.15)}},
-    			ytick = {0,1,2,3,4},
+    			ytick = {1,2},
 				y label style={at={(axis description cs:0,1.1)},anchor=north},
     			ylabel = {$y$},
-    			ymin = 0, ymax = 3.5,
+    			ymin = 0, ymax = 1.5,
     				every axis x label/.style= {at ={(ticklabel cs:1)}},
-    			xtick = {0,1,2,3,4},
+    			xtick = {0,1,2},
     				x label style={at={(axis description cs:1.1,0)},anchor=east},
     			xlabel = {$x$},
-    			xmin = 0, xmax = 3.5
+    			xmin = 0, xmax = 1.5
 		]
-			\coordinate (zerozero) at (0,0);
-			\coordinate (zerothree) at (0,3);
-			\coordinate (threezero) at (3,0);
-			\coordinate (zeroone) at (0,1);
-			\coordinate (zerotwo) at (0,2);
-			\coordinate (onezero) at (1,0);
-			\coordinate (twozero) at (2,0);
-			\coordinate (oneone) at (1,1);
-			\coordinate (onetwo) at (1,2);
-			\coordinate (onethree) at (1,3);
-			\coordinate (twoone) at (2,1);
-			\coordinate (twotwo) at (2,2);
-			\coordinate (twothree) at (2,3);
-			\coordinate (threeone) at (3,1);
-			\coordinate (threetwo) at (3,2);
-			\coordinate (threethree) at (3,3);
-			\coordinate (r11) at (.5,.5);
-			\coordinate (r12) at (.5,1.5);
-			\coordinate (r13) at (.5,2.5);
-			\coordinate (r21) at (1.5,.5);
-			\coordinate (r22) at (1.5,1.5);
-			\coordinate (r23) at (1.5,2.5);
-			\coordinate (r31) at (2.5,.5);
-			\coordinate (r32) at (2.5,1.5);
-			\coordinate (r33) at (2.5,2.5);
-		\end{axis}
-			\draw (zerothree)--(threethree);
-			\draw (threethree)--(threezero);
-			\draw (zeroone)--(threeone);
-			\draw (zerotwo)--(threetwo);
-			\draw (onethree)--(onezero);
-			\draw (twothree)--(twozero);
-			\fill (oneone) circle (0.1);
-			\fill (onetwo) circle (0.1);
-			\fill (onethree) circle (0.1);
-			\fill (twoone) circle (0.1);
-			\fill (twotwo) circle (0.1);
-			\fill (twothree) circle (0.1);
-			\fill (threeone) circle (0.1);
-			\fill (threetwo) circle (0.1);
-			\fill (threethree) circle (0.1);
-			\node at (r11) {$R_{11}$};
-			\node at (r12) {$R_{12}$};
-			\node at (r13) {$R_{13}$};
-			\node at (r21) {$R_{21}$};
-			\node at (r22) {$R_{22}$};
-			\node at (r23) {$R_{23}$};
-			\node at (r31) {$R_{31}$};
-			\node at (r32) {$R_{32}$};
-			\node at (r33) {$R_{33}$};
-			
 		
+			\addplot[name path =a, domain = {0.:1.}] {x} node [midway, sloped, yshift=10pt] {$y = x$};
+			\addplot[name path =b, domain={0.:1.}] {0} node [midway, below, yshift=-10pt] {$y =0$};
+			\coordinate (r) at (0.75,0.35);
+			\addplot[lightgray, opacity=0.5] fill between[of=a and b];
+			\coordinate (top) at (1,1);
+			\coordinate (btm) at (1,0);
+			\coordinate (o) at (0,0);
+		\end{axis}
+			\node at (r) {$\large R$};
+			\draw (top)--(btm) node[midway, rotate = 90, yshift = -10pt] {$x=1$};
+			\draw (o)--(btm) node[midway, yshift=-10pt] {$y=0$};
 	\end{tikzpicture}
 
 	

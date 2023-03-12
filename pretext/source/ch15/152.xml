@@ -18,17 +18,678 @@
 		</figure>
 		<figure>
 			<caption>Pre-Class Video 2</caption>
-			url goes here
+				url goes here
 		</figure>
 
 		<subsubsection xml:id="section-152-general">
 			<title>General Regions</title>
 
+			<p>
+				In general, the regions we deal with aren't perfect rectangles- so, integration over any plane region needs to be cast in a different light.
+			</p>
+
+			<definition>
+				<title>Type I Region</title>
+				<idx><h>Type I Region</h></idx>
+				<statement>
+					<p>
+						We say that a plane region <m>D</m> is <term>type I</term> if it lies between the graphs of two continuous functions of <m>x</m>, i.e.
+						<me>
+							D = \lrbrace{(x,y)\mid a\leq x\leq b, g_1(x)\leq y\leq g_2(x)}
+						</me>
+						where <m>g_1</m> and <m>g_2</m> are continuous on <m>[a,b]</m>.
+					</p>
+				</statement>
+			</definition>
+
+			<definition>
+				<title>Type II Region</title>
+				<idx><h>Type II Region</h></idx>
+				<statement>
+					<p>
+						We say that a plane region <m>D</m> is <term>type II</term> if it lies between the graphs of two continuous functions of <m>y</m>, i.e.
+						<me>
+							D = \lrbrace{(x,y)\mid c\leq y\leq d, h_1(y)\leq x\leq h_2(y)}
+						</me>
+						where <m>h_1</m> and <m>h_2</m> are continuous on <m>[c,d]</m>.
+					</p>
+				</statement>
+			</definition>
+
+			<example>
+				<statement>
+					<p>
+						This example will develop a usable formula for Type I and Type II integrals. Let the region <m>R</m> be defined by <m>R = \lrbrace{(x,y)\mid 1\leq x \leq 2, 2\leq y \leq 4}</m>.
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									Sketch the region <m>R</m>.
+								</p>
+							</li>
+							<li>
+								<p>
+									Consider some function <m>f(x,y)</m> which is defined on <m>R</m>. In the expression <m>\ds \int_1^2\int_3^4 f(x,y)\, dy\, dx</m>, what are the bounds communicating to you, in terms of <m>R</m>? Rewrite the integral expression and <m>R</m> to reflect your answer.
+								</p>
+							</li>
+							<li>
+								<p>
+									Now sketch what would happen to <m>R</m> if we replace 3 with the function <m>g_1(x) = x^2</m>. What must change in the integral expression? Call the new region <m>R_1</m>.
+								</p>
+							</li>
+							<li>
+								<p>
+									If we replace 4 with the function <m>g_2(x) = -x^2+3x+2</m>, what changes about <m>R_1</m>? What about the integral?
+								</p>
+							</li>
+							<li>
+								<p>
+									In (c), what would have happened to <m>R</m> if we replaced 1 with <m>h_1(y) = 4-y</m> instead? Draw the new region, and call it <m>R_2</m>. What change would you see on the integral from part (b)?
+								</p>
+							</li>
+							<li>
+								<p>
+									Now what would happen to <m>R_2</m> if we replace 2 with <m>h_2(y) = y^2-4y+4</m>? Sketch the new <m>R_2</m>. What change would you see on the integral in part (e)?
+								</p>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								<image>
+									<description>
+										A sketch of the region <m>R</m> described in the problem
+									</description>
+									<latex-image>
+										<![CDATA[ 
+										\begin{tikzpicture}
+											\begin{axis}[
+												scale = 1.5,
+												every tick label/.append style={font=\small},
+												axis x line = middle,
+												axis y line = middle,
+													every axis y label/.style={at={(ticklabel cs:1.15)}},
+													ytick = {0,1,2,3,4},
+													y label style={at={(axis description cs:0,1.1)},anchor=north},
+													ylabel = {$y$},
+													ymin = 0, ymax = 5,
+														every axis x label/.style= {at ={(ticklabel cs:1)}},
+													xtick = {0,1,2,3,4},
+														x label style={at={(axis description cs:1.1,0)},anchor=east},
+													xlabel = {$x$},
+													xmin = 0, xmax = 5
+											]
+												\coordinate (bl) at (1,3);
+												\coordinate (ur) at (2,4);
+												\coordinate (mid) at (1.5,3.5);
+											\end{axis}
+											
+											\filldraw[lightgray!60!] (bl) rectangle (ur);
+											\draw (bl) rectangle (ur);
+											\node at (mid) {$R$};		
+											
+										\end{tikzpicture}
+										]]>
+									</latex-image>
+								</image>
+							</li>
+							<li>
+								<p>
+									The bounds are communicating <alert>functions which define the region</alert>. 
+								</p>
+								<p>
+									Specifically, we can think of the bounds 1 and 2 as the functions <m>a_1(y) = x=1</m> and <m>a_2(y) = x=2</m> (which are functions of <m>y</m>, so integrating with respect to <m>y</m> makes sense). We can also think of 3 and 4 as the functions <m>b_1(x) = y=3</m> and <m>b_2(x) = y = 4</m> (which are functions of <m>x</m>, so integrating with respect to <m>x</m> makes sense).
+								</p>
+								<p>
+									This means we can rewrite the integral like this:
+									<me>
+										\int_1^2\int_3^4 f(x,y)\, dy\, dx = \int_{x=1}^{x=2}\int_{y=3}^{y=4}f(x,y)\, dy\, dx 
+									</me>
+								</p>
+							</li>
+							<li>
+								<image>
+									<description>
+										A sketch of the region <m>R_1</m> as described in the problem
+									</description>
+									<latex-image>
+										<![CDATA[ 
+										\begin{tikzpicture}
+											\begin{axis}[
+												scale = 1.5,
+												every tick label/.append style={font=\small},
+												axis x line = middle,
+												axis y line = middle,
+													every axis y label/.style={at={(ticklabel cs:1.15)}},
+													ytick = {0,1,2,3,4},
+													y label style={at={(axis description cs:0,1.1)},anchor=north},
+													ylabel = {$y$},
+													ymin = 0, ymax = 5,
+														every axis x label/.style= {at ={(ticklabel cs:1)}},
+													xtick = {0,1,2,3,4},
+														x label style={at={(axis description cs:1.1,0)},anchor=east},
+													xlabel = {$x$},
+													xmin = 0, xmax = 5
+											]
+												\coordinate (ul) at (1,4);
+												\coordinate (ur) at (2,4);
+												\coordinate (ll) at (1,1);
+												\coordinate (mid) at (1.4,3);
+												\addplot[name path = a, smooth, samples=100, domain={1.:2.}] {x^2};
+												\addplot[name path = b, domain={1.:2.}] {4};
+												\addplot[lightgray] fill between [of=a and b];
+											\end{axis}
+												\draw (ul)--(ll);
+												\draw (ul)--(ur);
+												\node at (mid) {$R_1$};
+										\end{tikzpicture}
+										]]>
+									</latex-image>
+								</image>
+								<p>
+									Since the bound (function) <m>y = 3</m> is getting replaced by the bound (function) <m>g_1(x) = x^2</m>, the integral must change to reflect the new lower bound:
+									<me>
+										\int_{x=1}^{x=2} \int_{g_1(x) = x^2}^{y = 4} f(x,y)\, dx\, dy = \int_1^2\int_{x^2}^4 f(x,y)\, dx\, dy
+									</me>
+									
+								</p>
+							</li>
+							<li>
+								<image>
+									<description>
+										A sketch of the region <m>R_1</m> as described in the problem
+									</description>
+									<latex-image>
+										<![CDATA[ 
+										\begin{tikzpicture}
+											\begin{axis}[
+												scale = 1.5,
+												every tick label/.append style={font=\small},
+												axis x line = middle,
+												axis y line = middle,
+													every axis y label/.style={at={(ticklabel cs:1.15)}},
+													ytick = {0,1,2,3,4},
+													y label style={at={(axis description cs:0,1.1)},anchor=north},
+													ylabel = {$y$},
+													ymin = 0, ymax = 5,
+														every axis x label/.style= {at ={(ticklabel cs:1)}},
+													xtick = {0,1,2,3,4},
+														x label style={at={(axis description cs:1.1,0)},anchor=east},
+													xlabel = {$x$},
+													xmin = 0, xmax = 5
+											]
+												\coordinate (ul) at (1,4);
+												\coordinate (ur) at (2,4);
+												\coordinate (ll) at (1,1);
+												\coordinate (mid) at (1.4,3);
+												\addplot[name path = a, smooth, samples=100, domain={1.:2.}] {x^2};
+												\addplot[name path = b, domain={1.:2.}] {-(x-1)*(x-2)+4};
+												\addplot[lightgray] fill between [of=a and b];
+											\end{axis}
+												\draw (ul)--(ll);
+												\node at (mid) {$R_1$};
+										\end{tikzpicture}
+										]]>
+									</latex-image>
+								</image>
+								<p>
+									Since the bound (function) <m>y = 4</m> is getting replaced by the bound (function) <m>g_2(x) = -x^2+3x+2</m>, the integral must change to reflect the new upper bound:
+									<me>
+										\int_{x=1}^{x=2} \int_{g_1(x) = x^2}^{g_2(x) = -x^2+3x+2} f(x,y)\, dx\, dy = \int_1^2\int_{x^2}^{-x^2+3x+2} f(x,y)\, dx\, dy
+									</me>
+								</p>
+							</li>
+							<li>
+								<image>
+									<description>
+										A sketch of the region <m>R_2</m> as described in the problem
+									</description>
+									<latex-image>
+										<![CDATA[ 
+											\begin{tikzpicture}
+											\tikzset{swapaxes/.style ={rotate=90,yscale = -1}}
+											\begin{axis}[
+												scale = 1.5,
+												every tick label/.append style={font=\small},
+												axis x line = middle,
+												axis y line = middle,
+													every axis y label/.style={at={(ticklabel cs:1.15)}},
+													ytick = {0,1,2,3,4},
+													y label style={at={(axis description cs:0,1.1)},anchor=north},
+													ylabel = {$y$},
+													ymin = 0, ymax = 5,
+														every axis x label/.style= {at ={(ticklabel cs:1)}},
+													xtick = {0,1,2,3,4},
+														x label style={at={(axis description cs:1.1,0)},anchor=east},
+													xlabel = {$x$},
+													xmin = 0, xmax = 5
+											]
+												\coordinate (ul) at (0,4);
+												\coordinate (ur) at (2,4);
+												\coordinate (ll) at (1,3);
+												\coordinate (lr) at (2,3);
+												\coordinate (mid) at (1.5,3.5);
+												%\addplot[swapaxes, smooth, domain={3.:4.}] {4-x};
+											\end{axis}
+												\draw[name path = a] (ll)--(lr);
+												\draw[name path = b] (ul)--(ur);
+												\draw (ur)--(lr);
+												\draw[name path = c] (ul)--(ll);
+												\tikzfillbetween[of = a and c] {lightgray, opacity = 0.5};
+												\tikzfillbetween[of = a and b] {lightgray, opacity = 0.5};
+												\node at (mid) {$R_2$};
+										\end{tikzpicture}
+										]]>
+									</latex-image>
+								</image>
+								<p>
+									Since the bound (function) <m>x=1</m> is getting replaced by the bound (function) <m>h_1(y) = 4-y</m>, the integral must change to reflect the new lower bound:
+									<me>
+										\int_{h_1(y) = 4-y}^{x=2}\int_{y=3}^{y=4} f(x,y)\, dx \, dy = \int_{4-y}^{2}\int_3^4 f(x,y)\, dx\, dy
+									</me>
+								</p>
+							</li>
+							<li>
+								<image>
+									<description>
+										A sketch of the region <m>R_2</m> as described in the problem
+									</description>
+									<latex-image>
+										<![CDATA[ 
+										\begin{tikzpicture}
+											\begin{axis}[
+												scale = 1.5,
+												every tick label/.append style={font=\small},
+												axis x line = middle,
+												axis y line = middle,
+													every axis y label/.style={at={(ticklabel cs:1.15)}},
+													ytick = {0,1,2,3,4},
+													y label style={at={(axis description cs:0,1.1)},anchor=north},
+													ylabel = {$y$},
+													ymin = 0, ymax = 5,
+														every axis x label/.style= {at ={(ticklabel cs:1)}},
+													xtick = {0,1,2,3,4},
+														x label style={at={(axis description cs:1.1,0)},anchor=east},
+													xlabel = {$x$},
+													xmin = 0, xmax = 5
+											]
+												\coordinate (ul) at (0,4);
+												\coordinate (ur) at (4,4);
+												\coordinate (ll) at (1,3);
+												\coordinate (lr) at (2,3);
+												\coordinate (mid) at (1.25,3.625);
+												\addplot[name path = c, smooth, domain = {3.:4.}] ({(x-2)^2},{x});
+											\end{axis}
+												\draw[name path = a] (ul)--(ur);
+												\draw[name path = b] (ul)--(ll);
+												\tikzfillbetween [of = a and b] {lightgray, opacity=0.5};
+												\tikzfillbetween [of = a and c] {lightgray, opacity = 0.5};
+												\node at (mid) {$R_2$};
+										\end{tikzpicture}
+										]]>
+									</latex-image>
+								</image>
+								<p>
+									Since the bound (function) <m>x=2</m> is getting replaced by the bound (function) <m>h_2(y) = y^2-4y+4</m>, the integral must change to reflect the new upper bound:
+									<me>
+										\int_{h_1(y) = y+1}^{h_2(y) = y^2-4y+4}\int_{y=1}^{y=2} f(x,y)\, dx \, dy = \int_{4-y}^{y^2-4y+4}\int_3^4 f(x,y)\, dx\, dy
+									</me>
+								</p>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
+
+			<assemblage>
+				<title>Integrals of Type I and Type II Regions</title>
+				<p>
+					If <m>f</m> is continuous on a Type I region <m>D</m> described by
+					<me>
+						D = \lrbrace{((x,y) \mid a\leq x\leq b, g_1(x)\leq y \leq g_2(x)}
+					</me>
+					then
+					<me>
+						\iint_D f(x,y)\, dA = \int_a^b \int_{g_1(x)}^{g_2(x)} f(x,y)\, dy\, dx
+					</me>
+				</p>
+				<p>
+					If <m>f</m> is continuous on a Type II region <m>E</m> described by
+					<me>
+						E = \lrbrace{(x,y)\mid h_1(y)\leq x\leq h_2(y), c\leq y\leq d}
+					</me>
+					then
+					<me>
+						\iint_E f(x,y)\, dA = \int_c^d \int_{h_1(y)}^{h_2(y)} f(x,y)\, dx\, dy
+					</me>	
+				</p>
+			</assemblage>
+
+			<example>
+				<statement>
+					<p>
+						Let <m>D</m> be the region bounded by the curves <m>y = 3x^2</m> and <m>y =1+2x^2</m>
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									Sketch and label the curves, and indicate where the region <m>D</m> is. 
+								</p>
+							</li>
+							<li>
+								<p>
+									Write the region using the definition of a Type I region.
+								</p>
+							</li>
+							<li>
+								<p>
+									Now compute the integral <m>\ds \iint_D (x+3y)\, dA</m>.
+								</p>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								<image>
+									<description>
+										A sketch of the region <m>D</m> given in the problem, on the interval <m>[-2,2]</m>.
+									</description>
+									<latex-image>
+										<![CDATA[ 
+										\begin{tikzpicture}
+											\begin{axis}[
+												scale = 1.5,
+												every tick label/.append style={font=\small},
+												axis x line = middle,
+												axis y line = middle,
+													every axis y label/.style={at={(ticklabel cs:1.15)}},
+													ytick = {0,1,2,3,4},
+													y label style={at={(axis description cs:.5,1.1)},anchor=north},
+													ylabel = {$y$},
+													ymin = 0, ymax = 4,
+														every axis x label/.style= {at ={(ticklabel cs:1)}},
+													xtick = {-2,...,2},
+														x label style={at={(axis description cs:1.1,0)},anchor=east},
+													xlabel = {$x$},
+													xmin = -2, xmax = 2
+											]
+												\addplot[name path= a, smooth, domain = -1.:1.] {3*x^2};
+												\addplot[name path = b, smooth, domain = -1.:1.] {1+2*x^2};
+												\coordinate (mid) at (-.1,.5);
+												\addplot[lightgray, opacity = 0.5] fill between [of =b and a];
+											\end{axis}
+												\node at (mid) {$D$};
+										\end{tikzpicture}
+										]]>
+									</latex-image>
+								</image>
+							</li>
+							<li>
+								<p>
+									Formally, we can write the region using set-builder notation as
+									<me>
+										D = \lrbrace{(x,y)\mid -1\leq x\leq 1, 3x^2\leq y \leq 1+2x^2}
+									</me>
+								</p>
+							</li>
+							<li>
+								<p>
+									From part b, we know that 
+									<me>
+										D = \lrbrace{(x,y)\mid -1\leq x\leq 1, 3x^2\leq y \leq 1+2x^2}
+									</me>
+									This means we can write the integral as
+									<me>
+										\int_{-1}^1 \int_{3x^2}^{1+2x^2} (x+3y)\, dy\, dx
+									</me>									
+								</p>
+								<p>
+									Evaluate from inside out. This means we're first computing
+									<me>
+										\int_{3x^2}^{1+2x^2} (x+3y)\, dy
+									</me>
+									So we have
+									<md>
+										<mrow> 
+											\int_{3x^2}^{1+2x^2} (x+3y)\, dy \amp = \lrpar{xy + \dfrac{3}{2}y^2}\bigg\rvert_{y=3x^2}^{y=1+2x^2} 
+										</mrow>
+										<mrow> 
+											\amp = \lrpar{x(1+2x^2) + \dfrac{3}{2}(1+2x^2)} - \lrpar{x(3x^2) + \dfrac{3}{2}(3x^2)}  
+										</mrow>
+										<mrow>
+											 \amp = -\dfrac{15}{2}x^4 -x^3 + 6x^2 + x + \dfrac{3}{2}
+										</mrow>
+									</md>
+								</p>
+								<p>
+									Since the first integral evaluates as <m>-\dfrac{15}{2}x^4 -x^3 + 6x^2 + x + \dfrac{3}{2}</m>, we can rewrite the integral as
+									<me>
+										\int_{-1}^1 \int_{3x^2}^{1+2x^2} (x+3y)\, dy\, dx = \int_{-1}^1 \lrpar{-\dfrac{15}{2}x^4 -x^3 + 6x^2 + x + \dfrac{3}{2}}\, dx
+									</me>
+									which evaluates to 45.									
+								</p>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find the volume of the solid that lies under the paraboloid <m>z = x^2 +2y^2</m>, and above the region <m>R</m> in the <m>xy-</m>plane bounded by the curves <m>y = x^3</m> and <m>y = x</m>. Treat <m>R</m> as a Type I region.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						Here is a sketch of <m>R</m>:
+					</p>
+					<image>
+						<description>
+							A sketch of the region <m>R</m> as described in the problem.
+						</description>
+						<latex-image>
+							<![CDATA[ 
+							\begin{tikzpicture}
+								\begin{axis}[
+									scale = 1.5,
+									every tick label/.append style={font=\small},
+									axis x line = middle,
+									axis y line = middle,
+										every axis y label/.style={at={(ticklabel cs:1.15)}},
+										ytick = {0,1,2},
+										y label style={at={(axis description cs:0,1.1)},anchor=north},
+										ylabel = {$y$},
+										ymin = 0, ymax = 1,
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+										xtick = {0,1,2},
+											x label style={at={(axis description cs:1.1,0)},anchor=east},
+										xlabel = {$x$},
+										xmin = 0, xmax = 1
+								]
+									\addplot[name path= a, smooth, domain = 0.:1.] {x};
+									\addplot[name path = b, smooth, domain = 0.:1.] {x^3};
+									\coordinate (mid) at (0.5,0.3);
+									\addplot[lightgray, opacity = 0.5] fill between [of =b and a];
+								\end{axis}
+									\node at (mid) {$R$};
+							\end{tikzpicture}
+							]]>
+						</latex-image>					
+					</image>
+					<p>
+						Since we're treating <m>R</m> as a Type I region, we need to find a description of the form
+						<me>
+							R = \lrbrace{(x,y)\mid a\leq x\leq b, g_1(x)\leq y\leq g_2(x)}
+						</me>
+						Based on the region, we can say that <m>g_1(x) = x^3</m> and <m>g_2(x) = x</m>. The <m>x-</m>values must be <m>x=0</m> and <m>x = 1</m> since the curves intersect at those locations. This means our integral is set up as
+						<me>
+							\int_0^1 \int_{x^3}^x (x^2 + 2y^2)\, dy\, dx
+						</me>
+					</p>
+					<p>
+						So we compute:
+						<md>
+							<mrow> 
+								\int_0^1 \int_{x^3}^x (x^2 + 2y^2)\, dy\, dx \amp = \int_0^1 \lrpar{x^2y + \dfrac{2}{3}y^3}\bigg\rvert_{x^3}^x
+							</mrow>
+							<mrow>
+									\amp = \int_0^1 \lrpar{-\dfrac{2}{3}x^9 -x^5 +\dfrac{5}{3}x^3}\, dx
+							</mrow>
+							<mrow>
+									\amp = \dfrac{11}{60}
+							</mrow>
+						</md>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Again let <m>R</m> to be the region in the <m>xy-</m>plane bounded by the curves <m>y = x^3</m> and <m>y = x</m>.
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									Write <m>R</m> as a Type II region. 
+								</p>
+							</li>
+							<li>
+								<p>
+									Compute <m>\ds \iint_R (x^2 + 2y^2)\, dA</m>. How does your work and answer compare to the previous example?
+								</p>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									For convenience, here is the sketch of <m>R</m> again:
+								</p>
+								<image>
+									<description>
+										A sketch of the region <m>R</m> as described in the problem.
+									</description>
+									<latex-image>
+										<![CDATA[ 
+										\begin{tikzpicture}
+											\begin{axis}[
+												scale = 1.5,
+												every tick label/.append style={font=\small},
+												axis x line = middle,
+												axis y line = middle,
+													every axis y label/.style={at={(ticklabel cs:1.15)}},
+													ytick = {0,1,2},
+													y label style={at={(axis description cs:0,1.1)},anchor=north},
+													ylabel = {$y$},
+													ymin = 0, ymax = 1,
+														every axis x label/.style= {at ={(ticklabel cs:1)}},
+													xtick = {0,1,2},
+														x label style={at={(axis description cs:1.1,0)},anchor=east},
+													xlabel = {$x$},
+													xmin = 0, xmax = 1
+											]
+												\addplot[name path= a, smooth, domain = 0.:1.] {x};
+												\addplot[name path = b, smooth, domain = 0.:1.] {x^3};
+												\coordinate (mid) at (0.5,0.3);
+												\addplot[lightgray, opacity = 0.5] fill between [of =b and a];
+											\end{axis}
+												\node at (mid) {$R$};
+										\end{tikzpicture}
+										]]>
+									</latex-image>					
+								</image>
+								<p>
+									As a Type II region, we need to express <m>R</m> in the form
+									<me>
+										R = \lrbrace{(x,y)\mid c\leq y\leq d, h_1(y)\leq y\leq h_2(y)}
+									</me>
+								</p>
+								<p>
+									Rewriting as functions of <m>y</m>, <m>y = x^3</m> becomes <m>x = \sqrt[3]{y}</m> and <m>y = x</m> stays <m>x = y</m>. Our upper function will be <m>h_2(y) = \sqrt[3]{y}</m> and our lower function will be <m>h_1(y) = y</m>. 
+								</p>
+								<p>
+									For our <m>y-</m>coordinate bounds, we still look at the intersection. There, the <m>y-</m>coordinates are <m>y = 0</m> and <m>y = 1</m>.
+								</p>
+							</li>
+							<li>
+								<p>
+									<md>
+										<mrow> 
+											\iint_R (x^2 + 2y^2)\, dA \amp = \int_0^1 \int_{y}^{y^{1/3}} (x^2 + 2y^2)\, dx\, dy
+										</mrow>
+										<mrow>
+											 \amp = \int_0^1 \lrpar{\dfrac{1}{3}y + \dfrac{2}{3}y^{7/3} - y^3}\, dy
+										</mrow>
+										<mrow>
+											 \amp = \lrpar{\dfrac{1}{6}y^2 + \dfrac{1}{5}y^{10/3} - \dfrac{1}{4}y^4}\bigg\rvert_0^1
+										</mrow>
+										<mrow>
+											 \amp = \dfrac{11}{60}
+										</mrow>
+									</md>
+								</p>
+								<p>
+									The work is similar but distinct. Since our bounds changed, the integral itself looks substantially different after the first integral. However, the answer is the same- which we would expect (and hope) since the region and function are the same.
+								</p>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
         </subsubsection>
 
         <subsubsection xml:id="section-152-properties">
 			<title>Properties of Double Integrals</title>
-
+				<p>
+					Double integrals, because they are integrals, share most of the properties of single integrals. We'll isolate a few which can be helpful (without proof):
+					<ol>
+						<li>
+							<p>
+								<m>\ds \iint_D [f(x,y) \pm g(x,y)]\, dA = \iint f(x,y)\, dA \pm \iint_D g(x,y)\, dA</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>\ds \iint_D c\cdot f(x,y)\, dA = c\cdot \iint_D f(x,y)\, dA</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								If <m>f(x,y) \leq g(x,y)</m> for all <m>(x,y)</m> in <m>D</m>, then
+								<me>
+									\iint_D f(x,y)\, dA \leq \iint_D g(x,y)\, dA
+								</me>
+							</p>
+						</li>
+						<li>
+							<p>
+								Let <m>D_1</m> and <m>D_2</m> be two non-overlapping regions (except potentially on their common boundary). Then, <m>D = D_1\cup D_2</m> and
+								<me>
+									\iint_D f(x,y)\, dA = \iint_{D_1} f(x,y)\, dA + \iint_{D_2} f(x,y)\, dA
+								</me>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>\ds \iint_D 1\, dA = \text{Area}(D)</m>
+							</p>
+						</li>
+					</ol>
+				</p>
         </subsubsection>
 
 	</subsection>
@@ -43,18 +704,419 @@
 
 		<subsubsection xml:id="section-152-examples">
 			<title>Some Examples</title>
+			
+			<example>
+				<statement>
+					<p>
+						Evaluate <m>\ds \iint_D x^2y^2\, dA</m>, where <m>D</m> is the region bounded by the curves <m>y = x</m> and <m>y^2 = x+6</m>.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						The region <m>D</m> is shown below:
+					</p>
+					<image>
+						<description>
+							A sketch of the region <m>D</m> given in the problem.
+						</description>
+						<latex-image>
+							<![CDATA[ 
+							\begin{tikzpicture}
+								\begin{axis}[
+									scale = 1.5,
+									every tick label/.append style={font=\small},
+									axis x line = middle,
+									axis y line = middle,
+										every axis y label/.style={at={(ticklabel cs:1.15)}},
+										ytick = {-4,...,4},
+										y label style={at={(axis description cs:.5,1.1)},anchor=north},
+										ylabel = {$y$},
+										ymin = -4, ymax = 4,
+											every axis x label/.style= {at ={(ticklabel cs:1)}},
+										xtick = {-7,...,7},
+											x label style={at={(axis description cs:1.1,.5)},anchor=east},
+										xlabel = {$x$},
+										xmin = -7, xmax = 7
+								]
+									\addplot[name path= a, smooth, domain = -6.:4.] {x};
+									\addplot[name path = b1, smooth, samples=200, domain = -6.:4.] {sqrt(x+6)};
+									\addplot[name path = b2, smooth, samples=200, domain = -6.:4.] {-1*sqrt(x+6)};
+									\coordinate (r) at (-2,1);
+									%\addplot[lightgray, opacity=0.5] fill between[of=b1 and b2, soft clip = {domain= -6:-2}];
+									\addplot[lightgray, opacity=0.5] fill between[of=b1 and a, soft clip={domain=-2.:3}];
+									\addplot[lightgray, opacity=0.5] fill between[of=b2 and b1, soft clip = {domain=-5.99:-2.}];
+								\end{axis}
+									\node at (r) {$D$};
+							\end{tikzpicture}
+							]]>
+						</latex-image>
+					</image>
+					<p>
+						If we try to treat this as a Type I region, we'll need to split into two integrals (corresponding to the two different lower bounds). So, instead treat <m>D</m> as a Type II region:
+						<me>
+							D = \lrbrace{(x,y)\mid -2\leq y\leq 3, y^2-6\leq x \leq y}
+						</me>
+						This gives the integral
+						<me>
+							\int_{-2}^3\int_{y^2-6}^{y} x^2y^2\, dx\, dy
+						</me>
+						which evaluates to <m>\dfrac{50375}{378}</m>
+						
+					</p>
+				</solution>
+			</example>
 
+			<example>
+				<statement>
+					<p>
+						Find the volume of the first-octant tetrahedron bounded by the plane <m>x + 2y + z = 2</m>.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						To determine the region of integration, sketch the problem in three-dimensional space (I don't know how to do this right now, so I'll have to come back and add the image later). Doing this gives <m>f(x,y) = 2-x-2y</m> and <m>R = \lrbrace{(x,y)\mid 0\leq x\leq 2, 0\leq y\leq -\dfrac{1}{2}x+1}</m> (as a Type I region) or <m>R = \lrbrace{(x,y)\mid 0\leq y\leq 1, 0\leq x\leq 2-2y}</m> (as a Type II region).
+					</p>
+					<p>
+						The Type I integral setup is given by
+						<me>
+							\int_0^2\int_0^{-x/2 + 1} (2-x-2y)\, dy\, dx
+						</me>
+						and the Type II integral setup is given by
+						<me>
+							\int_0^1\int_0^{2-2y} (2-x-2y)\, dx\, dy
+						</me>
+						In either event, the integral has a value of <m>\dfrac{2}{3}</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find the volume of the solid created by the function <m>f(x,y) = \dfrac{y}{x^2+1}</m> over the region <m>R</m> bounded by the curves <m>y = \sqrt{x}</m>, <m>y = 0</m>, and <m>x = 4</m>.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						The Type I integral looks like
+						<me>
+							\int_0^4\int_0^{\sqrt{x}} \dfrac{y}{x^2+1}\, dy\, dx
+						</me>
+						and the Type II integral takes the form
+						<me>
+							\int_0^2\int_{y^2}^{4} \dfrac{y}{x^2+1}\, dx\, dy
+						</me>
+						and the value is <m>\dfrac{1}{4}\ln 17</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Consider the integral <m>\ds \int_0^2 \int_0^{y^2} x^2y\, dx\, dy</m>
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									Sketch and label the region described in the integral.
+								</p>
+							</li>
+							<li>
+								<p>
+									Evaluate the integral.
+								</p>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						Consider the integral <m>\ds \int_0^2 \int_0^{y^2} x^2y\, dx\, dy</m>
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								<image>
+									<description>
+										The region <m>R</m> defined by the integral in the problem. As a Type II region, the description is <m>R = \lrbrace{(x,y)\mid 0\leq y\leq 2, 0\leq x\leq y^2}</m>. As a Type I region, the description is <m>R = \lrbrace{(x,y)\mid 0\leq x\leq 4, \sqrt{x}\leq y\leq 2}</m>
+									</description>
+									<latex-image>
+										<![CDATA[ 
+										\begin{tikzpicture}
+											\begin{axis}[
+												scale = 1.5,
+												every tick label/.append style={font=\small},
+												axis x line = middle,
+												axis y line = middle,
+													every axis y label/.style={at={(ticklabel cs:1.15)}},
+													ytick = {1,2},
+													y label style={at={(axis description cs:0,1.1)},anchor=north},
+													ylabel = {$y$},
+													ymin = 0, ymax = 3,
+														every axis x label/.style= {at ={(ticklabel cs:1)}},
+													xtick = {0,1,2},
+														x label style={at={(axis description cs:1.1,0)},anchor=east},
+													xlabel = {$x$},
+													xmin = 0, xmax = 5
+											]
+											
+												\addplot[name path = a, smooth, samples=100, domain = 0.:4.]  {sqrt(x)} node[midway,sloped, yshift = -10pt] {$x = y^2$};
+												\addplot[name path = b, domain={0.:4.}] {2} node [midway, yshift = 10pt] {$y=2$};
+												\addplot[lightgray, opacity=0.5] fill between[of=a and b, soft clip={domain=0.:4.}];
+												\coordinate (r) at (1,1.5);
+												\coordinate (y) at (-0.1,1.5);
+											\end{axis}
+												\node at (r) {$\large R$};
+												\node[rotate=90] at (y) {$x = 0$};
+										\end{tikzpicture}
+										]]>
+									</latex-image>
+								</image>
+							</li>
+							<li>
+								<p>
+									As a Type I integral, we have
+									<me>
+										\int_0^4 \int_{\sqrt{x}}^2 (x^2y)\, dy\, dx
+									</me>
+									and as a Type II integral we have
+									<me>
+										\int_0^2 \int_0^{y^2}(x^2y)\, dx\, dy
+									</me>
+									which evaluates to <m>\dfrac{32}{3}</m>
+								</p>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
+			
 		</subsubsection>
 
         <subsubsection xml:id="section-152-order">
 			<title>Changing the Order of Integration</title>
+			
+			<example>
+				<statement>
+					<p>
+						Let <m>f(x,y) = \sec^2(x^2)</m>
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									Compute <m>\ds \int_0^1\int_y^1 f(x,y)\, dx\, dy</m>.  You should run into some issues; what are they?
+								</p>
+							</li>
+							<li>
+								<p>
+									Draw and label the region described in part (a).
+								</p>
+							</li>
+							<li>
+								<p>
+									Use part (b) to rewrite the integral in part (a), then evaluate <m>\ds \iint_D f(x,y)\, dA</m>
+								</p>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									The problem is immediately that we don't have a technique to integrate <m>\sec^2(x^2)</m>.
+								</p>
+							</li>
+							<li>
+								<image>
+									<description>
+										The region <m>R</m> described in the problem is sketched. As a Type II integral, the region is given by <m>R = \lrbrace{(x,y)\mid 0\leq y\leq 1, y\leq x \leq 1}</m>; as a Type I region, it is <m>R = \lrbrace{(x,y)\mid 0\leq x\leq 1,0\leq y\leq x}</m>
+									</description>
+									<latex-image>
+										<![CDATA[ 
+										\begin{tikzpicture}
+											\begin{axis}[
+												scale = 1.5,
+												every tick label/.append style={font=\small},
+												axis x line = middle,
+												axis y line = middle,
+													every axis y label/.style={at={(ticklabel cs:1.15)}},
+													ytick = {1,2},
+													y label style={at={(axis description cs:0,1.1)},anchor=north},
+													ylabel = {$y$},
+													ymin = 0, ymax = 1.5,
+														every axis x label/.style= {at ={(ticklabel cs:1)}},
+													xtick = {0,1,2},
+														x label style={at={(axis description cs:1.1,0)},anchor=east},
+													xlabel = {$x$},
+													xmin = 0, xmax = 1.5
+											]
+											
+												\addplot[name path =a, domain = {0.:1.}] {x} node [midway, sloped, yshift=10pt] {$y = x$};
+												\addplot[name path =b, domain={0.:1.}] {0} node [midway, below, yshift=-10pt] {$y =0$};
+												\coordinate (r) at (0.75,0.35);
+												\addplot[lightgray, opacity=0.5] fill between[of=a and b];
+												\coordinate (top) at (1,1);
+												\coordinate (btm) at (1,0);
+												\coordinate (o) at (0,0);
+											\end{axis}
+												\node at (r) {$\large R$};
+												\draw (top)--(btm) node[midway, rotate = 90, yshift = -10pt] {$x=1$};
+												\draw (o)--(btm) node[midway, yshift=-10pt] {$y=0$};
+										\end{tikzpicture}
+										]]>
+									</latex-image>
+								</image>
+							</li>
+							<li>
+								<p>
+									As written, the integral is Type II; as a Type I integral, the region is described by <m>R = \lrbrace{(x,y)\mid 0\leq x\leq 1, 0\leq y\leq x}</m>. This means we can rewrite the integral as
+									<me>
+										\int_0^1 \int_0^x \sec^2(x^2)\, dy\, dx
+									</me>
+									Evaluating the first integral now gives
+									<me>
+										\int_0^1 x\sec^2(x^2)\, dx
+									</me>
+									which can be evaluated using substitution. This gives a value of <m>\dfrac{1}{2}\tan(1)</m>.
+								</p>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
 
+			<example>
+				<statement>
+					<p>
+						Evaluate <m>\ds \iint_D e^{-y^2}\, dA</m>, where <m>D = \lrbrace{(x,y)\mid 0\leq x\leq 3, x\leq y \leq 3}</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						The Type II region is not feasible because there is no antiderivative for <m>e^{-y^2}</m>. But after drawing and rewriting as a Type I region, we have
+						<me>
+							<m>R = \lrbrace{(x,y)\mid 0\leq y\leq 3, 0\leq x\leq y}</m>
+						</me>
+						So the integral becomes
+						<me>
+							\int_0^3\int_0^y e^{-y^2}\, dx\, dy
+						</me>
+						whose value is <m>\dfrac{1-e^{-9}}{2}</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Evaluate <m>\ds \int_0^2\int_{y/2}^1 y\cos (x^3-1)\, dx\, dy</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						Switching to a Type I integral, we have
+						<me>
+							\int_0^1\int_0^{2x} y\cos(x^3-1)\, dy\, dx
+						</me>
+						which evaluates to <m>\dfrac{2}{3}\sin (1)</m>
+					</p>
+				</solution>
+			</example>
 		</subsubsection>
 
 	</subsection>
 
 	<subsection xml:id="section-152-afterclass">
 		<title>After Class Activities</title>
+			<example>
+				<statement>
+					<p>
+						Evaluate the following integrals. Sketch and label the region of integration.
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									<m>\ds \iint_D (y-3x)\, dA</m>, where <m>D = \lrbrace{(x,y)\mid 1\leq y\leq 2, -1\leq x\leq 1}</m>
+								</p>
+							</li>
+							<li>
+								<p>
+									<m>\ds \iint y\sin x\, dA</m>, where <m>D</m> is the region bounded by <m>y = 0</m>,  <m>y = x^2</m>, and <m>x= 1</m>.
+								</p>
+							</li>
+							<li>
+								<p>
+									<m>\ds \iint xy\, dA</m>, where <m>D</m> is the region enclosed by the quarter-circle <m>y = \sqrt{1-x^2}</m>, <m>x\geq 0</m>, and the coordinate axes.
+								</p>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									<m>\ds \iint_D (y-3x)\, dA</m>, where <m>D = \lrbrace{(x,y)\mid 1\leq y\leq 2, -1\leq x\leq 1}</m>
+								</p>
+							</li>
+							<li>
+								<p>
+									<m>\ds \iint y\sin x\, dA</m>, where <m>D</m> is the region bounded by <m>y = 0</m>,  <m>y = x^2</m>, and <m>x= 1</m>.
+								</p>
+							</li>
+							<li>
+								<p>
+									<m>\ds \iint xy\, dA</m>, where <m>D</m> is the region enclosed by the quarter-circle <m>y = \sqrt{1-x^2}</m>, <m>x\geq 0</m>, and the coordinate axes.
+								</p>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
 
+			<example>
+				<statement>
+					<p>
+						Evaluate the integral by reversing the order of integration. Sketch and label the region of integration.
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									<m>\ds \int_0^1\int_{3y}^3 e^{x^2}\, dx\, dy</m>
+								</p>
+							</li>
+							<li>
+								<p>
+									<m>\ds \int_0^8 \int_{\sqrt[3]{y}}^2 e^{x^4}\, dx\, dy</m>
+								</p>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									<m>\ds \int_0^1\int_{3y}^3 e^{x^2}\, dx\, dy</m>
+								</p>
+							</li>
+							<li>
+								<p>
+									<m>\ds \int_0^8 \int_{\sqrt[3]{y}}^2 e^{x^4}\, dx\, dy</m>
+								</p>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
 	</subsection>
 </section>

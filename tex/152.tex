@@ -1,0 +1,200 @@
+\documentclass[notes]{subfiles}
+\begin{document}
+	\addcontentsline{toc}{section}{15.2 - Double Integrals Over General Regions}
+	\refstepcounter{section}
+	\fancyhead[RO,LE]{\bfseries \nameref{cs152}} 
+	\fancyhead[LO,RE]{\bfseries \small \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Chapter 15.2}
+	
+\section*{Double Integrals Over General Regions}\label{cs152}
+	\subsection*{Before Class}
+	\addcontentsline{toc}{subsection}{Before Class}
+	
+		\subsubsection*{General Regions}
+
+			In general, the regions we deal with aren't perfect rectangles$-$so, integration over any plane region needs to be cast in a different light.
+
+			\begin{defn}[Type I Region]
+				We say that a plane region $D$ is \textbf{type I} if it lies between the graphs of two continuous functions of $x$, i.e.\\[20pt]
+
+				where $g_1$ and $g_2$ are continuous on $[a,b]$.
+			\end{defn}
+
+			\begin{defn}[Type II Region]
+				We say that a plane region $D$ is \textbf{type II} if it lies between the graphs of two continuous functions of $y$, i.e.\\[20pt]
+
+				where $h_1$ and $h_2$ are continuous on $[c,d]$.
+			\end{defn}
+			
+			\begin{ex}
+				This example will develop a usable formula for Type I and Type II integrals. Let the region $R$ be defined by $R = \lrbrace{(x,y)\mid 1\leq x \leq 2, 3\leq y \leq 4}$.
+				\begin{enumerate}[(a)]
+					\item Sketch the region $R$.
+						\vs{1}
+						
+					\item Consider some function $f(x,y)$ which is defined on $R$. In the expression $\ds \int_1^2\int_3^4 f(x,y)\, dy\, dx$, what are the bounds communicating to you, in terms of $R$? Rewrite the integral expression and $R$ to reflect your answer.
+						\vs{1}
+						
+					\item Now sketch what would happen to $R$ if we replace $3$ with the function $g_1(x) = x^2$. What must change in the integral expression? Call the new region $R_1$.
+						\vs{1}
+						\newpage
+						
+					\item If we replace $4$ with the function $g_2(x) = -\lrpar{x-\dfrac{3}{2}}^2 + 4$, what changes about $R_1$? What about the integral?
+						\vs{1}
+						
+					\item In (c), what would have happened to $R$ if we replaced $1$ with $h_1(y) = 4-y$ instead? Draw the new region, and call it $R_2$. What change would you see on the integral from part (b)?
+						\vs{1}
+						
+					\item Now what would happen to $R_2$ if we replace $2$ with $h_2(y) = y^3$? Sketch the new $R_2$. What change would you see on the integral in part (e)?
+						\vs{1}
+											
+				\end{enumerate}
+			\end{ex}
+				\newpage
+				
+			\begin{rmk}[Integrals of Type I and Type II Regions]
+				If $f$ is continuous on a Type I region $D$ described by
+				\[D = \lrbrace{((x,y) \mid a\leq x\leq b, g_1(x)\leq y \leq g_2(x)}\]
+				then
+				\[\iint_D f(x,y)\, dA = \int_a^b \int_{g_1(x)}^{g_2(x)} f(x,y)\, dy\, dx\]
+				$ $\\[10pt]
+				
+				If $f$ is continuous on a Type II region described $E$ by
+				\[E = \lrbrace{(x,y)\mid h_1(y)\leq x\leq h_2(y), c\leq y\leq d}\]
+				then
+				\[\iint_E f(x,y)\, dA = \int_c^d \int_{h_1(y)}^{h_2(y)} f(x,y)\, dx\, dy\]
+			\end{rmk}
+			
+			\begin{ex}
+				Let $D$ be the region bounded by the curves $y = 3x^2$ and $y = 1+2x^2$.
+				\begin{enumerate}[(a)]
+					\item Sketch and label the curves, and indicate where the region $D$ is.
+						\vs{1}
+					\item Write the region using the definition of a Type I region.
+						\vs{1}
+					\item Now compute the integral $\ds \iint_D (x+3y)\, dA$.
+						\vs{2}
+				\end{enumerate}
+			\end{ex}
+			
+			\begin{ex}
+				Find the volume of the solid that lies under the paraboloid $z = x^2 +2y^2$, and above the region $R$ in the $xy-$plane bounded by the curves $y = x^3$ and $y = x$. Treat $R$ as a Type I region.
+			\end{ex}
+				\vs{1}
+				
+			\begin{ex}
+				Again $R$ to be the region in the $xy-$plane bounded by the curves $y = x^3$ and $y = x$.
+				\begin{enumerate}[(a)]
+					\item Write $R$ as a Type II region. 	
+						\vs{1}
+						
+					\item Compute $\ds \iint_R (x^2 + 2y^2)\, dA$. How does your work and answer compare to the previous example?
+						\vs{1}
+				\end{enumerate}
+			\end{ex}
+		\subsubsection*{Properties of Double Integrals}
+			Double integrals, because they are integrals, share most of the properties of single integrals. We'll isolate a few which can be helpful (without proof):
+			\begin{enumerate}
+				\item $\ds \iint_D [f(x,y) \pm g(x,y)]\, dA = \iint f(x,y)\, dA \pm \iint_D g(x,y)\, dA$
+				\item $\ds \iint_D c\cdot f(x,y)\, dA = c\cdot \iint_D f(x,y)\, dA$
+				\item If $f(x,y)\leq g(x,y)$ for all $(x,y)$ in $D$, then $\ds \iint_D f(x,y)\, dA \leq \iint_D g(x,y)\, dA$
+				\item Let $D_1$ and $D_2$ be two non-overlapping regions (except potentially on their common boundary). Then, $D= D_1\cup D_2$ and
+					\[\iint_D f(x,y)\, dA = \iint_{D_1} f(x,y)\, dA + \iint_{D_2} f(x,y)\, dA\]
+				\item $\ds \iint_D 1\, dA = \text{Area}(D)$
+			\end{enumerate}
+	
+	\subsection*{Pre-Class Activities}
+	
+	
+	
+	\subsection*{In Class}
+	\addcontentsline{toc}{subsection}{In Class}
+	
+		\subsubsection*{Some Examples}
+			
+			\begin{ex}
+				Evaluate $\ds \iint_D x^2y^2\, dA$, where $D$ is the region bounded by the curves $ y = x$ and $y^2 = x+6$.
+			\end{ex}
+				\vs{1}
+				
+			\begin{ex}
+				Find the volume of the first-octant tetrahedron bounded by the plane $x + 2y + z = 2$.
+			\end{ex}
+				\vs{1}
+				
+			\begin{ex}
+				Find the volume of the solid created by the function $f(x,y) = \dfrac{y}{x^2+1}$ over the region $R$ bounded by the curves $y = \sqrt{x}$, $y = 0$, and $x = 4$.
+			\end{ex}
+				\vs{1}
+				
+			\begin{ex}
+				Consider the integral $\ds \int_0^2 \int_0^{y^2} x^2y\, dx\, dy$
+				\begin{enumerate}[(a)]
+					\item Sketch and label the region described in the integral.
+						\vs{1}
+						
+					\item Evaluate the integral.
+						\vs{1}
+				\end{enumerate}
+			\end{ex}	
+				
+		\subsubsection*{Changing the Order of Integration}
+			
+			\begin{ex}
+				Let $f(x,y) = \sec^2 (x^2)$.
+				\begin{enumerate}[(a)]
+					\item Compute $\ds \int_0^1\int_y^1 f(x,y)\, dx\, dy$.  You should run into some issues; what are they?
+						\vs{1}
+						
+					\item Draw and label the region described in part (a).
+						\vs{1}
+						
+					\item Use part (b) to rewrite the integral in part (a), then evaluate $\ds \iint_D f(x,y)\, dA$
+						\vs{1}
+						
+				\end{enumerate}
+			\end{ex}
+			
+			\begin{ex}
+				Evaluate $\ds \iint_D e^{-y^2}\, dA$, where $D = \lrbrace{(x,y)\mid 0\leq x \leq 3, x\leq y \leq 3}$
+			\end{ex}
+				\vs{1}
+				
+			\begin{ex}
+				Evaluate $\ds \int_0^2\int_{y/2}^1 y\cos (x^3-1)\, dx\, dy$
+			\end{ex}
+			
+			
+			
+	\subsection*{After Class Activities}
+	\addcontentsline{toc}{subsection}{After Class Activities}
+	
+		\begin{ex}
+			Evaluate the following integrals. Sketch and label the region of integration.
+			\begin{enumerate}[(a)]
+				\item $\ds \iint_D (y-3x)\, dA$, where $D = \lrbrace{(x,y)\mid 1\leq y\leq 2, -1\leq x\leq 1}$
+					\vs{1}
+					
+				\item $\ds \iint y\sin x\, dA$, where $D$ is the region bounded by $y = 0$,  $y = x^2$, and $x= 1$.
+					\vs{1}
+					
+				\item $\ds \iint xy\, dA$, where $D$ is the region enclosed by the quarter-circle $y = \sqrt{1-x^2}$, $x\geq 0$, and the coordinate axes.
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+		
+		\begin{ex}
+			Evaluate the integral by reversing the order of integration. Sketch and label the region of integration.
+			\begin{enumerate}[(a)]
+				\item $\ds \int_0^1\int_{3y}^3 e^{x^2}\, dx\, dy$
+					\vs{1}
+					
+				\item $\ds \int_0^8 \int_{\sqrt[3]{y}}^2 e^{x^4}\, dx\, dy$
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+		
+	\clearpage
+\end{document}
