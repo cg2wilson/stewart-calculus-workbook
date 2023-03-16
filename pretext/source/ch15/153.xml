@@ -23,12 +23,296 @@
 
 		<subsubsection xml:id="section-153-review">
 			<title>Review: Polar Coordinates</title>
+			
+			<p>
+				Polar coordinates are developed in Section 10.3; the conversions developed there are below:
+			</p>
+			<assemblage>
+				<title>Polar Coordinates</title>
+				<p>
+					<ul>
+						<li>
+							<p>
+								<m>x = r\cos\theta</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>y = r\sin\theta</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>r^2 = x^2 + y^2</m>
+							</p>
+						</li>
+					</ul>
+				</p>
+			</assemblage>
+
+			<p>
+				In Section 10.4, we develop a formula for the integral in polar coordinates using the formula for area of a sector (<m>A = \dfrac{1}{2}r^2\theta</m>, where <m>r</m> is the radius and <m>\theta</m> is the angle which subtends the arc).
+			</p>
+
+			<assemblage>
+				<title>Single-Variable Integral in Polar Coordinates</title>
+				<p>
+					If the polar curve <m>r(\theta)</m> is continous, then the area of the region bounded by the angles <m>\alpha</m> and <m>\beta</m> (<m>0\leq \beta-\alpha\leq 2\pi</m>) is given by
+					<me>
+						\int_{\alpha}^{\beta} \dfrac{1}{2}[r(\theta)]^2\, d\theta
+					</me>
+				</p>
+			</assemblage>
 
         </subsubsection>
 
         <subsubsection xml:id="section-153-polar">
 			<title>Double Integrals in Polar Coordinates</title>
+			
+			<p>
+				In order to develop a formula for the volume under a curve, we need to identify the area of a single polar rectangle.
+			</p>
 
+			<example>
+				<statement>
+					<p>
+						Consider the polar region given by
+						<me>
+							R = \lrbrace{(r,\theta)\mid a\leq r\leq b, \alpha\leq\theta\leq \beta}
+						</me>
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									Take inspiration from Section 15.1; how can we divide the region <m>R</m> into polar rectangles?
+								</p>
+							</li>
+							<li>
+								<p>
+									Let the area of <m>R_{ij}</m> be denoted by <m>\Delta A_i</m>, and let <m>r_i^*</m> be the midpoint of <m>R_{ij}</m>, given by <m>r_i^* = \dfrac{1}{2}(r_{i-1}-r_i)</m>. Find an expression for <m>\Delta A_i</m>. Draw a picture illustrating parts (a) and (b).
+								</p>
+							</li>
+							<li>
+								<p>
+									Use the conversions between polar and rectangular coordinates to develop a Riemann sum approximating the volume under a curve <m>f(x,y)</m>.
+								</p>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									Subdivide <m>R</m> by partitioning into <m>m</m> pieces in the radial direction: <m>\Delta r_i = \dfrac{b-a}{m}</m>. Similarly, we can subdivide the angular direction to <m>n</m> pieces by doing <m>\Delta \theta = \dfrac{\beta - \alpha}{n}</m>.
+								</p>
+							</li>
+							<li>
+								<p>
+									Visually, we can represent <m>\Delta A_i</m> as the difference between the sector areas of radius <m>r_i</m> and <m>r_{i-1}</m>. This means that 
+									<md>
+										<mrow>
+											\Delta A_i &amp; = \dfrac{1}{2}r_i^2\Delta\theta - \dfrac{1}{2}r_{i-1}^2\Delta\theta
+										</mrow>
+										<mrow> 
+											&amp; = \dfrac{1}{2}\lrpar{r_{i-1}^2-r_i^2}\Delta\theta 
+										</mrow> 
+										<mrow> 
+											&amp; = \dfrac{1}{2}\lrpar{(r_{i-1}+r_i)(r_{i-1}-r_i)}\Delta\theta
+										</mrow> 
+										<mrow> 
+											&amp; = \dfrac{1}{2} r_i^*\Delta r\Delta \theta 
+										</mrow>
+									</md>
+									So, we conclude that <m>\Delta A_i = r_i^*\Delta r\Delta\theta</m>.
+								</p>
+								<p>
+									The image is below.
+								</p>
+								<image>
+									<description>
+										A sketch of a polar region described above, and labeled with <m>r_i</m>, <m>r_{i-1}</m>, <m>\theta_j</m>, <m>\theta_{j-1}</m>, <m>R_{ij}</m>, <m>\Delta r</m>, and <m>\Delta \theta</m>
+									</description>
+									<latex-image>
+										<![CDATA[ 
+										\begin{tikzpicture}
+											\begin{polaraxis}[
+												scale =2,
+												xtick distance = deg(pi/12),
+												xtick = {0,0,deg((pi)/12),deg((2*pi)/12, deg((3*pi)/12, deg((4*pi)/12)},
+												xticklabels= {, ,$\theta_{j-1}$, $\theta_j$,},
+												xmin = 0, xmax = deg(pi/4),
+												every axis y label/.append style={at={(ticklabel cs: 0.5)}, yshift = -30pt},
+													y label style={at={(axis description cs: 0.5, 1)},above},
+												ytick = {},	
+												yticklabels= {}
+											]
+										
+												\addplot[domain=0:pi/4, data cs = polarrad] {0.5};
+												\addplot[domain=0:pi/4, data cs = polarrad] {1};
+												\addplot[domain=0:pi/4, data cs = polarrad] {1.5};
+												\addplot[domain=0:pi/4, data cs = polarrad] {2};
+												\addplot[domain = (1*pi)/12:(2*pi)/12, name path = one, data cs = polarrad] {1.5};
+												\addplot[domain = (1*pi)/12:(2*pi)/12, name path = two, data cs = polarrad] {2};
+												\addplot[domain = (1*pi)/12:(2*pi)/12, name path = three, data cs = polarrad] {0};
+												\addplot[lightgray!50!] fill between [of = one and two];
+												\addplot[lightgray!100!] fill between [of = one and three];
+												\coordinate (a) at (0,1.5);
+												\coordinate (b) at (0,2);
+												\coordinate (c) at (22.5, 1.75);
+												\coordinate (d) at (22.5, 0.85);
+												\coordinate (e) at (-7.5,0.75);
+											\end{polaraxis}
+												\node[yshift=-10pt] at (a) {$r_{i-1}$};
+												\node[yshift=-10pt] at (b) {$r_i$};
+												\node at (c) {$R_{ij}$};
+												\node at (d) {$\Delta \theta$};
+												\node at (e) {$\Delta r$};
+										\end{tikzpicture}
+										]]>
+									</latex-image>
+								</image>
+							</li>
+							<li>
+								<p>
+									We know that in general, volume is given by <m>\ds \iint_R f(x,y)\, dA</m>, which comes from a Riemann sum of the form <m> \ds \sum_{j=1}^n\sum_{i=1}^m f(x_{ij},y_{ij})\Delta A_i</m>. Since <m>x = r\cos\theta</m> and <m>y = r\sin\theta</m>, we can rewrite <m>f(x,y) = f(r\cos\theta,r\sin\theta)</m>. This means that <m>f(x_{ij},y_{ij}) = f(r_i^*\cos\theta_j^*,r_i^*\sin\theta_j^*)</m>. Since <m>\Delta A_i = r_i^*\Delta r\Delta \theta</m>, we can create the Riemann sum 
+									<me>
+										\sum_{j=1}^n\sum_{i=1}^m f(r_i^*\cos\theta_j^*,r_i^*\sin\theta_j^*)r_i^*\Delta r\Delta \theta
+									</me>
+								</p>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
+
+			<assemblage>
+				<title>Double Integral in Polar Coordinates</title>
+				<p>
+					If <m>f</m> is continuous on a polar rectangle <m>R</m> given by <m>0\leq a\leq r\leq b</m>, <m>\alpha\leq \theta \leq \beta</m> (where <m>\beta-\alpha</m> is in <m>[0,2\pi]</m>), then we can write
+					<me>
+						\iint_R f(x,y)\, dA = \int_{\alpha}^{\beta}\int_a^b f(r\cos\theta,r\sin\theta)r\,dr\,d\theta
+					</me>
+				</p>
+			</assemblage>
+
+			<example>
+				<statement>
+					<p>
+						Let <m>D</m> be the portion of the upper-half plane bounded by the circle <m>x^2 + y^2 = 1</m>, and let <m>f(x,y) = x^2+2y</m>.
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									Evaluate the integral <m>\ds \iint_D x^2 + 2y\, dA</m> in Cartesian coordinates.
+								</p>
+							</li>
+							<li>
+								<p>
+									Convert the integral to polar coordinates and compute again.
+								</p>
+							</li>
+							<li>
+								<p>
+									Describe some differences between the computations parts (a) and (b).
+								</p>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									Begin by sketching the region. When we do this, we find that we can write 
+									<me>
+										R = \lrbrace{(x,y)\mid 0\leq x\leq 1, 0\leq y\leq \sqrt{1-x^2}}
+									</me>
+									This means we're looking at a Type I integral, which can be evaluated by computing
+									<me>
+										\int_0^1\int_0^{\sqrt{1-x^2}} x^2 + 2y\, dy\, dx
+									</me>
+									which gives <m>\dfrac{\pi}{8} + \dfrac{4}{3}</m>									
+								</p>
+							</li>
+							<li>
+								<p>
+									Convering to a polar integral, we use the conversions <m>x = r\cos\theta,y=r\sin\theta</m>. Doing that, we can set up the integral as
+									<me>
+										\int_0^{\pi}\int_0^1 (r^2\cos^2\theta + 2r\sin\theta)\, r\, dr\,d\theta
+									</me>
+									which still evaluates to <m>\dfrac{\pi}{8} + \dfrac{4}{3}</m>			
+								</p>
+							</li>
+							<li>
+								<p>
+									The answers vary here, but the most noticeable difference is likely in the computation; the Cartesian coordinate computation required careful use of trigonometric substitution and careful determination of the bounds, while the polar integration was a little more straightforward.
+								</p>
+								<p>
+									That difference ultimately comes from the shape of the region we're integrating over. Since the shape of the region is relatively simple to describe in polar coordinates, the integral is relatively more simple in polar coordinates than Cartesian coordinates.
+								</p>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Use polar coordinates to evaluate the integral <m>\ds \int_0^2\int_{\sqrt{1-y^2}}^{\sqrt{4-y^2}} 1-x^2\, dx\, dy</m>. Sketch the region.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						The region is sketched below:
+					</p>
+					<image>
+						<description>
+							A sketch of the region given in the problem, the first-quadrant region between the circles <m>x^2 + y^2 = 4</m> and <m>x^2 + y^2 = 1</m>.
+						</description>
+						<latex-image>
+							<![CDATA[ 
+							\begin{tikzpicture}
+								\begin{axis}[
+									axis x line = middle,
+										axis y line = middle,
+										every axis y label/.style={at={(ticklabel cs:1.1)}},
+										y label style={at={(axis description cs:0,1.1)},anchor=north},
+											ylabel = {$y$},
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												x label style={at={(axis description cs:1.1,0)},anchor=east},
+												xlabel = {$x$},
+									xmin = 0, xmax = 3,
+									ymin = 0, ymax = 3
+									]		
+									\addplot[smooth, samples=500, domain=0.:2., name path = a] {sqrt(4-x^2)};
+									\addplot[smooth, samples=500, domain=0.:1., name path = b] {sqrt(1-x^2)};
+									\addplot[lightgray!50!] fill between [of=a and b];	
+									\coordinate (a) at (1.1, 1.1);
+								\end{axis}
+									\node at (a) {$R$};
+							\end{tikzpicture}
+							]]>
+						</latex-image>
+					</image>
+					<p>
+						Based on the region, we can write 
+						<me>
+							R = \lrbrace{(r,\theta)\mid 1\leq r\leq 2, 0\leq \theta\leq \dfrac{\pi}{2}}
+						</me>
+						so the integral becomes
+						<me>
+							\int_0^{\pi/2}\int_1^2 (1-r^2\cos^2\theta)\, r\,dr\,d\theta
+						</me>
+						which evaluates to <m>-\dfrac{3\pi}{16}</m>
+					</p>
+				</solution>
+			</example>
         </subsubsection>
 
 	</subsection>
@@ -43,13 +327,152 @@
 
 		<subsubsection xml:id="section-153-examples">
 			<title>Some Examples</title>
+			
+			<example>
+				<statement>
+					<p>
+						Find the volume of the solid bounded by the plane <m>z = 0</m> and the paraboloid <m>z = 4-x^2-y^2</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>8\pi</m>
+					</p>
+				</solution>
+			</example>
 
+			<example>
+				<statement>
+					<p>
+						Evaluate <m>\ds \iint_D \cos \sqrt{x^2 + y^2}\, dA</m>, where <m>D</m> is the disk of radius 2, centered at the origin.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>-2\pi + 4\pi\sin(2) + 2\pi\cos(2)</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Evaluate <m>\ds \iint_R f(x,y)\, dA</m>, where <m>f(x,y) = 2x^2+2y^2</m> and <m>R</m> is a circle of radius 1, centered at <m>(1,0)</m>.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>3\pi</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Prove that the area enclosed in one leaf of the curve <m>r = \sin 3\theta</m> is <m>\dfrac{\pi}{12}</m>.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						After sketching the graph, we know that one leaf will occur between <m>\theta = 0</m> and <m>\theta = \dfrac{\pi}{3}</m>. Since the radius function is given by <m>r = \sin 3\theta</m>, we'll use this as our upper bound and <m>r = 0</m> for our lower bound. This gives the integral
+						<me>
+							A = \int_0^{\pi/3}\int_0^{\sin 3\theta} 1\, r\, dr\, d\theta
+						</me>
+						Evaluating the first integral, we get
+						<me>
+							A = \int_0^{\pi/3} \dfrac{1}{2}\sin^2 3\theta\, d\theta
+						</me>
+						Using the identity <m>\sin^2\theta = \dfrac{1}{2}(1-\cos 2\theta)</m>, we rewrite as
+						<me>
+							A = \int_0^{\pi/3} \dfrac{1}{4}(1-\cos 6\theta)\, d\theta
+						</me>
+						which evaluates to <m>\dfrac{\pi}{12}</m>		
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find the area outside the polar curve <m>r = \dfrac{1}{\sqrt{2}}</m> and inside the lemniscate <m>r^2 = \cos 2\theta</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\dfrac{\sqrt{3}}{2} - \dfrac{\pi}{6}</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find the volume of the region below the cone <m>z=\sqrt{x^2+y^2}</m> and above the annulus <m>1\leq x^2 + y^2\leq 4</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\dfrac{15\pi}{2}</m>
+					</p>
+				</solution>
+			</example>
 		</subsubsection>
 
 	</subsection>
 
 	<subsection xml:id="section-153-afterclass">
 		<title>After Class Activities</title>
+			<example>
+				<statement>
+					<p>
+						Prove that the volume of a sphere of radius <m>r</m> is <m>\dfrac{4\}{3}\pi r^3</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						
+					</p>
+				</solution>
+			</example>
 
+			<example>
+				<statement>
+					<p>
+						Find the volume bounded by the paraboloids <m>z = 6-x^2-y^2</m> and <m>z = 2x^2 + 2y^2</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Evaluate <m>\ds \iint_R xy^2\, dA</m>, where <m>R = \lrbrace{(x,y)\mid 2\leq x\leq 3, \sqrt{4-x^2}\leq y\leq \sqrt{9-x^2} }</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Convert the integral <m>\ds \int_0^{1}\int_{\sqrt{5}y}^{\sqrt{1-y^2}}xy^2\,dx\,dy</m> to polar coordinates and evaluate.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						
+					</p>
+				</solution>
+			</example>
 	</subsection>
 </section>

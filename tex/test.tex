@@ -32,8 +32,8 @@
 	%GRAPHING
 	\usepackage{pgf,tikz,pgfplots,tikz-cd}
 		\usetikzlibrary{arrows,arrows.meta,decorations.markings,decorations.pathreplacing,calc}
-		\pgfplotsset{compat=1.15}
-		\usepgfplotslibrary{fillbetween}
+		\pgfplotsset{compat=1.18}
+		\usepgfplotslibrary{fillbetween,polar}
 		
 		
 	%TABLES
@@ -155,36 +155,26 @@
 
 \begin{document}
 
-	\begin{tikzpicture}
-		\begin{axis}[
-			scale = 1.5,
-			every tick label/.append style={font=\small},
-			axis x line = middle,
-			axis y line = middle,
-    			every axis y label/.style={at={(ticklabel cs:1.15)}},
-    			ytick = {1,2},
-				y label style={at={(axis description cs:0,1.1)},anchor=north},
-    			ylabel = {$y$},
-    			ymin = 0, ymax = 1.5,
-    				every axis x label/.style= {at ={(ticklabel cs:1)}},
-    			xtick = {0,1,2},
-    				x label style={at={(axis description cs:1.1,0)},anchor=east},
-    			xlabel = {$x$},
-    			xmin = 0, xmax = 1.5
-		]
-		
-			\addplot[name path =a, domain = {0.:1.}] {x} node [midway, sloped, yshift=10pt] {$y = x$};
-			\addplot[name path =b, domain={0.:1.}] {0} node [midway, below, yshift=-10pt] {$y =0$};
-			\coordinate (r) at (0.75,0.35);
-			\addplot[lightgray, opacity=0.5] fill between[of=a and b];
-			\coordinate (top) at (1,1);
-			\coordinate (btm) at (1,0);
-			\coordinate (o) at (0,0);
-		\end{axis}
-			\node at (r) {$\large R$};
-			\draw (top)--(btm) node[midway, rotate = 90, yshift = -10pt] {$x=1$};
-			\draw (o)--(btm) node[midway, yshift=-10pt] {$y=0$};
-	\end{tikzpicture}
+		\begin{tikzpicture}
+			\begin{axis}[
+				axis x line = middle,
+    				axis y line = middle,
+    				every axis y label/.style={at={(ticklabel cs:1.1)}},
+					y label style={at={(axis description cs:0,1.1)},anchor=north},
+    					ylabel = {$y$},
+    						every axis x label/.style= {at ={(ticklabel cs:1)}},
+    						x label style={at={(axis description cs:1.1,0)},anchor=east},
+    						xlabel = {$x$},
+				xmin = 0, xmax = 3,
+				ymin = 0, ymax = 3
+				]		
+				\addplot[smooth, samples=500, domain=0.:2., name path = a] {sqrt(4-x^2)};
+				\addplot[smooth, samples=500, domain=0.:1., name path = b] {sqrt(1-x^2)};
+				\addplot[lightgray!50!] fill between [of=a and b];	
+				\coordinate (a) at (1.1, 1.1);
+			\end{axis}
+				\node at (a) {$R$};
+		\end{tikzpicture}
 
 	
 \end{document}

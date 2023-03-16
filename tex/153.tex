@@ -1,0 +1,130 @@
+\documentclass[notes]{subfiles}
+\begin{document}
+	\addcontentsline{toc}{section}{15.3 - Double Integrals in Polar Coordinates}
+	\refstepcounter{section}
+	\fancyhead[RO,LE]{\bfseries \nameref{cs153}} 
+	\fancyhead[LO,RE]{\bfseries \small \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Chapter 15.3}
+
+
+\section*{Double Integrals in Polar Coordinates}\label{cs153}
+	\subsection*{Before Class}
+	\addcontentsline{toc}{subsection}{Before Class}
+	
+	\subsubsection*{Review: Polar Coordinates}
+		Polar coordinates are developed in Section 10.3; the conversions developed there are below:
+		
+		\begin{rmk}[Polar Coordinates]
+			\\[50pt]
+			%x = r\cos\theta
+			%y = r\sin\theta
+			%r^2 = x^2 + y^2
+		\end{rmk}
+		
+		In Section 10.4, we develop a formula for the integral in polar coordinates using the formula for area of a sector ($A = \dfrac{1}{2}r^2\theta$, where $r$ is the radius and $\theta$ is the angle which subtends the arc).
+		
+		\begin{rmk}[Single-Variable Integral in Polar Coordinates]
+			\\[25pt]
+			% \ds \int_{\alpha}^{\beta} \dfrac{1}{2}\left[r(\theta)\right]^2\,d\theta
+		\end{rmk}
+		
+	\subsubsection*{Double Integrals in Polar Coordinates}
+		%build up the definition
+		
+		%one example
+		
+		In order to develop a formula for the volume under a curve, we need to identify the area of a single polar rectangle.
+		\begin{ex}
+		Consider the polar region given by
+		\[R = \lrbrace{(r,\theta)\mid a\leq r\leq b, \alpha\leq\theta\leq \beta}\]
+			\begin{enumerate}[(a)]
+				\item Take inspiration from Section 15.1; how can we divide the region $R$ into polar rectangles?
+					
+				\item Let the area of $R_{ij}$ be denoted by $\Delta A_i$, and let $r_i^*$ be the midpoint of $R_{ij}$, given by $r_i^* = \dfrac{1}{2}(r_{i-1}-r_i)$. Find an expression for $\Delta A_i$. Draw a picture illustrating parts (a) and (b).
+					
+				\item Use the conversions between polar and rectangular coordinates to develop a Riemann sum approximating the volume under a curve $f(x,y)$.
+				
+			\end{enumerate}
+
+		\end{ex}
+		
+		\begin{rmk}[Double Integral in Polar Coordinates]
+			If $f$ is continuous on a polar rectangle $R$ given by $0\leq a\leq r\leq b$, $\alpha\leq\theta\leq\beta$ (where $\beta - \alpha$ is in $[0,2\pi]$), then we can write\\[30pt]
+		\end{rmk}
+
+		\begin{ex}
+			Let $D$ be the portion of the upper-half plane bounded by the circle $x^2 + y^2 = 1$, and let $f(x,y) = x^2+2y$.
+			\begin{enumerate}[(a)]
+				\item Evaluate the integral $\ds \iint_D x^2 + 2y\, dA$ in Cartesian coordinates.
+					%need to use trig substitution on first term
+				\item Convert the integral to polar coordinates and compute again.
+					%still get \pi/8 + 4/3
+				\item Describe some differences between the computations parts (a) and (b).
+					%part b is more straightforward, related to the shape of the region; the region is perfectly fit to use polar coordinates
+			\end{enumerate}
+		\end{ex}
+			
+			
+		\begin{ex}
+			Use polar coordinates to evaluate the integral $\ds \int_0^2\int_{\sqrt{1-y^2}}^{\sqrt{4-y^2}} 1-x^2\, dx\, dy. Sketch the region.
+		\end{ex}
+			%-3\pi/16
+			
+	\subsection*{Pre-Class Activities}
+		%look at examples 1-6 on p. 1105
+	\subsection*{In Class}
+	\addcontentsline{toc}{subsection}{In Class}
+		
+		\subsubsection*{Some Examples}
+		
+		\begin{ex}
+			Find the volume of the solid bounded by the plane $z = 0$ and the paraboloid $z = 4-x^2-y^2$
+		\end{ex}
+			%8\pi
+			
+		\begin{ex}
+			Evaluate $\ds \iint_D \cos \sqrt{x^2 + y^2}\, dA$, where $D$ is the disk of radius 2, centered at the origin.
+		\end{ex}
+			%-2\pi + 4\pi\sin(2) + 2\pi\cos (2)
+			
+		\begin{ex}
+			Evaluate $\ds \iint_R f(x,y)\, dA$, where $f(x,y) = 2x^2+2y^2$ and $R$ is a circle of radius 1, centered at $(1,0)$.
+		\end{ex}
+			
+			
+		\begin{ex}
+			Prove that the area enclosed in one leaf of the curve $r = \sin 3\theta$ is $\dfrac{\pi}{12}$.
+		\end{ex}
+		
+		\begin{ex}
+			Find the area outside the polar curve $r = \dfrac{1}{\sqrt{2}}$ and inside the lemniscate $r^2 = \cos 2\theta$
+		\end{ex}
+			%\sqrt{3}/2 -\pi/6
+			
+		\begin{ex}
+			Find the volume of the region below the cone $z=\sqrt{x^2+y^2}$ and above the annulus $1\leq x^2 + y^2\leq 4$
+		\end{ex}
+			%15\pi/2
+			
+	\subsection*{After Class Activities}
+	\addcontentsline{toc}{subsection}{After Class Activities}	
+		\begin{ex}
+			Prove that the volume of a sphere of radius $r$ is $\dfrac{4}{3}\pi r^3$
+		\end{ex}
+		
+		\begin{ex}
+			Find the volume bounded by the paraboloids $z = 6-x^2-y^2$ and $z = 2x^2 + 2y^2$
+		\end{ex}
+		
+		\begin{ex}
+			Evaluate $\ds \iint_R xy^2\, dA$, where $R = \lrbrace{(x,y)\mid 2\leq x\leq 3, \sqrt{4-x^2}\leq y\leq \sqrt{9-x^2} }$
+		\end{ex}
+		
+		\begin{ex}
+			Convert the integral $\ds \int_0^{1}\int_{\sqrt{5}y}^{\sqrt{1-y^2}}xy^2\,dx\,dy$ to polar coordinates and evaluate.
+		\end{ex}
+	
+	\clearpage
+\end{document}
