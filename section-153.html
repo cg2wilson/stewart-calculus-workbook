@@ -1952,18 +1952,246 @@ window.MathJax = {
 </h3>
 <figure class="figure figure-like" id="figure-138"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">138<span class="period">.</span></span><span class="space"> </span>Pre-Class Video 1</figcaption></figure><figure class="figure figure-like" id="figure-139"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">139<span class="period">.</span></span><span class="space"> </span>Pre-Class Video 2</figcaption></figure><section class="subsubsection" id="section-153-review"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span> <span class="codenumber">15.3.1.1</span> <span class="title">Review: Polar Coordinates</span>
-</h4></section><section class="subsubsection" id="section-153-polar"><h4 class="heading hide-type">
+</h4>
+<div class="para" id="p-1322">Polar coordinates are developed in Section 10.3; the conversions developed there are below:</div>
+<article class="assemblage assemblage-like" id="assemblage-77"><h5 class="heading"><span class="title">Polar Coordinates.</span></h5>
+<div class="para logical" id="p-1323"><ul class="disc">
+<li id="li-1499"><div class="para" id="p-1324"><span class="process-math">\(\displaystyle x = r\cos\theta\)</span></div></li>
+<li id="li-1500"><div class="para" id="p-1325"><span class="process-math">\(\displaystyle y = r\sin\theta\)</span></div></li>
+<li id="li-1501"><div class="para" id="p-1326"><span class="process-math">\(\displaystyle r^2 = x^2 + y^2\)</span></div></li>
+</ul></div></article><div class="para" id="p-1327">In Section 10.4, we develop a formula for the integral in polar coordinates using the formula for area of a sector (<span class="process-math">\(A = \dfrac{1}{2}r^2\theta\text{,}\)</span> where <span class="process-math">\(r\)</span> is the radius and <span class="process-math">\(\theta\)</span> is the angle which subtends the arc).</div>
+<article class="assemblage assemblage-like" id="assemblage-78"><h5 class="heading"><span class="title">Single-Variable Integral in Polar Coordinates.</span></h5>
+<div class="para logical" id="p-1328">
+<div class="para">If the polar curve <span class="process-math">\(r(\theta)\)</span> is continous, then the area of the region bounded by the angles <span class="process-math">\(\alpha\)</span> and <span class="process-math">\(\beta\)</span> (<span class="process-math">\(0\leq \beta-\alpha\leq 2\pi\)</span>) is given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{\alpha}^{\beta} \dfrac{1}{2}[r(\theta)]^2\, d\theta
+\end{equation*}
+</div>
+</div></article></section><section class="subsubsection" id="section-153-polar"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span> <span class="codenumber">15.3.1.2</span> <span class="title">Double Integrals in Polar Coordinates</span>
-</h4></section></section><section class="subsection" id="section-153-preclass"><h3 class="heading hide-type">
+</h4>
+<div class="para" id="p-1329">In order to develop a formula for the volume under a curve, we need to identify the area of a single polar rectangle.</div>
+<article class="example example-like" id="example-856"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">15.3.1</span><span class="period">.</span>
+</h5>
+<div class="para logical" id="p-1330">
+<div class="para">Consider the polar region given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+R = \lrbrace{(r,\theta)\mid a\leq r\leq b, \alpha\leq\theta\leq \beta}
+\end{equation*}
+</div>
+</div> <div class="para logical" id="p-1331"><ol class="lower-alpha">
+<li id="li-1502"><div class="para" id="p-1332">Take inspiration from Section 15.1; how can we divide the region <span class="process-math">\(R\)</span> into polar rectangles?</div></li>
+<li id="li-1503"><div class="para" id="p-1333">Let the area of <span class="process-math">\(R_{ij}\)</span> be denoted by <span class="process-math">\(\Delta A_i\text{,}\)</span> and let <span class="process-math">\(r_i^*\)</span> be the midpoint of <span class="process-math">\(R_{ij}\text{,}\)</span> given by <span class="process-math">\(r_i^* = \dfrac{1}{2}(r_{i-1}-r_i)\text{.}\)</span> Find an expression for <span class="process-math">\(\Delta A_i\text{.}\)</span> Draw a picture illustrating parts (a) and (b).</div></li>
+<li id="li-1504"><div class="para" id="p-1334">Use the conversions between polar and rectangular coordinates to develop a Riemann sum approximating the volume under a curve <span class="process-math">\(f(x,y)\text{.}\)</span>
+</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-873" id="solution-873"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-873"><div class="solution solution-like"><div class="para logical" id="p-1335"><ol class="lower-alpha">
+<li id="li-1505"><div class="para" id="p-1336">Subdivide <span class="process-math">\(R\)</span> by partitioning into <span class="process-math">\(m\)</span> pieces in the radial direction: <span class="process-math">\(\Delta r_i = \dfrac{b-a}{m}\text{.}\)</span> Similarly, we can subdivide the angular direction to <span class="process-math">\(n\)</span> pieces by doing <span class="process-math">\(\Delta \theta = \dfrac{\beta - \alpha}{n}\text{.}\)</span>
+</div></li>
+<li id="li-1506">
+<div class="para logical" id="p-1337">
+<div class="para">Visually, we can represent <span class="process-math">\(\Delta A_i\)</span> as the difference between the sector areas of radius <span class="process-math">\(r_i\)</span> and <span class="process-math">\(r_{i-1}\text{.}\)</span> This means that</div>
+<div class="displaymath process-math" id="md-42">
+\begin{align*}
+\Delta A_i &amp; = \dfrac{1}{2}r_i^2\Delta\theta - \dfrac{1}{2}r_{i-1}^2\Delta\theta\\
+&amp; = \dfrac{1}{2}\lrpar{r_{i-1}^2-r_i^2}\Delta\theta \\
+&amp; = \dfrac{1}{2}\lrpar{(r_{i-1}+r_i)(r_{i-1}-r_i)}\Delta\theta\\
+&amp; = \dfrac{1}{2} r_i^*\Delta r\Delta \theta 
+\end{align*}
+</div>
+<div class="para">So, we conclude that <span class="process-math">\(\Delta A_i = r_i^*\Delta r\Delta\theta\text{.}\)</span>
+</div>
+</div>
+<div class="para" id="p-1338">The image is below.</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-189.svg" role="img" class="contained" alt="A sketch of a polar region described above, and labeled with \(r_i\text{,}\) \(r_{i-1}\text{,}\) \(\theta_j\text{,}\) \(\theta_{j-1}\text{,}\) \(R_{ij}\text{,}\) \(\Delta r\text{,}\) and \(\Delta \theta\)"></div>
+</li>
+<li id="li-1507"><div class="para logical" id="p-1339">
+<div class="para">We know that in general, volume is given by <span class="process-math">\(\ds \iint_R f(x,y)\, dA\text{,}\)</span> which comes from a Riemann sum of the form <span class="process-math">\(\ds \sum_{j=1}^n\sum_{i=1}^m f(x_{ij},y_{ij})\Delta A_i\text{.}\)</span> Since <span class="process-math">\(x = r\cos\theta\)</span> and <span class="process-math">\(y = r\sin\theta\text{,}\)</span> we can rewrite <span class="process-math">\(f(x,y) = f(r\cos\theta,r\sin\theta)\text{.}\)</span> This means that <span class="process-math">\(f(x_{ij},y_{ij}) = f(r_i^*\cos\theta_j^*,r_i^*\sin\theta_j^*)\text{.}\)</span> Since <span class="process-math">\(\Delta A_i = r_i^*\Delta r\Delta \theta\text{,}\)</span> we can create the Riemann sum</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sum_{j=1}^n\sum_{i=1}^m f(r_i^*\cos\theta_j^*,r_i^*\sin\theta_j^*)r_i^*\Delta r\Delta \theta
+\end{equation*}
+</div>
+</div></li>
+</ol></div></div></div>
+</div></article><article class="assemblage assemblage-like" id="assemblage-79"><h5 class="heading"><span class="title">Double Integral in Polar Coordinates.</span></h5>
+<div class="para logical" id="p-1340">
+<div class="para">If <span class="process-math">\(f\)</span> is continuous on a polar rectangle <span class="process-math">\(R\)</span> given by <span class="process-math">\(0\leq a\leq r\leq b\text{,}\)</span> <span class="process-math">\(\alpha\leq \theta \leq \beta\)</span> (where <span class="process-math">\(\beta-\alpha\)</span> is in <span class="process-math">\([0,2\pi]\)</span>), then we can write</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\iint_R f(x,y)\, dA = \int_{\alpha}^{\beta}\int_a^b f(r\cos\theta,r\sin\theta)r\,dr\,d\theta
+\end{equation*}
+</div>
+</div></article><article class="example example-like" id="example-857"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">15.3.2</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-1341">Let <span class="process-math">\(D\)</span> be the portion of the upper-half plane bounded by the circle <span class="process-math">\(x^2 + y^2 = 1\text{,}\)</span> and let <span class="process-math">\(f(x,y) = x^2+2y\text{.}\)</span>
+</div> <div class="para logical" id="p-1342"><ol class="lower-alpha">
+<li id="li-1508"><div class="para" id="p-1343">Evaluate the integral <span class="process-math">\(\ds \iint_D x^2 + 2y\, dA\)</span> in Cartesian coordinates.</div></li>
+<li id="li-1509"><div class="para" id="p-1344">Convert the integral to polar coordinates and compute again.</div></li>
+<li id="li-1510"><div class="para" id="p-1345">Describe some differences between the computations parts (a) and (b).</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-874" id="solution-874"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-874"><div class="solution solution-like"><div class="para logical" id="p-1346"><ol class="lower-alpha">
+<li id="li-1511"><div class="para logical" id="p-1347">
+<div class="para">Begin by sketching the region. When we do this, we find that we can write</div>
+<div class="displaymath process-math">
+\begin{equation*}
+R = \lrbrace{(x,y)\mid 0\leq x\leq 1, 0\leq y\leq \sqrt{1-x^2}}
+\end{equation*}
+</div>
+<div class="para">This means we're looking at a Type I integral, which can be evaluated by computing</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_0^1\int_0^{\sqrt{1-x^2}} x^2 + 2y\, dy\, dx
+\end{equation*}
+</div>
+<div class="para">which gives <span class="process-math">\(\dfrac{\pi}{8} + \dfrac{4}{3}\)</span>
+</div>
+</div></li>
+<li id="li-1512"><div class="para logical" id="p-1348">
+<div class="para">Convering to a polar integral, we use the conversions <span class="process-math">\(x = r\cos\theta,y=r\sin\theta\text{.}\)</span> Doing that, we can set up the integral as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_0^{\pi}\int_0^1 (r^2\cos^2\theta + 2r\sin\theta)\, r\, dr\,d\theta
+\end{equation*}
+</div>
+<div class="para">which still evaluates to <span class="process-math">\(\dfrac{\pi}{8} + \dfrac{4}{3}\)</span>
+</div>
+</div></li>
+<li id="li-1513">
+<div class="para" id="p-1349">The answers vary here, but the most noticeable difference is likely in the computation; the Cartesian coordinate computation required careful use of trigonometric substitution and careful determination of the bounds, while the polar integration was a little more straightforward.</div>
+<div class="para" id="p-1350">That difference ultimately comes from the shape of the region we're integrating over. Since the shape of the region is relatively simple to describe in polar coordinates, the integral is relatively more simple in polar coordinates than Cartesian coordinates.</div>
+</li>
+</ol></div></div></div>
+</div></article><article class="example example-like" id="example-858"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">15.3.3</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-1351">Use polar coordinates to evaluate the integral <span class="process-math">\(\ds \int_0^2\int_{\sqrt{1-y^2}}^{\sqrt{4-y^2}} 1-x^2\, dx\, dy\text{.}\)</span> Sketch the region.</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-875" id="solution-875"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-875"><div class="solution solution-like">
+<div class="para" id="p-1352">The region is sketched below:</div> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-190.svg" role="img" class="contained" alt="A sketch of the region given in the problem, the first-quadrant region between the circles \(x^2 + y^2 = 4\) and \(x^2 + y^2 = 1\text{.}\)"></div> <div class="para logical" id="p-1353">
+<div class="para">Based on the region, we can write</div>
+<div class="displaymath process-math">
+\begin{equation*}
+R = \lrbrace{(r,\theta)\mid 1\leq r\leq 2, 0\leq \theta\leq \dfrac{\pi}{2}}
+\end{equation*}
+</div>
+<div class="para">so the integral becomes</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_0^{\pi/2}\int_1^2 (1-r^2\cos^2\theta)\, r\,dr\,d\theta
+\end{equation*}
+</div>
+<div class="para">which evaluates to <span class="process-math">\(-\dfrac{3\pi}{16}\)</span>
+</div>
+</div>
+</div></div>
+</div></article></section></section><section class="subsection" id="section-153-preclass"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">15.3.2</span> <span class="title">Pre-Class Activities</span>
 </h3></section><section class="subsection" id="section-153-inclass"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">15.3.3</span> <span class="title">In Class</span>
 </h3>
 <section class="subsubsection" id="section-153-examples"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span> <span class="codenumber">15.3.3.1</span> <span class="title">Some Examples</span>
-</h4></section></section><section class="subsection" id="section-153-afterclass"><h3 class="heading hide-type">
+</h4>
+<article class="example example-like" id="example-859"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">15.3.4</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-1354">Find the volume of the solid bounded by the plane <span class="process-math">\(z = 0\)</span> and the paraboloid <span class="process-math">\(z = 4-x^2-y^2\)</span>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-876" id="solution-876"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-876"><div class="solution solution-like"><div class="para" id="p-1355"><span class="process-math">\(8\pi\)</span></div></div></div>
+</div></article><article class="example example-like" id="example-860"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">15.3.5</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-1356">Evaluate <span class="process-math">\(\ds \iint_D \cos \sqrt{x^2 + y^2}\, dA\text{,}\)</span> where <span class="process-math">\(D\)</span> is the disk of radius 2, centered at the origin.</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-877" id="solution-877"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-877"><div class="solution solution-like"><div class="para" id="p-1357"><span class="process-math">\(-2\pi + 4\pi\sin(2) + 2\pi\cos(2)\)</span></div></div></div>
+</div></article><article class="example example-like" id="example-861"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">15.3.6</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-1358">Evaluate <span class="process-math">\(\ds \iint_R f(x,y)\, dA\text{,}\)</span> where <span class="process-math">\(f(x,y) = 2x^2+2y^2\)</span> and <span class="process-math">\(R\)</span> is a circle of radius 1, centered at <span class="process-math">\((1,0)\text{.}\)</span>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-878" id="solution-878"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-878"><div class="solution solution-like"><div class="para" id="p-1359"><span class="process-math">\(3\pi\)</span></div></div></div>
+</div></article><article class="example example-like" id="example-862"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">15.3.7</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-1360">Prove that the area enclosed in one leaf of the curve <span class="process-math">\(r = \sin 3\theta\)</span> is <span class="process-math">\(\dfrac{\pi}{12}\text{.}\)</span>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-879" id="solution-879"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-879"><div class="solution solution-like"><div class="para logical" id="p-1361">
+<div class="para">After sketching the graph, we know that one leaf will occur between <span class="process-math">\(\theta = 0\)</span> and <span class="process-math">\(\theta = \dfrac{\pi}{3}\text{.}\)</span> Since the radius function is given by <span class="process-math">\(r = \sin 3\theta\text{,}\)</span> we'll use this as our upper bound and <span class="process-math">\(r = 0\)</span> for our lower bound. This gives the integral</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A = \int_0^{\pi/3}\int_0^{\sin 3\theta} 1\, r\, dr\, d\theta
+\end{equation*}
+</div>
+<div class="para">Evaluating the first integral, we get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A = \int_0^{\pi/3} \dfrac{1}{2}\sin^2 3\theta\, d\theta
+\end{equation*}
+</div>
+<div class="para">Using the identity <span class="process-math">\(\sin^2\theta = \dfrac{1}{2}(1-\cos 2\theta)\text{,}\)</span> we rewrite as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A = \int_0^{\pi/3} \dfrac{1}{4}(1-\cos 6\theta)\, d\theta
+\end{equation*}
+</div>
+<div class="para">which evaluates to <span class="process-math">\(\dfrac{\pi}{12}\)</span>
+</div>
+</div></div></div>
+</div></article><article class="example example-like" id="example-863"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">15.3.8</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-1362">Find the area outside the polar curve <span class="process-math">\(r = \dfrac{1}{\sqrt{2}}\)</span> and inside the lemniscate <span class="process-math">\(r^2 = \cos 2\theta\)</span>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-880" id="solution-880"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-880"><div class="solution solution-like"><div class="para" id="p-1363"><span class="process-math">\(\dfrac{\sqrt{3}}{2} - \dfrac{\pi}{6}\)</span></div></div></div>
+</div></article><article class="example example-like" id="example-864"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">15.3.9</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-1364">Find the volume of the region below the cone <span class="process-math">\(z=\sqrt{x^2+y^2}\)</span> and above the annulus <span class="process-math">\(1\leq x^2 + y^2\leq 4\)</span>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-881" id="solution-881"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-881"><div class="solution solution-like"><div class="para" id="p-1365"><span class="process-math">\(\dfrac{15\pi}{2}\)</span></div></div></div>
+</div></article></section></section><section class="subsection" id="section-153-afterclass"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">15.3.4</span> <span class="title">After Class Activities</span>
-</h3></section></section></div>
+</h3>
+<article class="example example-like" id="example-865"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">15.3.10</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-1366">Prove that the volume of a sphere of radius <span class="process-math">\(r\)</span> is <span class="process-math">\(\dfrac{4\}{3}\pi r^3\)</span>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-882" id="solution-882"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-882"><div class="solution solution-like"><div class="para" id="p-1367"></div></div></div>
+</div></article><article class="example example-like" id="example-866"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">15.3.11</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-1368">Find the volume bounded by the paraboloids <span class="process-math">\(z = 6-x^2-y^2\)</span> and <span class="process-math">\(z = 2x^2 + 2y^2\)</span>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-883" id="solution-883"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-883"><div class="solution solution-like"><div class="para" id="p-1369"></div></div></div>
+</div></article><article class="example example-like" id="example-867"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">15.3.12</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-1370">Evaluate <span class="process-math">\(\ds \iint_R xy^2\, dA\text{,}\)</span> where <span class="process-math">\(R = \lrbrace{(x,y)\mid 2\leq x\leq 3, \sqrt{4-x^2}\leq y\leq \sqrt{9-x^2} }\)</span>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-884" id="solution-884"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-884"><div class="solution solution-like"><div class="para" id="p-1371"></div></div></div>
+</div></article><article class="example example-like" id="example-868"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">15.3.13</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-1372">Convert the integral <span class="process-math">\(\ds \int_0^{1}\int_{\sqrt{5}y}^{\sqrt{1-y^2}}xy^2\,dx\,dy\)</span> to polar coordinates and evaluate.</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-885" id="solution-885"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-885"><div class="solution solution-like"><div class="para" id="p-1373"></div></div></div>
+</div></article></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="section-152.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="section-154.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>

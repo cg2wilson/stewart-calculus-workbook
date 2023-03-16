@@ -11707,7 +11707,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "15.3",
   "title": "Double Integrals in Polar Coordinates",
-  "body": " Double Integrals in Polar Coordinates    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Review: Polar Coordinates    Double Integrals in Polar Coordinates     Pre-Class Activities    In Class   Some Examples     After Class Activities   "
+  "body": " Double Integrals in Polar Coordinates    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Review: Polar Coordinates  Polar coordinates are developed in Section 10.3; the conversions developed there are below:   Polar Coordinates                      In Section 10.4, we develop a formula for the integral in polar coordinates using the formula for area of a sector ( , where is the radius and is the angle which subtends the arc).   Single-Variable Integral in Polar Coordinates  If the polar curve is continous, then the area of the region bounded by the angles and ( ) is given by      Double Integrals in Polar Coordinates  In order to develop a formula for the volume under a curve, we need to identify the area of a single polar rectangle.    Consider the polar region given by      Take inspiration from Section 15.1; how can we divide the region into polar rectangles?    Let the area of be denoted by , and let be the midpoint of , given by . Find an expression for . Draw a picture illustrating parts (a) and (b).    Use the conversions between polar and rectangular coordinates to develop a Riemann sum approximating the volume under a curve .          Subdivide by partitioning into pieces in the radial direction: . Similarly, we can subdivide the angular direction to pieces by doing .    Visually, we can represent as the difference between the sector areas of radius and . This means that So, we conclude that .  The image is below.   A sketch of a polar region described above, and labeled with , , , , , , and       We know that in general, volume is given by , which comes from a Riemann sum of the form . Since and , we can rewrite . This means that . Since , we can create the Riemann sum         Double Integral in Polar Coordinates  If is continuous on a polar rectangle given by , (where is in ), then we can write      Let be the portion of the upper-half plane bounded by the circle , and let .     Evaluate the integral in Cartesian coordinates.    Convert the integral to polar coordinates and compute again.    Describe some differences between the computations parts (a) and (b).          Begin by sketching the region. When we do this, we find that we can write This means we're looking at a Type I integral, which can be evaluated by computing which gives     Convering to a polar integral, we use the conversions . Doing that, we can set up the integral as which still evaluates to     The answers vary here, but the most noticeable difference is likely in the computation; the Cartesian coordinate computation required careful use of trigonometric substitution and careful determination of the bounds, while the polar integration was a little more straightforward.  That difference ultimately comes from the shape of the region we're integrating over. Since the shape of the region is relatively simple to describe in polar coordinates, the integral is relatively more simple in polar coordinates than Cartesian coordinates.         Use polar coordinates to evaluate the integral . Sketch the region.    The region is sketched below:   A sketch of the region given in the problem, the first-quadrant region between the circles and .    Based on the region, we can write so the integral becomes which evaluates to        Pre-Class Activities    In Class   Some Examples    Find the volume of the solid bounded by the plane and the paraboloid            Evaluate , where is the disk of radius 2, centered at the origin.           Evaluate , where and is a circle of radius 1, centered at .           Prove that the area enclosed in one leaf of the curve is .    After sketching the graph, we know that one leaf will occur between and . Since the radius function is given by , we'll use this as our upper bound and for our lower bound. This gives the integral Evaluating the first integral, we get Using the identity , we rewrite as which evaluates to       Find the area outside the polar curve and inside the lemniscate            Find the volume of the region below the cone and above the annulus             After Class Activities    Prove that the volume of a sphere of radius is           Find the volume bounded by the paraboloids and           Evaluate , where           Convert the integral to polar coordinates and evaluate.         "
 },
 {
   "id": "objectives-76",
@@ -11735,6 +11735,123 @@ var ptx_lunr_docs = [
   "number": "139",
   "title": "",
   "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "example-856",
+  "level": "2",
+  "url": "section-153.html#example-856",
+  "type": "Example",
+  "number": "15.3.1",
+  "title": "",
+  "body": "  Consider the polar region given by      Take inspiration from Section 15.1; how can we divide the region into polar rectangles?    Let the area of be denoted by , and let be the midpoint of , given by . Find an expression for . Draw a picture illustrating parts (a) and (b).    Use the conversions between polar and rectangular coordinates to develop a Riemann sum approximating the volume under a curve .          Subdivide by partitioning into pieces in the radial direction: . Similarly, we can subdivide the angular direction to pieces by doing .    Visually, we can represent as the difference between the sector areas of radius and . This means that So, we conclude that .  The image is below.   A sketch of a polar region described above, and labeled with , , , , , , and       We know that in general, volume is given by , which comes from a Riemann sum of the form . Since and , we can rewrite . This means that . Since , we can create the Riemann sum       "
+},
+{
+  "id": "example-857",
+  "level": "2",
+  "url": "section-153.html#example-857",
+  "type": "Example",
+  "number": "15.3.2",
+  "title": "",
+  "body": "  Let be the portion of the upper-half plane bounded by the circle , and let .     Evaluate the integral in Cartesian coordinates.    Convert the integral to polar coordinates and compute again.    Describe some differences between the computations parts (a) and (b).          Begin by sketching the region. When we do this, we find that we can write This means we're looking at a Type I integral, which can be evaluated by computing which gives     Convering to a polar integral, we use the conversions . Doing that, we can set up the integral as which still evaluates to     The answers vary here, but the most noticeable difference is likely in the computation; the Cartesian coordinate computation required careful use of trigonometric substitution and careful determination of the bounds, while the polar integration was a little more straightforward.  That difference ultimately comes from the shape of the region we're integrating over. Since the shape of the region is relatively simple to describe in polar coordinates, the integral is relatively more simple in polar coordinates than Cartesian coordinates.      "
+},
+{
+  "id": "example-858",
+  "level": "2",
+  "url": "section-153.html#example-858",
+  "type": "Example",
+  "number": "15.3.3",
+  "title": "",
+  "body": "  Use polar coordinates to evaluate the integral . Sketch the region.    The region is sketched below:   A sketch of the region given in the problem, the first-quadrant region between the circles and .    Based on the region, we can write so the integral becomes which evaluates to    "
+},
+{
+  "id": "example-859",
+  "level": "2",
+  "url": "section-153.html#example-859",
+  "type": "Example",
+  "number": "15.3.4",
+  "title": "",
+  "body": "  Find the volume of the solid bounded by the plane and the paraboloid         "
+},
+{
+  "id": "example-860",
+  "level": "2",
+  "url": "section-153.html#example-860",
+  "type": "Example",
+  "number": "15.3.5",
+  "title": "",
+  "body": "  Evaluate , where is the disk of radius 2, centered at the origin.        "
+},
+{
+  "id": "example-861",
+  "level": "2",
+  "url": "section-153.html#example-861",
+  "type": "Example",
+  "number": "15.3.6",
+  "title": "",
+  "body": "  Evaluate , where and is a circle of radius 1, centered at .        "
+},
+{
+  "id": "example-862",
+  "level": "2",
+  "url": "section-153.html#example-862",
+  "type": "Example",
+  "number": "15.3.7",
+  "title": "",
+  "body": "  Prove that the area enclosed in one leaf of the curve is .    After sketching the graph, we know that one leaf will occur between and . Since the radius function is given by , we'll use this as our upper bound and for our lower bound. This gives the integral Evaluating the first integral, we get Using the identity , we rewrite as which evaluates to    "
+},
+{
+  "id": "example-863",
+  "level": "2",
+  "url": "section-153.html#example-863",
+  "type": "Example",
+  "number": "15.3.8",
+  "title": "",
+  "body": "  Find the area outside the polar curve and inside the lemniscate         "
+},
+{
+  "id": "example-864",
+  "level": "2",
+  "url": "section-153.html#example-864",
+  "type": "Example",
+  "number": "15.3.9",
+  "title": "",
+  "body": "  Find the volume of the region below the cone and above the annulus         "
+},
+{
+  "id": "example-865",
+  "level": "2",
+  "url": "section-153.html#example-865",
+  "type": "Example",
+  "number": "15.3.10",
+  "title": "",
+  "body": "  Prove that the volume of a sphere of radius is        "
+},
+{
+  "id": "example-866",
+  "level": "2",
+  "url": "section-153.html#example-866",
+  "type": "Example",
+  "number": "15.3.11",
+  "title": "",
+  "body": "  Find the volume bounded by the paraboloids and        "
+},
+{
+  "id": "example-867",
+  "level": "2",
+  "url": "section-153.html#example-867",
+  "type": "Example",
+  "number": "15.3.12",
+  "title": "",
+  "body": "  Evaluate , where        "
+},
+{
+  "id": "example-868",
+  "level": "2",
+  "url": "section-153.html#example-868",
+  "type": "Example",
+  "number": "15.3.13",
+  "title": "",
+  "body": "  Convert the integral to polar coordinates and evaluate.       "
 },
 {
   "id": "section-154",
