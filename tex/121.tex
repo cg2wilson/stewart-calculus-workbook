@@ -1,0 +1,195 @@
+\documentclass[notes]{subfiles}
+\begin{document}
+	\addcontentsline{toc}{section}{12.1 - Three-Dimensional Coordinate Systems}
+	\refstepcounter{section}
+	\fancyhead[RO,LE]{\bfseries \nameref{cs121}} 
+	\fancyhead[LO,RE]{\bfseries \small \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Chapter 12.1}
+	
+\section*{Three-Dimensional Coordinate Systems}\label{cs121}
+	\subsection*{Before Class}
+	\subsubsection*{3D Space}
+		\begin{question}
+			In two dimensions, $\R^2$, a point has two pieces of information: $x$ and $y$.  What do they represent?  What would change if we moved to three dimensions instead?
+		\end{question}
+			\vs{1}
+			
+		\begin{rmk}[Three-Dimensional Space, $\R^3$]
+			Three-dimensional space, notated $\R^3$, is the space of all triples of points $(x,y,z)$.  It is comprised of an $x-$axis, a $y-$axis, and a $z-$axis.  The direction of the positive $z-$axis is determined by the \emph{right-hand rule}, illustrated below.
+		\end{rmk}
+			\vs{.5}
+			
+		\begin{question}
+			In $\R^2$, the two axes divide the plane into four \emph{quadrants}.  Since $\R^3$ has three axes, how many pieces comprise $\R^3$?  These pieces are called \emph{octants}.
+		\end{question}
+			\vs{1}
+			\newpage
+			
+	\subsubsection*{Surfaces}
+		\begin{ex}
+			The following equations represent surfaces in $\R^3$; sketch them.
+			\begin{enumerate}[(a)]
+				\item $x = 2$
+					\vs{1}
+					
+				\item $z = -1$
+					\vs{1}
+					
+				\item $y = 3$
+					\vs{1}
+					
+			\end{enumerate}
+		\end{ex}
+		
+		\begin{ex}
+			What triple of points satisfy the equations $x^2 + \dfrac{y^2}{4} = 1$ and $z = -1$?  Think back to geometry, and describe the points in words.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			What does $x^2 + y^2$ represent in $\R^2$?  What about $\R^3$?  Describe your answer.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+	\subsection*{Pre-Class Activities}
+		\begin{ex}
+			Use this space to write any questions you might have from the videos.
+		\end{ex}
+			\vs{.5}
+			
+		\begin{ex}
+			What does the equation $x = 4$ represent in $\R^2$?  What about in $\R^3$?
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Describe and sketch the surface in $\R^3$ represented by the equation $x + y = 2$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Describe and sketch the surface in $\R^3$ represented by the equation $x^2 + z^2 = 9$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+	\subsection*{In Class}
+	\subsubsection*{Distances and Spheres}
+		\begin{question}
+			Consider the points $P_1 = (x_1,y_1)$ and $P_2 = (x_2,y_2)$ in $\R^2$.  Find the distance between $P_1$ and $P_2$.  What was the name of this formula?
+		\end{question}
+			\vs{1}
+			
+		\begin{rmk}[Distance Formula (in $\R^3$)]
+			If $P_1 = (x_1,y_1,z_1)$ and $P_2 = (x_2,y_2,z_2)$, then the distance between $P_1$ and $P_2$ is \\[15pt] \blank{3}.
+		\end{rmk}
+		
+		\begin{ex}
+			Find the distance between the points $(1,0,6)$ and $(-2,3,5)$.
+		\end{ex}
+			\vs{1}
+		
+		\begin{ex}
+			A triangle in $\R^3$ has vertices at the points $(3,-2,-3)$, $(7,0,1)$, and $(1,2,1)$.  Find the lengths of the sides of the triangle.  It is a right triangle?
+		\end{ex}	
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Find the distance from $(4,-2,6)$ to the $xy-$plane and the $z-$axis.
+		\end{ex}
+			\vs{1}
+			
+		\begin{question}
+			In $\R^2$, what was the formula for a circle of radius $r$, centered at the point $(x_0,y_0)$?
+		\end{question}
+			\vs{.5}
+			
+		\begin{rmk}[Equation of a Sphere in $\R^3$]
+			A sphere with center $(x_0,y_0,z_0)$ and radius $r$ is given by\\[15pt]
+				\[\]
+		\end{rmk}
+		
+		\begin{ex}
+			Find the center and radius of the sphere $x^2 + y^2 + z^2 + 3x - 2z -1 = 0$ by completing the square on each variable.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find an equation of the sphere at passes through the origin and whose center is $(1,2,3)$.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Show that the equation $x^2 + y^2 + z^2 - 2x - 4y + 8z = 15$ represents a sphere in $\R^3$, and identify its center and radius.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			What region in $\R^3$ is represented by the inequalities $1\leq x^2 + y^2 + z^2\leq 4$, $z\geq 0$?  Give a sketch.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Give a geometric interpretation of the following equations and inequalities:
+			\begin{enumerate}[(a)]
+				\item $x^2 + y^2 + z^2 = 16$
+					\vs{1}
+					
+				\item $x^2 + y^2 + z^2 < 16$
+					\vs{1}
+					
+				\item $(x-4)^2 + (y+1)^2 + (z+10)^2 \leq 1$
+					\vs{1}
+			\end{enumerate}	
+		\end{ex}
+		
+		\begin{ex}
+			Describe the region of $\R^3$ represented by the inequality $x^2 + y^2 + z^2 > 2z$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Write an inequality to describe the region between the $yz-$plane and the vertical plane $x = 5$.
+		\end{ex}
+			\vs{1}			
+			\newpage
+			
+	\subsection*{After Class Activities}
+		\begin{ex}
+			Show that the equation $3x^2 + 3y^2 + 3z^2 = 10 + 6y + 12z$ represents a sphere in $\R^3$, and find its center and radius.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find an equation of a sphere if one of its diameters has endpoints $(5,4,3)$ and $(1,6,-9)$.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Describe in words the region of $\R^3$ given below.
+			\begin{enumerate}[(a)]
+				\item $y  < 8$
+					\vs{.5}
+					
+				\item $0\leq z\leq 6$
+					\vs{.5}
+					
+				\item $x^2 + y^2 = 4$
+					\vs{.5}
+					
+				\item $x = z$
+					\vs{.5}
+			\end{enumerate}
+		\end{ex}
+		
+		\begin{ex}
+			Use inequalities to describe the portion of the solid cylinder that lies on or below the plane $z = 8$ and on or above the disk in the $xy-$plane with center at the origin and radius 2.
+		\end{ex}
+			\vs{.5}
+\clearpage
+\end{document}

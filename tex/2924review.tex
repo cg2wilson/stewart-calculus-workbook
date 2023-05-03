@@ -1,0 +1,262 @@
+\documentclass[notes]{subfiles}
+\begin{document}
+	\chapter*{Review}
+	\addcontentsline{toc}{section}{Calc 1 Review}
+	\setcounter{section}{0}
+	\setcounter{page}{1}
+	\fancyhead[RO,LE]{\bfseries \nameref{csr}} 
+	\fancyhead[LO,RE]{\bfseries \small \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Calc 1 Review}
+	
+\section*{Calc 1 Review}\label{csr}
+	\subsection*{Differentiation}
+	\subsubsection*{Formal Definition}
+		\begin{defn}[Continuity]
+			A function $f$ is continuous at the input $x =a$ if \blank{3}.  $f$ is continuous on an interval $I$ if it is continuous at all points in $I$.
+		\end{defn}
+		\begin{ex}
+			Find values of $a$ and $b$ that make $f$ continuous everywhere.
+				\[f(x) = \begin{cases}\dfrac{x^2-4}{x-2} & x < 2 \\ ax^2 - bx +  3& 2\leq x < 3 \\ 2x - a + b & x \geq 3 \end{cases}\]
+		\end{ex}
+			\vs{1}
+			
+		\begin{defn}[Derivative of $f$ at $x =a$]
+			The derivative of the function $f(x)$ at $x =a$ is given by these two formulas (if it limit exists):\\[15pt]
+			\begin{itemize}
+				\setlength \itemsep{25pt}
+				
+				\item $f'(a) = \ds \lim_{x\to a}$
+				\item $f'(a) = \ds \lim_{h\to 0}$
+			\end{itemize}
+		\end{defn}
+			\newpage
+			
+		\begin{defn}[Derivative of $f$ as a Function]
+			The derivative of the function $f(x)$ is given by the limit\\[15pt]
+				\[f'(x) = \ds \lim_{h\to 0} \hspace{2in}\]
+				\\
+			if the limit exists.
+		\end{defn}
+		
+		\begin{rmk}[Interpretation of the Derivative]
+			The derivative $f'(a)$ can be interpreted in two ways:\\[10pt]
+			\begin{itemize}
+			\setlength\itemsep{15pt}
+			
+			\item $f'(a)$ represents the \blank{4.5} at the input $x = a$.
+			\item $f'(a)$ represents the \blank{4.5} at the input $x = a$.
+			\end{itemize}
+		\end{rmk}
+		\begin{ex}
+			The function $C$ gives the number of bushels of corn produced on a tract of farmland that is treated with $f$ pounds of nitrogen per acre.
+			\begin{enumerate}[(a)]
+				\item Is it possible for $C(90)$ to be negative?  Why or why not?
+					\vs{1}
+					
+				\item What are the units on $C'(90)$?
+					\vs{1}
+
+				\item Is it possible for $C'(90)$ to be negative?  Why or why not?
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+		
+		\begin{ex}
+			The tangent line to $y = f(x)$ at $(3,4)$ passes through the point $(0,2)$.  Find $f(3)$ and $f'(3)$.
+		\end{ex}
+			\vs{2}
+			\newpage
+			
+	\subsubsection*{Derivative Rules}
+		\showto{ins}{
+				\begin{center}
+				\tabulinesep = 4mm
+				\begin{tabu} {| X[.75,c] | X[c] || X[.75,c] | X[c] |}\hline
+					\textbf{Function}	& \textbf{Derivative}	& \textbf{Function}	& \textbf{Derivative} \\ \hline
+					$c$				& $0$					& $x^n$				& $nx^{n-1}$ \\ \hline
+					$\sin x$			& $\cos x$				& $\cos x$			& $-\sin x$ \\ \hline
+					$\tan x$			& $\sec^2x$				& $\cot x$			& $-\csc^2x$ \\ \hline
+					$\sec x$			& $\sec x\tan x$			& $\csc x$			& $-\csc x\cot x$\\ \hline
+					$c\cdot f(x)$		& $c\cdot f'(x)$			& $f(x)\pm g(x)$		& $f'(x)\pm g'(x)$\\ \hline
+					$f(x)\cdot g(x)$	& $f'(x)g(x) + f(x)g'(x)$	& $\dfrac{f(x)}{g(x)}$& $\dfrac{f'(x)g(x)-f(x)g'(x)}{[g(x)]^2}$\\ \hline
+					$f(g(x))$		& $f'(g(x))\cdot g'(x)$		& 					& \\ \hline
+				\end{tabu}
+			\end{center}
+			}
+			
+			\showto{st}{
+				\begin{center}
+					\tabulinesep = 2mm
+					\begin{tabu}to .8\textwidth {| X[c] | X[c] || X[c] | X[c] |}\hline
+						\textbf{Function}	& \textbf{Derivative}	& \textbf{Function}	& \textbf{Derivative} \\ \hline
+										&					&					& \\
+						$c$				&					& $x^n$				& \\
+										&					&					& \\ \hline
+										&					&					& \\
+						$\sin x$			&					& $\cos x$			& \\
+										&					&					& \\ \hline
+										&					&					& \\
+						$\tan x$			&					& $\cot x$			& \\
+										&					&					& \\ \hline
+										&					&					& \\
+						$\sec x$			&					& $\csc x$			& \\
+										&					&					& \\ \hline
+										&					&					& \\
+						$c\cdot f(x)$	&					& $f(x)\pm g(x)$		& \\
+										&					&					& \\ \hline
+										&					&					& \\
+						$f(x)\cdot g(x)$	&					& $\dfrac{f(x)}{g(x)}$& \\
+										&					&					& \\ \hline
+										&					&					& \\
+						$f(g(x))$		&					& 					& \\ 
+										&					&					& \\ \hline
+					\end{tabu}
+				\end{center}
+			}
+			
+			\begin{ex}
+				Compute the derivative:
+				\begin{enumerate}[(a)]
+					\item $f(\theta) = \cos(\theta^2)$
+						\vs{1}
+						
+					\item $f(t) = t\sin (\pi t)$
+						\vs{1}
+						\newpage
+						
+					\item $g(u) = \lrpar{\dfrac{u^3-1}{u^3+1}}^8$
+						\vs{1}
+						
+					\item $h(x) = \tan(x^2\csc x)$
+						\vs{1}
+						
+					\item $y = \cot^2(\sec\theta)$
+						\vs{1}
+						
+					\item $f(x) = \dfrac{4x}{\sqrt{x+2}}$
+						\vs{1}
+				\end{enumerate}
+			\end{ex}
+				\newpage
+				
+	\subsection*{Integration}
+	\subsubsection*{The Integral}
+		\begin{defn}[Definite Integral]
+			Let $f$ be a function defined for $a\leq x\leq b$, and divide $[a,b]$ into $n$ subintervals of width $\Delta x = \dfrac{b-a}{n}$.  Let 
+				\[a=x_0,x_1,x_2,...,x_{n-1},x_n=b\]
+			be the endpoints of these subintervals, and let $x_i^*$ be any sample points in these subintervals, so that $x_i^*$ lies in the $i$th subinterval $[x_{i-1},x_i]$.  Then, the \textbf{definite integral of f from a to b} is given by
+				\showto{ins}{
+					\[\int_a^b f(x)\, dx = \lim_{n\to\infty} \sum_{i=1}^n f(x_i^*)\Delta x\]
+				}
+				\showto{st}{
+					\vspace{.75in}\\
+				}
+			provided that this limit exists and gives the same value for all possible choices of sample points.  If it does exist, we say that $f$ is \textbf{integrable} on $[a,b]$.\\ \\ \\
+			
+			The sum 
+				\showto{ins}{
+					$\ds \sum_{i=1}^n f(x_i^*)\Delta x$
+				}
+				\showto{st}{
+					\blank{3.5}
+				} 
+			is called a \textbf{Riemann sum}.  		
+		\end{defn}
+		\begin{rmk}[Interpretation of the Definite Integral]
+			The definite integral $\ds \int_a^b f(x)\, dx$ gives us:\\[10pt]
+			\begin{itemize}
+			\setlength\itemsep{15pt}
+			
+			\item The area between $f(x)$ and the $x-$axis on $[a,b]$ if \blank{2}.
+			\item The \blank{1} area contained between $f(x)$ and the $x-$axis if \blank{1.5}
+			\end{itemize}
+			\\
+		\end{rmk}
+			\newpage
+	
+	\subsubsection*{Integration Rules}
+		\showto{ins}{	
+			\tabulinesep = 3mm
+			{\setlength{\arrayrulewidth}{1.5pt}
+			\begin{tabu}{| X[l] X[l] | X[l] X[l] | }\hline
+				\multicolumn{4}{|c|}{\large{\textbf{Useful Antiderivatives}}} \\ \hline
+				$\ds \int c\cdot f(x)\, dx$ 		& $c\ds \int f(x)\, dx$			& $\ds \int [f(x)\pm g(x)]\, dx$ 		& $\ds \int f(x)\, dx \pm \int g(x)\, dx$ \\
+				$\ds \int k\, dx$				& $kx + C$					& $\ds \int x^n\, dx$					& $\dfrac{x^{n+1}}{n+1} + C$, $n\neq 1$\\
+				$\ds \int \sin x\, dx$			& $-\cos x + C$				& $\ds \int \cos x\, dx$				& $\sin x + C$\\
+				$\ds \int \sec^2x\, dx$		& $\tan x + C$				& $\ds \int \csc^2x\, dx$				& $-\cot x + C$\\
+				$\ds \int \sec x\tan x\, dx$		& $\sec x + C$				& $\ds \int \csc x\cot x\, dx$			& $-\csc x + C$\\ \hline
+			\end{tabu}
+			}
+		}
+		\showto{st}{
+			\tabulinesep = 3mm
+			{\setlength{\arrayrulewidth}{1.5pt}
+			\begin{tabu}{| X[l] X[l] | X[l] X[l] | }\hline
+				\multicolumn{4}{|c|}{\large{\textbf{Useful Antiderivatives}}} \\ \hline
+				$\ds \int c\cdot f(x)\, dx$ 		& 			& $\ds \int [f(x)\pm g(x)]\, dx$ 		& \\
+				$\ds \int k\, dx$				& 					& $\ds \int x^n\, dx$					& \\
+				$\ds \int \sin x\, dx$			& 				& $\ds \int \cos x\, dx$				& \\
+				$\ds \int \sec^2x\, dx$		& 				& $\ds \int \csc^2x\, dx$				& \\
+				$\ds \int \sec x\tan x\, dx$		& 				& $\ds \int \csc x\cot x\, dx$			& \\ \hline
+			\end{tabu}
+		}
+		}
+		
+	\subsubsection*{$u-$substitution}
+		\begin{thm}[Substitution Rule]
+			If $u = g(x)$ is a differentiable function whose range is an interval $I$ and $f$ is continuous on $I$, then
+			\showto{ins}{
+				\[\int f(g(x))g'(x)\,dx = \int f(u)\,du\]
+			}
+			\showto{st}{
+				\vspace{.5in}
+			}
+		\end{thm}
+		\begin{ex}
+			Evaluate $\ds \int_1^2 \dfrac{dx}{(3-5x)^2}$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate $\ds \int_{\pi/2}^\pi \sin\lrpar{\dfrac{2\theta}{3}}\,d\theta$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Evaluate $\ds \int (x^2+1)(x^3+3x)^4\,dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate $\ds \int \dfrac{dt}{\cos^2t\sqrt{1+\tan t}}$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate $\ds \int_0^1\cos\lrpar{\dfrac{\pi t}{2}}\, dt$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Evaluate $\ds \int_0^a x\sqrt{a^2-x^2}\,dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate $\ds \int x(2x+5)^8\,dx$
+		\end{ex}	
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate $\ds \int \sin x\sin (\cos x)\,dx$
+		\end{ex}
+			\vs{1}
+	
+
+	
+\clearpage
+\end{document}

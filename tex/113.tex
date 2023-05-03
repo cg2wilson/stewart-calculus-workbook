@@ -1,0 +1,172 @@
+\documentclass[notes]{subfiles}
+\begin{document}
+	\addcontentsline{toc}{section}{11.3 - The Integral Test \& Estimates of Sums}
+	\refstepcounter{section}
+	\fancyhead[RO,LE]{\bfseries \nameref{cs113}} 
+	\fancyhead[LO,RE]{\bfseries \small \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Chapter 11.3}
+	
+\section*{The Integral Test \& Estimates of Sums}\label{cs113}
+	\subsection*{Before Class}
+	\subsubsection*{The Integral Test}
+		\begin{ex}
+			Consider the sequence $a_n = \dfrac{1}{n^2}$.
+			\begin{enumerate}[(a)]
+				\item Find the first five terms of the sequence.
+					\vs{1}
+				\item Use rectangles to represent the values of the first five terms.  Using the geometric information, how can we find $s_5$?
+					\vs{1}
+				\item Now, graph the function $f(x) = \dfrac{1}{x^2}$ and copy the rectangles you drew above.  What can you say about the relationship between the value of the series and the value of the integral, as the inputs increase?
+					\vs{2}
+			\end{enumerate}
+		\end{ex}
+			\newpage
+			
+		\begin{rmk}[The Integral Test]
+			Suppose $f$ is a continuous, positive, \emph{eventually} decreasing function on the interval $[k,\infty)$.  Let $a_n = f(n)$.  Then,\\
+			\begin{itemize}
+				\setlength \itemsep{20pt}
+				
+				\item If $\ds \int_k^\infty f(x)\, dx$ is convergent, then \blank{3}.
+				\item If $\ds \int_k^\infty f(x)\, dx$ is divergent, then \blank{3}.
+			\end{itemize}
+		\end{rmk}
+		
+		\begin{ex}
+			Show that the series $\ds \sum_{n = 1}^\infty \dfrac{1}{n^2}$ converges.  Can we determine the value of the series from the Integral Test?
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Show that the series $\ds \sum_{n =1 }^\infty \dfrac{1}{n}$ diverges.  This is an important series, called the \emph{harmonic series}.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+	\subsection*{Pre-Class Activities}
+		\begin{ex}
+			Use this space to write any questions you might have from the videos.
+		\end{ex}	
+			\vs{.5}
+			
+		\begin{ex}
+			Use the Integral Test to determine if the series $\ds \sum_{n = 1}^\infty \dfrac{1}{n^2 + 9}$ converges or diverges.  Be sure to check the hypotheses of the Integral Test.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Show that the series $\ds \sum_{n = 1}^\infty \dfrac{\ln n}{n}$ diverges using the Integral Test.  Be sure to verify each hypothesis of the Integral Test.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+	\subsection*{In Class}
+		
+		\begin{ex}
+			A series of the form $\ds \sum_{n = 1}^\infty \dfrac{1}{n^p}$ is called a \emph{p-series}.  Determine the values of $p$ for which a $p-$series will converge.
+		\end{ex}
+			\vs{1}
+			
+		\begin{rmk}[$p-$series Test]
+			A series of the form $\ds \sum_{n = 1}^\infty \dfrac{1}{n^p}$ converges if \blank{1.2}, and diverges if \blank{1.2}.
+		\end{rmk}
+		
+		\begin{ex}
+			Determine convergence or divergence of the series $\ds \sum_{n = 2}^\infty \dfrac{1}{n^2(n^2-1)}$.
+		\end{ex}
+			\vs{1}
+			\newpage
+	
+	\subsubsection*{Estimating the Sum of a Series}	
+		\begin{defn}[Remainder of a Sum]
+			For the series $\ds \sum a_n$, the \textbf{remainder} $R_n$is defined to be the value\\
+				\[R_n =\hspace{2in}\]
+				\\
+			where $s$ is \blank{2} and $s_n$ is \blank{3.2}.  $R_n$ is the error made when $s_n$ is used as an approximation to the total sum.
+		\end{defn}
+		
+		\begin{rmk}[Remainder Estimate for the Integral Test]
+			Suppose $f(k) = a_k$, where $f$ is a continuous, positive, decreasing function for $x\geq n$, and that\\[15pt] $\ds \sum a_n$ is convergent.  If $R_n =$ \blank{2}, then\\
+				\[\leq R_n \leq\]
+				\\
+			Rearranging, we get another expression:\\
+				\[\leq s \leq\]
+		\end{rmk}
+		
+		\begin{ex}
+			$ $
+			\begin{enumerate}[(a)]
+				\item Approximate the sum of the series $\ds \sum \dfrac{1}{n^3}$ by using the sum of the first 10 terms.  Estimate the error involved in this approximation.
+					\vs{1}
+					\newpage
+					
+				\item How many terms are required to ensure that the sum is accurate to within 0.0005?
+					\vs{1}
+					
+			\end{enumerate}
+		\end{ex}
+		
+		\begin{ex}
+			Use $n = 10$ to estimate the sum of the series $\ds \int_{n =1 }^\infty \dfrac{1}{n^3}$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find the sum of the series $\ds \sum ne^{-2n}$ correct to four decimal places.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+	\subsubsection*{Examples}
+		\begin{ex}
+			Determine if the series $\ds \sum_{n = 1}^\infty \dfrac{1}{n^{\sqrt{2}}}$ converges or diverges.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Does $\ds \sum_{n = 1}^\infty \dfrac{\sqrt{n} + 4}{n^2}$ converge or diverge?
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Does $\ds \sum_{k = 1}^\infty ke^{-k}$ converge or diverge?
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Find the values of $p$ for which the series $\ds \sum_{n = 2}^\infty \dfrac{1}{n(\ln n)^p}$ converges.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Estimate $\ds \sum_{n = 1}^\infty (2n + 1)^{-6}$ correct to five decimal places.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+			
+	\subsection*{After Class Activities}
+		\begin{ex}
+			Determine if $\ds \sum_{n =1 }^\infty \dfrac{1}{n^2 + n^3}$ converges or diverges.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Does $1 + \dfrac{1}{2\sqrt{2}} + \dfrac{1}{3\sqrt{3}} + \dfrac{1}{4\sqrt{4}} + \dfrac{1}{5\sqrt{5}}+ \cdots$ converge or diverge?
+		\end{ex}
+			\vs{.5}
+			
+		\begin{ex}
+			The series $\ds \sum_{n = 1}^\infty \dfrac{\cos \pi n}{\sqrt{n}}$ converges, but we can't use the Integral Test to prove that.  Why not?
+		\end{ex}
+			\vs{.5}
+			
+		\begin{ex}
+			How many terms of the series $\ds \sum-{n =2}^\infty \dfrac{1}{n(\ln n)^2}$ are needed to find its sum to within 0.01?
+		\end{ex}
+			\vs{1}
+\clearpage
+\end{document}

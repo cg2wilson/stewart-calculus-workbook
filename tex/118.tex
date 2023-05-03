@@ -1,0 +1,163 @@
+\documentclass[notes]{subfiles}
+\begin{document}
+	\addcontentsline{toc}{section}{11.8 - Power Series}
+	\refstepcounter{section}
+	\fancyhead[RO,LE]{\bfseries \nameref{cs118}} 
+	\fancyhead[LO,RE]{\bfseries \small \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Chapter 11.8}
+	
+\section*{Power Series}\label{cs118}
+	\subsection*{Before Class}
+		\begin{defn}[Power Series]
+			A \textbf{power series} is a series of the form\\[5pt]
+				\[\sum_{n=0}^\infty c_n x^n =\hspace{3in}\]
+				\\[10pt]
+			where $x$ is \blank{2} and the $c_n$ are called \blank{2},\\[15pt] where each $c_n$ is a constant.  The sum of the series is a \emph{function}, whose domain is\\[15pt] \blank{3}.
+		\end{defn}
+		
+		\begin{ex}
+			For what values of $x$ does the equality $\ds \sum_{n=0}^\infty x^n = \dfrac{1}{1-x}$ hold?  Why?
+		\end{ex}
+			\vs{1}
+			
+		\begin{defn}[Power Series (Centered about $x =a$)]
+			A \textbf{power series centered about} $x = a$ is a power series of the form\\[5pt]
+				\[\sum_{n=0}^\infty c_n(x-a)^n = \hspace{3in}\]
+		\end{defn}
+		
+		\begin{ex}
+			What function is represented by the series $\ds \sum_{n=0}^\infty (x-7)^n$?  For which values of $x$ does this equality hold?
+		\end{ex}
+			\vs{1}
+			\newpage
+		
+		\begin{ex}
+			For what value(s) does the power series below converge?
+			\begin{enumerate}[(a)]
+				\item $\ds \sum_{n=0}^\infty n!x^n$
+					\vs{1}
+					
+				\item $\ds \sum_{n=1}^\infty \dfrac{(x-5)^n}{n}$
+					\vs{1}
+			\end{enumerate}
+		\end{ex}	
+		
+		\begin{thm}[Possibilities for Power Series]
+			For a given power series $\ds \sum_{n=0}^\infty c_n(x-a)^n$, there are three possibilities:\\[15pt]
+			\begin{enumerate}[(i)]
+				\setlength \itemsep{15pt}
+				\item \blank{4}.
+				\item \blank{4}.
+				\item \blank{6}
+			\end{enumerate}\\
+		\end{thm}
+			\newpage
+			
+	\subsection*{Pre-Class Activities}
+		\begin{ex}
+			Use this space to write any questions you might have from the videos.
+		\end{ex}
+			\vs{.5}
+
+		\begin{ex}
+			For what values of $x$ does the series $\ds \sum_{n=1}^\infty (-1)^n nx^n$ converge?
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find a series representation for the function $f(x) = \dfrac{1}{1 + x}$.  For what values of $x$ does this series converge?
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			What function is represented by the series $\ds \sum_{n=0}^\infty x^{3n}$? 
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+	\subsection*{In Class}
+		\begin{ex}
+			Find the domain of the Bessel function of order 0, defined as $J_0(x) = \ds \sum_{n=0}^\infty \dfrac{(-1)^nx^{2n}}{2^{2n}(n!)^2}$
+		\end{ex}
+			\vs{1}
+			
+		\begin{defn}[Radius/Interval of Convergence]
+			The \textbf{radius of convergence} of a power series is \blank{3}\\[15pt] \blank{2}.  The \textbf{interval of convergence} of a power series is the interval\\[15pt] that consists of \blank{4}.
+		\end{defn}
+		
+		\begin{ex}
+			Find the radius of convergence and the interval of convergence for the series $\ds \sum_{n=1}^\infty (-1)^n nx^n$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Find the radius of convergence and interval of convergence of the series $\ds \sum_{n=0}^\infty \dfrac{(-2)^nx^x}{\sqrt{2n+1}}$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find the radius of convergence and interval of convergence for the series $\ds \sum_{n=0}^\infty \dfrac{n(x-2)^n}{3^{n+2}}$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Find the radius and interval of convergence for the series $\ds \sum_{n=0}^\infty \dfrac{x^n}{n!}$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find the radius and interval of convergence for the series $\ds \sum_{n=0}^\infty \dfrac{(-1)^nx^{2n}}{(2n)!}$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Find the radius and interval of convergence for the series $\ds \sum_{n=0}^\infty 2^nn^2x^n$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find the radius and interval of convergence for the series $\ds \sum_{n=1}^\infty \dfrac{\sqrt{n}}{8^n}(x+6)^n$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+	\subsection*{After Class Activities}
+		\begin{ex}
+			Find the radius and interval of convergence for the following series:
+			\begin{enumerate}[(a)]
+				\item $\ds \sum_{n=1}^\infty \dfrac{(-1)^n4^n}{\sqrt{n}}x^n$
+					\vs{1}
+					
+				\item $\ds \sum_{n=2}^\infty \dfrac{(x+2)^n}{2^n\ln n}$
+					\vs{1}
+					
+				\item $\ds \sum_{n=1}^\infty \dfrac{(x-2)^n}{n^n}$
+					\vs{1}
+					\newpage
+					
+				\item $\ds \sum_{n=1}^\infty \dfrac{n}{b^n}(x-a)^n$ (for $b > 0$)
+					\vs{2}
+			\end{enumerate}
+		\end{ex}
+		
+		\begin{ex}
+			Let $p$ and $q$ be real numbers with $p < q$.  Find a power series whose interval of convergence is:
+			\begin{enumerate}[(a)]
+				\item $(p,q)$
+					\vs{1}
+					
+				\item $(p,q]$
+					\vs{1}
+					
+				\item $[p,q]$
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+	
+\clearpage
+\end{document}

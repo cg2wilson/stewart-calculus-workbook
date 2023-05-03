@@ -1,0 +1,151 @@
+\documentclass[notes]{subfiles}
+\begin{document}
+	\addcontentsline{toc}{section}{11.9 - Representations of Functions as Power Series}
+	\refstepcounter{section}
+	\fancyhead[RO,LE]{\bfseries \nameref{cs119}} 
+	\fancyhead[LO,RE]{\bfseries \small \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Chapter 11.9}
+	
+\section*{Functions as Power Series}\label{cs119}
+	\subsection*{Before Class}
+	\subsubsection*{Functions as Power Series}
+		\begin{rmk}[Recall]
+			\[\dfrac{1}{1-x} = 1 + x + x^2 + x^3 + \cdots = \sum_{n=0}^\infty x^n\]
+			for $|x| < 1$
+		\end{rmk}
+		\begin{ex}
+			Write the function $f(x) = \dfrac{1}{1+x^2}$ as a power series and find its interval of convergence.
+		\end{ex}
+			\vs{1}
+		
+		\begin{ex}
+			Find a power series representation for $\dfrac{1}{x + 5}$.
+		\end{ex}
+			\vs{1}
+				
+		\begin{ex}
+			Find a power series representation for the function $g(x) = \dfrac{x^4}{x + 5}$.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+	\subsection*{Pre-Class Activities}
+		\begin{ex}
+			Use this space to write any questions you might have from the videos.
+		\end{ex}
+			\vs{.5}
+			
+		\begin{ex}
+			Find a power series representation for the function, and determine the interval of convergence.
+			\begin{enumerate}[(a)]
+				\item $f(x) = \dfrac{5}{1-4x^2}$
+					\vs{1}
+					
+				\item $g(x) = \dfrac{4}{2x+3}$
+					\vs{1}
+					
+				\item $h(x) = \dfrac{x - 1}{x+2}$
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+			\newpage
+			
+	\subsection*{In Class}
+		\begin{ex}
+			Express the function $f(x) = \dfrac{2x-4}{x^2-4x+3}$ as a power series, and find the interval of convergence.
+		\end{ex}
+			\vs{1}
+			
+	\subsubsection*{Calculus and Power Series}
+		\begin{thm}[Differentiation \& Integration of Power Series]
+			If the power series $\ds \sum c_n(x-a)^n$ has radius of convergence $R > 0$, then the function\\[15pt] $f(x) = \ds \sum_{n=0}^\infty c_n(x-a)^n$ is differentiable on the interval \blank{2.5}, and\\
+			\begin{itemize}
+				\setlength\itemsep{20pt}
+				\item $f'(x) = $
+				\item $\ds \int f(x)\, dx = $
+			\end{itemize}$ $\\[15pt]
+			
+			The radii of convergence of both of these power series is \blank{1}.
+		\end{thm}
+		
+		\begin{rmk}[Restatement of the Theorem]
+			We can rewrite the conclusion of the above theorem as\\
+			\begin{itemize}
+				\setlength\itemsep{15pt}
+				\item $\dfrac{d}{dx}\left[\ds \sum_{n=0}^\infty c_n(x-a)^n \right] = $
+				\item $\ds \int \left[\ds \sum_{n=0}^\infty c_n(x-a)^n\right] = $
+			\end{itemize}
+		\end{rmk}
+			\newpage
+			
+		\begin{ex}
+			Express the function $f(x) = \dfrac{1}{(1-x)^2}$ in terms of a power series, and find its interval of convergence.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find a power series representation for the function $\ln (1 + x)$ as well as its interval of convergence.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Show that $\arctan x = \ds \sum_{n=0}^\infty (-1)^n \dfrac{x^{2n+1}}{2n+1}$.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Find a power series representation for the function, and determine the radius of convergence.
+			\begin{enumerate}[(a)]
+				\item $f(x) = x^2 \inv{\tan}(x^3)$
+					\vs{1}
+					
+				\item $g(x) = \dfrac{x}{(1+4x)^2}$
+					\vs{1}
+				
+				\item $h(x) = \dfrac{1+x}{(1-x)^2}$
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+			\newpage
+			
+		\begin{ex}
+			Evaluate the integral $\ds \int \dfrac{1}{1+t^3}\, dt$ as a power series.  what's its radius of convergence?
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			The Bessel function of order 1 is defiend to be $J_1(x) = \ds \sum_{n=0}^\infty \dfrac{(-1)^nx^{2n+1}}{n!(n+1)!2^{2n+1}}$.
+			\begin{enumerate}[(a)]
+				\item Show that $J_1$ satisfies the differential equation $x^2J_1''(x) + xJ_1'(x) + (x^2-1)J_1(x) = 0$.
+					\vs{2}
+					
+				\item Show that $J_0'(x) = -J_1(x)$.  Recall that $J_0 = \ds \sum_{n=0}^\infty \dfrac{(-1)^nx^{2n}}{2^{2n}(n!)^2}$.
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+			\newpage
+			
+	\subsection*{After Class Activities}
+		\begin{ex}
+			Find a power series representation for $f(x) = \dfrac{x+a}{x^2 + a^2}$, for $a > 0$	
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Write a power series representation for the following:
+			\begin{enumerate}[(a)]
+				\item $f(x) = \dfrac{2x+3}{x^2+3x+2}$
+					\vs{1}
+					
+				\item $f(x) = \ln (5-x)$
+					\vs{1}
+					
+				\item $g(x) = \dfrac{x^2 + x}{(1-x)^3}$
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+\clearpage
+\end{document}

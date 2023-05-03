@@ -1,0 +1,283 @@
+\documentclass[notes]{subfiles}
+\begin{document}
+	\addcontentsline{toc}{section}{11.2 - Series}
+	\refstepcounter{section}
+	\fancyhead[RO,LE]{\bfseries \nameref{cs112}} 
+	\fancyhead[LO,RE]{\bfseries \small \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Chapter 11.2}
+	
+\section*{Series}\label{cs112}
+	\subsection*{Before Class}
+	\subsubsection*{Finite \& Infinite Series}
+		\begin{defn}[Series]
+			Given a sequence $a_n$, the \textbf{series} associated to $a_n$ is the infinite sum
+				\[a_1 + a_2 + a_3 + \cdots a_n + \cdots = \sum a_n\]
+		\end{defn}
+		
+		\begin{rmk}[Notation]
+			When we want to be explicit, we will write $\ds \sum_{n =1}^\infty a_n$ to emphasize that the series is infinite; we will use $\ds \sum a_n$ as a shorthand.
+		\end{rmk}
+		
+		\begin{defn}[Partial Sum]
+			The $n$th \textbf{partial sum} of the series $\ds \sum a_n$ is the sum \blank{2.5},\\[15pt] written in sigma notation as \blank{2}.
+		\end{defn}
+		
+		\begin{ex}
+			Let $a_n = \dfrac{1}{2n}$.  
+			\begin{enumerate}[(a)]
+				\item Find the first ten terms of the sequence.
+					\vs{1}
+					\newpage
+					
+				\item Find $s_3$, $s_5$, and $s_{10}$.  
+					\vs{2}
+			\end{enumerate}
+		\end{ex}
+		
+		\begin{defn}[Convergence/Divergence]
+			Given a series $\ds \sum a_n$, let $s_n$ denote its $n$th partial sum, i.e. $s_n = \ds \sum_{i=1}^n a_i$.  If the sequence $\lrbrace{s_n}$\\[15pt] is convergent and \blank{2} exists as a real number, then the series $\ds \sum a_n$ is said to be \textbf{convergent}, and we write\\[10pt]
+				\[\]
+			The number $s$ is called the \emph{sum} of the series.  A series is \textbf{divergent} if the sequence $\lrbrace{s_n}$ is divergent.
+		\end{defn}	
+		
+		\begin{ex}
+			Suppose we know that for the sequence $b_k$, the $k$th partial sum is given by $s_k = \dfrac{3k}{4k + 5}$.  Is the series convergent or divergent?
+		\end{ex}
+			\vs{1}
+			
+	\subsubsection*{Geometric Series}
+		\begin{ex}
+			In \S11.1, we talked about geometric sequences.  Recall that a geometric sequence takes the form $b_n =ar^n$, where $a$ is a constant and $r$ is called the common ratio.  Find $s_5$ if $a_n = 3(2^n)$.  
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{rmk}[Sum of an Infinite Geometric Series]
+			\[\sum_{n=0}^\infty ar^n = \begin{cases} & \\ \hspace*{1.5in} & \text{if } |r| < 1\\ & \\ & \\ & \text{if }|r|\geq 1 \end{cases}\]
+		\end{rmk}
+		
+		\begin{pf}
+		
+		\end{pf}
+			\vs{1}
+			
+		\begin{rmk}[Sum of a Finite Geometric Series]
+			\[\sum_{i=0}^n ar^i = \begin{cases} & \\ \hspace*{1.5in} & \text{if } |r| < 1\\ & \\ & \\ & \text{if }|r|\geq 1 \end{cases}\]
+		\end{rmk}
+			\newpage
+			
+		\begin{ex}
+			Find the sum of the geometric series $5 - \dfrac{10}{3} + \dfrac{20}{9} - \dfrac{40}{27} + \cdots$
+		\end{ex}
+			\vs{1}
+		
+		\begin{ex}
+			Does the series $\ds \sum_{n=1}^\infty 2^{3n}3^{-n-1}$ converge or diverge?
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find the sum of the series $\ds \sum_{n = 0}^\infty x^n$, assuming that $|x| < 1$.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+	\subsection*{Pre-Class Activities}
+		\begin{ex}
+			Use this space to write any questions you might have from the videos.
+		\end{ex}
+			\vs{.5}
+			
+		\begin{ex}
+			Each sequence below is geometric.  Determine if it converges or diverges.  If it converges, give its sum.
+			\begin{enumerate}[(a)]
+				\item $4 + 3 + \dfrac{9}{4} + \dfrac{27}{16}+ \cdots$
+					\vs{1}
+					
+				\item $\ds \sum_{n=1}^\infty 12(0.73)^{n-1}$
+					\vs{1}
+					
+				\item $\ds \sum_{n=0}^\infty \dfrac{3^{n+1}}{(-2)^n}$
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+			\newpage
+			
+	\subsection*{In Class}
+		\begin{ex}
+			A drug is administered to a patient at the same time every day.  Suppose the concentration of the drug is $C_n$ mg/mL after the injection on the $n$th day.  Before the injection the next day, only 15\% of the drug remains in the bloodstream, and the daily dose raises the concentration by 0.1 mg/mL.
+			\begin{enumerate}[(a)]
+				\item Find the concentration after four days.
+					\vs{1}
+					
+				\item What is the concentration after $n$ doses?
+					\vs{1}
+				
+				\item What is the limiting concentration?
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+		
+		\begin{rmk}[Sigma Notation$-$Rules for Indices]
+			When working with sigma notation, the following rules hold:
+			\begin{itemize}
+				\item When shifting the summation index down by $a$, the indices inside the summation shift \emph{up} by $a$ (and vice versa).
+				\item When shifting the summation index up by $a$, the indices inside the summation shift \emph{down} by $a$ (and vice versa).
+			\end{itemize}
+		\end{rmk}
+			\newpage
+		
+		\begin{ex}
+			Rewrite the sum $\ds \sum_{i = 1}^5 a_i$, rewrite so that the summation begins at index $i = 0$.
+		\end{ex}
+			\vs{.5}
+			
+		\begin{ex}
+			Rewrite the sum $\ds \sum_{n = 0}^\infty ar^n$ so that the summation begins at index $n = 1$.
+		\end{ex}
+			\vs{.5}
+			
+		\begin{ex}
+			Write the repeating decimal $5.8121212...$ as a rational number.
+		\end{ex}
+			\vs{1}
+			
+	\subsubsection*{Working with Infinite Series}	
+		\begin{ex}
+			Show that the series $\ds \sum_{n = 1}^\infty \dfrac{1}{2(n+1)}$ converges, and find its sum.  This type of series is called a \emph{telescoping series}.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{thm}[Series Convergence]
+			If the series $\ds \sum_{n=1}^\infty a_n$ is convergent, then \blank{3.5}.
+		\end{thm}
+		
+		\begin{rmk}[Test for Divergence]
+			If $\ds \lim_{n\to \infty} a_n$ does not exist or if $\ds\lim_{n\to\infty} a_n \neq 0$, then \blank{3}.
+		\end{rmk}
+		
+		\begin{rmk}[Important Note]
+			If $\ds \lim_{n\to\infty}a_n = 0$, then $\ds \sum_{n = 1}^\infty a_n$ \blank{4.2}.
+		\end{rmk}
+		
+		\begin{ex}
+			Argue why $\ds \sum_{k = 1}^\infty \dfrac{k^3}{k^3 +k - 1}$ diverges.
+		\end{ex}
+			\vs{1}
+			
+		\begin{question}
+			Say that you know that $\ds \lim_{n\to\infty} a_n = 0$.  What does that tell you about the series?  Why?
+		\end{question}
+			\vs{1}
+			\newpage
+			
+		\begin{rmk}[Properties of Infinite Series]
+			If $\ds \sum a_n$ and $\ds \sum b_n$ are convergent series, and $c$ is a constant, then the following series converge, and:\\
+			\begin{enumerate}[(1)]
+				\setlength \itemsep{20pt}
+				
+				\item $\ds \sum_{n = 1}^\infty ca_n = $\blank{2.5}
+				\item $\ds \sum_{n =1 }^\infty (a_n \pm b_n) = $\blank{3}
+				\item If the series $\ds \sum_{n = N + 1}^\infty a_n$ converges, then \blank{3}.
+				
+			\end{enumerate}	
+		\end{rmk}
+		
+	\subsubsection*{Examples}
+		\begin{ex}
+			Find the sum of the series $\ds \sum_{n = 1}^\infty \lrpar{\dfrac{5}{n(n+1)} + \dfrac{2^n}{3^n}}$
+		\end{ex}		
+			\vs{1}
+			
+		\begin{ex}
+			Find the sum of the series $\ds \sum_{i = 4}^\infty \lrpar{\dfrac{1}{\sqrt{i}} - \dfrac{1}{\sqrt{i+1}}}$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Determine if the series below converges or diverges; justify your response.  If it converges, give its sum.
+			\begin{enumerate}[(a)]
+				\item $\ds \sum_{n =1}^\infty \dfrac{2 + n}{1-2n}$
+					\vs{1}
+					
+				\item $\ds \sum_{j = 1}^\infty \left[(-0.2)^j + (0.6)^{j-1}\right]$
+					\vs{1}
+					
+				\item $\ds \sum_{m = 1}^\infty \dfrac{2^m + 4^m}{e^m}$
+					\vs{1}
+					
+				\item $\ds \sum_{n = 1}^\infty \dfrac{1}{1 + \lrpar{\frac{3}{4}}^n}$
+					\vs{1}	
+			\end{enumerate}		
+		\end{ex}
+			\newpage
+			
+		\begin{ex}
+			Find the values of $x$ for which the series converges, and find the sum of the series.
+			\begin{enumerate}[(a)]
+				\item $\ds \sum_{n =1 }^\infty (x+2)^n$
+					\vs{1}
+					
+				\item $\ds \sum_{n = 0}^\infty \dfrac{2^n}{x^n}$
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+		
+		\begin{ex}
+			If the $n$th partial sum of a series $\ds \sum_{n = 1}^\infty a_n$ is $s_n = 3-n2^{-n}$, find $a_n$ and $\ds \sum_{n = 1}^\infty a_n$.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find the value of $c$ if $\ds \sum_{n = 2}^\infty (1 + c)^{-n} = 2$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+	\subsection*{After Class Activities}
+		\begin{ex}
+			Does the geomestric series $\ds \sum_{n = 1}^\infty \dfrac{6\cdot 2^{2n-1}}{3^n}$ converge or diverge?  If it converges, give its sum.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Is the series $\ds \sum_{n = 1}^\infty 3^{n+1}4^{-n}$ convergent or divergent?  If it converges, give its sum.
+		\end{ex}	
+			\vs{1}
+			
+		\begin{ex}
+			Does $\ds \sum_{n =1 }^\infty \ln \lrpar{\dfrac{n^2+1}{2n^2+1}}$ converge or diverge?
+		\end{ex}	
+			\vs{1}
+			
+		\begin{ex}
+			Express the series $\ds \sum_{n = 1}^\infty \ln\lrpar{\dfrac{n}{n+1}}$ as a telescoping series, and determine if it converges or diverges.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Write $\ds \sum_{j = 1}^\infty \dfrac{3}{j(j+3)}$ as a telescoping series, and determine if it converges or diverges.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Determine the values of $x$ for which the series $\ds \sum_{n = 0}^\infty \dfrac{(x-5)^n}{3^n}$ converges, and find its sum.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Determine the values of $x$ for which the series $\ds \sum_{m = 0}^\infty \dfrac{\sin^mx}{3^m}$ converges, and find its sum.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find the value of $c$ if $\ds \sum_{n = 0}^\infty e^{nc} = 10$.
+		\end{ex}
+			\vs{1}
+\clearpage
+\end{document}

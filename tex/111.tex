@@ -1,0 +1,261 @@
+\documentclass[notes]{subfiles}
+\begin{document}
+	\addcontentsline{toc}{section}{11.1 - Sequences}
+	\refstepcounter{section}
+	\fancyhead[RO,LE]{\bfseries \nameref{cs111}} 
+	\fancyhead[LO,RE]{\bfseries \small \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Chapter 11.1}
+	
+\section*{Sequences}\label{cs111}
+	\subsection*{Before Class}
+	\subsubsection*{Sequences}
+		\begin{defn}[Sequence]
+			A \textbf{sequence} is a \textit{list} of numbers $a_1,a_2,a_3,\cdots,a_n,\cdots$ written in a definite order.  
+		\end{defn}
+		\begin{rmk}[Notation]
+			The sequence $\lrbrace{a_1,a_2, a_3,...}$ can also be written as\\[10pt]
+				\begin{itemize}
+					\setlength\itemsep{15pt}
+					\item 
+					\item
+				\end{itemize}\\
+			The subscript label is called the \emph{index}, and the value of the first subscript is called the \emph{starting index}.
+		\end{rmk}
+		\begin{ex}$ $
+			\begin{enumerate}[(a)]
+				\item Write the first six terms of the sequence $a_n = \sqrt{n}$, if the starting index is $n = 1$.
+					\vs{1}
+					
+				\item Write the first six terms of the sequence $a_n = (-1)^{n+1}\dfrac{1}{n-5}$, if the starting index is $n = 6$.
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+		
+		\begin{ex}
+			Find a formula for the general term $a_n$ of the sequence
+				\[\lrbrace{-\dfrac{3}{2},\dfrac{9}{3},-\dfrac{27}{4},\dfrac{81}{5},-\dfrac{243}{6},\dfrac{729}{7},\cdots}\]
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			The \emph{Fibonacci sequence} is a recursive sequence with no nice defining general term like we've had.  The sequence is defined by the pattern $a_{n+1} = a_n + a_{n-1}$ for $n\geq 2$, with the initial terms $a_0 = a_1 = 1$.  Find the next six terms of the Fibonacci sequence.
+		\end{ex}
+			\vs{1}
+			
+		\begin{defn}[Limit/Converge/Diverge]
+			A sequence $\lrbrace{a_n}$ has the \textbf{limit} $L$ if \blank{4}\\[20pt] \blank{4}.  If we can, we denote this limit by writing\\[10pt]
+				\[\]
+				\\
+			If the limit exists, we say the sequence \textbf{converges}, or that the sequence is \emph{convergent}.  Otherwise, the sequence \textbf{diverges}, or is \emph{divergent}.
+		\end{defn}
+		
+		\begin{ex}
+			Is the sequence $a_n = \dfrac{n}{n+1}$ convergent or divergent?
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{thm}[Characterization of Sequential Limit]
+			If $\ds \lim_{x\to \infty} f(x)  = L$ and $f(n) = a_n$ when $n$ is an integer, then \blank{2.5}.
+		\end{thm}
+		
+		\begin{ex}
+			Show that $\ds \lim_{n\to \infty} \dfrac{\ln n}{n} = 0$
+		\end{ex}
+			\vs{1}
+			
+		\begin{rmk}[Infinite Limit of a Sequence]
+			The notation $\ds \lim_{n\to \infty} a_n = \infty$ means that for every positive number $M$, there is an inter $N$ such that if $n > N$, then $a_n > M$.
+		\end{rmk}
+		
+		\begin{rmk}[Limit Laws for Sequences]
+			If $\lrbrace{a_n}$ and $\lrbrace{b_n}$ are convergent sequences and $c$ is a constant, then\\[15pt]
+			\begin{enumerate}[(1)]
+				\setlength \itemsep{20pt}
+				
+				\item $\ds \lim_{n\to\infty} (a_n \pm b_n) =$
+				\item $\ds \lim_{n\to\infty} ca_n = $
+				\item $\ds \lim_{n\to\infty} (a_nb_n) = $
+				\item $\ds \lim_{n\to\infty} \dfrac{a_n}{b_n} = $
+				\item $\ds \lim_{n\to\infty} (a_n)^p = $
+			\end{enumerate}
+		\end{rmk}
+		\newpage
+		
+		\begin{ex}
+			Use limit laws to determine if these sequences converge or diverge:
+			\begin{enumerate}[(a)]
+				\item $a_n = \dfrac{2n}{3n^2 + 1}$
+					\vs{1}
+					
+				\item $b_n = \dfrac{n}{\sqrt{5 + n}}$
+					\vs{1}
+					
+				\item $c_n = 2+ (0.86)^n$
+					\vs{1}
+				
+				\item $d_n = 6^ne^{-n}$
+					\vs{1}
+					
+				\item $e_n = \dfrac{n^4}{n^3 + n^2 -n + 5}$
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+			\newpage
+		
+	\subsection*{Pre-Class Activities}
+		\begin{ex}
+			Use this space to write any questions you might have from the videos.
+		\end{ex}	
+			\vs{.5}
+			
+		\begin{ex}
+			Write the first five terms of the sequence $\dfrac{(-1)^n2^n}{2n+1}$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Write the first five terms of the recursive sequence $a_1 = 6$, $a_{n+1} = \dfrac{a_n}{n}$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find a formula for the general term of the sequence $\lrbrace{4,-1,\dfrac{1}{4},-\dfrac{1}{16},\dfrac{1}{64},\cdots}$
+		\end{ex}	
+			\vs{1}
+			
+		\begin{ex}
+			Does the sequence $a_n = (-1)^n \dfrac{1}{2\sqrt{n}}$ converge or diverge?  Why?
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+	\subsection*{In Class}
+	\subsubsection*{Working with Sequences}
+		\begin{thm}[Squeeze Theorem for Sequences]
+			If $a_n,b_n$, and $c_n$ are sequences such that $a_n\leq b_n\leq c_n$ for $n\geq n_0$ and $\ds \lim_{n\to\infty} a_n = \lim_{n\to\infty} c_n$, then\\[20pt] \blank{2}.
+		\end{thm}
+		
+		\begin{thm}[Absolute Convergence of Sequence]
+			If $\ds \lim_{n\to\infty} |a_n| = 0$, then \blank{2.5}.
+		\end{thm}
+		
+		\begin{ex}
+			Does the sequence $a_n = (-1)^n$ converge or diverge?
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate $\ds \lim_{n\to\infty} (-1)^n\dfrac{5}{n}$
+		\end{ex}	
+			\vs{1}
+			
+		\begin{ex}
+			Does the sequence $\lrbrace{n^2e^{-n}}$ converge or diverge?  Why?
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{thm}[Convergent Functions \& Convergent Sequences]
+			If $\ds \lim_{n\to\infty} a_n = L$ and the function $f$ is continuous at $L$, then\\[15pt]
+				\[\]
+		\end{thm}
+		
+		\begin{ex}
+			Find $\ds \lim_{n\to\infty} \cos\lrpar{\dfrac{\pi}{n}}$
+		\end{ex}
+			\vs{1}
+		
+		\begin{ex}
+			Show that the sequence $a_n =\dfrac{n!}{n^n}$ converges to 0.
+		\end{ex}		
+			\vs{1}
+			
+		\begin{ex}
+			A \emph{geometric sequence} is a sequence of the form $b_n = ar^n$, where $a$ is a constant, and $r$ is called the \emph{common ratio}.  For what values of $r$ does a geometric sequence $b_n = ar^n$ converge?
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{defn}[Increasing/Decreasing/Monotonic]
+			A sequence $\lrbrace{a_n}$ is said to be \textbf{increasing} if \blank{3}.  It\\[15pt] is called \textbf{decreasing} if \blank{3}.  A sequence is called\\[15pt] \textbf{monotonic} if \blank{5}.
+		\end{defn}
+			
+		\begin{ex}
+			Show that the sequence $a_n = \dfrac{n}{n^2 + 2}$ is decreasing.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Show that the sequence $a_n = n\ln n$ is increasing.
+		\end{ex}
+			\vs{2}
+		
+		\begin{defn}[Bounded Above/Below]
+			A sequence $\lrbrace{a_n}$ is \textbf{bounded above} if there is a number $M$ such that \blank{1.5}\\[15pt] \blank{2}.  $a_n$ is said to be \textbf{bounded below} if there is a number $m$ such\\[15pt] that \blank{4}.  If $a_n$ is bounded above and below, the sequence is said to be a \textbf{bounded sequence}.
+		\end{defn}
+			\newpage
+		
+		\begin{ex}
+			Give an example of each of the following:
+			\begin{enumerate}[(a)]
+				\item A bounded sequence which converges
+					\vs{1}
+					
+				\item A bounded sequence which diverges.
+					\vs{1}
+					
+				\item An unbounded sequence that diverges.
+					\vs{1}
+					
+				\item An unbounded sequence that converges.
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+		
+		\begin{thm}[Monotonic Sequence]
+			Every bounded, monotonic sequence is convergent.
+		\end{thm}
+		
+		\begin{ex}
+			Argue why the sequence $a_n = \dfrac{n}{n+1}$ is convergent using the Monotonic Sequence Theorem.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Show that for the recursive sequence $a_1 = 2$, $a_{n+1} = \dfrac{1}{2}(a_n + 6)$, the limit is 6.
+		\end{ex}
+			\vs{3} $ $
+			\newsec
+	\subsection*{After Class Activities}
+		\begin{ex}
+			Compute $\ds \lim_{n\to\infty} \cos \lrpar{\dfrac{n\pi}{n+1}}$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Show that the sequence $a_n = \ln (n+1) - \ln n$ converges to 0.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Determine the convergence of the sequence $a_k = \arctan(\ln k)$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Determine the convergence of the sequence $a_n = \dfrac{1\cdot 3\cdot 5\cdot \cdots \cdot (2n-1)}{n!}$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Is the sequence $\lrbrace{2 + \dfrac{(-1)^n}{n}}$ increasing or decreasing?  Is it monotonic?  Is it bounded?
+		\end{ex}
+			\vs{1}
+\clearpage
+\end{document}

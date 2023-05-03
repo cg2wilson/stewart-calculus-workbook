@@ -23,13 +23,403 @@
 
 		<subsubsection xml:id="section-101-parametric-equations">
 			<title>Parametric Equations</title>
+			<question>
+				<statement>
+					<p>
+						The picture below does not describe a function?  Why?
+					</p>
+					<image>
+						<description>
+							A graph of the parametric function given by <m>x(t) = t^3-3t, y(t) = 3t^2-9</m>
+						</description>
+						<latex-image>
+							<![CDATA[ 
+							\begin{tikzpicture}
+								\begin{axis}[
+								axis x line = middle,
+								axis y line = middle,
+								axis line style = {<->, color=black},
+								every axis y label/.style=
+			{at={(ticklabel cs:1.1)}},
+								ylabel = {$y$},
+								every axis x label/.style= {at ={(ticklabel cs:1)}},
+								xlabel = {$x$},
+								xmin=-4.5,xmax=4.5,
+								ymin=-9.5,ymax=4.5,
+								xtick = {-4,-2,2,4},
+								ytick = {-8,-6,-4,-2,2,4},
+							]
+								\addplot [domain=-3:3,samples=50]({x^3-3*x},{3*x^2-9}); 
+								\end{axis}
+						\end{tikzpicture}
+							]]>
+						</latex-image>
+					</image>
+				</statement>
+				<solution>
+					<p>
+						It fails the vertical line test on <m>[-2,2]</m>(i.e. there exist multiple outputs for individual inputs).
+					</p>
+				</solution>
+			</question>
 
+			<definition>
+				<title>Parameter/Parametric Equation</title>
+				<idx><h>Parameter</h></idx>
+				<idx><h>Parametric Equation</h></idx>
+				<statement>
+					<p>
+						Let <m>C</m> be a curve, and let the functions <m>x =f(t)</m> and <m>y = g(t)</m> describe the <m>x-</m> and <m>y-</m>coordinate of <m>C</m>.  The variable <m>t</m> is called the <term>parameter</term>, and the function <m>x = f(t)</m> and <m>y = g(t)</m> are called <term>parametric equations</term>.
+					</p>
+				</statement>
+			</definition>
+
+			<example>
+				<statement>
+					<p>
+						Consider the parametric equations <m>x(t) = t-2</m> and <m>y(t) = t^2 - 2t</m>.
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									Fill out the table below:
+								</p>
+								<tabular>
+									<row>
+										<cell halign="center"><m>t</m></cell>
+										<cell halign="center"><m>x</m></cell>
+										<cell halign="center"><m>y</m></cell>
+										<cell halign="center"><m>t</m></cell>
+										<cell halign="center"><m>x</m></cell>
+										<cell halign="center"><m>y</m></cell>
+									</row>
+									<row>
+										<cell halign="center"><m>-2</m></cell>
+										<cell halign="center"><m></m></cell>
+										<cell halign="center"><m></m></cell>
+										<cell halign="center"><m>2</m></cell>
+										<cell halign="center"><m></m></cell>
+										<cell halign="center"><m></m></cell>
+									</row>
+									<row>
+										<cell halign="center"><m>-1</m></cell>
+										<cell halign="center"><m></m></cell>
+										<cell halign="center"><m></m></cell>
+										<cell halign="center"><m>3</m></cell>
+										<cell halign="center"><m></m></cell>
+										<cell halign="center"><m></m></cell>
+									</row>
+									<row>
+										<cell halign="center"><m>0</m></cell>
+										<cell halign="center"><m></m></cell>
+										<cell halign="center"><m></m></cell>
+										<cell halign="center"><m>4</m></cell>
+										<cell halign="center"><m></m></cell>
+										<cell halign="center"><m></m></cell>
+									</row>
+									<row>
+										<cell halign="center"><m>1</m></cell>
+										<cell halign="center"><m></m></cell>
+										<cell halign="center"><m></m></cell>
+									</row>
+								</tabular>
+							</li>
+							<li>
+								<p>
+									Plot the points from the table on the graph below.  Connect the plotted points to see the parametric curve, and draw arrows to indicate its direction of travel.  What kind of function do you see?
+								</p>
+								<image>
+									<description>
+										An empty plot on <m>[-4,4]\times [-1,8]</m>
+									</description>
+									<latex-image>
+										<![CDATA[ 
+										\begin{tikzpicture}[scale = 1.25]
+											\begin{axis}[
+											axis x line = middle,
+											axis y line = middle,
+											axis line style = {<->, color=black},
+											xmin = -4.5, xmax = 4.5,
+											ymin = -1.5, ymax = 8.5,
+											xtick = {-4-3,-2,-1,1,2,3,4},
+											ytick = {-1,1,2,3,4,5,6,7,8},
+											]
+											\end{axis}
+										\end{tikzpicture}
+										]]>
+									</latex-image>
+								</image>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								<tabular>
+									<row>
+										<cell halign="center"><m>t</m></cell>
+										<cell halign="center"><m>x</m></cell>
+										<cell halign="center"><m>y</m></cell>
+										<cell halign="center"><m>t</m></cell>
+										<cell halign="center"><m>x</m></cell>
+										<cell halign="center"><m>y</m></cell>
+									</row>
+									<row>
+										<cell halign="center"><m>-2</m></cell>
+										<cell halign="center"><m>-4</m></cell>
+										<cell halign="center"><m>8</m></cell>
+										<cell halign="center"><m>2</m></cell>
+										<cell halign="center"><m>0</m></cell>
+										<cell halign="center"><m>0</m></cell>
+									</row>
+									<row>
+										<cell halign="center"><m>-1</m></cell>
+										<cell halign="center"><m>-3</m></cell>
+										<cell halign="center"><m>3</m></cell>
+										<cell halign="center"><m>3</m></cell>
+										<cell halign="center"><m>1</m></cell>
+										<cell halign="center"><m>3</m></cell>
+									</row>
+									<row>
+										<cell halign="center"><m>0</m></cell>
+										<cell halign="center"><m>-2</m></cell>
+										<cell halign="center"><m>0</m></cell>
+										<cell halign="center"><m>4</m></cell>
+										<cell halign="center"><m>2</m></cell>
+										<cell halign="center"><m>8</m></cell>
+									</row>
+									<row>
+										<cell halign="center"><m>1</m></cell>
+										<cell halign="center"><m>-1</m></cell>
+										<cell halign="center"><m>-1</m></cell>
+									</row>
+								</tabular>
+							</li>
+							<li>
+								<p>
+									The function is a parabola
+								</p>
+								<image>
+									<description>
+										A plot of the parametric equation given in the problem on <m>[-4,4]</m>
+									</description>
+									<latex-image>
+										<![CDATA[ 
+										\begin{tikzpicture}[scale = 1.25]
+											\begin{axis}[
+											axis x line = middle,
+											axis y line = middle,
+											axis line style = {<->, color=black},
+											xmin = -4.5, xmax = 4.5,
+											ymin = -1.5, ymax = 8.5,
+											xtick = {-4,-3,-2,-1,1,2,3,4},
+											ytick = {-1,1,2,3,4,5,6,7,8},
+											]
+											\addplot[domain=-4.:4.,smooth,samples=100] {(x+2)^2 - 2*(x+2)};
+											\end{axis}
+										\end{tikzpicture}
+										]]>
+									</latex-image>
+								</image>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Rather than plotting points, we could have directly seen the function.  We can do this by a process called <term>eliminating the parameter</term>.
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									Given the parametric equations <m>x= t-2</m> and <m>y= t^2-2t</m>, eliminate the parameter to show that the parametric curve is given by the function <m>y =x^2-2x</m>
+								</p>
+							</li>
+							<li>
+								<p>
+									If we wanted to only include the right portion of the graph shown, what sort of restriction would we need to put on <m>t</m>?
+								</p>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									Note that if <m>x=t-2</m>, then <m>t=x+2</m>. We can replace this in the equation for <m>y</m>: <m>y(x) = (x+2)^2 - 2(x+2) = x^2-2x</m>
+								</p>
+							</li>
+							<li>
+								<p>
+									We need the right portion, which starts at the vertex. According to the table in the previous example, this happens when <m>t=1</m>. So, the restriction should be <m>t\geq 1</m>
+								</p>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Eliminate the parameter to find the curve represented by the parametric equations <m>x = \sqrt{t}</m>, <m>y = t^2+1</m>.  There is a natural restriction on the time interval; what is it?
+					</p>
+				</statement>
+				<solution>
+					<p>
+						Eliminating the parameter gives <m>y=x^4+1</m>. Since <m>x=\sqrt{t}</m>, the natural restriction on the time parameter is <m>t\geq 0</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									What curve is represented by the parametric equations <m>x = \cos t</m>, <m>y = \sin t</m>, <m>0\leq t\leq 2\pi</m>?
+								</p>
+							</li>
+							<li>
+								<p>
+									The parametric equations <m>x = \cos 2t</m>, <m>y = \sin 2t</m>, <m>0\leq t\leq 2\pi</m> represent the same curve as in part (a).  What is the difference between the parametrizations in (a) and (b)?
+								</p>
+							</li>
+							<li>
+								<p>
+									What if in (b) we instead took the time interval <m>0\leq t\leq \pi</m>?  What would be the difference between (a) and (b) in that case?
+								</p>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									A circle of radius 1: <m>(\cos t)^2 = \cos^2t = x^2</m> and <m>(\sin t)^2 = \sin^2t = y^2</m>, so by the Pythagorean theorem, <m>cos^2t + \sin^2t = x^2+y^2=1</m>
+								</p>
+							</li>
+							<li>
+								<p>
+									The parametrization in (b) traces the circle twice rather than once
+								</p>
+							</li>
+							<li>
+								<p>
+									Changing the time interval results in the same graph, but only traces it once rather than twice
+								</p>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
 		</subsubsection>
 	</subsection>
 
 	<subsection xml:id="section-101-preclass">
 		<title>Pre-Class Activities</title>
+			<example>
+				<statement>
+					<p>
+						Use this space to write any questions you might have from the videos
+					</p>
+				</statement>
+				<solution>
+					<p>
+						Answers vary
+					</p>
+				</solution>
+			</example>
 
+			<example>
+				<statement>
+					<p>
+						For each of the following parametric curves, sketch the curve and indicate the direction in which the curve is traced as <m>t</m> increases.  Then, eliminate the parameter to find a Cartesian equation for the curve.
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									<m>x = 2t -1 </m>, <m>y = \dfrac{1}{2}t + 1</m>
+								</p>
+							</li>
+							<li>
+								<p>
+									<m>x = t^2 -3</m>, <m>y = t+2</m>, <m>-3\leq t\leq 3</m>
+								</p>
+							</li>
+							<li>
+								<p>
+									<m>x = \sin t</m>, <m>y = 1-\cos t</m>, <m>0\leq t\leq 2\pi</m>
+								</p>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								<image>
+									<description>
+										The graph of the parametric equation <m>x = 2t -1 </m>, <m>y = \dfrac{1}{2}t + 1</m>
+									</description>
+									<latex-image>
+										<![CDATA[ 
+										
+										]]>
+									</latex-image>
+								</image>
+								<p>
+									Eliminating the parameter gives 
+								</p>
+							</li>
+							<li>
+								<image>
+									<description>
+										The graph of the parametric equation <m>x = t^2 -3</m>, <m>y = t+2</m>, <m>-3\leq t\leq 3</m>
+									</description>
+									<latex-image>
+										<![CDATA[ 
+										
+										]]>
+									</latex-image>
+								</image>
+								<p>
+									Eliminating the parameter gives 
+								</p>
+							</li>
+							<li>
+								<image>
+									<description>
+										The graph of the parametric equation <m>x = \sin t</m>, <m>y = 1-\cos t</m>, <m>0\leq t\leq 2\pi</m>
+									</description>
+									<latex-image>
+										<![CDATA[ 
+										
+										]]>
+									</latex-image>
+								</image>
+								<p>
+									Eliminating the parameter gives 
+								</p>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
 	</subsection>
 
 	<subsection xml:id="section-101-inclass">
@@ -37,6 +427,64 @@
 		<subsubsection xml:id="section-101-examples">
 			<title>Examples</title>
 
+			<example>
+				<statement>
+					<p>
+						Sketch the curve <m>x = \sin \lrpar{\dfrac{1}{2}\theta}</m>, <m>y = \cos \lrpar{\dfrac{1}{2}\theta}</m>, <m>-\pi\leq\theta\leq\pi</m>.  Then, eliminate the parameter to find a Cartesian expression for the curve.
+					</p>
+				</statement>
+				<solution>
+					<image>
+						<description>
+							Sketch of the curve <m>x = \sin \lrpar{\dfrac{1}{2}\theta}</m>, <m>y = \cos \lrpar{\dfrac{1}{2}\theta}</m>, <m>-\pi\leq\theta\leq\pi</m>
+						</description>
+						<latex-image>
+							<![CDATA[ 
+							
+							]]>
+						</latex-image>
+					</image>
+					<p>
+						Eliminating the parameter gives
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Do the same thing for the parametric equations <m>x = e^t</m>, <m>y = e^{-2t}</m>.
+					</p>
+				</statement>
+				<solution>
+					<image>
+						<description>
+							Sketch of the curve <m>x = \sin \lrpar{\dfrac{1}{2}\theta}</m>, <m>y = \cos \lrpar{\dfrac{1}{2}\theta}</m>, <m>-\pi\leq\theta\leq\pi</m>
+						</description>
+						<latex-image>
+							<![CDATA[ 
+							
+							]]>
+						</latex-image>
+					</image>
+					<p>
+						Eliminating the parameter gives
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Describe the motion of a particle with position <m>x = 5+2\cos (\pi t)</m>, <m>y =3 + 2\sin (\pi t)</m> as <m>t</m> varies in the interval <m>[1,2]</m>.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						
+					</p>
+				</solution>
+			</example>
 		</subsubsection>
 	</subsection>
 

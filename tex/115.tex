@@ -1,0 +1,131 @@
+\documentclass[notes]{subfiles}
+\begin{document}
+	\addcontentsline{toc}{section}{11.5 - Alternating Series}
+	\refstepcounter{section}
+	\fancyhead[RO,LE]{\bfseries \nameref{cs115}} 
+	\fancyhead[LO,RE]{\bfseries \small \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Chapter 11.5}
+	
+\section*{Alternating Series}\label{cs115}
+	\subsection*{Before Class}
+	\subsubsection*{The Alternating Series Test}
+		\begin{defn}[Alternating Series]
+			An \textbf{alternating series} is a series whose terms are alternately postive and negative.
+		\end{defn}
+		\begin{rmk}[The Alternating Series Test]
+			If the alternating series $\ds \sum_{n=1}^\infty (-1)^na_n$ satisfies these conditions:\\[15pt]
+			\begin{itemize}
+				\setlength\itemsep{15pt}
+				
+				\item \blank{3}
+				\item \blank{3}
+				\item $\ds \lim_{n\to\infty }a_n = $\blank{1}
+			\end{itemize}\\
+			Then the series converges.
+		\end{rmk}
+		\begin{rmk}[Note]
+			The Alternating Series Test will \textbf{never} tell you if a series diverges!
+		\end{rmk}
+		
+		\begin{ex}
+			Determine if the \emph{alternating harmonic series} $\ds \sum_{n=1}^\infty \dfrac{(-1)^n}{n}$ converges or diverges.	
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			The series $\ds \sum_{n=1}^\infty \dfrac{(-1)^n2^n}{5n-3}$ diverges.  Can we use the Alternating Series Test to show this?  Why or why not?
+		\end{ex}	
+			\vs{1}
+			
+		\begin{ex}
+			Determine if the series $\ds \sum_{k=1}^\infty (-1)^{n+1} \dfrac{k^2}{k^3 + 2}$ converges or diverges.
+		\end{ex}
+			\vs{1.5}
+			
+		\begin{ex}
+			Does $\ds\sum_{n=1}^\infty (-1)^{n+1}ne^{-2n}$ converge or diverge?
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+	\subsection*{Pre-Class Activities}
+		\begin{ex}
+			Use this space to write any questions you might have from the videos.
+		\end{ex}
+			\vs{.5}
+			
+		\begin{ex}
+			Does the series $\dfrac{2}{3} - \dfrac{2}{5} + \dfrac{2}{7} - \dfrac{2}{9} + \dfrac{2}{11} - \cdots$ converge or diverge?
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Does $\ds \sum_{n=0}^\infty \dfrac{(-1)^{n+1}}{\sqrt{n+1}}$ converge or diverge?
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Does $\ds \sum_{n=1}^\infty (-1)^{n-1}\arctan n$ converge or diverge?
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+	\subsection*{In Class}
+		\begin{ex}
+			Show that $\ds \sum_{n=1}^\infty \dfrac{n\cos (n\pi)}{2^n}$ converges.  
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Does $\ds \sum_{n=1}^\infty (-1)^n \sin \lrpar{\dfrac{\pi}{n}}$ converge or diverge?
+		\end{ex}
+			\vs{1}
+			
+	\subsubsection*{Estimating Sums}
+		\begin{rmk}[Alternating Series Estimation Theorem]
+			Let $\ds \sum (-1)^na_n$ be a \emph{convergent} alternating series.  Then,
+				\[|R_n| = \hspace{2in}\]
+		\end{rmk}
+			\newpage
+			
+		\begin{ex}
+			Find the sum of the series $\ds \sum_{n=0}^\infty \dfrac{(-1)^n}{n!}$, accurate to three decimal places.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find the sum of the series $\ds \sum_{n=1}^\infty \dfrac{(-0.8)^n}{n!}$, accurate to four decimal places.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find the sum of the series $\ds \sum_{n=1}^\infty (-1)^{n-1} \dfrac{n}{8^n}$, accurate to four decimal places.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+	\subsection*{After Class Activities}
+		\begin{ex}
+			Does $\ds \sum_{n=1}^\infty \dfrac{\sqrt{n}}{2n+3}$ converge or diverge?
+		\end{ex}	
+			\vs{1}
+			
+		\begin{ex}
+			Does $\ds \sum_{n=1}^\infty (-1)^n\cos\lrpar{\dfrac{\pi}{n}}$ converge or diverge?
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Does $\ds \sum_{n=1}^\infty (-1)^n \dfrac{n^n}{n!}$ converge or diverge?
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Approximate the sum of the series $\ds \sum_{n=1}^\infty \dfrac{(-1)^n}{(2n)!}$ correct to four decimal places.
+		\end{ex}
+			\vs{1}
+\clearpage
+\end{document}

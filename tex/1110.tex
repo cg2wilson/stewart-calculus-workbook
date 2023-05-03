@@ -1,0 +1,241 @@
+\documentclass[notes]{subfiles}
+\begin{document}
+	\addcontentsline{toc}{section}{11.10 - Taylor and Maclaurin Series}
+	\refstepcounter{section}
+	\fancyhead[RO,LE]{\bfseries \nameref{cs1110}} 
+	\fancyhead[LO,RE]{\bfseries \small \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Chapter 11.10}
+	
+\section*{Taylor and Maclaurin Series}\label{cs1110}
+	\subsection*{Before Class}
+	\subsubsection*{The Idea}
+		\begin{ex}
+			Let $f(x) = \ds \sum_{n = 0}^\infty c_n(x-a)^n$ be a power series, with $|x-a| < R$.
+			\begin{enumerate}[(a)]
+				\item Write the first eight nonzero terms of $f(x)$.
+					\vs{1}
+					
+				\item Write the first seven nonzero terms of $f'(x)$.
+					\vs{1}
+					
+				\item Write the first six nonzero terms of $f''(x)$.
+					\vs{1}
+					
+				\item Generalize this; what are the first six nonzero terms of $f^{(n)}(x)$?
+					\vs{1}
+					
+				\item What is the pattern in the coefficients $c_n$?	
+					\vs{1}
+
+			\end{enumerate}
+		\end{ex}
+			\newpage
+		
+		\begin{thm}[Coefficient Representation]
+			If a function $f$ has a power series representation at $x =a$, i.e. if we can write \\[15pt]
+				\[f(x) = \hspace{3.5in}\]
+				\\[10pt]
+			then, the coefficients of the power series must be given by the formula\\[20pt]
+				\[\]
+		\end{thm}	
+		
+		\begin{defn}[Taylor Series]
+			The \textbf{Taylor series} of the function $f$ at $x = a$ is given by the power series\\[15pt]
+			\[f(x) = \hspace{5in}\]
+		\end{defn}
+		
+		\begin{ex}
+			Find the Taylor series for $f(x) = e^x$, centered about $x = 1$.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{defn}[Maclaurin Series]
+			A Taylor series centered about $x = 0$ is called a \textbf{Maclaurin series}.
+		\end{defn}
+		
+		\begin{ex}
+			Find the Maclaurin series for $f(x) = e^x$.  Find the interval of convergence for the Maclaurin series.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Show that the Maclaurin series for $f(x)  = \cos x$ is given by $\ds \sum_{n=0}^\infty \dfrac{(-1)^nx^{2n}}{(2n)!}$.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+	\subsection*{Pre-Class Activities}
+		\begin{ex}
+			Use this space to write any questions you might have from the videos.
+		\end{ex}
+			\vs{.5}
+			
+		\begin{ex}
+			Find the Maclaurin series for $f(x) = \dfrac{1}{(1-x)^2}$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find the Maclaurin series for $f(x) = 2^x$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find the Maclaurin series for $f(x) = e^{-2x}$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+	\subsection*{In Class}
+	\subsubsection*{Taylor Polynomials \& Remainders}
+		\begin{ex}
+			Show that the Maclaurin series for $f(x) = \sin x$ is given by $\ds \sum_{n=0}^\infty \dfrac{(-1)^nx^{2n+1}}{(2n+1)!}$.
+		\end{ex}
+			\vs{1}
+			
+		\begin{defn}[$n$th Degree Taylor Polynomial]
+			The $n$\textbf{-degree Taylor polynomial} of $f$ at $x = a$, $T_n$, is the $n$th partial sum of the Taylor series.
+		\end{defn}
+		\begin{ex}
+			Write $T_4$ for $f(x) = \sin x$, centered at $x = 0$.
+		\end{ex}
+			\vs{.75}
+			\newpage
+			
+		\begin{thm}[Taylor's Remainder Theorem]
+			If $f(x) = T_n(x) + R_n(x)$, where $T_n$ is the $n$th degree Taylor polynomial of $f$ at $a$ and \\[15pt] \blank{2} for $|x-a| < R$, then \blank{3}\\[15pt] \blank{2}.
+		\end{thm}
+		\begin{rmk}[Taylor's Inequality]
+			If \blank{2} for $|x-a| \leq d$, then the remainder $R_n(x)$ of the Taylor series satisfies the inequality\\[15pt]
+				\[\]
+				\\[15pt]
+			for $|x-a| \leq d$.
+		\end{rmk}
+		
+		\begin{ex}
+			Show that $e^x$ is equal to the sum of its Maclaurin series.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Show that $\sin x $ and $\cos x$ are truly represented by their Maclaurin series.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Find the Maclaurin series for $f(x) = (1+x)^k$, for any real number $k$.  This series is called the \emph{binomial series}.
+		\end{ex}
+			\vs{1.5}
+			
+		\begin{ex}
+			Find the Maclaurin series for the function $f(x) = \dfrac{1}{\sqrt{2-x}}$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+	\subsubsection*{Useful Maclaurin Series}
+		\begin{center}
+			\begin{tabular}{c|p{4in}}
+				\textbf{Function} & \textbf{Series \& Interval of Convergence}\\ \hline
+				& \\
+				$\dfrac{1}{1-x}$ & \\ 
+				& \\
+				& \\
+				$\dfrac{1}{1+x}$ & \\
+				& \\ 
+				& \\
+				$e^x$ & \\
+				& \\
+				& \\
+				$\sin x$ & \\
+				& \\
+				& \\
+				$\cos x$ & \\
+				& \\
+				& \\
+				$\ln (1+x)$ & \\
+				& \\
+				& \\
+				$\arctan (x)$ & \\
+				& \\
+				& \\
+				$(1+x)^k$ & \\ 
+				& \\
+			\end{tabular}
+		\end{center}
+		\begin{ex}
+			Find the sum of the series $\dfrac{1}{1\cdot 2} - \dfrac{2}{2\cdot 2^2} + \dfrac{1}{3\cdot 2^3} - \dfrac{1}{4\cdot 2^4} + \cdots$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Use power series to evaluate the integral $\ds \int e^{-x^2}\, dx$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Use series to evaluate the limit $\ds \lim_{x\to 0} \dfrac{e^x - 1 - 2x}{x^2}$
+		\end{ex}
+			\vs{1}
+			
+	\subsubsection*{Multiplication/Division of Power Series}
+		\begin{ex}
+			Find the first three non-zero terms for the Maclaurin series of $\tan x$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Find the first three nonzero terms in the Maclaurin series for the function $y = e^x\ln (1+x)$
+		\end{ex}
+			\vs{1}\[\]
+			 \newsec
+	\subsection*{After Class Activities}
+		\begin{ex}
+			Find the Taylor series for $f(x) = \ln x$, centered at $a = 2$.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Obtain a Maclaurin series for the following functions:
+			\begin{enumerate}[(a)]
+				\item $f(x) = \arctan (x^2)$
+					\vs{1}
+					\newpage
+					
+				\item $f(x) = x^2\ln(1+x^3)$
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+		
+		\begin{ex}
+			Evaluate the integral $\ds \int \sqrt{1+x^3}\, dx$ as an infinite series.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Evaluate the limit $\ds \lim_{x\to 0} \dfrac{1-\cos x}{1+x-e^x}$
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find the sum of the series:
+			\begin{enumerate}[(a)]
+				\item $\ds \sum_{n=0}^\infty (-1)^n \dfrac{x^{4n}}{n!}$
+					\vs{1}
+					\newpage
+					
+				\item $\ds \sum_{n=1}^\infty (-1)^{n-1}\dfrac{3^n}{n5^n}$
+					\vs{1}
+					
+				\item $1 -\ln 2 + \dfrac{(\ln 2)^2}{2!} - \dfrac{(\ln 2)^3}{3!} + \cdots$
+					\vs{1}
+			\end{enumerate}
+		\end{ex}
+\clearpage
+\end{document}

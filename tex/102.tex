@@ -1,0 +1,213 @@
+\documentclass[notes]{subfiles}
+\begin{document}
+	\addcontentsline{toc}{section}{10.2 - Calculus with Parametric Curves}
+	\refstepcounter{section}
+	\fancyhead[RO,LE]{\bfseries \nameref{cs102}} 
+	\fancyhead[LO,RE]{\bfseries \small \currentname}
+	\fancyfoot[C]{{}}
+	\fancyfoot[RO,LE]{\large \thepage}	%Footer on Right \thepage is pagenumber
+	\fancyfoot[LO,RE]{\large Chapter 10.2}
+	
+\section*{Calculus with Parametric Curves}\label{cs102}
+	\subsection*{Before Class}
+	\subsubsection*{Tangents}
+		\begin{rmk}[Derivative of a Parametric Curve]
+			If $x = f(t)$ and $y = g(t)$ are the parametric equations for a curve $C$, then the derivative $\dfrac{dy}{dx}$ is given by 
+				\[\dfrac{dy}{dx} = \hspace{2in}\]
+				\\[20pt]
+			Provided that \blank{4}.
+		\end{rmk}
+		\begin{pf}
+		
+		\end{pf}
+			\vspace{1.5in}
+			
+		\begin{ex}
+			For the circle $x = \cos t$, $y = \sin t$, what is the rate of change when $\theta = \dfrac{\pi}{3}$?
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			What is the general formula for the rate of change of an ellipse, whose parametrization is given by $x = a\cos t$, $y = b\sin t$ ($0\leq t\leq 2\pi$)?
+		\end{ex}
+			\vs{1}
+			\newpage
+		
+		\begin{ex}
+			Find an equation for the tangent line to the curve $x = t^3 + 1$, $y = t^4 + t$ at the point corresponding to the parameter value $t = -1$.  
+		\end{ex}	
+			\vs{1}
+			
+		\begin{rmk}[Second Derivative of a Parametric Curve]
+			If $x = f(t)$ and $y = g(t)$ are the parametric equations for a curve $C$ with derivative $\dfrac{dy}{dx}$, then the second derivative $\dfrac{d^2y}{dx^2}$ is given by 
+				\[\dfrac{d^2y}{dx^2} = \hspace{2in}\]
+				\\[20pt]
+			Provided that \blank{4}.
+		\end{rmk}
+		\begin{pf}
+		
+		\end{pf}
+			\vspace{1.5in}
+			
+		\begin{ex}
+			Find the value of the second derivative for the circle $x = \cos t$, $y = \sin t$ when $\theta = \dfrac{\pi}{3}$.
+		\end{ex}
+			\vs{1}
+			\newpage
+		
+		\begin{ex}
+			Let $C$ be a curve defined by the parametric equations $x = 2t^2$, $y = t^3-t$.
+			\begin{enumerate}[(a)]
+				\item Show that $C$ has two tangents at the points $(2,0)$, and find their equations.
+					\vs{1}
+					
+				\item Find the points on $C$ where the tangent is either horizontal or vertical.
+					\vs{1}
+					
+				\item Determine when the curve is concave up or concave down.
+					\vs{1}
+					
+				\item Sketch the curve using the information above.
+					\vs{1}
+			\end{enumerate}
+		\end{ex}	
+			\newpage
+			
+	\subsection*{Pre-Class Activities}
+		\begin{ex}
+			For the curve defined parametrically by $x = 1 + \sqrt{t}$, $y = e^{t^2}$, find an equation of the tangent line to the curve at the point $(2,e)$.  Then, eliminate the parameter to find a Cartesian expression for the curve.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			For the following functions, find the first and second derivative.
+			\begin{enumerate}[(a)]
+				\item $x = t^3 + 1$, $y = t^2-t$
+					\vs{1}
+					
+				\item $x = t^2-1$, $y = e^t-1$
+					\vs{1}
+					
+				\item $x = \cos 2t$, $y = \sin t$, $0 < t < \pi$
+					\vs{1}
+					
+			\end{enumerate}
+		\end{ex}
+			\newpage
+			
+	\subsection*{In Class}
+		
+		\begin{ex}
+			When a circle rolls on a flat surface, a fixed point on the circle will trace out a curve called a \emph{cycloid}.  The parametrization for a cycloid is given by $x = r(\theta - \sin\theta)$, $y = r(1-\cos\theta)$, where $r$ is the radius of the circle.  
+			\begin{enumerate}[(a)]
+				\item Does the value of the tangent depend on the radius of the circle?
+					\vs{1}
+					
+				\item Compute the slope of the tangent line when $\theta = \dfrac{\pi}{6}$.
+					\vs{.5}
+					
+				\item At what points is the tangent horizontal?  What about when it's vertical?
+					\vs{1.5}
+			\end{enumerate}
+		\end{ex}
+		
+		\begin{ex}
+			At what point(s) on the curve $x = 3t^2 +1$, $y = t^3-1$ does the tangent line have slope exactly $\dfrac{1}{2}$?
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+	\subsubsection*{Areas}
+		\begin{rmk}[Area Under a Parametric Curve]
+			Let $C$ be a curve traced out \emph{exactly once} by the parametric equation $x = f(t)$ and $y = g(t)$.  Then, the area under $C$ between $x = a$ and $x = b$ is given by \\
+				\[A = \hspace{2in}\text{ or }\hspace{2in} \] \\[40pt]
+			where \blank{2} or \blank{2}, depending on direction of travel.
+		\end{rmk}
+		\begin{pf}
+			
+		\end{pf}	
+			\vspace{1.5in}
+			
+		\begin{ex}
+			Use the parametrization $x = r\cos\theta$, $y = r\sin\theta$ ($0\leq t\leq 2\pi$) to show that the (unsigned) area of a circle is exactly $\pi r^2$.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Show that the area under one arch of the cycloid $x = r(\theta - \sin\theta)$, $y = r(1-\cos \theta)$ is exactly three times the area of the generating circle.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Find the area enclosed by the curve $x = t^2-2t$, $y = \sqrt{t}$ and the $y-$axis.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Use the parametric equations $x = a\sin\theta$, $y = b\cos\theta$, $0\leq \theta \leq 2\pi$, to show that the area contained in an ellipse is $\pi ab$.
+		\end{ex}
+			\vs{1}
+			
+	\subsubsection*{Arc Length}
+		\begin{rmk}[Arc Length of a Parametric Curve]
+			If a curve $C$ is described by the parametric equations $x = f(t)$, $y = g(t)$, for $\alpha \leq t\leq \beta$, where $g'$ and $g'$ are continuous on $[\alpha,\beta]$ and $C$ is traversed exactly once as $t$ ranges from $\alpha$ to $\beta$, then the length of $C$ is given by\\
+			\[L = \hspace{3in}\]	
+		\end{rmk}
+			\newpage
+			
+		\begin{pf}
+		
+		\end{pf}
+			\vspace{2in}
+		
+		\begin{ex}
+			Find the length of one arch of the cycloid $x = r(\theta - \sin\theta)$, $y = r(1-\cos\theta)$
+		\end{ex}
+			\vs{1.5}
+			
+		\begin{ex}
+			Prove that the circumference of a circle of radius $r$ is $2\pi r$.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Find the exact lenth of the curve $x =1+3t^2$, $y = 4+2t^3$, $0\leq t\leq 1$.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find the exact length of the curve $x = e^t\cos t$, $y = e^t\sin t$, $0\leq t\leq \pi$
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+	\subsection*{After Class Activities}
+		\begin{ex}
+			Thomas is practicing this section, and decides to parametrize a circle of radius 6 by the equations $x = 6\cos 2\pi t$, $y = 6\sin 2\pi t$.  What time interval should he use in order to get the precise area or circumference of the circle?  Why?
+		\end{ex}	
+			\vs{0.5}
+			
+		\begin{ex}
+			Find $\dfrac{dy}{dx}$ and $\dfrac{d^2y}{dx^2}$ for the curve $x = t - \ln t$, $ y=  t + \ln t$.  For which values of $t$ is the curve concave up?
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find the equation of the tangent to the curve $x = \sin \pi t$, $y = t^2 + t$ at the point $(0,2)$.
+		\end{ex}
+			\vs{1}
+			\newpage
+			
+		\begin{ex}
+			Find the area enclosed by the $x-$axis and the curve $x = t^3 + 1$, $y = 2t-t^2$.
+		\end{ex}
+			\vs{1}
+			
+		\begin{ex}
+			Find the exact length of the curve $t\sin t$, $y =t\cos t$ on the interval $0\leq t\leq 1$.
+		\end{ex}
+			\vs{1}
+\clearpage
+\end{document}
