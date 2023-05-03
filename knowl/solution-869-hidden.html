@@ -10,20 +10,30 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><div class="solution solution-like"><div class="para logical">
-<div class="para">The Type II region is not feasible because there is no antiderivative for <span class="process-math">\(e^{-y^2}\text{.}\)</span> But after drawing and rewriting as a Type I region, we have</div>
+<body class="ignore-math"><div class="solution solution-like">
+<div class="para">Here is a sketch of <span class="process-math">\(R\text{:}\)</span>
+</div> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-187.svg" role="img" class="contained" alt="A sketch of the region \(R\) as described in the problem."></div> <div class="para logical">
+<div class="para">Since we're treating <span class="process-math">\(R\)</span> as a Type I region, we need to find a description of the form</div>
 <div class="displaymath process-math">
 \begin{equation*}
-
+R = \lrbrace{(x,y)\mid a\leq x\leq b, g_1(x)\leq y\leq g_2(x)}
 \end{equation*}
 </div>
-<div class="para">So the integral becomes</div>
+<div class="para">Based on the region, we can say that <span class="process-math">\(g_1(x) = x^3\)</span> and <span class="process-math">\(g_2(x) = x\text{.}\)</span> The <span class="process-math">\(x-\)</span>values must be <span class="process-math">\(x=0\)</span> and <span class="process-math">\(x = 1\)</span> since the curves intersect at those locations. This means our integral is set up as</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\int_0^3\int_0^y e^{-y^2}\, dx\, dy
+\int_0^1 \int_{x^3}^x (x^2 + 2y^2)\, dy\, dx
 \end{equation*}
 </div>
-<div class="para">whose value is <span class="process-math">\(\dfrac{1-e^{-9}}{2}\)</span>
+</div> <div class="para logical">
+<div class="para">So we compute:</div>
+<div class="displaymath process-math">
+\begin{align*}
+\int_0^1 \int_{x^3}^x (x^2 + 2y^2)\, dy\, dx \amp = \int_0^1 \lrpar{x^2y + \dfrac{2}{3}y^3}\bigg\rvert_{x^3}^x\\
+\amp = \int_0^1 \lrpar{-\dfrac{2}{3}x^9 -x^5 +\dfrac{5}{3}x^3}\, dx\\
+\amp = \dfrac{11}{60}
+\end{align*}
 </div>
-</div></div></body>
+</div>
+</div></body>
 </html>

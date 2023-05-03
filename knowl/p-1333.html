@@ -12,7 +12,27 @@
 </head>
 <body class="ignore-math">
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<div class="para">Let the area of <span class="process-math">\(R_{ij}\)</span> be denoted by <span class="process-math">\(\Delta A_i\text{,}\)</span> and let <span class="process-math">\(r_i^*\)</span> be the midpoint of <span class="process-math">\(R_{ij}\text{,}\)</span> given by <span class="process-math">\(r_i^* = \dfrac{1}{2}(r_{i-1}-r_i)\text{.}\)</span> Find an expression for <span class="process-math">\(\Delta A_i\text{.}\)</span> Draw a picture illustrating parts (a) and (b).</div>
-<span class="incontext"><a href="section-153.html#p-1333" class="internal">in-context</a></span>
+<div class="para logical"><ol class="lower-alpha">
+<li><div class="para">The problem is immediately that we don't have a technique to integrate <span class="process-math">\(\sec^2(x^2)\text{.}\)</span>
+</div></li>
+<li><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-191.svg" role="img" class="contained" alt="The region \(R\) described in the problem is sketched. As a Type II integral, the region is given by \(R = \lrbrace{(x,y)\mid 0\leq y\leq 1, y\leq x \leq 1}\text{;}\) as a Type I region, it is \(R = \lrbrace{(x,y)\mid 0\leq x\leq 1,0\leq y\leq x}\)"></div></li>
+<li><div class="para logical">
+<div class="para">As written, the integral is Type II; as a Type I integral, the region is described by <span class="process-math">\(R = \lrbrace{(x,y)\mid 0\leq x\leq 1, 0\leq y\leq x}\text{.}\)</span> This means we can rewrite the integral as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_0^1 \int_0^x \sec^2(x^2)\, dy\, dx
+\end{equation*}
+</div>
+<div class="para">Evaluating the first integral now gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_0^1 x\sec^2(x^2)\, dx
+\end{equation*}
+</div>
+<div class="para">which can be evaluated using substitution. This gives a value of <span class="process-math">\(\dfrac{1}{2}\tan(1)\text{.}\)</span>
+</div>
+</div></li>
+</ol></div>
+<span class="incontext"><a href="section-152.html#p-1333" class="internal">in-context</a></span>
 </body>
 </html>

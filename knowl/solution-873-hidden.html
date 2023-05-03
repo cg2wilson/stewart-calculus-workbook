@@ -10,33 +10,20 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><div class="solution solution-like"><div class="para logical"><ol class="lower-alpha">
-<li><div class="para">Subdivide <span class="process-math">\(R\)</span> by partitioning into <span class="process-math">\(m\)</span> pieces in the radial direction: <span class="process-math">\(\Delta r_i = \dfrac{b-a}{m}\text{.}\)</span> Similarly, we can subdivide the angular direction to <span class="process-math">\(n\)</span> pieces by doing <span class="process-math">\(\Delta \theta = \dfrac{\beta - \alpha}{n}\text{.}\)</span>
-</div></li>
-<li>
-<div class="para logical">
-<div class="para">Visually, we can represent <span class="process-math">\(\Delta A_i\)</span> as the difference between the sector areas of radius <span class="process-math">\(r_i\)</span> and <span class="process-math">\(r_{i-1}\text{.}\)</span> This means that</div>
-<div class="displaymath process-math">
-\begin{align*}
-\Delta A_i &amp; = \dfrac{1}{2}r_i^2\Delta\theta - \dfrac{1}{2}r_{i-1}^2\Delta\theta\\
-&amp; = \dfrac{1}{2}\lrpar{r_{i-1}^2-r_i^2}\Delta\theta \\
-&amp; = \dfrac{1}{2}\lrpar{(r_{i-1}+r_i)(r_{i-1}-r_i)}\Delta\theta\\
-&amp; = \dfrac{1}{2} r_i^*\Delta r\Delta \theta 
-\end{align*}
-</div>
-<div class="para">So, we conclude that <span class="process-math">\(\Delta A_i = r_i^*\Delta r\Delta\theta\text{.}\)</span>
-</div>
-</div>
-<div class="para">The image is below.</div>
-<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-189.svg" role="img" class="contained" alt="A sketch of a polar region described above, and labeled with \(r_i\text{,}\) \(r_{i-1}\text{,}\) \(\theta_j\text{,}\) \(\theta_{j-1}\text{,}\) \(R_{ij}\text{,}\) \(\Delta r\text{,}\) and \(\Delta \theta\)"></div>
-</li>
-<li><div class="para logical">
-<div class="para">We know that in general, volume is given by <span class="process-math">\(\ds \iint_R f(x,y)\, dA\text{,}\)</span> which comes from a Riemann sum of the form <span class="process-math">\(\ds \sum_{j=1}^n\sum_{i=1}^m f(x_{ij},y_{ij})\Delta A_i\text{.}\)</span> Since <span class="process-math">\(x = r\cos\theta\)</span> and <span class="process-math">\(y = r\sin\theta\text{,}\)</span> we can rewrite <span class="process-math">\(f(x,y) = f(r\cos\theta,r\sin\theta)\text{.}\)</span> This means that <span class="process-math">\(f(x_{ij},y_{ij}) = f(r_i^*\cos\theta_j^*,r_i^*\sin\theta_j^*)\text{.}\)</span> Since <span class="process-math">\(\Delta A_i = r_i^*\Delta r\Delta \theta\text{,}\)</span> we can create the Riemann sum</div>
+<body class="ignore-math"><div class="solution solution-like"><div class="para logical">
+<div class="para">The Type I integral looks like</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\sum_{j=1}^n\sum_{i=1}^m f(r_i^*\cos\theta_j^*,r_i^*\sin\theta_j^*)r_i^*\Delta r\Delta \theta
+\int_0^4\int_0^{\sqrt{x}} \dfrac{y}{x^2+1}\, dy\, dx
 \end{equation*}
 </div>
-</div></li>
-</ol></div></div></body>
+<div class="para">and the Type II integral takes the form</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_0^2\int_{y^2}^{4} \dfrac{y}{x^2+1}\, dx\, dy
+\end{equation*}
+</div>
+<div class="para">and the value is <span class="process-math">\(\dfrac{1}{4}\ln 17\)</span>
+</div>
+</div></div></body>
 </html>

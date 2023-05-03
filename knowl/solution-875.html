@@ -13,25 +13,30 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h5 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">15.3.3.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">15.2.11.1</span><span class="period">.</span>
 </h5>
-<div class="para">The region is sketched below:</div> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-190.svg" role="img" class="contained" alt="A sketch of the region given in the problem, the first-quadrant region between the circles \(x^2 + y^2 = 4\) and \(x^2 + y^2 = 1\text{.}\)"></div> <div class="para logical">
-<div class="para">Based on the region, we can write</div>
+<div class="para logical"><ol class="lower-alpha">
+<li><div class="para">The problem is immediately that we don't have a technique to integrate <span class="process-math">\(\sec^2(x^2)\text{.}\)</span>
+</div></li>
+<li><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-191.svg" role="img" class="contained" alt="The region \(R\) described in the problem is sketched. As a Type II integral, the region is given by \(R = \lrbrace{(x,y)\mid 0\leq y\leq 1, y\leq x \leq 1}\text{;}\) as a Type I region, it is \(R = \lrbrace{(x,y)\mid 0\leq x\leq 1,0\leq y\leq x}\)"></div></li>
+<li><div class="para logical">
+<div class="para">As written, the integral is Type II; as a Type I integral, the region is described by <span class="process-math">\(R = \lrbrace{(x,y)\mid 0\leq x\leq 1, 0\leq y\leq x}\text{.}\)</span> This means we can rewrite the integral as</div>
 <div class="displaymath process-math">
 \begin{equation*}
-R = \lrbrace{(r,\theta)\mid 1\leq r\leq 2, 0\leq \theta\leq \dfrac{\pi}{2}}
+\int_0^1 \int_0^x \sec^2(x^2)\, dy\, dx
 \end{equation*}
 </div>
-<div class="para">so the integral becomes</div>
+<div class="para">Evaluating the first integral now gives</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\int_0^{\pi/2}\int_1^2 (1-r^2\cos^2\theta)\, r\,dr\,d\theta
+\int_0^1 x\sec^2(x^2)\, dx
 \end{equation*}
 </div>
-<div class="para">which evaluates to <span class="process-math">\(-\dfrac{3\pi}{16}\)</span>
+<div class="para">which can be evaluated using substitution. This gives a value of <span class="process-math">\(\dfrac{1}{2}\tan(1)\text{.}\)</span>
 </div>
+</div></li>
+</ol></div>
 </div>
-</div>
-<span class="incontext"><a href="section-153.html#solution-875" class="internal">in-context</a></span>
+<span class="incontext"><a href="section-152.html#solution-875" class="internal">in-context</a></span>
 </body>
 </html>

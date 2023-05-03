@@ -10,14 +10,22 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><div class="solution solution-like"><div class="para logical"><ol class="lower-alpha">
-<li><div class="para">
-<span class="process-math">\(\ds \iint_D (y-3x)\, dA\text{,}\)</span> where <span class="process-math">\(D = \lrbrace{(x,y)\mid 1\leq y\leq 2, -1\leq x\leq 1}\)</span>
-</div></li>
-<li><div class="para">
-<span class="process-math">\(\ds \iint y\sin x\, dA\text{,}\)</span> where <span class="process-math">\(D\)</span> is the region bounded by <span class="process-math">\(y = 0\text{,}\)</span>  <span class="process-math">\(y = x^2\text{,}\)</span> and <span class="process-math">\(x= 1\text{.}\)</span>
-</div></li>
-<li><div class="para">
-<span class="process-math">\(\ds \iint xy\, dA\text{,}\)</span> where <span class="process-math">\(D\)</span> is the region enclosed by the quarter-circle <span class="process-math">\(y = \sqrt{1-x^2}\text{,}\)</span> <span class="process-math">\(x\geq 0\text{,}\)</span> and the coordinate axes.</div></li>
-</ol></div></div></body>
+<body class="ignore-math"><div class="solution solution-like">
+<div class="para">The region <span class="process-math">\(D\)</span> is shown below:</div> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-189.svg" role="img" class="contained" alt="A sketch of the region \(D\) given in the problem."></div> <div class="para logical">
+<div class="para">If we try to treat this as a Type I region, we'll need to split into two integrals (corresponding to the two different lower bounds). So, instead treat <span class="process-math">\(D\)</span> as a Type II region:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+D = \lrbrace{(x,y)\mid -2\leq y\leq 3, y^2-6\leq x \leq y}
+\end{equation*}
+</div>
+<div class="para">This gives the integral</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{-2}^3\int_{y^2-6}^{y} x^2y^2\, dx\, dy
+\end{equation*}
+</div>
+<div class="para">which evaluates to <span class="process-math">\(\dfrac{50375}{378}\)</span>
+</div>
+</div>
+</div></body>
 </html>

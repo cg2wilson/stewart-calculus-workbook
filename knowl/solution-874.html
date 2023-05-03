@@ -13,41 +13,29 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h5 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">15.3.2.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">15.2.10.1</span><span class="period">.</span>
 </h5>
-<div class="para logical"><ol class="lower-alpha">
+<div class="para">Consider the integral <span class="process-math">\(\ds \int_0^2 \int_0^{y^2} x^2y\, dx\, dy\)</span>
+</div> <div class="para logical"><ol class="lower-alpha">
+<li><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-190.svg" role="img" class="contained" alt="The region \(R\) defined by the integral in the problem. As a Type II region, the description is \(R = \lrbrace{(x,y)\mid 0\leq y\leq 2, 0\leq x\leq y^2}\text{.}\) As a Type I region, the description is \(R = \lrbrace{(x,y)\mid 0\leq x\leq 4, \sqrt{x}\leq y\leq 2}\)"></div></li>
 <li><div class="para logical">
-<div class="para">Begin by sketching the region. When we do this, we find that we can write</div>
+<div class="para">As a Type I integral, we have</div>
 <div class="displaymath process-math">
 \begin{equation*}
-R = \lrbrace{(x,y)\mid 0\leq x\leq 1, 0\leq y\leq \sqrt{1-x^2}}
+\int_0^4 \int_{\sqrt{x}}^2 (x^2y)\, dy\, dx
 \end{equation*}
 </div>
-<div class="para">This means we're looking at a Type I integral, which can be evaluated by computing</div>
+<div class="para">and as a Type II integral we have</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\int_0^1\int_0^{\sqrt{1-x^2}} x^2 + 2y\, dy\, dx
+\int_0^2 \int_0^{y^2}(x^2y)\, dx\, dy
 \end{equation*}
 </div>
-<div class="para">which gives <span class="process-math">\(\dfrac{\pi}{8} + \dfrac{4}{3}\)</span>
+<div class="para">which evaluates to <span class="process-math">\(\dfrac{32}{3}\)</span>
 </div>
 </div></li>
-<li><div class="para logical">
-<div class="para">Convering to a polar integral, we use the conversions <span class="process-math">\(x = r\cos\theta,y=r\sin\theta\text{.}\)</span> Doing that, we can set up the integral as</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\int_0^{\pi}\int_0^1 (r^2\cos^2\theta + 2r\sin\theta)\, r\, dr\,d\theta
-\end{equation*}
-</div>
-<div class="para">which still evaluates to <span class="process-math">\(\dfrac{\pi}{8} + \dfrac{4}{3}\)</span>
-</div>
-</div></li>
-<li>
-<div class="para">The answers vary here, but the most noticeable difference is likely in the computation; the Cartesian coordinate computation required careful use of trigonometric substitution and careful determination of the bounds, while the polar integration was a little more straightforward.</div>
-<div class="para">That difference ultimately comes from the shape of the region we're integrating over. Since the shape of the region is relatively simple to describe in polar coordinates, the integral is relatively more simple in polar coordinates than Cartesian coordinates.</div>
-</li>
 </ol></div>
 </div>
-<span class="incontext"><a href="section-153.html#solution-874" class="internal">in-context</a></span>
+<span class="incontext"><a href="section-152.html#solution-874" class="internal">in-context</a></span>
 </body>
 </html>

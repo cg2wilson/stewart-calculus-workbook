@@ -12,46 +12,9 @@
 </head>
 <body class="ignore-math">
 <article class="li"><h6 class="heading">
-<span class="type">Item</span><span class="space"> </span><span class="codenumber">c</span><span class="period">.</span>
+<span class="type">Item</span><span class="space"> </span><span class="codenumber">a</span><span class="period">.</span>
 </h6>
-<div class="para logical">
-<div class="para">From part b, we know that</div>
-<div class="displaymath process-math">
-\begin{equation*}
-D = \lrbrace{(x,y)\mid -1\leq x\leq 1, 3x^2\leq y \leq 1+2x^2}
-\end{equation*}
-</div>
-<div class="para">This means we can write the integral as</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\int_{-1}^1 \int_{3x^2}^{1+2x^2} (x+3y)\, dy\, dx
-\end{equation*}
-</div>
-</div>
-<div class="para logical">
-<div class="para">Evaluate from inside out. This means we're first computing</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\int_{3x^2}^{1+2x^2} (x+3y)\, dy
-\end{equation*}
-</div>
-<div class="para">So we have</div>
-<div class="displaymath process-math">
-\begin{align*}
-\int_{3x^2}^{1+2x^2} (x+3y)\, dy \amp = \lrpar{xy + \dfrac{3}{2}y^2}\bigg\rvert_{y=3x^2}^{y=1+2x^2} \\
-\amp = \lrpar{x(1+2x^2) + \dfrac{3}{2}(1+2x^2)} - \lrpar{x(3x^2) + \dfrac{3}{2}(3x^2)}  \\
-\amp = -\dfrac{15}{2}x^4 -x^3 + 6x^2 + x + \dfrac{3}{2}
-\end{align*}
-</div>
-</div>
-<div class="para logical">
-<div class="para">Since the first integral evaluates as <span class="process-math">\(-\dfrac{15}{2}x^4 -x^3 + 6x^2 + x + \dfrac{3}{2}\text{,}\)</span> we can rewrite the integral as</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\int_{-1}^1 \int_{3x^2}^{1+2x^2} (x+3y)\, dy\, dx = \int_{-1}^1 \lrpar{-\dfrac{15}{2}x^4 -x^3 + 6x^2 + x + \dfrac{3}{2}}\, dx
-\end{equation*}
-</div>
-<div class="para">which evaluates to 45.</div>
-</div></article><span class="incontext"><a href="section-152.html#li-1468" class="internal">in-context</a></span>
+<div class="para">
+<span class="process-math">\(\ds \int_0^{\pi/4}\int_0^{\pi/2} f(x,y)\, dy\,dx = -\dfrac{4}{\pi}\cos\lrpar{\dfrac{\pi^2}{8}}\text{.}\)</span> This is a very difficult integral, requiring multiple uses of integration by parts.</div></article><span class="incontext"><a href="section-151.html#li-1468" class="internal">in-context</a></span>
 </body>
 </html>

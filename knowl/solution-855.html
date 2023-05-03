@@ -13,9 +13,27 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h5 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">15.1.15.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">15.1.7.1</span><span class="period">.</span>
 </h5>
-<div class="para"><span class="process-math">\(\ds \int_0^2\int_0^2 (16-x^2-4y^2)\, dx\, dy = 36\)</span></div>
+<div class="para">Since <span class="process-math">\(m = 2\text{,}\)</span> we take <span class="process-math">\(\Delta x = \dfrac{2-0}{2} = 1\)</span>  and <span class="process-math">\(\Delta y = \dfrac{2-1}{2} = \dfrac{1}{2}\text{.}\)</span> This means <span class="process-math">\(x_1 = 1\text{,}\)</span> <span class="process-math">\(x_2 = 2\text{,}\)</span> <span class="process-math">\(y_1 = \dfrac{3}{2}\text{,}\)</span> and <span class="process-math">\(y_2 = 2\text{.}\)</span>
+</div> <div class="para">Since we want midpoints, we have <span class="process-math">\(\bar{x_1} = \dfrac{1}{2}\text{,}\)</span> <span class="process-math">\(\bar{x_2} = \dfrac{3}{2}\text{,}\)</span> <span class="process-math">\(y_1 = \dfrac{5}{4}\text{,}\)</span> and <span class="process-math">\(\bar{y_2} = \dfrac{7}{4}\)</span> as our points.</div> <div class="para logical">
+<div class="para">Then,</div>
+<div class="displaymath process-math">
+\begin{align*}
+\ds \iint (x-3y^2\, dA \amp\approx \sum_{i=1}^2\sum_{j=1}^2 f(\bar{x_i},\bar{y_j})\, \Delta A \\
+\amp = f(\bar{x_1},\bar{y_1})\Delta A + f(\bar{x_2},\bar{y_1})\Delta A + f(\bar{x_1},\bar{y_2})\Delta A + f(\bar{x_2},\bar{y_2})\Delta A \\
+\amp = f\lrpar{\dfrac{1}{2},\dfrac{5}{4}}\Delta A + f\lrpar{\dfrac{1}{2},\dfrac{7}{4}}\Delta A + f\lrpar{\dfrac{3}{2},\dfrac{5}{4}}\Delta A + f\lrpar{\dfrac{3}{2},\dfrac{7}{4}}\Delta A\\
+\amp = \lrpar{-\dfrac{67}{16}}\lrpar{\dfrac{1}{2}} + \lrpar{-\dfrac{139}{16}}\lrpar{\dfrac{1}{2}} + \lrpar{-\dfrac{51}{16}}\lrpar{\dfrac{1}{2}} + \lrpar{-\dfrac{123}{16}}\lrpar{\dfrac{1}{2}} \\
+\amp = -\dfrac{95}{8} 
+\end{align*}
+</div>
+<div class="para">So our conclusion is that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\iint_R (x-3y^2)\, dA \approx -\dfrac{95}{8} = -11.875
+\end{equation*}
+</div>
+</div>
 </div>
 <span class="incontext"><a href="section-151.html#solution-855" class="internal">in-context</a></span>
 </body>
