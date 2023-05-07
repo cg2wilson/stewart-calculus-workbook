@@ -13,10 +13,10 @@
 <body class="ignore-math">
 <h6 class="heading"><span class="type">Paragraph</span></h6>
 <div class="para logical">
-<div class="para">Since the bound (function) <span class="process-math">\(x=2\)</span> is getting replaced by the bound (function) <span class="process-math">\(h_2(y) = y^2-4y+4\text{,}\)</span> the integral must change to reflect the new upper bound:</div>
+<div class="para">This means we can rewrite the integral like this:</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\int_{h_1(y) = y+1}^{h_2(y) = y^2-4y+4}\int_{y=1}^{y=2} f(x,y)\, dx \, dy = \int_{4-y}^{y^2-4y+4}\int_3^4 f(x,y)\, dx\, dy
+\int_1^2\int_3^4 f(x,y)\, dy\, dx = \int_{x=1}^{x=2}\int_{y=3}^{y=4}f(x,y)\, dy\, dx 
 \end{equation*}
 </div>
 </div>

@@ -12,7 +12,21 @@
 </head>
 <body class="ignore-math">
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<div class="para">Find the volume of the solid created by the function <span class="process-math">\(f(x,y) = \dfrac{y}{x^2+1}\)</span> over the region <span class="process-math">\(R\)</span> bounded by the curves <span class="process-math">\(y = \sqrt{x}\text{,}\)</span> <span class="process-math">\(y = 0\text{,}\)</span> and <span class="process-math">\(x = 4\text{.}\)</span>
+<div class="para logical">
+<div class="para">If we try to treat this as a Type I region, we'll need to split into two integrals (corresponding to the two different lower bounds). So, instead treat <span class="process-math">\(D\)</span> as a Type II region:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+D = \lrbrace{(x,y)\mid -2\leq y\leq 3, y^2-6\leq x \leq y}
+\end{equation*}
+</div>
+<div class="para">This gives the integral</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{-2}^3\int_{y^2-6}^{y} x^2y^2\, dx\, dy
+\end{equation*}
+</div>
+<div class="para">which evaluates to <span class="process-math">\(\dfrac{50375}{378}\)</span>
+</div>
 </div>
 <span class="incontext"><a href="section-152.html#p-1355" class="internal">in-context</a></span>
 </body>

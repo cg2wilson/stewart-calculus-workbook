@@ -12,7 +12,22 @@
 </head>
 <body class="ignore-math">
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<div class="para">Use polar coordinates to evaluate the integral <span class="process-math">\(\ds \int_0^2\int_{\sqrt{1-y^2}}^{\sqrt{4-y^2}} 1-x^2\, dx\, dy\text{.}\)</span> Sketch the region.</div>
+<div class="para logical">
+<div class="para">Begin by sketching the region. When we do this, we find that we can write</div>
+<div class="displaymath process-math">
+\begin{equation*}
+R = \lrbrace{(x,y)\mid 0\leq x\leq 1, 0\leq y\leq \sqrt{1-x^2}}
+\end{equation*}
+</div>
+<div class="para">This means we're looking at a Type I integral, which can be evaluated by computing</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_0^1\int_0^{\sqrt{1-x^2}} x^2 + 2y\, dy\, dx
+\end{equation*}
+</div>
+<div class="para">which gives <span class="process-math">\(\dfrac{\pi}{8} + \dfrac{4}{3}\)</span>
+</div>
+</div>
 <span class="incontext"><a href="section-153.html#p-1421" class="internal">in-context</a></span>
 </body>
 </html>

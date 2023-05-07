@@ -10150,7 +10150,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "10.1",
   "title": "Curves Defined by Parametric Equations",
-  "body": " Curves Defined by Parametric Equations    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Parametric Equations    The picture below does not describe a function? Why?   A graph of the parametric function given by       It fails the vertical line test on (i.e. there exist multiple outputs for individual inputs).     Parameter\/Parametric Equation  Parameter  Parametric Equation   Let be a curve, and let the functions and describe the and coordinate of . The variable is called the parameter , and the function and are called parametric equations .      Consider the parametric equations and .     Fill out the table below:                                           Plot the points from the table on the graph below. Connect the plotted points to see the parametric curve, and draw arrows to indicate its direction of travel. What kind of function do you see?   An empty plot on                                                      The function is a parabola   A plot of the parametric equation given in the problem on            Rather than plotting points, we could have directly seen the function. We can do this by a process called eliminating the parameter .     Given the parametric equations and , eliminate the parameter to show that the parametric curve is given by the function     If we wanted to only include the right portion of the graph shown, what sort of restriction would we need to put on ?          Note that if , then . We can replace this in the equation for :     We need the right portion, which starts at the vertex. According to the table in the previous example, this happens when . So, the restriction should be          Eliminate the parameter to find the curve represented by the parametric equations , . There is a natural restriction on the time interval; what is it?    Eliminating the parameter gives . Since , the natural restriction on the time parameter is          What curve is represented by the parametric equations , , ?    The parametric equations , , represent the same curve as in part (a). What is the difference between the parametrizations in (a) and (b)?    What if in (b) we instead took the time interval ? What would be the difference between (a) and (b) in that case?          A circle of radius 1: and , so by the Pythagorean theorem,     The parametrization in (b) traces the circle twice rather than once    Changing the time interval results in the same graph, but only traces it once rather than twice          Pre-Class Activities    Use this space to write any questions you might have from the videos    Answers vary      For each of the following parametric curves, sketch the curve and indicate the direction in which the curve is traced as increases. Then, eliminate the parameter to find a Cartesian equation for the curve.      ,      , ,      , ,            The graph of the parametric equation ,     Eliminating the parameter gives      The graph of the parametric equation , ,     Eliminating the parameter gives      The graph of the parametric equation , ,     Eliminating the parameter gives          In Class   Examples    Sketch the curve , , . Then, eliminate the parameter to find a Cartesian expression for the curve.     Sketch of the curve , ,     Eliminating the parameter gives on the interval       Do the same thing for the parametric equations , .     Sketch of the curve , ,     Eliminating the parameter gives      Describe the motion of a particle with position , as varies in the interval .          Match the graphs of the parametric equations and in (a)-(d) with the parametric curves labeled I - IV. Justify your response.   Description           Develop a parametrization which traces out a circle three times in the time interval .    Answers vary, but the most straightforward answer is likely       Compare the curves represented by the parametric equations given. How do they differ?      ,      ,      ,            ,      ,      ,           After Class Activities    Sketch the parametric curve , , and eliminate the parameter to find a Cartesian equation for the curve.          Do the same thing for the curve ,           Describe the motion of a particle with position , on the interval .          Compare the curves represented by the parametric equations below. How do they differ?      ,      ,      ,              The graphs of and are given below. Use the graphs to sketch the corresponding parametric curve; use arrows to indicate the direction in which the curve travels.   Description          "
+  "body": " Curves Defined by Parametric Equations    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Parametric Equations    The picture below does not describe a function? Why?   A graph of the parametric function given by       It fails the vertical line test on (i.e. there exist multiple outputs for individual inputs).     Parameter\/Parametric Equation  Parameter  Parametric Equation   Let be a curve, and let the functions and describe the and coordinate of . The variable is called the parameter , and the function and are called parametric equations .      Consider the parametric equations and .     Fill out the table below:                                           Plot the points from the table on the graph below. Connect the plotted points to see the parametric curve, and draw arrows to indicate its direction of travel. What kind of function do you see?   An empty plot on                                                      The function is a parabola   A plot of the parametric equation given in the problem on            Rather than plotting points, we could have directly seen the function. We can do this by a process called eliminating the parameter .     Given the parametric equations and , eliminate the parameter to show that the parametric curve is given by the function     If we wanted to only include the right portion of the graph shown, what sort of restriction would we need to put on ?          Note that if , then . We can replace this in the equation for :     We need the right portion, which starts at the vertex. According to the table in the previous example, this happens when . So, the restriction should be          Eliminate the parameter to find the curve represented by the parametric equations , . There is a natural restriction on the time interval; what is it?    Eliminating the parameter gives . Since , the natural restriction on the time parameter is          What curve is represented by the parametric equations , , ?    The parametric equations , , represent the same curve as in part (a). What is the difference between the parametrizations in (a) and (b)?    What if in (b) we instead took the time interval ? What would be the difference between (a) and (b) in that case?          A circle of radius 1: and , so by the Pythagorean theorem,     The parametrization in (b) traces the circle twice rather than once    Changing the time interval results in the same graph, but only traces it once rather than twice          Pre-Class Activities    Use this space to write any questions you might have from the videos    Answers vary      For each of the following parametric curves, sketch the curve and indicate the direction in which the curve is traced as increases. Then, eliminate the parameter to find a Cartesian equation for the curve.      ,      , ,      , ,            The graph of the parametric equation ,     Eliminating the parameter gives      The graph of the parametric equation , ,     Eliminating the parameter gives      The graph of the parametric equation , ,     Eliminating the parameter gives          In Class   Examples    Sketch the curve , , . Then, eliminate the parameter to find a Cartesian expression for the curve.     Sketch of the curve , ,     Eliminating the parameter gives on the interval       Do the same thing for the parametric equations , .     Sketch of the curve , ,     Eliminating the parameter gives       Describe the motion of a particle with position , as varies in the interval .    Make a table of values to help see the path of the curve. The curve begins at and moves counterclockwise, creating a quarter circle of radius 2.      Match the graphs of the parametric equations and in (a)-(d) with the parametric curves labeled I - IV. Justify your response.   Description     Some of these can be tricky.     Notice that the x-coordinate should begin at 1, move to 2, then back to 1. At the same time, the y-coordinate should start at 0, move to 1, back to 0, down to -1, and back to 0.  The only curve which keeps the x-coordinate positive is III, so this must be the answer.    The x-coordinate oscillates between 0, 2, and -2; the y coordinate does the same, but faster. Specifically, we're looking for 4 distinct positive and negative \"strands\" for the horizontal component, and 6 distinct strands for the vertical component.  The graph which fits the description is I.    Notice here that the x-coordinate switches between positive and negative a few times, but the y-coordinate is non-negative, moving between 0 and 2.  This makes IV the appropriate graph.    By elimination, d matches with II. But we can also see this by matching the behavior of the y-coordinate.         Develop a parametrization which traces out a circle three times in the time interval .    Answers vary, but the most straightforward answer is likely       Compare the curves represented by the parametric equations given. How do they differ?      ,      ,      ,        The graphs of (b) and (c) appear to be parametrized in such a way that the left branch of (a) is naturally excluded. The distinction between (b) and (c) is that it appears that (c) is traced out faster in time than (b).       After Class Activities    Sketch the parametric curve , , and eliminate the parameter to find a Cartesian equation for the curve.     The curve , on the interval     Eliminating the parameter gives       Do the same thing for the curve ,      A sketch of the curve , on     Eliminating the parameter gives       Describe the motion of a particle with position , on the interval .    The particle traces an ellipse beginning at , going clockwise, and ending at       Compare the curves represented by the parametric equations below. How do they differ?      ,      ,      ,        Part (c) traces out only the right hand side of the graphs that (a) and (b) trace out, because of the natural domain restriction from the parametrization. (b) traces out the same curve as (a), but does so more slowly.      The graphs of and are given below. Use the graphs to sketch the corresponding parametric curve; use arrows to indicate the direction in which the curve travels.    on the left and       A sketch of the curve on        "
 },
 {
   "id": "objectives-42",
@@ -10267,7 +10267,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "10.1.10",
   "title": "",
-  "body": "  Do the same thing for the parametric equations , .     Sketch of the curve , ,     Eliminating the parameter gives   "
+  "body": "  Do the same thing for the parametric equations , .     Sketch of the curve , ,     Eliminating the parameter gives    "
 },
 {
   "id": "example-837",
@@ -10276,7 +10276,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "10.1.11",
   "title": "",
-  "body": "  Describe the motion of a particle with position , as varies in the interval .       "
+  "body": "  Describe the motion of a particle with position , as varies in the interval .    Make a table of values to help see the path of the curve. The curve begins at and moves counterclockwise, creating a quarter circle of radius 2.   "
 },
 {
   "id": "example-838",
@@ -10285,7 +10285,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "10.1.12",
   "title": "",
-  "body": "  Match the graphs of the parametric equations and in (a)-(d) with the parametric curves labeled I - IV. Justify your response.   Description        "
+  "body": "  Match the graphs of the parametric equations and in (a)-(d) with the parametric curves labeled I - IV. Justify your response.   Description     Some of these can be tricky.     Notice that the x-coordinate should begin at 1, move to 2, then back to 1. At the same time, the y-coordinate should start at 0, move to 1, back to 0, down to -1, and back to 0.  The only curve which keeps the x-coordinate positive is III, so this must be the answer.    The x-coordinate oscillates between 0, 2, and -2; the y coordinate does the same, but faster. Specifically, we're looking for 4 distinct positive and negative \"strands\" for the horizontal component, and 6 distinct strands for the vertical component.  The graph which fits the description is I.    Notice here that the x-coordinate switches between positive and negative a few times, but the y-coordinate is non-negative, moving between 0 and 2.  This makes IV the appropriate graph.    By elimination, d matches with II. But we can also see this by matching the behavior of the y-coordinate.      "
 },
 {
   "id": "example-839",
@@ -10303,7 +10303,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "10.1.14",
   "title": "",
-  "body": "  Compare the curves represented by the parametric equations given. How do they differ?      ,      ,      ,            ,      ,      ,       "
+  "body": "  Compare the curves represented by the parametric equations given. How do they differ?      ,      ,      ,        The graphs of (b) and (c) appear to be parametrized in such a way that the left branch of (a) is naturally excluded. The distinction between (b) and (c) is that it appears that (c) is traced out faster in time than (b).   "
 },
 {
   "id": "example-841",
@@ -10312,7 +10312,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "10.1.15",
   "title": "",
-  "body": "  Sketch the parametric curve , , and eliminate the parameter to find a Cartesian equation for the curve.       "
+  "body": "  Sketch the parametric curve , , and eliminate the parameter to find a Cartesian equation for the curve.     The curve , on the interval     Eliminating the parameter gives    "
 },
 {
   "id": "example-842",
@@ -10321,7 +10321,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "10.1.16",
   "title": "",
-  "body": "  Do the same thing for the curve ,        "
+  "body": "  Do the same thing for the curve ,      A sketch of the curve , on     Eliminating the parameter gives    "
 },
 {
   "id": "example-843",
@@ -10330,7 +10330,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "10.1.17",
   "title": "",
-  "body": "  Describe the motion of a particle with position , on the interval .       "
+  "body": "  Describe the motion of a particle with position , on the interval .    The particle traces an ellipse beginning at , going clockwise, and ending at    "
 },
 {
   "id": "example-844",
@@ -10339,7 +10339,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "10.1.18",
   "title": "",
-  "body": "  Compare the curves represented by the parametric equations below. How do they differ?      ,      ,      ,           "
+  "body": "  Compare the curves represented by the parametric equations below. How do they differ?      ,      ,      ,        Part (c) traces out only the right hand side of the graphs that (a) and (b) trace out, because of the natural domain restriction from the parametrization. (b) traces out the same curve as (a), but does so more slowly.   "
 },
 {
   "id": "example-845",
@@ -10348,7 +10348,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "10.1.19",
   "title": "",
-  "body": "  The graphs of and are given below. Use the graphs to sketch the corresponding parametric curve; use arrows to indicate the direction in which the curve travels.   Description        "
+  "body": "  The graphs of and are given below. Use the graphs to sketch the corresponding parametric curve; use arrows to indicate the direction in which the curve travels.    on the left and       A sketch of the curve on      "
 },
 {
   "id": "section-102",

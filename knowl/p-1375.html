@@ -13,13 +13,19 @@
 <body class="ignore-math">
 <h6 class="heading"><span class="type">Paragraph</span></h6>
 <div class="para logical">
-<div class="para">Switching to a Type I integral, we have</div>
+<div class="para">As written, the integral is Type II; as a Type I integral, the region is described by <span class="process-math">\(R = \lrbrace{(x,y)\mid 0\leq x\leq 1, 0\leq y\leq x}\text{.}\)</span> This means we can rewrite the integral as</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\int_0^1\int_0^{2x} y\cos(x^3-1)\, dy\, dx
+\int_0^1 \int_0^x \sec^2(x^2)\, dy\, dx
 \end{equation*}
 </div>
-<div class="para">which evaluates to <span class="process-math">\(\dfrac{2}{3}\sin (1)\)</span>
+<div class="para">Evaluating the first integral now gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_0^1 x\sec^2(x^2)\, dx
+\end{equation*}
+</div>
+<div class="para">which can be evaluated using substitution. This gives a value of <span class="process-math">\(\dfrac{1}{2}\tan(1)\text{.}\)</span>
 </div>
 </div>
 <span class="incontext"><a href="section-152.html#p-1375" class="internal">in-context</a></span>
