@@ -165,17 +165,15 @@
     						every axis x label/.style= {at ={(ticklabel cs:1)}},
     						x label style={at={(axis description cs:1.1,.5)},anchor=east},
     						xlabel = {$x$},
-				xmin = -6, xmax = 6,
-				ymin = -5, ymax = 5
+				xmin = -5, xmax = 5,
+				ymin = -5, ymax = 5,
+				trig format plots = rad
 				]		
-				\addplot[smooth, samples=500, domain=-3.:5.5, name path = a] ({x + 1},{x});
-				\addplot[smooth, samples=500, domain = -3.:5.5, name path = b] ({.5*x^2 - 3},{x});
-				\coordinate (a) at (4,1);
-				\coordinate (b) at (-2,2);
+				\addplot[smooth, samples=100, domain=-2:2, decoration = {markings, mark=at position .25 with {\arrow{>>}}}, postaction={decorate}] ({x^2},{-x});
+
 			\end{axis}
-				\node[xshift = 5pt] at (a) {$y = x-1$};
-				\node[xshift = -30pt] at (b) {$y^2=2x+6$};
 		\end{tikzpicture}
+
 
 	
 \end{document}

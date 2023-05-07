@@ -378,12 +378,29 @@
 									</description>
 									<latex-image>
 										<![CDATA[ 
-										
+											\begin{tikzpicture}
+												\begin{axis}[
+													axis x line = middle,
+														axis y line = middle,
+														every axis y label/.style={at={(ticklabel cs:1.1)}},
+														y label style={at={(axis description cs:.5,1.1)},anchor=north},
+															ylabel = {$y$},
+																every axis x label/.style= {at ={(ticklabel cs:1)}},
+																x label style={at={(axis description cs:1.1,.5)},anchor=east},
+																xlabel = {$x$},
+													xmin = -6, xmax = 6,
+													ymin = -5, ymax = 5
+													]		
+													\addplot[smooth, samples=500, domain=-3.:5.5, name path = a] ({2*x-1},{0.5*x+1});
+													\coordinate (a) at (4,1);
+													\coordinate (b) at (-2,2);
+												\end{axis}
+											\end{tikzpicture}
 										]]>
 									</latex-image>
 								</image>
 								<p>
-									Eliminating the parameter gives 
+									Eliminating the parameter gives <m>y = \dfrac{1}{4}x+\dfrac{5}{4}</m>
 								</p>
 							</li>
 							<li>
@@ -393,12 +410,29 @@
 									</description>
 									<latex-image>
 										<![CDATA[ 
-										
+											\begin{tikzpicture}
+												\begin{axis}[
+													axis x line = middle,
+														axis y line = middle,
+														every axis y label/.style={at={(ticklabel cs:1.1)}},
+														y label style={at={(axis description cs:.5,1.1)},anchor=north},
+															ylabel = {$y$},
+																every axis x label/.style= {at ={(ticklabel cs:1)}},
+																x label style={at={(axis description cs:1.1,.5)},anchor=east},
+																xlabel = {$x$},
+													xmin = -6, xmax = 6,
+													ymin = -5, ymax = 5
+													]		
+													\addplot[smooth, samples=500, domain=-3.:5.5, name path = a] ({x^2-3},{x+2});
+													\coordinate (a) at (4,1);
+													\coordinate (b) at (-2,2);
+												\end{axis}
+											\end{tikzpicture}
 										]]>
 									</latex-image>
 								</image>
 								<p>
-									Eliminating the parameter gives 
+									Eliminating the parameter gives <m>y = 2\pm \sqrt{x+3}</m>
 								</p>
 							</li>
 							<li>
@@ -408,12 +442,30 @@
 									</description>
 									<latex-image>
 										<![CDATA[ 
-										
+											\begin{tikzpicture}
+												\begin{axis}[
+													axis x line = middle,
+														axis y line = middle,
+														every axis y label/.style={at={(ticklabel cs:1.1)}},
+														y label style={at={(axis description cs:.5,1.1)},anchor=north},
+															ylabel = {$y$},
+																every axis x label/.style= {at ={(ticklabel cs:1)}},
+																x label style={at={(axis description cs:1.1,.5)},anchor=east},
+																xlabel = {$x$},
+													xmin = -3, xmax = 3,
+													ymin = -3, ymax = 3,
+													trig format plots = rad
+													]		
+													\addplot[smooth, samples=500, domain=-0.:2*pi, name path = a] ({sin(x)},{1-cos(x)});
+													\coordinate (a) at (4,1);
+													\coordinate (b) at (-2,2);
+												\end{axis}
+											\end{tikzpicture}
 										]]>
 									</latex-image>
 								</image>
 								<p>
-									Eliminating the parameter gives 
+									Eliminating the parameter gives <m>x^2 + (y-1)^2 = 1</m>
 								</p>
 							</li>
 						</ol>
@@ -440,12 +492,30 @@
 						</description>
 						<latex-image>
 							<![CDATA[ 
-							
+								\begin{tikzpicture}
+									\begin{axis}[
+										axis x line = middle,
+											axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.1)}},
+											y label style={at={(axis description cs:.5,1.1)},anchor=north},
+												ylabel = {$y$},
+													every axis x label/.style= {at ={(ticklabel cs:1)}},
+													x label style={at={(axis description cs:1.1,.5)},anchor=east},
+													xlabel = {$x$},
+										xmin = -3, xmax = 3,
+										ymin = -3, ymax = 3,
+										trig format plots = rad
+										]		
+										\addplot[smooth, samples=500, domain= -pi:pi, name path = a] ({sin(0.5*x)},{cos(0.5*x)});
+										\coordinate (a) at (4,1);
+										\coordinate (b) at (-2,2);
+									\end{axis}
+								\end{tikzpicture}
 							]]>
 						</latex-image>
 					</image>
 					<p>
-						Eliminating the parameter gives
+						Eliminating the parameter gives <m>x^2 + y^2 = 1</m> on the interval <m>[-1,1]</m>
 					</p>
 				</solution>
 			</example>
@@ -459,16 +529,32 @@
 				<solution>
 					<image>
 						<description>
-							Sketch of the curve <m>x = \sin \lrpar{\dfrac{1}{2}\theta}</m>, <m>y = \cos \lrpar{\dfrac{1}{2}\theta}</m>, <m>-\pi\leq\theta\leq\pi</m>
+							Sketch of the curve <m>x = e^t</m>, <m>y = e^{-2t}</m>, <m>-2\leq t\leq 4.75</m>
 						</description>
 						<latex-image>
 							<![CDATA[ 
-							
+								\begin{tikzpicture}
+									\begin{axis}[
+										axis x line = middle,
+											axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.1)}},
+											y label style={at={(axis description cs:0,1.1)},anchor=north},
+												ylabel = {$y$},
+													every axis x label/.style= {at ={(ticklabel cs:1)}},
+													x label style={at={(axis description cs:1.1,0)},anchor=east},
+													xlabel = {$x$},
+										xmin = 0, xmax = 5,
+										ymin = 0, ymax = 20,
+										trig format plots = rad
+										]		
+										\addplot[smooth, samples=100, domain=-2.:4.75] ({exp(x)},{exp(-2*x)});
+									\end{axis}
+								\end{tikzpicture}
 							]]>
 						</latex-image>
 					</image>
 					<p>
-						Eliminating the parameter gives
+						Eliminating the parameter gives <m>y=x^{-2}</m>
 					</p>
 				</solution>
 			</example>
@@ -481,7 +567,102 @@
 				</statement>
 				<solution>
 					<p>
-						
+						Make a table of values to help see the path of the curve. The curve begins at <m>(3,3)</m> and moves counterclockwise, creating a quarter circle of radius 2.
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Match the graphs of the parametric equations <m>x = f(t)</m> and <m>y = g(t)</m> in (a)-(d) with the parametric curves labeled I - IV.  Justify your response.
+					</p>
+					<image source="101_1.png">
+						<description>Description</description>
+					</image>
+				</statement>
+				<solution>
+					<p>
+						Some of these can be tricky.
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									Notice that the x-coordinate should begin at 1, move to 2, then back to 1. At the same time, the y-coordinate should start at 0, move to 1, back to 0, down to -1, and back to 0.
+								</p>
+								<p>
+									The only curve which keeps the x-coordinate positive is III, so this must be the answer.
+								</p>
+							</li>
+							<li>
+								<p>
+									The x-coordinate oscillates between 0, 2, and -2; the y coordinate does the same, but faster. Specifically, we're looking for 4 distinct positive and negative "strands" for the horizontal component, and 6 distinct strands for the vertical component. 
+								</p>
+								<p>
+									The graph which fits the description is I.
+								</p>
+							</li>
+							<li>
+								<p>
+									Notice here that the x-coordinate switches between positive and negative a few times, but the y-coordinate is non-negative, moving between 0 and 2. 
+								</p>
+								<p>
+									This makes IV the appropriate graph.
+								</p>
+							</li>
+							<li>
+								<p>
+									By elimination, d matches with II. But we can also see this by matching the behavior of the y-coordinate.
+								</p>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Develop a parametrization which traces out a circle three times in the time interval <m>0\leq t \leq \pi</m>.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						Answers vary, but the most straightforward answer is likely <m>x(t) = \cos(6t), y(t) = \sin(6t)</m>
+
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Compare the curves represented by the parametric equations given.  How do they differ?
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									<m>x = t^3</m>, <m>y = t^2</m>
+								</p>
+							</li>
+							<li>
+								<p>
+									<m>x = e^{-3t}</m>, <m>y =e^{-2t}</m>
+								</p>
+							</li>
+							<li>
+								<p>
+									<m>x = t^6</m>, <m>y = t^4</m>
+								</p>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						The graphs of (b) and (c) appear to be parametrized in such a way that the left branch of (a) is naturally excluded. The distinction between (b) and (c) is that it appears that (c) is traced out faster in time than (b).
 					</p>
 				</solution>
 			</example>
@@ -490,6 +671,169 @@
 
 	<subsection xml:id="section-101-afterclass">
 		<title>After Class Activities</title>
+			<example>
+				<statement>
+					<p>
+						Sketch the parametric curve <m>x = t^2</m>, <m>y = t^3</m>, and eliminate the parameter to find a Cartesian equation for the curve.
+					</p>
+				</statement>
+				<solution>
+					<image>
+						<description>
+							The curve <m>x = t^2</m>, <m>y = t^3</m> on the interval <m>[-2,2]</m>
+						</description>
+						<latex-image>
+							<![CDATA[ 
+								\begin{tikzpicture}
+									\begin{axis}[
+										axis x line = middle,
+											axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.1)}},
+											y label style={at={(axis description cs:.5,1.1)},anchor=north},
+												ylabel = {$y$},
+													every axis x label/.style= {at ={(ticklabel cs:1)}},
+													x label style={at={(axis description cs:1.1,.5)},anchor=east},
+													xlabel = {$x$},
+										xmin = -5, xmax = 5,
+										ymin = -5, ymax = 5,
+										trig format plots = rad
+										]		
+										\addplot[smooth, samples=100, domain=-2:2] ({x^2},{x^3});
+									\end{axis}
+								\end{tikzpicture}
+							]]>
+						</latex-image>
+					</image>
+					<p>
+						Eliminating the parameter gives <m>y=x^{3/2}</m>
+					</p>
+				</solution>
+			</example>
 
+			<example>
+				<statement>
+					<p>
+						Do the same thing for the curve <m>x = t^2</m>, <m>y = \ln t</m>
+					</p>
+				</statement>
+				<solution>
+					<image>
+						<description>
+							A sketch of the curve <m>x = t^2</m>, <m>y = \ln t</m> on <m>[-2,2]</m>
+						</description>
+						<latex-image>
+							<![CDATA[ 
+							\begin{tikzpicture}
+								\begin{axis}[
+									axis x line = middle,
+										axis y line = middle,
+										every axis y label/.style={at={(ticklabel cs:1.1)}},
+										y label style={at={(axis description cs:.5,1.1)},anchor=north},
+											ylabel = {$y$},
+												every axis x label/.style= {at ={(ticklabel cs:1)}},
+												x label style={at={(axis description cs:1.1,.5)},anchor=east},
+												xlabel = {$x$},
+									xmin = -5, xmax = 5,
+									ymin = -5, ymax = 5,
+									trig format plots = rad
+									]		
+									\addplot[smooth, samples=100, domain=-2:2] ({x^2},{ln(x)});
+								\end{axis}
+							\end{tikzpicture}
+							]]>		
+						</latex-image>
+					</image>
+					<p>
+						Eliminating the parameter gives <m>y= \dfrac{1}{2}\ln x</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Describe the motion of a particle with position <m>x = 2 + \sin t</m>, <m>y = 1 + 3\cos t</m> on the interval <m>\pi/2\leq t\leq 2\pi</m>.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						The particle traces an ellipse beginning at <m>(3,1)</m>, going clockwise, and ending at <m>(2,4)</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Compare the curves represented by the parametric equations below.  How do they differ?
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									<m>x = t</m>, <m>y = t^{-2}</m>
+								</p>
+							</li>
+							<li>
+								<p>
+									<m>x = \cos t</m>, <m>y = \sec t</m>
+								</p>
+							</li>
+							<li>
+								<p>
+									<m>x = e^t</m>, <m>y = e^{-2t}</m>
+								</p>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						Part (c) traces out only the right hand side of the graphs that (a) and (b) trace out, because of the natural domain restriction from the parametrization. (b) traces out the same curve as (a), but does so more slowly.
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						The graphs of <m>x = f(t)</m> and <m>y = g(t)</m> are given below.  Use the graphs to sketch the corresponding parametric curve; use arrows to indicate the direction in which the curve travels.
+					</p>
+					<image source="101_2.png">
+						<description>
+							<m>x(t) = t^2</m> on the left and <m>y(t)=-t</m>
+						</description>
+					</image>
+				</statement>
+				<solution>
+					<image>
+						<description>
+							A sketch of the curve <m>x(t)=t^2,y(t) = -t</m> on <m>[-2,2]</m>
+						</description>
+						<latex-image>
+							<![CDATA[ 
+								\begin{tikzpicture}
+									\begin{axis}[
+										axis x line = middle,
+											axis y line = middle,
+											every axis y label/.style={at={(ticklabel cs:1.1)}},
+											y label style={at={(axis description cs:.5,1.1)},anchor=north},
+												ylabel = {$y$},
+													every axis x label/.style= {at ={(ticklabel cs:1)}},
+													x label style={at={(axis description cs:1.1,.5)},anchor=east},
+													xlabel = {$x$},
+										xmin = -5, xmax = 5,
+										ymin = -5, ymax = 5,
+										trig format plots = rad
+										]		
+										\addplot[smooth, samples=100, domain=-2:2, decoration = {markings, mark=at position .25 with {\arrow{>>}}}, postaction={decorate}] ({x^2},{-x});
+
+									\end{axis}
+								\end{tikzpicture}
+							]]>
+						</latex-image>
+					</image>
+				</solution>
+			</example>
 	</subsection>
 </section>
