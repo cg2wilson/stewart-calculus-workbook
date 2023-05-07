@@ -11,17 +11,15 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h5 class="heading"><span class="type">Paragraph</span></h5>
-<div class="para logical"><ol class="lower-alpha">
-<li><div class="para">
-<span class="process-math">\(\ds \iint_D (y-3x)\, dA\text{,}\)</span> where <span class="process-math">\(D = \lrbrace{(x,y)\mid 1\leq y\leq 2, -1\leq x\leq 1}\)</span>
-</div></li>
-<li><div class="para">
-<span class="process-math">\(\ds \iint y\sin x\, dA\text{,}\)</span> where <span class="process-math">\(D\)</span> is the region bounded by <span class="process-math">\(y = 0\text{,}\)</span>  <span class="process-math">\(y = x^2\text{,}\)</span> and <span class="process-math">\(x= 1\text{.}\)</span>
-</div></li>
-<li><div class="para">
-<span class="process-math">\(\ds \iint xy\, dA\text{,}\)</span> where <span class="process-math">\(D\)</span> is the region enclosed by the quarter-circle <span class="process-math">\(y = \sqrt{1-x^2}\text{,}\)</span> <span class="process-math">\(x\geq 0\text{,}\)</span> and the coordinate axes.</div></li>
-</ol></div>
+<h6 class="heading"><span class="type">Paragraph</span></h6>
+<div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+\iint_R (x^2 + 2y^2)\, dA \amp = \int_0^1 \int_{y}^{y^{1/3}} (x^2 + 2y^2)\, dx\, dy\\
+\amp = \int_0^1 \lrpar{\dfrac{1}{3}y + \dfrac{2}{3}y^{7/3} - y^3}\, dy\\
+\amp = \lrpar{\dfrac{1}{6}y^2 + \dfrac{1}{5}y^{10/3} - \dfrac{1}{4}y^4}\bigg\rvert_0^1\\
+\amp = \dfrac{11}{60}
+\end{align*}
+</div></div>
 <span class="incontext"><a href="section-152.html#p-1341" class="internal">in-context</a></span>
 </body>
 </html>

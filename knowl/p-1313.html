@@ -12,7 +12,13 @@
 </head>
 <body class="ignore-math">
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<div class="para">Evaluate <span class="process-math">\(\ds \iint_D x^2y^2\, dA\text{,}\)</span> where <span class="process-math">\(D\)</span> is the region bounded by the curves <span class="process-math">\(y = x\)</span> and <span class="process-math">\(y^2 = x+6\text{.}\)</span>
+<div class="para logical">
+<div class="para">Since the bound (function) <span class="process-math">\(y = 4\)</span> is getting replaced by the bound (function) <span class="process-math">\(g_2(x) = -x^2+3x+2\text{,}\)</span> the integral must change to reflect the new upper bound:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{x=1}^{x=2} \int_{g_1(x) = x^2}^{g_2(x) = -x^2+3x+2} f(x,y)\, dx\, dy = \int_1^2\int_{x^2}^{-x^2+3x+2} f(x,y)\, dx\, dy
+\end{equation*}
+</div>
 </div>
 <span class="incontext"><a href="section-152.html#p-1313" class="internal">in-context</a></span>
 </body>

@@ -13,41 +13,38 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h5 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">15.3.2.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">15.2.6.1</span><span class="period">.</span>
 </h5>
 <div class="para logical"><ol class="lower-alpha">
-<li><div class="para logical">
-<div class="para">Begin by sketching the region. When we do this, we find that we can write</div>
-<div class="displaymath process-math">
-\begin{equation*}
-R = \lrbrace{(x,y)\mid 0\leq x\leq 1, 0\leq y\leq \sqrt{1-x^2}}
-\end{equation*}
-</div>
-<div class="para">This means we're looking at a Type I integral, which can be evaluated by computing</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\int_0^1\int_0^{\sqrt{1-x^2}} x^2 + 2y\, dy\, dx
-\end{equation*}
-</div>
-<div class="para">which gives <span class="process-math">\(\dfrac{\pi}{8} + \dfrac{4}{3}\)</span>
-</div>
-</div></li>
-<li><div class="para logical">
-<div class="para">Convering to a polar integral, we use the conversions <span class="process-math">\(x = r\cos\theta,y=r\sin\theta\text{.}\)</span> Doing that, we can set up the integral as</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\int_0^{\pi}\int_0^1 (r^2\cos^2\theta + 2r\sin\theta)\, r\, dr\,d\theta
-\end{equation*}
-</div>
-<div class="para">which still evaluates to <span class="process-math">\(\dfrac{\pi}{8} + \dfrac{4}{3}\)</span>
-</div>
-</div></li>
 <li>
-<div class="para">The answers vary here, but the most noticeable difference is likely in the computation; the Cartesian coordinate computation required careful use of trigonometric substitution and careful determination of the bounds, while the polar integration was a little more straightforward.</div>
-<div class="para">That difference ultimately comes from the shape of the region we're integrating over. Since the shape of the region is relatively simple to describe in polar coordinates, the integral is relatively more simple in polar coordinates than Cartesian coordinates.</div>
+<div class="para">For convenience, here is the sketch of <span class="process-math">\(R\)</span> again:</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-195.svg" role="img" class="contained" alt="A sketch of the region \(R\) as described in the problem."></div>
+<div class="para logical">
+<div class="para">As a Type II region, we need to express <span class="process-math">\(R\)</span> in the form</div>
+<div class="displaymath process-math">
+\begin{equation*}
+R = \lrbrace{(x,y)\mid c\leq y\leq d, h_1(y)\leq y\leq h_2(y)}
+\end{equation*}
+</div>
+</div>
+<div class="para">Rewriting as functions of <span class="process-math">\(y\text{,}\)</span> <span class="process-math">\(y = x^3\)</span> becomes <span class="process-math">\(x = \sqrt[3]{y}\)</span> and <span class="process-math">\(y = x\)</span> stays <span class="process-math">\(x = y\text{.}\)</span> Our upper function will be <span class="process-math">\(h_2(y) = \sqrt[3]{y}\)</span> and our lower function will be <span class="process-math">\(h_1(y) = y\text{.}\)</span>
+</div>
+<div class="para">For our <span class="process-math">\(y-\)</span>coordinate bounds, we still look at the intersection. There, the <span class="process-math">\(y-\)</span>coordinates are <span class="process-math">\(y = 0\)</span> and <span class="process-math">\(y = 1\text{.}\)</span>
+</div>
+</li>
+<li>
+<div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+\iint_R (x^2 + 2y^2)\, dA \amp = \int_0^1 \int_{y}^{y^{1/3}} (x^2 + 2y^2)\, dx\, dy\\
+\amp = \int_0^1 \lrpar{\dfrac{1}{3}y + \dfrac{2}{3}y^{7/3} - y^3}\, dy\\
+\amp = \lrpar{\dfrac{1}{6}y^2 + \dfrac{1}{5}y^{10/3} - \dfrac{1}{4}y^4}\bigg\rvert_0^1\\
+\amp = \dfrac{11}{60}
+\end{align*}
+</div></div>
+<div class="para">The work is similar but distinct. Since our bounds changed, the integral itself looks substantially different after the first integral. However, the answer is the same- which we would expect (and hope) since the region and function are the same.</div>
 </li>
 </ol></div>
 </div>
-<span class="incontext"><a href="section-153.html#solution-881" class="internal">in-context</a></span>
+<span class="incontext"><a href="section-152.html#solution-881" class="internal">in-context</a></span>
 </body>
 </html>

@@ -11,62 +11,12 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math"><div class="solution solution-like"><div class="para logical"><ol class="lower-alpha">
-<li><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-181.svg" role="img" class="contained" alt="A sketch of the region \(R\) described in the problem"></div></li>
+<li><div class="para">Since we're integrating with respect to <span class="process-math">\(y\text{,}\)</span> any and all <span class="process-math">\(x\)</span> terms are considered constant; so while the <span class="process-math">\(x\)</span> is treated as a number for the integration, the answer isn't necessarily a number- it could be a function of <span class="process-math">\(x\text{.}\)</span>
+</div></li>
+<li><div class="para">This computes the integral of a single-variable function- something like what we're used to. Now, this integral returns a strictly numerical value.</div></li>
 <li>
-<div class="para">The bounds are communicating <em class="alert">functions which define the region</em>.</div>
-<div class="para">Specifically, we can think of the bounds 1 and 2 as the functions <span class="process-math">\(a_1(y) = x=1\)</span> and <span class="process-math">\(a_2(y) = x=2\)</span> (which are functions of <span class="process-math">\(y\text{,}\)</span> so integrating with respect to <span class="process-math">\(y\)</span> makes sense). We can also think of 3 and 4 as the functions <span class="process-math">\(b_1(x) = y=3\)</span> and <span class="process-math">\(b_2(x) = y = 4\)</span> (which are functions of <span class="process-math">\(x\text{,}\)</span> so integrating with respect to <span class="process-math">\(x\)</span> makes sense).</div>
-<div class="para logical">
-<div class="para">This means we can rewrite the integral like this:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\int_1^2\int_3^4 f(x,y)\, dy\, dx = \int_{x=1}^{x=2}\int_{y=3}^{y=4}f(x,y)\, dy\, dx 
-\end{equation*}
-</div>
-</div>
-</li>
-<li>
-<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-182.svg" role="img" class="contained" alt="A sketch of the region \(R_1\) as described in the problem"></div>
-<div class="para logical">
-<div class="para">Since the bound (function) <span class="process-math">\(y = 3\)</span> is getting replaced by the bound (function) <span class="process-math">\(g_1(x) = x^2\text{,}\)</span> the integral must change to reflect the new lower bound:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\int_{x=1}^{x=2} \int_{g_1(x) = x^2}^{y = 4} f(x,y)\, dx\, dy = \int_1^2\int_{x^2}^4 f(x,y)\, dx\, dy
-\end{equation*}
-</div>
-</div>
-</li>
-<li>
-<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-183.svg" role="img" class="contained" alt="A sketch of the region \(R_1\) as described in the problem"></div>
-<div class="para logical">
-<div class="para">Since the bound (function) <span class="process-math">\(y = 4\)</span> is getting replaced by the bound (function) <span class="process-math">\(g_2(x) = -x^2+3x+2\text{,}\)</span> the integral must change to reflect the new upper bound:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\int_{x=1}^{x=2} \int_{g_1(x) = x^2}^{g_2(x) = -x^2+3x+2} f(x,y)\, dx\, dy = \int_1^2\int_{x^2}^{-x^2+3x+2} f(x,y)\, dx\, dy
-\end{equation*}
-</div>
-</div>
-</li>
-<li>
-<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-184.svg" role="img" class="contained" alt="A sketch of the region \(R_2\) as described in the problem"></div>
-<div class="para logical">
-<div class="para">Since the bound (function) <span class="process-math">\(x=1\)</span> is getting replaced by the bound (function) <span class="process-math">\(h_1(y) = 4-y\text{,}\)</span> the integral must change to reflect the new lower bound:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\int_{h_1(y) = 4-y}^{x=2}\int_{y=3}^{y=4} f(x,y)\, dx \, dy = \int_{4-y}^{2}\int_3^4 f(x,y)\, dx\, dy
-\end{equation*}
-</div>
-</div>
-</li>
-<li>
-<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-185.svg" role="img" class="contained" alt="A sketch of the region \(R_2\) as described in the problem"></div>
-<div class="para logical">
-<div class="para">Since the bound (function) <span class="process-math">\(x=2\)</span> is getting replaced by the bound (function) <span class="process-math">\(h_2(y) = y^2-4y+4\text{,}\)</span> the integral must change to reflect the new upper bound:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\int_{h_1(y) = y+1}^{h_2(y) = y^2-4y+4}\int_{y=1}^{y=2} f(x,y)\, dx \, dy = \int_{4-y}^{y^2-4y+4}\int_3^4 f(x,y)\, dx\, dy
-\end{equation*}
-</div>
-</div>
+<div class="para">In the first integral, we're integrating first with respect to <span class="process-math">\(x\)</span> in order to get a function of <span class="process-math">\(y\text{,}\)</span> then integrating with respect to <span class="process-math">\(y\)</span> in order to get a numerical value.</div>
+<div class="para">In the second integral, we're integrating first with respect to <span class="process-math">\(y\)</span> in order to get a function of <span class="process-math">\(x\text{,}\)</span> then integrating with respect to <span class="process-math">\(x\)</span> in order to get an numerical value.</div>
 </li>
 </ol></div></div></body>
 </html>

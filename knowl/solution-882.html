@@ -13,25 +13,25 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h5 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">15.3.3.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">15.2.7.1</span><span class="period">.</span>
 </h5>
-<div class="para">The region is sketched below:</div> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-193.svg" role="img" class="contained" alt="A sketch of the region given in the problem, the first-quadrant region between the circles \(x^2 + y^2 = 4\) and \(x^2 + y^2 = 1\text{.}\)"></div> <div class="para logical">
-<div class="para">Based on the region, we can write</div>
+<div class="para">The region <span class="process-math">\(D\)</span> is shown below:</div> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-196.svg" role="img" class="contained" alt="A sketch of the region \(D\) given in the problem."></div> <div class="para logical">
+<div class="para">If we try to treat this as a Type I region, we'll need to split into two integrals (corresponding to the two different lower bounds). So, instead treat <span class="process-math">\(D\)</span> as a Type II region:</div>
 <div class="displaymath process-math">
 \begin{equation*}
-R = \lrbrace{(r,\theta)\mid 1\leq r\leq 2, 0\leq \theta\leq \dfrac{\pi}{2}}
+D = \lrbrace{(x,y)\mid -2\leq y\leq 3, y^2-6\leq x \leq y}
 \end{equation*}
 </div>
-<div class="para">so the integral becomes</div>
+<div class="para">This gives the integral</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\int_0^{\pi/2}\int_1^2 (1-r^2\cos^2\theta)\, r\,dr\,d\theta
+\int_{-2}^3\int_{y^2-6}^{y} x^2y^2\, dx\, dy
 \end{equation*}
 </div>
-<div class="para">which evaluates to <span class="process-math">\(-\dfrac{3\pi}{16}\)</span>
+<div class="para">which evaluates to <span class="process-math">\(\dfrac{50375}{378}\)</span>
 </div>
 </div>
 </div>
-<span class="incontext"><a href="section-153.html#solution-882" class="internal">in-context</a></span>
+<span class="incontext"><a href="section-152.html#solution-882" class="internal">in-context</a></span>
 </body>
 </html>

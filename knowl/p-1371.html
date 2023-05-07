@@ -13,18 +13,21 @@
 <body class="ignore-math">
 <h6 class="heading"><span class="type">Paragraph</span></h6>
 <div class="para logical">
-<div class="para">Visually, we can represent <span class="process-math">\(\Delta A_i\)</span> as the difference between the sector areas of radius <span class="process-math">\(r_i\)</span> and <span class="process-math">\(r_{i-1}\text{.}\)</span> This means that</div>
+<div class="para">As written, the integral is Type II; as a Type I integral, the region is described by <span class="process-math">\(R = \lrbrace{(x,y)\mid 0\leq x\leq 1, 0\leq y\leq x}\text{.}\)</span> This means we can rewrite the integral as</div>
 <div class="displaymath process-math">
-\begin{align*}
-\Delta A_i &amp; = \dfrac{1}{2}r_i^2\Delta\theta - \dfrac{1}{2}r_{i-1}^2\Delta\theta\\
-&amp; = \dfrac{1}{2}\lrpar{r_{i-1}^2-r_i^2}\Delta\theta \\
-&amp; = \dfrac{1}{2}\lrpar{(r_{i-1}+r_i)(r_{i-1}-r_i)}\Delta\theta\\
-&amp; = \dfrac{1}{2} r_i^*\Delta r\Delta \theta 
-\end{align*}
+\begin{equation*}
+\int_0^1 \int_0^x \sec^2(x^2)\, dy\, dx
+\end{equation*}
 </div>
-<div class="para">So, we conclude that <span class="process-math">\(\Delta A_i = r_i^*\Delta r\Delta\theta\text{.}\)</span>
+<div class="para">Evaluating the first integral now gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_0^1 x\sec^2(x^2)\, dx
+\end{equation*}
+</div>
+<div class="para">which can be evaluated using substitution. This gives a value of <span class="process-math">\(\dfrac{1}{2}\tan(1)\text{.}\)</span>
 </div>
 </div>
-<span class="incontext"><a href="section-153.html#p-1371" class="internal">in-context</a></span>
+<span class="incontext"><a href="section-152.html#p-1371" class="internal">in-context</a></span>
 </body>
 </html>
