@@ -14,7 +14,7 @@
 		<title>Before Class</title>
 		<figure>
 			<caption>Pre-Class Video 1</caption>
-				url goes here
+				
 		</figure>
 		<figure>
 			<caption>Pre-Class Video 2</caption>
@@ -23,26 +23,500 @@
 
 		<subsubsection xml:id="section-102-tangents">
 			<title>Tangents</title>
+			
+			<assemblage>
+				<title>Derivative of a Parametric Curve</title>
+				<p>
+					If <m>x=f(t)</m> and <m>y = g(t)</m> are the parametric equations for a curve <m>C</m>, then the derivative <m>\dfrac{dy}{dx}</m> is given by
+					<me>
+						\dfrac{dy}{dx} = \dfrac{dy/dt}{dx/dt}
+					</me>
+					provided that <m>dx/dt \neq 0</m>
+				</p>
+			</assemblage>
 
+			<proof>
+				<p>
+					From the chain rule, 
+					<me>
+						\dfrac{dy}{dt} = \dfrac{dy}{dx}\cdot \dfrac{dx}{dt}
+					</me>
+					Rearranging gives the desired quantity.					
+				</p>
+			</proof>
+
+			<example>
+				<statement>
+					<p>
+						For the circle <m>x = \cos t</m>, <m>y = \sin t</m>, what is the rate of change when <m>\theta = \dfrac{\pi}{3}</m>?
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\dfrac{dy}{dx} = -\dfrac{1}{\sqrt{3}}</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						What is the general formula for the rate of change of an ellipse, whose parametrization is given by <m>x= a\cos t</m>, <m>y = b\sin t</m> (<m>0\leq t\leq 2\pi</m>)?
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\dfrac{dy}{dx} = -\dfrac{b}{a}\cot t</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find an equation for the tangent line to the curve <m>x = t^3 + 1</m>, <m>y = t^4 + t</m> at the point corresponding to the parameter value <m>t=-1</m>.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>y = -\dfrac{4}{3}x</m>
+					</p>
+				</solution>
+			</example>
+
+			<assemblage>
+				<title>Second Derivative of a Parametric Curve</title>
+				<p>
+					If <m>x = f(t)</m> and <m>y = g(t)</m> are the parametric equations for a curve <m>C</m> with derivative <m>\dfrac{dy}{dx}</m>, then the second derivative <m>\dfrac{d^2y}{dx^2}</m> is given by
+					<me>
+						\dfrac{d^2y}{dx^2} = \dfrac{\dfrac{d}{dt}(dy/dx)}{dx/dt}
+					</me>
+					Provided that <m>dx/dt \neq 0</m>
+				</p>
+			</assemblage>
+			<proof>
+				<p>
+					<md>
+						<mrow>\dfrac{d^2y}{dx^2} \amp = \dfrac{d}{dx}\lrpar{\dfrac{dy}{dx}} </mrow>
+						<mrow> \amp = \dfrac{\dfrac{d}{dt}(dy/dx)}{dx/dt} </mrow>
+					</md>
+				</p>
+			</proof>
+
+			<example>
+				<statement>
+					<p>
+						Find the value of the second derivative for the circle <m>x = \cos t</m>, <m>y=\sin t</m> when <m>\theta = \dfrac{\pi}{3}</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\dfrac{d^2y}{dx^2}\bigg\rvert_{t = \pi/3} = \dfrac{8}{3\sqrt{3}}</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Let <m>C</m> be a curve defined by the parametric equations <m>x = 2t^2</m>, <m>y = t^3-t</m>.
+						<ol marker="a">
+							<li>
+								<p>
+									Show that <m>C</m> has two tangents at the point <m>(2,0)</m> and find their equations
+								</p>
+							</li>
+							<li>
+								<p>
+									Find the points on <m>C</m> where the tangent is either horizontal or vertical
+								</p>
+							</li>
+							<li>
+								<p>
+									Determine when the curve is concave up or concave down
+								</p>
+							</li>
+							<li>
+								<p>
+									Sketch the curve using the information above
+								</p>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									At <m>t = \pm 1</m>, the curve passes through <m>(2,0)</m> so we know that the curve has up to two tangent lines at that point. Then, <m>\dfrac{dy}{dx} = \dfrac{3t^2-1}{4t}</m>; evaluating at <m>t = 1</m> gives <m>\dfrac{dy}{dx} = \dfrac{1}{2}</m> and at <m>t = -1</m> gives <m>\dfrac{dy}{dx} = -\dfrac{1}{2}</m>.
+								</p>
+								<p>
+									This gives the tangent lines <m>y = \dfrac{1}{2}(x-2)</m> and <m>y = -\dfrac{1}{2}(x-2)</m>
+								</p>
+							</li>
+							<li>
+								<p>
+									The tangent line is vertical when <m>4t = 0</m>, so when <m>t = 0</m>. This occurs at <m>(0,0)</m>. 
+								</p>
+								<p>
+									The tangent line is horizontal when <m>3t^2-1 = 0</m>, or at <m>t = \pm \dfrac{1}{\sqrt{3}}</m>. This gives two points, <m>\lrpar{\dfrac{2}{3}, - \dfrac{2}{3\sqrt{3}}}</m> and <m>\lrpar{-\dfrac{2}{3}, - \dfrac{2}{3\sqrt{3}}}</m>
+								</p>
+							</li>
+							<li>
+								<p>
+									Since <m>\dfrac{d^2y}{dx^2} = \dfrac{6t}{4t} = \dfrac{3}{2}</m>, the curve is always concave up.
+								</p>
+							</li>
+							<li>
+								<p>
+									<image>
+										<description>A sketch of the parametric curve on the interval <m>[-3,3]</m></description>
+										<latex-image>
+											<![CDATA[ 
+												\begin{tikzpicture}
+													\begin{axis}[
+													axis x line = middle,
+													axis y line = middle,
+														every axis y label/.style={at={(ticklabel cs:1.1)}},
+													y label style={at={(axis description cs:.5,1.1)},anchor=north},
+													ylabel = {$y$},
+														every axis x label/.style= {at ={(ticklabel cs:1)}},
+													x label style={at={(axis description cs:1.1,.5)},anchor=east},
+													xlabel = {$x$},
+													xmin=-3,xmax=3,
+													ymin=-2,ymax=2,
+													xtick = {-3,-2,-1,1,2,3},
+												ytick = {-2,-1,1,2},
+												]
+												\addplot [domain=-3:3,samples=50]({2*x^2},{x^3 - x}); 
+												\end{axis}
+											\end{tikzpicture}
+											]]>
+										</latex-image>
+									</image>
+								</p>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
 		</subsubsection>
 	</subsection>
 
 	<subsection xml:id="section-102-preclass">
 		<title>Pre-Class Activities</title>
+			<example>
+				<statement>
+					<p>
+						For the curve defined parametrically by <m>x = 1 + \sqrt{t}</m>, <m>y = e^{t^2}</m>, find an equation of the tangent line to the curve at the point <m>(2,e)</m>. Then, eliminate the parameter to find a Cartesian expression for the curve.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>y - e = 4e(x-2)</m> and <m>y = e^{(x-1)^2}</m>
+					</p>
+				</solution>
+			</example>
 
+			<example>
+				<statement>
+					<p>
+						For the following functions, find the first and second derivative.
+						<ol marker="a">
+							<li>
+								<p>
+									<m>x = t^3 + 1</m>, <m>y = t^2-t</m>
+								</p>
+							</li>
+							<li>
+								<p>
+									<m>x = t^2-1</m>, <m>y = e^t-1</m>
+								</p>
+							</li>
+							<li>
+								<p>
+									<m>x = \cos 2t</m>, <m>y = \sin t</m>, <m>0\lt t \lt \pi</m>
+								</p>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									<m>\dfrac{dy}{dx} = \dfrac{2t-1}{3t^2}</m>, <m>\dfrac{d^2y}{dx^2} = \dfrac{-6t^2 + 6t}{27t^6}</m>
+								</p>
+							</li>
+							<li>
+								<p>
+									<m>\dfrac{dy}{dx} = \dfrac{e^t}{2t}</m>, <m>\dfrac{d^2y}{dx^2} = \dfrac{2te^t - 2e^t}{8t^3}</m>
+								</p>
+							</li>
+							<li>
+								<p>
+									<m>\dfrac{dy}{dx} = -\dfrac{1}{4}\csc t</m>, <m>\dfrac{d^2y}{dx^2} = \dfrac{\dfrac{1}{4}\csc t\cot t}{-2\sin 2t}</m>
+								</p>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
 	</subsection>
 
 	<subsection xml:id="section-102-inclass">
 		<title>In Class</title>
+			
+			<example>
+				<statement>
+					<p>
+						When a circle rolls on a flat surface, a fixed point on the circle will trace out a curve called a cycloid.  The parametrization for a cycloid is given by <m>x = r(\theta - \sin\theta)</m>, <m>y = r(1-\cos\theta)</m>, where <m>r</m> is the radius of the circle.  
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									Does the value of the tangent depend on the radius of the circle?
+								</p>
+							</li>
+							<li>
+								<p>
+									Compute the slope of the tangent line when <m>\theta = \dfrac{\pi}{6}</m>.
+								</p>
+							</li>
+							<li>
+								<p>
+									At what points is the tangent horizontal? What about when it's vertical?
+								</p>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									No- <m>\dfrac{dy}{dx} = \dfrac{\sin\theta}{1-\cos\theta}</m>, which is independent of <m>r</m>
+								</p>
+							</li>
+							<li>
+								<p>
+									Slope is <m>dfrac{1/2}{1-\sqrt{3}/2}</m>
+								</p>
+							</li>
+							<li>
+								<p>
+									Tangent is vertical when <m>\theta = (2k-1)\pi</m> for <m>k\in \Z</m>and vertical for <m>\theta = 2k\pi</m> for <m>k\in \Z</m>
+								</p>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						At what point(s) on the curve <m>x = 3t^2 + 1</m>, <m>y = t^3-1</m> does the tangent line have slope exactly <m>\dfrac{1}{2}</m>?
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>t = 1</m>
+					</p>
+				</solution>
+			</example>
 
 		<subsubsection xml:id="section-102-areas">
 			<title>Areas</title>
 
+			<assemblage>
+				<title>Area Under a Parametric Curve</title>
+				<p>
+					Let <m>C</m> be a curve traved out exactly once by the parametric equation <m>x = f(t)</m> and <m>y = g(t)</m>. Then, the area under <m>C</m> between <m>x = a</m> and <m>x = b</m> is given by
+					<me>
+						A = \ds \int_a^b y\, dx = \int_\alpha^\beta g(t)f'(t)\, dt
+					</me>
+					or 
+					<me>
+						A = \ds \int_a^b x\, dy = \int_\alpha^\beta f(t)g'(t)\, dt \text{ as a function of }y
+					</me>
+					
+					where <m>\alpha \leq t \leq \beta</m> or <m>\beta \leq t \leq \alpha</m>, depending on direction of travel.
+				</p>
+			</assemblage>
+			<proof>
+				<p>
+					If <m>y = F(x)</m>, then the area is <m>A = \int_a^b F(x)\, dx = \int_a^b y\, dx</m>. In parametrics, <m>F(x) = g(t)</m> and <m>\dfrac{dx}{dt} = f'(t)\iff dx = f'(t)\, dt</m>. 
+				</p>
+				<p>
+					If <m>x = F(y)</m>, then the area is <m>A = \int_a^b F(y)\, dy = \int_a^b x\, dy</m>. In parametrics, <m>F(y) = f(t)</m> and <m>\dfrac{dy}{dt} = g'(t)\iff dy = g'(t)\, dt</m>
+				</p>
+			</proof>
+
+			<example>
+				<statement>
+					<p>
+						Use the parametrization <m>x = r\cos\theta</m>, <m>y = r\sin\theta</m> (<m>0\leq t\leq 2\pi</m>) to show that the (unsigned) area of a circle is exactly <m>\pi r^2</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						If <m>y = g(\theta) = r\sin\theta</m> and <m>x = f(\theta) = r\cos\theta</m>, then <m>f'(\theta) = -r\sin\theta</m>. For the entire circle, we will use <m>\alpha = 0\leq \theta \leq 2\pi = \beta</m>. Then, we have
+						<md>
+							<mrow> \ds \int_\alpha^\beta y\, dx \amp =  \ds \int_0^{2\pi} (r\sin\theta)(-r\sin\theta)\, d\theta</mrow>
+							<mrow> \amp = \ds -\int_0^{2\pi} r^2 \sin^2\theta\, d\theta  </mrow>
+							<mrow> \amp = \ds -r^2\int_0^{2\pi} \sin^2\theta\, d\theta  </mrow>
+							<mrow> \amp = -r^2\lrpar{\ds \dfrac{1}{2}x - \dfrac{1}{4}\sin 2x}\bigg\rvert_0^{2\pi} </mrow>
+							<mrow> \amp = -r^2\lrpar{\pi} </mrow>
+						</md>
+						So we conclude the unsigned area is <m>\pi r^2</m>. Naturally, if we want the positive version, we could reverse the direction of the parametrization.
+						
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Show that the area under one arch of the cycloid <m>x = r(\theta - \sin\theta)</m>, <m>y = r(1-\cos\theta)</m> is exactly three times the area of the generating circle.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						If <m>f(\theta) = r(\theta-\sin\theta)</m> and <m>g(\theta) = r(1-\cos\theta)</m>, then we have <m>f'(\theta) = r(1-\cos\theta)</m>. Our parametrization runs <m>0\leq \theta \leq 2\pi </m>, as each arch can be shown to be distance <m>2\pi r</m> from each other.
+						<md>
+							<mrow> \ds \int_\alpha^\beta y\, dx \amp \ds \int_0^{2\pi} r^2(1-\cos\theta)^2\, d\theta </mrow>
+							<mrow> \amp =  r^2\lrpar{\dfrac{1}{4}(6x-8\sin x + \sin 2x)}\bigg\rvert_0^{2\pi}</mrow>
+							<mrow> \amp = 3\pi r^2</mrow>
+						</md>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find the area enclosed by the curve <m>x = t^2-2t</m>, <m>y = \sqrt{t}</m>, and the <m>y-</m>axis.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>x = 0 \iff t = 0,2</m>. Then, we integrate with respect to <m>y</m> and note that <m>f(t) = t^2-2t</m>, <m>g(t) = \sqrt{t}</m> and <m>g'(t) = \dfrac{1}{2}t^{-1/2}</m>. So,
+						<md>
+							<mrow> \ds \int_\alpha^\beta x\, dy \amp = \ds \int_0^2 (t^2-2t)\lrpar{\dfrac{1}{2}t^{-1/2}}\, dt </mrow>
+							<mrow> \amp =  \ds \int_0^2 \dfrac{1}{2}t^{3/2} - t^{1/2}\, dt</mrow>
+							<mrow> \amp = \ds \lrpar{\dfrac{1}{5}t^{5/2} - \dfrac{2}{3}t^{3/2}}\bigg\rvert_0^2</mrow>
+							<mrow> \amp = \dfrac{4\sqrt{2}}{5} - \dfrac{4\sqrt{2}}{3}</mrow>
+						</md>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Use the parametric equations <m>x = a\sin\theta</m>, <m>y = b\cos\theta</m>, <m>0\leq \theta \leq 2\pi</m>, to show that the area contained in an ellipse is <m>\pi ab</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						The work is virtually identical to the unsigned area problem above; the difference is now that we have parameters <m>a,b</m> showing up.
+					</p>
+				</solution>
+			</example>
 		</subsubsection>
 
         <subsubsection xml:id="section-102-arclength">
 			<title>Arc Length</title>
+			
+			<assemblage>
+				<title>Arc Length of a Parametric Curve</title>
+				<p>
+					If a curve <m>C</m> is described by the parametric equations <m>x = f(t)</m>, <m>y = g(t)</m>, for <m>\alpha \leq t\leq \beta</m>, where <m>f'</m> and <m>g'</m> are continuous on <m>[\alpha,\beta]</m> and <m>C</m> is traversed exactly once as <m>t</m> ranges from <m>\alpha</m> to <m>\beta</m>, then the length of <m>C</m> is given by 
+					<me>
+						\ds L = \int_\alpha^\beta \sqrt{(f')^2 + (g')^2}\, dt
+					</me>
+				</p>
+			</assemblage>
 
+			<proof>
+				<p>
+					Adapt the proof for the arc length formula from Section 8.1; the Mean Value Theorem gives that <m>\Delta x_i = f'(t_i)\Delta t</m> and <m>\Delta y_i = g'(t_i)\Delta t</m> so that 
+					<me>
+						|P_{i-1}P_i| = \sqrt{(\Delta x_i)^2 + (\Delta y_i)^2} = \sqrt{(f'(t_i))^2 + (g'(t_i))^2}\Delta t
+					</me>
+					Pushing to the integral gives the result.
+				</p>
+			</proof>
+
+			<example>
+				<statement>
+					<p>
+						Find the length of one arch of the cycloid <m>x = r(\theta - \sin\theta)</m>, <m>y = r(1-\cos\theta)</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>f'(\theta) = r(1-\cos\theta)</m> and <m>g'(\theta) = r(\sin\theta)</m>, so 
+						<md>
+							<mrow> \ds \int_0^{2\pi} \sqrt{(r(1-\cos\theta))^2 + (r(\sin\theta))^2}\, d\theta \amp = \ds \int_0^{2\pi} r\sqrt{(1-\cos\theta)^2 + (\sin\theta)^2}\, d\theta </mrow>
+							<mrow> \amp = \ds \int_0^{2\pi} r\sqrt{2-2\cos\theta}\, d\theta</mrow>
+							<mrow> \amp = \ds \int_0^{2\pi} r\sqrt{4\sin^2\lrpar{\dfrac{\theta}{2}}}\, d\theta </mrow>
+							<mrow> \amp = \ds 2r \int_0^{2\pi} \sin\lrpar{\dfrac{\theta}{2}}\, d\theta</mrow>
+							<mrow> \amp  = \ds 2r \lrpar{-2\cos\lrpar{\dfrac{\theta}{2}}}\bigg\rvert_0^{2\pi}</mrow>
+							<mrow> \amp = 4r(1+1)</mrow>
+							<mrow> \amp = 8r</mrow>
+						</md>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Prove that the circumference of a circle of radius <m>r</m> is <m>2\pi r</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						Chose parametrization <m>x = r\cos 2\pi \theta</m>, <m>y = r\sin 2\pi\theta</m>. Then, <m>x' = -2\pi r\sin 2\pi\theta</m> and <m>y' = 2\pi r\cos 2\pi \theta</m> and 
+						<me>
+							\ds \int_0^1 \sqrt{(-2\pi r\sin 2\pi\theta)^2 + (2\pi r\cos 2\pi \theta)^2}\, d\theta = \int_0^1 2\pi r\, d\theta = 2\pi r 
+						</me>
+						
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find the exact length of the curve <m>x = 1+3t^2</m>, <m>y = 4+2t^3</m>, <m>0\leq t\leq 1</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\ds \int_0^1 6\sqrt{t^2 + t^4}\, dt = 4\sqrt{2} - 2</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find the exact length of the curve <m>x = e^t\cos t</m> and <m>y = e^t\sin t</m>, <m>0\leq t\leq \pi</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\int_0^1 \sqrt{(e^t\cos t -e^t\sin t)^2 + (e^t\cos t + e^t\sin t)^2}\, dt = \int_0^\pi \sqrt{2}e^t = \sqrt{2}(e^\pi - 1)</m>
+					</p>
+				</solution>
+			</example>
 		</subsubsection>
 	</subsection>
 
