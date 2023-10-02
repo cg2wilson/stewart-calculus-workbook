@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -10,5 +10,19 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><div class="solution solution-like"><div class="para"></div></div></body>
+<body class="ignore-math"><div class="solution solution-like"><div class="para logical">
+<div class="para">
+<span class="process-math">\(f'(\theta) = r(1-\cos\theta)\)</span> and <span class="process-math">\(g'(\theta) = r(\sin\theta)\text{,}\)</span> so</div>
+<div class="displaymath process-math">
+\begin{align*}
+\ds \int_0^{2\pi} \sqrt{(r(1-\cos\theta))^2 + (r(\sin\theta))^2}\, d\theta \amp = \ds \int_0^{2\pi} r\sqrt{(1-\cos\theta)^2 + (\sin\theta)^2}\, d\theta \\
+\amp = \ds \int_0^{2\pi} r\sqrt{2-2\cos\theta}\, d\theta\\
+\amp = \ds \int_0^{2\pi} r\sqrt{4\sin^2\lrpar{\dfrac{\theta}{2}}}\, d\theta \\
+\amp = \ds 2r \int_0^{2\pi} \sin\lrpar{\dfrac{\theta}{2}}\, d\theta\\
+\amp  = \ds 2r \lrpar{-2\cos\lrpar{\dfrac{\theta}{2}}}\bigg\rvert_0^{2\pi}\\
+\amp = 4r(1+1)\\
+\amp = 8r
+\end{align*}
+</div>
+</div></div></body>
 </html>

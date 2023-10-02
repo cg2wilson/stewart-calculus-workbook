@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -13,12 +13,15 @@
 <body class="ignore-math">
 <div class="displaymath process-math">
 \begin{align*}
-\Delta A_i &amp; = \dfrac{1}{2}r_i^2\Delta\theta - \dfrac{1}{2}r_{i-1}^2\Delta\theta\\
-&amp; = \dfrac{1}{2}\lrpar{r_{i-1}^2-r_i^2}\Delta\theta \\
-&amp; = \dfrac{1}{2}\lrpar{(r_{i-1}+r_i)(r_{i-1}-r_i)}\Delta\theta\\
-&amp; = \dfrac{1}{2} r_i^*\Delta r\Delta \theta 
+\ds \int_0^{2\pi} \sqrt{(r(1-\cos\theta))^2 + (r(\sin\theta))^2}\, d\theta \amp = \ds \int_0^{2\pi} r\sqrt{(1-\cos\theta)^2 + (\sin\theta)^2}\, d\theta \\
+\amp = \ds \int_0^{2\pi} r\sqrt{2-2\cos\theta}\, d\theta\\
+\amp = \ds \int_0^{2\pi} r\sqrt{4\sin^2\lrpar{\dfrac{\theta}{2}}}\, d\theta \\
+\amp = \ds 2r \int_0^{2\pi} \sin\lrpar{\dfrac{\theta}{2}}\, d\theta\\
+\amp  = \ds 2r \lrpar{-2\cos\lrpar{\dfrac{\theta}{2}}}\bigg\rvert_0^{2\pi}\\
+\amp = 4r(1+1)\\
+\amp = 8r
 \end{align*}
 </div>
-<span class="incontext"><a href="section-153.html#md-42" class="internal">in-context</a></span>
+<span class="incontext"><a href="section-102.html#md-42" class="internal">in-context</a></span>
 </body>
 </html>

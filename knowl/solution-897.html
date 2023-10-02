@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -13,31 +13,33 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h5 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">15.3.7.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">15.2.5.1</span><span class="period">.</span>
 </h5>
-<div class="para logical">
-<div class="para">After sketching the graph, we know that one leaf will occur between <span class="process-math">\(\theta = 0\)</span> and <span class="process-math">\(\theta = \dfrac{\pi}{3}\text{.}\)</span> Since the radius function is given by <span class="process-math">\(r = \sin 3\theta\text{,}\)</span> we'll use this as our upper bound and <span class="process-math">\(r = 0\)</span> for our lower bound. This gives the integral</div>
+<div class="para">Here is a sketch of <span class="process-math">\(R\text{:}\)</span>
+</div> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-198.svg" role="img" class="contained" alt="A sketch of the region \(R\) as described in the problem."></div> <div class="para logical">
+<div class="para">Since we’re treating <span class="process-math">\(R\)</span> as a Type I region, we need to find a description of the form</div>
 <div class="displaymath process-math">
 \begin{equation*}
-A = \int_0^{\pi/3}\int_0^{\sin 3\theta} 1\, r\, dr\, d\theta
+R = \lrbrace{(x,y)\mid a\leq x\leq b, g_1(x)\leq y\leq g_2(x)}
 \end{equation*}
 </div>
-<div class="para">Evaluating the first integral, we get</div>
+<div class="para">Based on the region, we can say that <span class="process-math">\(g_1(x) = x^3\)</span> and <span class="process-math">\(g_2(x) = x\text{.}\)</span> The <span class="process-math">\(x-\)</span>values must be <span class="process-math">\(x=0\)</span> and <span class="process-math">\(x = 1\)</span> since the curves intersect at those locations. This means our integral is set up as</div>
 <div class="displaymath process-math">
 \begin{equation*}
-A = \int_0^{\pi/3} \dfrac{1}{2}\sin^2 3\theta\, d\theta
+\int_0^1 \int_{x^3}^x (x^2 + 2y^2)\, dy\, dx
 \end{equation*}
 </div>
-<div class="para">Using the identity <span class="process-math">\(\sin^2\theta = \dfrac{1}{2}(1-\cos 2\theta)\text{,}\)</span> we rewrite as</div>
+</div> <div class="para logical">
+<div class="para">So we compute:</div>
 <div class="displaymath process-math">
-\begin{equation*}
-A = \int_0^{\pi/3} \dfrac{1}{4}(1-\cos 6\theta)\, d\theta
-\end{equation*}
+\begin{align*}
+\int_0^1 \int_{x^3}^x (x^2 + 2y^2)\, dy\, dx \amp = \int_0^1 \lrpar{x^2y + \dfrac{2}{3}y^3}\bigg\rvert_{x^3}^x\\
+\amp = \int_0^1 \lrpar{-\dfrac{2}{3}x^9 -x^5 +\dfrac{5}{3}x^3}\, dx\\
+\amp = \dfrac{11}{60}
+\end{align*}
 </div>
-<div class="para">which evaluates to <span class="process-math">\(\dfrac{\pi}{12}\)</span>
 </div>
 </div>
-</div>
-<span class="incontext"><a href="section-153.html#solution-897" class="internal">in-context</a></span>
+<span class="incontext"><a href="section-152.html#solution-897" class="internal">in-context</a></span>
 </body>
 </html>

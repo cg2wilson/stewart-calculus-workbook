@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -11,14 +11,21 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<article class="assemblage assemblage-like"><h5 class="heading"><span class="title">Single-Variable Integral in Polar Coordinates.</span></h5>
+<article class="assemblage assemblage-like"><h5 class="heading"><span class="title">Area Under a Parametric Curve.</span></h5>
 <div class="para logical">
-<div class="para">If the polar curve <span class="process-math">\(r(\theta)\)</span> is continous, then the area of the region bounded by the angles <span class="process-math">\(\alpha\)</span> and <span class="process-math">\(\beta\)</span> (<span class="process-math">\(0\leq \beta-\alpha\leq 2\pi\)</span>) is given by</div>
+<div class="para">Let <span class="process-math">\(C\)</span> be a curve traved out exactly once by the parametric equation <span class="process-math">\(x = f(t)\)</span> and <span class="process-math">\(y = g(t)\text{.}\)</span> Then, the area under <span class="process-math">\(C\)</span> between <span class="process-math">\(x = a\)</span> and <span class="process-math">\(x = b\)</span> is given by</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\int_{\alpha}^{\beta} \dfrac{1}{2}[r(\theta)]^2\, d\theta
+A = \ds \int_a^b y\, dx = \int_\alpha^\beta g(t)f'(t)\, dt
 \end{equation*}
 </div>
-</div></article><span class="incontext"><a href="section-153.html#assemblage-78" class="internal">in-context</a></span>
+<div class="para">or</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A = \ds \int_a^b x\, dy = \int_\alpha^\beta f(t)g'(t)\, dt \text{ as a function of }y
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(\alpha \leq t \leq \beta\)</span> or <span class="process-math">\(\beta \leq t \leq \alpha\text{,}\)</span> depending on direction of travel.</div>
+</div></article><span class="incontext"><a href="section-102.html#assemblage-78" class="internal">in-context</a></span>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -13,13 +13,23 @@
 <body class="ignore-math">
 <h6 class="heading"><span class="type">Paragraph</span></h6>
 <div class="para logical">
-<div class="para">Since the bound (function) <span class="process-math">\(x=2\)</span> is getting replaced by the bound (function) <span class="process-math">\(h_2(y) = y^2-4y+4\text{,}\)</span> the integral must change to reflect the new upper bound:</div>
+<div class="para">Then,</div>
+<div class="displaymath process-math">
+\begin{align*}
+\ds \iint (x-3y^2\, dA \amp\approx \sum_{i=1}^2\sum_{j=1}^2 f(\bar{x_i},\bar{y_j})\, \Delta A \\
+\amp = f(\bar{x_1},\bar{y_1})\Delta A + f(\bar{x_2},\bar{y_1})\Delta A + f(\bar{x_1},\bar{y_2})\Delta A + f(\bar{x_2},\bar{y_2})\Delta A \\
+\amp = f\lrpar{\dfrac{1}{2},\dfrac{5}{4}}\Delta A + f\lrpar{\dfrac{1}{2},\dfrac{7}{4}}\Delta A + f\lrpar{\dfrac{3}{2},\dfrac{5}{4}}\Delta A + f\lrpar{\dfrac{3}{2},\dfrac{7}{4}}\Delta A\\
+\amp = \lrpar{-\dfrac{67}{16}}\lrpar{\dfrac{1}{2}} + \lrpar{-\dfrac{139}{16}}\lrpar{\dfrac{1}{2}} + \lrpar{-\dfrac{51}{16}}\lrpar{\dfrac{1}{2}} + \lrpar{-\dfrac{123}{16}}\lrpar{\dfrac{1}{2}} \\
+\amp = -\dfrac{95}{8} 
+\end{align*}
+</div>
+<div class="para">So our conclusion is that</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\int_{h_1(y) = y+1}^{h_2(y) = y^2-4y+4}\int_{y=1}^{y=2} f(x,y)\, dx \, dy = \int_{4-y}^{y^2-4y+4}\int_3^4 f(x,y)\, dx\, dy
+\iint_R (x-3y^2)\, dA \approx -\dfrac{95}{8} = -11.875
 \end{equation*}
 </div>
 </div>
-<span class="incontext"><a href="section-152.html#p-1319" class="internal">in-context</a></span>
+<span class="incontext"><a href="section-151.html#p-1319" class="internal">in-context</a></span>
 </body>
 </html>

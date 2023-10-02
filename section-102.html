@@ -5,77 +5,102 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Calculus Workbook: Calculus with Parametric Curves</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
-<meta property="book:title" content="Workbook for Stewart's &quot;Calculus&quot;">
+<meta property="book:title" content='Workbook for Stewart’s "Calculus"'>
 <meta property="book:author" content="Cory Wilson">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js"></script><script src="https://pretextbook.org/js/0.2/pretext_search.js"></script><link href="https://pretextbook.org/css/0.6/pretext_search.css" rel="stylesheet" type="text/css">
-<script>js_version = 0.2</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.2/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.2/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.2/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
-<link href="https://pretextbook.org/css/0.6/pretext.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/pretext_add_on.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/shell_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/banner_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/navbar_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/toc_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/knowls_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/style_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/colors_blue_red.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/setcolors.css" rel="stylesheet" type="text/css">
 </head>
 <body class="pretext book ignore-math">
-<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
-<a id="logo-link" href=""></a><div class="title-container">
-<h1 class="heading"><a href="stewart-calculus-workbook.html"><span class="title">Workbook for Stewart's "Calculus"</span></a></h1>
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="stewart-calculus-workbook.html"><span class="title">Workbook for Stewart’s "Calculus"</span></a></h1>
 <p class="byline">Cory Wilson</p>
 </div>
-<div id="searchresultsplaceholder" style="display: none">
-<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" class="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms" class="searchterms"></span>
 </h2>
-<div id="searchempty"><span>No results.</span></div>
-<ol id="searchresults"></ol>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
 </div>
-</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="avatarbutton" class="avatarbutton name">You!</span><div id="preferences_menu_holder" class="preferences_menu_holder hidden"><ol id="preferences_menu" class="preferences_menu" style="font-family: 'Roboto Serif', serif;">
 <li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
 <ol class="hidden avatar">
 <li data-val="You!" tabindex="-1">
@@ -178,7 +203,7 @@ window.MathJax = {
 </ol>
 </li>
 </ol></div></button><span class="treebuttons"><a class="previous-button button" href="section-101.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="ch10.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="section-103.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
-<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
+<input id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" class="searchbutton" type="button" onclick="doSearch()">🔍</button>
 </div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(      \newcommand{\ds}{\displaystyle}
 \newcommand{\lrpar}[1]{\left(#1\right)}
 \newcommand{\lrbrace}[1]{\left\lbrace #1 \right\rbrace}
@@ -193,7 +218,7 @@ window.MathJax = {
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar"><nav id="ptx-toc" class="depth2"><ul class="structural">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural">
 <li><div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li>
 <div class="toc-item"><a href="ch1.html" class="internal"><span class="codenumber">1</span> <span class="title">Functions and Limits</span></a></div>
@@ -506,7 +531,7 @@ window.MathJax = {
 <li>
 <div class="toc-item"><a href="section-32.html#section-32-beforeclass" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Before Class</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="section-32.html#section-32-rolles" class="internal"><span class="codenumber">3.2.1.1</span> <span class="title">Rolle's Theorem</span></a></div></li>
+<li><div class="toc-item"><a href="section-32.html#section-32-rolles" class="internal"><span class="codenumber">3.2.1.1</span> <span class="title">Rolle’s Theorem</span></a></div></li>
 <li><div class="toc-item"><a href="section-32.html#section-32-mvt" class="internal"><span class="codenumber">3.2.1.2</span> <span class="title">Mean Value Theorem</span></a></div></li>
 </ul>
 </li>
@@ -571,7 +596,7 @@ window.MathJax = {
 <li><div class="toc-item"><a href="section-37.html#section-37-afterclass" class="internal"><span class="codenumber">3.7.4</span> <span class="title">After Class Activities</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="section-38.html" class="internal"><span class="codenumber">3.8</span> <span class="title">(X) Newton's Method</span></a></div></li>
+<li><div class="toc-item"><a href="section-38.html" class="internal"><span class="codenumber">3.8</span> <span class="title">(X) Newton’s Method</span></a></div></li>
 <li>
 <div class="toc-item"><a href="section-39.html" class="internal"><span class="codenumber">3.9</span> <span class="title">Antiderivatives</span></a></div>
 <ul class="structural">
@@ -822,11 +847,11 @@ window.MathJax = {
 </li>
 <li><div class="toc-item"><a href="section-67.html" class="internal"><span class="codenumber">6.7</span> <span class="title">(X) Hyperbolic Functions</span></a></div></li>
 <li>
-<div class="toc-item"><a href="section-68.html" class="internal"><span class="codenumber">6.8</span> <span class="title">Indeterminate Forms &amp; l'Hospital's Rule</span></a></div>
+<div class="toc-item"><a href="section-68.html" class="internal"><span class="codenumber">6.8</span> <span class="title">Indeterminate Forms &amp; l’Hospital’s Rule</span></a></div>
 <ul class="structural">
 <li>
 <div class="toc-item"><a href="section-68.html#section-68-beforeclass" class="internal"><span class="codenumber">6.8.1</span> <span class="title">Before Class</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="section-68.html#section-68-lhospital" class="internal"><span class="codenumber">6.8.1.1</span> <span class="title">l'Hospital's Rule</span></a></div></li></ul>
+<ul class="structural"><li><div class="toc-item"><a href="section-68.html#section-68-lhospital" class="internal"><span class="codenumber">6.8.1.1</span> <span class="title">l’Hospital’s Rule</span></a></div></li></ul>
 </li>
 <li><div class="toc-item"><a href="section-68.html#section-68-preclass" class="internal"><span class="codenumber">6.8.2</span> <span class="title">Pre-Class Activities</span></a></div></li>
 <li>
@@ -979,7 +1004,7 @@ window.MathJax = {
 <div class="toc-item"><a href="ch9.html" class="internal"><span class="codenumber">9</span> <span class="title">Differential Equations</span></a></div>
 <ul class="structural">
 <li><div class="toc-item"><a href="section-91.html" class="internal"><span class="codenumber">9.1</span> <span class="title">(X) Modeling with Differential Equations</span></a></div></li>
-<li><div class="toc-item"><a href="section-92.html" class="internal"><span class="codenumber">9.2</span> <span class="title">(X) Direction Fields and Euler's Method</span></a></div></li>
+<li><div class="toc-item"><a href="section-92.html" class="internal"><span class="codenumber">9.2</span> <span class="title">(X) Direction Fields and Euler’s Method</span></a></div></li>
 <li><div class="toc-item"><a href="section-93.html" class="internal"><span class="codenumber">9.3</span> <span class="title">(X) Separable Equations</span></a></div></li>
 <li><div class="toc-item"><a href="section-94.html" class="internal"><span class="codenumber">9.4</span> <span class="title">(X) Models for Population Growth</span></a></div></li>
 <li><div class="toc-item"><a href="section-95.html" class="internal"><span class="codenumber">9.5</span> <span class="title">(X) Linear Equations</span></a></div></li>
@@ -1824,11 +1849,11 @@ window.MathJax = {
 </ul>
 </li>
 <li>
-<div class="toc-item"><a href="section-164.html" class="internal"><span class="codenumber">16.4</span> <span class="title">Green's Theorem</span></a></div>
+<div class="toc-item"><a href="section-164.html" class="internal"><span class="codenumber">16.4</span> <span class="title">Green’s Theorem</span></a></div>
 <ul class="structural">
 <li>
 <div class="toc-item"><a href="section-164.html#section-164-beforeclass" class="internal"><span class="codenumber">16.4.1</span> <span class="title">Before Class</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="section-164.html#section-164-green" class="internal"><span class="codenumber">16.4.1.1</span> <span class="title">Green's Theorem</span></a></div></li></ul>
+<ul class="structural"><li><div class="toc-item"><a href="section-164.html#section-164-green" class="internal"><span class="codenumber">16.4.1.1</span> <span class="title">Green’s Theorem</span></a></div></li></ul>
 </li>
 <li><div class="toc-item"><a href="section-164.html#section-164-preclass" class="internal"><span class="codenumber">16.4.2</span> <span class="title">Pre-Class Activities</span></a></div></li>
 <li>
@@ -1853,7 +1878,7 @@ window.MathJax = {
 <div class="toc-item"><a href="section-165.html#section-165-inclass" class="internal"><span class="codenumber">16.5.3</span> <span class="title">In Class</span></a></div>
 <ul class="structural">
 <li><div class="toc-item"><a href="section-165.html#section-165-examples" class="internal"><span class="codenumber">16.5.3.1</span> <span class="title">Examples</span></a></div></li>
-<li><div class="toc-item"><a href="section-165.html#section-165-green" class="internal"><span class="codenumber">16.5.3.2</span> <span class="title">Vector Forms of Green's Theorem</span></a></div></li>
+<li><div class="toc-item"><a href="section-165.html#section-165-green" class="internal"><span class="codenumber">16.5.3.2</span> <span class="title">Vector Forms of Green’s Theorem</span></a></div></li>
 </ul>
 </li>
 <li><div class="toc-item"><a href="section-165.html#section-165-afterclass" class="internal"><span class="codenumber">16.5.4</span> <span class="title">After Class Activities</span></a></div></li>
@@ -1905,13 +1930,13 @@ window.MathJax = {
 </ul>
 </li>
 <li>
-<div class="toc-item"><a href="section-168.html" class="internal"><span class="codenumber">16.8</span> <span class="title">Stoke's Theorem</span></a></div>
+<div class="toc-item"><a href="section-168.html" class="internal"><span class="codenumber">16.8</span> <span class="title">Stoke’s Theorem</span></a></div>
 <ul class="structural">
 <li>
 <div class="toc-item"><a href="section-168.html#section-168-beforeclass" class="internal"><span class="codenumber">16.8.1</span> <span class="title">Before Class</span></a></div>
 <ul class="structural">
 <li><div class="toc-item"><a href="section-168.html#section-168-idea" class="internal"><span class="codenumber">16.8.1.1</span> <span class="title">The Idea</span></a></div></li>
-<li><div class="toc-item"><a href="section-168.html#section-168-stokes" class="internal"><span class="codenumber">16.8.1.2</span> <span class="title">Stoke's Theorem</span></a></div></li>
+<li><div class="toc-item"><a href="section-168.html#section-168-stokes" class="internal"><span class="codenumber">16.8.1.2</span> <span class="title">Stoke’s Theorem</span></a></div></li>
 </ul>
 </li>
 <li><div class="toc-item"><a href="section-168.html#section-168-preclass" class="internal"><span class="codenumber">16.8.2</span> <span class="title">Pre-Class Activities</span></a></div></li>
@@ -1952,26 +1977,324 @@ window.MathJax = {
 </h3>
 <figure class="figure figure-like" id="figure-72"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">72<span class="period">.</span></span><span class="space"> </span>Pre-Class Video 1</figcaption></figure><figure class="figure figure-like" id="figure-73"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">73<span class="period">.</span></span><span class="space"> </span>Pre-Class Video 2</figcaption></figure><section class="subsubsection" id="section-102-tangents"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span> <span class="codenumber">10.2.1.1</span> <span class="title">Tangents</span>
-</h4></section></section><section class="subsection" id="section-102-preclass"><h3 class="heading hide-type">
+</h4>
+<article class="assemblage assemblage-like" id="assemblage-76"><h5 class="heading"><span class="title">Derivative of a Parametric Curve.</span></h5>
+<div class="para logical" id="p-1204">
+<div class="para">If <span class="process-math">\(x=f(t)\)</span> and <span class="process-math">\(y = g(t)\)</span> are the parametric equations for a curve <span class="process-math">\(C\text{,}\)</span> then the derivative <span class="process-math">\(\dfrac{dy}{dx}\)</span> is given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\dfrac{dy}{dx} = \dfrac{dy/dt}{dx/dt}
+\end{equation*}
+</div>
+<div class="para">provided that <span class="process-math">\(dx/dt \neq 0\)</span>
+</div>
+</div></article><article class="hiddenproof" id="proof-10"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-10"><h5 class="heading"><span class="type">Proof<span class="period">.</span></span></h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-10"><article class="hiddenproof"><div class="para logical" id="p-1205">
+<div class="para">From the chain rule,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\dfrac{dy}{dt} = \dfrac{dy}{dx}\cdot \dfrac{dx}{dt}
+\end{equation*}
+</div>
+<div class="para">Rearranging gives the desired quantity.</div>
+</div></article></div>
+<article class="example example-like" id="example-846"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">10.2.1</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-1206">For the circle <span class="process-math">\(x = \cos t\text{,}\)</span> <span class="process-math">\(y = \sin t\text{,}\)</span> what is the rate of change when <span class="process-math">\(\theta = \dfrac{\pi}{3}\text{?}\)</span>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-861" id="solution-861"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-861"><div class="solution solution-like"><div class="para" id="p-1207"><span class="process-math">\(\dfrac{dy}{dx} = -\dfrac{1}{\sqrt{3}}\)</span></div></div></div>
+</div></article><article class="example example-like" id="example-847"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">10.2.2</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-1208">What is the general formula for the rate of change of an ellipse, whose parametrization is given by <span class="process-math">\(x= a\cos t\text{,}\)</span> <span class="process-math">\(y = b\sin t\)</span> (<span class="process-math">\(0\leq t\leq 2\pi\)</span>)?</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-862" id="solution-862"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-862"><div class="solution solution-like"><div class="para" id="p-1209"><span class="process-math">\(\dfrac{dy}{dx} = -\dfrac{b}{a}\cot t\)</span></div></div></div>
+</div></article><article class="example example-like" id="example-848"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">10.2.3</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-1210">Find an equation for the tangent line to the curve <span class="process-math">\(x = t^3 + 1\text{,}\)</span> <span class="process-math">\(y = t^4 + t\)</span> at the point corresponding to the parameter value <span class="process-math">\(t=-1\text{.}\)</span>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-863" id="solution-863"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-863"><div class="solution solution-like"><div class="para" id="p-1211"><span class="process-math">\(y = -\dfrac{4}{3}x\)</span></div></div></div>
+</div></article><article class="assemblage assemblage-like" id="assemblage-77"><h5 class="heading"><span class="title">Second Derivative of a Parametric Curve.</span></h5>
+<div class="para logical" id="p-1212">
+<div class="para">If <span class="process-math">\(x = f(t)\)</span> and <span class="process-math">\(y = g(t)\)</span> are the parametric equations for a curve <span class="process-math">\(C\)</span> with derivative <span class="process-math">\(\dfrac{dy}{dx}\text{,}\)</span> then the second derivative <span class="process-math">\(\dfrac{d^2y}{dx^2}\)</span> is given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\dfrac{d^2y}{dx^2} = \dfrac{\dfrac{d}{dt}(dy/dx)}{dx/dt}
+\end{equation*}
+</div>
+<div class="para">Provided that <span class="process-math">\(dx/dt \neq 0\)</span>
+</div>
+</div></article><article class="hiddenproof" id="proof-11"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-11"><h5 class="heading"><span class="type">Proof<span class="period">.</span></span></h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-11"><article class="hiddenproof"><div class="para logical" id="p-1213"><div class="displaymath process-math" id="md-38">
+\begin{align*}
+\dfrac{d^2y}{dx^2} \amp = \dfrac{d}{dx}\lrpar{\dfrac{dy}{dx}} \\
+\amp = \dfrac{\dfrac{d}{dt}(dy/dx)}{dx/dt} 
+\end{align*}
+</div></div></article></div>
+<article class="example example-like" id="example-849"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">10.2.4</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-1214">Find the value of the second derivative for the circle <span class="process-math">\(x = \cos t\text{,}\)</span> <span class="process-math">\(y=\sin t\)</span> when <span class="process-math">\(\theta = \dfrac{\pi}{3}\)</span>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-864" id="solution-864"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-864"><div class="solution solution-like"><div class="para" id="p-1215"><span class="process-math">\(\dfrac{d^2y}{dx^2}\bigg\rvert_{t = \pi/3} = \dfrac{8}{3\sqrt{3}}\)</span></div></div></div>
+</div></article><article class="example example-like" id="example-850"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">10.2.5</span><span class="period">.</span>
+</h5>
+<div class="para logical" id="p-1216">
+<div class="para">Let <span class="process-math">\(C\)</span> be a curve defined by the parametric equations <span class="process-math">\(x = 2t^2\text{,}\)</span> <span class="process-math">\(y = t^3-t\text{.}\)</span>
+</div>
+<ol class="lower-alpha">
+<li id="li-1417"><div class="para" id="p-1217">Show that <span class="process-math">\(C\)</span> has two tangents at the point <span class="process-math">\((2,0)\)</span> and find their equations</div></li>
+<li id="li-1418"><div class="para" id="p-1218">Find the points on <span class="process-math">\(C\)</span> where the tangent is either horizontal or vertical</div></li>
+<li id="li-1419"><div class="para" id="p-1219">Determine when the curve is concave up or concave down</div></li>
+<li id="li-1420"><div class="para" id="p-1220">Sketch the curve using the information above</div></li>
+</ol>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-865" id="solution-865"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-865"><div class="solution solution-like"><div class="para logical" id="p-1221"><ol class="lower-alpha">
+<li id="li-1421">
+<div class="para" id="p-1222">At <span class="process-math">\(t = \pm 1\text{,}\)</span> the curve passes through <span class="process-math">\((2,0)\)</span> so we know that the curve has up to two tangent lines at that point. Then, <span class="process-math">\(\dfrac{dy}{dx} = \dfrac{3t^2-1}{4t}\text{;}\)</span> evaluating at <span class="process-math">\(t = 1\)</span> gives <span class="process-math">\(\dfrac{dy}{dx} = \dfrac{1}{2}\)</span> and at <span class="process-math">\(t = -1\)</span> gives <span class="process-math">\(\dfrac{dy}{dx} = -\dfrac{1}{2}\text{.}\)</span>
+</div>
+<div class="para" id="p-1223">This gives the tangent lines <span class="process-math">\(y = \dfrac{1}{2}(x-2)\)</span> and <span class="process-math">\(y = -\dfrac{1}{2}(x-2)\)</span>
+</div>
+</li>
+<li id="li-1422">
+<div class="para" id="p-1224">The tangent line is vertical when <span class="process-math">\(4t = 0\text{,}\)</span> so when <span class="process-math">\(t = 0\text{.}\)</span> This occurs at <span class="process-math">\((0,0)\text{.}\)</span>
+</div>
+<div class="para" id="p-1225">The tangent line is horizontal when <span class="process-math">\(3t^2-1 = 0\text{,}\)</span> or at <span class="process-math">\(t = \pm \dfrac{1}{\sqrt{3}}\text{.}\)</span> This gives two points, <span class="process-math">\(\lrpar{\dfrac{2}{3}, - \dfrac{2}{3\sqrt{3}}}\)</span> and <span class="process-math">\(\lrpar{-\dfrac{2}{3}, - \dfrac{2}{3\sqrt{3}}}\)</span>
+</div>
+</li>
+<li id="li-1423"><div class="para" id="p-1226">Since <span class="process-math">\(\dfrac{d^2y}{dx^2} = \dfrac{6t}{4t} = \dfrac{3}{2}\text{,}\)</span> the curve is always concave up.</div></li>
+<li id="li-1424"><div class="para" id="p-1227"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-190.svg" role="img" class="contained" alt="A sketch of the parametric curve on the interval \([-3,3]\)"></div></div></li>
+</ol></div></div></div>
+</div></article></section></section><section class="subsection" id="section-102-preclass"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">10.2.2</span> <span class="title">Pre-Class Activities</span>
-</h3></section><section class="subsection" id="section-102-inclass"><h3 class="heading hide-type">
+</h3>
+<article class="example example-like" id="example-851"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">10.2.6</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-1228">For the curve defined parametrically by <span class="process-math">\(x = 1 + \sqrt{t}\text{,}\)</span> <span class="process-math">\(y = e^{t^2}\text{,}\)</span> find an equation of the tangent line to the curve at the point <span class="process-math">\((2,e)\text{.}\)</span> Then, eliminate the parameter to find a Cartesian expression for the curve.</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-866" id="solution-866"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-866"><div class="solution solution-like"><div class="para" id="p-1229">
+<span class="process-math">\(y - e = 4e(x-2)\)</span> and <span class="process-math">\(y = e^{(x-1)^2}\)</span>
+</div></div></div>
+</div></article><article class="example example-like" id="example-852"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">10.2.7</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="p-1230">
+<div class="para">For the following functions, find the first and second derivative.</div>
+<ol class="lower-alpha">
+<li id="li-1425"><div class="para" id="p-1231">
+<span class="process-math">\(x = t^3 + 1\text{,}\)</span> <span class="process-math">\(y = t^2-t\)</span>
+</div></li>
+<li id="li-1426"><div class="para" id="p-1232">
+<span class="process-math">\(x = t^2-1\text{,}\)</span> <span class="process-math">\(y = e^t-1\)</span>
+</div></li>
+<li id="li-1427"><div class="para" id="p-1233">
+<span class="process-math">\(x = \cos 2t\text{,}\)</span> <span class="process-math">\(y = \sin t\text{,}\)</span> <span class="process-math">\(0\lt t \lt \pi\)</span>
+</div></li>
+</ol>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-867" id="solution-867"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-867"><div class="solution solution-like"><div class="para logical" id="p-1234"><ol class="lower-alpha">
+<li id="li-1428"><div class="para" id="p-1235">
+<span class="process-math">\(\dfrac{dy}{dx} = \dfrac{2t-1}{3t^2}\text{,}\)</span> <span class="process-math">\(\dfrac{d^2y}{dx^2} = \dfrac{-6t^2 + 6t}{27t^6}\)</span>
+</div></li>
+<li id="li-1429"><div class="para" id="p-1236">
+<span class="process-math">\(\dfrac{dy}{dx} = \dfrac{e^t}{2t}\text{,}\)</span> <span class="process-math">\(\dfrac{d^2y}{dx^2} = \dfrac{2te^t - 2e^t}{8t^3}\)</span>
+</div></li>
+<li id="li-1430"><div class="para" id="p-1237">
+<span class="process-math">\(\dfrac{dy}{dx} = -\dfrac{1}{4}\csc t\text{,}\)</span> <span class="process-math">\(\dfrac{d^2y}{dx^2} = \dfrac{\dfrac{1}{4}\csc t\cot t}{-2\sin 2t}\)</span>
+</div></li>
+</ol></div></div></div>
+</div></article></section><section class="subsection" id="section-102-inclass"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">10.2.3</span> <span class="title">In Class</span>
 </h3>
-<section class="subsubsection" id="section-102-areas"><h4 class="heading hide-type">
+<article class="example example-like" id="example-853"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">10.2.8</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-1238">When a circle rolls on a flat surface, a fixed point on the circle will trace out a curve called a cycloid.  The parametrization for a cycloid is given by <span class="process-math">\(x = r(\theta - \sin\theta)\text{,}\)</span> <span class="process-math">\(y = r(1-\cos\theta)\text{,}\)</span> where <span class="process-math">\(r\)</span> is the radius of the circle.</div> <div class="para logical" id="p-1239"><ol class="lower-alpha">
+<li id="li-1431"><div class="para" id="p-1240">Does the value of the tangent depend on the radius of the circle?</div></li>
+<li id="li-1432"><div class="para" id="p-1241">Compute the slope of the tangent line when <span class="process-math">\(\theta = \dfrac{\pi}{6}\text{.}\)</span>
+</div></li>
+<li id="li-1433"><div class="para" id="p-1242">At what points is the tangent horizontal? What about when it’s vertical?</div></li>
+</ol></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-868" id="solution-868"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-868"><div class="solution solution-like"><div class="para logical" id="p-1243"><ol class="lower-alpha">
+<li id="li-1434"><div class="para" id="p-1244">No- <span class="process-math">\(\dfrac{dy}{dx} = \dfrac{\sin\theta}{1-\cos\theta}\text{,}\)</span> which is independent of <span class="process-math">\(r\)</span>
+</div></li>
+<li id="li-1435"><div class="para" id="p-1245">Slope is <span class="process-math">\(dfrac{1/2}{1-\sqrt{3}/2}\)</span>
+</div></li>
+<li id="li-1436"><div class="para" id="p-1246">Tangent is vertical when <span class="process-math">\(\theta = (2k-1)\pi\)</span> for <span class="process-math">\(k\in \Z\)</span>and vertical for <span class="process-math">\(\theta = 2k\pi\)</span> for <span class="process-math">\(k\in \Z\)</span>
+</div></li>
+</ol></div></div></div>
+</div></article><article class="example example-like" id="example-854"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">10.2.9</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-1247">At what point(s) on the curve <span class="process-math">\(x = 3t^2 + 1\text{,}\)</span> <span class="process-math">\(y = t^3-1\)</span> does the tangent line have slope exactly <span class="process-math">\(\dfrac{1}{2}\text{?}\)</span>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-869" id="solution-869"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-869"><div class="solution solution-like"><div class="para" id="p-1248"><span class="process-math">\(t = 1\)</span></div></div></div>
+</div></article><section class="subsubsection" id="section-102-areas"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span> <span class="codenumber">10.2.3.1</span> <span class="title">Areas</span>
-</h4></section><section class="subsubsection" id="section-102-arclength"><h4 class="heading hide-type">
+</h4>
+<article class="assemblage assemblage-like" id="assemblage-78"><h5 class="heading"><span class="title">Area Under a Parametric Curve.</span></h5>
+<div class="para logical" id="p-1249">
+<div class="para">Let <span class="process-math">\(C\)</span> be a curve traved out exactly once by the parametric equation <span class="process-math">\(x = f(t)\)</span> and <span class="process-math">\(y = g(t)\text{.}\)</span> Then, the area under <span class="process-math">\(C\)</span> between <span class="process-math">\(x = a\)</span> and <span class="process-math">\(x = b\)</span> is given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A = \ds \int_a^b y\, dx = \int_\alpha^\beta g(t)f'(t)\, dt
+\end{equation*}
+</div>
+<div class="para">or</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A = \ds \int_a^b x\, dy = \int_\alpha^\beta f(t)g'(t)\, dt \text{ as a function of }y
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(\alpha \leq t \leq \beta\)</span> or <span class="process-math">\(\beta \leq t \leq \alpha\text{,}\)</span> depending on direction of travel.</div>
+</div></article><article class="hiddenproof" id="proof-12"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-12"><h5 class="heading"><span class="type">Proof<span class="period">.</span></span></h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-12"><article class="hiddenproof"><div class="para" id="p-1250">If <span class="process-math">\(y = F(x)\text{,}\)</span> then the area is <span class="process-math">\(A = \int_a^b F(x)\, dx = \int_a^b y\, dx\text{.}\)</span> In parametrics, <span class="process-math">\(F(x) = g(t)\)</span> and <span class="process-math">\(\dfrac{dx}{dt} = f'(t)\iff dx = f'(t)\, dt\text{.}\)</span>
+</div> <div class="para" id="p-1251">If <span class="process-math">\(x = F(y)\text{,}\)</span> then the area is <span class="process-math">\(A = \int_a^b F(y)\, dy = \int_a^b x\, dy\text{.}\)</span> In parametrics, <span class="process-math">\(F(y) = f(t)\)</span> and <span class="process-math">\(\dfrac{dy}{dt} = g'(t)\iff dy = g'(t)\, dt\)</span>
+</div></article></div>
+<article class="example example-like" id="example-855"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">10.2.10</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-1252">Use the parametrization <span class="process-math">\(x = r\cos\theta\text{,}\)</span> <span class="process-math">\(y = r\sin\theta\)</span> (<span class="process-math">\(0\leq t\leq 2\pi\)</span>) to show that the (unsigned) area of a circle is exactly <span class="process-math">\(\pi r^2\)</span>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-870" id="solution-870"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-870"><div class="solution solution-like"><div class="para logical" id="p-1253">
+<div class="para">If <span class="process-math">\(y = g(\theta) = r\sin\theta\)</span> and <span class="process-math">\(x = f(\theta) = r\cos\theta\text{,}\)</span> then <span class="process-math">\(f'(\theta) = -r\sin\theta\text{.}\)</span> For the entire circle, we will use <span class="process-math">\(\alpha = 0\leq \theta \leq 2\pi = \beta\text{.}\)</span> Then, we have</div>
+<div class="displaymath process-math" id="md-39">
+\begin{align*}
+\ds \int_\alpha^\beta y\, dx \amp =  \ds \int_0^{2\pi} (r\sin\theta)(-r\sin\theta)\, d\theta\\
+\amp = \ds -\int_0^{2\pi} r^2 \sin^2\theta\, d\theta  \\
+\amp = \ds -r^2\int_0^{2\pi} \sin^2\theta\, d\theta  \\
+\amp = -r^2\lrpar{\ds \dfrac{1}{2}x - \dfrac{1}{4}\sin 2x}\bigg\rvert_0^{2\pi} \\
+\amp = -r^2\lrpar{\pi} 
+\end{align*}
+</div>
+<div class="para">So we conclude the unsigned area is <span class="process-math">\(\pi r^2\text{.}\)</span> Naturally, if we want the positive version, we could reverse the direction of the parametrization.</div>
+</div></div></div>
+</div></article><article class="example example-like" id="example-856"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">10.2.11</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-1254">Show that the area under one arch of the cycloid <span class="process-math">\(x = r(\theta - \sin\theta)\text{,}\)</span> <span class="process-math">\(y = r(1-\cos\theta)\)</span> is exactly three times the area of the generating circle.</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-871" id="solution-871"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-871"><div class="solution solution-like"><div class="para logical" id="p-1255">
+<div class="para">If <span class="process-math">\(f(\theta) = r(\theta-\sin\theta)\)</span> and <span class="process-math">\(g(\theta) = r(1-\cos\theta)\text{,}\)</span> then we have <span class="process-math">\(f'(\theta) = r(1-\cos\theta)\text{.}\)</span> Our parametrization runs <span class="process-math">\(0\leq \theta \leq 2\pi \text{,}\)</span> as each arch can be shown to be distance <span class="process-math">\(2\pi r\)</span> from each other.</div>
+<div class="displaymath process-math" id="md-40">
+\begin{align*}
+\ds \int_\alpha^\beta y\, dx \amp \ds \int_0^{2\pi} r^2(1-\cos\theta)^2\, d\theta \\
+\amp =  r^2\lrpar{\dfrac{1}{4}(6x-8\sin x + \sin 2x)}\bigg\rvert_0^{2\pi}\\
+\amp = 3\pi r^2
+\end{align*}
+</div>
+</div></div></div>
+</div></article><article class="example example-like" id="example-857"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">10.2.12</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-1256">Find the area enclosed by the curve <span class="process-math">\(x = t^2-2t\text{,}\)</span> <span class="process-math">\(y = \sqrt{t}\text{,}\)</span> and the <span class="process-math">\(y-\)</span>axis.</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-872" id="solution-872"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-872"><div class="solution solution-like"><div class="para logical" id="p-1257">
+<div class="para">
+<span class="process-math">\(x = 0 \iff t = 0,2\text{.}\)</span> Then, we integrate with respect to <span class="process-math">\(y\)</span> and note that <span class="process-math">\(f(t) = t^2-2t\text{,}\)</span> <span class="process-math">\(g(t) = \sqrt{t}\)</span> and <span class="process-math">\(g'(t) = \dfrac{1}{2}t^{-1/2}\text{.}\)</span> So,</div>
+<div class="displaymath process-math" id="md-41">
+\begin{align*}
+\ds \int_\alpha^\beta x\, dy \amp = \ds \int_0^2 (t^2-2t)\lrpar{\dfrac{1}{2}t^{-1/2}}\, dt \\
+\amp =  \ds \int_0^2 \dfrac{1}{2}t^{3/2} - t^{1/2}\, dt\\
+\amp = \ds \lrpar{\dfrac{1}{5}t^{5/2} - \dfrac{2}{3}t^{3/2}}\bigg\rvert_0^2\\
+\amp = \dfrac{4\sqrt{2}}{5} - \dfrac{4\sqrt{2}}{3}
+\end{align*}
+</div>
+</div></div></div>
+</div></article><article class="example example-like" id="example-858"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">10.2.13</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-1258">Use the parametric equations <span class="process-math">\(x = a\sin\theta\text{,}\)</span> <span class="process-math">\(y = b\cos\theta\text{,}\)</span> <span class="process-math">\(0\leq \theta \leq 2\pi\text{,}\)</span> to show that the area contained in an ellipse is <span class="process-math">\(\pi ab\)</span>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-873" id="solution-873"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-873"><div class="solution solution-like"><div class="para" id="p-1259">The work is virtually identical to the unsigned area problem above; the difference is now that we have parameters <span class="process-math">\(a,b\)</span> showing up.</div></div></div>
+</div></article></section><section class="subsubsection" id="section-102-arclength"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span> <span class="codenumber">10.2.3.2</span> <span class="title">Arc Length</span>
-</h4></section></section><section class="subsection" id="section-102-afterclass"><h3 class="heading hide-type">
+</h4>
+<article class="assemblage assemblage-like" id="assemblage-79"><h5 class="heading"><span class="title">Arc Length of a Parametric Curve.</span></h5>
+<div class="para logical" id="p-1260">
+<div class="para">If a curve <span class="process-math">\(C\)</span> is described by the parametric equations <span class="process-math">\(x = f(t)\text{,}\)</span> <span class="process-math">\(y = g(t)\text{,}\)</span> for <span class="process-math">\(\alpha \leq t\leq \beta\text{,}\)</span> where <span class="process-math">\(f'\)</span> and <span class="process-math">\(g'\)</span> are continuous on <span class="process-math">\([\alpha,\beta]\)</span> and <span class="process-math">\(C\)</span> is traversed exactly once as <span class="process-math">\(t\)</span> ranges from <span class="process-math">\(\alpha\)</span> to <span class="process-math">\(\beta\text{,}\)</span> then the length of <span class="process-math">\(C\)</span> is given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ds L = \int_\alpha^\beta \sqrt{(f')^2 + (g')^2}\, dt
+\end{equation*}
+</div>
+</div></article><article class="hiddenproof" id="proof-13"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-13"><h5 class="heading"><span class="type">Proof<span class="period">.</span></span></h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-13"><article class="hiddenproof"><div class="para logical" id="p-1261">
+<div class="para">Adapt the proof for the arc length formula from Section 8.1; the Mean Value Theorem gives that <span class="process-math">\(\Delta x_i = f'(t_i)\Delta t\)</span> and <span class="process-math">\(\Delta y_i = g'(t_i)\Delta t\)</span> so that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+|P_{i-1}P_i| = \sqrt{(\Delta x_i)^2 + (\Delta y_i)^2} = \sqrt{(f'(t_i))^2 + (g'(t_i))^2}\Delta t
+\end{equation*}
+</div>
+<div class="para">Pushing to the integral gives the result.</div>
+</div></article></div>
+<article class="example example-like" id="example-859"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">10.2.14</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-1262">Find the length of one arch of the cycloid <span class="process-math">\(x = r(\theta - \sin\theta)\text{,}\)</span> <span class="process-math">\(y = r(1-\cos\theta)\)</span>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-874" id="solution-874"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-874"><div class="solution solution-like"><div class="para logical" id="p-1263">
+<div class="para">
+<span class="process-math">\(f'(\theta) = r(1-\cos\theta)\)</span> and <span class="process-math">\(g'(\theta) = r(\sin\theta)\text{,}\)</span> so</div>
+<div class="displaymath process-math" id="md-42">
+\begin{align*}
+\ds \int_0^{2\pi} \sqrt{(r(1-\cos\theta))^2 + (r(\sin\theta))^2}\, d\theta \amp = \ds \int_0^{2\pi} r\sqrt{(1-\cos\theta)^2 + (\sin\theta)^2}\, d\theta \\
+\amp = \ds \int_0^{2\pi} r\sqrt{2-2\cos\theta}\, d\theta\\
+\amp = \ds \int_0^{2\pi} r\sqrt{4\sin^2\lrpar{\dfrac{\theta}{2}}}\, d\theta \\
+\amp = \ds 2r \int_0^{2\pi} \sin\lrpar{\dfrac{\theta}{2}}\, d\theta\\
+\amp  = \ds 2r \lrpar{-2\cos\lrpar{\dfrac{\theta}{2}}}\bigg\rvert_0^{2\pi}\\
+\amp = 4r(1+1)\\
+\amp = 8r
+\end{align*}
+</div>
+</div></div></div>
+</div></article><article class="example example-like" id="example-860"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">10.2.15</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-1264">Prove that the circumference of a circle of radius <span class="process-math">\(r\)</span> is <span class="process-math">\(2\pi r\)</span>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-875" id="solution-875"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-875"><div class="solution solution-like"><div class="para logical" id="p-1265">
+<div class="para">Chose parametrization <span class="process-math">\(x = r\cos 2\pi \theta\text{,}\)</span> <span class="process-math">\(y = r\sin 2\pi\theta\text{.}\)</span> Then, <span class="process-math">\(x' = -2\pi r\sin 2\pi\theta\)</span> and <span class="process-math">\(y' = 2\pi r\cos 2\pi \theta\)</span> and</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ds \int_0^1 \sqrt{(-2\pi r\sin 2\pi\theta)^2 + (2\pi r\cos 2\pi \theta)^2}\, d\theta = \int_0^1 2\pi r\, d\theta = 2\pi r 
+\end{equation*}
+</div>
+</div></div></div>
+</div></article><article class="example example-like" id="example-861"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">10.2.16</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-1266">Find the exact length of the curve <span class="process-math">\(x = 1+3t^2\text{,}\)</span> <span class="process-math">\(y = 4+2t^3\text{,}\)</span> <span class="process-math">\(0\leq t\leq 1\)</span>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-876" id="solution-876"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-876"><div class="solution solution-like"><div class="para" id="p-1267"><span class="process-math">\(\ds \int_0^1 6\sqrt{t^2 + t^4}\, dt = 4\sqrt{2} - 2\)</span></div></div></div>
+</div></article><article class="example example-like" id="example-862"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">10.2.17</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-1268">Find the exact length of the curve <span class="process-math">\(x = e^t\cos t\)</span> and <span class="process-math">\(y = e^t\sin t\text{,}\)</span> <span class="process-math">\(0\leq t\leq \pi\)</span>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-877" id="solution-877"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-877"><div class="solution solution-like"><div class="para" id="p-1269"><span class="process-math">\(\int_0^1 \sqrt{(e^t\cos t -e^t\sin t)^2 + (e^t\cos t + e^t\sin t)^2}\, dt = \int_0^\pi \sqrt{2}e^t = \sqrt{2}(e^\pi - 1)\)</span></div></div></div>
+</div></article></section></section><section class="subsection" id="section-102-afterclass"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">10.2.4</span> <span class="title">After Class Activities</span>
 </h3></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="section-101.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="section-103.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>
 </div>
-<div class="ptx-page-footer">
-<a class="pretext-link" href="https://pretextbook.org"><div class="name">Authored in PreTeXt</div>
-<div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259 "></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0  472  9732 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496 A 4241 4241  0  0  1  4724  3590 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259 A 4507 4507  0  0  1  4724  9448 "></path><polyline points="5385,4299 4062,8125 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8598,3496 8598,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="850,3496 850,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="4960,9685 4488,9685 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="3070,4582 1889,6141 3070,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="6418,4582 7600,6141 6418,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8976,3590 8976,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732 "></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy"><div class="name">Powered by Runestone</div>
-<img class="logo" title="Powered by Runestone" src="https://runestone.academy/runestone/static/rectangle_badge.png" alt="Powered by Runestone"></a><a class="mathjax-logo" href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
 </div>
 </body>
 </html>

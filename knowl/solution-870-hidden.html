@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -10,5 +10,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><div class="solution solution-like"><div class="para">The answer is same when the order of integration is changed</div></div></body>
+<body class="ignore-math"><div class="solution solution-like"><div class="para logical">
+<div class="para">If <span class="process-math">\(y = g(\theta) = r\sin\theta\)</span> and <span class="process-math">\(x = f(\theta) = r\cos\theta\text{,}\)</span> then <span class="process-math">\(f'(\theta) = -r\sin\theta\text{.}\)</span> For the entire circle, we will use <span class="process-math">\(\alpha = 0\leq \theta \leq 2\pi = \beta\text{.}\)</span> Then, we have</div>
+<div class="displaymath process-math">
+\begin{align*}
+\ds \int_\alpha^\beta y\, dx \amp =  \ds \int_0^{2\pi} (r\sin\theta)(-r\sin\theta)\, d\theta\\
+\amp = \ds -\int_0^{2\pi} r^2 \sin^2\theta\, d\theta  \\
+\amp = \ds -r^2\int_0^{2\pi} \sin^2\theta\, d\theta  \\
+\amp = -r^2\lrpar{\ds \dfrac{1}{2}x - \dfrac{1}{4}\sin 2x}\bigg\rvert_0^{2\pi} \\
+\amp = -r^2\lrpar{\pi} 
+\end{align*}
+</div>
+<div class="para">So we conclude the unsigned area is <span class="process-math">\(\pi r^2\text{.}\)</span> Naturally, if we want the positive version, we could reverse the direction of the parametrization.</div>
+</div></div></body>
 </html>

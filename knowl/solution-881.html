@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -13,38 +13,37 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h5 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">15.2.6.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">15.1.4.1</span><span class="period">.</span>
 </h5>
-<div class="para logical"><ol class="lower-alpha">
-<li>
-<div class="para">For convenience, here is the sketch of <span class="process-math">\(R\)</span> again:</div>
-<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-198.svg" role="img" class="contained" alt="A sketch of the region \(R\) as described in the problem."></div>
-<div class="para logical">
-<div class="para">As a Type II region, we need to express <span class="process-math">\(R\)</span> in the form</div>
+<div class="para">First determine what the region will look like. This is shown in the image below.</div> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-191.svg" role="img" class="contained" alt="The partition of \([0,3]\times[0,3]\) with \(n=m=3\text{;}\) this creates 9 squares. The sample points are noted at the corners, and each square is labeled \(R_{ij}\)"></div> <div class="para logical">
+<div class="para">We know that the volume is given by the approximation</div>
 <div class="displaymath process-math">
 \begin{equation*}
-R = \lrbrace{(x,y)\mid c\leq y\leq d, h_1(y)\leq y\leq h_2(y)}
+V\approx \sum_{i=1}^3\sum_{j=1}^3 f(x_{ij},y_{ij})\Delta x\Delta y
 \end{equation*}
 </div>
+<div class="para">which can be rewritten (without sigma notation) as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V\approx f(1,1)\Delta x\Delta y + f(1,2)\Delta x\Delta y + f(1,3)\Delta x\Delta y + f(2,1)\Delta x\Delta y + f(2,2)\Delta x\Delta y + f(2,3)\Delta x\Delta y + f(3,1)\Delta x\Delta y + f(3,2)\Delta x\Delta y + f(3,3)\Delta x\Delta y
+\end{equation*}
 </div>
-<div class="para">Rewriting as functions of <span class="process-math">\(y\text{,}\)</span> <span class="process-math">\(y = x^3\)</span> becomes <span class="process-math">\(x = \sqrt[3]{y}\)</span> and <span class="process-math">\(y = x\)</span> stays <span class="process-math">\(x = y\text{.}\)</span> Our upper function will be <span class="process-math">\(h_2(y) = \sqrt[3]{y}\)</span> and our lower function will be <span class="process-math">\(h_1(y) = y\text{.}\)</span>
+<div class="para">since <span class="process-math">\(\Delta x = \dfrac{3-0}{3} = 1\)</span> and <span class="process-math">\(\Delta y = \dfrac{3-0}{3} = 1\text{,}\)</span> <span class="process-math">\(\Delta x\Delta y = (1)(1) = 1\text{.}\)</span> This means the computation simplifies to</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V\approx f(1,1)(1) + f(1,2)(1) + f(1,3)(1) + f(2,1)(1) + f(2,2)(1) + f(2,3)(1) + f(3,1)(1) + f(3,2)(1) + f(3,3)(1)
+\end{equation*}
 </div>
-<div class="para">For our <span class="process-math">\(y-\)</span>coordinate bounds, we still look at the intersection. There, the <span class="process-math">\(y-\)</span>coordinates are <span class="process-math">\(y = 0\)</span> and <span class="process-math">\(y = 1\text{.}\)</span>
+<div class="para">Computing the values at the given points and substituting gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V\approx (1)(1) + (5)(1) + (10)(1) + (5)(1) + (8)(1) + (13)(1) + (10)(1) + (13)(1) + (18)(1)
+\end{equation*}
 </div>
-</li>
-<li>
-<div class="para logical"><div class="displaymath process-math">
-\begin{align*}
-\iint_R (x^2 + 2y^2)\, dA \amp = \int_0^1 \int_{y}^{y^{1/3}} (x^2 + 2y^2)\, dx\, dy\\
-\amp = \int_0^1 \lrpar{\dfrac{1}{3}y + \dfrac{2}{3}y^{7/3} - y^3}\, dy\\
-\amp = \lrpar{\dfrac{1}{6}y^2 + \dfrac{1}{5}y^{10/3} - \dfrac{1}{4}y^4}\bigg\rvert_0^1\\
-\amp = \dfrac{11}{60}
-\end{align*}
-</div></div>
-<div class="para">The work is similar but distinct. Since our bounds changed, the integral itself looks substantially different after the first integral. However, the answer is the same- which we would expect (and hope) since the region and function are the same.</div>
-</li>
-</ol></div>
+<div class="para">so that we have <span class="process-math">\(V\approx 84\)</span>
 </div>
-<span class="incontext"><a href="section-152.html#solution-881" class="internal">in-context</a></span>
+</div>
+</div>
+<span class="incontext"><a href="section-151.html#solution-881" class="internal">in-context</a></span>
 </body>
 </html>

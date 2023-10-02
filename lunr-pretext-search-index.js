@@ -3327,7 +3327,7 @@ var ptx_lunr_docs = [
   "url": "section-31.html",
   "type": "Section",
   "number": "3.1",
-  "title": "Maximum & Minimum Values",
+  "title": "Maximum &amp; Minimum Values",
   "body": " Maximum & Minimum Values    Define and identify absolute and local extrema graphically  State and describe the use of the Extreme Value Theorem and Fermat's Theorem; give examples of when these theorems fail and explain why they fail  Identify critical numbers of a function algebraically and graphically  Use the Closed Interval Method to identify absolute extrema on a closed, bounded interval     Before Class   Pre-Class Video 1     Pre-Class Video 2     Definitions   Absolute (Global) Extrema  Absolute Maximum  Global Minimum  Let be a number in the domain of a function . Then, is the absolute maximum value of on if for all ; is the absolute minimum value of on if for all .  Absolute maxima and minima are also called global maxima\/minima (or extrema).   Below are two graphs. Identify their absolute maxima\/minima, if any exist. Justify your responses.   The graph of on the interval      The graph of on the interval       In the first picture, the vertex is an absolute minimum. In the second, each peak ( ) is an absolute maximum, and each valley ( ) is an absolute minimum.    Local Max\/Min  Local Maximum  Local Minimum  The number is a local maximum value of if when is near . is a local minimum value of if when is near .   Estimate the inputs of any local or absolute extrema.  The graph of on the interval .       The graph of on the interval . Absolute and local extrema are marked and labeled on the graph.      Are local extrema automatically absolute extrema? Are absolute extrema automatically local extrema?  No, local extrema are not automatically absolute extrema. However, an absolute extremum can be a local extremum (as long as it doesn't occur at the endpoints)   Identify any local maxes, local mins, absolute maxes, or absolute mins on the graph below.   There are local maxima at , a local min at , an absolute max at , and an absolute min at      Important Results  In order to use maxima\/minima, some results will be helpful.   Extreme Value Theorem  If is continuous on a closed interval , then attains an absolute maximum value and an absolute minimum value at some numbers in .   Why does the extreme value theorem fail on an open interval?  Take the function on the interval . There is neither an absolute max nor an absolute min, since the function does not achieve the output at the expected max\/min.    Fermat's Theorem  If has a local maximum or minimum at , and if exists, then .   Is it true that if , then has a local max or min at ?  No. If , then but the function does not have a local extremum at 0.      Pre-Class Activities  Give the coordinates for the absolute and local extrema for the function given below.   The absolute max is at . There is no absolute min. There are local maxes at and , and local minima at and    Sketch the graph of a function that has two local maxima, one local minimum, and no absolute minimum.  Answers vary   Can we apply Fermat's Theorem to the function on the interval ? Why or why not?  No. is not differentiable at .   Can we apply the Extreme Value Theorem to the function on the interval ? Why or why not?  Yes. is continuous, so we may use the Theorem.     In Class   Critical Numbers   Critical Number\/Value\/Point  Critical Number  Critical Value  Critical Point  A critical number of a function is a number in the domain of such that either or does not exist. A critical value is the output at a critical input, namely . A critical point is the coordinate pair .   Find the critical number(s) of .  The critical numbers are .   Find the critical numbers of .  The critical number is .   For some function , its derivative is given by . How many critical numbers does have? What are they?   is certainly a critical number. If or are in the domain of , then they are critical numbers as well.   Find the critical numbers of .   for      Finding Absolute Maxima & Minima  In order to find absolute extrema on closed intervals, we need to find local extrema and compare the values against the endpoints. So, finding absolute maxima and minima comes down to the following process:  Find the critical numbers of on a closed interval .  Compute the output values at each critical number.  Compute the output values at the two endpoints.  Compare the results from #2 and #3. The biggest output is the absolute maximum, and the smallest output is the absolute minimum.    Locate the absolute extrema for on the interval .  The absolute max is and the absolute min is .   Locate the absolute extrema for on the interval .  The absolute maxes are at and , while the absolute minima are at and    Locate the absolute extrema for the function on .  The absolute maxes are at and , and the absolute min is at .   Find and classify the extrema of the function on .  The absolute max is at and the absolute min is at .      After Class Activities  If , find the absolute maximum and absolute minimium on the interval .  The absolute max is at and the absolute min is at    Find the critical numbers of the function       If are positive integers, find the maximum value of , for .  The max value is    Find the absolute maximum and absolute minimum of the function on .  The absolute max is at    Sketch the graph of a function with two local maxima, one local minimum, and no absolute minimum.  Answers vary    "
 },
 {
@@ -3435,7 +3435,7 @@ var ptx_lunr_docs = [
   "url": "section-31.html#theorem-15",
   "type": "Theorem",
   "number": "3.1.9",
-  "title": "Fermat's Theorem.",
+  "title": "Fermat’s Theorem.",
   "body": " Fermat's Theorem  If has a local maximum or minimum at , and if exists, then .  "
 },
 {
@@ -3624,7 +3624,7 @@ var ptx_lunr_docs = [
   "url": "section-32.html#theorem-16",
   "type": "Theorem",
   "number": "3.2.1",
-  "title": "Rolle's Theorem.",
+  "title": "Rolle’s Theorem.",
   "body": " Rolle's Theorem  Let be a function that satisfies the following three properties:   is continuous on the closed interval .   is differentiable on the open interval .   .  Then, there is some number in such that .  "
 },
 {
@@ -4101,7 +4101,7 @@ var ptx_lunr_docs = [
   "url": "section-34.html",
   "type": "Section",
   "number": "3.4",
-  "title": "Limits at Infinity & Horizontal Asymptotes",
+  "title": "Limits at Infinity &amp; Horizontal Asymptotes",
   "body": " Limits at Infinity & Horizontal Asymptotes    Explain what is meant by the notation and   Evaluate limits at infinity using numerical, algebraic, or graphical means  Define horizontal asymptotes and determine if a function has them graphically or algebraically     Before Class   Pre-Class Video 1     The Ideas  Sketch the graph of using the techniques of Section 3.3.  The graph should look like this:   This is the graph of      Limits at Infinity    Let be a function defined on some interval . Then means that the values of can be made arbitrarily close to by requiring to be sufficiently large.  If is defined on some interval , then means that the values of can be made arbitrarily close to by requiring to be sufficiently large negative.   We read the limits above (for ) as  the limit of , as approaches , is   the limit of as increases without bound, is   with the obvious changes for    Horizontal Asymptote  The line is called a horizontal asymptote of the curve if either    Write the horizontal asymptotes of the function          Pre-Class Activities  Write the horizontal asymptotes of the function .      Does the function have any horizontal asymptotes? If it does, give their equation. If it doesn't, explain why.  Yes,    The function has two horizontal asymptotes: and . Use limit notation to describe the horizontal asymptotes.        In Class   Computing Limits at Infinity  Think about and . What do you expect these limits to be? Why? What about , for some ?  Answers vary    Theorem  If is a rational number, then . If is a rational number such that is defined for all , then    Evaluate       Find the asymptotes of       Compute       Find the following limits, or argue why it doesn't exist:                            does not exist, since oscillates between and on its entire domain.           A function is a ratio of quadratic functions and has a vertical asymptote and just one intercept, . We know that has a removable discontinuity at , and that . Evaluate and find any horizontal asymptotes of .   and    Sketch the function using the methods of Section 3.3 and this section.    The graph of on the interval .         After Class Activities  Sketch the graph of a function that satisfies the conditions: , , , , , , for , for and for .  Answers vary   Find , if for all   3   A tank contains 5000 L of pure water. Brine containing 30 g of salt per liter of water is pumped into the tank at a rate of 25 L\/min. Write an expression for the concentration of salt after minutes (in grams per liter). What happens to the concentration as ?   . As , g\/L    "
 },
 {
@@ -4650,7 +4650,7 @@ var ptx_lunr_docs = [
   "url": "section-38.html",
   "type": "Section",
   "number": "3.8",
-  "title": "(X) Newton's Method",
+  "title": "(X) Newton’s Method",
   "body": " (X) Newton's Method  We don't cover this section, but feel free to read it!  "
 },
 {
@@ -4866,7 +4866,7 @@ var ptx_lunr_docs = [
   "url": "section-41.html",
   "type": "Section",
   "number": "4.1",
-  "title": "Areas & Distance",
+  "title": "Areas &amp; Distance",
   "body": " Areas & Distance    Compute Riemann sums to estimate area under a curve algebraically, graphically, or numerically; specifically, compute left and right rectangle approximations  Use summation\/sigma notation to write sums in a condensed way  Estimate distance traveled with a velocity function and connect the distance problem to the area problem     Before Class   Pre-Class Video 1     Pre-Class Video 2     The Area Problem   Consider the function on the interval .  Use four rectangles to approximate the area under the parabola from to ; start from the left endpoint, .  Left-rectangle approximiation for . Slide to see different approximations (hide the menu by pressing the arrows).     Now start from the right endpoint, , and use four rectangles to approximate the area under the parabola.  Right-rectangle approximiation for . Slide to see different approximations (hide the menu by pressing the arrows).                   Now use eight rectangles to approximate the area under from to , using both left and right endpoints. Compare your estimates to the previous two calculations.   and     What do you think would happen to our approximation of area if we used more rectangles?  We would get a better approximation.   Generically, the process we used above has the following steps:   Approximating Area Under a Curve    Determine the length of the interval  Divide the interval into equal subintervals  Find the area of each subinterval's rectangle  Sum the areas of the rectangles       If the interval we are concerned about is , and we are using rectangles to approximate the area, how could we write the base length of each individual rectangle? Denote the length by   Let . How could we express ? How about ? What about a generic , where ?  Let be the function value at . Using the previous two exercises, write an expression for , the sum of areas of our approximating rectangles.                  From this, we can generalize to two special situations.   Left Rectangle Approximation  The left rectangle approximation for the area under the curve on the interval (using rectangles) is given by or, in sigma notation, The th left rectangle approximation is denoted .    Right Rectangle Approximation  The right rectangle approximation for the area under the curve on the interval (using rectangles) is given by or, in sigma notation, The th right rectangle approximation is denoted .     Sigma Notation   Sigma notation is a shorthand way to write sums. For example, for the left-rectangle approximation , instead of writing we would write Here, refers to the starting index , and is called the ending index .     Pre-Class Activities   Consider .  Carefully sketch the graph of on the interval .  Find , and draw the rectangles on your sketch.  Express the sum from (b) in sigma notation.  Find , and draw the rectangles on your sketch.  Express the sum from (d) in sigma notation.        The graph of on the interval        Right-rectangle approximiation for . Slide to see different approximations (hide the menu by pressing the arrows).           Left-rectangle approximiation for . Slide to see different approximations (hide the menu by pressing the arrows).             Again, consider on   Resketch the graph of .  Find and include the rectangles on your sketch from (a). How do these rectangles compare to the rectangles?  Find and include the rectangles on your sketch from (a). How do these rectangles compare to the rectangles?        The graph of on the interval        Right-rectangle approximiation for . Slide to see different approximations (hide the menu by pressing the arrows).        Left-rectangle approximiation for . Slide to see different approximations (hide the menu by pressing the arrows).           In Class   For on , show that the sum of the areas of the upper approximating rectangles approaches , i.e. .  First, Now, to find , write as This means that So, the area of a single rectangle can be expressed as To find the area of a finite number of rectangles, we add these single rectangles: Since the summation is over the variable , we can use the formula to get Now, the area under the curve is found by taking infinitely many rectangles in the approximation. The way we can do that is by taking a limit: So we conclude the area is precisely     Area Under a Curve  Area The area of the region that lies under the graph of the continuous function is the limit of the sum of the areas of approximating rectangles: or    Let be the area of the region that lies under the graph of between and , where   Using left endpoints, find an expression for as a limit; do not evaluate the limit.  Estimate the area when by taking sample points to be midpoints and using four subintervals.                The expression gives the area of a region; describe such a region. Do not try to evaluate the limit .  One possible description is the function on the interval     The Distance Problem  Given constant velocity, we can use the formula distance velocity time to calculate the distance an object travels over a certain period of time.   Consider a moving car, with increasing velocity. The velocity was measured every two seconds, and the results collected in the table below.   Time (sec)  0  2  4  6  8  10    Velocity (ft\/s)  20  30  38  44  48  50     Find an upper estimate for the distance the car traveled in 10 seconds.  Find a lower estimate for the distance the car traveled in 10 seconds.      420 feet  360 feet      Roger is training for a marathon. His friend Jeff rides behind him on a bicycle and clocks his speed every 15 minutes. Roger starts out strong, but stops after an hour and a half.   Time elapsed(min)  0  15  30  45  60  75  90    Speed (mph)  12  11  10  10  8  7  0   Give upper and lower rectangle estimates for the distance Roger ran.  The upper distance is 14.5 miles and the lower distance is 11.5 miles.      After Class Activities   We showed that, for on , was the area under the curve. Show that as well. Use the fact that and that .  First, Now, to find , write as This means that So, the area of a single rectangle can be expressed as To find the area of a finite number of rectangles, we add these single rectangles: Since the summation is over the variable , we can use the formula to get Now, the area under the curve is found by taking infinitely many rectangles in the approximation. The way we can do that is by taking a limit: So we conclude the area is precisely     A stock car prototype is being tested. Over the course of one minute, its speed was recorded in ten-second intervals.   Time (sec)  0  10  20  30  40  50  60    Velocity (mi\/h)  182.9  168  106.6  99.8  124.5  176.1  175.6   Find upper and lower estimates for the distance traveled by the car in one minute.  The upper estimate is 2.59 miles and the lower estimate is 2.15 miles    If a curve measures the rate of change of some function, what is the explicit connection between the area under the curve on a given interval and the total change of the function on that interval?  The net area between the rate of change curve and the axis gives the total change of the function on the interval.    "
 },
 {
@@ -5586,7 +5586,7 @@ var ptx_lunr_docs = [
   "url": "section-44.html",
   "type": "Section",
   "number": "4.4",
-  "title": "Indefinite Integrals & the Net Change Theorem",
+  "title": "Indefinite Integrals &amp; the Net Change Theorem",
   "body": " Indefinite Integrals & the Net Change Theorem    Explain what is meant by an indefinite integral and use proper notation for definite\/indefinite integrals  Use the Net Change Theorem to interpret definite integrals arising from real-world contexts, including finding distance traveled or displacement     Before Class   Pre-Class Video 1     Indefinite Integrals   Indefinite Integral  Indefinite Integral  The indefinite integral is a family of functions such that or     Write the indefinite integral for          Give an explicit distinction between the definite integral and the indefinite integral.   The definite integral always returns a number while the indefinite integral always returns a function.     Useful Indefinite Integrals     Function  Indefinite Integral  Function  Indefinite Integral                                                                            Find the general indefinite integral for        Evaluate        Evaluate           Pre-Class Activities   Imagine that you are able to give your future self some advice, while you're studying. Looking back over the notes, how would you describe the difference between a definite integral and an indefinite integral to your future self?   Answers vary     Compute the following:                             In Class   The Net Change Theorem     In Section 4.1, how did we find the accumulated change of a function? Give an real-world example of how those techniques would be used.  In Section 4.3, we learned the Fundamental Theorem of Calculus. Rewrite FTC 2 here.       Answers vary  If is continuous on and is an antiderivative of on that interval, then        Net Change  The integral of a rate of change is the net change, i.e.:     What relationship(s) do you see between the Net Change Theorem and FTC 2?   We get the same result, but we are using different functions.     Displacement\/Distance  When talking about physical situations, the displacement of a particle is the net change of the particle's position, and the distance is the total change of the particle's position.    A particle moves along a line so that its velocity at time is m\/s.  Find the displacement of the particle during the time period   Find the distance traveled during this time period.        m   m       A particle moving along a line has velocity m\/s. Find the displacement and the total distance traveled by the particle between 1 and 4 seconds.   The displacement is m and the distance traveled is m      Practice  Find the general indefinite integral of         Find the general indefinite integral of         Find the general indefinite integral of         Find the general indefinite integral of         Find the general indefinite integral of         Evaluate the integral         Evaluate the integral         Evaluate the integral         Evaluate the integral         Evaluate the integral         A honeybee population starts with 100 bees and increases at a rate of bees per week. What does 100 + represent?   It gives the total number of bees after 15 weeks.    If is measured in meters and is measured in newtons, what are the units of ?   Newton meters    The acceleration function of a particle is m\/s , and its the initial velocity is 5 m\/s. Find the velocity at time , and the distance traveled between time and .   The velocity is and the particle travels m.       After Class Activities  Let . Find the indefinite integral and the definite integral on the interval .    and     If is the slope of a trail at a distance of miles from the start of the trail, what does represent?   The net change in height between 3 and 5 miles from the start of the trail.    The current in a wire is defined to be the derivative of charge, i.e. . What does represent?   The net change in charge between and     A particle moving along a line has acceleration given by . If , find the particle's velocity and distance traveled in the first three seconds of motion.    and the distance traveled is .     "
 },
 {
@@ -7044,7 +7044,7 @@ var ptx_lunr_docs = [
   "url": "section-62.html",
   "type": "Section",
   "number": "6.2",
-  "title": "Exponential Functions & Derivatives",
+  "title": "Exponential Functions &amp; Derivatives",
   "body": " Exponential Functions & Derivatives    Identify the general exponential function for any base and its basic properties (domain, range, graphical behavior depending on value of ), and apply rules of exponents to exponential functions  Evaluate limits of functions involving exponential expressions and analyze the end behavior of those functions  Sketch and identify transformations of exponential functions, especially as examples of exponential growth\/decay in real-world contexts  Recognize and interpret the number in terms of limits, derivatives, and geometry  Compute derivatives and antiderivatives of functions involving natural exponential expressions and use qualitative techniques to analyze key behavior of those functions (extrema, concavity, etc.)     Before Class   Pre-Class Video 1     Exponential Functions   Exponential Function  Exponential Function   An exponential function is a function of the form , where is a positive constant.     Properties of Exponential Functions  Let     Domain:   Range:   If , then is increasing  If , then is decreasing             For the following functions, find the limits and sketch the graph.                  and     A graph of the function         and     A graph of the function            Euler's Constant ( )   Euler's constant    is defined to the number for which       Calculus of Exponentials   Derivative of an Exponential (First Attempt)  If , then     Using the definition of the derivative, we have Now, So we conclude that    This means we have the following interpretation of :   Special Meaning of   is the unique exponential function whose tangent line at the point is exactly 1, i.e.     Derivative of       Antiderivative of         Pre-Class Activities    Write the domain of the function:                                  Find the indicated limit:                                  Find the derivative of the function:                                  Find the equation of the tangent line to the curve at the point .           Use this space to write any questions or concerns you have from the pre-class portion of this section.    Answers vary      In Class   Examples    Compute , if            Compute , if            Find if            Find the absolute maximum and absolute minimum of     Absolute max is at and there is no absolute min      Find , if            Compute the derivatives:                                  Find the absolute maximum and absolute minimum of on     Absolute max occurs at and aboslute min occurs at       Evaluate the integral:                                  Compute            Find if , , and            The error function , is a useful function in probability, statistics, and engineering. Show that .    Rearranging, we have So, and . Now, using properties of integrals, we have        After Class Activities    Show that the function satisfies the differential equation     Compute and :  Now, plugging in for and , we have which does equal 0.      Find an equation of the tangent line to the curve at the point            Compute            If , find            Evaluate            Find the volume of the solid obtained by rotating the region bounded by the curves , , , and about the axis.    The volume is      "
 },
 {
@@ -7089,7 +7089,7 @@ var ptx_lunr_docs = [
   "url": "section-62.html#definition-40",
   "type": "Definition",
   "number": "6.2.3",
-  "title": "Euler's Constant (<span class=\"process-math\">\\(e\\)<\/span>).",
+  "title": "Euler’s Constant (<span class=\"process-math\">\\(e\\)<\/span>).",
   "body": " Euler's Constant ( )   Euler's constant    is defined to the number for which    "
 },
 {
@@ -8178,7 +8178,7 @@ var ptx_lunr_docs = [
   "url": "section-68.html",
   "type": "Section",
   "number": "6.8",
-  "title": "Indeterminate Forms & l'Hospital's Rule",
+  "title": "Indeterminate Forms &amp; l’Hospital’s Rule",
   "body": " Indeterminate Forms & l'Hospital's Rule    Identify and distinguish between the following indeterminate forms: and explain why certain limits are of these forms  State l'Hospital's Rule and determine when it is appropriate to apply it and\/or appropriate strategies to limits of indeterminate forms     Before Class   Pre-Class Video 1     l'Hospital's Rule    In Calculus 1, you learned the Direct Substitution Property to compute limits. It says that if is a polynomial or rational function, and is in the domain of , then .    Consider this limit: . Why can we not use the Direct Substitution Property?  Rewrite the function so that you can use Direct Substitution, and then find the limit.        You get division by zero if you were to plug in 2.          Indeterminate Form (Type and  Indeterminate Form: and   An indeterminate form is a limit of the form , where either or       Each limit below is an indeterminate form. Classify it as Type or Type                                  l'Hospital's Rule  Let and be differentiable functions such that on an open interval that contains (except possibly at ). Suppose that the limit creates an indeterminate form of Type or . Then, if the limit on the right side exists, or is .     Use l'Hospital's Rule to compute the limits:                                  Show that     The expression is a indeterminate form, so we may use l'Hospital's Rule. Applying it gives Attempting to evaluate gives another indeterminate form, so applying l'Hospital's Rule again gives Again we have a indeterminate form, so apply the Rule a third time: Now we can resolve the limit as        Pre-Class Activities    Compute these limits; you may or may not need l'Hospital's Rule.                       ; l'Hospital's Rule is not needed, but may be used.   ; l'Hospital's Rule is required here.   ; l'Hospital's Rule may not be used here.   ; l'Hospital's Rule is required here.        In Class   Other Indeterminate Forms   Indeterminate Form (Type )  Indeterminate Form ( )   An indeterminate form of type  is a limit of the form , where and      Handling Type Indeterminate Forms  Rewrite as or      Find            Evaluate            Show that     We can verify that this is an indeterminate form of Type . Rewrite the limit as: Now applying l'Hospital's Rule, we have      Indeterminate Form (Type )  Indeterminate Form ( )  An indeterminant form of type  is a limit of the form , where      Compute            Find           Indeterminate Form (Types )  Indeterminate Form ( )   Consider the limit . This is an indeterminate form of :    Type if and   Type if and   Type if and        Handling Indeterminate Powers  If , set and take the limit     Compute            Find            Examples    Find the limits:                                                    The equation of the tangent line to at the point is , and the equation of the tangent line to at is . What is ?           If is continuous, , and , then find            For what values of and is the equation true?     and        After Class Activities    Compute the limits:                                       "
 },
 {
@@ -10104,7 +10104,7 @@ var ptx_lunr_docs = [
   "url": "section-92.html",
   "type": "Section",
   "number": "9.2",
-  "title": "(X) Direction Fields and Euler's Method",
+  "title": "(X) Direction Fields and Euler’s Method",
   "body": " (X) Direction Fields and Euler's Method  We don't cover this section, but feel free to read it!  "
 },
 {
@@ -10357,7 +10357,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "10.2",
   "title": "Calculus with Parametric Curves",
-  "body": " Calculus with Parametric Curves    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Tangents     Pre-Class Activities    In Class   Areas    Arc Length     After Class Activities   "
+  "body": " Calculus with Parametric Curves    To come     Before Class   Pre-Class Video 1    Pre-Class Video 2 url goes here   Tangents   Derivative of a Parametric Curve  If and are the parametric equations for a curve , then the derivative is given by provided that     From the chain rule, Rearranging gives the desired quantity.     For the circle , , what is the rate of change when ?           What is the general formula for the rate of change of an ellipse, whose parametrization is given by , ( )?           Find an equation for the tangent line to the curve , at the point corresponding to the parameter value .          Second Derivative of a Parametric Curve  If and are the parametric equations for a curve with derivative , then the second derivative is given by Provided that           Find the value of the second derivative for the circle , when            Let be a curve defined by the parametric equations , .   Show that has two tangents at the point and find their equations    Find the points on where the tangent is either horizontal or vertical    Determine when the curve is concave up or concave down    Sketch the curve using the information above          At , the curve passes through so we know that the curve has up to two tangent lines at that point. Then, ; evaluating at gives and at gives .  This gives the tangent lines and     The tangent line is vertical when , so when . This occurs at .  The tangent line is horizontal when , or at . This gives two points, and     Since , the curve is always concave up.      A sketch of the parametric curve on the interval             Pre-Class Activities    For the curve defined parametrically by , , find an equation of the tangent line to the curve at the point . Then, eliminate the parameter to find a Cartesian expression for the curve.     and       For the following functions, find the first and second derivative.    ,      ,      , ,            ,      ,      ,          In Class    When a circle rolls on a flat surface, a fixed point on the circle will trace out a curve called a cycloid. The parametrization for a cycloid is given by , , where is the radius of the circle.     Does the value of the tangent depend on the radius of the circle?    Compute the slope of the tangent line when .    At what points is the tangent horizontal? What about when it's vertical?          No- , which is independent of     Slope is     Tangent is vertical when for and vertical for for          At what point(s) on the curve , does the tangent line have slope exactly ?          Areas   Area Under a Parametric Curve  Let be a curve traved out exactly once by the parametric equation and . Then, the area under between and is given by or where or , depending on direction of travel.    If , then the area is . In parametrics, and .  If , then the area is . In parametrics, and      Use the parametrization , ( ) to show that the (unsigned) area of a circle is exactly     If and , then . For the entire circle, we will use . Then, we have So we conclude the unsigned area is . Naturally, if we want the positive version, we could reverse the direction of the parametrization.      Show that the area under one arch of the cycloid , is exactly three times the area of the generating circle.    If and , then we have . Our parametrization runs , as each arch can be shown to be distance from each other.       Find the area enclosed by the curve , , and the axis.     . Then, we integrate with respect to and note that , and . So,       Use the parametric equations , , , to show that the area contained in an ellipse is     The work is virtually identical to the unsigned area problem above; the difference is now that we have parameters showing up.      Arc Length   Arc Length of a Parametric Curve  If a curve is described by the parametric equations , , for , where and are continuous on and is traversed exactly once as ranges from to , then the length of is given by     Adapt the proof for the arc length formula from Section 8.1; the Mean Value Theorem gives that and so that Pushing to the integral gives the result.     Find the length of one arch of the cycloid ,      and , so       Prove that the circumference of a circle of radius is     Chose parametrization , . Then, and and       Find the exact length of the curve , ,            Find the exact length of the curve and ,             After Class Activities   "
 },
 {
   "id": "objectives-43",
@@ -10375,7 +10375,7 @@ var ptx_lunr_docs = [
   "type": "Figure",
   "number": "72",
   "title": "",
-  "body": " Pre-Class Video 1 url goes here "
+  "body": " Pre-Class Video 1  "
 },
 {
   "id": "figure-73",
@@ -10385,6 +10385,195 @@ var ptx_lunr_docs = [
   "number": "73",
   "title": "",
   "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "proof-10",
+  "level": "2",
+  "url": "section-102.html#proof-10",
+  "type": "Proof",
+  "number": "10.2.1.1.1",
+  "title": "",
+  "body": " From the chain rule, Rearranging gives the desired quantity.  "
+},
+{
+  "id": "example-846",
+  "level": "2",
+  "url": "section-102.html#example-846",
+  "type": "Example",
+  "number": "10.2.1",
+  "title": "",
+  "body": "  For the circle , , what is the rate of change when ?        "
+},
+{
+  "id": "example-847",
+  "level": "2",
+  "url": "section-102.html#example-847",
+  "type": "Example",
+  "number": "10.2.2",
+  "title": "",
+  "body": "  What is the general formula for the rate of change of an ellipse, whose parametrization is given by , ( )?        "
+},
+{
+  "id": "example-848",
+  "level": "2",
+  "url": "section-102.html#example-848",
+  "type": "Example",
+  "number": "10.2.3",
+  "title": "",
+  "body": "  Find an equation for the tangent line to the curve , at the point corresponding to the parameter value .        "
+},
+{
+  "id": "proof-11",
+  "level": "2",
+  "url": "section-102.html#proof-11",
+  "type": "Proof",
+  "number": "10.2.1.1.2",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "example-849",
+  "level": "2",
+  "url": "section-102.html#example-849",
+  "type": "Example",
+  "number": "10.2.4",
+  "title": "",
+  "body": "  Find the value of the second derivative for the circle , when         "
+},
+{
+  "id": "example-850",
+  "level": "2",
+  "url": "section-102.html#example-850",
+  "type": "Example",
+  "number": "10.2.5",
+  "title": "",
+  "body": "  Let be a curve defined by the parametric equations , .   Show that has two tangents at the point and find their equations    Find the points on where the tangent is either horizontal or vertical    Determine when the curve is concave up or concave down    Sketch the curve using the information above          At , the curve passes through so we know that the curve has up to two tangent lines at that point. Then, ; evaluating at gives and at gives .  This gives the tangent lines and     The tangent line is vertical when , so when . This occurs at .  The tangent line is horizontal when , or at . This gives two points, and     Since , the curve is always concave up.      A sketch of the parametric curve on the interval         "
+},
+{
+  "id": "example-851",
+  "level": "2",
+  "url": "section-102.html#example-851",
+  "type": "Example",
+  "number": "10.2.6",
+  "title": "",
+  "body": "  For the curve defined parametrically by , , find an equation of the tangent line to the curve at the point . Then, eliminate the parameter to find a Cartesian expression for the curve.     and    "
+},
+{
+  "id": "example-852",
+  "level": "2",
+  "url": "section-102.html#example-852",
+  "type": "Example",
+  "number": "10.2.7",
+  "title": "",
+  "body": "  For the following functions, find the first and second derivative.    ,      ,      , ,            ,      ,      ,       "
+},
+{
+  "id": "example-853",
+  "level": "2",
+  "url": "section-102.html#example-853",
+  "type": "Example",
+  "number": "10.2.8",
+  "title": "",
+  "body": "  When a circle rolls on a flat surface, a fixed point on the circle will trace out a curve called a cycloid. The parametrization for a cycloid is given by , , where is the radius of the circle.     Does the value of the tangent depend on the radius of the circle?    Compute the slope of the tangent line when .    At what points is the tangent horizontal? What about when it's vertical?          No- , which is independent of     Slope is     Tangent is vertical when for and vertical for for       "
+},
+{
+  "id": "example-854",
+  "level": "2",
+  "url": "section-102.html#example-854",
+  "type": "Example",
+  "number": "10.2.9",
+  "title": "",
+  "body": "  At what point(s) on the curve , does the tangent line have slope exactly ?        "
+},
+{
+  "id": "proof-12",
+  "level": "2",
+  "url": "section-102.html#proof-12",
+  "type": "Proof",
+  "number": "10.2.3.1.1",
+  "title": "",
+  "body": " If , then the area is . In parametrics, and .  If , then the area is . In parametrics, and   "
+},
+{
+  "id": "example-855",
+  "level": "2",
+  "url": "section-102.html#example-855",
+  "type": "Example",
+  "number": "10.2.10",
+  "title": "",
+  "body": "  Use the parametrization , ( ) to show that the (unsigned) area of a circle is exactly     If and , then . For the entire circle, we will use . Then, we have So we conclude the unsigned area is . Naturally, if we want the positive version, we could reverse the direction of the parametrization.   "
+},
+{
+  "id": "example-856",
+  "level": "2",
+  "url": "section-102.html#example-856",
+  "type": "Example",
+  "number": "10.2.11",
+  "title": "",
+  "body": "  Show that the area under one arch of the cycloid , is exactly three times the area of the generating circle.    If and , then we have . Our parametrization runs , as each arch can be shown to be distance from each other.    "
+},
+{
+  "id": "example-857",
+  "level": "2",
+  "url": "section-102.html#example-857",
+  "type": "Example",
+  "number": "10.2.12",
+  "title": "",
+  "body": "  Find the area enclosed by the curve , , and the axis.     . Then, we integrate with respect to and note that , and . So,    "
+},
+{
+  "id": "example-858",
+  "level": "2",
+  "url": "section-102.html#example-858",
+  "type": "Example",
+  "number": "10.2.13",
+  "title": "",
+  "body": "  Use the parametric equations , , , to show that the area contained in an ellipse is     The work is virtually identical to the unsigned area problem above; the difference is now that we have parameters showing up.   "
+},
+{
+  "id": "proof-13",
+  "level": "2",
+  "url": "section-102.html#proof-13",
+  "type": "Proof",
+  "number": "10.2.3.2.1",
+  "title": "",
+  "body": " Adapt the proof for the arc length formula from Section 8.1; the Mean Value Theorem gives that and so that Pushing to the integral gives the result.  "
+},
+{
+  "id": "example-859",
+  "level": "2",
+  "url": "section-102.html#example-859",
+  "type": "Example",
+  "number": "10.2.14",
+  "title": "",
+  "body": "  Find the length of one arch of the cycloid ,      and , so    "
+},
+{
+  "id": "example-860",
+  "level": "2",
+  "url": "section-102.html#example-860",
+  "type": "Example",
+  "number": "10.2.15",
+  "title": "",
+  "body": "  Prove that the circumference of a circle of radius is     Chose parametrization , . Then, and and    "
+},
+{
+  "id": "example-861",
+  "level": "2",
+  "url": "section-102.html#example-861",
+  "type": "Example",
+  "number": "10.2.16",
+  "title": "",
+  "body": "  Find the exact length of the curve , ,         "
+},
+{
+  "id": "example-862",
+  "level": "2",
+  "url": "section-102.html#example-862",
+  "type": "Example",
+  "number": "10.2.17",
+  "title": "",
+  "body": "  Find the exact length of the curve and ,         "
 },
 {
   "id": "section-103",
@@ -11548,27 +11737,27 @@ var ptx_lunr_docs = [
   "body": "  Now let be a function defined on the rectangle . How could we extend the definition of the definite integral to a function of two variables?    Since we are operating in three dimensions now, we can take the same idea and instead of using rectangles, we can use rectangular prisms to approximate.  However, since we're in three dimensions, we're not approximating area anymore; we're approximating volume.   "
 },
 {
-  "id": "example-846",
+  "id": "example-863",
   "level": "2",
-  "url": "section-151.html#example-846",
+  "url": "section-151.html#example-863",
   "type": "Example",
   "number": "15.1.3",
   "title": "",
   "body": "  This example will develop the definition of the definite integral for a function . Let be defined on the region given by and let be the solid that lies above and under the graph of :      What kind of object can we use to approximate the volume of ? What sort of expression do we need to approximate the volume?    Can we improve the approximation? How?    Is there a way of converting from an approximation to an exact answer? How?    The definition of the double integral is then:          We can use rectangular prisms to approximate volume. We need to create a similar expression to this one:   Subdivide into rectangles; in the direction, make the length , where is the number of subintervals in the direction. In the direction, make the length , where is the number of subintervals in the direction.  Let be the midpoint of the rectangle (that is, the rectangle steps horizontally and steps vertically). The value gives the output on the surface which is precisely the height of the prism.  So, the volume of an individual prism is given by the product of length ( ), width ( ), and height ( ). This gives the approximation   To find the volume of the entire region, we need to add up the volume of each rectangle . Since there are two indices, we have to have two summations. This gives us the expression     We can improve the approximation by using more and more rectangles, and creating more and more subdivisions by increasing and .    Yes; take the limit as and as .           "
 },
 {
-  "id": "example-847",
+  "id": "example-864",
   "level": "2",
-  "url": "section-151.html#example-847",
+  "url": "section-151.html#example-864",
   "type": "Example",
   "number": "15.1.4",
   "title": "",
   "body": "  Approximate the volume of the solid that lies above the square and below the surface .  Divide into three equal squares and choose the sample point to be the upper right corner of each square .    First determine what the region will look like. This is shown in the image below.   The partition of with ; this creates 9 squares. The sample points are noted at the corners, and each square is labeled     We know that the volume is given by the approximation which can be rewritten (without sigma notation) as since and , . This means the computation simplifies to Computing the values at the given points and substituting gives so that we have    "
 },
 {
-  "id": "example-848",
+  "id": "example-865",
   "level": "2",
-  "url": "section-151.html#example-848",
+  "url": "section-151.html#example-865",
   "type": "Example",
   "number": "15.1.5",
   "title": "",
@@ -11584,36 +11773,36 @@ var ptx_lunr_docs = [
   "body": " Midpoint Rule (Double Integrals)  Midpoint Rule (Double Integrals)   If is the midpoint of the interval and is the midpoint of the interval , then we can approximate the double integral of over the region by where    "
 },
 {
-  "id": "example-849",
+  "id": "example-866",
   "level": "2",
-  "url": "section-151.html#example-849",
+  "url": "section-151.html#example-866",
   "type": "Example",
   "number": "15.1.7",
   "title": "",
   "body": "  Approximate , where and , using midpoints.    Since , we take and . This means , , , and .  Since we want midpoints, we have , , , and as our points.  Then, So our conclusion is that    "
 },
 {
-  "id": "example-850",
+  "id": "example-867",
   "level": "2",
-  "url": "section-151.html#example-850",
+  "url": "section-151.html#example-867",
   "type": "Example",
   "number": "15.1.8",
   "title": "",
   "body": "  Consider the function , defined and integrable on the rectangle .     How can we make sense of the integral ? Is it a necessarily a number?    If we set , then what does do?    Put it all together. Interpret the expressions           Since we're integrating with respect to , any and all terms are considered constant; so while the is treated as a number for the integration, the answer isn't necessarily a number- it could be a function of .    This computes the integral of a single-variable function- something like what we're used to. Now, this integral returns a strictly numerical value.    In the first integral, we're integrating first with respect to in order to get a function of , then integrating with respect to in order to get a numerical value.  In the second integral, we're integrating first with respect to in order to get a function of , then integrating with respect to in order to get an numerical value.      "
 },
 {
-  "id": "example-851",
+  "id": "example-868",
   "level": "2",
-  "url": "section-151.html#example-851",
+  "url": "section-151.html#example-868",
   "type": "Example",
   "number": "15.1.9",
   "title": "",
   "body": "  Let , defined on the rectangle . Evaluate the following:                                 "
 },
 {
-  "id": "example-852",
+  "id": "example-869",
   "level": "2",
-  "url": "section-151.html#example-852",
+  "url": "section-151.html#example-869",
   "type": "Example",
   "number": "15.1.10",
   "title": "",
@@ -11634,67 +11823,67 @@ var ptx_lunr_docs = [
   "url": "section-151.html#theorem-31",
   "type": "Theorem",
   "number": "15.1.12",
-  "title": "Fubini's Theorem.",
+  "title": "Fubini’s Theorem.",
   "body": " Fubini's Theorem   If is continuous on the rectangle then    "
 },
 {
-  "id": "example-853",
+  "id": "example-870",
   "level": "2",
-  "url": "section-151.html#example-853",
+  "url": "section-151.html#example-870",
   "type": "Example",
   "number": "15.1.13",
   "title": "",
   "body": "  Evaluate the double integral , where         "
 },
 {
-  "id": "example-854",
+  "id": "example-871",
   "level": "2",
-  "url": "section-151.html#example-854",
+  "url": "section-151.html#example-871",
   "type": "Example",
   "number": "15.1.14",
   "title": "",
   "body": "  Let      Evaluate the double integral . What do you notice?    Evaluate the double integral . What do you notice?           . This is a very difficult integral, requiring multiple uses of integration by parts.     . This order was much simpler than the previous one.      "
 },
 {
-  "id": "example-855",
+  "id": "example-872",
   "level": "2",
-  "url": "section-151.html#example-855",
+  "url": "section-151.html#example-872",
   "type": "Example",
   "number": "15.1.15",
   "title": "",
   "body": "  Find the volume of the solid bounded by the elliptic paraboloid , the planes and , and the three coordinate planes.        "
 },
 {
-  "id": "example-856",
+  "id": "example-873",
   "level": "2",
-  "url": "section-151.html#example-856",
+  "url": "section-151.html#example-873",
   "type": "Example",
   "number": "15.1.16",
   "title": "",
   "body": "  Evaluate , where        "
 },
 {
-  "id": "example-857",
+  "id": "example-874",
   "level": "2",
-  "url": "section-151.html#example-857",
+  "url": "section-151.html#example-874",
   "type": "Example",
   "number": "15.1.17",
   "title": "",
   "body": "  Evaluate , where        "
 },
 {
-  "id": "example-858",
+  "id": "example-875",
   "level": "2",
-  "url": "section-151.html#example-858",
+  "url": "section-151.html#example-875",
   "type": "Example",
   "number": "15.1.18",
   "title": "",
   "body": "  Evaluate        "
 },
 {
-  "id": "example-859",
+  "id": "example-876",
   "level": "2",
-  "url": "section-151.html#example-859",
+  "url": "section-151.html#example-876",
   "type": "Example",
   "number": "15.1.19",
   "title": "",
@@ -11755,117 +11944,117 @@ var ptx_lunr_docs = [
   "body": " Type II Region  Type II Region   We say that a plane region is type II if it lies between the graphs of two continuous functions of , i.e. where and are continuous on .   "
 },
 {
-  "id": "example-860",
+  "id": "example-877",
   "level": "2",
-  "url": "section-152.html#example-860",
+  "url": "section-152.html#example-877",
   "type": "Example",
   "number": "15.2.3",
   "title": "",
   "body": "  This example will develop a usable formula for Type I and Type II integrals. Let the region be defined by .     Sketch the region .    Consider some function which is defined on . In the expression , what are the bounds communicating to you, in terms of ? Rewrite the integral expression and to reflect your answer.    Now sketch what would happen to if we replace 3 with the function . What must change in the integral expression? Call the new region .    If we replace 4 with the function , what changes about ? What about the integral?    In (c), what would have happened to if we replaced 1 with instead? Draw the new region, and call it . What change would you see on the integral from part (b)?    Now what would happen to if we replace 2 with ? Sketch the new . What change would you see on the integral in part (e)?           A sketch of the region described in the problem      The bounds are communicating functions which define the region .  Specifically, we can think of the bounds 1 and 2 as the functions and (which are functions of , so integrating with respect to makes sense). We can also think of 3 and 4 as the functions and (which are functions of , so integrating with respect to makes sense).  This means we can rewrite the integral like this:      A sketch of the region as described in the problem    Since the bound (function) is getting replaced by the bound (function) , the integral must change to reflect the new lower bound:      A sketch of the region as described in the problem    Since the bound (function) is getting replaced by the bound (function) , the integral must change to reflect the new upper bound:      A sketch of the region as described in the problem    Since the bound (function) is getting replaced by the bound (function) , the integral must change to reflect the new lower bound:      A sketch of the region as described in the problem    Since the bound (function) is getting replaced by the bound (function) , the integral must change to reflect the new upper bound:       "
 },
 {
-  "id": "example-861",
+  "id": "example-878",
   "level": "2",
-  "url": "section-152.html#example-861",
+  "url": "section-152.html#example-878",
   "type": "Example",
   "number": "15.2.4",
   "title": "",
   "body": "  Let be the region bounded by the curves and      Sketch and label the curves, and indicate where the region is.    Write the region using the definition of a Type I region.    Now compute the integral .           A sketch of the region given in the problem, on the interval .      Formally, we can write the region using set-builder notation as     From part b, we know that This means we can write the integral as   Evaluate from inside out. This means we're first computing So we have   Since the first integral evaluates as , we can rewrite the integral as which evaluates to 45.      "
 },
 {
-  "id": "example-862",
+  "id": "example-879",
   "level": "2",
-  "url": "section-152.html#example-862",
+  "url": "section-152.html#example-879",
   "type": "Example",
   "number": "15.2.5",
   "title": "",
   "body": "  Find the volume of the solid that lies under the paraboloid , and above the region in the plane bounded by the curves and . Treat as a Type I region.    Here is a sketch of :   A sketch of the region as described in the problem.    Since we're treating as a Type I region, we need to find a description of the form Based on the region, we can say that and . The values must be and since the curves intersect at those locations. This means our integral is set up as   So we compute:    "
 },
 {
-  "id": "example-863",
+  "id": "example-880",
   "level": "2",
-  "url": "section-152.html#example-863",
+  "url": "section-152.html#example-880",
   "type": "Example",
   "number": "15.2.6",
   "title": "",
   "body": "  Again let to be the region in the plane bounded by the curves and .     Write as a Type II region.    Compute . How does your work and answer compare to the previous example?          For convenience, here is the sketch of again:   A sketch of the region as described in the problem.    As a Type II region, we need to express in the form   Rewriting as functions of , becomes and stays . Our upper function will be and our lower function will be .  For our coordinate bounds, we still look at the intersection. There, the coordinates are and .       The work is similar but distinct. Since our bounds changed, the integral itself looks substantially different after the first integral. However, the answer is the same- which we would expect (and hope) since the region and function are the same.      "
 },
 {
-  "id": "example-864",
+  "id": "example-881",
   "level": "2",
-  "url": "section-152.html#example-864",
+  "url": "section-152.html#example-881",
   "type": "Example",
   "number": "15.2.7",
   "title": "",
   "body": "  Evaluate , where is the region bounded by the curves and .    The region is shown below:   A sketch of the region given in the problem.    If we try to treat this as a Type I region, we'll need to split into two integrals (corresponding to the two different lower bounds). So, instead treat as a Type II region: This gives the integral which evaluates to    "
 },
 {
-  "id": "example-865",
+  "id": "example-882",
   "level": "2",
-  "url": "section-152.html#example-865",
+  "url": "section-152.html#example-882",
   "type": "Example",
   "number": "15.2.8",
   "title": "",
   "body": "  Find the volume of the first-octant tetrahedron bounded by the plane .    To determine the region of integration, sketch the problem in three-dimensional space (I don't know how to do this right now, so I'll have to come back and add the image later). Doing this gives and (as a Type I region) or (as a Type II region).  The Type I integral setup is given by and the Type II integral setup is given by In either event, the integral has a value of    "
 },
 {
-  "id": "example-866",
+  "id": "example-883",
   "level": "2",
-  "url": "section-152.html#example-866",
+  "url": "section-152.html#example-883",
   "type": "Example",
   "number": "15.2.9",
   "title": "",
   "body": "  Find the volume of the solid created by the function over the region bounded by the curves , , and .    The Type I integral looks like and the Type II integral takes the form and the value is    "
 },
 {
-  "id": "example-867",
+  "id": "example-884",
   "level": "2",
-  "url": "section-152.html#example-867",
+  "url": "section-152.html#example-884",
   "type": "Example",
   "number": "15.2.10",
   "title": "",
   "body": "  Consider the integral      Sketch and label the region described in the integral.    Evaluate the integral.       Consider the integral       The region defined by the integral in the problem. As a Type II region, the description is . As a Type I region, the description is       As a Type I integral, we have and as a Type II integral we have which evaluates to       "
 },
 {
-  "id": "example-868",
+  "id": "example-885",
   "level": "2",
-  "url": "section-152.html#example-868",
+  "url": "section-152.html#example-885",
   "type": "Example",
   "number": "15.2.11",
   "title": "",
   "body": "  Let      Compute . You should run into some issues; what are they?    Draw and label the region described in part (a).    Use part (b) to rewrite the integral in part (a), then evaluate           The problem is immediately that we don't have a technique to integrate .     The region described in the problem is sketched. As a Type II integral, the region is given by ; as a Type I region, it is       As written, the integral is Type II; as a Type I integral, the region is described by . This means we can rewrite the integral as Evaluating the first integral now gives which can be evaluated using substitution. This gives a value of .      "
 },
 {
-  "id": "example-869",
+  "id": "example-886",
   "level": "2",
-  "url": "section-152.html#example-869",
+  "url": "section-152.html#example-886",
   "type": "Example",
   "number": "15.2.12",
   "title": "",
   "body": "  Evaluate , where     The Type II region is not feasible because there is no antiderivative for . But after drawing and rewriting as a Type I region, we have So the integral becomes whose value is    "
 },
 {
-  "id": "example-870",
+  "id": "example-887",
   "level": "2",
-  "url": "section-152.html#example-870",
+  "url": "section-152.html#example-887",
   "type": "Example",
   "number": "15.2.13",
   "title": "",
   "body": "  Evaluate     Switching to a Type I integral, we have which evaluates to    "
 },
 {
-  "id": "example-871",
+  "id": "example-888",
   "level": "2",
-  "url": "section-152.html#example-871",
+  "url": "section-152.html#example-888",
   "type": "Example",
   "number": "15.2.14",
   "title": "",
   "body": "  Evaluate the following integrals. Sketch and label the region of integration.      , where      , where is the region bounded by , , and .     , where is the region enclosed by the quarter-circle , , and the coordinate axes.           , where      , where is the region bounded by , , and .     , where is the region enclosed by the quarter-circle , , and the coordinate axes.      "
 },
 {
-  "id": "example-872",
+  "id": "example-889",
   "level": "2",
-  "url": "section-152.html#example-872",
+  "url": "section-152.html#example-889",
   "type": "Example",
   "number": "15.2.15",
   "title": "",
@@ -11908,117 +12097,117 @@ var ptx_lunr_docs = [
   "body": " Pre-Class Video 2 url goes here "
 },
 {
-  "id": "example-873",
+  "id": "example-890",
   "level": "2",
-  "url": "section-153.html#example-873",
+  "url": "section-153.html#example-890",
   "type": "Example",
   "number": "15.3.1",
   "title": "",
   "body": "  Consider the polar region given by      Take inspiration from Section 15.1; how can we divide the region into polar rectangles?    Let the area of be denoted by , and let be the midpoint of , given by . Find an expression for . Draw a picture illustrating parts (a) and (b).    Use the conversions between polar and rectangular coordinates to develop a Riemann sum approximating the volume under a curve .          Subdivide by partitioning into pieces in the radial direction: . Similarly, we can subdivide the angular direction to pieces by doing .    Visually, we can represent as the difference between the sector areas of radius and . This means that So, we conclude that .  The image is below.   A sketch of a polar region described above, and labeled with , , , , , , and       We know that in general, volume is given by , which comes from a Riemann sum of the form . Since and , we can rewrite . This means that . Since , we can create the Riemann sum       "
 },
 {
-  "id": "example-874",
+  "id": "example-891",
   "level": "2",
-  "url": "section-153.html#example-874",
+  "url": "section-153.html#example-891",
   "type": "Example",
   "number": "15.3.2",
   "title": "",
   "body": "  Let be the portion of the upper-half plane bounded by the circle , and let .     Evaluate the integral in Cartesian coordinates.    Convert the integral to polar coordinates and compute again.    Describe some differences between the computations parts (a) and (b).          Begin by sketching the region. When we do this, we find that we can write This means we're looking at a Type I integral, which can be evaluated by computing which gives     Convering to a polar integral, we use the conversions . Doing that, we can set up the integral as which still evaluates to     The answers vary here, but the most noticeable difference is likely in the computation; the Cartesian coordinate computation required careful use of trigonometric substitution and careful determination of the bounds, while the polar integration was a little more straightforward.  That difference ultimately comes from the shape of the region we're integrating over. Since the shape of the region is relatively simple to describe in polar coordinates, the integral is relatively more simple in polar coordinates than Cartesian coordinates.      "
 },
 {
-  "id": "example-875",
+  "id": "example-892",
   "level": "2",
-  "url": "section-153.html#example-875",
+  "url": "section-153.html#example-892",
   "type": "Example",
   "number": "15.3.3",
   "title": "",
   "body": "  Use polar coordinates to evaluate the integral . Sketch the region.    The region is sketched below:   A sketch of the region given in the problem, the first-quadrant region between the circles and .    Based on the region, we can write so the integral becomes which evaluates to    "
 },
 {
-  "id": "example-876",
+  "id": "example-893",
   "level": "2",
-  "url": "section-153.html#example-876",
+  "url": "section-153.html#example-893",
   "type": "Example",
   "number": "15.3.4",
   "title": "",
   "body": "  Find the volume of the solid bounded by the plane and the paraboloid         "
 },
 {
-  "id": "example-877",
+  "id": "example-894",
   "level": "2",
-  "url": "section-153.html#example-877",
+  "url": "section-153.html#example-894",
   "type": "Example",
   "number": "15.3.5",
   "title": "",
   "body": "  Evaluate , where is the disk of radius 2, centered at the origin.        "
 },
 {
-  "id": "example-878",
+  "id": "example-895",
   "level": "2",
-  "url": "section-153.html#example-878",
+  "url": "section-153.html#example-895",
   "type": "Example",
   "number": "15.3.6",
   "title": "",
   "body": "  Evaluate , where and is a circle of radius 1, centered at .        "
 },
 {
-  "id": "example-879",
+  "id": "example-896",
   "level": "2",
-  "url": "section-153.html#example-879",
+  "url": "section-153.html#example-896",
   "type": "Example",
   "number": "15.3.7",
   "title": "",
   "body": "  Prove that the area enclosed in one leaf of the curve is .    After sketching the graph, we know that one leaf will occur between and . Since the radius function is given by , we'll use this as our upper bound and for our lower bound. This gives the integral Evaluating the first integral, we get Using the identity , we rewrite as which evaluates to    "
 },
 {
-  "id": "example-880",
+  "id": "example-897",
   "level": "2",
-  "url": "section-153.html#example-880",
+  "url": "section-153.html#example-897",
   "type": "Example",
   "number": "15.3.8",
   "title": "",
   "body": "  Find the area outside the polar curve and inside the lemniscate         "
 },
 {
-  "id": "example-881",
+  "id": "example-898",
   "level": "2",
-  "url": "section-153.html#example-881",
+  "url": "section-153.html#example-898",
   "type": "Example",
   "number": "15.3.9",
   "title": "",
   "body": "  Find the volume of the region below the cone and above the annulus         "
 },
 {
-  "id": "example-882",
+  "id": "example-899",
   "level": "2",
-  "url": "section-153.html#example-882",
+  "url": "section-153.html#example-899",
   "type": "Example",
   "number": "15.3.10",
   "title": "",
   "body": "  Prove that the volume of a sphere of radius is        "
 },
 {
-  "id": "example-883",
+  "id": "example-900",
   "level": "2",
-  "url": "section-153.html#example-883",
+  "url": "section-153.html#example-900",
   "type": "Example",
   "number": "15.3.11",
   "title": "",
   "body": "  Find the volume bounded by the paraboloids and        "
 },
 {
-  "id": "example-884",
+  "id": "example-901",
   "level": "2",
-  "url": "section-153.html#example-884",
+  "url": "section-153.html#example-901",
   "type": "Example",
   "number": "15.3.12",
   "title": "",
   "body": "  Evaluate , where        "
 },
 {
-  "id": "example-885",
+  "id": "example-902",
   "level": "2",
-  "url": "section-153.html#example-885",
+  "url": "section-153.html#example-902",
   "type": "Example",
   "number": "15.3.13",
   "title": "",
@@ -12327,7 +12516,7 @@ var ptx_lunr_docs = [
   "url": "section-164.html",
   "type": "Section",
   "number": "16.4",
-  "title": "Green's Theorem",
+  "title": "Green’s Theorem",
   "body": " Green's Theorem    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   Green's Theorem     Pre-Class Activities    In Class   Examples     After Class Activities   "
 },
 {
@@ -12471,7 +12660,7 @@ var ptx_lunr_docs = [
   "url": "section-168.html",
   "type": "Section",
   "number": "16.8",
-  "title": "Stoke's Theorem",
+  "title": "Stoke’s Theorem",
   "body": " Stoke's Theorem    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   The Idea    Stoke's Theorem     Pre-Class Activities    In Class   Examples     After Class Activities   "
 },
 {

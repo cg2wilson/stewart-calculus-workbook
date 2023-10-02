@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -11,17 +11,22 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h6 class="heading"><span class="type">Paragraph</span></h6>
+<h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">If <span class="process-math">\(\bar{x_i}\)</span> is the midpoint of the interval <span class="process-math">\([x_{i-1},x_i]\)</span> and <span class="process-math">\(\bar{y_j}\)</span> is the midpoint of the interval <span class="process-math">\([y_{j-1},y_j]\text{,}\)</span> then we can approximate the double integral of <span class="process-math">\(f(x,y)\)</span> over the region <span class="process-math">\(R\)</span> by</div>
+<div class="para">Let <span class="process-math">\(C\)</span> be a curve traved out exactly once by the parametric equation <span class="process-math">\(x = f(t)\)</span> and <span class="process-math">\(y = g(t)\text{.}\)</span> Then, the area under <span class="process-math">\(C\)</span> between <span class="process-math">\(x = a\)</span> and <span class="process-math">\(x = b\)</span> is given by</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\iint_R f(x,y)\, dA \approx \sum_{i=1}^m\sum_{j=1}^n f(\bar{x_i},\bar{y_j})\Delta A
+A = \ds \int_a^b y\, dx = \int_\alpha^\beta g(t)f'(t)\, dt
 \end{equation*}
 </div>
-<div class="para">where <span class="process-math">\(\Delta A = \Delta x\,\Delta y\)</span>
+<div class="para">or</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A = \ds \int_a^b x\, dy = \int_\alpha^\beta f(t)g'(t)\, dt \text{ as a function of }y
+\end{equation*}
 </div>
+<div class="para">where <span class="process-math">\(\alpha \leq t \leq \beta\)</span> or <span class="process-math">\(\beta \leq t \leq \alpha\text{,}\)</span> depending on direction of travel.</div>
 </div>
-<span class="incontext"><a href="section-151.html#p-1249" class="internal">in-context</a></span>
+<span class="incontext"><a href="section-102.html#p-1249" class="internal">in-context</a></span>
 </body>
 </html>

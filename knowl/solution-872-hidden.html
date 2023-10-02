@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -10,10 +10,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><div class="solution solution-like"><div class="para logical"><ol class="lower-alpha">
-<li><div class="para">
-<span class="process-math">\(\ds \int_0^{\pi/4}\int_0^{\pi/2} f(x,y)\, dy\,dx = -\dfrac{4}{\pi}\cos\lrpar{\dfrac{\pi^2}{8}}\text{.}\)</span> This is a very difficult integral, requiring multiple uses of integration by parts.</div></li>
-<li><div class="para">
-<span class="process-math">\(\ds \int_0^{\pi/2}\int_0^{\pi/4} f(x,y)\, dx\, dy = -\dfrac{4}{\pi}\cos\lrpar{\dfrac{\pi^2}{8}}\text{.}\)</span>  This order was much simpler than the previous one.</div></li>
-</ol></div></div></body>
+<body class="ignore-math"><div class="solution solution-like"><div class="para logical">
+<div class="para">
+<span class="process-math">\(x = 0 \iff t = 0,2\text{.}\)</span> Then, we integrate with respect to <span class="process-math">\(y\)</span> and note that <span class="process-math">\(f(t) = t^2-2t\text{,}\)</span> <span class="process-math">\(g(t) = \sqrt{t}\)</span> and <span class="process-math">\(g'(t) = \dfrac{1}{2}t^{-1/2}\text{.}\)</span> So,</div>
+<div class="displaymath process-math">
+\begin{align*}
+\ds \int_\alpha^\beta x\, dy \amp = \ds \int_0^2 (t^2-2t)\lrpar{\dfrac{1}{2}t^{-1/2}}\, dt \\
+\amp =  \ds \int_0^2 \dfrac{1}{2}t^{3/2} - t^{1/2}\, dt\\
+\amp = \ds \lrpar{\dfrac{1}{5}t^{5/2} - \dfrac{2}{3}t^{3/2}}\bigg\rvert_0^2\\
+\amp = \dfrac{4\sqrt{2}}{5} - \dfrac{4\sqrt{2}}{3}
+\end{align*}
+</div>
+</div></div></body>
 </html>
