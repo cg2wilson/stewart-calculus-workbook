@@ -12,18 +12,22 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<div class="para logical"><ol class="lower-alpha">
-<li><div class="para">
-<span class="process-math">\(\ds \int_0^\infty \dfrac{1}{x^2 + x}\, dx\)</span> diverges</div></li>
-<li><div class="para"><span class="process-math">\(\displaystyle \ds \int_1^\infty \dfrac{\ln x}{x^2}\, dx=1\)</span></div></li>
-<li><div class="para"><span class="process-math">\(\displaystyle \ds \int_2^\infty \dfrac{dv}{v^2 + 2v-3} = \dfrac{1}{4}\ln 5\)</span></div></li>
-<li><div class="para">
-<span class="process-math">\(\ds \int_{-1}^2 \dfrac{x}{(x+1)^2}\, dx\)</span> diverges</div></li>
-<li><div class="para">
-<span class="process-math">\(\ds \int_{-2}^3 \dfrac{1}{x^4}\, dx\)</span> diverges</div></li>
-<li><div class="para">
-<span class="process-math">\(\ds \int_0^4 \dfrac{1}{x^2-x-2}\, dx =\)</span> diverges</div></li>
-</ol></div>
-<span class="incontext"><a href="section-78.html#p-1054" class="internal">in-context</a></span>
+<div class="para logical">
+<div class="para">The approximation for the total length of the curve is given by</div>
+<div class="displaymath process-math">
+\begin{align*}
+L \amp \approx \sum_{i=1}^n L_i\\
+\amp \approx \sum_{i=1}^n \sqrt{1 + (f(x_i))^2)}\cdot \Delta x
+\end{align*}
+</div>
+<div class="para">Taking the limit will gives an expression for the precise length of the curve:</div>
+<div class="displaymath process-math">
+\begin{align*}
+L \amp = \lim_{n\to\infty}\sum_{i=1}^n \sqrt{1 + (f(x_i))^2)}\cdot \Delta x\\
+\amp = \int_a^b \sqrt{1 + (f'(x))^2}\, dx 
+\end{align*}
+</div>
+</div>
+<span class="incontext"><a href="section-81.html#p-1054" class="internal">in-context</a></span>
 </body>
 </html>

@@ -12,7 +12,24 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<div class="para"><span class="process-math">\(\ds \int \ln (\sqrt{x})\, dx = x\ln (\sqrt{x}) - \dfrac{1}{2}x + C\)</span></div>
-<span class="incontext"><a href="section-71.html#p-783" class="internal">in-context</a></span>
+<div class="para logical"><ol class="decimal">
+<li><div class="para">Using the cosine substitution, we get <span class="process-math">\(-\dfrac{1}{2}\cos^2x+C\)</span>
+</div></li>
+<li><div class="para">Using the sine substitution, we get <span class="process-math">\(\dfrac{1}{2}\sin^2x + C\)</span>
+</div></li>
+<li><div class="para">Using the double-angle identity, we get <span class="process-math">\(-\dfrac{1}{4}\cos 2x + C\)</span>
+</div></li>
+<li><div class="para">If we set <span class="process-math">\(u=\sin x\)</span> and <span class="process-math">\(dv = \cos x\, dx\text{,}\)</span> we get<div class="displaymath process-math">
+\begin{equation*}
+\ds \int \sin x\cos x\, dx = \dfrac{1}{2}\sin^2x + C 
+\end{equation*}
+</div>However, if we set <span class="process-math">\(u=\cos x\)</span> and <span class="process-math">\(dv = \sin x\, dx\text{,}\)</span> we get<div class="displaymath process-math">
+\begin{equation*}
+\ds \int \sin x\cos x\, dx = -\dfrac{1}{2}\cos^2x + C
+\end{equation*}
+</div>
+</div></li>
+</ol></div>
+<span class="incontext"><a href="section-72.html#p-783" class="internal">in-context</a></span>
 </body>
 </html>

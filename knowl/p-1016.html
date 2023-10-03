@@ -13,32 +13,13 @@
 <body class="ignore-math">
 <h6 class="heading"><span class="type">Paragraph</span></h6>
 <div class="para logical">
-<div class="para">Split the integral into two pieces:</div>
+<div class="para">An improper integral of type 2 is said to <dfn class="terminology">converge</dfn> if the limits below exist:</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\ds \int_{-\infty}^\infty \dfrac{1}{1+x^2}\, dx = \int_{-\infty}^0 \dfrac{1}{1+x^2}\, dx + \int_0^\infty \dfrac{1}{1+x^2}\, dx
+\ds \lim_{t\to a^+} \int_t^b f(x)\, dx \qquad \lim_{t\to b^-} \int_a^t f(x)\, dx
 \end{equation*}
 </div>
-<div class="para">For the first piece, we compute:</div>
-<div class="displaymath process-math">
-\begin{align*}
-\ds \int_{-\infty}^0 \dfrac{1}{1+x^2}\, dx \amp = \lim_{t\to-\infty} \int_t^0 \dfrac{1}{1+x^2}\, dx\\
-\ds \lim_{t\to-\infty} \int_t^0 \dfrac{1}{1+x^2}\, dx \amp = \lim_{t\to -\infty} \lrpar{\inv{\tan}(x)}\bigg\rvert_t^0\\
-\ds \lim_{t\to -\infty} \lrpar{\inv{\tan}(x)}\bigg\rvert_t^0 \amp = \lim_{t\to -\infty} \lrpar{\inv{\tan}(0)-\inv{\tan}(t)}\\
-\amp = \dfrac{\pi}{2}
-\end{align*}
-</div>
-<div class="para">For the second piece, we have a similar computation:</div>
-<div class="displaymath process-math">
-\begin{align*}
-\ds \int_0^\infty \dfrac{1}{1+x^2}\, dx \amp = \lim_{t\to\infty} \int_0^t \dfrac{1}{1+x^2}\, dx\\
-\ds \lim_{t\to\infty} \int_0^t \dfrac{1}{1+x^2}\, dx \amp = \lim_{t\to \infty} \lrpar{\inv{\tan}(x)}\bigg\rvert_0^t\\
-\ds \lim_{t\to \infty} \lrpar{\inv{\tan}(x)}\bigg\rvert_0^t \amp = \lim_{t\to \infty} \lrpar{\inv{\tan}(t)-\inv{\tan}(0)}\\
-\amp = \dfrac{\pi}{2}
-\end{align*}
-</div>
-<div class="para">Summing the two pieces gives the answer of <span class="process-math">\(\pi\)</span>
-</div>
+<div class="para">If the limit does not exist or is infinite, then we say the integral is <dfn class="terminology">divergent</dfn>.</div>
 </div>
 <span class="incontext"><a href="section-78.html#p-1016" class="internal">in-context</a></span>
 </body>

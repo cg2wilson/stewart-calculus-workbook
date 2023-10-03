@@ -12,7 +12,31 @@
 </head>
 <body class="ignore-math">
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<div class="para">The (simplified) derivative is <span class="process-math">\(\dfrac{\sqrt{x+1}}{x-2}\cdot \lrpar{\dfrac{\sqrt{x+1}-(x-2)\lrpar{\dfrac{1}{2}(x+1)^{-1/2})}}{x+1}}\)</span>
+<div class="para logical">
+<div class="para">Note that <span class="process-math">\(\tan x = \dfrac{\sin x}{\cos x}\text{.}\)</span> Then, we may rewrite the integral as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ds \int \tan x\, dx = \int \dfrac{\sin x}{\cos x}\, dx
+\end{equation*}
+</div>
+<div class="para">Set <span class="process-math">\(u = \cos x\text{,}\)</span> so that <span class="process-math">\(du = -\sin x\, dx\text{.}\)</span> Making the substitutions, we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ds \int \dfrac{\sin x}{\cos x}\, dx = \int - \dfrac{1}{u}\, du
+\end{equation*}
+</div>
+<div class="para">so</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ds \int - \dfrac{1}{u}\, du = -\ln |u| + C = -\ln |\cos x| + C
+\end{equation*}
+</div>
+<div class="para">Using log rules, we can rewrite:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+-\ln |\cos x| + C = \ln |(\cos x)^{-1}|+C = \ln \left|\dfrac{1}{\cos x}\right| + C = \ln |\sec x| + C
+\end{equation*}
+</div>
 </div>
 <span class="incontext"><a href="section-64.html#p-553" class="internal">in-context</a></span>
 </body>

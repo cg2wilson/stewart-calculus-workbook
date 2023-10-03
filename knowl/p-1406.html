@@ -12,35 +12,7 @@
 </head>
 <body class="ignore-math">
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<div class="para logical"><ol class="lower-alpha">
-<li>
-<div class="para">For convenience, here is the sketch of <span class="process-math">\(R\)</span> again:</div>
-<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-199.svg" role="img" class="contained" alt="A sketch of the region \(R\) as described in the problem."></div>
-<div class="para logical">
-<div class="para">As a Type II region, we need to express <span class="process-math">\(R\)</span> in the form</div>
-<div class="displaymath process-math">
-\begin{equation*}
-R = \lrbrace{(x,y)\mid c\leq y\leq d, h_1(y)\leq y\leq h_2(y)}
-\end{equation*}
-</div>
-</div>
-<div class="para">Rewriting as functions of <span class="process-math">\(y\text{,}\)</span> <span class="process-math">\(y = x^3\)</span> becomes <span class="process-math">\(x = \sqrt[3]{y}\)</span> and <span class="process-math">\(y = x\)</span> stays <span class="process-math">\(x = y\text{.}\)</span> Our upper function will be <span class="process-math">\(h_2(y) = \sqrt[3]{y}\)</span> and our lower function will be <span class="process-math">\(h_1(y) = y\text{.}\)</span>
-</div>
-<div class="para">For our <span class="process-math">\(y-\)</span>coordinate bounds, we still look at the intersection. There, the <span class="process-math">\(y-\)</span>coordinates are <span class="process-math">\(y = 0\)</span> and <span class="process-math">\(y = 1\text{.}\)</span>
-</div>
-</li>
-<li>
-<div class="para logical"><div class="displaymath process-math">
-\begin{align*}
-\iint_R (x^2 + 2y^2)\, dA \amp = \int_0^1 \int_{y}^{y^{1/3}} (x^2 + 2y^2)\, dx\, dy\\
-\amp = \int_0^1 \lrpar{\dfrac{1}{3}y + \dfrac{2}{3}y^{7/3} - y^3}\, dy\\
-\amp = \lrpar{\dfrac{1}{6}y^2 + \dfrac{1}{5}y^{10/3} - \dfrac{1}{4}y^4}\bigg\rvert_0^1\\
-\amp = \dfrac{11}{60}
-\end{align*}
-</div></div>
-<div class="para">The work is similar but distinct. Since our bounds changed, the integral itself looks substantially different after the first integral. However, the answer is the same- which we would expect (and hope) since the region and function are the same.</div>
-</li>
-</ol></div>
-<span class="incontext"><a href="section-152.html#p-1406" class="internal">in-context</a></span>
+<div class="para">Let <span class="process-math">\((x_{ij},y_{ij})\)</span> be the midpoint of the rectangle <span class="process-math">\(R_{ij}\)</span> (that is, the rectangle <span class="process-math">\(i\)</span> steps horizontally and <span class="process-math">\(j\)</span> steps vertically). The value <span class="process-math">\(f(x_{ij},y_{ij})\)</span> gives the output on the surface <span class="process-math">\(S\)</span> which is precisely the height of the prism.</div>
+<span class="incontext"><a href="section-151.html#p-1406" class="internal">in-context</a></span>
 </body>
 </html>

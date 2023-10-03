@@ -6235,7 +6235,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.1",
   "title": "Areas Between Curves",
-  "body": " Areas Between Curves    Use integrals to find area between curves  Determine if a region should be integrated with respect to or in order to find the area between curves     Before Class   Pre-Class Video 1     Area     The graph of and on the interval . Let and , graphed below.    Write (and evaluate) an expression to find the area between and the axis on . Shade the area on the graph.  Write (and evaluate) an expression to find the area between and the axis on . Shade the area on the graph.  Write (and evaluate) an expression to find the area between and on . Do you need to shade the area?         This is the graph of on the interval with the area between the curve and the axis shaded     The area is found via the integral , and the area is .      This is the graph of on the interval with the area between the curve and the axis shaded     The area is found via the integral , and the area is 2.      This is the graph of and on the interval with the area between the curves shaded     The area is found by combining the answers from (a) and (b): , so the area between the curves is . We don't necessarily need to shade the area, because if we did (a) and (b) on the same graph, the overlapping area is the area being excised.       Area Between Curves  Let be continuous functions, and let for all in . The area of the region bounded by the curves and the lines is given by    Find the area of the region bounded above by , below by , and on the sides by and         Find the area of the region enclosed by the parabolas and         Find the area of the region bounded by the curves and , from to            Pre-Class Activities  Find the area of the region enclosed by the curves and between and .        Find the area of the region enclosed by the curves and between and .        Find the area between the curves and .          In Class   Examples  Sketch the region enclosed by the curves and , and find the area.     This is the graph of and on the interval with the area between the curves shaded.     The area is .    Sketch the region enclosed by the curves and , and find the area.     This is the graph of and on the interval with the area between the curves shaded.     The area is     Find the area enclosed by the line and the parabola    The area is 2    Sketch the region enclosed by the curves , , and , and find the area.     This is the graph of , on the interval with the area between the curves shaded.     The area is     Find the area of the triangle with vertices , , and .   The area is 2    Sketch the region enclosed by the curves , , and find the area.     This is the graph of and on the interval with the area between the curves shaded.     The shaded area is .       After Class Activities  Find the area of the region bounded by , , and .   The area is     Sketch the region bounded by the curves and and then find the area of the region.     This is the graph of the curves and on the interval with the area between the curves shaded.     The area of the shaded region is     Sketch the region enclosed by , , , and , then find the area of the region.     This is the graph of the curves , , , and on the interval with the area between the curves shaded.     The area of the shaded region is     Sketch the region enclosed by , , and , then find the area.     This is the graph of the curves and on the interval with the area between the curves shaded.     The area of the shaded region is      "
+  "body": " Areas Between Curves    Use integrals to find area between curves  Determine if a region should be integrated with respect to or in order to find the area between curves     Before Class   Pre-Class Video 1     Area     The graph of and on the interval . Let and , graphed below.    Write (and evaluate) an expression to find the area between and the axis on . Shade the area on the graph.  Write (and evaluate) an expression to find the area between and the axis on . Shade the area on the graph.  Write (and evaluate) an expression to find the area between and on . Do you need to shade the area?        This is the graph of on the interval with the area between the curve and the axis shaded    The area is found via the integral , and the area is .     This is the graph of on the interval with the area between the curve and the axis shaded    The area is found via the integral , and the area is 2.     This is the graph of and on the interval with the area between the curves shaded    The area is found by combining the answers from (a) and (b): , so the area between the curves is . We don't necessarily need to shade the area, because if we did (a) and (b) on the same graph, the overlapping area is the area being excised.       Area Between Curves  Let be continuous functions, and let for all in . The area of the region bounded by the curves and the lines is given by    Find the area of the region bounded above by , below by , and on the sides by and         Find the area of the region enclosed by the parabolas and         Find the area of the region bounded by the curves and , from to            Pre-Class Activities  Find the area of the region enclosed by the curves and between and .        Find the area of the region enclosed by the curves and between and .        Find the area between the curves and .          In Class   Examples  Sketch the region enclosed by the curves and , and find the area.    This is the graph of and on the interval with the area between the curves shaded.    The area is .    Sketch the region enclosed by the curves and , and find the area.    This is the graph of and on the interval with the area between the curves shaded.    The area is     Find the area enclosed by the line and the parabola    The area is 2    Sketch the region enclosed by the curves , , and , and find the area.    This is the graph of , on the interval with the area between the curves shaded.    The area is     Find the area of the triangle with vertices , , and .   The area is 2    Sketch the region enclosed by the curves , , and find the area.    This is the graph of and on the interval with the area between the curves shaded.    The shaded area is .       After Class Activities  Find the area of the region bounded by , , and .   The area is     Sketch the region bounded by the curves and and then find the area of the region.    This is the graph of the curves and on the interval with the area between the curves shaded.    The area of the shaded region is     Sketch the region enclosed by , , , and , then find the area of the region.    This is the graph of the curves , , , and on the interval with the area between the curves shaded.    The area of the shaded region is     Sketch the region enclosed by , , and , then find the area.    This is the graph of the curves and on the interval with the area between the curves shaded.    The area of the shaded region is      "
 },
 {
   "id": "objectives-26",
@@ -6262,7 +6262,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "5.1.1",
   "title": "",
-  "body": "   The graph of and on the interval . Let and , graphed below.    Write (and evaluate) an expression to find the area between and the axis on . Shade the area on the graph.  Write (and evaluate) an expression to find the area between and the axis on . Shade the area on the graph.  Write (and evaluate) an expression to find the area between and on . Do you need to shade the area?         This is the graph of on the interval with the area between the curve and the axis shaded     The area is found via the integral , and the area is .      This is the graph of on the interval with the area between the curve and the axis shaded     The area is found via the integral , and the area is 2.      This is the graph of and on the interval with the area between the curves shaded     The area is found by combining the answers from (a) and (b): , so the area between the curves is . We don't necessarily need to shade the area, because if we did (a) and (b) on the same graph, the overlapping area is the area being excised.     "
+  "body": "   The graph of and on the interval . Let and , graphed below.    Write (and evaluate) an expression to find the area between and the axis on . Shade the area on the graph.  Write (and evaluate) an expression to find the area between and the axis on . Shade the area on the graph.  Write (and evaluate) an expression to find the area between and on . Do you need to shade the area?        This is the graph of on the interval with the area between the curve and the axis shaded    The area is found via the integral , and the area is .     This is the graph of on the interval with the area between the curve and the axis shaded    The area is found via the integral , and the area is 2.     This is the graph of and on the interval with the area between the curves shaded    The area is found by combining the answers from (a) and (b): , so the area between the curves is . We don't necessarily need to shade the area, because if we did (a) and (b) on the same graph, the overlapping area is the area being excised.     "
 },
 {
   "id": "theorem-29",
@@ -6334,7 +6334,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "5.1.9",
   "title": "",
-  "body": "Sketch the region enclosed by the curves and , and find the area.     This is the graph of and on the interval with the area between the curves shaded.     The area is .   "
+  "body": "Sketch the region enclosed by the curves and , and find the area.    This is the graph of and on the interval with the area between the curves shaded.    The area is .   "
 },
 {
   "id": "example-505",
@@ -6343,7 +6343,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "5.1.10",
   "title": "",
-  "body": "Sketch the region enclosed by the curves and , and find the area.     This is the graph of and on the interval with the area between the curves shaded.     The area is    "
+  "body": "Sketch the region enclosed by the curves and , and find the area.    This is the graph of and on the interval with the area between the curves shaded.    The area is    "
 },
 {
   "id": "example-506",
@@ -6361,7 +6361,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "5.1.12",
   "title": "",
-  "body": "Sketch the region enclosed by the curves , , and , and find the area.     This is the graph of , on the interval with the area between the curves shaded.     The area is    "
+  "body": "Sketch the region enclosed by the curves , , and , and find the area.    This is the graph of , on the interval with the area between the curves shaded.    The area is    "
 },
 {
   "id": "example-508",
@@ -6379,7 +6379,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "5.1.14",
   "title": "",
-  "body": "Sketch the region enclosed by the curves , , and find the area.     This is the graph of and on the interval with the area between the curves shaded.     The shaded area is .   "
+  "body": "Sketch the region enclosed by the curves , , and find the area.    This is the graph of and on the interval with the area between the curves shaded.    The shaded area is .   "
 },
 {
   "id": "example-510",
@@ -6397,7 +6397,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "5.1.16",
   "title": "",
-  "body": "Sketch the region bounded by the curves and and then find the area of the region.     This is the graph of the curves and on the interval with the area between the curves shaded.     The area of the shaded region is    "
+  "body": "Sketch the region bounded by the curves and and then find the area of the region.    This is the graph of the curves and on the interval with the area between the curves shaded.    The area of the shaded region is    "
 },
 {
   "id": "example-512",
@@ -6406,7 +6406,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "5.1.17",
   "title": "",
-  "body": "Sketch the region enclosed by , , , and , then find the area of the region.     This is the graph of the curves , , , and on the interval with the area between the curves shaded.     The area of the shaded region is    "
+  "body": "Sketch the region enclosed by , , , and , then find the area of the region.    This is the graph of the curves , , , and on the interval with the area between the curves shaded.    The area of the shaded region is    "
 },
 {
   "id": "example-513",
@@ -6415,7 +6415,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "5.1.18",
   "title": "",
-  "body": "Sketch the region enclosed by , , and , then find the area.     This is the graph of the curves and on the interval with the area between the curves shaded.     The area of the shaded region is    "
+  "body": "Sketch the region enclosed by , , and , then find the area.    This is the graph of the curves and on the interval with the area between the curves shaded.    The area of the shaded region is    "
 },
 {
   "id": "section-52",
@@ -6424,7 +6424,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.2",
   "title": "Volumes",
-  "body": " Volumes    Compute volume of a three-dimensional solid as an integral of cross-sectional area of specified shapes  Determine if the Disk Method or Washer Method is most appropriate to find the volume of a solid of revolution, and compute the volume of the solid by integrating with respect to or      Before Class   Pre-Class Video 1     Pre-Class Video 2     Volumes by Cross-Sections   An isosceles triangle has a base of 10 inches and height of 5 inches. From geometry, we know that its area is 25 in ; use integrals to find its area by slicing vertically , then by slicing horizontally .   When slicing vertically, we get the integral which gives an area of 25.  When slicing horizontally, we get the integral , which also gives an area of 25.     Describe how to find the volume of the triangular prism below:  A triangular prism with base length 10 inches and height 5 inches; the depth is not specified.      Multiply the base triangle area by the length of the prism, so that the volume is      Show that the volume of a right cylinder of radius and height has volume    Let be the vertical axis. The cross-sectional area is the area of a circle, . Then, the volume of the solid is     For generic volumes, we can consider cross sections of a solid, and slabs of constant width.   Volume  Volume  Let be a solid that lies between and . If the cross-sectional area of in the plane , through and perpendicular to the axis is , where is a continuous function, then the volume of is given by     Show that the volume of a sphere of radius is    Since vertical cross sections are circles of raidus , we have the relationship , so that . This means that the cross-sectional area is given by . Thus, the volume is given by        Pre-Class Activities   Draw an explicit connection between how we found area under a curve in Section 4.1 and Section 4.2, and how we've defined area here.   Answers vary     Use cross-sectional areas to prove that the volume of a square-based pyramid is , where is the side length of the square base, and is the pyramid's height.   Consider the cross-section with the tip of the pyramid at the origin, and the base at . We have a line going through the origin and the point . This means the equation of the line is given by .  Now, cross-sectional areas are squares; this means the height of each square is given by . So, the cross-sectional area is . This means the volume is given by      A wedge is cut out of a circular cylinder of radius 5 by two planes. One plane is perpendicular to the axis of the cylinder. The other intersects the first at an angle of along a diameter of the cylinder. Find the volume of the wedge.          In Class   Disk Method   Let   Sketch the function on the interval , and find the area between the curve and the axis on .  Sketch the cylinder created by rotating the line segment around the axis; what is the volume of the cylinder?  Write an expression for a slice of the volume of the cylinder.  Create and evaluate an integral expression for the volume of the cylinder.         This is the graph of the function on the interval         This is the sketch of the cylinder created by rotating on the interval about the axis.     The volume of the cylinder is     , where the height of the slice is denoted with           Let   Sketch the region bounded by , , and the axis.  Sketch the solid created by rotating the region about the axis on .  Sketch and label an approximating cylinder for the volume of the cone.  Create and evaluate an integral expression to find the volume of the cone.         This is the sketch of the on the interval .       This is the sketch of the cylinder created by rotating on the interval about the axis.        This is the sketch of the cylindrical slice of the solid created by rotating on the interval about the axis.     The radius is and the height is            Disk Method  If is a positive, continuous function on some interval , then the volume of the solid created by rotating about the axis is given by where is the radius function.    Find the volume of the solid obtained by rotating the region under the curve from 0 to 1, about the axis. Sketch the region and a typical approximating cylinder.     This is the sketch of the region under the curve on the interval that will be rotated about the axis.       This is the sketch of the cylindrical slice of the solid created by rotating on the interval about the axis.     The volume is      Find the volume of the solid obtained by rotating the first-quadrant region bounded by , , and about the axis.         Find the volume of the solid formed by revolving the region between the parabola and the line about the line .          Washer Method  Let .  Sketch the first-quadrant region bounded by and the line .  Sketch the solid resulting from rotating the region about the line .  What are some problems with using the disk method in this example?         This is the sketch of the region bounded the curves and that will be rotated about the axis.       This is the sketch of the solid formed by rotating the region between the curves and about the axis.     The empty space in the middle can't be captured by a disk.      Find the volume of the solid formed by rotating the region bounded by and about the axis.         Washer Method  If and are two continuous functions on such that on , then the volume of the solid created by rotating the region between and is given by where is the outer radius, and is the inner radius.   Find the volume of the solid obtained by rotating the region from the previous example about the line .        The region bounded by the curve and the line is revolved about the axis to generate a solid. Find the volume of the solid.        Find the volume of the solid obtained by rotating the region bounded by the curves about the axis.        Find the volume of the solid obtained by rotating the region bounded by the curves about the axis.           After Class Activities  Find the volume of the solid obtained by rotating the region bounded by the curves about the axis.        Find the volume of the solid obtained by rotating the region bounded by the curves about .        Find the volume of the solid created by rotating the the region bounded by the curves , , and about .         "
+  "body": " Volumes    Compute volume of a three-dimensional solid as an integral of cross-sectional area of specified shapes  Determine if the Disk Method or Washer Method is most appropriate to find the volume of a solid of revolution, and compute the volume of the solid by integrating with respect to or      Before Class   Pre-Class Video 1     Pre-Class Video 2     Volumes by Cross-Sections   An isosceles triangle has a base of 10 inches and height of 5 inches. From geometry, we know that its area is 25 in ; use integrals to find its area by slicing vertically , then by slicing horizontally .   When slicing vertically, we get the integral which gives an area of 25.  When slicing horizontally, we get the integral , which also gives an area of 25.     Describe how to find the volume of the triangular prism below:  A triangular prism with base length 10 inches and height 5 inches; the depth is not specified.      Multiply the base triangle area by the length of the prism, so that the volume is      Show that the volume of a right cylinder of radius and height has volume    Let be the vertical axis. The cross-sectional area is the area of a circle, . Then, the volume of the solid is     For generic volumes, we can consider cross sections of a solid, and slabs of constant width.   Volume  Volume  Let be a solid that lies between and . If the cross-sectional area of in the plane , through and perpendicular to the axis is , where is a continuous function, then the volume of is given by     Show that the volume of a sphere of radius is    Since vertical cross sections are circles of raidus , we have the relationship , so that . This means that the cross-sectional area is given by . Thus, the volume is given by        Pre-Class Activities   Draw an explicit connection between how we found area under a curve in Section 4.1 and Section 4.2, and how we've defined area here.   Answers vary     Use cross-sectional areas to prove that the volume of a square-based pyramid is , where is the side length of the square base, and is the pyramid's height.   Consider the cross-section with the tip of the pyramid at the origin, and the base at . We have a line going through the origin and the point . This means the equation of the line is given by .  Now, cross-sectional areas are squares; this means the height of each square is given by . So, the cross-sectional area is . This means the volume is given by      A wedge is cut out of a circular cylinder of radius 5 by two planes. One plane is perpendicular to the axis of the cylinder. The other intersects the first at an angle of along a diameter of the cylinder. Find the volume of the wedge.          In Class   Disk Method   Let   Sketch the function on the interval , and find the area between the curve and the axis on .  Sketch the cylinder created by rotating the line segment around the axis; what is the volume of the cylinder?  Write an expression for a slice of the volume of the cylinder.  Create and evaluate an integral expression for the volume of the cylinder.         This is the graph of the function on the interval        This is the sketch of the cylinder created by rotating on the interval about the axis.    The volume of the cylinder is     , where the height of the slice is denoted with           Let   Sketch the region bounded by , , and the axis.  Sketch the solid created by rotating the region about the axis on .  Sketch and label an approximating cylinder for the volume of the cone.  Create and evaluate an integral expression to find the volume of the cone.         This is the sketch of the on the interval .       This is the sketch of the cylinder created by rotating on the interval about the axis.       This is the sketch of the cylindrical slice of the solid created by rotating on the interval about the axis.    The radius is and the height is            Disk Method  If is a positive, continuous function on some interval , then the volume of the solid created by rotating about the axis is given by where is the radius function.    Find the volume of the solid obtained by rotating the region under the curve from 0 to 1, about the axis. Sketch the region and a typical approximating cylinder.    This is the sketch of the region under the curve on the interval that will be rotated about the axis.     This is the sketch of the cylindrical slice of the solid created by rotating on the interval about the axis.    The volume is      Find the volume of the solid obtained by rotating the first-quadrant region bounded by , , and about the axis.         Find the volume of the solid formed by revolving the region between the parabola and the line about the line .          Washer Method  Let .  Sketch the first-quadrant region bounded by and the line .  Sketch the solid resulting from rotating the region about the line .  What are some problems with using the disk method in this example?         This is the sketch of the region bounded the curves and that will be rotated about the axis.       This is the sketch of the solid formed by rotating the region between the curves and about the axis.     The empty space in the middle can't be captured by a disk.      Find the volume of the solid formed by rotating the region bounded by and about the axis.         Washer Method  If and are two continuous functions on such that on , then the volume of the solid created by rotating the region between and is given by where is the outer radius, and is the inner radius.   Find the volume of the solid obtained by rotating the region from the previous example about the line .        The region bounded by the curve and the line is revolved about the axis to generate a solid. Find the volume of the solid.        Find the volume of the solid obtained by rotating the region bounded by the curves about the axis.        Find the volume of the solid obtained by rotating the region bounded by the curves about the axis.           After Class Activities  Find the volume of the solid obtained by rotating the region bounded by the curves about the axis.        Find the volume of the solid obtained by rotating the region bounded by the curves about .        Find the volume of the solid created by rotating the the region bounded by the curves , , and about .         "
 },
 {
   "id": "objectives-27",
@@ -6532,7 +6532,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "5.2.9",
   "title": "",
-  "body": " Let   Sketch the function on the interval , and find the area between the curve and the axis on .  Sketch the cylinder created by rotating the line segment around the axis; what is the volume of the cylinder?  Write an expression for a slice of the volume of the cylinder.  Create and evaluate an integral expression for the volume of the cylinder.         This is the graph of the function on the interval         This is the sketch of the cylinder created by rotating on the interval about the axis.     The volume of the cylinder is     , where the height of the slice is denoted with         "
+  "body": " Let   Sketch the function on the interval , and find the area between the curve and the axis on .  Sketch the cylinder created by rotating the line segment around the axis; what is the volume of the cylinder?  Write an expression for a slice of the volume of the cylinder.  Create and evaluate an integral expression for the volume of the cylinder.         This is the graph of the function on the interval        This is the sketch of the cylinder created by rotating on the interval about the axis.    The volume of the cylinder is     , where the height of the slice is denoted with         "
 },
 {
   "id": "example-522",
@@ -6541,7 +6541,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "5.2.10",
   "title": "",
-  "body": " Let   Sketch the region bounded by , , and the axis.  Sketch the solid created by rotating the region about the axis on .  Sketch and label an approximating cylinder for the volume of the cone.  Create and evaluate an integral expression to find the volume of the cone.         This is the sketch of the on the interval .       This is the sketch of the cylinder created by rotating on the interval about the axis.        This is the sketch of the cylindrical slice of the solid created by rotating on the interval about the axis.     The radius is and the height is          "
+  "body": " Let   Sketch the region bounded by , , and the axis.  Sketch the solid created by rotating the region about the axis on .  Sketch and label an approximating cylinder for the volume of the cone.  Create and evaluate an integral expression to find the volume of the cone.         This is the sketch of the on the interval .       This is the sketch of the cylinder created by rotating on the interval about the axis.       This is the sketch of the cylindrical slice of the solid created by rotating on the interval about the axis.    The radius is and the height is          "
 },
 {
   "id": "example-523",
@@ -6550,7 +6550,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "5.2.11",
   "title": "",
-  "body": " Find the volume of the solid obtained by rotating the region under the curve from 0 to 1, about the axis. Sketch the region and a typical approximating cylinder.     This is the sketch of the region under the curve on the interval that will be rotated about the axis.       This is the sketch of the cylindrical slice of the solid created by rotating on the interval about the axis.     The volume is    "
+  "body": " Find the volume of the solid obtained by rotating the region under the curve from 0 to 1, about the axis. Sketch the region and a typical approximating cylinder.    This is the sketch of the region under the curve on the interval that will be rotated about the axis.     This is the sketch of the cylindrical slice of the solid created by rotating on the interval about the axis.    The volume is    "
 },
 {
   "id": "example-524",
@@ -6658,7 +6658,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.3",
   "title": "Volumes by Cylindrical Shells",
-  "body": " Volumes by Cylindrical Shells    Determine whether the Shell Method, Disk Method, or Washer Method is most appropriate to compute the volume of a solid of revolution, and compute the volume by integrating with respect to or      Before Class   Pre-Class Video 1     Slicing with Cylinders   Let .  Sketch the region bounded by and the axis.  Set up (but do not solve) an integral to find the volume of the solid created by rotating the region about the line . Why can we use the disk method?  Are there problems if we instead rotate about the line ? Explain with pictures, words, etc.         This is the sketch of the region bounded the curve and the axis.     The disk method integral is given by . We may use the disk method because there is no gap between the axis of rotation and the region.  Yes- in an approximating washer, there is no function to create the radius; each input has multiple outputs.       Again consider .  Draw four midpoint rectangles for the area of the region bounded by and the axis. Be sure to label things appropriately!  Sketch what happens to the rectangles when rotated about the line .  How can we find the surface area of the shape from part (b)?  Use your answers from parts (b) and (c) to approximate the volume of the solid.  Write an expression that uses infinitely many rectangles to approximate the the volume of the solid.  Convert your answer from part (d) into an integral expression, and evaluate it.       The sketch is tough to digitally reproduce, so it is left to the reader.  The sketch is tough to digitally reproduce, so it is left to the reader.  Since the surface area of a cylinder is , we can use the information from any singular cylinder to develop the expression .  We'll use the width of the approximating rectangle as the thickness of the shell, so that our cylindrical shell's volume is given by . So, the volume of the solid is approximated by               The Shell Method   Method of Cylindrical Shells  Let be a continuous function on the interval . Then, the volume of the solid created by rotating the region bounded by and the axis about the line is given by where is the radius function.    Consider the region bounded by the curve , the axis, and the line .  Sketch and label the region.  Sketch and label a typical approximating cylinder, when rotated about .  Use the formula for the cylinder to set up an integral for the volume of the resulting solid, then evaluate it.         This is the sketch of the region bounded by the curve and the axis between and .       This is the sketch of the typical approximating cylindrical shell when rotating the region contained between and about                Pre-Class Activities  If you were presented with a problem, how would you know whether to use the disk method, washer method, or shell method? Examples 1 and 2 might be good places to get ideas.   Answers vary    Find the volume of the solid obtained by rotating the region bouded by and about the axis.          In Class  Use the shell method to find the volume of the solid generated by revolving the region bounded by the curves , , , and about the axis. Hint: Sketch the solid and its approximating cylinders.        Find the volume of the solid created by rotating the region bounded by the curves , , , and about the axis. Be sure to label your diagram, if you choose to draw one.        Find the volume of the solid created by rotating the first-quadrant region bounded by the curves , and about the axis. Be sure to label your diagram, if you choose to draw one.       Find the volume of the solid created by rotating the region bounded by the curves , , and about . Hint: Draw and label a diagram. Remember that this is a function of , not a function of !        Find the volume of the solid created by rotating the region bounded by the curves , , about . Be sure to label your diagram, if you choose to draw one.          After Class Activities  Find the volume of the solid created by rotating the region bounded by the curves , about .        Sketch the region described in the volume integral below:      This is the sketch of the region bounded by the curve on the interval to , rotated about the line .       The region bounded by the curves and is rotated about the axis.  Sketch the region described above.  Of our three methods, which one do you want to use? Give a quick explanation why you chose that particular method.  Compute the volume of the solid.         This is the sketch of the region bounded by the curve on the interval to , rotated about the line .     Answers vary         Consider the region bounded by the curves , , and . Find the volume of the solid formed when the region is rotated about the given lines:  The axis                     "
+  "body": " Volumes by Cylindrical Shells    Determine whether the Shell Method, Disk Method, or Washer Method is most appropriate to compute the volume of a solid of revolution, and compute the volume by integrating with respect to or      Before Class   Pre-Class Video 1     Slicing with Cylinders   Let .  Sketch the region bounded by and the axis.  Set up (but do not solve) an integral to find the volume of the solid created by rotating the region about the line . Why can we use the disk method?  Are there problems if we instead rotate about the line ? Explain with pictures, words, etc.         This is the sketch of the region bounded the curve and the axis.     The disk method integral is given by . We may use the disk method because there is no gap between the axis of rotation and the region.  Yes- in an approximating washer, there is no function to create the radius; each input has multiple outputs.       Again consider .  Draw four midpoint rectangles for the area of the region bounded by and the axis. Be sure to label things appropriately!  Sketch what happens to the rectangles when rotated about the line .  How can we find the surface area of the shape from part (b)?  Use your answers from parts (b) and (c) to approximate the volume of the solid.  Write an expression that uses infinitely many rectangles to approximate the the volume of the solid.  Convert your answer from part (d) into an integral expression, and evaluate it.       The sketch is tough to digitally reproduce, so it is left to the reader.  The sketch is tough to digitally reproduce, so it is left to the reader.  Since the surface area of a cylinder is , we can use the information from any singular cylinder to develop the expression .  We'll use the width of the approximating rectangle as the thickness of the shell, so that our cylindrical shell's volume is given by . So, the volume of the solid is approximated by               The Shell Method   Method of Cylindrical Shells  Let be a continuous function on the interval . Then, the volume of the solid created by rotating the region bounded by and the axis about the line is given by where is the radius function.    Consider the region bounded by the curve , the axis, and the line .  Sketch and label the region.  Sketch and label a typical approximating cylinder, when rotated about .  Use the formula for the cylinder to set up an integral for the volume of the resulting solid, then evaluate it.         This is the sketch of the region bounded by the curve and the axis between and .       This is the sketch of the typical approximating cylindrical shell when rotating the region contained between and about                Pre-Class Activities  If you were presented with a problem, how would you know whether to use the disk method, washer method, or shell method? Examples 1 and 2 might be good places to get ideas.   Answers vary    Find the volume of the solid obtained by rotating the region bouded by and about the axis.          In Class  Use the shell method to find the volume of the solid generated by revolving the region bounded by the curves , , , and about the axis. Hint: Sketch the solid and its approximating cylinders.        Find the volume of the solid created by rotating the region bounded by the curves , , , and about the axis. Be sure to label your diagram, if you choose to draw one.        Find the volume of the solid created by rotating the first-quadrant region bounded by the curves , and about the axis. Be sure to label your diagram, if you choose to draw one.       Find the volume of the solid created by rotating the region bounded by the curves , , and about . Hint: Draw and label a diagram. Remember that this is a function of , not a function of !        Find the volume of the solid created by rotating the region bounded by the curves , , about . Be sure to label your diagram, if you choose to draw one.          After Class Activities  Find the volume of the solid created by rotating the region bounded by the curves , about .        Sketch the region described in the volume integral below:     This is the sketch of the region bounded by the curve on the interval to , rotated about the line .      The region bounded by the curves and is rotated about the axis.  Sketch the region described above.  Of our three methods, which one do you want to use? Give a quick explanation why you chose that particular method.  Compute the volume of the solid.         This is the sketch of the region bounded by the curve on the interval to , rotated about the line .     Answers vary         Consider the region bounded by the curves , , and . Find the volume of the solid formed when the region is rotated about the given lines:  The axis                     "
 },
 {
   "id": "objectives-28",
@@ -6784,7 +6784,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "5.3.12",
   "title": "",
-  "body": "Sketch the region described in the volume integral below:      This is the sketch of the region bounded by the curve on the interval to , rotated about the line .      "
+  "body": "Sketch the region described in the volume integral below:     This is the sketch of the region bounded by the curve on the interval to , rotated about the line .     "
 },
 {
   "id": "example-547",
@@ -6811,7 +6811,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.1",
   "title": "Inverse Functions",
-  "body": " Inverse Functions    Determine if a function is one-to-one given a verbal, numerical, graphical, or algebraic representation of the function and explain why a function must be one-to-one in order to have an inverse function  Identify the definition of the inverse function for one-to-one function and describe the relationship between the domain\/range of and the domain\/range of   Apply the cancellation properties of inverse functions  Find the inverse of a one-to-one function given a numerical, algebraic, or graphical representation  Apply the formula for the derivative of inverse functions     Before Class   Pre-Class Video 1     Pre-Class Video 2     Inverse Functions & Properties   The table below gives the population of a bacterial culture, hours after it is introduced to an agar-filled petri dish.    hours  0  1  2  3  4  5  6  7  8     bacteria  150  165  182  200  220  243  267  294  324   The inverse function  , gives the time elapsed since a bacterial culture was introduced to an agar-filled petri dish, when the population is bacteria. Use this information to fill out the table below.    bacteria                       hours                           bacteria  150  165  182  200  220  243  267  294  324     hours  0  1  2  3  4  5  6  7  8       One-to-one Function  One-to-one Function   A function is said to be one-to-one if it never takes on the same value twice, or in notation, when .     Horizontal Line Test   A function is one-to-one if and only if no horizontal line intersects its graph more than once.     Is one-to-one? Why or why not?   Yes: if , then and , which are distinct.     Is one-to-one? Why or why not?   No: , so two inputs produce the same output.      Let , where is an even number. Using the previous exercise, do you think this function is one-to-one? Why or why not?    Any even power function (in fact, any even function) is not one-to-one, as for any in the domain of .     Inverse Function  Inverse Function   Let be a one-to-one function with domain and range . The inverse function is notated , with domain and range . The inverse function is defined by the equation for any .     Domain and Range of Inverse Functions    The domain of is the range of   The range of is the domain of       Notation Alert!   is a special notation to indicate the function inverse ; you should not confuse this with the notation for the multiplicative inverse (reciprocal), such as . That is,     denotes the inverse of a function   denotes the multiplicative inverse of a variable, i.e.        Use the table below to answer the questions. If the answer does not exist, write DNE.                                                                                                         DNE (two inputs create the output of 5)             Cancellation Property  Let be a function with domain and range , and let be its inverse function. Then, we have the following properties:     for all    for all        If , what is ? Use the cancellation properties to check your answer.     ; we can check this using the cancellation properties:            Find the inverse function of          There is a graphical interpretation of algebraically finding an inverse:  There is a picture drawn in the pre-class video that I can't replicate right now.  The idea is that when algebraically finding an inverse function, you are finding the equation of the function that results when you reflect across the line      Pre-Class Activities   If , find and .    and      Find the inverse formula for the function          Find the inverse formula for the function           In Class   Calculus of Inverse Functions   Continuity of Inverses  If is a one-to-one continuous function defined on the interval , then is also continuous on .     If a one-to-one function is differentiable on the interval , is it necessarily true that is also differentiable?    No; if , then its inverse is , which is not differentiable at .     Derivative of Inverses (at a Point)  If is a one-to-one, differentiable function at with inverse function and , then the inverse function is differentiable at and    If we replace in the above formula with , we get another formula for the derivative of the inverse:   Derivative of Inverses (as a Function)       Let . Find .          Let and .    Show that is one-to-one.  Find using the formula above.  Find , and give its domain and range.         is increasing: , which is always positive because       . The domain is and the range is         Let .     is not one-to-one. Sketch it and determine an interval on which it can be made one-to-one. This is called the restricted domain .  Complete the square on and use it to find the inverse function on your restricted domain.  Find using your answer in (b).  Find using formulas from this section. Compare the two answers.         Here is the graph of :    A graph of the function on the interval      We can choose two restricted domains: either or . Generally, we'll choose the positive portion of the domain for the restricted domain, so choose .    on      Same as above.        Find for the given functions:     ,    ,                     Suppose is the inverse function of a differentiable function with and . Find .            After Class Activities    Find for            Suppose is the inverse function of a differentiable function , and let . If and , find .           If , find .          "
+  "body": " Inverse Functions    Determine if a function is one-to-one given a verbal, numerical, graphical, or algebraic representation of the function and explain why a function must be one-to-one in order to have an inverse function  Identify the definition of the inverse function for one-to-one function and describe the relationship between the domain\/range of and the domain\/range of   Apply the cancellation properties of inverse functions  Find the inverse of a one-to-one function given a numerical, algebraic, or graphical representation  Apply the formula for the derivative of inverse functions     Before Class   Pre-Class Video 1     Pre-Class Video 2     Inverse Functions & Properties   The table below gives the population of a bacterial culture, hours after it is introduced to an agar-filled petri dish.    hours  0  1  2  3  4  5  6  7  8     bacteria  150  165  182  200  220  243  267  294  324   The inverse function  , gives the time elapsed since a bacterial culture was introduced to an agar-filled petri dish, when the population is bacteria. Use this information to fill out the table below.    bacteria                       hours                           bacteria  150  165  182  200  220  243  267  294  324     hours  0  1  2  3  4  5  6  7  8       One-to-one Function  One-to-one Function   A function is said to be one-to-one if it never takes on the same value twice, or in notation, when .     Horizontal Line Test   A function is one-to-one if and only if no horizontal line intersects its graph more than once.     Is one-to-one? Why or why not?   Yes: if , then and , which are distinct.     Is one-to-one? Why or why not?   No: , so two inputs produce the same output.      Let , where is an even number. Using the previous exercise, do you think this function is one-to-one? Why or why not?    Any even power function (in fact, any even function) is not one-to-one, as for any in the domain of .     Inverse Function  Inverse Function   Let be a one-to-one function with domain and range . The inverse function is notated , with domain and range . The inverse function is defined by the equation for any .     Domain and Range of Inverse Functions    The domain of is the range of   The range of is the domain of       Notation Alert!   is a special notation to indicate the function inverse ; you should not confuse this with the notation for the multiplicative inverse (reciprocal), such as . That is,     denotes the inverse of a function   denotes the multiplicative inverse of a variable, i.e.        Use the table below to answer the questions. If the answer does not exist, write DNE.                                                                                                         DNE (two inputs create the output of 5)             Cancellation Property  Let be a function with domain and range , and let be its inverse function. Then, we have the following properties:     for all    for all        If , what is ? Use the cancellation properties to check your answer.     ; we can check this using the cancellation properties:            Find the inverse function of          There is a graphical interpretation of algebraically finding an inverse:  There is a picture drawn in the pre-class video that I can't replicate right now.  The idea is that when algebraically finding an inverse function, you are finding the equation of the function that results when you reflect across the line      Pre-Class Activities   If , find and .    and      Find the inverse formula for the function          Find the inverse formula for the function           In Class   Calculus of Inverse Functions   Continuity of Inverses  If is a one-to-one continuous function defined on the interval , then is also continuous on .     If a one-to-one function is differentiable on the interval , is it necessarily true that is also differentiable?    No; if , then its inverse is , which is not differentiable at .     Derivative of Inverses (at a Point)  If is a one-to-one, differentiable function at with inverse function and , then the inverse function is differentiable at and    If we replace in the above formula with , we get another formula for the derivative of the inverse:   Derivative of Inverses (as a Function)       Let . Find .          Let and .    Show that is one-to-one.  Find using the formula above.  Find , and give its domain and range.         is increasing: , which is always positive because       . The domain is and the range is         Let .     is not one-to-one. Sketch it and determine an interval on which it can be made one-to-one. This is called the restricted domain .  Complete the square on and use it to find the inverse function on your restricted domain.  Find using your answer in (b).  Find using formulas from this section. Compare the two answers.         Here is the graph of :   A graph of the function on the interval     We can choose two restricted domains: either or . Generally, we'll choose the positive portion of the domain for the restricted domain, so choose .    on      Same as above.        Find for the given functions:     ,    ,                     Suppose is the inverse function of a differentiable function with and . Find .            After Class Activities    Find for            Suppose is the inverse function of a differentiable function , and let . If and , find .           If , find .          "
 },
 {
   "id": "objectives-29",
@@ -6991,7 +6991,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "6.1.17",
   "title": "",
-  "body": "  Let .     is not one-to-one. Sketch it and determine an interval on which it can be made one-to-one. This is called the restricted domain .  Complete the square on and use it to find the inverse function on your restricted domain.  Find using your answer in (b).  Find using formulas from this section. Compare the two answers.         Here is the graph of :    A graph of the function on the interval      We can choose two restricted domains: either or . Generally, we'll choose the positive portion of the domain for the restricted domain, so choose .    on      Same as above.     "
+  "body": "  Let .     is not one-to-one. Sketch it and determine an interval on which it can be made one-to-one. This is called the restricted domain .  Complete the square on and use it to find the inverse function on your restricted domain.  Find using your answer in (b).  Find using formulas from this section. Compare the two answers.         Here is the graph of :   A graph of the function on the interval     We can choose two restricted domains: either or . Generally, we'll choose the positive portion of the domain for the restricted domain, so choose .    on      Same as above.     "
 },
 {
   "id": "example-561",
@@ -7045,7 +7045,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.2",
   "title": "Exponential Functions &amp; Derivatives",
-  "body": " Exponential Functions & Derivatives    Identify the general exponential function for any base and its basic properties (domain, range, graphical behavior depending on value of ), and apply rules of exponents to exponential functions  Evaluate limits of functions involving exponential expressions and analyze the end behavior of those functions  Sketch and identify transformations of exponential functions, especially as examples of exponential growth\/decay in real-world contexts  Recognize and interpret the number in terms of limits, derivatives, and geometry  Compute derivatives and antiderivatives of functions involving natural exponential expressions and use qualitative techniques to analyze key behavior of those functions (extrema, concavity, etc.)     Before Class   Pre-Class Video 1     Exponential Functions   Exponential Function  Exponential Function   An exponential function is a function of the form , where is a positive constant.     Properties of Exponential Functions  Let     Domain:   Range:   If , then is increasing  If , then is decreasing             For the following functions, find the limits and sketch the graph.                  and     A graph of the function         and     A graph of the function            Euler's Constant ( )   Euler's constant    is defined to the number for which       Calculus of Exponentials   Derivative of an Exponential (First Attempt)  If , then     Using the definition of the derivative, we have Now, So we conclude that    This means we have the following interpretation of :   Special Meaning of   is the unique exponential function whose tangent line at the point is exactly 1, i.e.     Derivative of       Antiderivative of         Pre-Class Activities    Write the domain of the function:                                  Find the indicated limit:                                  Find the derivative of the function:                                  Find the equation of the tangent line to the curve at the point .           Use this space to write any questions or concerns you have from the pre-class portion of this section.    Answers vary      In Class   Examples    Compute , if            Compute , if            Find if            Find the absolute maximum and absolute minimum of     Absolute max is at and there is no absolute min      Find , if            Compute the derivatives:                                  Find the absolute maximum and absolute minimum of on     Absolute max occurs at and aboslute min occurs at       Evaluate the integral:                                  Compute            Find if , , and            The error function , is a useful function in probability, statistics, and engineering. Show that .    Rearranging, we have So, and . Now, using properties of integrals, we have        After Class Activities    Show that the function satisfies the differential equation     Compute and :  Now, plugging in for and , we have which does equal 0.      Find an equation of the tangent line to the curve at the point            Compute            If , find            Evaluate            Find the volume of the solid obtained by rotating the region bounded by the curves , , , and about the axis.    The volume is      "
+  "body": " Exponential Functions & Derivatives    Identify the general exponential function for any base and its basic properties (domain, range, graphical behavior depending on value of ), and apply rules of exponents to exponential functions  Evaluate limits of functions involving exponential expressions and analyze the end behavior of those functions  Sketch and identify transformations of exponential functions, especially as examples of exponential growth\/decay in real-world contexts  Recognize and interpret the number in terms of limits, derivatives, and geometry  Compute derivatives and antiderivatives of functions involving natural exponential expressions and use qualitative techniques to analyze key behavior of those functions (extrema, concavity, etc.)     Before Class   Pre-Class Video 1     Exponential Functions   Exponential Function  Exponential Function   An exponential function is a function of the form , where is a positive constant.     Properties of Exponential Functions  Let     Domain:   Range:   If , then is increasing  If , then is decreasing             For the following functions, find the limits and sketch the graph.                  and    A graph of the function        and    A graph of the function           Euler's Constant ( )   Euler's constant    is defined to the number for which       Calculus of Exponentials   Derivative of an Exponential (First Attempt)  If , then     Using the definition of the derivative, we have Now, So we conclude that    This means we have the following interpretation of :   Special Meaning of   is the unique exponential function whose tangent line at the point is exactly 1, i.e.     Derivative of       Antiderivative of         Pre-Class Activities    Write the domain of the function:                                  Find the indicated limit:                                  Find the derivative of the function:                                  Find the equation of the tangent line to the curve at the point .           Use this space to write any questions or concerns you have from the pre-class portion of this section.    Answers vary      In Class   Examples    Compute , if            Compute , if            Find if            Find the absolute maximum and absolute minimum of     Absolute max is at and there is no absolute min      Find , if            Compute the derivatives:                                  Find the absolute maximum and absolute minimum of on     Absolute max occurs at and aboslute min occurs at       Evaluate the integral:                                  Compute            Find if , , and            The error function , is a useful function in probability, statistics, and engineering. Show that .    Rearranging, we have So, and . Now, using properties of integrals, we have        After Class Activities    Show that the function satisfies the differential equation     Compute and :  Now, plugging in for and , we have which does equal 0.      Find an equation of the tangent line to the curve at the point            Compute            If , find            Evaluate            Find the volume of the solid obtained by rotating the region bounded by the curves , , , and about the axis.    The volume is      "
 },
 {
   "id": "objectives-30",
@@ -7081,7 +7081,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "6.2.2",
   "title": "",
-  "body": "  For the following functions, find the limits and sketch the graph.                  and     A graph of the function         and     A graph of the function          "
+  "body": "  For the following functions, find the limits and sketch the graph.                  and    A graph of the function        and    A graph of the function         "
 },
 {
   "id": "definition-40",
@@ -7306,7 +7306,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.3",
   "title": "Logarithmic Functions",
-  "body": " Logarithmic Functions    Identify logarithmic functions for any base and its basic properties (domain, range, graphical behavior depending on value of ), and relate logarithms to exponentials using inverse relationships  Apply properties and rules of logarithms as well as algebra to: simplify logarithmic expressions, solve equations\/inequalities involving exponentials\/logarithms, find inverses of exponential\/logarithmic functions  Describe the end behavior of logarithmic expressions using limits     Before Class   Pre-Class Video 1     Logarithmic Functions   Logarithmic Functions  Logarithmic Functions   Let . The inverse of this exponential function, called a logarithmic function , is defined using the relationship .      Find the following:                               Does not exist       Cancellation Properties     for    for       Properties of Logarithmic Functions  Let . Then, has the following properties:    Domain:   Range:   If , then is increasing  If , then is decreasing            Logarithm Rules  For and , the following properties hold:                  Use the rules of logarithms to write the following as a single logarithm:                            Use the rules of logarithms to expand the given quantity:                             Pre-Class Activities    Find the exact value of the expression:                                  Write as a single logarithm.           Can be written as a single logarithm? Why or why not?    Not with our current tools; the bases of the logarithms are different      Let . Use log rules to completely simplify , then use limit laws to compute .     simplifies as , and the limit is       Use this space to write any questions or thoughts you have from the videos.    Answers vary      In Class   The Natural Logarithm   The Natural Logarithm  Natural Logarithm   The natural logarithm is the logarithm with base . is written as       Find if            Sketch the graph of       The graph of          Solve the equation            Solve the equations for :                                                          Find the following limits:                                  If , find the domain of , the inverse function , and the domain of .    The domain is , , and the domain of is       Find the inverse of the function .           Where is the function increasing?           Find an equation of the tangent to the curve that is perpendicular to the line .          Change of Base Formula  For any positive number ( ), we have      Write the logarithm in terms of the natural logarithm.           Use the change of base formula to write as a single logarithm.            After Class Activities    Solve the equation            Find the limits:                            Find the domain of the function            Find the domain of the function , the inverse function , and the domain of .    The domain is , , and the domain is       If , find .           On what interval is the curve concave down?          "
+  "body": " Logarithmic Functions    Identify logarithmic functions for any base and its basic properties (domain, range, graphical behavior depending on value of ), and relate logarithms to exponentials using inverse relationships  Apply properties and rules of logarithms as well as algebra to: simplify logarithmic expressions, solve equations\/inequalities involving exponentials\/logarithms, find inverses of exponential\/logarithmic functions  Describe the end behavior of logarithmic expressions using limits     Before Class   Pre-Class Video 1     Logarithmic Functions   Logarithmic Functions  Logarithmic Functions   Let . The inverse of this exponential function, called a logarithmic function , is defined using the relationship .      Find the following:                               Does not exist       Cancellation Properties     for    for       Properties of Logarithmic Functions  Let . Then, has the following properties:    Domain:   Range:   If , then is increasing  If , then is decreasing            Logarithm Rules  For and , the following properties hold:                  Use the rules of logarithms to write the following as a single logarithm:                            Use the rules of logarithms to expand the given quantity:                             Pre-Class Activities    Find the exact value of the expression:                                  Write as a single logarithm.           Can be written as a single logarithm? Why or why not?    Not with our current tools; the bases of the logarithms are different      Let . Use log rules to completely simplify , then use limit laws to compute .     simplifies as , and the limit is       Use this space to write any questions or thoughts you have from the videos.    Answers vary      In Class   The Natural Logarithm   The Natural Logarithm  Natural Logarithm   The natural logarithm is the logarithm with base . is written as       Find if            Sketch the graph of      The graph of         Solve the equation            Solve the equations for :                                                          Find the following limits:                                  If , find the domain of , the inverse function , and the domain of .    The domain is , , and the domain of is       Find the inverse of the function .           Where is the function increasing?           Find an equation of the tangent to the curve that is perpendicular to the line .          Change of Base Formula  For any positive number ( ), we have      Write the logarithm in terms of the natural logarithm.           Use the change of base formula to write as a single logarithm.            After Class Activities    Solve the equation            Find the limits:                            Find the domain of the function            Find the domain of the function , the inverse function , and the domain of .    The domain is , , and the domain is       If , find .           On what interval is the curve concave down?          "
 },
 {
   "id": "objectives-31",
@@ -7432,7 +7432,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "6.3.12",
   "title": "",
-  "body": "  Sketch the graph of       The graph of       "
+  "body": "  Sketch the graph of      The graph of      "
 },
 {
   "id": "example-597",
@@ -7909,7 +7909,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.6",
   "title": "Inverse Trigonometric Functions",
-  "body": " Inverse Trigonometric Functions    Communicate (via words and graphs) how and why the domains of each trig function may be restricted in order to define the corresponding inverse function  Apply basic properties of inverse trig functions (cancellation, domain, range, etc.) and sketch their graphs  Derive the derivative formulas for the six inverse trig functions, and use the formulas to compute derivatives of inverse trig expressions and analyze qualitative behavior of those expressions  Evaluate indefinite integrals involving inverse trig functions     Before Class   Pre-Class Video 1     Pre-Class Video 2     Building Inverse Trig Functions    Refer back to Section 6.1-how can we determine if a function has an inverse?    The function must be one-to-one on the interval in question.      Let     Graph on the interval   Identify an interval on which could possess an inverse  Sketch the graph of the inverse function          The graph of on the interval      Sine achieves all its potential values on the interval , so use this as our restricted domain.    The graph of           Inverse Sine (Arcsine)  The function has the inverse (also written ). The domain of is and the range is      Evaluate            Evaluate            Let     Graph on the interval   Identify an interval on which could possess an inverse  Sketch the graph of the inverse function          The graph of on the interval      Cosine achieves all its potential values on the interval , so use this as our restricted domain.    The graph of           Inverse Cosine (Arccosine)  The function has the inverse (also written ). The domain of is and the range is      Repeat the process we used for sine and cosine to find an inverse function for tangent. Sketch the graph of the inverse function.    The graph of tangent is below:    The graph of on the interval      From the graph, we can identify a potential restricted domain as   The graph of this inverse is given below:    The graph of on         Inverse Tangent (Arctangent)  The function has the inverse (also written ). The domain of is and the range is      Simplify the expression            Using the sketch of arctangent from above, compute and             Pre-Class Activities    Evaluate the following:                                        Simplify the expressions:                                  In Class   Derivatives of Inverse Trig Functions    Function  Domain  Range                                                                        Use implicit differentiation to show that     Let . Then, . Taking the implicit derivative, we have From the Pythagorean Theorem, we know that . But , so . Then, we can say that .  From the restricted domain for , we know that , so that is always positive (the angle is in quadrants 1 and 4). This allows us to say that .  Solving for , we have       Use the same process to find the derivative of     Let . Then, . Taking the implicit derivative, we have From the Pythagorean Theorem, we know that . But , so . Then, we can say that .  From the restricted domain for , we know that , so that is always positive (the angle is in quadrants 1 and 2). This allows us to say that .  Solving for , we have So       Again, use the same process to find the derivative of     Let . Then, . Taking the implicit derivative, we have From the Pythagorean Theorem, we know that . Since , we conclude that   Solving for , we have So     The table below collects the derivatives of the six inverse trig functions:     Function  Derivative  Function  Derivative                                                 Find the domain of the function . Then, find its derivative, and the domain of the derivative.    The domain is   The derivative is   The domain of the derivative is       Find the derivative of            Write the derivative of            Find the derivatives:                            If , find .           Find an equation of the tangent line to the curve at the point .           Find if            Integrals of Inverse Trig Functions  The derivatives for the inverse trig functions give way to corresponding antiderivatives. There are two important ones:     Function  Derivative  Function  Derivative                     Compute            For any real number , find             After Class Activities    Compute the derivatives of the functions below:                       Explain why           Compute the integrals:                                 "
+  "body": " Inverse Trigonometric Functions    Communicate (via words and graphs) how and why the domains of each trig function may be restricted in order to define the corresponding inverse function  Apply basic properties of inverse trig functions (cancellation, domain, range, etc.) and sketch their graphs  Derive the derivative formulas for the six inverse trig functions, and use the formulas to compute derivatives of inverse trig expressions and analyze qualitative behavior of those expressions  Evaluate indefinite integrals involving inverse trig functions     Before Class   Pre-Class Video 1     Pre-Class Video 2     Building Inverse Trig Functions    Refer back to Section 6.1-how can we determine if a function has an inverse?    The function must be one-to-one on the interval in question.      Let     Graph on the interval   Identify an interval on which could possess an inverse  Sketch the graph of the inverse function          The graph of on the interval      Sine achieves all its potential values on the interval , so use this as our restricted domain.    The graph of           Inverse Sine (Arcsine)  The function has the inverse (also written ). The domain of is and the range is      Evaluate            Evaluate            Let     Graph on the interval   Identify an interval on which could possess an inverse  Sketch the graph of the inverse function          The graph of on the interval      Cosine achieves all its potential values on the interval , so use this as our restricted domain.    The graph of           Inverse Cosine (Arccosine)  The function has the inverse (also written ). The domain of is and the range is      Repeat the process we used for sine and cosine to find an inverse function for tangent. Sketch the graph of the inverse function.    The graph of tangent is below:   The graph of on the interval     From the graph, we can identify a potential restricted domain as   The graph of this inverse is given below:   The graph of on        Inverse Tangent (Arctangent)  The function has the inverse (also written ). The domain of is and the range is      Simplify the expression            Using the sketch of arctangent from above, compute and             Pre-Class Activities    Evaluate the following:                                        Simplify the expressions:                                  In Class   Derivatives of Inverse Trig Functions    Function  Domain  Range                                                                        Use implicit differentiation to show that     Let . Then, . Taking the implicit derivative, we have From the Pythagorean Theorem, we know that . But , so . Then, we can say that .  From the restricted domain for , we know that , so that is always positive (the angle is in quadrants 1 and 4). This allows us to say that .  Solving for , we have       Use the same process to find the derivative of     Let . Then, . Taking the implicit derivative, we have From the Pythagorean Theorem, we know that . But , so . Then, we can say that .  From the restricted domain for , we know that , so that is always positive (the angle is in quadrants 1 and 2). This allows us to say that .  Solving for , we have So       Again, use the same process to find the derivative of     Let . Then, . Taking the implicit derivative, we have From the Pythagorean Theorem, we know that . Since , we conclude that   Solving for , we have So     The table below collects the derivatives of the six inverse trig functions:     Function  Derivative  Function  Derivative                                                 Find the domain of the function . Then, find its derivative, and the domain of the derivative.    The domain is   The derivative is   The domain of the derivative is       Find the derivative of            Write the derivative of            Find the derivatives:                            If , find .           Find an equation of the tangent line to the curve at the point .           Find if            Integrals of Inverse Trig Functions  The derivatives for the inverse trig functions give way to corresponding antiderivatives. There are two important ones:     Function  Derivative  Function  Derivative                     Compute            For any real number , find             After Class Activities    Compute the derivatives of the functions below:                       Explain why           Compute the integrals:                                 "
 },
 {
   "id": "objectives-33",
@@ -7990,7 +7990,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "6.6.6",
   "title": "",
-  "body": "  Repeat the process we used for sine and cosine to find an inverse function for tangent. Sketch the graph of the inverse function.    The graph of tangent is below:    The graph of on the interval      From the graph, we can identify a potential restricted domain as   The graph of this inverse is given below:    The graph of on       "
+  "body": "  Repeat the process we used for sine and cosine to find an inverse function for tangent. Sketch the graph of the inverse function.    The graph of tangent is below:   The graph of on the interval     From the graph, we can identify a potential restricted domain as   The graph of this inverse is given below:   The graph of on      "
 },
 {
   "id": "example-645",
@@ -8845,7 +8845,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.3",
   "title": "Trigonometric Substitution",
-  "body": " Trigonometric Substitution    Use the basic trigonometric substitutions to evaluate definite and indefinite integrals, and use trigonometric identities to write solutions without using inverse trigonometric functions (when possible)     Before Class   Pre-Class Video 1     Pre-Class Video 2     The Substitutions    Use trigonometry to complete the following reference triangles:     Three triangles used to define the trigonometric substitutions. On the left, the triangle for the tangent substitution; in the middle, the triangle for the sine substitution; on the right, the triangle for the secant substitution.           Three triangles used to define the trigonometric substitutions. On the left, the triangle for the tangent substitution; in the middle, the triangle for the sine substitution; on the right, the triangle for the secant substitution.          Let     Consider . Why do none of our previous integration techniques work here?  Refer to the example at the top of the page. Which triangle has an expression similar to the radicand in ? Write the substitution below.  Treat the substitution you chose in part (b) like a substitution. Make the appropriate substitutions into the integral , and complete the integration.        Answers vary, but the idea is that we don't have an appropriate rule for the pattern      If , then . Anywhere we see , we will replace with .  Now, we have Simplifying, we have Using identities, we arrive at Integrating gives However, our original variable was , not ; since we declared , we rearrange to get . So, our answer becomes          Compute            Evaluate             Pre-Class Activities    Use this space to write any questions you have from the videos.    Answers vary      Compute            Compute . Is a trigonometric substitution necessary here? Why or why not?     . A trig substitution isn't necessary here, as we can use a u-substitution.      Compute using the substitution            Using the previous examples as guideposts, fill out the following table:     If you see an integrand involving  Try a substitution using          If you see an integrand involving  Try a substitution using                                 In Class   Examples    Compute            Evaluate            Compute            Find            Evaluate            Show that     Set . Then, . Making our substitutions, we get After some simplification, we get Using the double angle identity for sine, we have Now use a power reducing identity: More simplification gives Integrating and using double angle identities gives After reduction, it becomes clear that the sine term is zero at the endpoints, so the integral becomes Evaluating gives our answer.      Evaluate            Compute             After Class Activities    Use trig substitution to prove that the area of the ellipse is , where is the length of the major axis and is the length of the minor axis.    Write the ellipse in terms of alone first; this gives . We can take the positive root, integrate a quarter of the ellipse, and multiply the resulting area by 4.  Now, the area will be given by . Use the substitution ; then, . Then Multiplying by 4 gives the area,       Evaluate            Compute           "
+  "body": " Trigonometric Substitution    Use the basic trigonometric substitutions to evaluate definite and indefinite integrals, and use trigonometric identities to write solutions without using inverse trigonometric functions (when possible)     Before Class   Pre-Class Video 1     Pre-Class Video 2     The Substitutions    Use trigonometry to complete the following reference triangles:    Three triangles used to define the trigonometric substitutions. On the left, the triangle for the tangent substitution; in the middle, the triangle for the sine substitution; on the right, the triangle for the secant substitution.         Three triangles used to define the trigonometric substitutions. On the left, the triangle for the tangent substitution; in the middle, the triangle for the sine substitution; on the right, the triangle for the secant substitution.         Let     Consider . Why do none of our previous integration techniques work here?  Refer to the example at the top of the page. Which triangle has an expression similar to the radicand in ? Write the substitution below.  Treat the substitution you chose in part (b) like a substitution. Make the appropriate substitutions into the integral , and complete the integration.        Answers vary, but the idea is that we don't have an appropriate rule for the pattern      If , then . Anywhere we see , we will replace with .  Now, we have Simplifying, we have Using identities, we arrive at Integrating gives However, our original variable was , not ; since we declared , we rearrange to get . So, our answer becomes          Compute            Evaluate             Pre-Class Activities    Use this space to write any questions you have from the videos.    Answers vary      Compute            Compute . Is a trigonometric substitution necessary here? Why or why not?     . A trig substitution isn't necessary here, as we can use a u-substitution.      Compute using the substitution            Using the previous examples as guideposts, fill out the following table:     If you see an integrand involving  Try a substitution using          If you see an integrand involving  Try a substitution using                                 In Class   Examples    Compute            Evaluate            Compute            Find            Evaluate            Show that     Set . Then, . Making our substitutions, we get After some simplification, we get Using the double angle identity for sine, we have Now use a power reducing identity: More simplification gives Integrating and using double angle identities gives After reduction, it becomes clear that the sine term is zero at the endpoints, so the integral becomes Evaluating gives our answer.      Evaluate            Compute             After Class Activities    Use trig substitution to prove that the area of the ellipse is , where is the length of the major axis and is the length of the minor axis.    Write the ellipse in terms of alone first; this gives . We can take the positive root, integrate a quarter of the ellipse, and multiply the resulting area by 4.  Now, the area will be given by . Use the substitution ; then, . Then Multiplying by 4 gives the area,       Evaluate            Compute           "
 },
 {
   "id": "objectives-37",
@@ -8881,7 +8881,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "7.3.1",
   "title": "",
-  "body": "  Use trigonometry to complete the following reference triangles:     Three triangles used to define the trigonometric substitutions. On the left, the triangle for the tangent substitution; in the middle, the triangle for the sine substitution; on the right, the triangle for the secant substitution.           Three triangles used to define the trigonometric substitutions. On the left, the triangle for the tangent substitution; in the middle, the triangle for the sine substitution; on the right, the triangle for the secant substitution.       "
+  "body": "  Use trigonometry to complete the following reference triangles:    Three triangles used to define the trigonometric substitutions. On the left, the triangle for the tangent substitution; in the middle, the triangle for the sine substitution; on the right, the triangle for the secant substitution.         Three triangles used to define the trigonometric substitutions. On the left, the triangle for the tangent substitution; in the middle, the triangle for the sine substitution; on the right, the triangle for the secant substitution.      "
 },
 {
   "id": "example-723",
@@ -10357,7 +10357,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "10.2",
   "title": "Calculus with Parametric Curves",
-  "body": " Calculus with Parametric Curves    To come     Before Class   Pre-Class Video 1    Pre-Class Video 2 url goes here   Tangents   Derivative of a Parametric Curve  If and are the parametric equations for a curve , then the derivative is given by provided that     From the chain rule, Rearranging gives the desired quantity.     For the circle , , what is the rate of change when ?           What is the general formula for the rate of change of an ellipse, whose parametrization is given by , ( )?           Find an equation for the tangent line to the curve , at the point corresponding to the parameter value .          Second Derivative of a Parametric Curve  If and are the parametric equations for a curve with derivative , then the second derivative is given by Provided that           Find the value of the second derivative for the circle , when            Let be a curve defined by the parametric equations , .   Show that has two tangents at the point and find their equations    Find the points on where the tangent is either horizontal or vertical    Determine when the curve is concave up or concave down    Sketch the curve using the information above          At , the curve passes through so we know that the curve has up to two tangent lines at that point. Then, ; evaluating at gives and at gives .  This gives the tangent lines and     The tangent line is vertical when , so when . This occurs at .  The tangent line is horizontal when , or at . This gives two points, and     Since , the curve is always concave up.      A sketch of the parametric curve on the interval             Pre-Class Activities    For the curve defined parametrically by , , find an equation of the tangent line to the curve at the point . Then, eliminate the parameter to find a Cartesian expression for the curve.     and       For the following functions, find the first and second derivative.    ,      ,      , ,            ,      ,      ,          In Class    When a circle rolls on a flat surface, a fixed point on the circle will trace out a curve called a cycloid. The parametrization for a cycloid is given by , , where is the radius of the circle.     Does the value of the tangent depend on the radius of the circle?    Compute the slope of the tangent line when .    At what points is the tangent horizontal? What about when it's vertical?          No- , which is independent of     Slope is     Tangent is vertical when for and vertical for for          At what point(s) on the curve , does the tangent line have slope exactly ?          Areas   Area Under a Parametric Curve  Let be a curve traved out exactly once by the parametric equation and . Then, the area under between and is given by or where or , depending on direction of travel.    If , then the area is . In parametrics, and .  If , then the area is . In parametrics, and      Use the parametrization , ( ) to show that the (unsigned) area of a circle is exactly     If and , then . For the entire circle, we will use . Then, we have So we conclude the unsigned area is . Naturally, if we want the positive version, we could reverse the direction of the parametrization.      Show that the area under one arch of the cycloid , is exactly three times the area of the generating circle.    If and , then we have . Our parametrization runs , as each arch can be shown to be distance from each other.       Find the area enclosed by the curve , , and the axis.     . Then, we integrate with respect to and note that , and . So,       Use the parametric equations , , , to show that the area contained in an ellipse is     The work is virtually identical to the unsigned area problem above; the difference is now that we have parameters showing up.      Arc Length   Arc Length of a Parametric Curve  If a curve is described by the parametric equations , , for , where and are continuous on and is traversed exactly once as ranges from to , then the length of is given by     Adapt the proof for the arc length formula from Section 8.1; the Mean Value Theorem gives that and so that Pushing to the integral gives the result.     Find the length of one arch of the cycloid ,      and , so       Prove that the circumference of a circle of radius is     Chose parametrization , . Then, and and       Find the exact length of the curve , ,            Find the exact length of the curve and ,             After Class Activities   "
+  "body": " Calculus with Parametric Curves    To come     Before Class   Pre-Class Video 1    Pre-Class Video 2 url goes here   Tangents   Derivative of a Parametric Curve  If and are the parametric equations for a curve , then the derivative is given by provided that     From the chain rule, Rearranging gives the desired quantity.     For the circle , , what is the rate of change when ?           What is the general formula for the rate of change of an ellipse, whose parametrization is given by , ( )?           Find an equation for the tangent line to the curve , at the point corresponding to the parameter value .          Second Derivative of a Parametric Curve  If and are the parametric equations for a curve with derivative , then the second derivative is given by Provided that           Find the value of the second derivative for the circle , when            Let be a curve defined by the parametric equations , .   Show that has two tangents at the point and find their equations    Find the points on where the tangent is either horizontal or vertical    Determine when the curve is concave up or concave down    Sketch the curve using the information above          At , the curve passes through so we know that the curve has up to two tangent lines at that point. Then, ; evaluating at gives and at gives .  This gives the tangent lines and     The tangent line is vertical when , so when . This occurs at .  The tangent line is horizontal when , or at . This gives two points, and     Since , the curve is always concave up.     A sketch of the parametric curve on the interval            Pre-Class Activities    For the curve defined parametrically by , , find an equation of the tangent line to the curve at the point . Then, eliminate the parameter to find a Cartesian expression for the curve.     and       For the following functions, find the first and second derivative.    ,      ,      , ,            ,      ,      ,          In Class    When a circle rolls on a flat surface, a fixed point on the circle will trace out a curve called a cycloid. The parametrization for a cycloid is given by , , where is the radius of the circle.     Does the value of the tangent depend on the radius of the circle?    Compute the slope of the tangent line when .    At what points is the tangent horizontal? What about when it's vertical?          No- , which is independent of     Slope is     Tangent is vertical when for and vertical for for          At what point(s) on the curve , does the tangent line have slope exactly ?          Areas   Area Under a Parametric Curve  Let be a curve traved out exactly once by the parametric equation and . Then, the area under between and is given by or where or , depending on direction of travel.    If , then the area is . In parametrics, and .  If , then the area is . In parametrics, and      Use the parametrization , ( ) to show that the (unsigned) area of a circle is exactly     If and , then . For the entire circle, we will use . Then, we have So we conclude the unsigned area is . Naturally, if we want the positive version, we could reverse the direction of the parametrization.      Show that the area under one arch of the cycloid , is exactly three times the area of the generating circle.    If and , then we have . Our parametrization runs , as each arch can be shown to be distance from each other.       Find the area enclosed by the curve , , and the axis.     . Then, we integrate with respect to and note that , and . So,       Use the parametric equations , , , to show that the area contained in an ellipse is     The work is virtually identical to the unsigned area problem above; the difference is now that we have parameters showing up.      Arc Length   Arc Length of a Parametric Curve  If a curve is described by the parametric equations , , for , where and are continuous on and is traversed exactly once as ranges from to , then the length of is given by     Adapt the proof for the arc length formula from Section 8.1; the Mean Value Theorem gives that and so that Pushing to the integral gives the result.     Find the length of one arch of the cycloid ,      and , so       Prove that the circumference of a circle of radius is     Chose parametrization , . Then, and and       Find the exact length of the curve , ,            Find the exact length of the curve and ,             After Class Activities   "
 },
 {
   "id": "objectives-43",
@@ -10447,7 +10447,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "10.2.5",
   "title": "",
-  "body": "  Let be a curve defined by the parametric equations , .   Show that has two tangents at the point and find their equations    Find the points on where the tangent is either horizontal or vertical    Determine when the curve is concave up or concave down    Sketch the curve using the information above          At , the curve passes through so we know that the curve has up to two tangent lines at that point. Then, ; evaluating at gives and at gives .  This gives the tangent lines and     The tangent line is vertical when , so when . This occurs at .  The tangent line is horizontal when , or at . This gives two points, and     Since , the curve is always concave up.      A sketch of the parametric curve on the interval         "
+  "body": "  Let be a curve defined by the parametric equations , .   Show that has two tangents at the point and find their equations    Find the points on where the tangent is either horizontal or vertical    Determine when the curve is concave up or concave down    Sketch the curve using the information above          At , the curve passes through so we know that the curve has up to two tangent lines at that point. Then, ; evaluating at gives and at gives .  This gives the tangent lines and     The tangent line is vertical when , so when . This occurs at .  The tangent line is horizontal when , or at . This gives two points, and     Since , the curve is always concave up.     A sketch of the parametric curve on the interval        "
 },
 {
   "id": "example-851",
@@ -10582,7 +10582,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "10.3",
   "title": "Polar Coordinates",
-  "body": " Polar Coordinates    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   The Polar Coordinate System     Pre-Class Activities    In Class   Polar Curves     After Class Activities   "
+  "body": " Polar Coordinates    To come     Before Class   Pre-Class Video 1 url goes here   Pre-Class Video 2 url goes here   The Polar Coordinate System    The Cartesian coordinate system carries two pieces of information: a horizontal distance, , and a vertical distance, . If polar coordinates deal with circular objects, what two pieces of information should a polar coordinate carry?    Radius and angle      Use the polar grid below to plot the points. Be sure to label the points.                                     A blank polar grid      Done in video, need to fix after \"image in solution\" issue is figured out.      Consider the polar point plotted above. This is not the only way of describing the point.     Give two or three different ways of expressing this point in polar coordinates.    Do you see a pattern in the expressions? What is it?          Answers vary    Answers vary        A Point in Polar Coordinates  Any point in polar coordinates can also be represented by the points and for any    There is a connection between Cartesian coordinates and polar coordinates; we can exploit trigonometry to find the relationship.       Below is a circle of radius , with an inscribed right triangle. Label as much as you can on the figure.    Use the triangle and trigonometric functions to obtain a conversion from polar coordinates to Cartesian coordinates.      A circle of radius , with an inscribed right triangle      To be filled out when the image issue is resolved     Polar-to-Cartesian Conversion  If a point has the polar coordinate expression , then its Cartesian coordinate expression is given by and     Cartesian-to-Polar Conversion  If a point has the Cartesian coordinate expression , then its polar coordinate expression is given by and      Convert the following points from polar to Cartesian coordinates.                       Technically there are an infinite number of representations, but here are perhaps the most straightforward.                         Convert the following points from Cartesian to polar coordinates.                       Same comment as above                         Convert each equation from polar to rectangular coordinates. If possible, identify the curve.                                , a circle of radius 4 centered at the origin.     , a circle of radius 2 centered at      , a line of slope               Convert each equation from rectangular coordinates to polar coordinates.                                               Pre-Class Activities    Use this space to write any questions you might have from the videos    Answers vary      Plot each point below on a polar grid. Then, convert each from polar coordinates to Cartesian coordinates.                       Again, the plots will have to wait, but the conversions are below.                         Convert into rectangular coordinates, and describe\/identify the graph.    This was conveniently done earlier in the before class:       Express the ellipse in polar coordinates.     , so this simplifies as       In Class   Polar Curves    Graph the polar equation     This ends up the line , but again with the graphing issue.      Let      Make a table of values for the curve, for     Use the table to sketch the curve    Find the Cartesian equation for the curve         ,                                             Graphing issues, but you should see a circle of radius 1 centered at               Sketch the polar curve . This shape is called a cardioid.          Sketch the polar curve . This shape is called a rose of four leaves.         Symmetry in Polar Graphs  Consider the polar curve      The curve is symmetric about the polar axis if     The curve is symmetric about the pole if or     The curve is symmetric about if         What kind of symmetries does the cardioid possess? What about the cardioid ?    Let and    , so the first cardioid is symmetric about the polar axis. It is clear that , so there is no symmetry about the pole. , so there is no symmetry about    , so the second cardioid is not symmetric about the polar axis. , so there is no symmetry about the pole. , so there is no symmetry about       Use symmetries to help you graph .    Graphing issues      Tangents to Polar Curves   Derivative of a Polar Curve  Given the polar curve , consider the parametric equations and . Then,      Consider the cardioid .     Find the slope of the tangent line when .    Find the points where the tangent line is horizontal or vertical.           , so which is undefined.    The tangent line is horizontal when .  The tangent line is vertical when          Find the slope of the tangent line to the polar curve at .     , and , so       Find the points on the curve where the tangent line is horizontal or vertical.     , so the tangent line is horizontal when which gives . The tangent line is vertical when i.e. when .  This means that the tangent line is never horizontal.       After Class Activities    Sketch the curve . Then, convert the equation to Cartesian coordinates.          The graph below shows as a function of , in Cartesian coordinates. Use the graph to sketch the corresponding polar curve.           Find the slope of the tangent line to the polar curve at .         "
 },
 {
   "id": "objectives-44",
@@ -10610,6 +10610,222 @@ var ptx_lunr_docs = [
   "number": "75",
   "title": "",
   "body": " Pre-Class Video 2 url goes here "
+},
+{
+  "id": "question-39",
+  "level": "2",
+  "url": "section-103.html#question-39",
+  "type": "Question",
+  "number": "10.3.1",
+  "title": "",
+  "body": "  The Cartesian coordinate system carries two pieces of information: a horizontal distance, , and a vertical distance, . If polar coordinates deal with circular objects, what two pieces of information should a polar coordinate carry?    Radius and angle   "
+},
+{
+  "id": "example-863",
+  "level": "2",
+  "url": "section-103.html#example-863",
+  "type": "Example",
+  "number": "10.3.2",
+  "title": "",
+  "body": "  Use the polar grid below to plot the points. Be sure to label the points.                                     A blank polar grid      Done in video, need to fix after \"image in solution\" issue is figured out.   "
+},
+{
+  "id": "example-864",
+  "level": "2",
+  "url": "section-103.html#example-864",
+  "type": "Example",
+  "number": "10.3.3",
+  "title": "",
+  "body": "  Consider the polar point plotted above. This is not the only way of describing the point.     Give two or three different ways of expressing this point in polar coordinates.    Do you see a pattern in the expressions? What is it?          Answers vary    Answers vary      "
+},
+{
+  "id": "example-865",
+  "level": "2",
+  "url": "section-103.html#example-865",
+  "type": "Example",
+  "number": "10.3.4",
+  "title": "",
+  "body": "     Below is a circle of radius , with an inscribed right triangle. Label as much as you can on the figure.    Use the triangle and trigonometric functions to obtain a conversion from polar coordinates to Cartesian coordinates.      A circle of radius , with an inscribed right triangle      To be filled out when the image issue is resolved   "
+},
+{
+  "id": "example-866",
+  "level": "2",
+  "url": "section-103.html#example-866",
+  "type": "Example",
+  "number": "10.3.5",
+  "title": "",
+  "body": "  Convert the following points from polar to Cartesian coordinates.                       Technically there are an infinite number of representations, but here are perhaps the most straightforward.                      "
+},
+{
+  "id": "example-867",
+  "level": "2",
+  "url": "section-103.html#example-867",
+  "type": "Example",
+  "number": "10.3.6",
+  "title": "",
+  "body": "  Convert the following points from Cartesian to polar coordinates.                       Same comment as above                      "
+},
+{
+  "id": "example-868",
+  "level": "2",
+  "url": "section-103.html#example-868",
+  "type": "Example",
+  "number": "10.3.7",
+  "title": "",
+  "body": "  Convert each equation from polar to rectangular coordinates. If possible, identify the curve.                                , a circle of radius 4 centered at the origin.     , a circle of radius 2 centered at      , a line of slope            "
+},
+{
+  "id": "example-869",
+  "level": "2",
+  "url": "section-103.html#example-869",
+  "type": "Example",
+  "number": "10.3.8",
+  "title": "",
+  "body": "  Convert each equation from rectangular coordinates to polar coordinates.                                           "
+},
+{
+  "id": "example-870",
+  "level": "2",
+  "url": "section-103.html#example-870",
+  "type": "Example",
+  "number": "10.3.9",
+  "title": "",
+  "body": "  Use this space to write any questions you might have from the videos    Answers vary   "
+},
+{
+  "id": "example-871",
+  "level": "2",
+  "url": "section-103.html#example-871",
+  "type": "Example",
+  "number": "10.3.10",
+  "title": "",
+  "body": "  Plot each point below on a polar grid. Then, convert each from polar coordinates to Cartesian coordinates.                       Again, the plots will have to wait, but the conversions are below.                      "
+},
+{
+  "id": "example-872",
+  "level": "2",
+  "url": "section-103.html#example-872",
+  "type": "Example",
+  "number": "10.3.11",
+  "title": "",
+  "body": "  Convert into rectangular coordinates, and describe\/identify the graph.    This was conveniently done earlier in the before class:    "
+},
+{
+  "id": "example-873",
+  "level": "2",
+  "url": "section-103.html#example-873",
+  "type": "Example",
+  "number": "10.3.12",
+  "title": "",
+  "body": "  Express the ellipse in polar coordinates.     , so this simplifies as    "
+},
+{
+  "id": "example-874",
+  "level": "2",
+  "url": "section-103.html#example-874",
+  "type": "Example",
+  "number": "10.3.13",
+  "title": "",
+  "body": "  Graph the polar equation     This ends up the line , but again with the graphing issue.   "
+},
+{
+  "id": "example-875",
+  "level": "2",
+  "url": "section-103.html#example-875",
+  "type": "Example",
+  "number": "10.3.14",
+  "title": "",
+  "body": "  Let      Make a table of values for the curve, for     Use the table to sketch the curve    Find the Cartesian equation for the curve         ,                                             Graphing issues, but you should see a circle of radius 1 centered at            "
+},
+{
+  "id": "example-876",
+  "level": "2",
+  "url": "section-103.html#example-876",
+  "type": "Example",
+  "number": "10.3.15",
+  "title": "",
+  "body": "  Sketch the polar curve . This shape is called a cardioid.       "
+},
+{
+  "id": "example-877",
+  "level": "2",
+  "url": "section-103.html#example-877",
+  "type": "Example",
+  "number": "10.3.16",
+  "title": "",
+  "body": "  Sketch the polar curve . This shape is called a rose of four leaves.       "
+},
+{
+  "id": "example-878",
+  "level": "2",
+  "url": "section-103.html#example-878",
+  "type": "Example",
+  "number": "10.3.17",
+  "title": "",
+  "body": "  What kind of symmetries does the cardioid possess? What about the cardioid ?    Let and    , so the first cardioid is symmetric about the polar axis. It is clear that , so there is no symmetry about the pole. , so there is no symmetry about    , so the second cardioid is not symmetric about the polar axis. , so there is no symmetry about the pole. , so there is no symmetry about    "
+},
+{
+  "id": "example-879",
+  "level": "2",
+  "url": "section-103.html#example-879",
+  "type": "Example",
+  "number": "10.3.18",
+  "title": "",
+  "body": "  Use symmetries to help you graph .    Graphing issues   "
+},
+{
+  "id": "example-880",
+  "level": "2",
+  "url": "section-103.html#example-880",
+  "type": "Example",
+  "number": "10.3.19",
+  "title": "",
+  "body": "  Consider the cardioid .     Find the slope of the tangent line when .    Find the points where the tangent line is horizontal or vertical.           , so which is undefined.    The tangent line is horizontal when .  The tangent line is vertical when       "
+},
+{
+  "id": "example-881",
+  "level": "2",
+  "url": "section-103.html#example-881",
+  "type": "Example",
+  "number": "10.3.20",
+  "title": "",
+  "body": "  Find the slope of the tangent line to the polar curve at .     , and , so    "
+},
+{
+  "id": "example-882",
+  "level": "2",
+  "url": "section-103.html#example-882",
+  "type": "Example",
+  "number": "10.3.21",
+  "title": "",
+  "body": "  Find the points on the curve where the tangent line is horizontal or vertical.     , so the tangent line is horizontal when which gives . The tangent line is vertical when i.e. when .  This means that the tangent line is never horizontal.   "
+},
+{
+  "id": "example-883",
+  "level": "2",
+  "url": "section-103.html#example-883",
+  "type": "Example",
+  "number": "10.3.22",
+  "title": "",
+  "body": "  Sketch the curve . Then, convert the equation to Cartesian coordinates.       "
+},
+{
+  "id": "example-884",
+  "level": "2",
+  "url": "section-103.html#example-884",
+  "type": "Example",
+  "number": "10.3.23",
+  "title": "",
+  "body": "  The graph below shows as a function of , in Cartesian coordinates. Use the graph to sketch the corresponding polar curve.        "
+},
+{
+  "id": "example-885",
+  "level": "2",
+  "url": "section-103.html#example-885",
+  "type": "Example",
+  "number": "10.3.24",
+  "title": "",
+  "body": "  Find the slope of the tangent line to the polar curve at .       "
 },
 {
   "id": "section-104",
@@ -11719,45 +11935,45 @@ var ptx_lunr_docs = [
   "body": " Pre-Class Video 2 url goes here "
 },
 {
-  "id": "question-39",
+  "id": "question-40",
   "level": "2",
-  "url": "section-151.html#question-39",
+  "url": "section-151.html#question-40",
   "type": "Question",
   "number": "15.1.1",
   "title": "",
   "body": "  Let be a function defined on the interval .     Describe what the definite integral means.    Write the process used to define the definite integral.    Geometrically, what are we using to find the integral?          We interpret the definite integral to give the net area under the curve on the interval .    The definite integral is built out of an approximation of the area under the curve. The simplest shape to use as an approximator is a rectangle; so, each approximation needs a base length and a height.  In order to make the computation easier, we want to make the base lengths consisent- so, we'll evenly divide the interval by the number of rectangles. So, .  For any input , we can express it arbitrarily as , where is an indexing term. This means that the function height can be given by .  So, any given approximating rectangle has an area given by (respectively the height and base of the rectangle). In order to approximate the entire area under the curve, we need to add all the rectangles. This gives the expression   In order to move from approximation to exact answer, we need to analyze what happens as the number of rectangles increases without bound; the limit accomplishes this. So we arrive at the definition of the definite integral:     We're using a rectangle because it's the simplest shape we can use to find area.      "
 },
 {
-  "id": "question-40",
+  "id": "question-41",
   "level": "2",
-  "url": "section-151.html#question-40",
+  "url": "section-151.html#question-41",
   "type": "Question",
   "number": "15.1.2",
   "title": "",
   "body": "  Now let be a function defined on the rectangle . How could we extend the definition of the definite integral to a function of two variables?    Since we are operating in three dimensions now, we can take the same idea and instead of using rectangles, we can use rectangular prisms to approximate.  However, since we're in three dimensions, we're not approximating area anymore; we're approximating volume.   "
 },
 {
-  "id": "example-863",
+  "id": "example-886",
   "level": "2",
-  "url": "section-151.html#example-863",
+  "url": "section-151.html#example-886",
   "type": "Example",
   "number": "15.1.3",
   "title": "",
   "body": "  This example will develop the definition of the definite integral for a function . Let be defined on the region given by and let be the solid that lies above and under the graph of :      What kind of object can we use to approximate the volume of ? What sort of expression do we need to approximate the volume?    Can we improve the approximation? How?    Is there a way of converting from an approximation to an exact answer? How?    The definition of the double integral is then:          We can use rectangular prisms to approximate volume. We need to create a similar expression to this one:   Subdivide into rectangles; in the direction, make the length , where is the number of subintervals in the direction. In the direction, make the length , where is the number of subintervals in the direction.  Let be the midpoint of the rectangle (that is, the rectangle steps horizontally and steps vertically). The value gives the output on the surface which is precisely the height of the prism.  So, the volume of an individual prism is given by the product of length ( ), width ( ), and height ( ). This gives the approximation   To find the volume of the entire region, we need to add up the volume of each rectangle . Since there are two indices, we have to have two summations. This gives us the expression     We can improve the approximation by using more and more rectangles, and creating more and more subdivisions by increasing and .    Yes; take the limit as and as .           "
 },
 {
-  "id": "example-864",
+  "id": "example-887",
   "level": "2",
-  "url": "section-151.html#example-864",
+  "url": "section-151.html#example-887",
   "type": "Example",
   "number": "15.1.4",
   "title": "",
   "body": "  Approximate the volume of the solid that lies above the square and below the surface .  Divide into three equal squares and choose the sample point to be the upper right corner of each square .    First determine what the region will look like. This is shown in the image below.   The partition of with ; this creates 9 squares. The sample points are noted at the corners, and each square is labeled     We know that the volume is given by the approximation which can be rewritten (without sigma notation) as since and , . This means the computation simplifies to Computing the values at the given points and substituting gives so that we have    "
 },
 {
-  "id": "example-865",
+  "id": "example-888",
   "level": "2",
-  "url": "section-151.html#example-865",
+  "url": "section-151.html#example-888",
   "type": "Example",
   "number": "15.1.5",
   "title": "",
@@ -11773,45 +11989,45 @@ var ptx_lunr_docs = [
   "body": " Midpoint Rule (Double Integrals)  Midpoint Rule (Double Integrals)   If is the midpoint of the interval and is the midpoint of the interval , then we can approximate the double integral of over the region by where    "
 },
 {
-  "id": "example-866",
+  "id": "example-889",
   "level": "2",
-  "url": "section-151.html#example-866",
+  "url": "section-151.html#example-889",
   "type": "Example",
   "number": "15.1.7",
   "title": "",
   "body": "  Approximate , where and , using midpoints.    Since , we take and . This means , , , and .  Since we want midpoints, we have , , , and as our points.  Then, So our conclusion is that    "
 },
 {
-  "id": "example-867",
+  "id": "example-890",
   "level": "2",
-  "url": "section-151.html#example-867",
+  "url": "section-151.html#example-890",
   "type": "Example",
   "number": "15.1.8",
   "title": "",
   "body": "  Consider the function , defined and integrable on the rectangle .     How can we make sense of the integral ? Is it a necessarily a number?    If we set , then what does do?    Put it all together. Interpret the expressions           Since we're integrating with respect to , any and all terms are considered constant; so while the is treated as a number for the integration, the answer isn't necessarily a number- it could be a function of .    This computes the integral of a single-variable function- something like what we're used to. Now, this integral returns a strictly numerical value.    In the first integral, we're integrating first with respect to in order to get a function of , then integrating with respect to in order to get a numerical value.  In the second integral, we're integrating first with respect to in order to get a function of , then integrating with respect to in order to get an numerical value.      "
 },
 {
-  "id": "example-868",
+  "id": "example-891",
   "level": "2",
-  "url": "section-151.html#example-868",
+  "url": "section-151.html#example-891",
   "type": "Example",
   "number": "15.1.9",
   "title": "",
   "body": "  Let , defined on the rectangle . Evaluate the following:                                 "
 },
 {
-  "id": "example-869",
+  "id": "example-892",
   "level": "2",
-  "url": "section-151.html#example-869",
+  "url": "section-151.html#example-892",
   "type": "Example",
   "number": "15.1.10",
   "title": "",
   "body": "  Let , defined on the rectangle . Evaluate the following:                                 "
 },
 {
-  "id": "question-41",
+  "id": "question-42",
   "level": "2",
-  "url": "section-151.html#question-41",
+  "url": "section-151.html#question-42",
   "type": "Question",
   "number": "15.1.11",
   "title": "",
@@ -11827,63 +12043,63 @@ var ptx_lunr_docs = [
   "body": " Fubini's Theorem   If is continuous on the rectangle then    "
 },
 {
-  "id": "example-870",
+  "id": "example-893",
   "level": "2",
-  "url": "section-151.html#example-870",
+  "url": "section-151.html#example-893",
   "type": "Example",
   "number": "15.1.13",
   "title": "",
   "body": "  Evaluate the double integral , where         "
 },
 {
-  "id": "example-871",
+  "id": "example-894",
   "level": "2",
-  "url": "section-151.html#example-871",
+  "url": "section-151.html#example-894",
   "type": "Example",
   "number": "15.1.14",
   "title": "",
   "body": "  Let      Evaluate the double integral . What do you notice?    Evaluate the double integral . What do you notice?           . This is a very difficult integral, requiring multiple uses of integration by parts.     . This order was much simpler than the previous one.      "
 },
 {
-  "id": "example-872",
+  "id": "example-895",
   "level": "2",
-  "url": "section-151.html#example-872",
+  "url": "section-151.html#example-895",
   "type": "Example",
   "number": "15.1.15",
   "title": "",
   "body": "  Find the volume of the solid bounded by the elliptic paraboloid , the planes and , and the three coordinate planes.        "
 },
 {
-  "id": "example-873",
+  "id": "example-896",
   "level": "2",
-  "url": "section-151.html#example-873",
+  "url": "section-151.html#example-896",
   "type": "Example",
   "number": "15.1.16",
   "title": "",
   "body": "  Evaluate , where        "
 },
 {
-  "id": "example-874",
+  "id": "example-897",
   "level": "2",
-  "url": "section-151.html#example-874",
+  "url": "section-151.html#example-897",
   "type": "Example",
   "number": "15.1.17",
   "title": "",
   "body": "  Evaluate , where        "
 },
 {
-  "id": "example-875",
+  "id": "example-898",
   "level": "2",
-  "url": "section-151.html#example-875",
+  "url": "section-151.html#example-898",
   "type": "Example",
   "number": "15.1.18",
   "title": "",
   "body": "  Evaluate        "
 },
 {
-  "id": "example-876",
+  "id": "example-899",
   "level": "2",
-  "url": "section-151.html#example-876",
+  "url": "section-151.html#example-899",
   "type": "Example",
   "number": "15.1.19",
   "title": "",
@@ -11944,117 +12160,117 @@ var ptx_lunr_docs = [
   "body": " Type II Region  Type II Region   We say that a plane region is type II if it lies between the graphs of two continuous functions of , i.e. where and are continuous on .   "
 },
 {
-  "id": "example-877",
+  "id": "example-900",
   "level": "2",
-  "url": "section-152.html#example-877",
+  "url": "section-152.html#example-900",
   "type": "Example",
   "number": "15.2.3",
   "title": "",
   "body": "  This example will develop a usable formula for Type I and Type II integrals. Let the region be defined by .     Sketch the region .    Consider some function which is defined on . In the expression , what are the bounds communicating to you, in terms of ? Rewrite the integral expression and to reflect your answer.    Now sketch what would happen to if we replace 3 with the function . What must change in the integral expression? Call the new region .    If we replace 4 with the function , what changes about ? What about the integral?    In (c), what would have happened to if we replaced 1 with instead? Draw the new region, and call it . What change would you see on the integral from part (b)?    Now what would happen to if we replace 2 with ? Sketch the new . What change would you see on the integral in part (e)?           A sketch of the region described in the problem      The bounds are communicating functions which define the region .  Specifically, we can think of the bounds 1 and 2 as the functions and (which are functions of , so integrating with respect to makes sense). We can also think of 3 and 4 as the functions and (which are functions of , so integrating with respect to makes sense).  This means we can rewrite the integral like this:      A sketch of the region as described in the problem    Since the bound (function) is getting replaced by the bound (function) , the integral must change to reflect the new lower bound:      A sketch of the region as described in the problem    Since the bound (function) is getting replaced by the bound (function) , the integral must change to reflect the new upper bound:      A sketch of the region as described in the problem    Since the bound (function) is getting replaced by the bound (function) , the integral must change to reflect the new lower bound:      A sketch of the region as described in the problem    Since the bound (function) is getting replaced by the bound (function) , the integral must change to reflect the new upper bound:       "
 },
 {
-  "id": "example-878",
+  "id": "example-901",
   "level": "2",
-  "url": "section-152.html#example-878",
+  "url": "section-152.html#example-901",
   "type": "Example",
   "number": "15.2.4",
   "title": "",
   "body": "  Let be the region bounded by the curves and      Sketch and label the curves, and indicate where the region is.    Write the region using the definition of a Type I region.    Now compute the integral .           A sketch of the region given in the problem, on the interval .      Formally, we can write the region using set-builder notation as     From part b, we know that This means we can write the integral as   Evaluate from inside out. This means we're first computing So we have   Since the first integral evaluates as , we can rewrite the integral as which evaluates to 45.      "
 },
 {
-  "id": "example-879",
+  "id": "example-902",
   "level": "2",
-  "url": "section-152.html#example-879",
+  "url": "section-152.html#example-902",
   "type": "Example",
   "number": "15.2.5",
   "title": "",
   "body": "  Find the volume of the solid that lies under the paraboloid , and above the region in the plane bounded by the curves and . Treat as a Type I region.    Here is a sketch of :   A sketch of the region as described in the problem.    Since we're treating as a Type I region, we need to find a description of the form Based on the region, we can say that and . The values must be and since the curves intersect at those locations. This means our integral is set up as   So we compute:    "
 },
 {
-  "id": "example-880",
+  "id": "example-903",
   "level": "2",
-  "url": "section-152.html#example-880",
+  "url": "section-152.html#example-903",
   "type": "Example",
   "number": "15.2.6",
   "title": "",
   "body": "  Again let to be the region in the plane bounded by the curves and .     Write as a Type II region.    Compute . How does your work and answer compare to the previous example?          For convenience, here is the sketch of again:   A sketch of the region as described in the problem.    As a Type II region, we need to express in the form   Rewriting as functions of , becomes and stays . Our upper function will be and our lower function will be .  For our coordinate bounds, we still look at the intersection. There, the coordinates are and .       The work is similar but distinct. Since our bounds changed, the integral itself looks substantially different after the first integral. However, the answer is the same- which we would expect (and hope) since the region and function are the same.      "
 },
 {
-  "id": "example-881",
+  "id": "example-904",
   "level": "2",
-  "url": "section-152.html#example-881",
+  "url": "section-152.html#example-904",
   "type": "Example",
   "number": "15.2.7",
   "title": "",
   "body": "  Evaluate , where is the region bounded by the curves and .    The region is shown below:   A sketch of the region given in the problem.    If we try to treat this as a Type I region, we'll need to split into two integrals (corresponding to the two different lower bounds). So, instead treat as a Type II region: This gives the integral which evaluates to    "
 },
 {
-  "id": "example-882",
+  "id": "example-905",
   "level": "2",
-  "url": "section-152.html#example-882",
+  "url": "section-152.html#example-905",
   "type": "Example",
   "number": "15.2.8",
   "title": "",
   "body": "  Find the volume of the first-octant tetrahedron bounded by the plane .    To determine the region of integration, sketch the problem in three-dimensional space (I don't know how to do this right now, so I'll have to come back and add the image later). Doing this gives and (as a Type I region) or (as a Type II region).  The Type I integral setup is given by and the Type II integral setup is given by In either event, the integral has a value of    "
 },
 {
-  "id": "example-883",
+  "id": "example-906",
   "level": "2",
-  "url": "section-152.html#example-883",
+  "url": "section-152.html#example-906",
   "type": "Example",
   "number": "15.2.9",
   "title": "",
   "body": "  Find the volume of the solid created by the function over the region bounded by the curves , , and .    The Type I integral looks like and the Type II integral takes the form and the value is    "
 },
 {
-  "id": "example-884",
+  "id": "example-907",
   "level": "2",
-  "url": "section-152.html#example-884",
+  "url": "section-152.html#example-907",
   "type": "Example",
   "number": "15.2.10",
   "title": "",
   "body": "  Consider the integral      Sketch and label the region described in the integral.    Evaluate the integral.       Consider the integral       The region defined by the integral in the problem. As a Type II region, the description is . As a Type I region, the description is       As a Type I integral, we have and as a Type II integral we have which evaluates to       "
 },
 {
-  "id": "example-885",
+  "id": "example-908",
   "level": "2",
-  "url": "section-152.html#example-885",
+  "url": "section-152.html#example-908",
   "type": "Example",
   "number": "15.2.11",
   "title": "",
   "body": "  Let      Compute . You should run into some issues; what are they?    Draw and label the region described in part (a).    Use part (b) to rewrite the integral in part (a), then evaluate           The problem is immediately that we don't have a technique to integrate .     The region described in the problem is sketched. As a Type II integral, the region is given by ; as a Type I region, it is       As written, the integral is Type II; as a Type I integral, the region is described by . This means we can rewrite the integral as Evaluating the first integral now gives which can be evaluated using substitution. This gives a value of .      "
 },
 {
-  "id": "example-886",
+  "id": "example-909",
   "level": "2",
-  "url": "section-152.html#example-886",
+  "url": "section-152.html#example-909",
   "type": "Example",
   "number": "15.2.12",
   "title": "",
   "body": "  Evaluate , where     The Type II region is not feasible because there is no antiderivative for . But after drawing and rewriting as a Type I region, we have So the integral becomes whose value is    "
 },
 {
-  "id": "example-887",
+  "id": "example-910",
   "level": "2",
-  "url": "section-152.html#example-887",
+  "url": "section-152.html#example-910",
   "type": "Example",
   "number": "15.2.13",
   "title": "",
   "body": "  Evaluate     Switching to a Type I integral, we have which evaluates to    "
 },
 {
-  "id": "example-888",
+  "id": "example-911",
   "level": "2",
-  "url": "section-152.html#example-888",
+  "url": "section-152.html#example-911",
   "type": "Example",
   "number": "15.2.14",
   "title": "",
   "body": "  Evaluate the following integrals. Sketch and label the region of integration.      , where      , where is the region bounded by , , and .     , where is the region enclosed by the quarter-circle , , and the coordinate axes.           , where      , where is the region bounded by , , and .     , where is the region enclosed by the quarter-circle , , and the coordinate axes.      "
 },
 {
-  "id": "example-889",
+  "id": "example-912",
   "level": "2",
-  "url": "section-152.html#example-889",
+  "url": "section-152.html#example-912",
   "type": "Example",
   "number": "15.2.15",
   "title": "",
@@ -12097,117 +12313,117 @@ var ptx_lunr_docs = [
   "body": " Pre-Class Video 2 url goes here "
 },
 {
-  "id": "example-890",
+  "id": "example-913",
   "level": "2",
-  "url": "section-153.html#example-890",
+  "url": "section-153.html#example-913",
   "type": "Example",
   "number": "15.3.1",
   "title": "",
   "body": "  Consider the polar region given by      Take inspiration from Section 15.1; how can we divide the region into polar rectangles?    Let the area of be denoted by , and let be the midpoint of , given by . Find an expression for . Draw a picture illustrating parts (a) and (b).    Use the conversions between polar and rectangular coordinates to develop a Riemann sum approximating the volume under a curve .          Subdivide by partitioning into pieces in the radial direction: . Similarly, we can subdivide the angular direction to pieces by doing .    Visually, we can represent as the difference between the sector areas of radius and . This means that So, we conclude that .  The image is below.   A sketch of a polar region described above, and labeled with , , , , , , and       We know that in general, volume is given by , which comes from a Riemann sum of the form . Since and , we can rewrite . This means that . Since , we can create the Riemann sum       "
 },
 {
-  "id": "example-891",
+  "id": "example-914",
   "level": "2",
-  "url": "section-153.html#example-891",
+  "url": "section-153.html#example-914",
   "type": "Example",
   "number": "15.3.2",
   "title": "",
   "body": "  Let be the portion of the upper-half plane bounded by the circle , and let .     Evaluate the integral in Cartesian coordinates.    Convert the integral to polar coordinates and compute again.    Describe some differences between the computations parts (a) and (b).          Begin by sketching the region. When we do this, we find that we can write This means we're looking at a Type I integral, which can be evaluated by computing which gives     Convering to a polar integral, we use the conversions . Doing that, we can set up the integral as which still evaluates to     The answers vary here, but the most noticeable difference is likely in the computation; the Cartesian coordinate computation required careful use of trigonometric substitution and careful determination of the bounds, while the polar integration was a little more straightforward.  That difference ultimately comes from the shape of the region we're integrating over. Since the shape of the region is relatively simple to describe in polar coordinates, the integral is relatively more simple in polar coordinates than Cartesian coordinates.      "
 },
 {
-  "id": "example-892",
+  "id": "example-915",
   "level": "2",
-  "url": "section-153.html#example-892",
+  "url": "section-153.html#example-915",
   "type": "Example",
   "number": "15.3.3",
   "title": "",
   "body": "  Use polar coordinates to evaluate the integral . Sketch the region.    The region is sketched below:   A sketch of the region given in the problem, the first-quadrant region between the circles and .    Based on the region, we can write so the integral becomes which evaluates to    "
 },
 {
-  "id": "example-893",
+  "id": "example-916",
   "level": "2",
-  "url": "section-153.html#example-893",
+  "url": "section-153.html#example-916",
   "type": "Example",
   "number": "15.3.4",
   "title": "",
   "body": "  Find the volume of the solid bounded by the plane and the paraboloid         "
 },
 {
-  "id": "example-894",
+  "id": "example-917",
   "level": "2",
-  "url": "section-153.html#example-894",
+  "url": "section-153.html#example-917",
   "type": "Example",
   "number": "15.3.5",
   "title": "",
   "body": "  Evaluate , where is the disk of radius 2, centered at the origin.        "
 },
 {
-  "id": "example-895",
+  "id": "example-918",
   "level": "2",
-  "url": "section-153.html#example-895",
+  "url": "section-153.html#example-918",
   "type": "Example",
   "number": "15.3.6",
   "title": "",
   "body": "  Evaluate , where and is a circle of radius 1, centered at .        "
 },
 {
-  "id": "example-896",
+  "id": "example-919",
   "level": "2",
-  "url": "section-153.html#example-896",
+  "url": "section-153.html#example-919",
   "type": "Example",
   "number": "15.3.7",
   "title": "",
   "body": "  Prove that the area enclosed in one leaf of the curve is .    After sketching the graph, we know that one leaf will occur between and . Since the radius function is given by , we'll use this as our upper bound and for our lower bound. This gives the integral Evaluating the first integral, we get Using the identity , we rewrite as which evaluates to    "
 },
 {
-  "id": "example-897",
+  "id": "example-920",
   "level": "2",
-  "url": "section-153.html#example-897",
+  "url": "section-153.html#example-920",
   "type": "Example",
   "number": "15.3.8",
   "title": "",
   "body": "  Find the area outside the polar curve and inside the lemniscate         "
 },
 {
-  "id": "example-898",
+  "id": "example-921",
   "level": "2",
-  "url": "section-153.html#example-898",
+  "url": "section-153.html#example-921",
   "type": "Example",
   "number": "15.3.9",
   "title": "",
   "body": "  Find the volume of the region below the cone and above the annulus         "
 },
 {
-  "id": "example-899",
+  "id": "example-922",
   "level": "2",
-  "url": "section-153.html#example-899",
+  "url": "section-153.html#example-922",
   "type": "Example",
   "number": "15.3.10",
   "title": "",
   "body": "  Prove that the volume of a sphere of radius is        "
 },
 {
-  "id": "example-900",
+  "id": "example-923",
   "level": "2",
-  "url": "section-153.html#example-900",
+  "url": "section-153.html#example-923",
   "type": "Example",
   "number": "15.3.11",
   "title": "",
   "body": "  Find the volume bounded by the paraboloids and        "
 },
 {
-  "id": "example-901",
+  "id": "example-924",
   "level": "2",
-  "url": "section-153.html#example-901",
+  "url": "section-153.html#example-924",
   "type": "Example",
   "number": "15.3.12",
   "title": "",
   "body": "  Evaluate , where        "
 },
 {
-  "id": "example-902",
+  "id": "example-925",
   "level": "2",
-  "url": "section-153.html#example-902",
+  "url": "section-153.html#example-925",
   "type": "Example",
   "number": "15.3.13",
   "title": "",
