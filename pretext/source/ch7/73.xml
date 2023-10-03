@@ -29,7 +29,6 @@
 					<p>
 						Use trigonometry to complete the following reference triangles:
 					</p>
-					<p>
 						<sidebyside width="80%">
 							<image>
 								<description>
@@ -62,10 +61,8 @@
 								</latex-image>
 							</image>
 						</sidebyside>
-					</p>
 				</statement>
 				<solution>
-					<p>
 						<sidebyside width="80%">
 							<image>
 								<description>
@@ -104,7 +101,6 @@
 								</latex-image>
 							</image>
 						</sidebyside>
-					</p>
 				</solution>
 			</example>
 

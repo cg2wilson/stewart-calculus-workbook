@@ -105,7 +105,6 @@
 								<p>
 									<m>\ds \lim_{x\to -\infty} f(x) = 3</m> and <m>\ds \lim_{x\to\infty} f(x) = \infty</m>
 								</p>
-								<p>
 									<image>
 										<description>
 											A graph of the function <m>f(x) = 2(1.2^x) + 3</m>
@@ -132,13 +131,11 @@
 											]]>
 										</latex-image>
 									</image>
-								</p>
 							</li>
 							<li>
 								<p>
 									<m>\ds \lim_{x\to -\infty} g(x) = \infty</m> and <m>\ds \lim_{x\to\infty} g(x) = -1</m>
 								</p>
-								<p>
 									<image>
 										<description>
 											A graph of the function <m>f(x) = 3^{-x}-1</m>
@@ -166,7 +163,6 @@
 											]]>
 										</latex-image>
 									</image>
-								</p>
 							</li>
 						</ol>
 					</p>

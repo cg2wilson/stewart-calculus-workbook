@@ -23,13 +23,517 @@
 
 		<subsubsection xml:id="section-103-polarcoordinatesystem">
 			<title>The Polar Coordinate System</title>
+				<question>
+					<statement>
+						<p>
+							The Cartesian coordinate system carries two pieces of information: a horizontal distance, <m>x</m>, and a vertical distance, <m>y</m>.  If polar coordinates deal with circular objects, what two pieces of information should a polar coordinate carry?
+						</p>
+					</statement>
+					<solution>
+						<p>
+							Radius and angle
+						</p>
+					</solution>
+				</question>
 
+				<example>
+					<statement>
+						<p>
+							Use the polar grid below to plot the points. Be sure to label the points.
+						</p>
+						<p>
+							<ol marker="a">
+								<li>
+									<p>
+										<m>\lrpar{2,-\dfrac{\pi}{6}}</m>
+									</p>
+								</li>
+								<li>
+									<p>
+										<m>\lrpar{-3,\pi}</m>
+									</p>
+								</li>
+								<li>
+									<p>
+										<m>\lrpar{1,\dfrac{\pi}{4}}</m>
+									</p>
+								</li>
+								<li>
+									<p>
+										<m>\lrpar{4,-\dfrac{2\pi}{3}}</m>
+									</p>
+								</li>
+								<li>
+									<p>
+										<m>\lrpar{-1,\dfrac{5\pi}{6}}</m>
+									</p>
+								</li>
+								<li>
+									<p>
+										<m>\lrpar{2,0}</m>
+									</p>
+								</li>
+
+							</ol>
+						</p>
+						<image>
+							<description>A blank polar grid</description>
+							<latex-image>
+								<![CDATA[ 
+								\begin{tikzpicture}[>=latex, scale = 1.5]
+								% Draw the lines at multiples of pi/12
+									\foreach \ang in {0,...,31} {
+										\draw [lightgray] (0,0) -- (\ang * 180 / 16:4);
+										}
+			
+								% Concentric circles and radius labels
+									\foreach \s in {0, 1, 2, 3} {
+										\draw [lightgray] (0,0) circle (\s + 0.5);
+										\draw [thick](0,0) circle (\s);
+										\node [fill=white] at (\s, 0) [below] {\scriptsize $\s$};
+										}
+			
+								% Add the labels at multiples of pi/4
+									\foreach \ang/\lab/\dir in {
+										  0/0/right,
+										 1/{\pi/4}/{above right},
+										 2/{\pi/2}/above,
+										3/{3\pi/4}/{above left},
+										4/{\pi}/left,
+										5/{5\pi/4}/{below left},
+										7/{7\pi/4}/{below right},
+										6/{3\pi/2}/below} {
+											\draw (0,0) -- (\ang * 180 / 4:4.1);
+											\node [fill=white] at (\ang * 180 / 4:4.2) [\dir] {\scriptsize $\lab$};
+											}
+			
+								% The double-lined circle around the whole diagram
+									\draw [style=double] (0,0) circle (4);
+			
+								\end{tikzpicture} 
+								]]>
+							</latex-image>
+						</image>
+					</statement>
+					<solution>
+						<p>
+							Done in video, need to fix after "image in solution" issue is figured out.
+						</p>
+					</solution>
+				</example>
+
+				<example>
+					<statement>
+						<p>
+							Consider the polar point <m>\lrpar{1,\dfrac{\pi}{4}}</m> plotted above. This is not the only way of describing the point.
+						</p>
+						<p>
+							<ol marker="a">
+								<li>
+									<p>
+										Give two or three different ways of expressing this point in polar coordinates.
+									</p>
+								</li>
+								<li>
+									<p>
+										Do you see a pattern in the expressions? What is it?
+									</p>
+								</li>
+							</ol>
+						</p>
+					</statement>
+					<solution>
+						<p>
+							<ol marker="a">
+								<li>
+									<p>
+										Answers vary
+									</p>
+								</li>
+								<li>
+									<p>
+										Answers vary
+									</p>
+								</li>
+							</ol>
+						</p>
+					</solution>
+				</example>
+
+				<assemblage>
+					<title>A Point in Polar Coordinates</title>
+					<p>
+						Any point <m>(r,\theta)</m> in polar coordinates can also be represented by the points
+						<me>
+							(r,\theta + 2n\pi)
+						</me>
+						and
+						<me>
+							(-r,\theta + (2n+1)\pi)
+						</me>
+						for any <m>n\in \Z</m>
+						
+					</p>
+				</assemblage>
+
+				<p>
+					There is a connection between Cartesian coordinates and polar coordinates; we can exploit trigonometry to find the relationship.
+				</p>
+
+				<example>
+					<statement>
+						<p>
+							<ol marker="a">
+								<li>
+									<p>
+										Below is a circle of radius <m>r</m>, with an inscribed right triangle. Label as much as you can on the figure.
+									</p>
+								</li>
+								<li>
+									<p>
+										Use the triangle and trigonometric functions to obtain a conversion from polar coordinates to Cartesian coordinates. 
+									</p>
+								</li>
+							</ol>
+						</p>
+						<image>
+							<description>A circle of radius <m>r</m>, with an inscribed right triangle</description>
+							<latex-image>
+								<![CDATA[ 
+								\begin{tikzpicture}
+								\draw (0,0) circle (4);
+								\fill (0,0) circle (.1);
+								\fill (2.81,2.81) circle (.1);
+								\draw (0,0)--(2.81,2.81)--(2.81,0)--(0,0);
+								\draw (2.81,0)--(2.81,.2)--(2.61,.2)--(2.61,0)--(2.81,0);
+							\end{tikzpicture}			
+								]]>
+							</latex-image>
+						</image>
+					</statement>
+					<solution>
+						<p>
+							To be filled out when the image issue is resolved
+						</p>
+					</solution>
+				</example>
+
+				<assemblage>
+					<title>Polar-to-Cartesian Conversion</title>
+					<p>
+						If a point <m>P</m> has the polar coordinate expression <m>(r,\theta)</m>, then its Cartesian coordinate expression is given by <m>x = r\cos\theta</m> and <m>y = r\sin\theta</m>
+					</p>
+				</assemblage>
+
+				<assemblage>
+					<title>Cartesian-to-Polar Conversion</title>
+					<p>
+						If a point <m>P</m> has the Cartesian coordinate expression <m>(x,y)</m>, then its polar coordinate expression is given by <m>r^2 = x^2 + y^2</m> and <m>\theta = \inv{\tan}\lrpar{\dfrac{y}{x}}</m>
+					</p>
+				</assemblage>
+
+				<example>
+					<statement>
+						<p>
+							Convert the following points from polar to Cartesian coordinates.
+						</p>
+						<p>
+							<ol marker="a">
+								<li>
+									<p>
+										<m>\lrpar{2,\dfrac{3\pi}{2}}</m>
+									</p>
+								</li>
+								<li>
+									<p>
+										<m>\lrpar{\sqrt{2},\dfrac{\pi}{4}}</m>
+									</p>
+								</li>
+								<li>
+									<p>
+										<m>\lrpar{-3,-\dfrac{\pi}{3}}</m>
+									</p>
+								</li>
+							</ol>
+						</p>
+					</statement>
+					<solution>
+						<p>
+							Technically there are an infinite number of representations, but here are perhaps the most straightforward.
+						</p>
+						<p>
+							<ol marker="a">
+								<li>
+									<p>
+										<m>(0,-2)</m>
+									</p>
+								</li>
+								<li>
+									<p>
+										<m>(1,1)</m>
+									</p>
+								</li>
+								<li>
+									<p>
+										<m>\lrpar{-\dfrac{3}{2},-\dfrac{3\sqrt{3}}{2}}</m>
+									</p>
+								</li>
+							</ol>
+						</p>
+					</solution>
+				</example>
+
+				<example>
+					<statement>
+						<p>
+							Convert the following points from Cartesian to polar coordinates.
+						</p>
+						<p>
+							<ol marker="a">
+								<li>
+									<p>
+										<m>\lrpar{-4,4}</m>
+									</p>
+								</li>
+								<li>
+									<p>
+										<m>\lrpar{\sqrt{3},1}</m>
+									</p>
+								</li>
+								<li>
+									<p>
+										<m>\lrpar{3,3\sqrt{3}}</m>
+									</p>
+								</li>
+							</ol>
+						</p>
+					</statement>
+					<solution>
+						<p>
+							Same comment as above
+						</p>
+						<p>
+							<ol marker="a">
+								<li>
+									<p>
+										<m>\lrpar{4\sqrt{2},\dfrac{3\pi}{4}}</m>
+									</p>
+								</li>
+								<li>
+									<p>
+										<m>\lrpar{2,\dfrac{\pi}{6}}</m>
+									</p>
+								</li>
+								<li>
+									<p>
+										<m>\lrpar{6,\dfrac{\pi}{3}}</m>
+									</p>
+								</li>
+							</ol>
+						</p>
+					</solution>
+				</example>
+
+				<example>
+					<statement>
+						<p>
+							Convert each equation from polar to rectangular coordinates. If possible, identify the curve. 
+						</p>
+						<p>
+							<ol marker="a">
+								<li>
+									<p>
+										<m>r^2 = 16</m>
+									</p>
+								</li>
+								<li>
+									<p>
+										<m>r = 4\sin\theta</m>
+									</p>
+								</li>
+								<li>
+									<p>
+										<m>\theta = \dfrac{\pi}{3}</m>
+									</p>
+								</li>
+								<li>
+									<p>
+										<m>r^2\cos 2\theta = 1</m>
+									</p>
+								</li>
+							</ol>
+						</p>
+					</statement>
+					<solution>
+						<p>
+							<ol marker="a">
+								<li>
+									<p>
+										<m>x^2 + y^2 = 16</m>, a circle of radius 4 centered at the origin.
+									</p>
+								</li>
+								<li>
+									<p>
+										<m>x^2 + (y-2)^2 = 4</m>, a circle of radius 2 centered at <m>(0,-2)</m>
+									</p>
+								</li>
+								<li>
+									<p>
+										<m>y = \sqrt{3}x</m>, a line of slope <m>\sqrt{3}</m>
+									</p>
+								</li>
+								<li>
+									<p>
+										<m></m>
+									</p>
+								</li>
+							</ol>
+						</p>
+					</solution>
+				</example>
+
+				<example>
+					<statement>
+						<p>
+							Convert each equation from rectangular coordinates to polar coordinates.
+						</p>
+						<p>
+							<ol marker="a">
+								<li>
+									<p>
+										<m>y = 2</m>
+									</p>
+								</li>
+								<li>
+									<p>
+										<m>4y^2 = x</m>
+									</p>
+								</li>
+								<li>
+									<p>
+										<m>y=  x</m>
+									</p>
+								</li>
+							</ol>
+						</p>
+					</statement>
+					<solution>
+						<p>
+							<ol marker="a">
+								<li>
+									<p>
+										<m>r = 2\csc\theta</m>
+									</p>
+								</li>
+								<li>
+									<p>
+										<m>4r^2\sin^2\theta = r\cos\theta</m>
+									</p>
+								</li>
+								<li>
+									<p>
+										<m>\theta = \dfrac{\pi}{4}</m>
+									</p>
+								</li>
+							</ol>
+						</p>
+					</solution>
+				</example>
 		</subsubsection>
 	</subsection>
 
 	<subsection xml:id="section-103-preclass">
 		<title>Pre-Class Activities</title>
+		
+		<example>
+			<statement>
+				<p>
+					Use this space to write any questions you might have from the videos
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Answers vary
+				</p>
+			</solution>
+		</example>
 
+		<example>
+			<statement>
+				<p>
+					Plot each point below on a polar grid. Then, convert each from polar coordinates to Cartesian coordinates.
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								<m>\lrpar{2,\dfrac{5\pi}{6}}</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>\lrpar{1,-\dfrac{2\pi}{3}}</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>\lrpar{-1,\dfrac{5\pi}{4}}</m>
+							</p>
+						</li>
+					</ol>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Again, the plots will have to wait, but the conversions are below.
+				</p>
+				<p>
+					<ol marker="a">
+						<li>
+							<p>
+								<m>\lrpar{-\sqrt{3},1}</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>\lrpar{-\dfrac{1}{2},-\dfrac{\sqrt{3}{2}}}</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>\lrpar{\dfrac{\sqrt{2}}{2},\dfrac{\sqrt{2}}{2}}</m>
+							</p>
+						</li>
+					</ol>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Convert <m>r=4\csc\theta</m> into rectangular coordinates, and describe/identify the graph.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					This was conveniently done earlier in the before class: <m>y = 4</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Express the ellipse <m>\dfrac{x^2}{9} + \dfrac{y^2}{4} = 1</m> in polar coordinates.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>4r^2\cos^2\theta + 9r^2\sin^2\theta = 1</m>, so this simplifies as <m>r^2(4 + 5\sin^2\theta) = 1</m>
+				</p>
+			</solution>
+		</example>
 	</subsection>
 
 	<subsection xml:id="section-103-inclass">
@@ -38,6 +542,290 @@
 		<subsubsection xml:id="section-103-polarcurves">
 			<title>Polar Curves</title>
 
+			<example>
+				<statement>
+					<p>
+						Graph the polar equation <m>\theta = \dfrac{\pi}{4}</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						This ends up the line <m>y = x</m>, but again with the graphing issue.
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Let <m>r = 2\sin\theta</m>
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									Make a table of values for the curve, for <m>0\leq\theta\leq \pi</m>
+								</p>
+							</li>
+							<li>
+								<p>
+									Use the table to sketch the curve
+								</p>
+							</li>
+							<li>
+								<p>
+									Find the Cartesian equation for the curve
+								</p>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								,<tabular>
+									<row>
+										<cell><m>\theta</m></cell>
+										<cell><m>r = 2\sin\theta</m></cell>
+									</row>
+									<row>
+										<cell><m>0</m></cell>
+										<cell><m>0</m></cell>
+									</row>
+									<row>
+										<cell><m>\dfrac{\pi}{6}</m></cell>
+										<cell><m>1</m></cell>
+									</row>
+									<row>
+										<cell><m>\dfrac{\pi}{4}</m></cell>
+										<cell><m>\sqrt{2}</m></cell>
+									</row>
+									<row>
+										<cell><m>\dfrac{\pi}{3}</m></cell>
+										<cell><m>\sqrt{3}</m></cell>
+									</row>
+									<row>
+										<cell><m>\dfrac{\pi}{2}</m></cell>
+										<cell><m>2</m></cell>
+									</row>
+									<row>
+										<cell><m>\dfrac{2\pi}{3}</m></cell>
+										<cell><m>\sqrt{3}</m></cell>
+									</row>
+									<row>
+										<cell><m>\dfrac{3\pi}{4}</m></cell>
+										<cell><m>\sqrt{2}</m></cell>
+									</row>
+									<row>
+										<cell><m>\dfrac{5\pi}{6}</m></cell>
+										<cell><m>1</m></cell>
+									</row>
+									<row>
+										<cell><m>\pi</m></cell>
+										<cell><m>0</m></cell>
+									</row>
+								</tabular>
+							</li>
+							<li>
+								<p>
+									Graphing issues, but you should see a circle of radius 1 centered at <m>(0,1)</m>
+								</p>
+							</li>
+							<li>
+								<p>
+									<m>x^2 + (y-1)^2 = 1</m>
+								</p>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
+			<example>
+				<statement>
+					<p>
+						Sketch the polar curve <m>r = 1 + \cos\theta</m>. This shape is called a cardioid.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Sketch the polar curve <m>r = \sin 2\theta</m>. This shape is called a rose of four leaves.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						
+					</p>
+				</solution>
+			</example>
+
+			<assemblage>
+				<title>Symmetry in Polar Graphs</title>
+				<p>
+					Consider the polar curve <m>r = f(\theta)</m>
+				</p>
+				<p>
+					<ul>
+						<li>
+							<p>
+								The curve is symmetric about the polar axis if <m>f(\theta) = f(-\theta)</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								The curve is symmetric about the pole if <m>-f(\theta) = f(\theta)</m> or <m>f(\theta) = f(\theta + \pi)</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								The curve is symmetric about <m>\theta = \dfrac{\pi}{2}</m> if <m>f(\theta) = f(\pi - \theta)</m>
+							</p>
+						</li>
+					</ul>
+				</p>
+			</assemblage>
+
+			<example>
+				<statement>
+					<p>
+						What kind of symmetries does the cardioid <m>r = 1 + \cos\theta</m> possess?  What about the cardioid <m>r = 1+\sin\theta</m>?
+					</p>
+				</statement>
+				<solution>
+					<p>
+						Let <m>f(\theta) = 1 + \cos\theta</m> and <m>g(\theta) = 1 + \sin\theta</m>
+					</p>
+					<p>
+						<m>f(-\theta) = f(\theta)</m>, so the first cardioid is symmetric about the polar axis. It is clear that <m>-f(\theta)\neq f(\theta)</m>, so there is no symmetry about the pole. <m>f(\pi - \theta) = 1+\cos\pi\cos\theta - \sin\theta\sin\pi = 1 -\cos\theta \neq f(\theta)</m>, so there is no symmetry about <m>\theta = \dfrac{\pi}{2}</m>
+					</p>
+					<p>
+						<m>g(-\theta) = -g(\theta)</m>, so the second cardioid is not symmetric about the polar axis. <m>-f(\theta) \neq f(\theta)</m>, so there is no symmetry about the pole. <m>f(\pi-\theta) = 1 + \sin\pi\cos\theta + \cos\pi\sin\theta = 1-\sin\theta\neq f(\theta)</m>, so there is no symmetry about <m>\theta = \dfrac{\pi}{2}</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Use symmetries to help you graph <m>r^2 = \cos 4\theta</m>.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						Graphing issues
+					</p>
+				</solution>
+			</example>
+		</subsubsection>
+
+		<subsubsection xml:id="section-103-tangents">
+			<title>Tangents to Polar Curves</title>
+			
+			<assemblage >
+				<title>Derivative of a Polar Curve</title>
+				<p>
+					Given the polar curve <m>r = f(\theta)</m>, consider the parametric equations <m>x = r\cos\theta = f(\theta)\cos\theta</m> and <m>y = r\sin\theta = f(\theta)\sin\theta</m>. Then,
+					<me>
+						\dfrac{dy}{dx} = \dfrac{dy/d\theta}{dx/d\theta} = \dfrac{\dfrac{dr}{d\theta}\sin\theta + r\cos\theta}{\dfrac{dr}{d\theta}\cos\theta - r\sin\theta}
+					</me>
+					
+				</p>
+			</assemblage>
+
+			<example>
+				<statement>
+					<p>
+						Consider the cardioid <m>r = 1 + \sin\theta</m>.
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									Find the slope of the tangent line when <m>\theta = \dfrac{\pi}{6}</m>.
+								</p>
+							</li>
+							<li>
+								<p>
+									Find the points where the tangent line is horizontal or vertical.
+								</p>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									<m>\dfrac{dy}{dx} = \dfrac{\cos\theta(1+2\sin\theta)}{(1+\sin\theta)(1-2\sin\theta)}</m>, so 
+									<me>
+										\dfrac{dy}{dx}\bigg\rvert_{\theta = \pi/6} = \dfrac{\sqrt{3}}{0}
+									</me>
+									which is undefined.
+									
+								</p>
+							</li>
+							<li>
+								<p>
+									The tangent line is horizontal when <m>\cos\theta(1+2\sin\theta) = 0\iff \theta = \dfrac{\pi}{2},\dfrac{7\pi}{6},\dfrac{11\pi}{6}</m>. 
+								</p>
+								<p>
+									The tangent line is vertical when <m>(1+\sin\theta)(1-2\sin\theta) = 0\iff \theta = \dfrac{3\pi}{2},\dfrac{\pi}{6},\dfrac{5\pi}{6}</m>
+								</p>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find the slope of the tangent line to the polar curve <m>r = 2\cos\theta</m> at <m>\theta = \dfrac{\pi}{3}</m>.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\dfrac{dr}{d\theta}\bigg\rvert_{\pi/3} = -2\sin\theta\bigg\rvert_{\pi/3} = -\sqrt{3}</m>, <m>\sin\lrpar{\dfrac{\pi}{3}} = \sqrt{3}{2}</m> and <m>\cos\lrpar{\dfrac{\pi}{3} = \dfrac{1}{2}}</m>, so
+						<me>
+							\dfrac{dy}{dx} = \dfrac{(-\sqrt{3})\lrpar{\dfrac{\sqrt{3}{2}+2\lrpar{\dfrac{1}{2}}{\dfrac{1}{2}}}}}{(-\sqrt{3})\lrpar{\dfrac{1}{2}} - 2\lrpar{\dfrac{1}{2}}\lrpar{\dfrac{\sqrt{3}}{2}}} = \dfrac{1-3\sqrt{3}}{-3\sqrt{3}}
+						</me>
+						
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find the points on the curve <m>r = 1-\sin\theta</m> where the tangent line is horizontal or vertical.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>\dfrac{dr}{d\theta} = -\cos\theta</m>, so the tangent line is horizontal when
+						<me>
+							-\cos^2\theta - \sin\theta - \sin^2\theta = 0
+						</me>
+						which gives <m>\theta = \dfrac{\3pi}{2}</m>. The tangent line is vertical when
+						<me>
+							-\cos\theta\sin\theta - \cos\theta + \sin\theta\cos\theta = 0
+						</me>
+						i.e. when <m>\cos\theta = 0\iff \theta = \dfrac{\pi}{2},\dfrac{3\pi}{2}</m>. 
+					</p>
+					<p>
+						This means that the tangent line is never horizontal.
+					</p>
+				</solution>
+			</example>
 		</subsubsection>
 
 	</subsection>
@@ -45,5 +833,44 @@
 	<subsection xml:id="section-103-afterclass">
 		<title>After Class Activities</title>
 
+		<example>
+			<statement>
+				<p>
+					Sketch the curve <m>r = 2(1+\cos\theta)</m>.  Then, convert the equation to Cartesian coordinates.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					The graph below shows <m>r</m> as a function of <m>\theta</m>, in Cartesian coordinates.  Use the graph to sketch the corresponding polar curve.
+				</p>
+				<image source="103_1.png"/>
+			</statement>
+			<solution>
+				<p>
+					
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Find the slope of the tangent line to the polar curve <m>r = 2 + \sin 3\theta</m> at <m>\theta = \dfrac{\pi}{4}</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					
+				</p>
+			</solution>
+		</example>
 	</subsection>
 </section>

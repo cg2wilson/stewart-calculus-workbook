@@ -169,7 +169,6 @@
 								</p>
 							</li>
 							<li>
-								<p>
 									<image>
 										<description>A sketch of the parametric curve on the interval <m>[-3,3]</m></description>
 										<latex-image>
@@ -195,7 +194,6 @@
 											]]>
 										</latex-image>
 									</image>
-								</p>
 							</li>
 						</ol>
 					</p>

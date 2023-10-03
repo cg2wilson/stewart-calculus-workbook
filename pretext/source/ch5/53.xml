@@ -349,7 +349,6 @@
 						<me>V = \int_1^4 \dfrac{2\pi (y+2)}{y^2}\, dy</me>
 				</statement>
 				<solution>
-					<p>
 						<image>
 							<description>
 								This is the sketch of the region bounded by the curve <m>y = \dfrac{1}{x^2}</m> on the interval <m>x=0</m> to <m>x=4</m>, rotated about the line <m>y=-2</m>.
@@ -386,7 +385,6 @@
 							]]>
 							</latex-image>
 						</image>
-					</p>
 				</solution>
 				</example>
 					 

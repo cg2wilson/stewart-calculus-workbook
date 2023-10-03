@@ -72,7 +72,6 @@
 					<solution>
 						<ol marker="a">
 							<li>
-								<p>
 									<image>
 										<description>
 											This is the graph of <m>f(x)</m> on the interval <m>[0,2]</m> with the area between the curve and the <m>x-</m>axis shaded
@@ -104,13 +103,11 @@
 										]]>
 										</latex-image>
 									</image>
-								</p>
 								<p>
 									The area is found via the integral <m>\ds \int_0^2 f(x)\, dx</m>, and the area is <m>\dfrac{16}{3}</m>.
 								</p>
 							</li>
 							<li>
-								<p>
 									<image>
 										<description>
 											This is the graph of <m>g(x)</m> on the interval <m>[0,2]</m> with the area between the curve and the <m>x-</m>axis shaded
@@ -142,13 +139,11 @@
 										]]>
 										</latex-image>
 									</image>
-								</p>
 								<p>
 									The area is found via the integral <m>\ds \int_0^2 g(x)\, dx</m>, and the area is 2.
 								</p>
 							</li>
 							<li>
-								<p>
 									<image>
 										<description>
 											This is the graph of <m>f(x)</m> and <m>g(x)</m> on the interval <m>[0,2]</m> with the area between the curves shaded
@@ -179,7 +174,6 @@
 										]]>
 										</latex-image>
 									</image>
-								</p>
 								<p>
 									The area is found by combining the answers from (a) and (b): <m>\ds \int_0^2 f(x)\, dx - \int_0^2 g(x)\, dx</m>, so the area between the curves is <m>\dfrac{10}{3}</m>.  We don't necessarily need to shade the area, because if we did (a) and (b) on the same graph, the overlapping area is the area being excised.
 								</p>
@@ -274,7 +268,6 @@
 						Sketch the region enclosed by the curves <m>y = \sqrt{x-1}</m> and <m>y=x-1</m>, and find the area.
 					</statement>
 					<solution>
-						<p>
 							<image>
 								<description>
 									This is the graph of <m>y = \sqrt{x-1}</m> and <m>y=x-1</m> on the interval <m>[0,2.5]</m> with the area between the curves shaded.
@@ -302,7 +295,6 @@
 								]]>
 								</latex-image>
 							</image>
-						</p>
 						<p>
 							The area is <m>\dfrac{7}{6}</m>.
 						</p>
@@ -315,7 +307,6 @@
 						Sketch the region enclosed by the curves <m>y = x^2</m> and <m>y = 4x-x^2</m>, and find the area.
 					</statement>
 					<solution>
-						<p>
 							<image>
 								<description>
 									This is the graph of <m>y = x^2</m> and <m>y = 4x-x^2</m> on the interval <m>[-1,2.5]</m> with the area between the curves shaded.
@@ -343,7 +334,6 @@
 								]]>
 								</latex-image>
 							</image>
-						</p>
 						<p>
 							The area is <m>\dfrac{8}{3}</m>
 						</p>
@@ -368,7 +358,6 @@
 						Sketch the region enclosed by the curves <m>x = y^4</m>, <m>y=\sqrt{2-x}</m>, and <m>y = 0</m>, and find the area.
 					</statement>
 					<solution>
-						<p>
 							<image>
 								<description>
 									This is the graph of <m>x = y^4</m>, <m>y=\sqrt{2-x}</m> on the interval <m>[0,2.5]</m> with the area between the curves shaded.
@@ -399,7 +388,6 @@
 								]]>
 								</latex-image>
 							</image>
-						</p>
 						<p>
 							The area is <m>\dfrac{8}{3}</m>
 						</p>
@@ -423,7 +411,6 @@
 						Sketch the region enclosed by the curves <m>x = 2y^2</m>, <m>x = 4+y^2</m>, and find the area.
 					</statement>
 					<solution>
-						<p>
 							<image>
 								<description>
 									This is the graph of <m>x = 2y^2</m> and <m>x = 4+y^2</m> on the interval <m>[-1,2.5]</m> with the area between the curves shaded.
@@ -455,7 +442,6 @@
 								]]>
 								</latex-image>
 							</image>
-						</p>
 						<p>
 							The shaded area is <m>\dfrac{32}{3}</m>.
 						</p>
@@ -481,7 +467,6 @@
 					Sketch the region bounded by the curves <m>y = \cos \pi x</m> and <m>y = 4x^2 - 1</m> and then find the area of the region.
 				</statement>
 				<solution>
-					<p>
 						<image>
 								<description>
 									This is the graph of the curves <m>y = \cos \pi x</m> and <m>y = 4x^2 - 1</m> on the interval <m>[-1,1]</m> with the area between the curves shaded.
@@ -510,7 +495,6 @@
 								]]>
 								</latex-image>
 							</image>
-					</p>
 					<p>
 						The area of the shaded region is <m>\dfrac{2}{3} + \dfrac{2}{\pi}</m>
 					</p>
@@ -523,7 +507,6 @@
 					Sketch the region enclosed by <m>x = y - 1</m>, <m>y = 9-x^2</m>, <m>x = -1</m>, and <m>x = 2</m>, then find the area of the region.
 				</statement>
 				<solution>
-					<p>
 						<image>
 							<description>
 								This is the graph of the curves <m>x = y - 1</m>, <m>y = 9-x^2</m>, <m>x = -1</m>, and <m>x = 2</m> on the interval <m>[-4,4]</m> with the area between the curves shaded.
@@ -557,7 +540,6 @@
 							]]>
 							</latex-image>
 						</image>
-					</p>
 					<p>
 						The area of the shaded region is <m>\dfrac{39}{2}</m>
 					</p>
@@ -569,7 +551,6 @@
 					Sketch the region enclosed by <m>y = \dfrac{1}{x^2}</m>, <m>y = x</m>, and <m>y = \dfrac{1}{8}x</m>, then find the area.
 				</statement>
 				<solution>
-					<p>
 						<image>
 							<description>
 								This is the graph of the curves <m>y = \cos \pi x</m> and <m>y = 4x^2 - 1</m> on the interval <m>[-1,1]</m> with the area between the curves shaded.
@@ -599,7 +580,6 @@
 							]]>
 							</latex-image>
 						</image>
-					</p>
 					<p>
 						The area of the shaded region is <m>\dfrac{3}{4}</m>
 					</p>

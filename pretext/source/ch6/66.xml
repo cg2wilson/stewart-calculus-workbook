@@ -268,7 +268,6 @@
 					<p>
 						The graph of tangent is below:
 					</p>
-					<p>
 						<image>
 							<description>
 								The graph of <m>\tan x</m> on the interval <m>\left[-\dfrac{\pi}{2},\dfrac{\pi}{2}\right]</m>
@@ -300,14 +299,12 @@
 								\end{tikzpicture}]]>
 							</latex-image>
 						</image>
-					</p>
 					<p>
 						From the graph, we can identify a potential restricted domain as <m>\left[-\dfrac{\pi}{2},\dfrac{\pi}{2}\right]</m>
 					</p>
 					<p>
 						The graph of this inverse is given below:
 					</p>
-					<p>
 						<image>
 							<description>
 								The graph of <m>\arctan x</m> on <m>[-10,10]</m>
@@ -334,7 +331,6 @@
 								]]>
 							</latex-image>
 						</image>
-					</p>
 				</solution>
 			</example>
 

@@ -215,7 +215,6 @@
 								</li>
 								
 								<li>
-									<p>
 										<image>
 											<description>
 												This is the sketch of the cylinder created by rotating <m>f(x) = 3</m> on the interval <m>[0,2]</m> about the <m>x-</m>axis.
@@ -249,7 +248,6 @@
 											]]>
 											</latex-image>
 										</image>
-									</p>
 									<p>
 										The volume of the cylinder is <m>18\pi</m>
 									</p>
@@ -346,7 +344,6 @@
 									</image>
 								</li>
 								<li>
-									<p>
 										<image>
 											<description>
 												This is the sketch of the cylindrical slice of the solid created by rotating <m>f(x) = 3x</m> on the interval <m>[0,1]</m> about the <m>x-</m>axis.
@@ -365,7 +362,6 @@
 											]]>
 											</latex-image>
 										</image>
-									</p>
 									<p>
 										The radius is <m>3x_i</m> and the height is <m>\Delta x</m>
 									</p>
@@ -394,7 +390,6 @@
 							Find the volume of the solid obtained by rotating the region under the curve <m>y = \sqrt{x}</m> from 0 to 1, about the <m>x-</m>axis.  Sketch the region and a typical approximating cylinder.  
 						</statement>
 						<solution>
-							<p>
 								<image>
 									<description>
 										This is the sketch of the region under the curve <m>y = \sqrt{x}</m> on the interval <m>[0,1]</m> that will be rotated about the <m>x-</m>axis.
@@ -423,8 +418,6 @@
 									]]>
 									</latex-image>
 								</image>
-							</p>
-							<p>
 								<image>
 									<description>
 										This is the sketch of the cylindrical slice of the solid created by rotating <m>y = sqrt(x)</m> on the interval <m>[0,1]</m> about the <m>x-</m>axis.
@@ -443,7 +436,6 @@
 									]]>
 									</latex-image>
 								</image>
-							</p>
 							<p>
 								The volume is <m>\dfrac{\pi}{2}</m>
 							</p>

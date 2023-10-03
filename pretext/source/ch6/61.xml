@@ -684,7 +684,6 @@
 								<p>
 									Here is the graph of <m>h(x)</m>:
 								</p>
-								<p>
 									<image>
 										<description>
 											A graph of the function <m>h(x) = 2x^2-8x</m> on the interval <m>[-2,6]</m>
@@ -709,7 +708,6 @@
 										\end{tikzpicture}]]>
 										</latex-image>
 									</image>
-								</p>
 								<p>
 									We can choose two restricted domains: either <m>(-\infty,2]</m> or <m>[2,\infty)</m>. Generally, we'll choose the positive portion of the domain for the restricted domain, so choose <m>[2,\infty)</m>.
 								</p>
