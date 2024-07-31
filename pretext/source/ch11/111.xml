@@ -23,13 +23,331 @@
 
 		<subsubsection xml:id="section-111-sequences">
 			<title>Sequences</title>
+			
+			<definition>
+				<title>Sequence</title>
+				<idx>Sequence</idx>
+				<statement>
+					<p>
+						A <term>sequence</term> is a list of numbers <m>a_1,a_2,a_3,\cdots,a_n,\cdots</m> written in a definite order.
+					</p>
+				</statement>
+			</definition>
 
+			<assemblage>
+				<title>Notation</title>
+				<p>
+					The sequence <m>\lrbrace{a_1,a_2, a_3,...}</m> can also be written as
+					<me>
+						\lrbrace{a_n}_{n=1}^\infty
+					</me>
+					or 
+					<me>
+						\lrbrace{a_n}
+					</me>
+					The subscript label is called the <term>index</term>, and the value of the first subscript is called the <term>starting index</term>
+				</p>
+			</assemblage>
+
+			<example>
+				<statement>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									Write the first six terms of the sequence <m>a_n = \sqrt{n}</m>, if the starting index is <m>n = 1</m>
+								</p>
+							</li>
+							<li>
+								<p>
+									Write the first six terms of the sequence <m>a_n = (-1)^{n+1}\dfrac{1}{n-5}</m>, if the starting index is <m>n = 6</m>.
+								</p>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									<m>a_1 = 1, a_2 = \sqrt{2}, a_3 = \sqrt{3}, a_4 = 2, a_5 = \sqrt{5}, a_6 = \sqrt{6}</m>
+								</p>
+							</li>
+							<li>
+								<p>
+									<m>a_6 = -1, a_7 = \dfrac{1}{2}, a_8 = - \dfrac{1}{3} , a_9 = \dfrac{1}{4}, a_{10} = -\dfrac{1}{5} , a_{11} = \dfrac{1}{6}, a_{12} = -\dfrac{1}{7}</m>
+								</p>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find a formula for the general term <m>a_n</m> of the sequence
+						<me>
+							\lrbrace{-\dfrac{3}{2},\dfrac{9}{3},-\dfrac{27}{4},\dfrac{81}{5},-\dfrac{243}{6},\dfrac{729}{7},\cdots}
+						</me>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>a_n = (-1)^{n-1}\dfrac{3^{n+1}}{n + 2}</m>, with a starting index <m>n=0</m>
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						The Fibonacci sequence is a recursive sequence with no nice defining general term like we've had.  The sequence is defined by the pattern <m>a_{n+1} = a_n + a_{n-1}</m> for <m>n\geq 2</m>, with the initial terms <m>a_0 = a_1 = 1</m>.  Find the next six terms of the Fibonacci sequence.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<m>a_2 = 2, a_3 = 3, a_4 = 5, a_5 = 8, a_6 = 13, a_7 = 21</m>
+					</p>
+				</solution>
+			</example>
+
+			<definition>
+				<title>Limit/Converge/Diverge</title>
+				<idx>Limit</idx>
+				<idx>Converge</idx>
+				<idx>Diverge</idx>
+				<statement>
+					<p>
+						A sequence <m>\lrbrace{a_n}</m> has the <term>limit</term> <m>L</m> if we can make the terms <m>a_n</m> as close to <m>L</m> as we want by making <m>n</m> sufficiently large. If we can, we denote this limit by
+						<me>
+							\ds \lim_{n\to \infty} a_n = L\text{ or } a_n\to L \text{ as } n\to\infty
+						</me>
+					</p>
+					<p>
+						If the limit exists, we say the sequence <term>converges</term>, or that the sequence is <term>convergent</term>. Otherwise, the sequence <term>diverges</term>, or is <term>divergent</term>.
+					</p>
+				</statement>
+			</definition>
+
+			<example>
+				<statement>
+					<p>
+						Is the sequence <m>a_n = \dfrac{n}{n+1}</m> convergent or divergent?
+					</p>
+				</statement>
+				<solution>
+					<p>
+						Convergent, since <m>\ds \lim_{n\to\infty} a_n = 1</m>
+					</p>
+				</solution>
+			</example>
+
+			<assemblage>
+				<title>Characterization of Sequential Limit</title>
+				<statement>
+					<p>
+						If <m>\ds \lim_{x\to \infty} f(x)  = L</m> and <m>f(n) = a_n</m> when <m>n</m> is an integer, then <m>\lim_{n\to\infty} a_n = L</m>
+					</p>
+				</statement>
+			</assemblage>
+
+			<example>
+				<statement>
+					<p>
+						Show that <m>\ds \lim_{n\to \infty} \dfrac{\ln n}{n} = 0</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						We can pair <m>a_n = \dfrac{\ln n}{n}</m> with the function <m>f(x) = \dfrac{\ln x}{x}</m>. Using L'Hospital's Rule, we know that <m>\ds \lim_{x\to\infty} f(x) = 0</m>; from the Characterization of a Sequential Limit, we conclude <m>\ds \lim_{n\to \infty} \dfrac{\ln n}{n} = 0</m> as well.
+					</p>
+				</solution>
+			</example>
+
+			<assemblage>
+				<title>Infinite Limit of a Sequence</title>
+				<p>
+					The notation <m>\ds \lim_{n\to \infty} a_n = \infty</m> means that for every positive number <m>M</m>, there is an integer <m>N</m> such that if <m>n \gt N</m>, then <m>a_n \gt M</m>.
+				</p>
+			</assemblage>
+
+			<assemblage>
+				<title>Limit Laws for Sequences</title>
+				<p>
+					If <m>\lrbrace{a_n}</m> and <m>\lrbrace{b_n}</m> are convergent sequences and <m>c</m> is a constant, then
+					<ol>
+						<li>
+							<p>
+								<m>\ds \lim_{n\to\infty} (a_n \pm b_n) = \lim_{n\to\infty} a_n \pm \lim_{n\to\infty} b_n</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>\ds \lim_{n\to\infty} ca_n = c\cdot \lim_{n\to\infty} a_n</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>\ds \lim_{n\to\infty} (a_nb_n) = \lrpar{\lim_{n\to\infty a_n}}\lrpar{\lim_{n\to\infty} b_n}</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>\ds \lim_{n\to\infty} \dfrac{a_n}{b_n} = \dfrac{\lim_{n\to\infty} a_n}{\lim_{n\to\infty} b_n}</m>
+							</p>
+							<p>
+								provided that <m>\lim_{n\to\infty} b_n\neq 0</m>
+							</p>
+						</li>
+						<li>
+							<p>
+								<m>\ds \lim_{n\to\infty} (a_n)^p = \lrpar{\lim_{n\to\infty} a_n}^p</m>
+							</p>
+						</li>
+					</ol>
+				</p>
+			</assemblage>
+			
+
+			<example>
+				<statement>
+					<p>
+						Use limit laws to determine if these sequences converge or diverge:
+					</p>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									<m>a_n = \dfrac{2n}{3n^2 + 1}</m>
+								</p>
+							</li>
+							<li>
+								<p>
+									<m>b_n = \dfrac{n}{\sqrt{5 + n}}</m>
+								</p>
+							</li>
+							<li>
+								<p>
+									<m>c_n = 2+ (0.86)^n</m>
+								</p>
+							</li>
+							<li>
+								<p>
+									<m>d_n = 6^ne^{-n}</m>
+								</p>
+							</li>
+							<li>
+								<p>
+									<m>e_n = \dfrac{n^4}{n^3 + n^2 -n + 5}</m>
+								</p>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						<ol marker="a">
+							<li>
+								<p>
+									Converges to 0
+								</p>
+							</li>
+							<li>
+								<p>
+									Diverges
+								</p>
+							</li>
+							<li>
+								<p>
+									Converges to 2
+								</p>
+							</li>
+							<li>
+								<p>
+									Converges to 0
+								</p>
+							</li>
+							<li>
+								<p>
+									Diverges
+								</p>
+							</li>
+						</ol>
+					</p>
+				</solution>
+			</example>
 		</subsubsection>
 	</subsection>
 
 	<subsection xml:id="section-111-preclass">
 		<title>Pre-Class Activities</title>
+		
+		<example>
+			<statement>
+				<p>
+					Use this space to write any questions you might have from the videos.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Answers vary
+				</p>
+			</solution>
+		</example>
 
+		<example>
+			<statement>
+				<p>
+					Write the first five terms of the sequence <m>\dfrac{(-1)^n2^n}{2n+1}</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>a_0 = 1, a_1 = , a_2 = , a_3 = , a_4 = </m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Write the first five terms of the recursive sequence <m>a_1 = 6</m>, <m>a_{n+1} = \dfrac{a_n}{n}</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>a_0 = , a_1 = , a_2 = , a_3 = , a_4 = </m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Find a formula for the general term of the sequence <m>\lrbrace{4,-1,\dfrac{1}{4},-\dfrac{1}{16},\dfrac{1}{64},\cdots}</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					<m>a_n = (-1)^n 4^{n-2}</m>
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Does the sequence <m>a_n = (-1)^n \dfrac{1}{2\sqrt{n}}</m> converge or diverge?  Why?
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Converge, because values still approach 0.
+				</p>
+			</solution>
+		</example>
 	</subsection>
 
 	<subsection xml:id="section-111-inclass">
@@ -37,12 +355,310 @@
 
 		<subsubsection xml:id="section-111-working-with-sequences">
 			<title>Working with Sequences</title>
+			
+			<assemblage>
+				<title>Squeeze Theorem for Sequences</title>
+				<p>
+					If <m>a_n,b_n</m>, and <m>c_n</m> are sequences such that <m>a_n\leq b_n\leq c_n</m> for <m>n\geq n_0</m> and <m>\ds \lim_{n\to\infty} a_n = \lim_{n\to\infty} c_n</m>, then 
+					<me>
+						\ds \lim_{n\to\infty} b_n = \lim_{n\to\infty} a_n = \lim_{n\to\infty} c_n
 
+					</me>
+				</p>
+			</assemblage>
+
+			<assemblage>
+				<title>Absolute Convergence of Sequence</title>
+				<p>
+					If <m>\ds \lim_{n\to\infty} |a_n| = 0</m> then <m>\ds \lim_{n\to\infty} a_n = 0</m>
+				</p>
+			</assemblage>
+
+			<example>
+				<statement>
+					<p>
+						Does the sequence <m>a_n = (-1)^n</m> converge or diverge?
+					</p>
+				</statement>
+				<solution>
+					<p>
+						Diverge, it oscillates
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Evaluate <m>\ds \lim_{n\to\infty} (-1)^n\dfrac{5}{n}</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						0
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Does the sequence <m>\lrbrace{n^2e^{-n}}</m> converge or diverge?  Why?
+					</p>
+				</statement>
+				<solution>
+					<p>
+						Converges to 0 by Sequential Limit Theorem
+					</p>
+				</solution>
+			</example>
+
+			<assemblage>
+				<title>Convergent Functions &amp; Convergent Sequences</title>
+				<p>
+					If <m>\ds \lim_{n\to\infty} a_n = L</m> and the function <m>f</m> is continuous at <m>L</m>, then 
+					<me>
+						\ds \lim_{n\to\infty} f(a_n) = f(L)
+					</me>
+					
+				</p>
+			</assemblage>
+
+			<example>
+				<statement>
+					<p>
+						Find <m>\ds \lim_{n\to\infty} \cos\lrpar{\dfrac{\pi}{n}}</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						1
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Show that the sequence <m>a_n =\dfrac{n!}{n^n}</m> converges to 0.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						Note that
+						<me>
+							\dfrac{n!}{n^n} = \dfrac{n\cdot (n-1)\cdot (n-2)\cdots 2\cdot 1}{n\cdot n\cdots n}
+						</me>
+						So, we can write
+						<me>
+							\dfrac{n!}{n^n} = \dfrac{1}{n}\lrpar{\dfrac{n\cdot (n-1)\cdot (n-2)\cdots 2\cdot 1}{n\cdot n\cdots n}}
+						</me>
+						The parenthetical term is at most 1 since the numerator is less than or equal to the denominator. So,
+						<me>
+							0 \lt a_n \leq \dfrac{1}{n}
+						</me>
+						So by the Squeeze Theorem, <m>\ds \lim_{n\to\infty} a_n = 0</m>
+						
+						
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						A geometric sequence is a sequence of the form <m>b_n = ar^n</m>, where <m>a</m> is a constant, and <m>r</m> is called the common ratio.  For what values of <m>r</m> does a geometric sequence <m>b_n = ar^n</m> converge?
+					</p>
+				</statement>
+				<solution>
+					<p>
+						It converges if <m>-1\lt r\leq 1</m> and divergent otherwise. Specifically,
+						<me>
+							\ds \lim_{n\to\infty} ar^n = \begin{cases}0 &amp; -1\lt r \lt 1 \\ a &amp; r = 1\end{cases}
+						</me>
+					</p>
+				</solution>
+			</example>
+
+			<definition>
+				<title>Increasing/Decreasing/Monotonic</title>
+				<statement>
+					<p>
+						A sequence <m>\lrbrace{a_n}</m> is said to be <term>increasing</term> if <m>a_n \lt a_{n+1}</m> for all <m>n\geq 1</m>. It is called <term>decreasing</term> if <m>a_n \gt a_{n+1}</m> for all <m>n\geq 1</m>. A sequence is called <term>monotonic</term> if it is either increasing or decreasing.
+					</p>
+				</statement>
+			</definition>
+
+			<example>
+				<statement>
+					<p>
+						Show that the sequence <m>a_n = \dfrac{n}{n^2 + 2}</m> is decreasing.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Show that the sequence <m>a_n = n\ln n</m> is increasing.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						
+					</p>
+				</solution>
+			</example>
+
+			<definition>
+				<title>Bounded Above/Below</title>
+				<statement>
+					<p>
+						A sequence <m>\lrbrace{a_n}</m> is <term>bounded above</term> if there is a number <m>M</m> such that <m>a_n \leq M</m> for all <m>n\geq 1</m>. <m>a_n</m> is said to be <term>bounded below</term> if there is a number <m>m</m> such that <m>a_n \geq m</m> for all <m>n\geq 1</m>. If <m>a_n</m> is bounded above and below, the sequence is said to be a <term>bounded sequence</term>
+					</p>
+				</statement>
+			</definition>
+
+			<example>
+				<statement>
+					<p>
+						Give an example of each of the following:
+						<ol marker="a">
+							<li>
+								<p>
+									A bounded sequence which converges
+								</p>
+							</li>
+							<li>
+								<p>
+									A bounded sequence which diverges.
+								</p>
+							</li>
+							<li>
+								<p>
+									An unbounded sequence that diverges.
+								</p>
+							</li>
+							<li>
+								<p>
+									An unbounded sequence that converges.
+								</p>
+							</li>
+						</ol>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						
+					</p>
+				</solution>
+			</example>
+
+			<assemblage>
+				<title>Monotonic Sequence Theorem</title>
+				<p>
+					Every bounded, monotonic sequence converges.
+				</p>
+			</assemblage>
+
+			<example>
+				<statement>
+					<p>
+						Argue why the sequence <m>a_n = \dfrac{n}{n+1}</m> is convergent using the Monotonic Sequence Theorem.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						Since <m>\ds \lim_{n\to\infty} a_n = 0</m>, this means that as <m>n\to\infty</m> is bounded below by 0; the sequence is monotonic, as <m>a_n \lt a_{n+1}</m> for all <m>n\geq 1</m>.
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Show that for the recursive sequence <m>a_1 = 2</m>, <m>a_{n+1} = \dfrac{1}{2}(a_n + 6)</m>, the limit is 6.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						
+					</p>
+				</solution>
+			</example>
 		</subsubsection>
 	</subsection>
 
 	<subsection xml:id="section-111-afterclass">
 		<title>After Class Activities</title>
+		<example>
+			<statement>
+				<p>
+					Compute <m>\ds \lim_{n\to\infty} \cos \lrpar{\dfrac{n\pi}{n+1}}</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					
+				</p>
+			</solution>
+		</example>
 
+		<example>
+			<statement>
+				<p>
+					Show that the sequence <m>a_n = \ln (n+1) - \ln n</m> converges to 0.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Determine the convergence of the sequence <m>a_k = \arctan(\ln k)</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Determine the convergence of the sequence <m>a_n = \dfrac{1\cdot 3\cdot 5\cdot \cdots \cdot (2n-1)}{n!}</m>
+				</p>
+			</statement>
+			<solution>
+				<p>
+					
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Is the sequence <m>\lrbrace{2 + \dfrac{(-1)^n}{n}}</m> increasing or decreasing?  Is it monotonic?  Is it bounded?
+				</p>
+			</statement>
+			<solution>
+				<p>
+					
+				</p>
+			</solution>
+		</example>
 	</subsection>
 </section>

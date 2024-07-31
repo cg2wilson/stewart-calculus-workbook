@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <section xml:id="section-104">
-	<title>Calculus in Polar Coordinates</title>
+	<title>Areas and Lneghts in Polar Coordinates</title>
 	<objectives>
 		<ul>
 			<li>
@@ -24,30 +24,365 @@
 		<subsubsection xml:id="section-104-area">
 			<title>Area</title>
 
+				<question>
+					<statement>
+						<p>
+							<ol>
+								<li>
+									<p>
+										In radian measure, what is the area of a circular wedge of radius <m>r</m> and central angle <m>\theta</m>?
+									</p>
+								</li>
+								<li>
+									<p>
+										What if instead of a constant radius, we used a function <m>r = f(\theta)</m>?  Rewrite the formula from part (a) using this new radius function.
+									</p>
+								</li>
+							</ol>
+						</p>
+					</statement>
+					<solution>
+						<p>
+							<ol>
+								<li>
+									<p>
+										<m>A = \dfrac{1}{2}r^2\theta</m>
+									</p>
+								</li>
+								<li>
+									<p>
+										<m>A(\theta) = \dfrac{1}{2}[f(\theta)]^2\theta</m>
+									</p>
+								</li>
+							</ol>
+						</p>
+					</solution>
+				</question>
+
+				<example>
+					<statement>
+						<p>
+							This example will complete the definition of polar area.
+						</p>
+						<p>
+							<ol marker="a">
+								<li>
+									<p>
+										Recall the definition of the definite integral; where do the individual pieces of the definition come from?
+									</p>
+								</li>
+								<li>
+									<p>
+										Consider the polar region <m>\mathcal{R}</m> drawn below.  Label the region, and develop an approximation for a small sector, <m>\Delta \theta</m>; call the area <m>\Delta A_i</m>.
+									</p>
+									<image source="104_1.png"/>
+								</li>
+								<p>
+									Use part (b) to develop an approximation for the area of <m>\mathcal{R}</m>, then convert the approximation to an integral.
+								</p>
+							</ol>
+						</p>
+					</statement>
+					<solution>
+						<p>
+							<ol marker="a">
+								<li>
+									<p>
+										The definite integral is given by
+										<me>
+											\ds \int_a^b f(x)\, dx = \lim_{n\to\infty} \sum_{i=1}^n f(x_i)\Delta x
+										</me>
+										The central idea we're concerned about is that we are summing rectangular areas given by <m>f(x_i)\Delta x</m> for each <m>x_i</m> in the partition of <m>[a,b]</m>; the limit allows us to analyze what happens when the number of rectangles increases without bound.
+									</p>
+								</li>
+								<li>
+									<p>
+										The area <m>A_i</m> is given by the expression 
+										<me>
+											A_i = \dfrac{1}{2}[f(\theta_{i})]^2\Delta\theta
+										</me>
+									</p>
+								</li>
+								<p>
+									Since <m>A_i</m> approximates one portion of the entire area, we sum and take a limit:
+									<me>
+										A \approx \sum_{i=1}^n A_i 
+									</me>
+									so that
+									<me>
+										A = \ds \lim_{n\to\infty} \sum_{i=1}^n A_i
+									</me>
+									and we conclude that
+									<me>
+										A = \ds \int_a^b \dfrac{1}{2}[f(\theta)]^2\, d\theta
+									</me>
+								</p>
+							</ol>
+						</p>
+					</solution>
+				</example>
+
+				<assemblage>
+					<title>Area in Polar Coordinates</title>
+					<p>
+						If <m>r = f(\theta)</m> is a continuous polar curve, then the area contained beneath <m>f(\theta)</m> and between the angle <m>\theta = a</m> and <m>\theta = b</m> is given by the formula
+						<me>
+							A = \ds \int_a^b \dfrac{1}{2}[f(\theta)]^2\, d\theta
+						</me>
+						
+					</p>
+				</assemblage>
+
+				<example>
+					<statement>
+						<p>
+							Find the area enclosed by one loop of the four-leaved rose <m>r = \sin 2\theta</m>.
+						</p>
+					</statement>
+					<solution>
+						<p>
+							<m>\dfrac{\pi}{8}</m>
+						</p>
+					</solution>
+				</example>
 		</subsubsection>
 	</subsection>
 
 	<subsection xml:id="section-104-preclass">
 		<title>Pre-Class Activities</title>
 
+		<example>
+			<statement>
+				<p>
+					Use this space to write down any questions you might have from the videos.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					Answers vary
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Show that the area enclosed by one loop of the rose <m>r = \cos 2\theta</m> is exactly <m>\dfrac{\pi}{8}</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					
+				</p>
+			</solution>
+		</example>
+
+		<example>
+			<statement>
+				<p>
+					Sketch the curve <m>r = 1-\sin \theta</m>, and show that its enclosed area is <m>\dfrac{3\pi}{2}</m>.
+				</p>
+			</statement>
+			<solution>
+				<p>
+					
+				</p>
+			</solution>
+		</example>
 	</subsection>
 
 	<subsection xml:id="section-104-inclass">
 		<title>In Class</title>
 
-		<subsubsection xml:id="section-104-arclength">
-			<title>Arc Length</title>
+		<subsubsection xml:id="section-104-length">
+			<title>Length in Polar Coordinates</title>
 
+			<assemblage>
+				<title>Arc Length in Polar Coordinates</title>
+				<p>
+					For polar curve <m>r = f(\theta)</m>, if <m>f'</m> is continuous on <m>[a,b]</m>, then the length of <m>r</m> on the interval <m>a\leq \theta \leq b</m> is given by
+					<me>
+						L = \ds \int_a^b \sqrt{r^2 + \lrpar{\dfrac{dr}{d\theta}}^2}\, d\theta
+					</me>
+					
+				</p>
+			</assemblage>
+
+			<example>
+				<statement>
+					<p>
+						Find the exact length of the curve <m>r = 2\cos\theta</m> on the interval <m>0\leq \theta \leq \pi</m>.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						
+					</p>
+				</solution>
+			</example>
 		</subsubsection>
 
-        <subsubsection xml:id="section-104-tangents">
-			<title>Tangents</title>
+        <subsubsection xml:id="section-104-examples">
+			<title>Examples</title>
+				
+			<example>
+				<statement>
+					<p>
+						Find the area of the region inside the circle <m>r = 3\cos\theta</m> and outside the cardioid <m>r = 1+ \cos\theta</m>.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						
+					</p>
+				</solution>
+			</example>
 
+			<example>
+				<statement>
+					<p>
+						Find all points of intersection for the curves <m>r = \dfrac{1}{2}</m> and <m>r =\sin 2\theta</m>.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find the area of the region enclosed by one loop of the curve <m>r^2 = 4\cos 2\theta</m>.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find the area of the region that lies inside <m>r = 1-\sin\theta</m>, but outside of the circle <m>r = 1</m>.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find the area of the region inside <m>r = 1+\cos\theta</m>, and outside <m>r = 2-\cos\theta</m>.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find all points of intersection for the curves <m>r = \sin\theta</m> and <m>r = 1-\sin\theta</m>.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find the exact length of the polar curve <m>r = 5^\theta</m>, for <m>0\leq \theta \leq 2\pi</m>.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find the area of the region that lies between <m>r = 1+\cos\theta</m> and <m>r = 1-\cos\theta</m>.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						
+					</p>
+				</solution>
+			</example>
 		</subsubsection>
 	</subsection>
 
 	<subsection xml:id="section-104-afterclass">
 		<title>After Class Activities</title>
+			<example>
+				<statement>
+					<p>
+						Find the area enclosed by one loop of the curve <m>r = 4\cos 3\theta</m>
+					</p>
+				</statement>
+				<solution>
+					<p>
+						
+					</p>
+				</solution>
+			</example>
 
+			<example>
+				<statement>
+					<p>
+						Find the area between the curves <m>r = 3 +2\cos\theta</m> and <m>r = 3 +2\sin\theta</m>.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find all points of intersection of the curves <m>r = 2\sin2\theta</m> and <m>r = 1</m>.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						
+					</p>
+				</solution>
+			</example>
+
+			<example>
+				<statement>
+					<p>
+						Find the exact length of the spiral <m>r = \theta^2</m> on the interval <m>0\leq\theta\leq \sqrt{5}</m>.
+					</p>
+				</statement>
+				<solution>
+					<p>
+						
+					</p>
+				</solution>
+			</example>
 	</subsection>
 </section>
